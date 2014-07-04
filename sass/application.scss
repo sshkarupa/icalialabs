@@ -1,3 +1,276 @@
+$icalia-red: #e23a2c;
+$white: #f9f9f9;
+$max-width: 1200px;
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-	background: red;
+	background: $icalia-red;
+}
+
+.container {
+	max-width: $max-width;
+	width: 90%;
+	margin: 0 auto;
+}
+
+// ######## Menu ############
+
+.main-menu {
+
+	.burger {
+		width: 45px;
+		position: relative;
+		right: -100px;
+		display: inline-block;
+
+		.one, .two, .trhee {
+			width: 45px;
+			height: 5px;
+			background: #e23a2c;
+			margin: 5px;
+			position: relative;
+		}
+	}
+}
+
+.burger:active {
+	-webkit-animation: spin 0.3s ease;
+}
+
+.burger:active > .one {
+	 -webkit-animation: rotate-left 0.5s ease;
+	 animation-delay: 0.1s;
+}
+
+.burger:active > .trhee {
+	 -webkit-animation: rotate-right 0.5s ease-in;
+	 animation-delay: 0.1s;
+}
+
+.burger:active > .two {
+	 -webkit-animation: hide 0.5s ease;
+	 animation-delay: 0.1s;
+}
+
+// ######## Intro ############
+
+.intro {
+	margin: 100px;
+	text-align: center;
+	background: url('img/intro-bg.png') center bottom  no-repeat $white;
+	padding: 140px 0px;
+	position: relative;
+
+	.hello-text {
+		color: #e23a2c;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: 600;
+	}
+
+	.tag-line {
+		color: #e23a2c;
+		font-size: 48px;
+		margin: 45px;
+		display: block;
+	}
+
+	.description {
+		font-weight: 200;
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+
+	.play-video {
+		display: inline-block;
+		color: #e23a2c;
+		border: 3px solid #e23a2c;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 15px 40px;
+		position: relative;
+		-webkit-transition: all 0.3s ease;
+	}
+
+	.play-video:hover {
+		background: #e23a2c;
+		color: #fff;
+		border-radius: 100px;
+		top: -5px;
+		-webkit-transform: scale(1.1);
+	}
+}
+
+// ############ Advantages ##################
+
+.advantages {
+	text-align: center;
+
+	.title-advantages {
+		color: #fff;
+		margin-bottom: 50px;
+	}
+
+	.card {
+		background: #fff;
+		border-radius: 3px;
+		padding: 50px 0px;
+		position: relative;
+		-webkit-transition: all 0.3s ease;
+
+		.icon {
+			-webkit-transition: all 0.3s ease;
+			margin-bottom: 35px;
+			display: inline-block;
+		}
+		
+		.card-title {
+			color: #e23a2c;
+			margin-bottom: 65px;
+			display: block;	
+			font-size: 22px;
+		}
+		
+		p {
+			font-weight: 200;
+			font-size: 26px;
+			width: 80%;
+			margin: 0 auto;
+			color: rgba(0,0,0,0.7);
+			margin-bottom: 60px;
+		}
+
+		.card-link {
+			color: #e23a2c;
+			font-size: 22px;
+			font-weight: 600;
+		}
+	}
+}
+
+// ############ Slider ##################
+
+.work-slider {
+	background: #9f2b20;
+	text-align: center;
+	margin: 100px 0px;
+	position: relative;
+	opacity: 0.5;
+	-webkit-transition: all 0.3s ease;
+
+	.slide {
+		background: url(img/pikster.png) no-repeat;
+		background-size: 35%;
+		background-position: right bottom;
+		padding: 80px 0px;
+		-webkit-transition: all 0.3s ease;
+
+		&:hover {
+			background-size: 36%;
+		}
+		
+		.slider-title {
+			color: rgba(0,0,0,0.5);
+		}	
+
+		.project-title {
+			color: #fff;
+			text-decoration: underline;
+			margin: 50px 0px;
+			font-size: 42px;
+			letter-spacing: 2px;
+		}
+
+		p {
+			font-weight: 200;
+			color: #fff;
+			font-size: 42px;
+			width: 50%;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
+
+		.view-project {
+			color: #fff;
+			border: 1px solid #fff;
+			padding: 25px 80px;
+			border-radius: 3px;
+			font-weight: 200;
+			font-size: 14px;
+			display: inline-block;
+			margin-bottom: 50px;
+			-webkit-transition: all 0.3s ease;
+
+			&:hover {
+				background: #fff;
+				color: #9f2b20;
+				border-radius: 100px;
+				top: -5px;
+				-webkit-transform: scale(1.1);
+			}
+		}
+
+		.bullets {
+			list-style: none;
+
+			li {
+				border-radius: 50%;
+				width: 5px;
+				height: 5px;
+				display: inline-block;
+				border: 2px solid #fff;
+			}
+		}
+	}
+}
+
+// ############ Animations ##################
+
+
+@-webkit-keyframes rotate-right {
+	0% {
+		-webkit-transform: rotate(0deg);
+		right: 0px;
+		top: 0px;
+	}
+		100% {-webkit-transform: rotate(-45deg);
+		right: 0px;
+		top: -20px;
+	}
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(-0deg);
+	}
+		100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes rotate-left {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(45deg);}
+}
+
+@-webkit-keyframes hide {
+	0% {
+		-webkit-transform: rotate(0deg);
+		top: 0px;
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: rotate(90deg);
+		top: 200px;
+	}
 }
