@@ -10,6 +10,7 @@ $max-width: 1200px;
 
 body {
 	background: $icalia-red;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -18,44 +19,131 @@ body {
 	margin: 0 auto;
 }
 
+h1, h2, h3, h4 {
+	font-family: 'Circular', sans-serif;
+}
+
 // ######## Menu ############
 
+.menu-overlay {
+	position: fixed;
+	background: rgba(226,58,44,0.8);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+	
+
+	.menu-content {
+		text-align: center;
+		color: #fff;
+		padding: 100px 0px;
+		display: none;
+	}
+
+	a {
+		font-size: 5em;
+		color: #fff;
+		display: block;
+		font-weight: 700;
+		-webkit-transition: all 0.3s ease;
+		margin: 20px 0px;
+
+		&:hover {
+			-webkit-transform: scale(1.3);
+		}
+	}
+
+	.social-info a {
+		display: inline-block;
+		font-size: 2em;
+		margin: 20px 30px;
+	}
+}
+
+.show-menu {
+	display: block !important;
+}
+
 .main-menu {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+
+	.logo {
+		position: absolute;
+		left: 40px;
+		display: inline-block;
+		z-index: 100;
+	}
 
 	.burger {
 		width: 45px;
-		position: relative;
-		right: -100px;
+		position: absolute;
+		right: 40px;
 		display: inline-block;
+		z-index: 300;
+		top: 10px;
 
-		.one, .two, .trhee {
+		&:hover {
+			opacity: 0.7;
+			cursor: pointer;
+		}
+
+		.one, .two, .three {
 			width: 45px;
 			height: 5px;
 			background: #e23a2c;
 			margin: 5px;
 			position: relative;
 		}
+
+	    &.active {
+	      -webkit-animation: spin .5s ease;
+	    }
+
+	    .one-active {
+	      -webkit-animation: rotate-left .5s ease-in;
+	      animation-delay: 0.1s;
+	      z-index: 999;
+	      background: #fff;
+	    }
+
+	    .three-active {
+	      -webkit-animation: rotate-right .5s ease-in;
+	      animation-delay: 0.1s;
+	      z-index: 999;
+	      background: #fff;
+	    }
+
+	    .hide-two {
+	      -webkit-animation: hide .5s ease-in;
+	      animation-delay: 0.1s;
+	      z-index: 999;
+	      background: #fff;
+	    }
 	}
 }
 
-.burger:active {
-	-webkit-animation: spin 0.3s ease;
+.one-active {
+    -webkit-transform: rotate(45deg);
+    background: #fff;
 }
 
-.burger:active > .one {
-	 -webkit-animation: rotate-left 0.5s ease;
-	 animation-delay: 0.1s;
+.hide-two {
+    opacity: 0;
 }
 
-.burger:active > .trhee {
-	 -webkit-animation: rotate-right 0.5s ease-in;
-	 animation-delay: 0.1s;
+
+.three-active {
+    -webkit-transform: rotate(-45deg);
+    right: 0px;
+    top: -20px;
+    background: #fff ;
 }
 
-.burger:active > .two {
-	 -webkit-animation: hide 0.5s ease;
-	 animation-delay: 0.1s;
-}
 
 // ######## Intro ############
 
@@ -63,46 +151,55 @@ body {
 	margin: 100px;
 	text-align: center;
 	background: url('img/intro-bg.png') center bottom  no-repeat $white;
-	padding: 140px 0px;
 	position: relative;
+
+	.intro-content {
+		padding: 140px 0px;
+	}
 
 	.hello-text {
 		color: #e23a2c;
 		text-transform: uppercase;
-		letter-spacing: 3px;
+		letter-spacing: 4px;
 		font-weight: 600;
+		font-size: 1.2em;
 	}
 
-	.tag-line {
+	.tagline {
 		color: #e23a2c;
 		font-size: 48px;
 		margin: 45px;
 		display: block;
+		font-size: 5em;
 	}
 
-	.description {
+	p {
 		font-weight: 200;
-		font-size: 16px;
+		font-size: 2em;
 		margin-bottom: 40px;
 	}
 
-	.play-video {
+	.play-video-btn {
 		display: inline-block;
 		color: #e23a2c;
-		border: 3px solid #e23a2c;
+		border: 4px solid #e23a2c;
 		text-decoration: none;
 		text-transform: uppercase;
 		padding: 15px 40px;
 		position: relative;
+		background: none;
 		-webkit-transition: all 0.3s ease;
-	}
+		font-size: 1.1em;
+		letter-spacing: 3px;
 
-	.play-video:hover {
-		background: #e23a2c;
-		color: #fff;
-		border-radius: 100px;
-		top: -5px;
-		-webkit-transform: scale(1.1);
+		&:hover {
+			background: #e23a2c;
+			color: #fff;
+			border-radius: 100px;
+			top: -5px;
+			-webkit-transform: scale(1.1);
+			cursor: pointer;
+		}
 	}
 }
 
@@ -117,6 +214,9 @@ body {
 	}
 
 	.card {
+		width: 33%;
+		display: inline-block;
+		vertical-align: top;
 		background: #fff;
 		border-radius: 3px;
 		padding: 50px 0px;
@@ -153,80 +253,139 @@ body {
 	}
 }
 
-// ############ Slider ##################
-
 .work-slider {
 	background: #9f2b20;
 	text-align: center;
-	margin: 100px 0px;
+	margin: 100px auto;
 	position: relative;
 	opacity: 0.5;
 	-webkit-transition: all 0.3s ease;
+	overflow: hidden;
+	
+  .container {
+    width: 100%;
+  }
 
-	.slide {
-		background: url(img/pikster.png) no-repeat;
-		background-size: 35%;
-		background-position: right bottom;
-		padding: 80px 0px;
-		-webkit-transition: all 0.3s ease;
+  a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
 
-		&:hover {
-			background-size: 36%;
-		}
+  a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
 
-		.slider-title {
-			color: rgba(0,0,0,0.5);
-		}
+  a.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
 
-		.project-title {
-			color: #fff;
-			text-decoration: underline;
-			margin: 50px 0px;
-			font-size: 42px;
-			letter-spacing: 2px;
-		}
+  a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
 
-		p {
-			font-weight: 200;
-			color: #fff;
-			font-size: 42px;
-			width: 50%;
-			margin: 0 auto;
-			margin-bottom: 50px;
-		}
+  .slides {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    list-style: none;
+  
 
-		.view-project {
-			color: #fff;
-			border: 1px solid #fff;
-			padding: 25px 80px;
-			border-radius: 3px;
-			font-weight: 200;
-			font-size: 14px;
-			display: inline-block;
-			margin-bottom: 50px;
-			-webkit-transition: all 0.3s ease;
+    li {
+      background: url(img/pikster.png) no-repeat;
+      background-size: 35%;
+      background-position: right bottom;
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 1200px;
+      height: 300px;
+      text-align: center;
 
-			&:hover {
-				background: #fff;
-				color: #9f2b20;
-				border-radius: 100px;
-				top: -5px;
-				-webkit-transform: scale(1.1);
-			}
-		}
+      &:hover {
+        background-size: 36%;
+      }
 
-		.bullets {
-			list-style: none;
+      .slider-title {
+        color: rgba(0,0,0,0.5);
+      }	
 
-			li {
-				border-radius: 50%;
-				width: 5px;
-				height: 5px;
-				display: inline-block;
-				border: 2px solid #fff;
-			}
-		}
-	}
+      .project-title {
+        color: #fff;
+        text-decoration: underline;
+        margin: 50px 0px;
+        font-size: 42px;
+        letter-spacing: 2px;
+      }
+
+      p {
+        font-weight: 200;
+        color: #fff;
+        font-size: 42px;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+
+      .view-project {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 25px 80px;
+        border-radius: 3px;
+        font-weight: 200;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 50px;
+        -webkit-transition: all 0.3s ease;
+
+        &:hover {
+          background: #fff;
+          color: #9f2b20;
+          border-radius: 100px;
+          top: -5px;
+          -webkit-transform: scale(1.1);
+        }
+      }
+    }
+
+
+    .bullets {
+      list-style: none;
+
+      li {
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        border: 2px solid #fff;
+      }
+    }
+  }
+}
+
+
+// ############ Custom Type ##################
+
+@font-face {
+    font-family: DeliciousRoman;
+    src: url('../fonts/Circular.otf');
+    font-weight:400;
 }
 
 // ############ Animations ##################
@@ -244,14 +403,16 @@ body {
 	}
 }
 
+
 @-webkit-keyframes spin {
 	0% {
 		-webkit-transform: rotate(-0deg);
 	}
 		100% {
-		-webkit-transform: rotate(-360deg);
+		-webkit-transform: rotate(-180deg);
 	}
 }
+
 
 @-webkit-keyframes rotate-left {
 	0% {-webkit-transform: rotate(0deg);}
@@ -259,6 +420,7 @@ body {
 }
 
 @-webkit-keyframes hide {
+	
 	0% {
 		-webkit-transform: rotate(0deg);
 		top: 0px;
