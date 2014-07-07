@@ -1,4 +1,12 @@
 jQuery(document).ready ($) ->
+
+  $('.burger').on 'click', (e) ->
+    $('.burger').toggleClass 'active'
+    $('.burger > .one').toggleClass 'one-active'
+    $('.burger > .two').toggleClass 'hide-two'
+    $('.burger > .three').toggleClass 'three-active'
+    e.preventDefault()
+
   moveLeft = ->
     $("#slider ul.slides").animate
       left: +slideWidth

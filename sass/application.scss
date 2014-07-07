@@ -28,34 +28,33 @@ body {
 		right: -100px;
 		display: inline-block;
 
-		.one, .two, .trhee {
+		.one, .two, .three {
 			width: 45px;
 			height: 5px;
 			background: #e23a2c;
 			margin: 5px;
 			position: relative;
 		}
+
+    &.active {
+      -webkit-animation: spin .3s ease;
+    }
+    .one-active {
+      -webkit-animation: rotate-left .5s ease;
+      animation-delay: 0.1s;
+    }
+    .three-active {
+      -webkit-animation: rotate-right .5s ease-in;
+      animation-delay: 0.1s;
+    }
+    .hide-two {
+      -webkit-animation: hide .5s ease;
+      animation-delay: 0.1s;
+    }
 	}
 }
 
-.burger:active {
-	-webkit-animation: spin 0.3s ease;
-}
 
-.burger:active > .one {
-	 -webkit-animation: rotate-left 0.5s ease;
-	 animation-delay: 0.1s;
-}
-
-.burger:active > .trhee {
-	 -webkit-animation: rotate-right 0.5s ease-in;
-	 animation-delay: 0.1s;
-}
-
-.burger:active > .two {
-	 -webkit-animation: hide 0.5s ease;
-	 animation-delay: 0.1s;
-}
 
 // ######## Intro ############
 
@@ -274,6 +273,20 @@ body {
       }
     }
   }
+}
+.one-active {
+    -webkit-transform: rotate(45deg);
+}
+
+.hide-two {
+    opacity: 0;
+}
+
+
+.three-active {
+    -webkit-transform: rotate(-45deg);
+    right: 0px;
+    top: -20px;
 }
 
 // ############ Animations ##################

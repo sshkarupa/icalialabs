@@ -1,5 +1,12 @@
 jQuery(document).ready(function($) {
   var moveLeft, moveRight, slideCount, slideHeight, slideWidth, sliderUlWidth;
+  $('.burger').on('click', function(e) {
+    $('.burger').toggleClass('active');
+    $('.burger > .one').toggleClass('one-active');
+    $('.burger > .two').toggleClass('hide-two');
+    $('.burger > .three').toggleClass('three-active');
+    return e.preventDefault();
+  });
   moveLeft = function() {
     $("#slider ul.slides").animate({
       left: +slideWidth
