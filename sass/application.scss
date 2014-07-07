@@ -161,6 +161,10 @@ body {
   opacity: 0.5;
   overflow: hidden;
 
+  .container {
+    width: 100%;
+  }
+
 
   a.control_prev, a.control_next {
     position: absolute;

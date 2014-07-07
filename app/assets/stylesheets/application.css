@@ -154,7 +154,11 @@ body {
   opacity: 0.5;
   overflow: hidden;
 }
-/* line 165, ../../../sass/application.scss */
+/* line 164, ../../../sass/application.scss */
+.work-slider .container {
+  width: 100%;
+}
+/* line 169, ../../../sass/application.scss */
 .work-slider a.control_prev, .work-slider a.control_next {
   position: absolute;
   top: 40%;
@@ -171,21 +175,21 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
-/* line 182, ../../../sass/application.scss */
+/* line 186, ../../../sass/application.scss */
 .work-slider a.control_prev:hover, .work-slider a.control_next:hover {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
 }
-/* line 187, ../../../sass/application.scss */
+/* line 191, ../../../sass/application.scss */
 .work-slider a.control_prev {
   border-radius: 0 2px 2px 0;
 }
-/* line 191, ../../../sass/application.scss */
+/* line 195, ../../../sass/application.scss */
 .work-slider a.control_next {
   right: 0;
   border-radius: 2px 0 0 2px;
 }
-/* line 196, ../../../sass/application.scss */
+/* line 200, ../../../sass/application.scss */
 .work-slider .slides {
   position: relative;
   margin: 0;
@@ -193,7 +197,7 @@ body {
   height: 300px;
   list-style: none;
 }
-/* line 204, ../../../sass/application.scss */
+/* line 208, ../../../sass/application.scss */
 .work-slider .slides li {
   background: url(img/pikster.png) no-repeat;
   background-size: 35%;
@@ -207,15 +211,15 @@ body {
   height: 300px;
   text-align: center;
 }
-/* line 217, ../../../sass/application.scss */
+/* line 221, ../../../sass/application.scss */
 .work-slider .slides li:hover {
   background-size: 36%;
 }
-/* line 221, ../../../sass/application.scss */
+/* line 225, ../../../sass/application.scss */
 .work-slider .slides li .slider-title {
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 225, ../../../sass/application.scss */
+/* line 229, ../../../sass/application.scss */
 .work-slider .slides li .project-title {
   color: #fff;
   text-decoration: underline;
@@ -223,7 +227,7 @@ body {
   font-size: 42px;
   letter-spacing: 2px;
 }
-/* line 233, ../../../sass/application.scss */
+/* line 237, ../../../sass/application.scss */
 .work-slider .slides li p {
   font-weight: 200;
   color: #fff;
@@ -232,7 +236,7 @@ body {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-/* line 242, ../../../sass/application.scss */
+/* line 246, ../../../sass/application.scss */
 .work-slider .slides li .view-project {
   color: #fff;
   border: 1px solid #fff;
@@ -244,7 +248,7 @@ body {
   margin-bottom: 50px;
   -webkit-transition: all 0.3s ease;
 }
-/* line 253, ../../../sass/application.scss */
+/* line 257, ../../../sass/application.scss */
 .work-slider .slides li .view-project:hover {
   background: #fff;
   color: #9f2b20;
@@ -252,11 +256,11 @@ body {
   top: -5px;
   -webkit-transform: scale(1.1);
 }
-/* line 264, ../../../sass/application.scss */
+/* line 268, ../../../sass/application.scss */
 .work-slider .slides .bullets {
   list-style: none;
 }
-/* line 267, ../../../sass/application.scss */
+/* line 271, ../../../sass/application.scss */
 .work-slider .slides .bullets li {
   border-radius: 50%;
   width: 5px;
@@ -265,17 +269,17 @@ body {
   border: 2px solid #fff;
 }
 
-/* line 277, ../../../sass/application.scss */
+/* line 281, ../../../sass/application.scss */
 .one-active {
   -webkit-transform: rotate(45deg);
 }
 
-/* line 281, ../../../sass/application.scss */
+/* line 285, ../../../sass/application.scss */
 .hide-two {
   opacity: 0;
 }
 
-/* line 286, ../../../sass/application.scss */
+/* line 290, ../../../sass/application.scss */
 .three-active {
   -webkit-transform: rotate(-45deg);
   right: 0px;
@@ -283,14 +287,14 @@ body {
 }
 
 @-webkit-keyframes rotate-right {
-  /* line 296, ../../../sass/application.scss */
+  /* line 300, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     right: 0px;
     top: 0px;
   }
 
-  /* line 301, ../../../sass/application.scss */
+  /* line 305, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(-45deg);
     right: 0px;
@@ -299,43 +303,43 @@ body {
 }
 
 @-webkit-keyframes spin {
-  /* line 309, ../../../sass/application.scss */
+  /* line 313, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 312, ../../../sass/application.scss */
+  /* line 316, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(-360deg);
   }
 }
 
 @-webkit-keyframes rotate-left {
-  /* line 318, ../../../sass/application.scss */
+  /* line 322, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 319, ../../../sass/application.scss */
+  /* line 323, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(45deg);
   }
 }
 
 @-webkit-keyframes hide {
-  /* line 323, ../../../sass/application.scss */
+  /* line 327, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     top: 0px;
     opacity: 1;
   }
 
-  /* line 329, ../../../sass/application.scss */
+  /* line 333, ../../../sass/application.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 333, ../../../sass/application.scss */
+  /* line 337, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(90deg);
     top: 200px;
