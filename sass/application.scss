@@ -42,14 +42,20 @@ body {
     .one-active {
       -webkit-animation: rotate-left .5s ease;
       animation-delay: 0.1s;
+      background: #FFF;
+      z-index: 999;
     }
     .three-active {
       -webkit-animation: rotate-right .5s ease-in;
       animation-delay: 0.1s;
+      background: #FFF;
+      z-index: 999;
     }
     .hide-two {
       -webkit-animation: hide .5s ease;
       animation-delay: 0.1s;
+      background: #FFF;
+      z-index: 999;
     }
 	}
 }
@@ -214,7 +220,7 @@ body {
       margin: 0;
       padding: 0;
       position: relative;
-      width: 800px;
+      width: 1200px;
       height: 300px;
       text-align: center;
 
