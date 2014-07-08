@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  var getActive, moveBottom, moveTop, slideCount, slideCounter, slideHeight, slideWidth, sliderUlWidth;
+  var slideCount, slideCounter, updateNext, updatePrevious;
   $('.intro').addClass('animated bounceInUp');
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
@@ -29,52 +29,34 @@ jQuery(document).ready(function($) {
   $('.move-left').on('click', function(e) {
     return $('.mask').removeClass('expand-content');
   });
-  moveTop = function() {
-    $("#slider ul.slides").animate({
-      top: +300
-    }, 200, function() {
-      $("#slider ul.slides li:last-child").prependTo("#slider ul.slides");
-      $("#slider ul.slides").css("top", "");
-    });
-  };
-  moveBottom = function() {
-    $("#slider ul.slides").animate({
-      top: -300
-    }, 2000, function() {
-      $("#slider ul.slides li:first-child").appendTo("#slider ul.slides");
-      $("#slider ul.slides").css("top", "");
-    });
-  };
-  getActive = function() {
-    var slideCounter;
+  slideCounter = 1;
+  updateNext = function() {
+    console.log(slideCounter >= slideCount);
     if (slideCounter >= slideCount) {
-      slideCounter = 1;
-    } else {
-      slideCounter += 1;
+      slideCounter = 0;
     }
-    return $('#slider ul.slides li')[slideCount].addClass('active');
+    $($('.work-slider > .item-slide').removeClass('active'));
+    $($('.work-slider > .item-slide')[slideCounter]).addClass('active');
+    slideCounter++;
+    console.log(slideCount);
   };
-  slideCount = $("#slider ul.slides li").length;
-  slideWidth = $("#slider ul.slides li").width();
-  slideHeight = $("#slider ul.slides li").height();
-  slideCounter = 0;
-  sliderUlWidth = slideCount * slideWidth;
-  $("#slider").css({
-    width: slideWidth,
-    height: slideHeight
-  });
-  $("#slider ul.slides").css({
-    width: sliderUlWidth,
-    marginTop: -300
-  });
-  $("#slider ul li:last-child").prependTo("#slider ul");
+  updatePrevious = function() {
+    if (slideCounter >= slideCount) {
+      slideCounter = 0;
+    } else {
+      slideCounter -= 1;
+    }
+    $($('.work-slider > .item-slide').removeClass('active'));
+    $($('.work-slider > .item-slide')[slideCounter]).addClass('active');
+    console.log(slideCount);
+  };
+  slideCount = $(".work-slider > .item-slide").length;
   $("a.control_prev").on('click', function(e) {
-    moveTop();
+    updatePrevious();
     e.preventDefault();
   });
   $("a.control_next").on('click', function(e) {
-    moveBottom();
-    getActive();
+    updateNext();
     e.preventDefault();
   });
 });

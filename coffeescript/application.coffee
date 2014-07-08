@@ -33,55 +33,39 @@ jQuery(document).ready ($) ->
     $('.mask').removeClass('expand-content')
 
   #Slider functions
-  moveTop = ->
-    $("#slider ul.slides").animate
-      top: +300
-    , 200, ->
-      $("#slider ul.slides li:last-child").prependTo "#slider ul.slides"
-      $("#slider ul.slides").css "top", ""
-      return
-    return
-
-  moveBottom = ->
-    $("#slider ul.slides").animate
-      top: -300
-    , 2000, ->
-      $("#slider ul.slides li:first-child").appendTo "#slider ul.slides"
-      $("#slider ul.slides").css "top", ""
-      return
-
-    return
-
-  getActive = ->
+  slideCounter = 1
+  updateNext = ->
+    console.log(slideCounter >= slideCount)
     if slideCounter >= slideCount
-      slideCounter = 1
+      slideCounter = 0
+
+    $($('.work-slider > .item-slide').removeClass('active'))
+    $($('.work-slider > .item-slide')[slideCounter]).addClass('active')
+    slideCounter++
+
+    console.log(slideCount)
+    return
+
+  updatePrevious = ->
+    if slideCounter >= slideCount
+      slideCounter = 0
     else
-      slideCounter += 1
+      slideCounter -= 1
 
-    $('#slider ul.slides li')[slideCount].addClass('active')
+    $($('.work-slider > .item-slide').removeClass('active'))
+    $($('.work-slider > .item-slide')[slideCounter]).addClass('active')
+    console.log(slideCount)
+    return
 
-  slideCount = $("#slider ul.slides li").length
-  slideWidth = $("#slider ul.slides li").width()
-  slideHeight = $("#slider ul.slides li").height()
-  slideCounter = 0
-  sliderUlWidth = slideCount * slideWidth
-  $("#slider").css
-    width: slideWidth
-    height: slideHeight
+  slideCount = $(".work-slider > .item-slide").length
 
-  $("#slider ul.slides").css
-    width: sliderUlWidth
-    marginTop: -300
-
-  $("#slider ul li:last-child").prependTo "#slider ul"
   $("a.control_prev").on 'click', (e) ->
-    moveTop()
+    updatePrevious()
     e.preventDefault()
     return
 
   $("a.control_next").on 'click', (e) ->
-    moveBottom()
-    getActive()
+    updateNext()
     e.preventDefault()
     return
 
