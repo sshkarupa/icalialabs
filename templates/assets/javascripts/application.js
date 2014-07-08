@@ -14,7 +14,8 @@ jQuery(document).ready(function($) {
     $(this).toggleClass('expand-content');
     $(this).siblings('.mask').toggleClass('hide');
     $(this).siblings('.mask').children('.skill').toggleClass('hide-all');
-    if ($(this).siblings('.technology').length > 0) {
+    $(this).children('.skill').children('.col-2').children('.more').toggleClass('push-front');
+    if ($(this).children('.technology').length > 0) {
       $(this).siblings('.fusion.circle').toggleClass('move-left');
     } else {
       $(this).siblings('.fusion.circle').toggleClass('move-right');
@@ -24,6 +25,9 @@ jQuery(document).ready(function($) {
     } else {
       return $(this).siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>";
     }
+  });
+  $('.move-left').on('click', function(e) {
+    return $('.mask').removeClass('expand-content');
   });
   moveTop = function() {
     $("#slider ul.slides").animate({
