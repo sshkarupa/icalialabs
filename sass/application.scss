@@ -263,7 +263,7 @@ h1, h2, h3, h4 {
 .work {
 	background: #b4362a;
 	width: 100%;
-	margin: 100px 0px;
+	margin: 100px 0px 0px 0px;
 	opacity: 1;
 	text-align: center;
 
@@ -326,69 +326,6 @@ h1, h2, h3, h4 {
   font-family: DeliciousRoman;
   src: url('../fonts/Circular.otf');
   font-weight:400;
-}
-
-// ############ Animations ##################
-
-
-@-webkit-keyframes rotate-right {
-  0% {
-    -webkit-transform: rotate(0deg);
-    right: 0px;
-    top: 0px;
-  }
-  100% {-webkit-transform: rotate(-45deg);
-    right: 0px;
-    top: -20px;
-  }
-}
-
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(-0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-180deg);
-  }
-}
-
-
-@-webkit-keyframes rotate-left {
-  0% {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(45deg);}
-}
-
-@-webkit-keyframes hide {
-
-  0% {
-    -webkit-transform: rotate(0deg);
-    top: 0px;
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: rotate(90deg);
-    top: 200px;
-  }
-}
-@-webkit-keyframes move {
-  50% {
-    bottom: 50%;
-    left: -70%;
-  }
-}
-@-webkit-keyframes move-left {
-  50% {
-    /*-webkit-transform: translateX(300px);*/
-    /*-webkit-transform: translateY(-300px);*/
-    /*left: 0;*/
-    /*top: 0;*/
-  }
 }
 
 //#################### Skills ##################################
@@ -494,28 +431,42 @@ h1, h2, h3, h4 {
 //########################Testimonials###########
 
 .testimonials {
-
+	height: 600px;
+	background: #fff;
+	overflow: hidden;
+  
   .picture {
     box-sizing: border-box;
     float: left;
     width: 30%;
+
+    img {
+    	width: 100%;
+    }
+
+  }
+
+  h4 {
+  	font-size: 1.6em;
   }
 
   .quote {
-    background: #FFF;
     box-sizing: border-box;
     float: right;
-    padding: 50px 100px;
+    padding: 130px 100px;
     width: 70%;
 
     blockquote {
-      color: $icalia-red;
-      font-size: 1.5em;
-      padding: 80px 0;
+     p {
+     	color: $icalia-red;
+		font-size: 2em;
+		padding: 80px 0;
+		font-weight: 100;
+     }
 
       footer {
         color: #000;
-        padding: 10px;
+        padding: 0px 10px;
         text-align: left;
       }
     }
@@ -533,5 +484,69 @@ footer {
     &:visited {
       color: white;
     }
+  }
+}
+
+
+// ############ Animations ##################
+
+
+@-webkit-keyframes rotate-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+    right: 0px;
+    top: 0px;
+  }
+  100% {-webkit-transform: rotate(-45deg);
+    right: 0px;
+    top: -20px;
+  }
+}
+
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(-0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-180deg);
+  }
+}
+
+
+@-webkit-keyframes rotate-left {
+  0% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(45deg);}
+}
+
+@-webkit-keyframes hide {
+
+  0% {
+    -webkit-transform: rotate(0deg);
+    top: 0px;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    top: 200px;
+  }
+}
+@-webkit-keyframes move {
+  50% {
+    bottom: 50%;
+    left: -70%;
+  }
+}
+@-webkit-keyframes move-left {
+  50% {
+    /*-webkit-transform: translateX(300px);*/
+    /*-webkit-transform: translateY(-300px);*/
+    /*left: 0;*/
+    /*top: 0;*/
   }
 }
