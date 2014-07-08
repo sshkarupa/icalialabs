@@ -10,8 +10,8 @@ $max-width: 1200px;
 	margin: 0 auto;
 }
 
-.col {
-	display: inline-block;
-}
 
-.co-2{$max-width/2};
+.col-2{
+	display: inline-block;
+	width: 49%;
+}

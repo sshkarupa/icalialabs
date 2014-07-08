@@ -1,6 +1,8 @@
 jQuery(document).ready ($) ->
+  #Intro animation
   $('.intro').addClass 'animated bounceInUp'
   
+  #Class toggle for burger items
   $('.burger').on 'click', (e) ->
     $('.menu-overlay').toggleClass 'show-menu'
     $('.menu-content').toggleClass 'show-menu animated bounceInDown'
@@ -10,6 +12,21 @@ jQuery(document).ready ($) ->
     $('.burger > .three').toggleClass 'three-active'
     e.preventDefault()
 
+    # Toggle class for skills section
+  $('.mask').on 'click', (e) ->
+    $(@).toggleClass 'expand-content'
+    $(@).children('.more').toggleClass 'more-content'
+    if $(@).parents('.technology').length > 0
+      $(@).parents('.skill').siblings('.fusion.circle').toggleClass('move-left')
+    else
+      $(@).parents('.skill').siblings('.fusion.circle').toggleClass('move-right')
+
+    if $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-left') || $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-right')
+        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = 'X'
+    else
+        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "Perfect<br/>Fusion"
+
+  #Slider functions
   moveLeft = ->
     $("#slider ul.slides").animate
       left: +slideWidth
