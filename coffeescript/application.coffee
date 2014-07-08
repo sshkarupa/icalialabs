@@ -24,7 +24,7 @@ jQuery(document).ready ($) ->
     if $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-left') || $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-right')
         $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = 'X'
     else
-        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "Perfect<br/>Fusion"
+        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
   #Slider functions
   moveLeft = ->

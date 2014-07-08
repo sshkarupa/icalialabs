@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
     if ($(this).parents('.skill').siblings('.fusion.circle').hasClass('move-left') || $(this).parents('.skill').siblings('.fusion.circle').hasClass('move-right')) {
       return $(this).parents('.skill').siblings('.fusion.circle')[0].innerHTML = 'X';
     } else {
-      return $(this).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "Perfect<br/>Fusion";
+      return $(this).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>";
     }
   });
   moveLeft = function() {
