@@ -1,7 +1,7 @@
+@import 'reset'
+
 $icalia-red: #e23a2c;
 $white: #f9f9f9;
-$max-width: 1200px;
-
 
 * {
 	margin: 0px;
@@ -11,12 +11,6 @@ $max-width: 1200px;
 body {
 	background: $icalia-red;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.container {
-	max-width: $max-width;
-	width: 90%;
-	margin: 0 auto;
 }
 
 h1, h2, h3, h4 {
