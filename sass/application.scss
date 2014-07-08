@@ -313,6 +313,11 @@ h1, h2, h3, h4 {
 		      cursor: pointer;
 		    }
   		}
+
+    &.active {
+    }
+
+		h3 {color: #fff;font-size: 2em;}
 	}
 }
 
@@ -357,9 +362,11 @@ h1, h2, h3, h4 {
     .more {
       position: relative;
       z-index: -1;
+      display: none;
 
       &.push-front {
         z-index: 1;
+        display: block;
       }
     }
   }
@@ -405,6 +412,7 @@ h1, h2, h3, h4 {
       z-index: 300;
       line-height: 80px;
       text-align: center;
+      font-size: 12px;
 
       span {
         line-height: normal;
@@ -417,6 +425,7 @@ h1, h2, h3, h4 {
         -webkit-transform: scale(.5);
         top: 0;
         right: 0;
+        font-size: 16px;
       }
 
       &.move-right {
@@ -424,6 +433,7 @@ h1, h2, h3, h4 {
         -webkit-transform: scale(.5);
         top:0;
         right: 93%;
+        font-size: 24px;
       }
     }
   }
