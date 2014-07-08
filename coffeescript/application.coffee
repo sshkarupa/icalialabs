@@ -15,33 +15,33 @@ jQuery(document).ready ($) ->
     # Toggle class for skills section
   $('.mask').on 'click', (e) ->
     $(@).toggleClass 'expand-content'
-    $(@).children('.more').toggleClass 'more-content'
-    if $(@).parents('.technology').length > 0
-      $(@).parents('.skill').siblings('.fusion.circle').toggleClass('move-left')
+    $(@).siblings('.mask').toggleClass('hide')
+    if $(@).siblings('.technology').length > 0
+      $(@).siblings('.fusion.circle').toggleClass('move-left')
     else
-      $(@).parents('.skill').siblings('.fusion.circle').toggleClass('move-right')
+      $(@).siblings('.fusion.circle').toggleClass('move-right')
 
-    if $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-left') || $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-right')
-        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = 'X'
+    if $(@).siblings('.fusion.circle').hasClass('move-left') || $(@).siblings('.fusion.circle').hasClass('move-right')
+        $(@).siblings('.fusion.circle')[0].innerHTML = 'X'
     else
-        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "Perfect<br/>Fusion"
+        $(@).siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
   #Slider functions
-  moveLeft = ->
+  moveTop = ->
     $("#slider ul.slides").animate
-      left: +slideWidth
+      top: +300
     , 200, ->
       $("#slider ul.slides li:last-child").prependTo "#slider ul.slides"
-      $("#slider ul.slides").css "left", ""
+      $("#slider ul.slides").css "top", ""
       return
     return
 
-  moveRight = ->
+  moveBottom = ->
     $("#slider ul.slides").animate
-      left: -slideWidth
+      top: -300
     , 2000, ->
       $("#slider ul.slides li:first-child").appendTo "#slider ul.slides"
-      $("#slider ul.slides").css "left", ""
+      $("#slider ul.slides").css "top", ""
       return
 
     return
@@ -56,16 +56,16 @@ jQuery(document).ready ($) ->
 
   $("#slider ul.slides").css
     width: sliderUlWidth
-    marginLeft: -slideWidth
+    marginTop: -300
 
   $("#slider ul li:last-child").prependTo "#slider ul"
   $("a.control_prev").on 'click', (e) ->
-    moveLeft()
+    moveTop()
     e.preventDefault()
     return
 
   $("a.control_next").on 'click', (e) ->
-    moveRight()
+    moveBottom()
     e.preventDefault()
     return
 
