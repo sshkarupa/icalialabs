@@ -270,8 +270,10 @@ h1, h2, h3, h4 {
 
 	.item-slide {
 		padding: 100px 0px;
+    display: none;
 
     &.active {
+      /*display: block;*/
     }
 
 		h3 {color: #fff;font-size: 2em;}

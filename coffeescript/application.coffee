@@ -1,4 +1,5 @@
 jQuery(document).ready ($) ->
+
   #Intro animation
   $('.intro').addClass 'animated bounceInUp'
   
@@ -34,6 +35,7 @@ jQuery(document).ready ($) ->
 
   #Slider functions
   slideCounter = 1
+
   updateNext = ->
     console.log(slideCounter >= slideCount)
     if slideCounter >= slideCount
@@ -41,12 +43,10 @@ jQuery(document).ready ($) ->
 
     $($('.work-slider > .item-slide').removeClass('active'))
     $($('.work-slider > .item-slide')[slideCounter]).addClass('active')
-    $($('.work-slider > .item-slide')[slideCounter - 1]).fadeOut()
+    $($('.work-slider > .item-slide')).fadeOut()
 
     $('.work-slider > .item-slide.active').fadeIn()
     slideCounter++
-
-    console.log(slideCount)
     return
 
   updatePrevious = ->
@@ -73,4 +73,4 @@ jQuery(document).ready ($) ->
     return
 
   return
-
+$('.work-slider > .item-slide.active').fadeIn()
