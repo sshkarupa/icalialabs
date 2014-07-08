@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+$max-width: 1200px;
+
+.container {
+	max-width: $max-width;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.col-2{
+	display: inline-block;
+	width: 49%;
+}
