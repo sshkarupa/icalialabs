@@ -18,7 +18,8 @@ jQuery(document).ready ($) ->
     #$(@).siblings('.mask').css "width", 0
     $(@).siblings('.mask').toggleClass('hide')
     $(@).siblings('.mask').children('.skill').toggleClass('hide-all')
-    if $(@).siblings('.technology').length > 0
+    $(@).children('.skill').children('.col-2').children('.more').toggleClass('push-front')
+    if $(@).children('.technology').length > 0
       $(@).siblings('.fusion.circle').toggleClass('move-left')
     else
       $(@).siblings('.fusion.circle').toggleClass('move-right')
@@ -27,6 +28,9 @@ jQuery(document).ready ($) ->
         $(@).siblings('.fusion.circle')[0].innerHTML = 'X'
     else
         $(@).siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
+
+  $('.move-left').on 'click', (e) ->
+    $('.mask').removeClass('expand-content')
 
   #Slider functions
   moveTop = ->

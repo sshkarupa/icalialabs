@@ -384,8 +384,10 @@ h1, h2, h3, h4 {
 }
 @-webkit-keyframes move-left {
   50% {
-    bottom: 50%;
-    right: 70%;
+    /*-webkit-transform: translateX(300px);*/
+    /*-webkit-transform: translateY(-300px);*/
+    /*left: 0;*/
+    /*top: 0;*/
   }
 }
 
@@ -408,10 +410,20 @@ h1, h2, h3, h4 {
 
     &:hover {
       background: $icalia-red;
+      color: #FFF;
     }
 
     &.hide {
       width: 0;
+    }
+
+    .more {
+      position: relative;
+      z-index: -1;
+
+      &.push-front {
+        z-index: 1;
+      }
     }
   }
 
@@ -425,13 +437,6 @@ h1, h2, h3, h4 {
     &.hide-all {
       display: none;
     }
-  }
-
-  .technology {
-
-  }
-
-  .aesthetics {
   }
 
   .expand-content {
@@ -471,17 +476,17 @@ h1, h2, h3, h4 {
       }
 
       &.move-left {
+        -webkit-transform: translate(600px, -200px);
         -webkit-transform: scale(.5);
-        -webkit-animation: move 3s ease;
         top: 0;
         right: 0;
       }
 
       &.move-right {
+        /*-webkit-transform: translate(-600px, -200px);*/
         -webkit-transform: scale(.5);
-        -webkit-animation: move-left 3s ease;
-        top: 0;
-        left: 0;
+        top:0;
+        right: 93%;
       }
     }
   }
