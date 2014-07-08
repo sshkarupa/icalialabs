@@ -37,6 +37,8 @@ jQuery(document).ready(function($) {
     }
     $($('.work-slider > .item-slide').removeClass('active'));
     $($('.work-slider > .item-slide')[slideCounter]).addClass('active');
+    $($('.work-slider > .item-slide')[slideCounter - 1]).fadeOut();
+    $('.work-slider > .item-slide.active').fadeIn();
     slideCounter++;
     console.log(slideCount);
   };
