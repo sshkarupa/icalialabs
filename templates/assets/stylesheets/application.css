@@ -382,8 +382,9 @@ h1, h2, h3, h4 {
   position: relative;
   width: 100%;
   height: 300px;
+  overflow: hidden;
 }
-/* line 355, ../../../sass/application.scss */
+/* line 356, ../../../sass/application.scss */
 .skills .mask {
   background: #FFF;
   height: 300px;
@@ -395,25 +396,27 @@ h1, h2, h3, h4 {
   height: 300px;
   text-align: center;
 }
-/* line 366, ../../../sass/application.scss */
+/* line 367, ../../../sass/application.scss */
 .skills .mask:hover {
   background: #e23a2c;
   color: #FFF;
 }
-/* line 371, ../../../sass/application.scss */
+/* line 372, ../../../sass/application.scss */
 .skills .mask.hide {
   width: 0;
 }
-/* line 375, ../../../sass/application.scss */
+/* line 376, ../../../sass/application.scss */
 .skills .mask .more {
   position: relative;
   z-index: -1;
+  display: none;
 }
-/* line 379, ../../../sass/application.scss */
+/* line 381, ../../../sass/application.scss */
 .skills .mask .more.push-front {
   z-index: 1;
+  display: block;
 }
-/* line 385, ../../../sass/application.scss */
+/* line 388, ../../../sass/application.scss */
 .skills .skill {
   width: 100%;
   position: absolute;
@@ -421,11 +424,11 @@ h1, h2, h3, h4 {
   top: 0px;
   height: 300px;
 }
-/* line 392, ../../../sass/application.scss */
+/* line 395, ../../../sass/application.scss */
 .skills .skill.hide-all {
   display: none;
 }
-/* line 397, ../../../sass/application.scss */
+/* line 400, ../../../sass/application.scss */
 .skills .expand-content {
   background: #e23a2c;
   color: #FFF;
@@ -434,7 +437,7 @@ h1, h2, h3, h4 {
   -webkit-transition: width 1s ease-in-out;
   width: 100%;
 }
-/* line 406, ../../../sass/application.scss */
+/* line 409, ../../../sass/application.scss */
 .skills .fusion {
   background: #000;
   color: #FFF;
@@ -443,7 +446,7 @@ h1, h2, h3, h4 {
   height: 80px;
   text-transform: uppercase;
 }
-/* line 414, ../../../sass/application.scss */
+/* line 417, ../../../sass/application.scss */
 .skills .fusion.circle {
   border-radius: 50%;
   right: 47%;
@@ -456,35 +459,38 @@ h1, h2, h3, h4 {
   z-index: 300;
   line-height: 80px;
   text-align: center;
+  font-size: 12px;
 }
-/* line 427, ../../../sass/application.scss */
+/* line 431, ../../../sass/application.scss */
 .skills .fusion.circle span {
   line-height: normal;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 433, ../../../sass/application.scss */
+/* line 437, ../../../sass/application.scss */
 .skills .fusion.circle.move-left {
   -webkit-transform: translate(600px, -200px);
   -webkit-transform: scale(0.5);
   top: 0;
   right: 0;
+  font-size: 16px;
 }
-/* line 440, ../../../sass/application.scss */
+/* line 445, ../../../sass/application.scss */
 .skills .fusion.circle.move-right {
   /*-webkit-transform: translate(-600px, -200px);*/
   -webkit-transform: scale(0.5);
   top: 0;
   right: 93%;
+  font-size: 24px;
 }
 
-/* line 453, ../../../sass/application.scss */
+/* line 459, ../../../sass/application.scss */
 .testimonials .picture {
   box-sizing: border-box;
   float: left;
   width: 30%;
 }
-/* line 459, ../../../sass/application.scss */
+/* line 465, ../../../sass/application.scss */
 .testimonials .quote {
   background: #FFF;
   box-sizing: border-box;
@@ -492,30 +498,30 @@ h1, h2, h3, h4 {
   padding: 50px 100px;
   width: 70%;
 }
-/* line 466, ../../../sass/application.scss */
+/* line 472, ../../../sass/application.scss */
 .testimonials .quote blockquote {
   color: #e23a2c;
   font-size: 1.5em;
   padding: 80px 0;
 }
-/* line 471, ../../../sass/application.scss */
+/* line 477, ../../../sass/application.scss */
 .testimonials .quote blockquote footer {
   color: #000;
   padding: 10px;
   text-align: left;
 }
 
-/* line 480, ../../../sass/application.scss */
+/* line 486, ../../../sass/application.scss */
 footer {
   color: white;
   padding: 100px;
   text-align: center;
 }
-/* line 485, ../../../sass/application.scss */
+/* line 491, ../../../sass/application.scss */
 footer .contact {
   color: white;
 }
-/* line 488, ../../../sass/application.scss */
+/* line 494, ../../../sass/application.scss */
 footer .contact:visited {
   color: white;
 }

@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  var moveBottom, moveTop, slideCount, slideHeight, slideWidth, sliderUlWidth;
+  var getActive, moveBottom, moveTop, slideCount, slideCounter, slideHeight, slideWidth, sliderUlWidth;
   $('.intro').addClass('animated bounceInUp');
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
@@ -45,9 +45,19 @@ jQuery(document).ready(function($) {
       $("#slider ul.slides").css("top", "");
     });
   };
+  getActive = function() {
+    var slideCounter;
+    if (slideCounter >= slideCount) {
+      slideCounter = 1;
+    } else {
+      slideCounter += 1;
+    }
+    return $('#slider ul.slides li')[slideCount].addClass('active');
+  };
   slideCount = $("#slider ul.slides li").length;
   slideWidth = $("#slider ul.slides li").width();
   slideHeight = $("#slider ul.slides li").height();
+  slideCounter = 0;
   sliderUlWidth = slideCount * slideWidth;
   $("#slider").css({
     width: slideWidth,
@@ -64,6 +74,7 @@ jQuery(document).ready(function($) {
   });
   $("a.control_next").on('click', function(e) {
     moveBottom();
+    getActive();
     e.preventDefault();
   });
 });

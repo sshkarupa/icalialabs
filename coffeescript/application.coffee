@@ -52,9 +52,18 @@ jQuery(document).ready ($) ->
 
     return
 
+  getActive = ->
+    if slideCounter >= slideCount
+      slideCounter = 1
+    else
+      slideCounter += 1
+
+    $('#slider ul.slides li')[slideCount].addClass('active')
+
   slideCount = $("#slider ul.slides li").length
   slideWidth = $("#slider ul.slides li").width()
   slideHeight = $("#slider ul.slides li").height()
+  slideCounter = 0
   sliderUlWidth = slideCount * slideWidth
   $("#slider").css
     width: slideWidth
@@ -72,6 +81,7 @@ jQuery(document).ready ($) ->
 
   $("a.control_next").on 'click', (e) ->
     moveBottom()
+    getActive()
     e.preventDefault()
     return
 
