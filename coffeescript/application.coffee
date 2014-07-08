@@ -7,6 +7,23 @@ jQuery(document).ready ($) ->
     $('.burger > .three').toggleClass 'three-active'
     e.preventDefault()
 
+  $('.mask').on 'click', (e) ->
+    $(@).parents('.skill').toggleClass 'expand-content'
+    $(@).children('.more').toggleClass 'more-content'
+    if $(@).parents('.technology').length > 0
+      $(@).parents('.skill').siblings('.fusion.circle').toggleClass('move-left')
+    else
+      $(@).parents('.skill').siblings('.fusion.circle').toggleClass('move-right')
+
+    if $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-left') || $(@).parents('.skill').siblings('.fusion.circle').hasClass('move-right')
+        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = 'X'
+    else
+        $(@).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "Perfect<br/>Fusion"
+
+
+
+  $('.fusion.circle').on 'click', (e) ->
+
   moveLeft = ->
     $("#slider ul.slides").animate
       left: +slideWidth

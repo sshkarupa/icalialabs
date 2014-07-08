@@ -7,6 +7,21 @@ jQuery(document).ready(function($) {
     $('.burger > .three').toggleClass('three-active');
     return e.preventDefault();
   });
+  $('.mask').on('click', function(e) {
+    $(this).parents('.skill').toggleClass('expand-content');
+    $(this).children('.more').toggleClass('more-content');
+    if ($(this).parents('.technology').length > 0) {
+      $(this).parents('.skill').siblings('.fusion.circle').toggleClass('move-left');
+    } else {
+      $(this).parents('.skill').siblings('.fusion.circle').toggleClass('move-right');
+    }
+    if ($(this).parents('.skill').siblings('.fusion.circle').hasClass('move-left') || $(this).parents('.skill').siblings('.fusion.circle').hasClass('move-right')) {
+      return $(this).parents('.skill').siblings('.fusion.circle')[0].innerHTML = 'X';
+    } else {
+      return $(this).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "Perfect<br/>Fusion";
+    }
+  });
+  $('.fusion.circle').on('click', function(e) {});
   moveLeft = function() {
     $("#slider ul.slides").animate({
       left: +slideWidth
