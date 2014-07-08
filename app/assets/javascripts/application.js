@@ -1,6 +1,9 @@
 jQuery(document).ready(function($) {
   var moveLeft, moveRight, slideCount, slideHeight, slideWidth, sliderUlWidth;
+  $('.intro').addClass('animated bounceInUp');
   $('.burger').on('click', function(e) {
+    $('.menu-overlay').toggleClass('show-menu');
+    $('.menu-content').toggleClass('show-menu animated bounceInDown');
     $('.burger').toggleClass('active');
     $('.burger > .one').toggleClass('one-active');
     $('.burger > .two').toggleClass('hide-two');
@@ -21,7 +24,6 @@ jQuery(document).ready(function($) {
       return $(this).parents('.skill').siblings('.fusion.circle')[0].innerHTML = "Perfect<br/>Fusion";
     }
   });
-  $('.fusion.circle').on('click', function(e) {});
   moveLeft = function() {
     $("#slider ul.slides").animate({
       left: +slideWidth
