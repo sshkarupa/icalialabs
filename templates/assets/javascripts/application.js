@@ -13,6 +13,7 @@ jQuery(document).ready(function($) {
   $('.mask').on('click', function(e) {
     $(this).toggleClass('expand-content');
     $(this).siblings('.mask').toggleClass('hide');
+    $(this).siblings('.mask').children('.skill').toggleClass('hide-all');
     if ($(this).siblings('.technology').length > 0) {
       $(this).siblings('.fusion.circle').toggleClass('move-left');
     } else {

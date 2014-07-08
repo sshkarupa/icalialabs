@@ -15,7 +15,9 @@ jQuery(document).ready ($) ->
     # Toggle class for skills section
   $('.mask').on 'click', (e) ->
     $(@).toggleClass 'expand-content'
+    #$(@).siblings('.mask').css "width", 0
     $(@).siblings('.mask').toggleClass('hide')
+    $(@).siblings('.mask').children('.skill').toggleClass('hide-all')
     if $(@).siblings('.technology').length > 0
       $(@).siblings('.fusion.circle').toggleClass('move-left')
     else
