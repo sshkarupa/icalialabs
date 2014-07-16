@@ -14,24 +14,25 @@ jQuery(document).ready ($) ->
     e.preventDefault()
 
     # Toggle class for skills section
-  $('.mask').on 'click', (e) ->
-    $(@).toggleClass 'expand-content'
+  $('.mask, span.circle').on 'click', (e) ->
+    if $(@).hasClass('mask')
+      mask = $(@)
+    else
+      mask = $(@).siblings('.expand-content')
+    mask.toggleClass 'expand-content'
     #$(@).siblings('.mask').css "width", 0
-    $(@).siblings('.mask').toggleClass('hide')
-    $(@).siblings('.mask').children('.skill').toggleClass('hide-all')
-    $(@).children('.skill').children('.col-2').children('.more').toggleClass('push-front')
-    if $(@).children('.technology').length > 0
-      $(@).siblings('.fusion.circle').toggleClass('move-left')
+    mask.siblings('.mask').toggleClass('hide')
+    mask.siblings('.mask').children('.skill').toggleClass('hide-all')
+    mask.children('.skill').children('.col-2').children('.more').toggleClass('push-front')
+    if mask.children('.technology').length > 0
+      mask.siblings('.fusion.circle').toggleClass('move-left')
     else
-      $(@).siblings('.fusion.circle').toggleClass('move-right')
+      mask.siblings('.fusion.circle').toggleClass('move-right')
 
-    if $(@).siblings('.fusion.circle').hasClass('move-left') || $(@).siblings('.fusion.circle').hasClass('move-right')
-        $(@).siblings('.fusion.circle')[0].innerHTML = 'X'
+    if mask.siblings('.fusion.circle').hasClass('move-left') || $(@).siblings('.fusion.circle').hasClass('move-right')
+        mask.siblings('.fusion.circle')[0].innerHTML = 'X'
     else
-        $(@).siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
-
-  $('.move-left').on 'click', (e) ->
-    $('.mask').removeClass('expand-content')
+        mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
   #Slider functions
   slideCounter = 1
@@ -41,11 +42,11 @@ jQuery(document).ready ($) ->
     if slideCounter >= slideCount
       slideCounter = 0
 
-    $($('.work-slider > .item-slide').removeClass('active'))
-    $($('.work-slider > .item-slide')[slideCounter]).addClass('active')
-    $($('.work-slider > .item-slide')).fadeOut()
+    $($('.work-slider .item-slide').removeClass('active'))
+    $($('.work-slider .item-slide')[slideCounter]).addClass('active')
+    $($('.work-slider .item-slide')).fadeOut()
 
-    $('.work-slider > .item-slide.active').fadeIn()
+    $('.work-slider .item-slide.active').fadeIn()
     slideCounter++
     return
 
@@ -55,12 +56,12 @@ jQuery(document).ready ($) ->
     else
       slideCounter -= 1
 
-    $($('.work-slider > .item-slide').removeClass('active'))
-    $($('.work-slider > .item-slide')[slideCounter]).addClass('active')
+    $($('.work-slider .item-slide').removeClass('active'))
+    $($('.work-slider .item-slide')[slideCounter]).addClass('active')
     console.log(slideCount)
     return
 
-  slideCount = $(".work-slider > .item-slide").length
+  slideCount = $(".work-slider .item-slide").length
 
   $("a.control_prev").on 'click', (e) ->
     updatePrevious()
@@ -73,4 +74,4 @@ jQuery(document).ready ($) ->
     return
 
   return
-$('.work-slider > .item-slide.active').fadeIn()
+$('.work-slider .item-slide.active').fadeIn()

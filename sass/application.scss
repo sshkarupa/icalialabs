@@ -2,6 +2,7 @@
 
 $icalia-red: #e23a2c;
 $white: #f9f9f9;
+$light-gray: #CDCDCD;
 
 * {
   margin: 0px;
@@ -228,6 +229,14 @@ h1, h2, h3, h4 {
     position: relative;
     -webkit-transition: all 0.3s ease;
 
+    &.knowledge {
+      padding: 47px 0;
+    }
+
+    &.engage {
+      padding: 51px 0;
+    }
+
     .icon {
       -webkit-transition: all 0.3s ease;
       margin-bottom: 35px;
@@ -271,13 +280,14 @@ h1, h2, h3, h4 {
 			color: rgba(0,0,0,0.6);
 			font-size: 1.5em;
 			margin-bottom: 50px;
+      padding-top: 40px;
 	}
 
 	.item-slide {
 		padding: 100px 0px;
     display: none;
 		background-position: 80%;
-		background-size: 450px;
+		background-size: 430px;
 		height: 600px;
 		
 		h3 {
@@ -320,7 +330,7 @@ h1, h2, h3, h4 {
       /*display: block;*/
     }
 
-		h3 {color: #fff;font-size: 2em;}
+		h3 {color: #fff; font-size: 2em;}
 	}
 }
 
@@ -340,18 +350,17 @@ h1, h2, h3, h4 {
 .skills {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 500px;
   overflow: hidden;
 
   .mask {
     background: #FFF;
-    height: 300px;
     -webkit-transition: width 1s ease-in-out;
     width: 50%;
     cursor: pointer;
     float: left;
     display: inline-block;
-    height: 300px;
+    height: 500px;
     text-align: center;
 
     &:hover {
@@ -364,9 +373,10 @@ h1, h2, h3, h4 {
     }
 
     .more {
-      position: relative;
-      z-index: -1;
+      position: absolute;
       display: none;
+      top: 50%;
+      z-index: -1;
 
       &.push-front {
         z-index: 1;
@@ -376,14 +386,22 @@ h1, h2, h3, h4 {
   }
 
   .skill {
-    width: 100%;
+    margin-top: -12.5%;
     position: absolute;
+    top: 50%;
     -webkit-transition: width 1s ease-in-out;
-    top: 0px;
-    height: 300px;
+    width: 100%;
 
     &.hide-all {
       display: none;
+    }
+
+    h4 {
+      padding: 20px 0;
+    }
+
+    .tagline {
+      color: $light-gray;
     }
   }
 
@@ -425,6 +443,7 @@ h1, h2, h3, h4 {
       }
 
       &.move-left {
+        cursor: pointer;
         -webkit-transform: translate(600px, -200px);
         -webkit-transform: scale(.5);
         top: 0;
@@ -433,7 +452,7 @@ h1, h2, h3, h4 {
       }
 
       &.move-right {
-        /*-webkit-transform: translate(-600px, -200px);*/
+        cursor: pointer;
         -webkit-transform: scale(.5);
         top:0;
         right: 93%;
@@ -445,12 +464,12 @@ h1, h2, h3, h4 {
 //########################Testimonials###########
 
 .testimonials {
-	height: 600px;
 	background: #fff;
 	overflow: hidden;
 
   .picture {
     box-sizing: border-box;
+    height: 548px;
     float: left;
     width: 30%;
 
@@ -464,7 +483,7 @@ h1, h2, h3, h4 {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 600px 64px;
+    border-width: 0 0 548px 64px;
     border-color: transparent transparent #ffffff transparent;
     left: 25%;
     position: absolute;
@@ -478,7 +497,7 @@ h1, h2, h3, h4 {
   .quote {
     box-sizing: border-box;
     float: right;
-    padding: 130px 100px;
+    padding: 82px 100px;
     width: 70%;
 
     blockquote {
