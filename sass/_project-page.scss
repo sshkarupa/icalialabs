@@ -1,0 +1,134 @@
+.project-page {
+  height: 100%;
+
+  .project-container {
+    height: 100%;
+  }
+  background: #000;
+  color: #FFF;
+
+  .header {
+    height: 100%;
+    margin: 0 auto;
+    min-height: 560px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    .bg-img, .bg-img::after, .content > div {
+      @include transition-property(transform);
+      @include transition-duration(0.5s);
+    }
+
+    .bg-img {
+      @include backface-visibility(hidden);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+
+      &::after {
+        @include background-image(linear-gradient(to bottom,
+        rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%));
+        content: '';
+        height: 101%;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      img {
+        display: block;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .title {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 1.25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    @include transform(translateX(-50%) translateY(-50%));
+    text-align: left;
+    z-index: 1000;
+
+    .project-name {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4em;
+      font-weight: 800;
+      line-heigh: 1;
+      margin: 0 auto;
+      padding: 0 0 0 0.2em;
+      @include transition(color 0.5s);
+    }
+
+    .subline {
+      color: $icalia-red;
+      font-size: 1.75em;
+      margin: 0 auto;
+      opacity: 0;
+      padding: 0 0 0.6em;
+      @include transform(translateX(-150px));
+      @include transition(transform, opacity);
+      @include transition-duration(0.5s);
+    }
+  }
+
+  .trigger {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    z-index: 5000;
+    display: block;
+    margin-left: -0.5em;
+    padding: 0;
+    width: 1em;
+    height: 1em;
+    border: none;
+    background: transparent;
+    color: transparent;
+    font-size: 2em;
+    cursor: pointer; 
+
+    &::before {
+      position: absolute;
+      bottom: 100%;
+      left: -100%;
+      padding: 0.8em;
+      width: 300%;
+      color: #fff;
+      content: attr(data-info);
+      font-size: 0.35em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  }
+
+  .content {
+    margin: 0 auto;
+    padding: 0 0 3em;
+    position: relative;
+    z-index: 1000;
+
+    > div {
+      margin: -80px auto 0;
+      max-width: 900px;
+      padding: 0 1.25em;
+      opacity: 0;
+      @include transform(translateY(350px));
+    }
+  }
+}
