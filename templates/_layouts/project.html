@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="project-page">
+    <head>
+        <meta charset="utf-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta property="og:title" content="iAcquire’s awesome blog"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content="http://blog.iacquire.com"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="/assets/stylesheets/application.css">
+        <link rel="stylesheet" href="/assets/stylesheets/animate.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="project-page">
+    <div class="project-container">
+    <header class="main-menu header">
+      <div class="bg-img">
+        <img src="{{page.bg-image}}" alt="{{page.title}}" >
+      </div>
+        <img src="/assets/img/logo.png" alt="" class="logo">
+        <div class="burger">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+      <div class="title">
+        <h1 class="project-name">{{ page.title }}</h1>
+        <p class="subline"> {{ page.subtitle }} </p>
+        <p class="subline"> Aplicacion iOS </p>
+        <p class="subline"> En nuestras manos </p>
+      </div>
+
+      </header>
+      <nav class="menu-overlay">
+        <div class="container">
+          <div class="menu-content">
+            <h4 class="menu-title">Menu</h4>
+            <a href="#">Home</a>
+            <a href="#">Culture</a>
+            <a href="#">Work</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+            <div class="social-info">
+              <a href="#">Twitter</a>
+              <a href="#">Github</a>
+              <a href="#">Facebook</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <button class="trigger"></button>
+
+      <article class="content container">
+        <div>
+          {{ content }}
+        </div>
+      </article>
+    </div>
+    <footer class="footer {{page.type}}">
+        <div class="container">
+          <a href="#" class="contact">Do you have an awesome idea? Drink a beer with us.</a>
+          <p><small> Copyright 2014 </small></p>
+        </div>
+      </footer>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/application.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/classie.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/modal.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.kinetic.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src="//localhost:35729/livereload.js"></script>
+    </body>
+</html>
