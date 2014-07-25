@@ -54,6 +54,17 @@ module.exports = function(grunt) {
       }
     },
 
+    uncss: {
+      dist: {
+        options: {
+          ignore: ['#added_at_runtime', '.created_by_jQuery']
+        },
+        files: {
+          'dist/css/tidy.css': ['app/index.html', 'app/team.html']
+        }
+      }
+    },
+
     watch: {
       options: {
         spawn: false
@@ -101,7 +112,6 @@ module.exports = function(grunt) {
       },
     }
 
-      
   });
 
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
@@ -118,4 +128,6 @@ module.exports = function(grunt) {
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
 
+  // Uncss 
+  grunt.loadNpmTasks('grunt-uncss');
 }
