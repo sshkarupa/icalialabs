@@ -1,0 +1,40 @@
+.project {
+  background: #4F72A8;
+  padding: 100px;
+  height: 400px;
+
+  &.row { margin: 0; }
+
+  .project-tag, .project-name, .client-tag, .client, .project-link, .done {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+  }
+
+  .project-name { font-size: 3em; }
+
+  .project-tag, .client-tag, .project-link { font-weight: 200; }
+
+  .project-name, .client, .done { color: #FFF; }
+
+  .client { display: inline-block; }
+
+  .project-link {
+    color: $dark-gray;
+    text-decoration: none;
+  }
+
+  .project-image {
+    line-height: 0;
+    padding: 0;
+    position: relative;
+    text-align: right;
+
+    .project-img { max-height: 300px; }
+  }
+
+  .done {
+    position: absolute;
+    right: 0;
+    top: 40%;
+  }
+}
