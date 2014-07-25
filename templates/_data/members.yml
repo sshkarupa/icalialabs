@@ -1,0 +1,32 @@
+- name: Alicia Gonzalez
+  id: aliciagonzalez
+  title: Developer
+  picture: /assets/img/alicia.jpg
+  networks:
+    - link: http://twitter.com/alicia_catalina
+      name: twitter
+    - link: http://github.com/aliciacatalina
+      name: github
+
+- name: Eduardo Higareda
+  id: eldelentes
+  title: Designer
+  picture: /assets/img/lentes.jpg
+  networks:
+    - link: http://twitter.com/eldelentes
+      name: twitter
+
+- name: Ana Daniel
+  title: Developer
+  id: ana
+  picture: /assets/img/ana.jpg
+
+- name: Scarlett Garza
+  title: Designer
+  id: scarlett
+  picture: /assets/img/scarlett.jpg
+
+- name: Abraham Kuri
+  title: Developer
+  id: kuri
+  picture: /assets/img/kuri.jpg
