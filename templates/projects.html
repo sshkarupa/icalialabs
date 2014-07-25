@@ -1,0 +1,27 @@
+---
+layout: application
+title: Icalia Labs
+---
+
+<section class="info">
+  <h4 class="section-name capital">Work</h4>
+  <h1 class="section-tag">We make things that impact people.</h1>
+  <p class="section-description">Development shop focused on <span class="red">Ruby On Rails</span> and <span class="red">iOS</span></p>
+</section>
+
+{% for project in site.data.projects %}
+  <section class="project {{project.name}} row clearfix">
+    <div class="col-6 vertical-align">
+      <h4 class="light-gray project-tag">Proyecto-</h4>
+      <h1 class="project-name">{{project.name}}</h1>
+      <h4 class="light-gray client-tag">Clientes-</h4>
+      <h3 class="client">{{project.client}}</h3>
+      <a href="#" class="project-link">Ver Proyecto</a>
+    </div>
+
+    <div class="col-6 project-image">
+      <img src="{{ project.image }}" alt="" class="project-img" />
+      <h3 class="done align-right">{{project.done}}</h3>
+    </div>
+  </section>
+{% endfor %}
