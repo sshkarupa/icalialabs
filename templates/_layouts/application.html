@@ -11,7 +11,7 @@
         <meta property="og:image" content=""/>
         <meta property="og:url" content="http://blog.iacquire.com"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Icalia Labs</title>
+        <title>{{ page.title }}</title>
 
         <link rel="stylesheet" href="/assets/stylesheets/application.css">
         <link rel="stylesheet" href="/assets/stylesheets/animate.css">
@@ -19,7 +19,7 @@
     </head>
     <body>
       <header class="main-menu">
-        <img src="assets/img/logo.png" alt="" class="logo">
+        <img src="/assets/img/logo.png" alt="" class="logo">
         <div class="burger">
           <div class="one"></div>
           <div class="two"></div>
@@ -43,111 +43,10 @@
           </div>
         </div>
       </nav>
-      <section class="intro">
-        <div class="container">
-          <div class="intro-content">
-            <h4 class="hello-text">Hello</h4>
-            <h1 class="tagline">We solve problems with Digital Products</h1>
-            <p>We focus on agile development & asthetics design.</p>
-            <button class="play-video-btn">Play Video</button>
-          </div>
-        </div>
-      </section>
 
-      <section class="advantages">
-        <h4 class="section-title">Our Advantages</h4>
-        <div class="container">
-          <div class="card engage">
-            <img src="assets/img/engage.png" alt="" class="icon">
-            <h4 class="card-title">Engage.</h4>
-            <p>We create software that engages with people.</p>
-            <a class="card-link" href="#">See More</a>
-          </div>
-          <div class="card experience">
-            <img src="assets/img/experience.png" alt="" class="icon">
-            <h4 class="card-title">Experience.</h4>
-            <p>We create software that engages with people.</p>
-            <a class="card-link" href="#">See More</a>
-          </div>
-          <div class="card knowledge">
-            <img src="assets/img/knowledge.png" alt="" class="icon">
-            <h4 class="card-title">Knowledge.</h4>
-            <p>We create software that engages with people.</p>
-            <a class="card-link" href="#">See More</a>
-          </div>
-        </div>
-      </section>
+    {{ content }}
 
-      <section class="work">
-        <div class="work-slider">
-          <a href="#" class="control_next"></a>
-          <a href="#" class="control_prev"></a>
-          <h4>Our Work</h4>
-          <div class="item-slide pikster active">
-            <h3>Pikster</h3>
-            <p>Helping people gather money easily</p>
-            <button class="play-video-btn"> See our work</button>
-          </div>
-          <div class="item-slide">
-            <h3>Moneypool</h3>
-            <p>Helping people gather money easily</p>
-            <button class="play-video-btn"> See our work</button>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="skills clearfix">
-        <div class="mask">
-          <div class="technology skill">
-            <div class="col-2 text-center">
-              <img class="badge" src="../assets/img/icon-skill.png" alt="" />
-              <h4>Technology</h4>
-              <p class="tagline">The way we make the change</p>
-            </div>
-            <div class="col-2">
-              <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatibus eum in nemo placeat est eos tempora sequi voluptatum molestias a repellat deleniti consequuntur dolorum architecto vitae eaque doloremque nostrum.</p>
-            </div>
-          </div>
-        </div>
-
-        <span class="fusion circle"><span>Perfect Fusion</span></span>
-
-        <div class="mask">
-          <div class="aesthetics skill">
-            <div class="col-2 text-center">
-              <img class="badge" src="../assets/img/icon-skill.png" alt="" />
-              <h4>Aesthetics</h4>
-              <p class="tagline">The way we make the change</p>
-
-            </div>
-
-            <div class="col-2">
-
-              <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatibus eum in nemo placeat est eos tempora sequi voluptatum molestias a repellat deleniti consequuntur dolorum architecto vitae eaque doloremque nostrum.</p>
-            </div>
-          </div>
-        </section>
-
-      <section class="testimonials clearfix">
-        <div class="picture">
-          <img src="assets/img/ginger.png" alt="" />
-        </div>
-        <div class="fake-skew"></div>
-        <div class="quote">
-          <h4>Testimonials</h4>
-          <blockquote>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-            </p>
-            <footer>
-              <span>Eduardo Higareda / <strong>Pikster</strong></span>
-            </footer>
-          </blockquote>
-          </div>
-      </section>
-
-      <footer>
+    <footer class="footer {{page.type}}">
         <div class="container">
           <a href="#" class="contact">Do you have an awesome idea? Drink a beer with us.</a>
           <p><small> Copyright 2014 </small></p>
@@ -155,6 +54,9 @@
       </footer>
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
           <script type="text/javascript" charset="utf-8" src="/assets/javascripts/application.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/classie.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/modal.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.kinetic.min.js"></script>
           <script type="text/javascript" charset="utf-8" src="//localhost:35729/livereload.js"></script>
     </body>
 </html>
