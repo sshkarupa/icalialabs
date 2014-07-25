@@ -19,7 +19,7 @@
     </head>
     <body>
       <header class="main-menu">
-        <img src="assets/img/logo.png" alt="" class="logo">
+        <img src="/assets/img/logo.png" alt="" class="logo">
         <div class="burger">
           <div class="one"></div>
           <div class="two"></div>
@@ -43,7 +43,8 @@
           </div>
         </div>
       </nav>
-      <section class="intro">
+
+          <section class="intro row">
         <div class="container">
           <div class="intro-content">
             <h4 class="hello-text">Hello</h4>
@@ -54,22 +55,22 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages row">
         <h4 class="section-title">Our Advantages</h4>
-        <div class="container">
-          <div class="card engage">
+        <div class="container row clearfix">
+          <div class="card engage col-4">
             <img src="assets/img/engage.png" alt="" class="icon">
             <h4 class="card-title">Engage.</h4>
             <p>We create software that engages with people.</p>
             <a class="card-link" href="#">See More</a>
           </div>
-          <div class="card experience">
+          <div class="card experience col-4">
             <img src="assets/img/experience.png" alt="" class="icon">
             <h4 class="card-title">Experience.</h4>
             <p>We create software that engages with people.</p>
             <a class="card-link" href="#">See More</a>
           </div>
-          <div class="card knowledge">
+          <div class="card knowledge col-4">
             <img src="assets/img/knowledge.png" alt="" class="icon">
             <h4 class="card-title">Knowledge.</h4>
             <p>We create software that engages with people.</p>
@@ -78,18 +79,18 @@
         </div>
       </section>
 
-      <section class="work">
+      <section class="work row">
         <div class="work-slider">
           <a href="#" class="control_next"></a>
           <a href="#" class="control_prev"></a>
-          <h4>Our Work</h4>
+          <h4 class="our-work">Our Work</h4>
           <div class="item-slide pikster active">
-            <h3>Pikster</h3>
+            <h3 class="work-title">Pikster</h3>
             <p>Helping people gather money easily</p>
             <button class="play-video-btn"> See our work</button>
           </div>
           <div class="item-slide">
-            <h3>Moneypool</h3>
+            <h3 class="work-title">Moneypool</h3>
             <p>Helping people gather money easily</p>
             <button class="play-video-btn"> See our work</button>
           </div>
@@ -97,15 +98,15 @@
         </div>
       </section>
 
-      <section class="skills clearfix">
-        <div class="mask">
-          <div class="technology skill">
-            <div class="col-2 text-center">
+      <section class="skills clearfix row">
+        <div class="mask col-6">
+          <div class="technology skill row">
+            <div class="col-6 text-center">
               <img class="badge" src="../assets/img/icon-skill.png" alt="" />
               <h4>Technology</h4>
               <p class="tagline">The way we make the change</p>
             </div>
-            <div class="col-2">
+            <div class="col-6">
               <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatibus eum in nemo placeat est eos tempora sequi voluptatum molestias a repellat deleniti consequuntur dolorum architecto vitae eaque doloremque nostrum.</p>
             </div>
           </div>
@@ -113,41 +114,43 @@
 
         <span class="fusion circle"><span>Perfect Fusion</span></span>
 
-        <div class="mask">
-          <div class="aesthetics skill">
-            <div class="col-2 text-center">
+        <div class="mask col-6">
+          <div class="aesthetics skill row">
+            <div class="col-6 text-center">
               <img class="badge" src="../assets/img/icon-skill.png" alt="" />
               <h4>Aesthetics</h4>
               <p class="tagline">The way we make the change</p>
 
             </div>
 
-            <div class="col-2">
+            <div class="col-6">
 
               <p class="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptatibus eum in nemo placeat est eos tempora sequi voluptatum molestias a repellat deleniti consequuntur dolorum architecto vitae eaque doloremque nostrum.</p>
             </div>
           </div>
         </section>
 
-      <section class="testimonials clearfix">
-        <div class="picture">
+      <section class="testimonials row clearfix">
+        <div class="picture col-3">
           <img src="assets/img/ginger.png" alt="" />
+          <div class="fake-skew"></div>
         </div>
-        <div class="fake-skew"></div>
-        <div class="quote">
+        <div class="quote col-9">
           <h4>Testimonials</h4>
           <blockquote>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
             </p>
-            <footer>
+            <footer class="cite">
               <span>Eduardo Higareda / <strong>Pikster</strong></span>
             </footer>
           </blockquote>
           </div>
       </section>
 
-      <footer>
+
+
+    <footer class="footer index">
         <div class="container">
           <a href="#" class="contact">Do you have an awesome idea? Drink a beer with us.</a>
           <p><small> Copyright 2014 </small></p>
@@ -155,6 +158,9 @@
       </footer>
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
           <script type="text/javascript" charset="utf-8" src="/assets/javascripts/application.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/classie.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/modal.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.kinetic.min.js"></script>
           <script type="text/javascript" charset="utf-8" src="//localhost:35729/livereload.js"></script>
     </body>
 </html>
