@@ -1,8 +1,12 @@
+@import 'variables';
+@import 'media_queries';
 @import 'grid';
+@import 'selectors';
+@import 'header';
+@import 'team';
+@import 'projects';
+@import 'project-page';
 
-$icalia-red: #e23a2c;
-$white: #f9f9f9;
-$light-gray: #CDCDCD;
 
 * {
   margin: 0px;
@@ -25,6 +29,47 @@ h1, h2, h3, h4 {
   clear: both;
 }
 
+.align-right {
+  text-align: right;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.red {
+  color: $icalia-red;
+}
+
+.white-button {
+  background: $white;
+  border: 1px solid $icalia-red;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.capital {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-align {
+  @include vertical-align;
+}
+
+// ############ Custom Type ##################
+
+@font-face {
+  font-family: DeliciousRoman;
+  src: url('../fonts/Circular.otf');
+  font-weight:400;
+}
+
 // ######## Menu ############
 
 .menu-overlay {
@@ -40,14 +85,11 @@ h1, h2, h3, h4 {
 
   .menu-content {
     text-align: center;
-    color: #fff;
+    color: $white;
     padding: 100px 0px;
     display: none;
   }
 
-  .text-center {
-    text-align: center;
-  }
 
   a {
     font-size: 5em;
@@ -58,7 +100,7 @@ h1, h2, h3, h4 {
     margin: 20px 0px;
 
     &:hover {
-      -webkit-transform: scale(1.3);
+      @include transform(scale(1.3));
     }
   }
 
@@ -101,12 +143,13 @@ h1, h2, h3, h4 {
     .one, .two, .three {
       width: 45px;
       height: 5px;
-      background: #e23a2c;
+      background: $icalia-red;
       margin: 5px;
       position: relative;
     }
 
     &.active {
+      /* Add mixin */
       -webkit-animation: spin .5s ease;
     }
 
@@ -134,7 +177,7 @@ h1, h2, h3, h4 {
 }
 
 .one-active {
-  -webkit-transform: rotate(45deg);
+  @include transform(rotate(45deg));
   background: #fff;
 }
 
@@ -144,10 +187,10 @@ h1, h2, h3, h4 {
 
 
 .three-active {
-  -webkit-transform: rotate(-45deg);
+  @include transform(rotate(-45deg));
   right: 0px;
   top: -20px;
-  background: #fff ;
+  background: #FFF;
 }
 
 
@@ -164,7 +207,7 @@ h1, h2, h3, h4 {
   }
 
   .hello-text {
-    color: #e23a2c;
+    color: $icalia-red;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 600;
@@ -172,7 +215,7 @@ h1, h2, h3, h4 {
   }
 
   .tagline {
-    color: #e23a2c;
+    color: $icalia-red;
     font-size: 48px;
     margin: 45px;
     display: block;
@@ -187,23 +230,23 @@ h1, h2, h3, h4 {
 
   .play-video-btn {
     display: inline-block;
-    color: #e23a2c;
-    border: 4px solid #e23a2c;
+    color: $icalia-red;
+    border: 4px solid $icalia-red;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 40px;
     position: relative;
     background: none;
-    -webkit-transition: all 0.3s ease;
+    @include transition(all 0.3s ease);
     font-size: 1.1em;
     letter-spacing: 3px;
 
     &:hover {
-      background: #e23a2c;
-      color: #fff;
+      background: $icalia-red;
+      color: #FFF;
       border-radius: 100px;
       top: -5px;
-      -webkit-transform: scale(1.1);
+      @include transform(scale(1.1));
       cursor: pointer;
     }
   }
@@ -213,21 +256,26 @@ h1, h2, h3, h4 {
 
 .advantages {
   text-align: center;
+  margin-bottom: 50px;
 
   .title-advantages {
-    color: #fff;
+    color: #FFF;
     margin-bottom: 50px;
   }
 
   .card {
-    width: 33%;
     display: inline-block;
     vertical-align: top;
-    background: #fff;
+    background: #FFF;
     border-radius: 3px;
     padding: 50px 0px;
     position: relative;
-    -webkit-transition: all 0.3s ease;
+    margin: 0 10px 0 0;
+    @include transition(all 0.3s ease);
+
+    &.col-4 {
+      width: 32%;
+    }
 
     &.knowledge {
       padding: 47px 0;
@@ -244,7 +292,7 @@ h1, h2, h3, h4 {
     }
 
     .card-title {
-      color: #e23a2c;
+      color: $icalia-red;
       margin-bottom: 65px;
       display: block;
       font-size: 22px;
@@ -260,7 +308,7 @@ h1, h2, h3, h4 {
     }
 
     .card-link {
-      color: #e23a2c;
+      color: $icalia-red;
       font-size: 22px;
       font-weight: 600;
     }
@@ -276,7 +324,7 @@ h1, h2, h3, h4 {
 	opacity: 1;
 	text-align: center;
 
-	h4 {
+	.our-work {
 			color: rgba(0,0,0,0.6);
 			font-size: 1.5em;
 			margin-bottom: 50px;
@@ -290,8 +338,8 @@ h1, h2, h3, h4 {
 		background-size: 430px;
 		height: 600px;
 		
-		h3 {
-			color: #fff;
+		.work-title {
+			color: #FFF;
 			font-size: 3em;
 			text-decoration: underline;
 		}
@@ -305,23 +353,23 @@ h1, h2, h3, h4 {
 		}
 
 		.play-video-btn {
-		    display: inline-block;
-		    color: #fff;
-		    border: 1px solid #fff;
-		    border-radius: 3px;
-		    text-decoration: none;
-		    text-transform: uppercase;
-		    padding: 15px 40px;
-		    position: relative;
 		    background: none;
-		    -webkit-transition: all 0.3s ease;
+		    border: 1px solid #FFF;
+		    @include border-radius(3px);
+		    color: #FFF;
+		    display: inline-block;
 		    font-size: 1.1em;
 		    letter-spacing: 3px;
+		    padding: 15px 40px;
+		    position: relative;
+		    text-decoration: none;
+		    text-transform: uppercase;
+        @include transition(all 0.3s ease);
 
 		    &:hover {
-		      border-radius: 100px;
+          @include border-radius(100px);
 		      top: -5px;
-		      -webkit-transform: scale(1.1);
+          @include transform(scale(1.1));
 		      cursor: pointer;
 		    }
   		}
@@ -338,13 +386,7 @@ h1, h2, h3, h4 {
 	background: url('../img/pikster.png') no-repeat; 
 }
 
-// ############ Custom Type ##################
 
-@font-face {
-  font-family: DeliciousRoman;
-  src: url('../fonts/Circular.otf');
-  font-weight:400;
-}
 
 //#################### Skills ##################################
 .skills {
@@ -355,12 +397,12 @@ h1, h2, h3, h4 {
 
   .mask {
     background: #FFF;
-    -webkit-transition: width 1s ease-in-out;
-    width: 50%;
+    @include transition(width 1s ease-in-out);
     cursor: pointer;
     float: left;
     display: inline-block;
     height: 500px;
+    padding: 0;
     text-align: center;
 
     &:hover {
@@ -389,7 +431,7 @@ h1, h2, h3, h4 {
     margin-top: -12.5%;
     position: absolute;
     top: 50%;
-    -webkit-transition: width 1s ease-in-out;
+    @include transition(width 1s ease-in-out);
     width: 100%;
 
     &.hide-all {
@@ -410,8 +452,13 @@ h1, h2, h3, h4 {
     color: #FFF;
     display: block;
     opacity: 1;
-    -webkit-transition: width 1s ease-in-out;
+    @include transition(width 1s ease-in-out);
     width: 100%;
+
+    .more {
+      display: block;
+      z-index: 1;
+    }
   }
 
   .fusion {
@@ -427,10 +474,7 @@ h1, h2, h3, h4 {
       right: 47%;
       position: absolute;
       top: 50%;
-      -webkit-transition: 1s ease-in-out;
-      -moz-transition: 1s ease-in-out;
-      -o-transition: 1s ease-in-out;
-      transition: 1s ease-in-out;
+      @include transition(1s ease-in-out);
       z-index: 300;
       line-height: 80px;
       text-align: center;
@@ -444,8 +488,8 @@ h1, h2, h3, h4 {
 
       &.move-left {
         cursor: pointer;
-        -webkit-transform: translate(600px, -200px);
-        -webkit-transform: scale(.5);
+        @include transform(translate(600px, -200px));
+        @include transform(scale(0.5));
         top: 0;
         right: 0;
         font-size: 16px;
@@ -453,7 +497,7 @@ h1, h2, h3, h4 {
 
       &.move-right {
         cursor: pointer;
-        -webkit-transform: scale(.5);
+        @include transform(scale(0.5));
         top:0;
         right: 93%;
         font-size: 24px;
@@ -465,29 +509,31 @@ h1, h2, h3, h4 {
 
 .testimonials {
 	background: #fff;
-	overflow: hidden;
+
+  &.row {
+    margin: 0;
+  }
 
   .picture {
-    box-sizing: border-box;
-    height: 548px;
-    float: left;
-    width: 30%;
+    padding: 0;
+    position: relative;
 
     img {
-    	width: 100%;
+      display: block;
+      width: 100%;
     }
-
   }
 
   .fake-skew {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 548px 64px;
+    border-width: 0 0 683px 64px;
     border-color: transparent transparent #ffffff transparent;
-    left: 25%;
+    display: inline;
+    right: 0;
     position: absolute;
-
+    top: 0;
   }
 
   h4 {
@@ -498,7 +544,6 @@ h1, h2, h3, h4 {
     box-sizing: border-box;
     float: right;
     padding: 82px 100px;
-    width: 70%;
 
     blockquote {
 
@@ -509,7 +554,7 @@ h1, h2, h3, h4 {
 		font-weight: 100;
      }
 
-      footer {
+      .cite {
         color: #000;
         padding: 0px 10px;
         text-align: left;
@@ -518,16 +563,26 @@ h1, h2, h3, h4 {
   }
 }
 
-footer {
-  color: white;
+.footer {
+  background: #FFF;
+  color: $icalia-red;
   padding: 100px;
   text-align: center;
 
   .contact {
-    color: white;
+    color: $icalia-red;
+  }
 
-    &:visited {
-      color: white;
+  &.index {
+    background: transparent;
+    color: #FFF;
+
+    .contact {
+      color: #FFF;
+
+      &:visited {
+        color: #FFF;
+      }
     }
   }
 }
@@ -587,11 +642,13 @@ footer {
     left: -70%;
   }
 }
-@-webkit-keyframes move-left {
-  50% {
-    /*-webkit-transform: translateX(300px);*/
-    /*-webkit-transform: translateY(-300px);*/
-    /*left: 0;*/
-    /*top: 0;*/
-  }
+
+
+// ************************** Info banner ***********************************//
+.info {
+  background: #FFF;
+  width: 100%;
+  height: 300px;
 }
+
+

@@ -1,4 +1,9 @@
 jQuery(document).ready(function($) {
+
+//********** Horizontal scroll on team page *********************//
+  $('.team').kinetic();
+
+//********** Animation for burger *********************//
   var slideCount, slideCounter, updateNext, updatePrevious;
   $('.intro').addClass('animated bounceInUp');
   $('.burger').on('click', function(e) {
@@ -10,6 +15,7 @@ jQuery(document).ready(function($) {
     $('.burger > .three').toggleClass('three-active');
     return e.preventDefault();
   });
+//********** Animation skills on home page *********************//
   $('.mask, span.circle').on('click', function(e) {
     var mask;
     if ($(this).hasClass('mask')) {
@@ -66,3 +72,4 @@ jQuery(document).ready(function($) {
 });
 
 $('.work-slider .item-slide.active').fadeIn();
+
