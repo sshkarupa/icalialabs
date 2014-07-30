@@ -14,7 +14,7 @@
 }
 
 body {
-  background: $icalia-red;
+  background: $primary-color;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -38,13 +38,21 @@ h1, h2, h3, h4 {
 }
 
 .red {
-  color: $icalia-red;
+  color: $primary-color;
 }
 
 .white-button {
-  background: $white;
-  border: 1px solid $icalia-red;
+  background: $secondary-color;
+  border: 1px solid $primary-color;
   border-radius: 2px;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.red-button {
+  background: $primary-color;
+  color: #FFF;
   display: inline-block;
   padding: 20px;
   text-decoration: none;
@@ -85,7 +93,7 @@ h1, h2, h3, h4 {
 
   .menu-content {
     text-align: center;
-    color: $white;
+    color: $secondary-color;
     padding: 100px 0px;
     display: none;
   }
@@ -143,7 +151,7 @@ h1, h2, h3, h4 {
     .one, .two, .three {
       width: 45px;
       height: 5px;
-      background: $icalia-red;
+      background: $primary-color;
       margin: 5px;
       position: relative;
     }
@@ -199,7 +207,7 @@ h1, h2, h3, h4 {
 .intro {
   margin: 100px;
   text-align: center;
-  background: url('../img/bg-intro.png') center bottom  no-repeat $white;
+  background: url('../img/bg-intro.png') center bottom  no-repeat $secondary-color;
   position: relative;
 
   .intro-content {
@@ -207,7 +215,7 @@ h1, h2, h3, h4 {
   }
 
   .hello-text {
-    color: $icalia-red;
+    color: $primary-color;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 600;
@@ -215,7 +223,7 @@ h1, h2, h3, h4 {
   }
 
   .tagline {
-    color: $icalia-red;
+    color: $primary-color;
     font-size: 48px;
     margin: 45px;
     display: block;
@@ -230,8 +238,8 @@ h1, h2, h3, h4 {
 
   .play-video-btn {
     display: inline-block;
-    color: $icalia-red;
-    border: 4px solid $icalia-red;
+    color: $primary-color;
+    border: 4px solid $primary-color;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 40px;
@@ -242,7 +250,7 @@ h1, h2, h3, h4 {
     letter-spacing: 3px;
 
     &:hover {
-      background: $icalia-red;
+      background: $primary-color;
       color: #FFF;
       border-radius: 100px;
       top: -5px;
@@ -292,7 +300,7 @@ h1, h2, h3, h4 {
     }
 
     .card-title {
-      color: $icalia-red;
+      color: $primary-color;
       margin-bottom: 65px;
       display: block;
       font-size: 22px;
@@ -308,7 +316,7 @@ h1, h2, h3, h4 {
     }
 
     .card-link {
-      color: $icalia-red;
+      color: $primary-color;
       font-size: 22px;
       font-weight: 600;
     }
@@ -406,7 +414,7 @@ h1, h2, h3, h4 {
     text-align: center;
 
     &:hover {
-      background: $icalia-red;
+      background: $primary-color;
       color: #FFF;
     }
 
@@ -448,7 +456,7 @@ h1, h2, h3, h4 {
   }
 
   .expand-content {
-    background: $icalia-red;
+    background: $primary-color;
     color: #FFF;
     display: block;
     opacity: 1;
@@ -548,7 +556,7 @@ h1, h2, h3, h4 {
     blockquote {
 
      p {
-     	color: $icalia-red;
+     	color: $primary-color;
 		font-size: 2em;
 		padding: 80px 0;
 		font-weight: 100;
@@ -565,12 +573,14 @@ h1, h2, h3, h4 {
 
 .footer {
   background: #FFF;
-  color: $icalia-red;
+  color: $primary-color;
   padding: 100px;
   text-align: center;
+  text-transform: uppercase;
+  font-size: .75em;
 
   .contact {
-    color: $icalia-red;
+    color: $primary-color;
   }
 
   &.index {
@@ -579,6 +589,7 @@ h1, h2, h3, h4 {
 
     .contact {
       color: #FFF;
+      text-decoration: none;
 
       &:visited {
         color: #FFF;
