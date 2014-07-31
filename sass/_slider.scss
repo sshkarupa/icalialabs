@@ -1,14 +1,17 @@
 .work-slider {
-  background: #9f2b20;
+  background: $primary-color;
   text-align: center;
-  margin: 100px auto;
   position: relative;
-  opacity: 0.5;
   -webkit-transition: all 0.3s ease;
   overflow: hidden;
+  opacity: 0.5;
 
   .container {
     width: 100%;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 
   a.control_prev, a.control_next {
@@ -19,7 +22,7 @@
     padding: 4% 3%;
     width: auto;
     height: auto;
-    background: #2a2a2a;
+    background: rgba(0,0,0,0.2);
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -31,101 +34,76 @@
   a.control_prev:hover, a.control_next:hover {
     opacity: 1;
     -webkit-transition: all 0.2s ease;
-  }
-
-  a.control_prev {
-    border-radius: 0 2px 2px 0;
+    background: rgba(0,0,0,0.5);
   }
 
   a.control_next {
     right: 0;
-    border-radius: 2px 0 0 2px;
   }
-    .slides {
-      position: relative;
-      margin: 0;
-      padding: 0;
-      height: 600px;
-      list-style: none;
+  
+  .bullets {
+    list-style: none;
 
-
-      li {
-        background: url(img/pikster.png) no-repeat;
-        background-size: 35%;
-        background-position: right bottom;
-        display: block;
-        float: left;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        width: 100%;
-        height: 300px;
-        text-align: center;
-		float: left;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		width: 1200px;
-		height: 300px;
-		text-align: center;
-
-      &:hover {
-        background-size: 36%;
-      }
-
-      .slider-title {
-        color: rgba(0,0,0,0.5);
-      }	
-
-      .project-title {
-        color: #fff;
-        text-decoration: underline;
-        margin: 50px 0px;
-        font-size: 42px;
-        letter-spacing: 2px;
-      }
-
-      p {
-        font-weight: 200;
-        color: #fff;
-        font-size: 42px;
-        width: 50%;
-        margin: 0 auto;
-        margin-bottom: 50px;
-      }
-
-      .view-project {
-        color: #fff;
-        border: 1px solid #fff;
-        padding: 25px 80px;
-        border-radius: 3px;
-        font-weight: 200;
-        font-size: 14px;
-        display: inline-block;
-        margin-bottom: 50px;
-        -webkit-transition: all 0.3s ease;
-
-        &:hover {
-          background: #fff;
-          color: #9f2b20;
-          border-radius: 100px;
-          top: -5px;
-          -webkit-transform: scale(1.1);
-        }
-      }
-    }
-
-
-    .bullets {
-      list-style: none;
-
-      li {
-        border-radius: 50%;
-        width: 5px;
-        height: 5px;
-        display: inline-block;
-        border: 2px solid #fff;
-      }
+    li {
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      display: inline-block;
+      border: 2px solid #fff;
     }
   }
+}
+
+.item-slide {
+  padding: 100px 0px;
+  display: none;
+  background-position: 80%;
+  background-size: 430px;
+  height: 600px;
+  -webkit-transition: all 0.4s ease;
+    
+  
+  h3 {
+    font-size: 3em;
+    color: #fff;
+  }
+
+  p {
+    margin: 50px auto;
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: 200;
+    width: 50%;
+  }
+
+  .play-video-btn {
+    background: none;
+    border: 1px solid #FFF;
+    @include border-radius(3px);
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    padding: 15px 40px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include transition(all 0.3s ease);
+
+    &:hover {
+      @include border-radius(100px);
+      top: -5px;
+      @include transform(scale(1.1));
+      cursor: pointer;
+    }
+  }
+}
+
+.pikster {
+  background: url(../img/pikster.png) no-repeat right top;
+  background-size: 30%;
+}
+
+.item-slide:hover {
+  background-size: 35%;
 }

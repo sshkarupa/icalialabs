@@ -6,6 +6,7 @@
 @import 'team';
 @import 'projects';
 @import 'project-page';
+@import 'slider';
 
 
 * {
@@ -14,12 +15,15 @@
 }
 
 body {
-  background: $primary-color;
+  background: url('../img/intro.jpg') center;
+  background-size: 100%;
+  background-attachment: fixed;;
   font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Circular', sans-serif;
+  font-family: $brand-font;
+  font-weight: 400;
 }
 
 .clearfix:after {
@@ -70,14 +74,6 @@ h1, h2, h3, h4 {
   @include vertical-align;
 }
 
-// ############ Custom Type ##################
-
-@font-face {
-  font-family: DeliciousRoman;
-  src: url('../fonts/Circular.otf');
-  font-weight:400;
-}
-
 // ######## Menu ############
 
 .menu-overlay {
@@ -87,7 +83,7 @@ h1, h2, h3, h4 {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 200;
   display: none;
 
 
@@ -127,6 +123,7 @@ h1, h2, h3, h4 {
   position: relative;
   width: 90%;
   margin: 0 auto;
+  z-index: 210;
 
   .logo {
     position: absolute;
@@ -149,7 +146,7 @@ h1, h2, h3, h4 {
     }
 
     .one, .two, .three {
-      width: 45px;
+      width: 35px;
       height: 5px;
       background: $primary-color;
       margin: 5px;
@@ -201,14 +198,33 @@ h1, h2, h3, h4 {
   background: #FFF;
 }
 
+// ######## Load Image ############
+
+.load-mask {
+  background: $primary-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 1;
+}
+
+.hide-mask {
+  opacity: 0;
+}
+
+.focus {
+  position: relative;
+  z-index: 200;
+}
+
 
 // ######## Intro ############
 
 .intro {
-  margin: 100px;
   text-align: center;
-  background: url('../img/bg-intro.png') center bottom  no-repeat $secondary-color;
-  position: relative;
 
   .intro-content {
     padding: 140px 0px;
@@ -234,12 +250,12 @@ h1, h2, h3, h4 {
     font-weight: 200;
     font-size: 2em;
     margin-bottom: 40px;
+    color: #fff;
   }
 
   .play-video-btn {
     display: inline-block;
     color: $primary-color;
-    border: 4px solid $primary-color;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 40px;
@@ -247,12 +263,12 @@ h1, h2, h3, h4 {
     background: none;
     @include transition(all 0.3s ease);
     font-size: 1.1em;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    border-radius: 5px;
 
     &:hover {
       background: $primary-color;
       color: #FFF;
-      border-radius: 100px;
       top: -5px;
       @include transform(scale(1.1));
       cursor: pointer;
@@ -262,35 +278,33 @@ h1, h2, h3, h4 {
 
 // ############ Advantages ##################
 
-.advantages {
-  text-align: center;
-  margin-bottom: 50px;
-
-  .title-advantages {
-    color: #FFF;
-    margin-bottom: 50px;
+.title-advantages {
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+    padding: 20px 0px;
   }
 
+.advantages {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  position: relative;
+
   .card {
+    height: 600px;
+    padding: 100px 0px 0px 0px;
     display: inline-block;
     vertical-align: top;
-    background: #FFF;
-    border-radius: 3px;
-    padding: 50px 0px;
-    position: relative;
-    margin: 0 10px 0 0;
-    @include transition(all 0.3s ease);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
 
-    &.col-4 {
-      width: 32%;
-    }
-
-    &.knowledge {
-      padding: 47px 0;
-    }
-
-    &.engage {
-      padding: 51px 0;
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
     }
 
     .icon {
@@ -313,87 +327,20 @@ h1, h2, h3, h4 {
       margin: 0 auto;
       color: rgba(0,0,0,0.7);
       margin-bottom: 60px;
+      color: #fff;
     }
 
     .card-link {
       color: $primary-color;
       font-size: 22px;
       font-weight: 600;
+      text-decoration: none;
+      border: 1px solid $primary-color;
+      padding: 5px 10px;
+      border-radius: 4px;
     }
   }
 }
-
-//#################### Slider ##################################
-
-.work {
-	background: #b4362a;
-	width: 100%;
-	margin: 100px 0px 0px 0px;
-	opacity: 1;
-	text-align: center;
-
-	.our-work {
-			color: rgba(0,0,0,0.6);
-			font-size: 1.5em;
-			margin-bottom: 50px;
-      padding-top: 40px;
-	}
-
-	.item-slide {
-		padding: 100px 0px;
-    display: none;
-		background-position: 80%;
-		background-size: 430px;
-		height: 600px;
-		
-		.work-title {
-			color: #FFF;
-			font-size: 3em;
-			text-decoration: underline;
-		}
-
-		p {
-			margin: 50px auto;
-			color: #fff;
-			font-size: 3.5em;
-			font-weight: 200;
-			width: 50%;
-		}
-
-		.play-video-btn {
-		    background: none;
-		    border: 1px solid #FFF;
-		    @include border-radius(3px);
-		    color: #FFF;
-		    display: inline-block;
-		    font-size: 1.1em;
-		    letter-spacing: 3px;
-		    padding: 15px 40px;
-		    position: relative;
-		    text-decoration: none;
-		    text-transform: uppercase;
-        @include transition(all 0.3s ease);
-
-		    &:hover {
-          @include border-radius(100px);
-		      top: -5px;
-          @include transform(scale(1.1));
-		      cursor: pointer;
-		    }
-  		}
-
-    &.active {
-      /*display: block;*/
-    }
-
-		h3 {color: #fff; font-size: 2em;}
-	}
-}
-
-.pikster {
-	background: url('../img/pikster.png') no-repeat; 
-}
-
 
 
 //#################### Skills ##################################
@@ -414,8 +361,6 @@ h1, h2, h3, h4 {
     text-align: center;
 
     &:hover {
-      background: $primary-color;
-      color: #FFF;
     }
 
     &.hide {
@@ -427,6 +372,9 @@ h1, h2, h3, h4 {
       display: none;
       top: 50%;
       z-index: -1;
+      padding: 0px 100px;
+      font-weight: 100;
+      font-size: 1.4em;
 
       &.push-front {
         z-index: 1;
@@ -481,7 +429,7 @@ h1, h2, h3, h4 {
       border-radius: 50%;
       right: 47%;
       position: absolute;
-      top: 50%;
+      top: 35%;
       @include transition(1s ease-in-out);
       z-index: 300;
       line-height: 80px;
@@ -492,6 +440,7 @@ h1, h2, h3, h4 {
         line-height: normal;
         display:inline-block;
         vertical-align: middle;
+        font-weight: 600;
       }
 
       &.move-left {
@@ -517,6 +466,8 @@ h1, h2, h3, h4 {
 
 .testimonials {
 	background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 
   &.row {
     margin: 0;
@@ -525,6 +476,7 @@ h1, h2, h3, h4 {
   .picture {
     padding: 0;
     position: relative;
+    overflow: hidden;
 
     img {
       display: block;
@@ -533,15 +485,13 @@ h1, h2, h3, h4 {
   }
 
   .fake-skew {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 683px 64px;
-    border-color: transparent transparent #ffffff transparent;
-    display: inline;
-    right: 0;
-    position: absolute;
+    width: 200px;
+    right: -152px;
     top: 0;
+    -webkit-transform: skew(-10deg);
+    position: absolute;
+    bottom: 0;
+    background: #fff;
   }
 
   h4 {
@@ -572,23 +522,23 @@ h1, h2, h3, h4 {
 }
 
 .footer {
-  background: #FFF;
+  background: #fff;
   color: $primary-color;
-  padding: 100px;
+  padding: 100px 0px 145px 0px;
   text-align: center;
   text-transform: uppercase;
-  font-size: .75em;
+  font-size: 1.2em;
+  font-weight: 700;
 
   .contact {
     color: $primary-color;
   }
 
   &.index {
-    background: transparent;
-    color: #FFF;
+    background: #fff;
+    color: $primary-color;
 
     .contact {
-      color: #FFF;
       text-decoration: none;
 
       &:visited {

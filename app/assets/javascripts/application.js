@@ -1,11 +1,17 @@
 jQuery(document).ready(function($) {
 
+  setTimeout(function() {
+    $('.load-mask').fadeOut('slow');
+  }, 900);
+
 //********** Horizontal scroll on team page *********************//
   $('.team').kinetic();
 
 //********** Animation for burger *********************//
   var slideCount, slideCounter, updateNext, updatePrevious;
-  $('.intro').addClass('animated bounceInUp');
+  setTimeout(function() {
+    $('.main-menu').addClass('animated bounceInDown');
+  }, 900);
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
     $('.menu-content').toggleClass('show-menu animated bounceInDown');

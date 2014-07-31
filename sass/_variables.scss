@@ -3,6 +3,7 @@ $primary-color: #e23a2c;
 $secondary-color: #f9f9f9;
 $light-gray: #CDCDCD;
 $dark-gray: #1D252E;
+$brand-font: 'Circular' , sans-serif;
 
 // Media queries
 $media-display: "only screen" !default;
@@ -13,4 +14,10 @@ $media-display: "only screen" !default;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+@font-face {
+    font-family: Circular;
+    src: url(../fonts/Circular.otf);
+    font-weight:400;
 }
