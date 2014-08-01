@@ -7,6 +7,8 @@
 @import 'projects';
 @import 'project-page';
 @import 'slider';
+@import 'culture';
+@import 'suraido';
 
 
 * {
@@ -15,10 +17,15 @@
 }
 
 body {
-  background: url('../img/intro.jpg') center;
-  background-size: 100%;
-  background-attachment: fixed;;
   font-family: 'Open Sans', sans-serif;
+  &.index {
+
+    .index-background {
+      background: url('../img/intro.jpg') center;
+      background-size: 100%;
+      background-attachment: fixed;
+    }
+  }
 }
 
 h1, h2, h3, h4 {
@@ -532,20 +539,9 @@ h1, h2, h3, h4 {
 
   .contact {
     color: $primary-color;
+    text-decoration: none;
   }
 
-  &.index {
-    background: #fff;
-    color: $primary-color;
-
-    .contact {
-      text-decoration: none;
-
-      &:visited {
-        color: #FFF;
-      }
-    }
-  }
 }
 
 

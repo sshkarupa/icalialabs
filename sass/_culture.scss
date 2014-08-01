@@ -1,0 +1,53 @@
+.culture {
+
+  h1 {
+    font-size: 3rem;
+  }
+  .info {
+    background: url('../img/2.jpg') no-repeat;
+    background-size: cover;
+    color: #FFF;
+    height: 500px;
+    position: relative;
+
+    .info-details {
+      margin-bottom: 6rem;
+    }
+
+    .values {
+      background: $primary-color;
+      @include border-radius(5px);
+      display: table;
+      min-height: 300px;
+      position: absolute;
+      left: 0;
+      right: 0;
+
+      .middle {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .career {
+    background: $light-gray;
+    min-height: 300px;
+    padding: 6rem 0 0 0;
+  }
+
+  .positions {
+    background: $light-gray;
+    min-height: 300px;
+    padding: 3rem;
+
+    .position {
+      border: 3px solid $dark-gray;
+      color: $dark-gray;
+      display: inline-block;
+      font-size: 1.25rem;
+      padding: 1rem 6rem;
+      text-decoration: none;
+    }
+  }
+}
