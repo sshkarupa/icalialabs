@@ -151,6 +151,7 @@ h1, h2, h3, h4 {
       background: $primary-color;
       margin: 5px;
       position: relative;
+      background: #fff
     }
 
     &.active {
@@ -161,22 +162,19 @@ h1, h2, h3, h4 {
     .one-active {
       -webkit-animation: rotate-left .5s ease-in;
       animation-delay: 0.1s;
-      z-index: 999;
-      background: #fff;
+      z-index: 999;;
     }
 
     .three-active {
       -webkit-animation: rotate-right .5s ease-in;
       animation-delay: 0.1s;
       z-index: 999;
-      background: #fff;
     }
 
     .hide-two {
       -webkit-animation: hide .5s ease-in;
       animation-delay: 0.1s;
       z-index: 999;
-      background: #fff;
     }
   }
 }
@@ -231,7 +229,7 @@ h1, h2, h3, h4 {
   }
 
   .hello-text {
-    color: $primary-color;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 600;
@@ -239,7 +237,7 @@ h1, h2, h3, h4 {
   }
 
   .tagline {
-    color: $primary-color;
+    color: #fff;
     font-size: 48px;
     margin: 45px;
     display: block;
@@ -254,22 +252,23 @@ h1, h2, h3, h4 {
   }
 
   .play-video-btn {
+    background: transparent;
     display: inline-block;
-    color: $primary-color;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 40px;
     position: relative;
-    background: none;
     @include transition(all 0.3s ease);
-    font-size: 1.1em;
-    letter-spacing: 2px;
-    border-radius: 5px;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    border-radius: 100px;
+    border: 3px solid #fff;
+    font-weight: 900;
 
     &:hover {
-      background: $primary-color;
-      color: #FFF;
-      top: -5px;
+      color: $primary-color;
+      background: #fff;
       @include transform(scale(1.1));
       cursor: pointer;
     }
@@ -290,6 +289,7 @@ h1, h2, h3, h4 {
   border-top: 1px solid rgba(255,255,255,0.3);
   border-bottom: 1px solid rgba(255,255,255,0.3);
   position: relative;
+  background: #fff;
 
   .card {
     height: 600px;
@@ -300,12 +300,7 @@ h1, h2, h3, h4 {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background: rgba(0, 0, 0, 0.2);
-    border-right: 1px solid rgba(255,255,255,0.2);
-
-    &:hover {
-      background: rgba(0, 0, 0, 0.5);
-    }
+    border-right: 1px solid rgba(0,0,0,0.2);
 
     .icon {
       -webkit-transition: all 0.3s ease;
@@ -327,7 +322,6 @@ h1, h2, h3, h4 {
       margin: 0 auto;
       color: rgba(0,0,0,0.7);
       margin-bottom: 60px;
-      color: #fff;
     }
 
     .card-link {
