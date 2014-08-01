@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="/assets/stylesheets/animate.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body class=index>
       <header class="main-menu">
         <img src="/assets/img/logo.png" alt="" class="logo">
         <div class="burger">
@@ -30,10 +30,10 @@
         <div class="container">
           <div class="menu-content">
             <h4 class="menu-title">Menu</h4>
-            <a href="#">Home</a>
-            <a href="#">Culture</a>
-            <a href="#">Work</a>
-            <a href="#">Team</a>
+            <a href="/">Home</a>
+            <a href="culture">Culture</a>
+            <a href="projects">Work</a>
+            <a href="team">Team</a>
             <a href="#">Contact</a>
             <div class="social-info">
               <a href="#">Twitter</a>
@@ -44,19 +44,20 @@
         </div>
       </nav>
 
-          <section class="intro row">
+    <div class="index-background">
+      <section class="intro row">
         <div class="container">
           <div class="intro-content">
             <h4 class="hello-text">Hello</h4>
             <h1 class="tagline">We solve problems with Digital Products</h1>
-            <p class="focus">We focus on agile development & asthetics design.</p>
+            <p>We focus on agile development & asthetics design.</p>
             <button class="play-video-btn">Play Video</button>
           </div>
         </div>
       </section>
       <h4 class="title-advantages">Our Advantages</h4>
       <section class="advantages row">
-        <div class="row clearfix">
+        <div class="container row clearfix">
           <div class="card engage col-4">
             <img src="assets/img/engage.png" alt="" class="icon">
             <h4 class="card-title">Engage.</h4>
@@ -77,25 +78,28 @@
           </div>
         </div>
       </section>
-      <div class="load-mask"></div>
-      <section class="work row">
-        <div class="work-slider">
-          <a href="#" class="control_next"></a>
-          <a href="#" class="control_prev"></a>
-          <h4 class="our-work">Our Work</h4>
-          <div class="item-slide pikster active">
-            <h3 class="work-title">Pikster</h3>
-            <p>Helping people gather money easily</p>
-            <button class="play-video-btn"> See our work</button>
-          </div>
-          <div class="item-slide">
-            <h3 class="work-title">Moneypool</h3>
-            <p>Helping people gather money easily</p>
-            <button class="play-video-btn"> See our work</button>
-          </div>
+    </div>
 
-        </div>
-      </section>
+
+    <section class="work row">
+      <div class="suraido-container work-slider" data-suraido>
+        <ul>
+          <li class="item-slide" style="background:url(/assets/img/pikster.png) no-repeat right top;background-size:contain;">
+          <h3 class="work-title">Pikster</h3>
+          <p>Helping people gather money easily</p>
+          <button class="play-video-btn"> See our work</button>
+          </li>
+          <li style="background:url(/assets/img/pikster.png) no-repeat right top;background-size:contain;">
+          </li>
+          <li style="background:url(/assets/img/pikster.png) no-repeat right top;background-size:contain;">
+          </li>
+          <li style="background:url(/assets/img/pikster.png) no-repeat right top;background-size:contain;">
+          </li>
+          <li style="background:url(/assets/img/pikster.png) no-repeat right top;background-size:contain;">
+          </li>
+        </ul>
+      </div>
+    </section>
 
       <section class="skills clearfix row">
         <div class="mask col-6">
@@ -111,7 +115,7 @@
           </div>
         </div>
 
-        <span class="fusion circle"><span>Perfect Fussion</span></span>
+        <span class="fusion circle"><span>Perfect Fusion</span></span>
 
         <div class="mask col-6">
           <div class="aesthetics skill row">
@@ -131,8 +135,8 @@
 
       <section class="testimonials row clearfix">
         <div class="picture col-3">
-          <div class="fake-skew"></div>
           <img src="assets/img/ginger.png" alt="" />
+          <div class="fake-skew"></div>
         </div>
         <div class="quote col-9">
           <h4>Testimonials</h4>
@@ -147,7 +151,10 @@
           </div>
       </section>
 
-    <footer class="footer index">
+
+
+
+    <footer class="footer">
       <div class="container row">
         <div class="col-6">
           <a href="#" class="contact">Do you have an awesome idea? Drink a beer with us.</a>
@@ -161,6 +168,8 @@
           <script type="text/javascript" charset="utf-8" src="/assets/javascripts/application.js"></script>
           <script type="text/javascript" charset="utf-8" src="/assets/javascripts/classie.js"></script>
           <script type="text/javascript" charset="utf-8" src="/assets/javascripts/modal.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/furatto.js"></script>
+          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/suraido.js"></script>
           <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.kinetic.min.js"></script>
           <script type="text/javascript" charset="utf-8" src="//localhost:35729/livereload.js"></script>
     </body>

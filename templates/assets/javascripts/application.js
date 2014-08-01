@@ -1,17 +1,5 @@
 jQuery(document).ready(function($) {
-
-  setTimeout(function() {
-    $('.load-mask').fadeOut('slow');
-  }, 900);
-
-//********** Horizontal scroll on team page *********************//
-  $('.team').kinetic();
-
-//********** Animation for burger *********************//
-  var slideCount, slideCounter, updateNext, updatePrevious;
-  setTimeout(function() {
-    $('.main-menu').addClass('animated bounceInDown');
-  }, 900);
+  $('.index .intro').addClass('animated bounceInUp');
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
     $('.menu-content').toggleClass('show-menu animated bounceInDown');
@@ -21,8 +9,7 @@ jQuery(document).ready(function($) {
     $('.burger > .three').toggleClass('three-active');
     return e.preventDefault();
   });
-//********** Animation skills on home page *********************//
-  $('.mask, span.circle').on('click', function(e) {
+  return $('.mask, span.circle').on('click', function(e) {
     var mask;
     if ($(this).hasClass('mask')) {
       mask = $(this);
@@ -44,38 +31,5 @@ jQuery(document).ready(function($) {
       return mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>";
     }
   });
-  slideCounter = 1;
-  updateNext = function() {
-    console.log(slideCounter >= slideCount);
-    if (slideCounter >= slideCount) {
-      slideCounter = 0;
-    }
-    $($('.work-slider .item-slide').removeClass('active'));
-    $($('.work-slider .item-slide')[slideCounter]).addClass('active');
-    $($('.work-slider .item-slide')).fadeOut();
-    $('.work-slider .item-slide.active').fadeIn();
-    slideCounter++;
-  };
-  updatePrevious = function() {
-    if (slideCounter >= slideCount) {
-      slideCounter = 0;
-    } else {
-      slideCounter -= 1;
-    }
-    $($('.work-slider .item-slide').removeClass('active'));
-    $($('.work-slider .item-slide')[slideCounter]).addClass('active');
-    console.log(slideCount);
-  };
-  slideCount = $(".work-slider .item-slide").length;
-  $("a.control_prev").on('click', function(e) {
-    updatePrevious();
-    e.preventDefault();
-  });
-  $("a.control_next").on('click', function(e) {
-    updateNext();
-    e.preventDefault();
-  });
 });
-
-$('.work-slider .item-slide.active').fadeIn();
 

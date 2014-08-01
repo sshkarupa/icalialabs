@@ -4,6 +4,7 @@
   position: relative;
   -webkit-transition: all 0.3s ease;
   overflow: hidden;
+  height: 564px;
 
   .container {
     width: 100%;
@@ -63,6 +64,7 @@
   background-position: 80%;
   background-size: 430px;
   -webkit-transition: all 0.4s ease;
+  padding: 100px 0px;
     
   
   h3 {
@@ -81,22 +83,19 @@
   .play-video-btn {
     background: none;
     border: 1px solid #FFF;
-    @include border-radius(3px);
-    color: #FFF;
-    display: inline-block;
-    font-size: 1.1em;
+    @include border-radius(100px);
+    color: #fff;
+    font-size: 0.8em;
     letter-spacing: 3px;
     padding: 15px 40px;
-    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     @include transition(all 0.3s ease);
 
     &:hover {
-      @include border-radius(100px);
-      top: -5px;
-      @include transform(scale(1.1));
       cursor: pointer;
+      background: #fff;
+      color: $primary-color;
     }
   }
 }

@@ -1,8 +1,17 @@
 jQuery(document).ready ($) ->
 
   #Intro animation
-  $('.intro').addClass 'animated bounceInUp'
+  $('.index .intro').addClass 'animated bounceInUp'
   
+  setTimeout (->
+    $(".load-mask").fadeOut "slow"
+      return
+      ), 900
+    $(".team").kinetic()
+    setTimeout ->
+      $(".index .main-menu").addClass "animated bounceInUp"
+      return
+
   #Class toggle for burger items
   $('.burger').on 'click', (e) ->
     $('.menu-overlay').toggleClass 'show-menu'
@@ -35,43 +44,10 @@ jQuery(document).ready ($) ->
         mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
   #Slider functions
-  slideCounter = 1
+  $(".suraido-container").suraido
+    fluid: true
+    enableKeys: true
+    enableDots: true
+    enableArrows: true
+    autoplay: false
 
-  updateNext = ->
-    console.log(slideCounter >= slideCount)
-    if slideCounter >= slideCount
-      slideCounter = 0
-
-    $($('.work-slider .item-slide').removeClass('active'))
-    $($('.work-slider .item-slide')[slideCounter]).addClass('active')
-    $($('.work-slider .item-slide')).fadeOut()
-
-    $('.work-slider .item-slide.active').fadeIn()
-    slideCounter++
-    return
-
-  updatePrevious = ->
-    if slideCounter >= slideCount
-      slideCounter = 0
-    else
-      slideCounter -= 1
-
-    $($('.work-slider .item-slide').removeClass('active'))
-    $($('.work-slider .item-slide')[slideCounter]).addClass('active')
-    console.log(slideCount)
-    return
-
-  slideCount = $(".work-slider .item-slide").length
-
-  $("a.control_prev").on 'click', (e) ->
-    updatePrevious()
-    e.preventDefault()
-    return
-
-  $("a.control_next").on 'click', (e) ->
-    updateNext()
-    e.preventDefault()
-    return
-
-  return
-$('.work-slider .item-slide.active').fadeIn()
