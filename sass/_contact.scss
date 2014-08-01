@@ -1,0 +1,19 @@
+.contact {
+  background: #F4F4F4;
+
+  .info, .footer {
+    background: #F4F4F4;
+  }
+
+  .social-networks {
+    a {
+      color: $dark-gray;
+      text-decoration: none;
+      
+
+      &:visited {
+        color: $dark-gray;
+      }
+    }
+  }
+}
