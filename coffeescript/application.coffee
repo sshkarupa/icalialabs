@@ -1,16 +1,16 @@
-jQuery(document).ready ($) ->
+jQuery(document).ready ->
 
   #Intro animation
   $('.index .intro').addClass 'animated bounceInUp'
-  
+  $(".team").kinetic()
+
   setTimeout (->
     $(".load-mask").fadeOut "slow"
-      return
       ), 900
-    $(".team").kinetic()
-    setTimeout ->
-      $(".index .main-menu").addClass "animated bounceInUp"
-      return
+
+  setTimeout ->
+    $(".index .main-menu").addClass "animated bounceInUp"
+    return
 
   #Class toggle for burger items
   $('.burger').on 'click', (e) ->
@@ -46,8 +46,8 @@ jQuery(document).ready ($) ->
   #Slider functions
   $(".suraido-container").suraido
     fluid: true
-    enableKeys: true
-    enableDots: true
-    enableArrows: true
-    autoplay: false
+  enableKeys: true
+  enableDots: true
+  enableArrows: true
+  autoplay: false
 

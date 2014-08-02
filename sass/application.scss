@@ -18,6 +18,10 @@
   padding: 0px;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   &.index {
@@ -34,7 +38,12 @@ h1, h2, h3, h4 {
   font-family: $brand-font;
   font-weight: 400;
 }
-
+h1 {font-size: 3rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.25rem;}
+p { font-weight: normal; }
+a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 .clearfix:after {
   content: " ";
   display: block; 
@@ -54,20 +63,20 @@ h1, h2, h3, h4 {
   color: $primary-color;
 }
 
-.white-button {
+.primary-button {
   background: $secondary-color;
   border: 1px solid $primary-color;
   border-radius: 2px;
   display: inline-block;
-  padding: 20px;
+  padding: 2rem;
   text-decoration: none;
 }
 
-.red-button {
+.secondaty-button {
   background: $primary-color;
   color: #FFF;
   display: inline-block;
-  padding: 20px;
+  padding: 2rem;
   text-decoration: none;
 }
 
@@ -305,37 +314,38 @@ h1, h2, h3, h4 {
     padding: 100px 0px 0px 0px;
     display: inline-block;
     vertical-align: top;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    border-right: 1px solid rgba(0,0,0,0.2);
+    @include transition(all 0.3s ease);
+    background: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255,255,255,0.2);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
 
     .icon {
-      -webkit-transition: all 0.3s ease;
-      margin-bottom: 35px;
+      @include transition(all 0.3s ease);
+      margin-bottom: 2rem;
       display: inline-block;
     }
 
     .card-title {
       color: $primary-color;
-      margin-bottom: 65px;
+      margin-bottom: 4rem;
       display: block;
-      font-size: 22px;
     }
 
     p {
-      font-weight: 200;
-      font-size: 26px;
+      font-size: 1.5rem;
       width: 80%;
       margin: 0 auto;
       color: rgba(0,0,0,0.7);
-      margin-bottom: 60px;
+      margin-bottom: 4rem;
     }
 
     .card-link {
       color: $primary-color;
       font-size: 14px;
+      /*font-size: 22px;*/
       font-weight: 600;
       text-decoration: none;
       border: 1px solid $primary-color;
@@ -473,7 +483,6 @@ h1, h2, h3, h4 {
 //########################Testimonials###########
 
 .testimonials {
-	background: #fff;
   border-top: 1px solid rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
 
@@ -502,22 +511,18 @@ h1, h2, h3, h4 {
     background: #fff;
   }
 
-  h4 {
-  	font-size: 1.6em;
-  }
-
   .quote {
     box-sizing: border-box;
     float: right;
-    padding: 82px 100px;
+    padding: 2rem;
 
     blockquote {
 
      p {
      	color: $primary-color;
-		font-size: 2em;
-		padding: 80px 0;
-		font-weight: 100;
+      font-size: 2em;
+      padding: 4rem 0;
+      font-weight: 100;
      }
 
       .cite {
@@ -532,11 +537,10 @@ h1, h2, h3, h4 {
 .footer {
   background: #fff;
   color: $primary-color;
-  padding: 100px 0px 145px 0px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.2em;
-  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 6rem 0;
 
   .contact {
     color: $primary-color;
@@ -606,10 +610,9 @@ h1, h2, h3, h4 {
 .info {
   background: #FFF;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
 
   a, span {
-    color: $primary-color;
     text-decoration: none;
   }
 }

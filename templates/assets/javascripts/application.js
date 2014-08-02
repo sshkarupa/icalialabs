@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
   $('.index .intro').addClass('animated bounceInUp');
+  $('.team').kinetic();
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
     $('.menu-content').toggleClass('show-menu animated bounceInDown');
