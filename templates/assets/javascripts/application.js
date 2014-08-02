@@ -1,6 +1,12 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function() {
+  setTimeout((function() {
+    return $(".load-mask").fadeOut("slow");
+  }), 900);
   $('.index .intro').addClass('animated bounceInUp');
-  $('.team').kinetic();
+  $(".team").kinetic();
+  setTimeout((function() {
+    return $(".index .main-menu").addClass("animated bounceInDown");
+  }), 900);
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
     $('.menu-content').toggleClass('show-menu animated bounceInDown');
@@ -10,7 +16,7 @@ jQuery(document).ready(function($) {
     $('.burger > .three').toggleClass('three-active');
     return e.preventDefault();
   });
-  return $('.mask, span.circle').on('click', function(e) {
+  $('.mask, span.circle').on('click', function(e) {
     var mask;
     if ($(this).hasClass('mask')) {
       mask = $(this);
@@ -32,5 +38,11 @@ jQuery(document).ready(function($) {
       return mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>";
     }
   });
+  return $(".suraido-container").suraido({
+    fluid: true,
+    enableKeys: true,
+    enableDots: true,
+    enableArrows: true,
+    autoplay: false
+  });
 });
-
