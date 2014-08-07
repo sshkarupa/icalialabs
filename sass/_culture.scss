@@ -1,8 +1,5 @@
 .culture {
 
-  h1 {
-    font-size: 3rem;
-  }
   .info {
     background: url('../img/2.jpg') no-repeat;
     background-size: cover;
@@ -18,8 +15,9 @@
       background: $primary-color;
       @include border-radius(5px);
       display: table;
+      max-width: 960px;
       min-height: 300px;
-      position: absolute;
+      position: relative;
       left: 0;
       right: 0;
 
