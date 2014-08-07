@@ -1,14 +1,17 @@
 - name: Pikster App
   client: Pikster
   done: UI/UX Design & Development
-  image: /assets/img/pikster.png
+  image: /assets/img/pikster-2.png
+  color: 0faef0
 
 - name: Mexico 100
   client: En nuestras manos
   done: UI/UX Design & Development
   image: /assets/img/pikster.png
+  color: 8d2f4e
 
 - name: Que prefieres
   client: Icalia Labs
   done: UI/UX Design & Development
   image: /assets/img/pikster.png
+  color: 0faef0

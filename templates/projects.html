@@ -10,8 +10,8 @@ title: Icalia Labs
 </section>
 
 {% for project in site.data.projects %}
-  <section class="project {{project.name}} row clearfix">
-    <div class="col-6 vertical-align">
+  <section class="project {{project.name}} row clearfix" style="background-image:url({{ project.image }});background-color: #{{project.color}}">
+    <div class="col-8 vertical-align">
       <h4 class="light-gray project-tag">Proyecto-</h4>
       <h1 class="project-name">{{project.name}}</h1>
       <h4 class="light-gray client-tag">Clientes-</h4>
@@ -19,9 +19,8 @@ title: Icalia Labs
       <a href="#" class="project-link">Ver Proyecto</a>
     </div>
 
-    <div class="col-6 project-image">
-      <img src="{{ project.image }}" alt="" class="project-img" />
-      <h3 class="done align-right">{{project.done}}</h3>
+    <div class="col-4 project-image">
+      <h3 class="project-info">{{project.done}}</h3>
     </div>
   </section>
 {% endfor %}

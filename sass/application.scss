@@ -105,7 +105,7 @@ h1, h2, h3, h4 {
 
 
   a {
-    font-size: 5em;
+    font-size: 4em;
     color: #fff;
     display: block;
     font-weight: 700;
@@ -139,6 +139,12 @@ h1, h2, h3, h4 {
     left: 40px;
     display: inline-block;
     z-index: 100;
+
+    svg {
+      fill: white;
+      width: 70px;
+      height: 70px;
+    }
   }
 
   .burger {
@@ -309,7 +315,11 @@ h1, h2, h3, h4 {
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    border-right: 1px solid rgba(0,0,0,0.2);
+
+    &:nth-child(2) {
+      border-left: 1px solid rgba(0,0,0,0.2);
+      border-right: 1px solid rgba(0,0,0,0.2);
+    }
 
     .icon {
       -webkit-transition: all 0.3s ease;
@@ -538,9 +548,10 @@ h1, h2, h3, h4 {
   font-size: 1.2em;
   font-weight: 700;
 
-  .contact {
+  .contact-link {
     color: $primary-color;
     text-decoration: none;
+    text-decoration: underline;
   }
 
 }

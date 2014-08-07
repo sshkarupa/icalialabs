@@ -61,8 +61,9 @@
 .item-slide {
   padding-bottom: 100px;
   display: none;
-  background-position: 80%;
+  background-position: center top !important;
   background-size: 430px;
+  background-repeat: no-repeat !important;
   -webkit-transition: all 0.4s ease;
   padding: 100px 0px;
     
@@ -100,10 +101,6 @@
   }
 }
 
-.pikster {
-  background: url(../img/pikster.png) no-repeat center top;
-  background-size: 30%;
-}
 
 .item-slide:hover {
   background-size: 35%;
