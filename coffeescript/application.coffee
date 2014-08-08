@@ -5,7 +5,7 @@ jQuery(document).ready ->
 
   #Intro animation
   $('.index .intro').addClass 'animated bounceInUp'
-  $(".team").kinetic()
+  $(".team-section").kinetic()
 
 
   setTimeout (->

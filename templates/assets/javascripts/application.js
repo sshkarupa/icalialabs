@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
     return $(".load-mask").fadeOut("slow");
   }), 900);
   $('.index .intro').addClass('animated bounceInUp');
-  $(".team").kinetic();
+  $(".team-section").kinetic();
   setTimeout((function() {
     return $(".index .main-menu").addClass("animated bounceInDown");
   }), 900);
