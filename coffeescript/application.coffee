@@ -1,16 +1,21 @@
 jQuery(document).ready ->
+  
   setTimeout (->
     $(".load-mask").fadeOut "slow"
     ), 900
 
-  #Intro animation
-  $('.index .intro').addClass 'animated bounceInUp'
-  $(".team-section").kinetic()
+  setTimeout -> 
+    $(".load-mask").fadeOut "slow"
+  , 900
 
+  #Intro animation
+  # $('.index .intro').addClass 'animated bounceInUp'
 
   setTimeout (->
     $(".index .main-menu").addClass "animated bounceInDown"
     ), 900
+
+  $(".team-section").kinetic()
 
   #Class toggle for burger items
   $('.burger').on 'click', (e) ->

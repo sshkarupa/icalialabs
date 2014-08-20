@@ -1,7 +1,7 @@
-- name: Alicia Gonzalez
+- name: Eduardo López
   id: aliciagonzalez
-  title: Developer
-  picture: /assets/img/alicia.jpg
+  title: CEO / Developer
+  picture: /assets/img/edo.jpg
   networks:
     - link: http://twitter.com/alicia_catalina
       name: twitter
@@ -30,3 +30,18 @@
   title: Developer
   id: kuri
   picture: /assets/img/kuri.jpg
+
+- name: Alicia Gonzalez
+  id: aliciagonzalez
+  title: Developer
+  picture: /assets/img/alicia.jpg
+  networks:
+    - link: http://twitter.com/alicia_catalina
+      name: twitter
+    - link: http://github.com/aliciacatalina
+      name: github
+
+- name: Abraham Kuri
+  title: Developer
+  id: kuri
+  picture: /assets/img/noe.jpg

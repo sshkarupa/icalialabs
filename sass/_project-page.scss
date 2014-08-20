@@ -1,4 +1,5 @@
 .project-page {
+  border: none;
   height: 100%;
 
   h1, h3 {
@@ -8,8 +9,8 @@
   .project-container {
     height: 100%;
   }
-  background: #000;
-  color: #FFF;
+  
+  background: #fff;
 
   .header {
     height: 100%;
@@ -35,7 +36,7 @@
 
       &::after {
         @include background-image(linear-gradient(to bottom,
-        rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%));
+        rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%));
         content: '';
         height: 101%;
         opacity: 0;
@@ -79,14 +80,25 @@
       .project-title {
         font-size: 4em;
         font-weight: 800;
-        margin-bottom: 1em;
+        color: #fff;
+        text-align: center;
       }
 
       .details {
-        font-size: 1rem;
+        color: #fff;
+        padding-top: 50px;
+        text-align: center;
+
+        h3 {
+          font-weight: 100;
+          text-transform: uppercase;
+          font-size: 1em;
+          letter-spacing: 2px;
+        }
 
         .light {
-          font-weight: normal;
+          font-weight: 600;
+          font-size: 1.5em;
         }
       }
     }
@@ -95,6 +107,7 @@
 
     .subline {
       color: $primary-color;
+      text-align: center;
       font-size: 1.75em;
       margin: 0 auto;
       opacity: 0;
@@ -168,6 +181,11 @@
     position: relative;
     z-index: 1000;
 
+    img {
+      width: 100%;
+      margin: 20px auto;
+    }
+
     > div {
       margin: -80px auto 0;
       max-width: 900px;
@@ -195,10 +213,12 @@
         transition-property: opacity;
       }
     }
+
     .header {
-      h1 {
+      .project-title {
         -webkit-transition-property: color;
         transition-property: color;
+        color: #000;
       }
       p {
         -webkit-transition-property: -webkit-transform, opacity;
@@ -231,10 +251,12 @@
   .header {
     overflow: hidden;
   }
+
   &.modify .bg-img {
     -webkit-transform: translateY(-25%);
     transform: translateY(-25%);
   }
+  
   .bg-img::after {
     content: '';
     position: absolute;
@@ -275,6 +297,7 @@
   .content {
     z-index: 1000;
     position: relative;
+    
     > div {
       opacity: 0;
       -webkit-transform: translateY(350px);
@@ -284,7 +307,7 @@
   &.modify {
     .header {
       .details, .details-info {
-        opacity: 0;
+        display: none;
       }
     }
     .content > div {
@@ -395,6 +418,23 @@
   .content {
     z-index: 1000;
     position: relative;
+    top: -300px;
+    bottom: 0px;
+
+    p {
+      font-weight: 100;
+      font-size: 1.5em;
+      line-height: 1.6em;
+    }
+
+    h3 {
+      font-size: 3em;
+      font-weight: 900;
+      margin: 20px 0px;
+    }
+    
+
+
     > div {
       opacity: 0;
       -webkit-transform: translateY(350px);
@@ -404,7 +444,7 @@
   &.modify {
     .header {
       .details, .details-info {
-        opacity: 0;
+        display: none;
       }
     }
     .content > div {

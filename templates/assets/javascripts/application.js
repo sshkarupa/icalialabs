@@ -2,11 +2,13 @@ jQuery(document).ready(function() {
   setTimeout((function() {
     return $(".load-mask").fadeOut("slow");
   }), 900);
-  $('.index .intro').addClass('animated bounceInUp');
-  $(".team-section").kinetic();
+  setTimeout(function() {
+    return $(".load-mask").fadeOut("slow");
+  }, 900);
   setTimeout((function() {
     return $(".index .main-menu").addClass("animated bounceInDown");
   }), 900);
+  $(".team-section").kinetic();
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
     $('.menu-content').toggleClass('show-menu animated bounceInDown');

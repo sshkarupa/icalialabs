@@ -1,17 +1,73 @@
 .contact {
   background: #F4F4F4;
+  border: none;
 
   .info, .footer {
     background: #F4F4F4;
   }
 
-  .social-networks {
-    a {
-      color: $dark-gray;
-      text-decoration: none;
+  .adress {
+    background: url("../img/office.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    margin: 50px 0px;
 
-      &:visited {
-        color: $dark-gray;
+    h2 {
+      color: #fff;
+    }
+
+    .adress-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    p {
+      font-weight: 100;
+      font-size: 1.5em;
+      margin: 20px 0px;
+    }
+
+    a {
+      border: 1px solid $primary-color;
+      text-decoration: none;
+      padding: 20px 50px;
+      display: inline-block;
+      border-radius: 2px;
+      margin: 10px 0px;
+      position: relative;
+      -webkit-transition: all 0.5s ease;
+
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+        left: 20px;
+      }
+    }
+  }
+
+  .social-networks {
+
+    p {
+      margin: 30px 0px;
+    }
+
+    a {
+      text-decoration: none;
+      border: 5px solid #000;
+      height: 150px;
+      width: 150px;
+      display: block;
+      line-height: 150px;
+      border-radius: 100%;
+      font-weight: 900;
+      color: #000;
+      -webkit-transition: all 0.2s ease-in;
+
+      &:hover {
+        background: #000;
+        color: #fff;
       }
     }
   }

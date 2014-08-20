@@ -4,7 +4,7 @@
   position: relative;
   -webkit-transition: all 0.3s ease;
   overflow: hidden;
-  height: 564px;
+  height: 650px;
 
   .container {
     width: 100%;
@@ -104,4 +104,14 @@
 
 .item-slide:hover {
   background-size: 35%;
+}
+
+
+.suraido-container .pagination .dot {
+  border: 1px solid #fff !important;
+  background: transparent !important;
+}
+
+.suraido-container .pagination .dot.active {
+  background: #fff !important;
 }
