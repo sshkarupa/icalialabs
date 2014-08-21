@@ -43,8 +43,8 @@ jQuery(document).ready(function() {
   return $(".suraido-container").suraido({
     fluid: true,
     enableKeys: true,
-    enableDots: true,
-    enableArrows: true,
+    enableDots: false,
+    enableArrows: false,
     autoplay: false
   });
 });

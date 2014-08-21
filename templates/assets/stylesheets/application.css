@@ -626,8 +626,23 @@ slideUp
 .project .client {
   color: #fff;
 }
+<<<<<<< HEAD
 /* line 49, ../../../sass/_projects.scss */
 .project .project-link {
+=======
+/* line 47, ../../../sass/_projects.scss */
+.project .perspective {
+  display: inline-block;
+  padding: 1rem;
+  perspective: 800px;
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+/* line 55, ../../../sass/_projects.scss */
+.project .perspective .project-link {
+  display: block;
+>>>>>>> 94e2226... Starts button style inside projects page
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -635,13 +650,23 @@ slideUp
   padding: 15px 10px;
   border-radius: 3px;
   text-transform: uppercase;
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
   font-weight: 900;
   margin: 40px 0px;
   position: relative;
   -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
+<<<<<<< HEAD
 /* line 62, ../../../sass/_projects.scss */
 .project .project-link:hover {
+=======
+/* line 71, ../../../sass/_projects.scss */
+.project .perspective .project-link:hover {
+>>>>>>> 94e2226... Starts button style inside projects page
   background: #000;
   color: #000;
   background: #fff;

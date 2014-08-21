@@ -46,9 +46,7 @@
     color: #fff;
   }
 
-  .project-link {
-    color: #fff;
-    text-decoration: none;
+  .perspective {
     display: inline-block;
     border: 3px solid rgba(0,0,0,0.3);
     padding: 15px 10px;
@@ -56,14 +54,36 @@
     text-transform: uppercase;
     font-weight: 900;
     margin: 40px 0px;
+    padding: 1rem;
+    perspective: 800px;
     position: relative;
-    -webkit-transition: all 0.5s ease;
+    margin: 0;
+    z-index: 1;
 
-    &:hover {
-      background: #000;
-      color: #000;
-      background: #fff;
-      border: 3px solid rgba(255,255,255,0.0);
+    .project-link {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      border: 3px solid rgba(0,0,0,0.3);
+      padding: 15px 10px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      transform-style: preserve-3d;
+      outline: 1px solid transparent;
+      font-weight: 900;
+      margin: 10px 0px;
+      position: relative;
+      @include transition(all 0.5s ease);
+
+
+      &:hover {
+        background: #000;
+        color: #000;
+        background: #fff;
+        border: 3px solid rgba(255,255,255,0.0);
+        left: 20px;
+      }
     }
   }
 }
