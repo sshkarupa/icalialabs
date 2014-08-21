@@ -222,6 +222,11 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       .one, .two, .three {
         background: $primary-color;
       }
+      &.active {
+        .one, .two, .three {
+          background: #FFF;
+        }
+      }
     }
   }
 }
