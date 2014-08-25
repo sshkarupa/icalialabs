@@ -2,11 +2,10 @@
 
   .info {
     background: url('../img/bg-culture.jpg') no-repeat;
-    background-position: center -500px;
     background-size: cover;
     background-attachment: fixed;
     color: #FFF;
-    height: 600px;
+    height: 800px;
     position: relative;
 
     .section-tag {
@@ -20,37 +19,25 @@
       margin: 0 auto;
     }
 
-    .info-details {
-      margin-bottom: 6rem;
-    }
-
     .values {
-      background: #390606;
-      @include border-radius(5px);
-      display: table;
-      max-width: 960px;
-      min-height: 400px;
-      position: relative;
-      left: 0;
-      right: 0;
+      padding: 100px 0px;
+      
+      h4 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+      }
 
       p {
         color: #fff;
+        font-size: 1.5rem;
+        font-weight: 100;
       }
 
       .quote {
-        margin: 5px 0px;
-        color: $primary-color;
-
-        .value {
-          color: rgba(0,0,0,0.7);
-          color: $primary-color;
-        }
-      }
-
-      .middle {
-        display: table-cell;
-        vertical-align: middle;
+        margin: 35px 0px;
+        color: #fff;
+        font-size: 6rem;
+        line-height: 5rem;
       }
     }
   }
@@ -67,7 +54,7 @@
 
   .career {
     min-height: 400px;
-    padding: 300px 0px 100px 0px;
+    padding: 100px 0px 100px 0px;
 
     p {
       width: 60%;
@@ -80,18 +67,37 @@
   }
 
   .perks {
-    background: $primary-color;
-    padding: 100px 0px;
+    padding: 200px 0px;
     width: 100%;
+    background: rgba(0,0,0,0.02);
+
+    p {
+      font-weight: 100;
+      font-size: 1.5em;
+      width: 60%;
+      margin: 20px auto;
+    }
     
 
     .title-section-perks {
       font-size: 1.2em;
     }
 
+    .perk {
+      position: relative;
+      padding: 30px 4px;
+      opacity: 0.5;
+      -webkit-transition: all 0.5s ease;
+
+      &:hover {
+        opacity: 1;
+        top: -20px;   
+      }
+    }
+
     .perk-icon {
-      margin: 20px 0px;
-      width: 200px;
+      margin: 20px auto;
+      max-height: 100px;
     }
 
     .perk-title {
@@ -103,7 +109,6 @@
 
     .perk-description {
       margin: 0 auto;
-      color: #fff;
       line-height: 1.2em;
       font-size: 1.1em;
       font-weight: 200;
@@ -113,15 +118,29 @@
   .positions {
     background: $light-gray;
     min-height: 300px;
-    padding: 3rem;
+    padding: 150px 0px;
+
+    p {
+      width: 60%;
+      margin: 30px auto;
+      color: rgba(0, 0, 0, 0.7);
+      line-height: 1.4em;
+      font-size: 1.3em;
+      font-weight: 200;
+    }
 
     .position {
       border: 3px solid $dark-gray;
       color: $dark-gray;
       display: inline-block;
       font-size: 1.25rem;
-      padding: 1rem 6rem;
+      padding: 1rem 10rem;
       text-decoration: none;
+      
+      &:hover {
+        background: $dark-gray;
+        color: #fff;
+      }
     }
   }
 }

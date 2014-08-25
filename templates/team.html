@@ -33,30 +33,23 @@ type: team
   <!-- Modal info for member -->
   {% for member in site.data.members %}
   <div class="member-modal" id="modal-{{member.id}}">
+    <a class="modal-close">BACK</a>
     <div class="modal-content">
       <div class="modal-image">
         <img src="{{member.picture}}" alt="{{member.name}}" class="member-image"/>
-        <div class="modal-name">
-          <h3>{{ member.name }}</h3>
-          <p class="modal-title">{{ member.title }}</p>
-        </div>
+      </div>
+      <div class="member-info">
+        <h3 class="member-name">{{ member.name }}</h3>
+        <h4 class="member-title">{{ member.title }}</h3>
         <div class="networks">
           {% for network in member.networks %}
-          <!-- <a href="{{ network.link }}" class="social {{network.name}}">{{ network.name }}</a> -->
-          <a href="#" class="social">
-            <img src="/assets/img/twitter.png" alt="">
-          </a>
+            <a href="{{ network.link }}" class="social {{network.name}}">{{ network.name }}</a>
           {% endfor %}
         </div>
+        <p>{{ member.bio }}</p>
       </div>
-
-      <footer class="member-info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </footer>
     </div>
-    <a class="modal-close">x</a>
   </div>
-
   {% endfor %}
   <div class="modal-overlay"></div>
 </section>

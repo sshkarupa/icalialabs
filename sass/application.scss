@@ -103,7 +103,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 200;
+  z-index: 300;
   display: none;
 
 
@@ -116,7 +116,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 
   a {
-    font-size: 4em;
+    font-size: 3.5em;
     color: #fff;
     display: block;
     font-weight: 700;
@@ -143,7 +143,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   position: relative;
   width: 90%;
   margin: 0 auto;
-  z-index: 210;
+  z-index: 310;
 
   .logo {
     position: absolute;

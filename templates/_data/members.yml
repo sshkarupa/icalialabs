@@ -7,41 +7,55 @@
       name: twitter
     - link: http://github.com/aliciacatalina
       name: github
+  bio: Eduardo provides part of the strategy sales and commercialization initiatives in representation of the team. <br ><br > He helps our clients addressing goals, objectives and critical technical decisions looking to achieve their vision. His background is in Computer Science supporting the assessment of complexity and efforts within every new product. <br ><br >Eduardo likes to play guitar, mostly acoustic taking advantage of his fingers because he can't sing anything. He also likes to practice and watch mixed martial arts. Beard, technology, music and new experiences define this founding member.
+
+- name: Abraham Kuri
+  title: Hacker in Chief
+  id: kuri
+  picture: /assets/img/kuri.jpg
+  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
+
 
 - name: Eduardo Higareda
-  id: eldelentes
-  title: Designer
+  title: Lead Desginer
+  id: <lentes></lentes>
   picture: /assets/img/lentes.jpg
-  networks:
-    - link: http://twitter.com/eldelentes
-      name: twitter
+  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
 
 - name: Ana Daniel
   title: Developer
   id: ana
   picture: /assets/img/ana.jpg
+  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
 
 - name: Scarlett Garza
   title: Designer
   id: scarlett
   picture: /assets/img/scarlett.jpg
 
-- name: Abraham Kuri
-  title: Developer
-  id: kuri
-  picture: /assets/img/kuri.jpg
 
 - name: Alicia Gonzalez
   id: aliciagonzalez
   title: Developer
   picture: /assets/img/alicia.jpg
-  networks:
-    - link: http://twitter.com/alicia_catalina
-      name: twitter
-    - link: http://github.com/aliciacatalina
-      name: github
 
-- name: Abraham Kuri
-  title: Developer
-  id: kuri
+
+- name: Noe Araujo
+  title: Designer
+  id: noe
   picture: /assets/img/noe.jpg
+
+- name: Patricio Beltran
+  title: Developer
+  id: pato
+  picture: /assets/img/pato.png
+
+- name: Roel Castaño
+  title: Developer
+  id: roel
+  picture: /assets/img/roel.png
+
+- name: Osvaldo Ayala
+  title: Developer
+  id: osvie
+  picture: /assets/img/osvie.jpg
