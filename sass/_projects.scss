@@ -48,41 +48,51 @@
 
   .perspective {
     display: inline-block;
-    border: 3px solid rgba(0,0,0,0.3);
-    padding: 15px 10px;
-    border-radius: 3px;
     text-transform: uppercase;
     font-weight: 900;
-    margin: 40px 0px;
-    padding: 1rem;
     perspective: 800px;
     position: relative;
     margin: 0;
     z-index: 1;
 
     .project-link {
+      background: transparent;
       display: block;
-      color: #fff;
+      color: #FFF;
       text-decoration: none;
-      display: inline-block;
       border: 3px solid rgba(0,0,0,0.3);
-      padding: 15px 10px;
-      border-radius: 3px;
       text-transform: uppercase;
       transform-style: preserve-3d;
       outline: 1px solid transparent;
       font-weight: 900;
       margin: 10px 0px;
+      padding: 25px 80px;
       position: relative;
       @include transition(all 0.5s ease);
 
+      &:after {
+        background: #FFF;
+        color: #000;
+        content: 'Ver Proyecto';
+        height: 100%;
+        left: 0;
+        line-height: 70px;
+        position: absolute;
+        width: 100%;
+        @include transform-origin( 0%, 100% );
+        @include transform(rotateX(90deg));
+        @include transition(all 0.5s ease);
+        text-align: center;
+        text-transform: uppercase;
+        top: -98%;
+        z-index: -1;
+      }
+
 
       &:hover {
-        background: #000;
-        color: #000;
-        background: #fff;
-        border: 3px solid rgba(255,255,255,0.0);
-        left: 20px;
+        background: transparent;
+        @include transform-origin( 50%, 100% );
+        @include transform(rotateX(-90deg), translateY(100%));
       }
     }
   }
