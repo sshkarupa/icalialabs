@@ -13,16 +13,16 @@
       a {
         color: transparent;
         display: block;
-        height: 50px;
+        height: 30px;
         position: relative;
 
         &:after {
-          border: 4px solid $primary-color;
+          border: 1px solid $primary-color;
           border-radius: 50%;
           content: '';
-          height: 24px;
+          height: 14px;
           position: absolute;
-          width: 24px;
+          width: 14px;
         }
 
         &:hover:after {
@@ -34,25 +34,64 @@
         }
       }
     }
-    section {
-      position: relative;
-      background-position: top center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+
+    .step {
+      text-align: center;
+      padding: 100px 0px;
+
+      .step-number {
+        color: $primary-color;
+        border-radius: 50%;
+        border: 4px solid $primary-color;
+        font-weight: 700;
+        padding: 0px 10px;
+        font-size: 1.5em;
+      }
+
+      .step-title {
+        margin: 20px 0px;
+        color: $primary-color;
+        letter-spacing: 1px;
+        font-size: 3rem;
+      }
+
+      .step-description {
+        font-size: 1.5em;
+        font-weight: 200;
+        color: rgba(0,0,0,0.8);
+      }
     }
 
-    #first-section {
-      background-image: url('/assets/img/office.png');
-    }
-    #second-section {
-      background-image: url('/assets/img/team.png');
-    }
-    #third-section {
-      background-image: url('/assets/img/bg-intro.png');
-    }
-    #fourth-section {
-      background-image: url('/assets/img/bg-culture.jpg');
+    section {
+      position: relative;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
   }
+}
+
+#understanding {
+  background-image: url(/assets/img/understanding.png);
+  background-color: #f7f7f7;
+}
+
+#definition {
+  background-image: url(/assets/img/definition.png);
+  background-color: #fff;
+}
+
+#design {
+  background-image: url(/assets/img/design.png);
+  background-color: #f7f7f7;
+}
+
+#build {
+  background-image: url(/assets/img/build.png);
+  background-color: #fff;
+}
+
+#measure {
+  background-image: url(/assets/img/measure.png);
+  background-color: #f7f7f7;
 }
