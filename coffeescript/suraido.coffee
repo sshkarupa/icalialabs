@@ -12,8 +12,8 @@
     enableKeys: true
     enableDots: true
     enableArrows: true
-    prev: '«'
-    next: '»'
+    prev: ''
+    next: ''
     fluid: true
     starting: false
     completed: false

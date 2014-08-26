@@ -10,6 +10,7 @@
 @import 'culture';
 @import 'suraido';
 @import 'contact';
+@import 'process';
 
 
 
@@ -702,25 +703,53 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     text-decoration: none;
   }
 }
-.member-modal {
-    position: fixed;
-    top: 10%;
-    left: 40%;
-    width: 50%;
-    max-width: 350px;
-    min-width: 320px;
-    height: auto;
-    z-index: 2000;
-    visibility: hidden;
-    // @include backface-visibility(hidden);
-    // @include transform(translateX(-50%) translateY(-50%));
-    // @include perspective(1300px);
+
+.simple-modal {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  width: 50%;
+  max-width: 350px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+
+  .modal-header {
+    background: #FFF;
+    color: #000;
+    padding: 20px;
   }
 
-  .show {
+
+  .modal-content {
+    background: #FFF;
+    opacity: 0;
+    overflow: visible;
+    padding: 50px;
+    text-align: center;
+
+    .modal-close {
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &.show {
     visibility: visible;
-  }
+    ~ .modal-overlay {
+      opacity: 0.5;
+      visibility: visible;
+    }
 
+    .modal-content {
+      min-height: 300px;
+      opacity: 1;
+    }
+  }
+}
   .modal-overlay {
     position: fixed;
     width: 100%;
@@ -731,35 +760,8 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     z-index: 100;
     opacity: 0;
     background: $primary-color;
-    transition: all 0.3s;
+    transition: all 0.2s;
   }
 
-  .show ~ .modal-overlay {
-    opacity: 0.8;
-    visibility: visible;
-  }
-
-  .modal-content {
-    @include transform-style(preserve-3d);
-    @include transform(rotateY(-70deg));
-    @include single-transition(all 0.3s);
-    opacity: 0;
-    overflow: visible;
-    text-align: center;
-
-    .modal-image {
-
-      .member-image {
-        display: block;
-        width: 100%;
-      }
-
-    }
-  }
-  .show .modal-content {
-    @include transform(rotateY(0deg));
-    transform: rotateY(0deg);
-    opacity: 1;
-  }
 
 
