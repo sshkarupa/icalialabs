@@ -140,6 +140,11 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   display: block !important;
 }
 
+.index {
+  .main-menu {
+    -webkit-animation: bounceInDown 2s;
+  }
+}
 .main-menu {
   position: relative;
   width: 90%;
@@ -149,7 +154,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   .logo {
     position: absolute;
     left: 40px;
-    display: inline-block;
     z-index: 100;
 
     svg {
@@ -258,7 +262,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   right: 0;
   left: 0;
   bottom: 0;
-  z-index: 100;
+  z-index: 101;
   opacity: 1;
 }
 
@@ -586,6 +590,57 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 // ############ Animations ##################
 
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
 @-webkit-keyframes rotate-right {
   0% {

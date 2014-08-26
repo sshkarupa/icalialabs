@@ -4,13 +4,6 @@ jQuery(document).ready ->
     $(".load-mask").fadeOut "slow"
     ), 900
 
-  setTimeout -> 
-    $(".load-mask").fadeOut "slow"
-  , 900
-
-  setTimeout (->
-    $(".index .main-menu").addClass "animated bounceInDown"
-    ), 900
 
   $(".team-section").kinetic()
 
