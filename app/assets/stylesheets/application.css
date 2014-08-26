@@ -1314,11 +1314,7 @@ slideUp
   background: #e60038;
 }
 /* line 75, ../../../sass/_culture.scss */
-<<<<<<< HEAD
 .culture .perks .section-description {
-=======
-.culture .perks p {
->>>>>>> 34344b0... Adds process page and styles
   font-weight: 100;
   font-size: 1.5em;
   width: 60%;
@@ -1604,11 +1600,6 @@ slideUp
 }
 
 /* line 1, ../../../sass/_process.scss */
-<<<<<<< HEAD
-.process {
-  height: 100%;
-}
-=======
 .process, .process-scroller, .process-scroller section {
   height: 100%;
 }
@@ -1672,7 +1663,6 @@ slideUp
 .process .process-scroller #fourth-section, .process-scroller .process-scroller #fourth-section, .process-scroller section .process-scroller #fourth-section {
   background-image: url("/assets/img/bg-culture.jpg");
 }
->>>>>>> 34344b0... Adds process page and styles
 
 /* line 17, ../../../sass/application.scss */
 * {
@@ -2520,27 +2510,15 @@ a:visited {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* line 709, ../../../sass/application.scss */
 .simple-modal {
   position: fixed;
   top: 10%;
   width: 100%;
-=======
-/* line 707, ../../../sass/application.scss */
-.simple-modal {
-  position: fixed;
-  top: 10%;
-  left: 40%;
-  width: 50%;
-  max-width: 350px;
-  min-width: 320px;
->>>>>>> 34344b0... Adds process page and styles
   height: auto;
   z-index: 2000;
   visibility: hidden;
 }
-<<<<<<< HEAD
 /* line 717, ../../../sass/application.scss */
 .simple-modal .modal-header {
   text-align: center;
@@ -2552,23 +2530,11 @@ a:visited {
 }
 /* line 727, ../../../sass/application.scss */
 .simple-modal .modal-content {
-=======
-/* line 718, ../../../sass/application.scss */
-.simple-modal .modal-header {
-  background: #FFF;
-  color: #000;
-  padding: 20px;
-}
-/* line 725, ../../../sass/application.scss */
-.simple-modal .modal-content {
-  background: #FFF;
->>>>>>> 34344b0... Adds process page and styles
   opacity: 0;
   overflow: visible;
   padding: 50px;
   text-align: center;
 }
-<<<<<<< HEAD
 /* line 733, ../../../sass/application.scss */
 .simple-modal .modal-content p {
   font-weight: 100;
@@ -2596,29 +2562,12 @@ a:visited {
   visibility: visible;
 }
 /* line 760, ../../../sass/application.scss */
-/* line 732, ../../../sass/application.scss */
-.simple-modal .modal-content .modal-close {
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-/* line 740, ../../../sass/application.scss */
-.simple-modal.show {
-  visibility: visible;
-}
-/* line 742, ../../../sass/application.scss */
-.simple-modal.show ~ .modal-overlay {
-  opacity: 0.5;
-  visibility: visible;
-}
-/* line 747, ../../../sass/application.scss */
 .simple-modal.show .modal-content {
   min-height: 300px;
   opacity: 1;
 }
 
-/* line 753, ../../../sass/application.scss */
+/* line 767, ../../../sass/application.scss */
 .modal-overlay {
   position: fixed;
   width: 100%;
