@@ -1312,33 +1312,72 @@ slideUp
   padding: 200px 0px;
   width: 100%;
   background: #e60038;
+  overflow: hidden;
 }
-/* line 75, ../../../sass/_culture.scss */
+/* line 76, ../../../sass/_culture.scss */
 .culture .perks .section-description {
   font-weight: 100;
   font-size: 1.5em;
   width: 60%;
   margin: 20px auto;
 }
-/* line 82, ../../../sass/_culture.scss */
+/* line 83, ../../../sass/_culture.scss */
 .culture .perks .title-section-perks {
   font-size: 1.2em;
   color: #fff;
 }
-/* line 87, ../../../sass/_culture.scss */
+/* line 88, ../../../sass/_culture.scss */
 .culture .perks .perk {
   position: relative;
   padding: 30px 4px;
+  padding-top: 25%;
   -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
-/* line 93, ../../../sass/_culture.scss */
+/* line 96, ../../../sass/_culture.scss */
+.culture .perks .perk:hover figure {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* line 100, ../../../sass/_culture.scss */
+.culture .perks .perk:hover figure .perk-icon {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+/* line 107, ../../../sass/_culture.scss */
+.culture .perks .perk:hover figure figcaption .perk-description {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+/* line 116, ../../../sass/_culture.scss */
+.culture .perks .perk figure {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+}
+/* line 123, ../../../sass/_culture.scss */
 .culture .perks .perk-icon {
   margin: 20px auto;
   max-height: 100px;
   -webkit-animation: float 1s ease-in infinite;
-  position: relative;
 }
-/* line 100, ../../../sass/_culture.scss */
+/* line 129, ../../../sass/_culture.scss */
 .culture .perks .perk-title {
   letter-spacing: 2px;
   margin: 10px 0px;
@@ -1346,20 +1385,21 @@ slideUp
   font-size: 1.1em;
   color: #fff;
 }
-/* line 108, ../../../sass/_culture.scss */
+/* line 137, ../../../sass/_culture.scss */
 .culture .perks .perk-description {
   margin: 0 auto;
   line-height: 1.2em;
   font-size: 1.1em;
   font-weight: 200;
+  opacity: 0;
 }
-/* line 116, ../../../sass/_culture.scss */
+/* line 146, ../../../sass/_culture.scss */
 .culture .positions {
   background: rgba(0, 0, 0, 0.05);
   min-height: 300px;
   padding: 150px 0px;
 }
-/* line 121, ../../../sass/_culture.scss */
+/* line 151, ../../../sass/_culture.scss */
 .culture .positions p {
   width: 60%;
   margin: 30px auto;
@@ -1368,7 +1408,7 @@ slideUp
   font-size: 1.3em;
   font-weight: 200;
 }
-/* line 130, ../../../sass/_culture.scss */
+/* line 160, ../../../sass/_culture.scss */
 .culture .positions .position {
   border: 3px solid #1d252e;
   color: #1d252e;
@@ -1377,23 +1417,23 @@ slideUp
   padding: 1rem 10rem;
   text-decoration: none;
 }
-/* line 138, ../../../sass/_culture.scss */
+/* line 168, ../../../sass/_culture.scss */
 .culture .positions .position:hover {
   background: #1d252e;
   color: #fff;
 }
 
-/* line 146, ../../../sass/_culture.scss */
+/* line 176, ../../../sass/_culture.scss */
 .square-bg-1 {
   background: #9f042a;
 }
 
-/* line 150, ../../../sass/_culture.scss */
+/* line 180, ../../../sass/_culture.scss */
 .square-bg-2 {
   background: #ee1b4e;
 }
 
-/* line 154, ../../../sass/_culture.scss */
+/* line 184, ../../../sass/_culture.scss */
 .square-bg-3 {
   background: #be0230;
 }

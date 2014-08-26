@@ -71,6 +71,7 @@
     padding: 200px 0px;
     width: 100%;
     background: $primary-color;
+    overflow: hidden;
 
     .section-description {
       font-weight: 100;
@@ -87,14 +88,42 @@
     .perk {
       position: relative;
       padding: 30px 4px;
-      -webkit-transition: all 0.4s ease-in-out;
+      padding-top: 25%;
+      @include transition(all 0.4s ease-in-out);
+      overflow: hidden;
+
+      &:hover {
+        figure {
+          @include transform(translateY(-50%));
+          @include transition(all 0.4s ease-in-out);
+
+          .perk-icon {
+            opacity: 0;
+            @include transition(all 0.5s ease-in);
+          }
+
+          figcaption {
+
+            .perk-description {
+              opacity: 1;
+              @include transition(all 0.5s ease-in);
+            }
+
+          }
+        }
+      }
+
+      figure {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+      }
     }
 
     .perk-icon {
       margin: 20px auto;
       max-height: 100px;
       -webkit-animation: float 1s ease-in infinite;
-      position: relative;
     }
 
     .perk-title {
@@ -110,6 +139,7 @@
       line-height: 1.2em;
       font-size: 1.1em;
       font-weight: 200;
+      opacity: 0;
     }
   }
 
@@ -134,7 +164,7 @@
       font-size: 1.25rem;
       padding: 1rem 10rem;
       text-decoration: none;
-      
+
       &:hover {
         background: $dark-gray;
         color: #fff;
