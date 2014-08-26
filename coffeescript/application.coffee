@@ -8,9 +8,6 @@ jQuery(document).ready ->
     $(".load-mask").fadeOut "slow"
   , 900
 
-  #Intro animation
-  # $('.index .intro').addClass 'animated bounceInUp'
-
   setTimeout (->
     $(".index .main-menu").addClass "animated bounceInDown"
     ), 900
@@ -55,4 +52,8 @@ jQuery(document).ready ->
     enableDots: false
     enableArrows: false
     autoplay: false
+
+  #Call scroller function on process page
+  cbpFixedScrollLayout.init()
+
 

@@ -1314,7 +1314,11 @@ slideUp
   background: #e60038;
 }
 /* line 75, ../../../sass/_culture.scss */
+<<<<<<< HEAD
 .culture .perks .section-description {
+=======
+.culture .perks p {
+>>>>>>> 34344b0... Adds process page and styles
   font-weight: 100;
   font-size: 1.5em;
   width: 60%;
@@ -1600,9 +1604,75 @@ slideUp
 }
 
 /* line 1, ../../../sass/_process.scss */
+<<<<<<< HEAD
 .process {
   height: 100%;
 }
+=======
+.process, .process-scroller, .process-scroller section {
+  height: 100%;
+}
+/* line 6, ../../../sass/_process.scss */
+.process .process-scroller nav, .process-scroller .process-scroller nav, .process-scroller section .process-scroller nav {
+  position: fixed;
+  z-index: 9999;
+  right: 100px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 13, ../../../sass/_process.scss */
+.process .process-scroller nav a, .process-scroller .process-scroller nav a, .process-scroller section .process-scroller nav a {
+  color: transparent;
+  display: block;
+  height: 50px;
+  position: relative;
+}
+/* line 19, ../../../sass/_process.scss */
+.process .process-scroller nav a:after, .process-scroller .process-scroller nav a:after, .process-scroller section .process-scroller nav a:after {
+  border: 4px solid #e60038;
+  border-radius: 50%;
+  content: '';
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+/* line 28, ../../../sass/_process.scss */
+.process .process-scroller nav a:hover:after, .process-scroller .process-scroller nav a:hover:after, .process-scroller section .process-scroller nav a:hover:after {
+  background: #e60038;
+}
+/* line 32, ../../../sass/_process.scss */
+.process .process-scroller nav a.process-current:after, .process-scroller .process-scroller nav a.process-current:after, .process-scroller section .process-scroller nav a.process-current:after {
+  background: #e60038;
+}
+/* line 37, ../../../sass/_process.scss */
+.process .process-scroller section, .process-scroller .process-scroller section, .process-scroller section .process-scroller section {
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* line 45, ../../../sass/_process.scss */
+.process .process-scroller #first-section, .process-scroller .process-scroller #first-section, .process-scroller section .process-scroller #first-section {
+  background-image: url("/assets/img/office.png");
+}
+/* line 48, ../../../sass/_process.scss */
+.process .process-scroller #second-section, .process-scroller .process-scroller #second-section, .process-scroller section .process-scroller #second-section {
+  background-image: url("/assets/img/team.png");
+}
+/* line 51, ../../../sass/_process.scss */
+.process .process-scroller #third-section, .process-scroller .process-scroller #third-section, .process-scroller section .process-scroller #third-section {
+  background-image: url("/assets/img/bg-intro.png");
+}
+/* line 54, ../../../sass/_process.scss */
+.process .process-scroller #fourth-section, .process-scroller .process-scroller #fourth-section, .process-scroller section .process-scroller #fourth-section {
+  background-image: url("/assets/img/bg-culture.jpg");
+}
+>>>>>>> 34344b0... Adds process page and styles
 
 /* line 17, ../../../sass/application.scss */
 * {
@@ -2450,15 +2520,27 @@ a:visited {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 /* line 709, ../../../sass/application.scss */
 .simple-modal {
   position: fixed;
   top: 10%;
   width: 100%;
+=======
+/* line 707, ../../../sass/application.scss */
+.simple-modal {
+  position: fixed;
+  top: 10%;
+  left: 40%;
+  width: 50%;
+  max-width: 350px;
+  min-width: 320px;
+>>>>>>> 34344b0... Adds process page and styles
   height: auto;
   z-index: 2000;
   visibility: hidden;
 }
+<<<<<<< HEAD
 /* line 717, ../../../sass/application.scss */
 .simple-modal .modal-header {
   text-align: center;
@@ -2470,11 +2552,23 @@ a:visited {
 }
 /* line 727, ../../../sass/application.scss */
 .simple-modal .modal-content {
+=======
+/* line 718, ../../../sass/application.scss */
+.simple-modal .modal-header {
+  background: #FFF;
+  color: #000;
+  padding: 20px;
+}
+/* line 725, ../../../sass/application.scss */
+.simple-modal .modal-content {
+  background: #FFF;
+>>>>>>> 34344b0... Adds process page and styles
   opacity: 0;
   overflow: visible;
   padding: 50px;
   text-align: center;
 }
+<<<<<<< HEAD
 /* line 733, ../../../sass/application.scss */
 .simple-modal .modal-content p {
   font-weight: 100;
@@ -2502,12 +2596,29 @@ a:visited {
   visibility: visible;
 }
 /* line 760, ../../../sass/application.scss */
+/* line 732, ../../../sass/application.scss */
+.simple-modal .modal-content .modal-close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 740, ../../../sass/application.scss */
+.simple-modal.show {
+  visibility: visible;
+}
+/* line 742, ../../../sass/application.scss */
+.simple-modal.show ~ .modal-overlay {
+  opacity: 0.5;
+  visibility: visible;
+}
+/* line 747, ../../../sass/application.scss */
 .simple-modal.show .modal-content {
   min-height: 300px;
   opacity: 1;
 }
 
-/* line 767, ../../../sass/application.scss */
+/* line 753, ../../../sass/application.scss */
 .modal-overlay {
   position: fixed;
   width: 100%;

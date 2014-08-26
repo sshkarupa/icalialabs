@@ -40,11 +40,12 @@ jQuery(document).ready(function() {
       return mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>";
     }
   });
-  return $(".suraido-container").suraido({
+  $(".suraido-container").suraido({
     fluid: true,
     enableKeys: true,
     enableDots: false,
     enableArrows: false,
     autoplay: false
   });
+  return cbpFixedScrollLayout.init();
 });
