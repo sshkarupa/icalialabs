@@ -215,7 +215,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   }
 }
 // ####################### White background main menu overrides################################
-.team, .contact, .projects {
+.team, .contact, .projec, .process {
   .main-menu{
     .logo {
       svg {
@@ -437,7 +437,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     margin-top: -12.5%;
     position: absolute;
     top: 50%;
-    @include transition(width 1s ease-in-out);
+    @include transition(width 0.5s ease-in-out);
     width: 100%;
 
     &.hide-all {
@@ -542,11 +542,13 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     bottom: 0;
     background: #fff;
   }
-
+  
+  .quote-container {
+    height: 446px;
+    position: relative;
+  }
   .quote {
-    box-sizing: border-box;
-    float: right;
-    padding: 9rem 2rem;
+    padding: 4rem 2rem;
 
     blockquote {
 

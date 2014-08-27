@@ -221,7 +221,7 @@
 }
 /* line 1, ../../../sass/_header.scss */
 .info {
-  padding: 100px;
+  padding: 100px 0px;
   text-align: center;
 }
 /* line 5, ../../../sass/_header.scss */
@@ -357,12 +357,41 @@
   height: 100%;
   z-index: 320;
   visibility: hidden;
+  background: #fff;
+  overflow-y: scroll;
 }
-/* line 112, ../../../sass/_team.scss */
+/* line 113, ../../../sass/_team.scss */
+.team-section .member-modal .modal-image {
+  overflow: hidden;
+  height: 100%;
+}
+/* line 117, ../../../sass/_team.scss */
+.team-section .member-modal .modal-image img {
+  height: 100%;
+}
+/* line 122, ../../../sass/_team.scss */
+.team-section .member-modal .modal-info {
+  color: #4e4e4e;
+  height: 100%;
+  padding: 50px;
+}
+/* line 127, ../../../sass/_team.scss */
+.team-section .member-modal .modal-info .member-title {
+  color: #e60038;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 133, ../../../sass/_team.scss */
+.team-section .member-modal .modal-info p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 50px 0px;
+}
+/* line 141, ../../../sass/_team.scss */
 .team-section .show {
   visibility: visible;
 }
-/* line 116, ../../../sass/_team.scss */
+/* line 145, ../../../sass/_team.scss */
 .team-section .modal-overlay {
   position: fixed;
   width: 100%;
@@ -375,88 +404,35 @@
   background: #fff;
   transition: all 0.3s;
 }
-/* line 129, ../../../sass/_team.scss */
+/* line 158, ../../../sass/_team.scss */
 .team-section .show ~ .modal-overlay {
   visibility: visible;
   opacity: 1;
 }
-/* line 134, ../../../sass/_team.scss */
-.team-section .modal-content {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-/* line 139, ../../../sass/_team.scss */
-.team-section .modal-content .modal-image {
-  overflow: hidden;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 500px;
-}
-/* line 148, ../../../sass/_team.scss */
-.team-section .modal-content .modal-image .member-image {
-  display: block;
-  height: 100%;
-}
-/* line 155, ../../../sass/_team.scss */
-.team-section .modal-content .member-info {
-  color: #4e4e4e;
-  padding: 30px;
-  text-align: left;
-  width: 700px;
-  height: 100%;
-  position: absolute;
-  display: inline-block;
-  left: 500px;
-}
-/* line 165, ../../../sass/_team.scss */
-.team-section .modal-content .member-info .member-title {
-  color: #e60038;
-  font-weight: 100;
-  font-family: 'Open Sans', sans-serif;
-}
-/* line 171, ../../../sass/_team.scss */
-.team-section .modal-content .member-info p {
-  font-size: 1.5rem;
-  font-weight: 200;
-  margin: 50px 0px;
-}
-/* line 179, ../../../sass/_team.scss */
+/* line 163, ../../../sass/_team.scss */
 .team-section .modal-close {
   background: #1d252e;
   color: #FFF;
   position: absolute;
-  padding: 20px 30px;
+  padding: 30px 20px;
   right: 50px;
   text-align: center;
-  top: 0;
-}
-/* line 190, ../../../sass/_team.scss */
-.team-section .show .modal-content {
-  -webkit-transform: rotateY(0deg);
-  -moz-transform: rotateY(0deg);
-  -ms-transform: rotateY(0deg);
-  -o-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  opacity: 1;
+  top: 20px;
+  border-radius: 50%;
 }
 
-/* line 197, ../../../sass/_team.scss */
+/* line 176, ../../../sass/_team.scss */
 .join {
   background: #FFF;
   padding: 50px;
   text-align: center;
 }
-/* line 202, ../../../sass/_team.scss */
+/* line 181, ../../../sass/_team.scss */
 .join .tag {
   margin: 30px 0;
 }
 
-/* line 208, ../../../sass/_team.scss */
+/* line 187, ../../../sass/_team.scss */
 .member:hover > .picture {
   -webkit-transform: scale(1.1);
   -webkit-transform-origin: center;
@@ -467,7 +443,7 @@
 slideUp
 ==============================================
 */
-/* line 220, ../../../sass/_team.scss */
+/* line 199, ../../../sass/_team.scss */
 .slideUp {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
@@ -479,64 +455,64 @@ slideUp
 }
 
 @keyframes slideUp {
-  /* line 234, ../../../sass/_team.scss */
+  /* line 213, ../../../sass/_team.scss */
   0% {
     transform: translateY(100%);
   }
 
-  /* line 237, ../../../sass/_team.scss */
+  /* line 216, ../../../sass/_team.scss */
   50% {
     transform: translateY(-8%);
   }
 
-  /* line 240, ../../../sass/_team.scss */
+  /* line 219, ../../../sass/_team.scss */
   65% {
     transform: translateY(4%);
   }
 
-  /* line 243, ../../../sass/_team.scss */
+  /* line 222, ../../../sass/_team.scss */
   80% {
     transform: translateY(-4%);
   }
 
-  /* line 246, ../../../sass/_team.scss */
+  /* line 225, ../../../sass/_team.scss */
   95% {
     transform: translateY(2%);
   }
 
-  /* line 249, ../../../sass/_team.scss */
+  /* line 228, ../../../sass/_team.scss */
   100% {
     transform: translateY(0%);
   }
 }
 
 @-webkit-keyframes slideUp {
-  /* line 255, ../../../sass/_team.scss */
+  /* line 234, ../../../sass/_team.scss */
   0% {
     -webkit-transform: translateY(100%);
   }
 
-  /* line 258, ../../../sass/_team.scss */
+  /* line 237, ../../../sass/_team.scss */
   50% {
     -webkit-transform: translateY(-8%);
   }
 
-  /* line 261, ../../../sass/_team.scss */
+  /* line 240, ../../../sass/_team.scss */
   65% {
     -webkit-transform: translateY(4%);
   }
 
-  /* line 264, ../../../sass/_team.scss */
+  /* line 243, ../../../sass/_team.scss */
   80% {
     -webkit-transform: translateY(-4%);
   }
 
-  /* line 267, ../../../sass/_team.scss */
+  /* line 246, ../../../sass/_team.scss */
   95% {
     -webkit-transform: translateY(2%);
   }
 
-  /* line 270, ../../../sass/_team.scss */
+  /* line 249, ../../../sass/_team.scss */
   100% {
     -webkit-transform: translateY(0%);
   }
@@ -1425,17 +1401,17 @@ slideUp
 
 /* line 176, ../../../sass/_culture.scss */
 .square-bg-1 {
-  background: #9f042a;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* line 180, ../../../sass/_culture.scss */
 .square-bg-2 {
-  background: #ee1b4e;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 /* line 184, ../../../sass/_culture.scss */
 .square-bg-3 {
-  background: #be0230;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /* line 197, ../../../sass/_suraido.scss */
@@ -1992,15 +1968,15 @@ a:visited {
 }
 
 /* line 221, ../../../sass/application.scss */
-.team .main-menu .logo svg, .contact .main-menu .logo svg, .projects .main-menu .logo svg {
+.team .main-menu .logo svg, .contact .main-menu .logo svg, .projec .main-menu .logo svg, .process .main-menu .logo svg {
   fill: #e60038;
 }
 /* line 227, ../../../sass/application.scss */
-.team .main-menu .burger .one, .team .main-menu .burger .two, .team .main-menu .burger .three, .contact .main-menu .burger .one, .contact .main-menu .burger .two, .contact .main-menu .burger .three, .projects .main-menu .burger .one, .projects .main-menu .burger .two, .projects .main-menu .burger .three {
+.team .main-menu .burger .one, .team .main-menu .burger .two, .team .main-menu .burger .three, .contact .main-menu .burger .one, .contact .main-menu .burger .two, .contact .main-menu .burger .three, .projec .main-menu .burger .one, .projec .main-menu .burger .two, .projec .main-menu .burger .three, .process .main-menu .burger .one, .process .main-menu .burger .two, .process .main-menu .burger .three {
   background: #e60038;
 }
 /* line 231, ../../../sass/application.scss */
-.team .main-menu .burger.active .one, .team .main-menu .burger.active .two, .team .main-menu .burger.active .three, .contact .main-menu .burger.active .one, .contact .main-menu .burger.active .two, .contact .main-menu .burger.active .three, .projects .main-menu .burger.active .one, .projects .main-menu .burger.active .two, .projects .main-menu .burger.active .three {
+.team .main-menu .burger.active .one, .team .main-menu .burger.active .two, .team .main-menu .burger.active .three, .contact .main-menu .burger.active .one, .contact .main-menu .burger.active .two, .contact .main-menu .burger.active .three, .projec .main-menu .burger.active .one, .projec .main-menu .burger.active .two, .projec .main-menu .burger.active .three, .process .main-menu .burger.active .one, .process .main-menu .burger.active .two, .process .main-menu .burger.active .three {
   background: #FFF;
 }
 
@@ -2227,10 +2203,10 @@ a:visited {
   margin-top: -12.5%;
   position: absolute;
   top: 50%;
-  -webkit-transition: width 1s ease-in-out;
-  -moz-transition: width 1s ease-in-out;
-  -o-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
   width: 100%;
 }
 /* line 443, ../../../sass/application.scss */
@@ -2358,26 +2334,29 @@ a:visited {
   background: #fff;
 }
 /* line 546, ../../../sass/application.scss */
-.testimonials .quote {
-  box-sizing: border-box;
-  float: right;
-  padding: 9rem 2rem;
+.testimonials .quote-container {
+  height: 446px;
+  position: relative;
 }
-/* line 553, ../../../sass/application.scss */
+/* line 550, ../../../sass/application.scss */
+.testimonials .quote {
+  padding: 4rem 2rem;
+}
+/* line 555, ../../../sass/application.scss */
 .testimonials .quote blockquote p {
   color: #e60038;
   font-size: 2em;
   padding: 2rem 0;
   font-weight: 100;
 }
-/* line 560, ../../../sass/application.scss */
+/* line 562, ../../../sass/application.scss */
 .testimonials .quote blockquote .cite {
   color: #000;
   padding: 0px 10px;
   text-align: left;
 }
 
-/* line 569, ../../../sass/application.scss */
+/* line 571, ../../../sass/application.scss */
 .footer {
   background: #fff;
   color: #e60038;
@@ -2386,7 +2365,7 @@ a:visited {
   font-size: 0.8rem;
   padding: 6rem 0;
 }
-/* line 577, ../../../sass/application.scss */
+/* line 579, ../../../sass/application.scss */
 .footer .contact-link {
   color: #e60038;
   text-decoration: none;
@@ -2394,27 +2373,27 @@ a:visited {
 }
 
 @-webkit-keyframes bounceInDown {
-  /* line 589, ../../../sass/application.scss */
+  /* line 591, ../../../sass/application.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 595, ../../../sass/application.scss */
+  /* line 597, ../../../sass/application.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
 
-  /* line 601, ../../../sass/application.scss */
+  /* line 603, ../../../sass/application.scss */
   80% {
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 606, ../../../sass/application.scss */
+  /* line 608, ../../../sass/application.scss */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -2422,7 +2401,7 @@ a:visited {
 }
 
 @keyframes bounceInDown {
-  /* line 613, ../../../sass/application.scss */
+  /* line 615, ../../../sass/application.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -2430,7 +2409,7 @@ a:visited {
     transform: translateY(-2000px);
   }
 
-  /* line 620, ../../../sass/application.scss */
+  /* line 622, ../../../sass/application.scss */
   60% {
     opacity: 1;
     -webkit-transform: translateY(30px);
@@ -2438,14 +2417,14 @@ a:visited {
     transform: translateY(30px);
   }
 
-  /* line 627, ../../../sass/application.scss */
+  /* line 629, ../../../sass/application.scss */
   80% {
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
-  /* line 633, ../../../sass/application.scss */
+  /* line 635, ../../../sass/application.scss */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -2454,7 +2433,7 @@ a:visited {
 }
 
 @-webkit-keyframes rotate-right {
-  /* line 641, ../../../sass/application.scss */
+  /* line 643, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2465,7 +2444,7 @@ a:visited {
     top: 0px;
   }
 
-  /* line 646, ../../../sass/application.scss */
+  /* line 648, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -2478,7 +2457,7 @@ a:visited {
 }
 
 @-moz-keyframes rotate-right {
-  /* line 654, ../../../sass/application.scss */
+  /* line 656, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2489,7 +2468,7 @@ a:visited {
     top: 0px;
   }
 
-  /* line 659, ../../../sass/application.scss */
+  /* line 661, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -2502,7 +2481,7 @@ a:visited {
 }
 
 @-webkit-keyframes spin {
-  /* line 668, ../../../sass/application.scss */
+  /* line 670, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2511,7 +2490,7 @@ a:visited {
     transform: rotate(0deg);
   }
 
-  /* line 671, ../../../sass/application.scss */
+  /* line 673, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -2522,7 +2501,7 @@ a:visited {
 }
 
 @-moz-keyframes spin {
-  /* line 677, ../../../sass/application.scss */
+  /* line 679, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2531,7 +2510,7 @@ a:visited {
     transform: rotate(0deg);
   }
 
-  /* line 680, ../../../sass/application.scss */
+  /* line 682, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
@@ -2542,7 +2521,7 @@ a:visited {
 }
 
 @-webkit-keyframes rotate-left {
-  /* line 687, ../../../sass/application.scss */
+  /* line 689, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2551,7 +2530,7 @@ a:visited {
     transform: rotate(0deg);
   }
 
-  /* line 688, ../../../sass/application.scss */
+  /* line 690, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -2562,7 +2541,7 @@ a:visited {
 }
 
 @-moz-keyframes rotate-left {
-  /* line 692, ../../../sass/application.scss */
+  /* line 694, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -2571,7 +2550,7 @@ a:visited {
     transform: rotate(0deg);
   }
 
-  /* line 693, ../../../sass/application.scss */
+  /* line 695, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -2582,19 +2561,19 @@ a:visited {
 }
 
 @-webkit-keyframes hide {
-  /* line 699, ../../../sass/application.scss */
+  /* line 701, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     top: 0px;
     opacity: 1;
   }
 
-  /* line 705, ../../../sass/application.scss */
+  /* line 707, ../../../sass/application.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 709, ../../../sass/application.scss */
+  /* line 711, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(90deg);
     top: 200px;
@@ -2602,19 +2581,19 @@ a:visited {
 }
 
 @-moz-keyframes hide {
-  /* line 717, ../../../sass/application.scss */
+  /* line 719, ../../../sass/application.scss */
   0% {
     -webkit-transform: rotate(0deg);
     top: 0px;
     opacity: 1;
   }
 
-  /* line 723, ../../../sass/application.scss */
+  /* line 725, ../../../sass/application.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 727, ../../../sass/application.scss */
+  /* line 729, ../../../sass/application.scss */
   100% {
     -webkit-transform: rotate(90deg);
     top: 200px;
@@ -2622,7 +2601,7 @@ a:visited {
 }
 
 @-webkit-keyframes move {
-  /* line 734, ../../../sass/application.scss */
+  /* line 736, ../../../sass/application.scss */
   50% {
     bottom: 50%;
     left: -70%;
@@ -2630,25 +2609,25 @@ a:visited {
 }
 
 @-moz-keyframes move {
-  /* line 741, ../../../sass/application.scss */
+  /* line 743, ../../../sass/application.scss */
   50% {
     bottom: 50%;
     left: -70%;
   }
 }
 
-/* line 747, ../../../sass/application.scss */
+/* line 749, ../../../sass/application.scss */
 .info {
   background: #FFF;
   width: 100%;
   min-height: 300px;
 }
-/* line 752, ../../../sass/application.scss */
+/* line 754, ../../../sass/application.scss */
 .info a, .info span {
   text-decoration: none;
 }
 
-/* line 759, ../../../sass/application.scss */
+/* line 761, ../../../sass/application.scss */
 .simple-modal {
   position: fixed;
   top: 10%;
@@ -2657,29 +2636,29 @@ a:visited {
   z-index: 2000;
   visibility: hidden;
 }
-/* line 767, ../../../sass/application.scss */
+/* line 769, ../../../sass/application.scss */
 .simple-modal .modal-header {
   text-align: center;
   color: #e60038;
 }
-/* line 771, ../../../sass/application.scss */
+/* line 773, ../../../sass/application.scss */
 .simple-modal .modal-header h3 {
   font-size: 4rem;
 }
-/* line 777, ../../../sass/application.scss */
+/* line 779, ../../../sass/application.scss */
 .simple-modal .modal-content {
   opacity: 0;
   overflow: visible;
   padding: 50px;
   text-align: center;
 }
-/* line 783, ../../../sass/application.scss */
+/* line 785, ../../../sass/application.scss */
 .simple-modal .modal-content p {
   font-weight: 100;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 790, ../../../sass/application.scss */
+/* line 792, ../../../sass/application.scss */
 .simple-modal .modal-content .modal-close {
   cursor: pointer;
   position: absolute;
@@ -2690,22 +2669,22 @@ a:visited {
   border-radius: 100px;
   padding: 5px 20px;
 }
-/* line 802, ../../../sass/application.scss */
+/* line 804, ../../../sass/application.scss */
 .simple-modal.show {
   visibility: visible;
 }
-/* line 805, ../../../sass/application.scss */
+/* line 807, ../../../sass/application.scss */
 .simple-modal.show ~ .modal-overlay {
   opacity: 0.95;
   visibility: visible;
 }
-/* line 810, ../../../sass/application.scss */
+/* line 812, ../../../sass/application.scss */
 .simple-modal.show .modal-content {
   min-height: 300px;
   opacity: 1;
 }
 
-/* line 817, ../../../sass/application.scss */
+/* line 819, ../../../sass/application.scss */
 .modal-overlay {
   position: fixed;
   width: 100%;
