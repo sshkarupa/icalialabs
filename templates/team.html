@@ -15,11 +15,11 @@ type: team
 <div class="wrapper">
 <div class="gradient"></div>
 <section class="team-section clearfix row">
-  <div class="hider">
+  <div class="hider row">
     {% for member in site.data.members %}
-    <div class="member col-3">
+    <div class="member col-3  modal-trigger" data-modal="modal-{{member.id}}">
       <img src="{{member.picture}}" alt="{{member.name}}" class="picture"/>
-      <div class="info-circle slideUp modal-trigger" data-modal="modal-{{member.id}}">
+      <div class="info-circle slideUp hidden-on-xsmall">
         <a href="#member-info"></a>
         <h5 class="name">{{ member.name }}</h5>
         <h6 class="position">{{ member.title }}</h6>
