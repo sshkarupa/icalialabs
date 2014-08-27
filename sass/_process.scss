@@ -29,7 +29,7 @@
           background: $primary-color;
         }
 
-        &.process-current:after {
+        &.scroller-current:after {
           background: $primary-color;
         }
       }
@@ -95,3 +95,4 @@
   background-image: url(/assets/img/measure.png);
   background-color: #f9f9f9;
 }
+
