@@ -400,6 +400,14 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   height: 500px;
   overflow: hidden;
 
+  .design-badge svg path {
+    fill: $primary-color;
+  }
+
+  .developer-badge svg path {
+    fill: $primary-color;
+  }
+
   .mask {
     background: #FFF;
     @include transition(width 1s ease-in-out);
@@ -460,6 +468,11 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     opacity: 1;
     @include transition(width 1s ease-in-out);
     width: 100%;
+    
+    .design-badge svg path, .developer-badge svg path {
+      fill: #fff;
+    }
+
 
     .more {
       display: block;
