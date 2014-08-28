@@ -290,7 +290,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   text-align: center;
 
   .intro-content {
-    padding: 250px 0px;
+    padding: 15rem 0;
   }
 
   .tagline {
@@ -340,7 +340,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     color: $primary-color;
     text-align: center;
     background: #fff;
-    padding: 50px 0px;
+    padding: 50px 0 0 0;
   }
 
   .advantages {
@@ -349,8 +349,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     background: #fff;
 
     .card {
-      height: 600px;
-      padding: 100px 0px 0px 0px;
+      padding: 6.25rem 0;
       display: inline-block;
       vertical-align: top;
       @include transition(all 0.3s ease);
@@ -502,10 +501,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       position: absolute;
       top: 35%;
       @include transition(1s ease-in-out);
-      z-index: 300;
       line-height: 80px;
       text-align: center;
       font-size: 12px;
+      z-index: 100;
 
       span {
         line-height: normal;
