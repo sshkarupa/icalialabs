@@ -51,7 +51,7 @@ cbpFixedScrollLayout = (->
   # update the current navigation link
   changeNav = ($section) ->
     config.$navlinks.eq(config.currentLink).removeClass "scroller-current"
-    config.currentLink = $section.index("section")
+    config.currentLink = $section.index("#process-scroller > section")
     config.$navlinks.eq(config.currentLink).addClass "scroller-current"
     return
   
@@ -64,7 +64,7 @@ cbpFixedScrollLayout = (->
   config =
     $container: $('body.process').parents('html')
     $sections: $("#process-scroller > section")
-    $navlinks: $("#process-scroller > nav:first > a")
+    $navlinks: $("#process-scroller > nav > a")
     currentLink: 0
     $body: $(".process, html")
     animspeed: 650
