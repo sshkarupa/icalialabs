@@ -3,7 +3,7 @@ layout: application
 title: Icalia Labs
 type: index
 ---
-<div class="simple-modal" id="modal-engage">
+<div class="simple-modal modal" id="modal-engage">
   <div class="modal-header">
     <h3>Engage.</h3>
   </div>
@@ -12,7 +12,7 @@ type: index
     <a class="modal-close">Close</a>
   </div>
 </div>
-<div class="simple-modal" id="modal-experience">
+<div class="simple-modal modal" id="modal-experience">
   <div class="modal-header">
     <h3>Experience.</h3>
   </div>
@@ -21,7 +21,7 @@ type: index
     <a class="modal-close">Close</a>
   </div>
 </div>
-<div class="simple-modal" id="modal-knowledge">
+<div class="simple-modal modal" id="modal-knowledge">
   <div class="modal-header">
     <h3>Knowledge.</h3>
   </div>
@@ -30,7 +30,6 @@ type: index
     <a class="modal-close">Close</a>
   </div>
 </div>
-<div class="modal-overlay"></div>
 <div class="index-background">
       <section class="intro row">
         <div class="container">
@@ -48,19 +47,19 @@ type: index
             <img src="assets/img/engage.png" alt="" class="icon">
             <h4 class="card-title">Engage.</h4>
             <p>We create software that engages with people.</p>
-            <a class="card-link modal-trigger" href="#engage" data-modal="modal-engage">See More</a>
+            <span class="card-link modal-trigger" data-furatto="modal" data-target="#modal-engage">See More</a>
           </div>
           <div class="card experience col-4">
             <img src="assets/img/experience.png" alt="" class="icon">
             <h4 class="card-title">Experience.</h4>
             <p>We create software that engages with people.</p>
-            <a class="card-link modal-trigger" href="#experience" data-modal="modal-experience">See More</a>
+            <span class="card-link modal-trigger" data-target="#modal-experience" data-furatto="modal">See More</a>
           </div>
           <div class="card knowledge col-4">
             <img src="assets/img/knowledge.png" alt="" class="icon">
             <h4 class="card-title">Knowledge.</h4>
             <p>We create software that engages with people.</p>
-            <a class="card-link modal-trigger" href="#knowledge" data-modal="modal-knowledge">See More</a>
+            <a class="card-link modal-trigger" data-target="#modal-knowledge" data-furatto="modal">See More</a>
           </div>
         </div>
       </section>
@@ -92,7 +91,7 @@ type: index
         </ul>
       </div>
     </section>
-    <section class="skills clearfix row">
+    <section class="skills clearfix row hidden-on-small hidden-on-xsmall">
       <div class="mask col-6">
         <div class="technology skill row">
           <div class="col-6 text-center">
@@ -121,7 +120,7 @@ type: index
         </div>
       </section>
       <section class="testimonials row clearfix">
-        <div class="picture col-3">
+        <div class="picture col-3 hidden-on-xsmall hidden-on-small">
           <img src="assets/img/ginger.png" alt="" />
           <div class="fake-skew"></div>
         </div>

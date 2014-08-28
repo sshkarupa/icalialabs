@@ -8,17 +8,13 @@ $brand-font: 'Circular' , sans-serif;
 
 // Media queries
 $media-display: "only screen" !default;
-
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 @font-face {
     font-family: Circular;
     src: url(../fonts/Circular.otf);
     font-weight:400;
 }
+//Furatto Overrides
+$modal-default-background-color: transparent !default;
+$modal-overlay-show-opacity: 0.9 !default;
+$modal-overlay-background: #FFF !default;
+$modal-header-background-color: #FFF !default;
