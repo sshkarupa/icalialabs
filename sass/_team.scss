@@ -101,6 +101,7 @@
   }
 
   .member-modal {
+    cursor: default;
     position: fixed;
     top: 0;
     width: 100%;
@@ -162,6 +163,7 @@
 
   .modal-close {
     background: #1d252e;
+    cursor: pointer;
     color: #FFF;
     position: absolute;
     padding: 30px 20px;
