@@ -8,8 +8,30 @@ type: contact
   <div class="row">
     <h2 class="section-tag">Let's make something awesome together</h2>
   </div>
-  <div class="row">
-    <p>You can always send us an <a href="#">Email</a> or a <a href="#">Tweet</a></p>
+
+  <div class="modal form-modal" id="email-form">
+    <div class="modal-header">
+      <h3>Get in touch!</h3>
+      <a class="modal-close button alpha primary">X</a>
+    </div>
+    <div class="modal-content">
+      <div>
+        <form enctype="text/plain" method="get" action="mailto:weare@icalialabs.com" class="contact-form">
+          <div class="row">
+            Name: <input type="text" name="name" class="input">
+          </div>
+          <div class="row">
+            Comments: <textarea rows="5" cols="30" name="comments" class="input"></textarea>
+          </div>
+          <div class="row">
+            <input type="submit" value="Send" class="secondary-button">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <p>You can always send us an <a class="" data-furatto="modal" data-transition="1" data-theme="alpha" data-target="#email-form">Email</a> or a <a href="#">Tweet</a></p>
   </div>
 </section>
 <section class="adress">

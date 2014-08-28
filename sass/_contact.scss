@@ -12,6 +12,34 @@
 
   .info, .footer {
     background: #F4F4F4;
+
+    a {
+      cursor: pointer;
+    }
+  }
+
+  .form-modal {
+    .modal-header {
+      background: #FFF;
+      color: $dark-gray;
+    }
+
+    .modal-close {
+      right: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    .contact-form {
+      .input {
+        margin: 1rem;
+        padding: 1rem;
+        width: 100%;
+      }
+      .secondary-button {
+        padding: 1rem 2rem;
+      }
+    }
   }
 
   .adress {

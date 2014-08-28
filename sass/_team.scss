@@ -6,6 +6,8 @@
   margin: 0 auto;
 }
 
+.team {
+
 .wrapper {
   background: $primary-color;
   position: relative;
@@ -100,14 +102,16 @@
     }
   }
 
-  .member-modal {
+  
+}
+.member-modal {
     cursor: default;
     position: fixed;
-    top: 0;
+    /*top: 0;*/
     width: 100%;
     height: 100%;
     z-index: 320;
-    visibility: hidden;
+    /*visibility: hidden;*/
     background: #fff;
     overflow-y: scroll;
 
@@ -138,28 +142,12 @@
       }
     }
   }
-
-  .show {
-    visibility: visible;
-  }
-
-  .modal-overlay {
-    position: fixed;
-    width: 100%;
+.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
     height: 100%;
-    visibility: hidden;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    opacity: 0;
-    background: #fff;
-    transition: all 0.3s;
-  }
-
-  .show ~ .modal-overlay {
-    visibility: visible;
-    opacity: 1;
-  }
+}
 
   .modal-close {
     background: #1d252e;
@@ -172,9 +160,18 @@
     top: 20px;
     border-radius: 50%;
   }
-
-}
-
+  .modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    background: #fff;
+    transition: all 0.3s;
+  }
 .join {
   background: #FFF;
   padding: 50px;
@@ -190,7 +187,7 @@
   -webkit-transform: scale(1.1);
   -webkit-transform-origin: center;
 }
-
+}
 
 
 /*
