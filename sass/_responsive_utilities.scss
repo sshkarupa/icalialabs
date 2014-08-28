@@ -152,7 +152,7 @@ $landscape-media: "#{$media-display} and (orientation: landscape)" !default;
       @include responsive-invisibility();
     }
   }
-  @media #{$small-screen-range} {
+  @media #{$small-screen-media} {
     @include responsive-invisibility();
   }
   &.hidden-on-medium {
