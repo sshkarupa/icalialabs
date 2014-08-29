@@ -659,112 +659,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   }
 }
 
-@-webkit-keyframes rotate-right {
-  0% {
-    @include transform(rotate(0deg));
-    right: 0px;
-    top: 0px;
-  }
-  100% {
-    @include transform(rotate(-45deg));
-    right: 0px;
-    top: -20px;
-  }
-}
-
-@-moz-keyframes rotate-right {
-  0% {
-    @include transform(rotate(0deg));
-    right: 0px;
-    top: 0px;
-  }
-  100% {
-    @include transform(rotate(-45deg));
-    right: 0px;
-    top: -20px;
-  }
-}
-
-
-@-webkit-keyframes spin {
-  0% {
-    @include transform(rotate(-0deg));
-  }
-  100% {
-    @include transform(rotate(-180deg));
-  }
-}
-
-@-moz-keyframes spin {
-  0% {
-    @include transform(rotate(-0deg));
-  }
-  100% {
-    @include transform(rotate(-180deg));
-  }
-}
-
-
-@-webkit-keyframes rotate-left {
-  0% { @include transform(rotate(0deg));}
-  100% { @include transform(rotate(45deg));}
-}
-
-@-moz-keyframes rotate-left {
-  0% { @include transform(rotate(0deg));}
-  100% { @include transform(rotate(45deg));}
-}
-
-
-@-webkit-keyframes hide {
-
-  0% {
-    -webkit-transform: rotate(0deg);
-    top: 0px;
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: rotate(90deg);
-    top: 200px;
-  }
-}
-
-@-moz-keyframes hide {
-
-  0% {
-    -webkit-transform: rotate(0deg);
-    top: 0px;
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: rotate(90deg);
-    top: 200px;
-  }
-}
-
-@-webkit-keyframes move {
-  50% {
-    bottom: 50%;
-    left: -70%;
-  }
-}
-
-@-moz-keyframes move {
-  50% {
-    bottom: 50%;
-    left: -70%;
-  }
-}
 // ************************** Info banner ***********************************//
 .info {
   background: #FFF;
@@ -824,5 +718,13 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     }
   }
 
-
-
+/*
+ * ====================================================
+ *  General responsive fixes
+ * ====================================================
+ */
+@include max-screen($small-screen-max) {
+  html {
+    font-size: 12px;
+  }
+}
