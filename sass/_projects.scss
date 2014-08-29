@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: right center;
   opacity: 0.8;
-  -webkit-transition: all 0.3s ease-in-out;
+  @include transition(all 0.3s ease-in-out);
   background-size: 100%;
 
   &:hover {
@@ -46,18 +46,10 @@
     color: #fff;
   }
 
-  .perspective {
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 900;
-    perspective: 800px;
-    position: relative;
-    margin: 0;
-    z-index: 1;
 
     .project-link {
       background: transparent;
-      display: block;
+      display: inline-block;
       color: #FFF;
       text-decoration: none;
       border: 3px solid rgba(0,0,0,0.3);
@@ -70,30 +62,31 @@
       position: relative;
       @include transition(all 0.5s ease);
 
-      &:after {
-        background: #FFF;
-        color: #000;
-        content: 'Ver Proyecto';
-        height: 100%;
-        left: 0;
-        line-height: 70px;
+      &:before {
+        border-top: 3px solid #FFF;
+        border-right: 3px solid #FFF;
+        color: #fff;
+        content: ' ';
+        height: 15px;
+        font-size: 125%;
+        left: 70%;
+        line-height: 3.5;
+        opacity: 0;
         position: absolute;
-        width: 100%;
-        @include transform-origin( 0%, 100% );
-        @include transform(rotateX(90deg));
-        @include transition(all 0.5s ease);
-        text-align: center;
-        text-transform: uppercase;
-        top: -98%;
-        z-index: -1;
+        width: 15px;
+        @include transform(rotate(45deg) translateY(-50%));
+        @include transition(all 0.3s);
+        top: 50%;
+      }
+
+      &:hover {
+        background: rgba(0,0,0,0.3);
       }
 
 
-      &:hover {
-        background: transparent;
-        @include transform-origin( 50%, 100% );
-        @include transform(rotateX(-90deg), translateY(100%));
+      &:hover:before {
+        left: 80%;
+        opacity: 1;
       }
     }
   }
-}
