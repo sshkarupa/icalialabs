@@ -572,7 +572,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
   .fake-skew {
     width: 200px;
-    right: -152px;
+    right: -135px;
     top: 0;
     @include transform(skew(-10deg));
     position: absolute;

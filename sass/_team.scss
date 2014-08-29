@@ -123,6 +123,21 @@
         }
       }
 
+      .social {
+        padding: 10px 20px;
+        border: 3px solid $primary-color;
+        display: inline-block;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 20px 0px;
+        text-transform: capitalize;
+
+        &:hover {
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+
       .modal-info {
         color: #4e4e4e;
         height: 100%;

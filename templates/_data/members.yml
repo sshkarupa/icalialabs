@@ -14,7 +14,11 @@
   id: kuri
   picture: /assets/img/kuri.jpg
   bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
-
+  networks:
+    - link: https://twitter.com/kurenn
+      name: Twitter
+    - link: https://github.com/kurenn
+      name: Github
 
 - name: Eduardo Higareda
   title: Lead Desginer
@@ -26,7 +30,12 @@
   title: Developer
   id: ana
   picture: /assets/img/ana.jpg
-  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
+  bio: Ana was the first girl to join the Icalia Team. She's a Ruby on Rails developer and does mostly back-end code, although she has no problem meddling on the front-end when needed. She likes to take (on ?) lead roles that involve much of the analysis and planning of the development of a new product. <br ><br >Ana comes from a big family and is a proud aunt of 7 nephews and nieces. Most of the time she's thinking about her next destination. Ana is kind of a pop enthusiast. Beers and fries are some of her basic needs in life.
+  networks:
+    - link: https://play.spotify.com/user/1296214017
+      name: Spotify
+    - link: http://instagram.com/anidaniel
+      name: Instagram
 
 - name: Scarlett Garza
   title: Designer

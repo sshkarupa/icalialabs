@@ -1016,31 +1016,46 @@
   height: 100%;
 }
 /* line 126, ../../../sass/_team.scss */
+.team .team-section .member-modal .social {
+  padding: 10px 20px;
+  border: 3px solid #e60038;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 20px 0px;
+  text-transform: capitalize;
+}
+/* line 135, ../../../sass/_team.scss */
+.team .team-section .member-modal .social:hover {
+  background: #e60038;
+  color: #fff;
+}
+/* line 141, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-info {
   color: #4e4e4e;
   height: 100%;
   padding: 50px;
 }
-/* line 131, ../../../sass/_team.scss */
+/* line 146, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-info .member-title {
   color: #e60038;
   font-weight: 100;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 137, ../../../sass/_team.scss */
+/* line 152, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-info p {
   font-size: 1.5rem;
   font-weight: 200;
   margin: 50px 0px;
 }
-/* line 144, ../../../sass/_team.scss */
+/* line 159, ../../../sass/_team.scss */
 .team .team-section .modal:before {
   display: inline-block;
   vertical-align: middle;
   content: " ";
   height: 100%;
 }
-/* line 151, ../../../sass/_team.scss */
+/* line 166, ../../../sass/_team.scss */
 .team .team-section .modal-close {
   background: #1d252e;
   cursor: pointer;
@@ -1052,7 +1067,7 @@
   top: 20px;
   border-radius: 50%;
 }
-/* line 162, ../../../sass/_team.scss */
+/* line 177, ../../../sass/_team.scss */
 .team .team-section .modal-overlay {
   position: fixed;
   width: 100%;
@@ -1065,29 +1080,29 @@
   background: #fff;
   transition: all 0.3s;
 }
-/* line 177, ../../../sass/_team.scss */
+/* line 192, ../../../sass/_team.scss */
 .team .join {
   background: #FFF;
   padding: 50px;
   text-align: center;
 }
-/* line 182, ../../../sass/_team.scss */
+/* line 197, ../../../sass/_team.scss */
 .team .join .tag {
   margin: 30px 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 196, ../../../sass/_team.scss */
+  /* line 211, ../../../sass/_team.scss */
   .team .team-section .hider {
     cursor: default;
     height: auto;
     width: auto;
   }
-  /* line 202, ../../../sass/_team.scss */
+  /* line 217, ../../../sass/_team.scss */
   .team .team-section .hider .member .picture {
     cursor: pointer;
     height: auto;
   }
-  /* line 206, ../../../sass/_team.scss */
+  /* line 221, ../../../sass/_team.scss */
   .team .team-section .hider .member:hover .info-circle {
     display: none;
   }
@@ -1098,7 +1113,7 @@
 slideUp
 ==============================================
  */
-/* line 222, ../../../sass/_team.scss */
+/* line 237, ../../../sass/_team.scss */
 .slideUp {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
@@ -1110,64 +1125,64 @@ slideUp
 }
 
 @keyframes slideUp {
-  /* line 236, ../../../sass/_team.scss */
+  /* line 251, ../../../sass/_team.scss */
   0% {
     transform: translateY(100%);
   }
 
-  /* line 239, ../../../sass/_team.scss */
+  /* line 254, ../../../sass/_team.scss */
   50% {
     transform: translateY(-8%);
   }
 
-  /* line 242, ../../../sass/_team.scss */
+  /* line 257, ../../../sass/_team.scss */
   65% {
     transform: translateY(4%);
   }
 
-  /* line 245, ../../../sass/_team.scss */
+  /* line 260, ../../../sass/_team.scss */
   80% {
     transform: translateY(-4%);
   }
 
-  /* line 248, ../../../sass/_team.scss */
+  /* line 263, ../../../sass/_team.scss */
   95% {
     transform: translateY(2%);
   }
 
-  /* line 251, ../../../sass/_team.scss */
+  /* line 266, ../../../sass/_team.scss */
   100% {
     transform: translateY(0%);
   }
 }
 
 @-webkit-keyframes slideUp {
-  /* line 257, ../../../sass/_team.scss */
+  /* line 272, ../../../sass/_team.scss */
   0% {
     -webkit-transform: translateY(100%);
   }
 
-  /* line 260, ../../../sass/_team.scss */
+  /* line 275, ../../../sass/_team.scss */
   50% {
     -webkit-transform: translateY(-8%);
   }
 
-  /* line 263, ../../../sass/_team.scss */
+  /* line 278, ../../../sass/_team.scss */
   65% {
     -webkit-transform: translateY(4%);
   }
 
-  /* line 266, ../../../sass/_team.scss */
+  /* line 281, ../../../sass/_team.scss */
   80% {
     -webkit-transform: translateY(-4%);
   }
 
-  /* line 269, ../../../sass/_team.scss */
+  /* line 284, ../../../sass/_team.scss */
   95% {
     -webkit-transform: translateY(2%);
   }
 
-  /* line 272, ../../../sass/_team.scss */
+  /* line 287, ../../../sass/_team.scss */
   100% {
     -webkit-transform: translateY(0%);
   }
@@ -1182,6 +1197,9 @@ slideUp
   background-position: right center;
   opacity: 0.8;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-size: 100%;
 }
 /* line 11, ../../../sass/_projects.scss */
@@ -1224,20 +1242,10 @@ slideUp
 .project .client {
   color: #fff;
 }
-/* line 49, ../../../sass/_projects.scss */
-.project .perspective {
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 900;
-  perspective: 800px;
-  position: relative;
-  margin: 0;
-  z-index: 1;
-}
-/* line 58, ../../../sass/_projects.scss */
-.project .perspective .project-link {
+/* line 50, ../../../sass/_projects.scss */
+.project .project-link {
   background: transparent;
-  display: block;
+  display: inline-block;
   color: #FFF;
   text-decoration: none;
   border: 3px solid rgba(0, 0, 0, 0.3);
@@ -1253,48 +1261,38 @@ slideUp
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 73, ../../../sass/_projects.scss */
-.project .perspective .project-link:after {
-  background: #FFF;
-  color: #000;
-  content: 'Ver Proyecto';
-  height: 100%;
-  left: 0;
-  line-height: 70px;
+/* line 65, ../../../sass/_projects.scss */
+.project .project-link:before {
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  color: #fff;
+  content: ' ';
+  height: 15px;
+  font-size: 125%;
+  left: 70%;
+  line-height: 3.5;
+  opacity: 0;
   position: absolute;
-  width: 100%;
-  -webkit-transform-origin: 0% 100%;
-  -moz-transform-origin: 0% 100%;
-  -ms-transform-origin: 0% 100%;
-  -o-transform-origin: 0% 100%;
-  transform-origin: 0% 100%;
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-  -ms-transform: rotateX(90deg);
-  -o-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-align: center;
-  text-transform: uppercase;
-  top: -98%;
-  z-index: -1;
+  width: 15px;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+  -moz-transform: rotate(45deg) translateY(-50%);
+  -ms-transform: rotate(45deg) translateY(-50%);
+  -o-transform: rotate(45deg) translateY(-50%);
+  transform: rotate(45deg) translateY(-50%);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 50%;
 }
-/* line 92, ../../../sass/_projects.scss */
-.project .perspective .project-link:hover {
-  background: transparent;
-  -webkit-transform-origin: 50% 100%;
-  -moz-transform-origin: 50% 100%;
-  -ms-transform-origin: 50% 100%;
-  -o-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  -ms-transform: rotateX(-90deg);
-  -o-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
+/* line 82, ../../../sass/_projects.scss */
+.project .project-link:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 87, ../../../sass/_projects.scss */
+.project .project-link:hover:before {
+  left: 80%;
+  opacity: 1;
 }
 
 /* line 1, ../../../sass/_project-page.scss */
@@ -3363,7 +3361,7 @@ a:visited {
 /* line 563, ../../../sass/application.scss */
 .testimonials .fake-skew {
   width: 200px;
-  right: -152px;
+  right: -135px;
   top: 0;
   -webkit-transform: skew(-10deg);
   -moz-transform: skew(-10deg);
@@ -3473,230 +3471,46 @@ a:visited {
   }
 }
 
-@-webkit-keyframes rotate-right {
-  /* line 670, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    right: 0px;
-    top: 0px;
-  }
-
-  /* line 675, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    right: 0px;
-    top: -20px;
-  }
-}
-
-@-moz-keyframes rotate-right {
-  /* line 683, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    right: 0px;
-    top: 0px;
-  }
-
-  /* line 688, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    right: 0px;
-    top: -20px;
-  }
-}
-
-@-webkit-keyframes spin {
-  /* line 697, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  /* line 700, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@-moz-keyframes spin {
-  /* line 706, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  /* line 709, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@-webkit-keyframes rotate-left {
-  /* line 716, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  /* line 717, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-
-@-moz-keyframes rotate-left {
-  /* line 721, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  /* line 722, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-
-@-webkit-keyframes hide {
-  /* line 728, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    top: 0px;
-    opacity: 1;
-  }
-
-  /* line 734, ../../../sass/application.scss */
-  50% {
-    opacity: 0;
-  }
-
-  /* line 738, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(90deg);
-    top: 200px;
-  }
-}
-
-@-moz-keyframes hide {
-  /* line 746, ../../../sass/application.scss */
-  0% {
-    -webkit-transform: rotate(0deg);
-    top: 0px;
-    opacity: 1;
-  }
-
-  /* line 752, ../../../sass/application.scss */
-  50% {
-    opacity: 0;
-  }
-
-  /* line 756, ../../../sass/application.scss */
-  100% {
-    -webkit-transform: rotate(90deg);
-    top: 200px;
-  }
-}
-
-@-webkit-keyframes move {
-  /* line 763, ../../../sass/application.scss */
-  50% {
-    bottom: 50%;
-    left: -70%;
-  }
-}
-
-@-moz-keyframes move {
-  /* line 770, ../../../sass/application.scss */
-  50% {
-    bottom: 50%;
-    left: -70%;
-  }
-}
-
-/* line 776, ../../../sass/application.scss */
+/* line 670, ../../../sass/application.scss */
 .info {
   background: #FFF;
   width: 100%;
   min-height: 300px;
 }
-/* line 781, ../../../sass/application.scss */
+/* line 675, ../../../sass/application.scss */
 .info a, .info span {
   text-decoration: none;
 }
 
-/* line 788, ../../../sass/application.scss */
+/* line 682, ../../../sass/application.scss */
 .simple-modal {
   position: fixed;
   top: 10%;
   visibility: hidden;
 }
-/* line 793, ../../../sass/application.scss */
+/* line 687, ../../../sass/application.scss */
 .simple-modal .modal-header {
   background: transparent;
   text-align: center;
   color: #e60038;
 }
-/* line 798, ../../../sass/application.scss */
+/* line 692, ../../../sass/application.scss */
 .simple-modal .modal-header h3 {
   font-size: 4rem;
 }
-/* line 804, ../../../sass/application.scss */
+/* line 698, ../../../sass/application.scss */
 .simple-modal .modal-content {
   overflow: visible;
   padding: 50px;
   text-align: center;
 }
-/* line 809, ../../../sass/application.scss */
+/* line 703, ../../../sass/application.scss */
 .simple-modal .modal-content p {
   font-weight: 100;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.5);
 }
-/* line 816, ../../../sass/application.scss */
+/* line 710, ../../../sass/application.scss */
 .simple-modal .modal-content .modal-close {
   cursor: pointer;
   position: absolute;
@@ -3707,8 +3521,20 @@ a:visited {
   border-radius: 100px;
   padding: 5px 20px;
 }
-/* line 828, ../../../sass/application.scss */
-.simple-modal .modal-content {
+/* line 721, ../../../sass/application.scss */
+.simple-modal .modal-content .modal-content {
   min-height: 300px;
   opacity: 1;
+}
+
+/*
+ * ====================================================
+ *  General responsive fixes
+ * ====================================================
+ */
+@media only screen and (max-width: 767px) {
+  /* line 734, ../../../sass/application.scss */
+  html {
+    font-size: 12px;
+  }
 }
