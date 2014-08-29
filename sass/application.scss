@@ -439,6 +439,15 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       width: 0;
     }
 
+  &:hover .skill{
+      background: $primary-color;
+
+      .developer-badge svg path, .design-badge svg path {
+        fill: #FFF;
+      }
+    }
+
+
     .more {
       position: absolute;
       display: none;
@@ -474,7 +483,8 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     .tagline {
       color: rgba(0,0,0,0.7);
     }
-  }
+
+    }
 
   .expand-content {
     background: $primary-color;
