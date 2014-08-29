@@ -18,13 +18,17 @@ type: contact
       <div>
         <form enctype="text/plain" method="get" action="mailto:weare@icalialabs.com" class="contact-form">
           <div class="row">
-            Name: <input type="text" name="name" class="input">
-          </div>
-          <div class="row">
-            Comments: <textarea rows="5" cols="30" name="comments" class="input"></textarea>
-          </div>
-          <div class="row">
-            <input type="submit" value="Send" class="secondary-button">
+              <span>Hello my name is</span>
+              <input type="text" name="namme" class="input" placeholder="Name">
+              <span>and my email is</span>
+              <input type="text" name="email" class="input" placeholder="Email">
+              <span>I would like to</span>
+              <select>
+                <option value="">Apply for a job</option>
+                <option value="">Solicit your services</option>
+                <option value="">just a coffee</option>
+              </select>
+              <input type="submit" value="Send" class="secondary-button">
           </div>
         </form>
       </div>
