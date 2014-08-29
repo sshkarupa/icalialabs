@@ -20,7 +20,7 @@ type: team
     {% for member in site.data.members %}
     <figure class="member col-3" data-furatto="modal" data-target="#modal-{{member.id}}" data-transition="2">
       <img src="{{member.picture}}" alt="{{member.name}}" class="picture"/>
-      <div class="info-circle slideUp hidden-on-xsmall">
+      <div class="info-circle slideUp">
         <a href="#member-info"></a>
         <h5 class="name">{{ member.name }}</h5>
         <h6 class="position">{{ member.title }}</h6>
