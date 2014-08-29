@@ -174,7 +174,7 @@ var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments)
     Suraido.prototype._createArrows = function() {
       var html;
       html = "<div class=\"";
-      html = html + this.options.arrowsClass + "\">" + html + this.options.arrowClass + " prev\">" + this.options.prev + "</div>" + html + this.options.arrowClass + " next\">" + this.options.next + "</div></div>";
+      html = html + this.options.arrowsClass + "\">" + html + this.options.arrowClass + " prev hidden-on-small hidden-on-xsmall\">" + this.options.prev + "</div>" + html + this.options.arrowClass + " next hidden-on-small hidden-on-xsmall\">" + this.options.next + "</div></div>";
       return this._bindPagination(this.options.arrowsClass, this.options.arrowClass, html);
     };
 
