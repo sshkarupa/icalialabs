@@ -146,7 +146,7 @@
 
     _createArrows: =>
         html = "<div class=\""
-        html = html + @options.arrowsClass + "\">" + html + @options.arrowClass + " prev\">" + @options.prev + "</div>" + html + @options.arrowClass + " next\">" + @options.next + "</div></div>"
+        html = html + @options.arrowsClass + "\">" + html + @options.arrowClass + " prev hidden-on-small hidden-on-xsmall\">" + @options.prev + "</div>" + html + @options.arrowClass + " next hidden-on-small hidden-on-xsmall\">" + @options.next + "</div></div>"
 
         @_bindPagination(@options.arrowsClass, @options.arrowClass, html)
 
