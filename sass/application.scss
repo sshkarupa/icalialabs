@@ -439,7 +439,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       width: 0;
     }
 
-  &:hover .skill{
+  &:hover {
       background: $primary-color;
 
       .developer-badge svg path, .design-badge svg path {
