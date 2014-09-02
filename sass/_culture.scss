@@ -87,26 +87,28 @@
 
     .perk {
       position: relative;
-      padding: 30px 4px;
-      padding-top: 25%;
+      padding-top: 33.33%;
       @include transition(all 0.4s ease-in-out);
       overflow: hidden;
 
+      &.col-6:hover {
+        .perk-icon {
+          margin-top: -30%;
+        }
+      }
       &:hover {
         figure {
-          @include transform(translateY(-50%));
           @include transition(all 0.4s ease-in-out);
 
           .perk-icon {
             opacity: 0;
-            @include transition(all 0.5s ease-in);
+            margin-top: -80%;
           }
 
           figcaption {
 
             .perk-description {
               opacity: 1;
-              @include transition(all 0.5s ease-in);
             }
 
           }
@@ -114,16 +116,18 @@
       }
 
       figure {
+        padding: 20px;
         position: absolute;
         width: 100%;
-        top: 25%;
+        top: 50%;
+        @include transform(translateY(-50%));
       }
     }
 
     .perk-icon {
       margin: 20px auto;
       max-height: 100px;
-      -webkit-animation: float 1s ease-in infinite;
+      @include transition(all 0.5s ease-in);
     }
 
     .perk-title {
@@ -137,9 +141,11 @@
     .perk-description {
       margin: 0 auto;
       line-height: 1.2em;
+      max-height: 0;
       font-size: 1.1em;
       font-weight: 200;
       opacity: 0;
+      @include transition(all 0.5s ease-in);
     }
   }
 
