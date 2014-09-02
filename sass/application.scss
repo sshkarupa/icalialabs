@@ -439,15 +439,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       width: 0;
     }
 
-  &:hover .skill{
-      background: $primary-color;
-
-      .developer-badge svg path, .design-badge svg path {
-        fill: #FFF;
-      }
-    }
-
-
     .more {
       position: absolute;
       display: none;
@@ -471,6 +462,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     @include transition(width 0.5s ease-in-out);
     width: 100%;
 
+    &:hover {
+      opacity: 0.4;
+    }
+
 
     &.hide-all {
       display: none;
@@ -483,8 +478,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     .tagline {
       color: rgba(0,0,0,0.7);
     }
-
-    }
+  }
 
   .expand-content {
     background: $primary-color;
