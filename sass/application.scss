@@ -18,138 +18,6 @@
 @import 'furatto-modal';
 
 
-.index {
-  .main-menu {
-    @include animation(bounceInDown 2s);
-  }
-}
-.main-menu {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  z-index: 310;
-
-  .logo {
-    position: absolute;
-    left: 40px;
-    z-index: 100;
-
-    svg {
-      fill: white;
-      width: 60px;
-      height: 60px;
-      margin-top: 10px;
-    }
-  }
-
-  .burger {
-    width: 45px;
-    position: absolute;
-    right: 40px;
-    display: inline-block;
-    z-index: 300;
-    top: 10px;
-
-    &:hover {
-      opacity: 0.7;
-      cursor: pointer;
-    }
-
-    .one, .two, .three {
-      width: 35px;
-      height: 5px;
-      background: $primary-color;
-      margin: 5px;
-      position: relative;
-      background: #fff
-    }
-
-    &.active {
-      @include animation(spin .5s ease);
-    }
-
-    .one-active {
-      @include animation(rotate-left .5s ease-in);
-      animation-delay: 0.1s;
-      z-index: 999;;
-    }
-
-    .three-active {
-      @include animation(rotate-right .5s ease-in);
-      animation-delay: 0.1s;
-      z-index: 999;
-    }
-
-    .hide-two {
-      @include animation(hide .5s ease-in);
-      animation-delay: 0.1s;
-      z-index: 999;
-    }
-  }
-}
-
-// ####################### White background main menu overrides################################
-.team, .contact, .projects, .process {
-  .main-menu{
-    .logo {
-      svg {
-        fill: $primary-color;
-      }
-    }
-
-    .burger {
-      .one, .two, .three {
-        background: $primary-color;
-      }
-      &.active {
-        .one, .two, .three {
-          background: #FFF;
-        }
-      }
-    }
-  }
-}
-
-.one-active {
-  @include transform(rotate(45deg));
-  background: #fff;
-}
-
-.hide-two {
-  opacity: 0;
-}
-
-
-.three-active {
-  @include transform(rotate(-45deg));
-  right: 0px;
-  top: -20px;
-  background: #FFF;
-}
-
-// ######## Load Image ############
-
-.load-mask {
-  background: $primary-color;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 101;
-  opacity: 1;
-}
-
-.hide-mask {
-  opacity: 0;
-}
-
-.focus {
-  position: relative;
-  z-index: 200;
-}
-
-
 // ######## Intro ############
 
 .intro {
@@ -163,8 +31,8 @@
   }
 
   p {
-    font-weight: 200;
-    font-size: 2em;
+    /*font-weight: 200;*/
+    /*font-size: 2em;*/
     margin-bottom: 40px;
     color: #fff;
     position: relative;

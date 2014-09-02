@@ -29,7 +29,7 @@ h1 {font-size: 4rem;}
 h2 {font-size: 3rem;}
 h3 {font-size: 2rem;}
 h4 {font-size: 1.5rem;}
-p { font-weight: normal; font-size: 1rem; }
+p {font-weight: normal; font-size: 1rem;}
 a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 .clearfix:after {
@@ -113,11 +113,17 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   float: left;
 }
 
-.big-tagline {
-  color: #fff;
+.big-header {
+  color: #FFF;
   margin: 45px;
   display: block;
   line-height: 1em;
+}
+
+.big-tagline {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 // ######## Menu ############
@@ -167,6 +173,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     @include animation(bounceInDown 2s);
   }
 }
+
 .main-menu {
   position: relative;
   width: 90%;
