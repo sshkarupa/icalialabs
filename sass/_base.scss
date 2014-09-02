@@ -1,0 +1,297 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 16px;
+  border: 15px solid #fff;
+}
+
+body, input {
+  font-family: 'Open Sans', sans-serif;
+  &.index {
+
+    .index-background {
+      // background: url('../img/intro.jpg') center;
+      background: #e60038;
+      background-size: 100%;
+      background-attachment: fixed;
+    }
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: $brand-font;
+  font-weight: 400;
+}
+h1 {font-size: 4rem;}
+h2 {font-size: 3rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1.5rem;}
+p { font-weight: normal; font-size: 1rem; }
+a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
+
+.clearfix:after {
+  content: " ";
+  display: block; 
+  height: 0; 
+  clear: both;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.light-gray {
+  color: $light-gray;
+}
+
+.red {
+  color: $primary-color;
+}
+
+.primary-button {
+  background: $secondary-color;
+  border: 1px solid $primary-color;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.secondary-button {
+  background: $primary-color;
+  border: 1px solid #FFF;
+  color: #FFF;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.action-btn {
+  background: transparent;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  position: relative;
+  @include transition(all 0.3s ease);
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  font-weight: 900;
+
+  &:hover {
+    color: $primary-color;
+    background: #fff;
+    @include transform(scale(1.1));
+    cursor: pointer;
+  }
+}
+
+.capital {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-align {
+  @include vertical-align;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.big-tagline {
+  color: #fff;
+  margin: 45px;
+  display: block;
+  line-height: 1em;
+}
+
+// ######## Menu ############
+
+.menu-overlay {
+  position: fixed;
+  background: rgba(230,0,56,0.9);
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 300;
+  display: none;
+
+
+  .menu-content {
+    text-align: center;
+    color: $secondary-color;
+    padding: 100px 0px;
+    display: none;
+  }
+
+
+  a {
+    font-size: 3em;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    margin: 10px 0px;
+    text-decoration: none;
+
+    &:hover {
+      @include transform(scale(1.05));
+    }
+  }
+
+  .social-info a {
+    display: inline-block;
+    font-size: 2em;
+    margin: 20px 30px;
+  }
+}
+
+.show-menu {
+  display: block !important;
+}
+
+.index {
+  .main-menu {
+    @include animation(bounceInDown 2s);
+  }
+}
+.main-menu {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  z-index: 310;
+
+  .logo {
+    position: absolute;
+    left: 40px;
+    z-index: 100;
+
+    svg {
+      fill: white;
+      width: 60px;
+      height: 60px;
+      margin-top: 10px;
+    }
+  }
+
+  .burger {
+    width: 45px;
+    position: absolute;
+    right: 40px;
+    display: inline-block;
+    z-index: 300;
+    top: 10px;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    .one, .two, .three {
+      width: 35px;
+      height: 5px;
+      background: $primary-color;
+      margin: 5px;
+      position: relative;
+      background: #fff
+    }
+
+    &.active {
+      @include animation(spin .5s ease);
+    }
+
+    .one-active {
+      @include animation(rotate-left .5s ease-in);
+      animation-delay: 0.1s;
+      z-index: 999;;
+    }
+
+    .three-active {
+      @include animation(rotate-right .5s ease-in);
+      animation-delay: 0.1s;
+      z-index: 999;
+    }
+
+    .hide-two {
+      @include animation(hide .5s ease-in);
+      animation-delay: 0.1s;
+      z-index: 999;
+    }
+  }
+}
+
+// ####################### White background main menu overrides################################
+.team, .contact, .projects, .process {
+  .main-menu{
+    .logo {
+      svg {
+        fill: $primary-color;
+      }
+    }
+
+    .burger {
+      .one, .two, .three {
+        background: $primary-color;
+      }
+      &.active {
+        .one, .two, .three {
+          background: #FFF;
+        }
+      }
+    }
+  }
+}
+
+.one-active {
+  @include transform(rotate(45deg));
+  background: #fff;
+}
+
+.hide-two {
+  opacity: 0;
+}
+
+
+.three-active {
+  @include transform(rotate(-45deg));
+  right: 0px;
+  top: -20px;
+  background: #FFF;
+}
+
+// ######## Load Image ############
+
+.load-mask {
+  background: $primary-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  opacity: 1;
+}
+
+.hide-mask {
+  opacity: 0;
+}
+
+.focus {
+  position: relative;
+  z-index: 200;
+}
+
+
+

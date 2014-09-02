@@ -4,7 +4,9 @@
 @import 'responsive_utilities';
 @import 'grid';
 @import 'selectors';
+@import 'base';
 @import 'header';
+@import 'index';
 @import 'team';
 @import 'projects';
 @import 'project-page';
@@ -16,141 +18,9 @@
 @import 'furatto-modal';
 
 
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-html {
-  font-size: 16px;
-  border: 15px solid #fff;
-}
-
-body, input {
-  font-family: 'Open Sans', sans-serif;
-  &.index {
-
-    .index-background {
-      // background: url('../img/intro.jpg') center;
-      background: #e60038;
-      background-size: 100%;
-      background-attachment: fixed;
-    }
-  } 
-}
-
-h1, h2, h3, h4 {
-  font-family: $brand-font;
-  font-weight: 400;
-}
-h1 {font-size: 3rem;}
-h2 {font-size: 2rem;}
-h3 {font-size: 1.75rem;}
-h4 {font-size: 1.25rem;}
-p { font-weight: normal; }
-a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
-.clearfix:after {
-  content: " ";
-  display: block; 
-  height: 0; 
-  clear: both;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.light-gray {
-  color: $light-gray;
-}
-
-.red {
-  color: $primary-color;
-}
-
-.primary-button {
-  background: $secondary-color;
-  border: 1px solid $primary-color;
-  border-radius: 2px;
-  display: inline-block;
-  padding: 2rem;
-  text-decoration: none;
-}
-
-.secondary-button {
-  background: $primary-color;
-  border: 1px solid #FFF;
-  color: #FFF;
-  display: inline-block;
-  font-size: 1rem;
-  padding: 2rem;
-  text-decoration: none;
-}
-
-.capital {
-  text-transform: uppercase;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.vertical-align {
-  @include vertical-align;
-}
-
-.pull-right {
-  float: right;
-}
-// ######## Menu ############
-
-.menu-overlay {
-  position: fixed;
-  background: rgba(230,0,56,0.9);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 300;
-  display: none;
-
-
-  .menu-content {
-    text-align: center;
-    color: $secondary-color;
-    padding: 100px 0px;
-    display: none;
-  }
-
-
-  a {
-    font-size: 3em;
-    color: #fff;
-    display: block;
-    font-weight: 700;
-    margin: 10px 0px;
-    text-decoration: none;
-
-    &:hover {
-      @include transform(scale(1.05));
-    }
-  }
-
-  .social-info a {
-    display: inline-block;
-    font-size: 2em;
-    margin: 20px 30px;
-  }
-}
-
-.show-menu {
-  display: block !important;
-}
-
 .index {
   .main-menu {
-    -webkit-animation: bounceInDown 2s;
+    @include animation(bounceInDown 2s);
   }
 }
 .main-menu {
@@ -195,34 +65,29 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     }
 
     &.active {
-      /* Add mixin */
-      -webkit-animation: spin .5s ease;
-      -moz-animation: spin .5s ease;
-      animation: spin .5s ease;
+      @include animation(spin .5s ease);
     }
 
     .one-active {
-      -webkit-animation: rotate-left .5s ease-in;
-      -moz-animation: rotate-left .5s ease-in;
+      @include animation(rotate-left .5s ease-in);
       animation-delay: 0.1s;
       z-index: 999;;
     }
 
     .three-active {
-      -webkit-animation: rotate-right .5s ease-in;
-      -moz-animation: rotate-right .5s ease-in;
+      @include animation(rotate-right .5s ease-in);
       animation-delay: 0.1s;
       z-index: 999;
     }
 
     .hide-two {
-      -webkit-animation: hide .5s ease-in;
-      -moz-animation: hide .5s ease-in;
+      @include animation(hide .5s ease-in);
       animation-delay: 0.1s;
       z-index: 999;
     }
   }
 }
+
 // ####################### White background main menu overrides################################
 .team, .contact, .projects, .process {
   .main-menu{
@@ -297,14 +162,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     padding: 15rem 0;
   }
 
-  .tagline {
-    color: #fff;
-    margin: 45px;
-    display: block;
-    font-size: 4em;
-    line-height: 1em;
-  }
-
   p {
     font-weight: 200;
     font-size: 2em;
@@ -314,94 +171,72 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     z-index: 200;
   }
 
-  .play-video-btn {
-    background: transparent;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 15px 40px;
-    position: relative;
-    @include transition(all 0.3s ease);
-    font-size: 0.8em;
-    letter-spacing: 3px;
-    border-radius: 100px;
-    border: 3px solid #fff;
-    font-weight: 900;
-
-    &:hover {
-      color: $primary-color;
-      background: #fff;
-      @include transform(scale(1.1));
-      cursor: pointer;
-    }
-  }
 }
 
 // ############ Advantages ##################
 
 .title-advantages {
-    color: $primary-color;
-    text-align: center;
-    background: #fff;
-    padding: 50px 0 0 0;
-  }
+  color: $primary-color;
+  text-align: center;
+  background: #fff;
+  padding: 50px 0 0 0;
+}
 
-  .advantages {
-    text-align: center;
+.advantages {
+  text-align: center;
+  position: relative;
+  background: #fff;
+
+  .card {
+    padding: 6.25rem 0;
+    display: inline-block;
+    vertical-align: top;
+    @include transition(all 0.3s ease);
     position: relative;
-    background: #fff;
+    opacity: 0.7;
 
-    .card {
-      padding: 6.25rem 0;
-      display: inline-block;
-      vertical-align: top;
+    &:hover {
+      opacity: 1;
+      top: -40px;
+    }
+
+    .icon {
       @include transition(all 0.3s ease);
-      position: relative;
-      opacity: 0.7;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    .card-title {
+      margin-bottom: 4rem;
+      display: block;
+    }
+
+    p {
+      font-size: 1.5rem;
+      width: 80%;
+      margin: 0 auto;
+      color: rgba(0,0,0,0.7);
+      margin-bottom: 4rem;
+      font-weight: 100;
+    }
+
+    .card-link{
+      color: $primary-color;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid $primary-color;
+      padding: 5px 10px;
+      border-radius: 100px;
 
       &:hover {
-        opacity: 1;
-        top: -40px;
-      }
-
-      .icon {
-        @include transition(all 0.3s ease);
-        margin-bottom: 2rem;
-        display: inline-block;
-      }
-
-      .card-title {
-        color: $primary-color;
-        margin-bottom: 4rem;
-        display: block;
-      }
-
-      p {
-        font-size: 1.5rem;
-        width: 80%;
-        margin: 0 auto;
-        color: rgba(0,0,0,0.7);
-        margin-bottom: 4rem;
-        font-weight: 100;
-      }
-
-      .card-link{
-        color: $primary-color;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border: 1px solid $primary-color;
-        padding: 5px 10px;
-        border-radius: 100px;
-
-        &:hover {
-          background: $primary-color;
-          color: #fff;   
-        }
+        background: $primary-color;
+        color: #fff;   
       }
     }
   }
+}
 
 
 //#################### Skills ##################################
@@ -438,6 +273,15 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     &.hide {
       width: 0;
     }
+
+    &:hover {
+      background: $primary-color;
+
+      .developer-badge svg path, .design-badge svg path {
+        fill: #FFF;
+      }
+    }
+
 
     .more {
       position: absolute;
@@ -478,6 +322,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     .tagline {
       color: rgba(0,0,0,0.7);
     }
+
   }
 
   .expand-content {
@@ -491,7 +336,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     .developer-badge svg path, .design-badge svg path {
       fill: #fff;
     }
-  
+
     .more {
       display: block;
       z-index: 1;
@@ -543,6 +388,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     }
   }
 }
+
 //########################Testimonials###########
 
 .testimonials {
@@ -573,22 +419,23 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     bottom: 0;
     background: #fff;
   }
-  
+
   .quote-container {
     height: 446px;
     position: relative;
   }
+
   .quote {
     padding: 4rem 2rem;
 
     blockquote {
 
-     p {
-     	color: $primary-color;
-      font-size: 2em;
-      padding: 2rem 0;
-      font-weight: 100;
-     }
+      p {
+        color: $primary-color;
+        font-size: 2em;
+        padding: 2rem 0;
+        font-weight: 100;
+      }
 
       .cite {
         color: #000;
@@ -618,57 +465,90 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 // ############ Animations ##################
 
-@-webkit-keyframes bounceInDown {
+@include keyframes(bounceInDown) {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    transform: translateY(-2000px);
+    @include transform(translateY(-2000px));
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
+    @include transform(translateY(30px));
   }
 
   80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
+    @include transform(translateY(-10px));
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    @include transform(translateY(0));
   }
 }
 
-@keyframes bounceInDown {
+
+@include keyframes(rotate-right) {
+   0% {
+    @include transform(rotate(0deg));
+    right: 0px;
+    top: 0px;
+  }
+
+  100% {
+    @include transform(rotate(-45deg));
+    right: 0px;
+    top: -20px;
+  }
+
+}
+
+
+@include keyframes(spin) {
+
   0% {
-    opacity: 0;
-    -webkit-transform: translateY(-2000px);
-    -ms-transform: translateY(-2000px);
-    transform: translateY(-2000px);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-
-  80% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
+    @include transform(rotate(-0deg));
   }
 
   100% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+    @include transform(rotate(-180deg));
   }
 }
+
+
+
+@include keyframes(rotate-left) {
+
+  0% { @include transform(rotate(0deg));}
+  100% { @include transform(rotate(45deg));}
+
+}
+
+
+@include keyframes(hide) {
+
+  0% {
+    @include transform(rotate(0deg));
+    top: 0px;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    @include transform(rotate(90deg));
+    top: 200px;
+  }
+}
+
+@include keyframes(move) {
+
+  50% {
+    bottom: 50%;
+    left: -70%;
+  }
+}
+
 
 // ************************** Info banner ***********************************//
 .info {

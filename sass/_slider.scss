@@ -10,12 +10,10 @@
   background-position: center top !important;
   background-size: 430px;
   background-repeat: no-repeat !important;
-  -webkit-transition: all 0.4s ease;
+  @include transition(all 0.4s ease);
   padding: 100px 0px;
-    
-  
-  h3 {
-    font-size: 3em;
+
+  .work-title {
     color: #fff;
   }
 
