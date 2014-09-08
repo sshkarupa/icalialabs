@@ -72,3 +72,7 @@ cbpFixedScrollLayout = (->
 
   init: init
 )()
+
+#Call scroller function on process page
+cbpFixedScrollLayout.init()
+

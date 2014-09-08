@@ -38,15 +38,5 @@ jQuery(document).ready ->
     else
         mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
-  #Slider functions
-  $(".suraido-container").suraido
-    fluid: true
-    enableKeys: true
-    enableDots: false
-    enableArrows: false
-    autoplay: false
-
-  #Call scroller function on process page
-  cbpFixedScrollLayout.init()
 
 

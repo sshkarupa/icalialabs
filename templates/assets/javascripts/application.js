@@ -12,7 +12,7 @@ jQuery(document).ready(function() {
     $('.burger > .three').toggleClass('three-active');
     return e.preventDefault();
   });
-  $('.mask, span.circle').on('click', function(e) {
+  return $('.mask, span.circle').on('click', function(e) {
     var mask;
     if ($(this).hasClass('mask')) {
       mask = $(this);
@@ -34,12 +34,4 @@ jQuery(document).ready(function() {
       return mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>";
     }
   });
-  $(".suraido-container").suraido({
-    fluid: true,
-    enableKeys: true,
-    enableDots: false,
-    enableArrows: false,
-    autoplay: false
-  });
-  return cbpFixedScrollLayout.init();
 });

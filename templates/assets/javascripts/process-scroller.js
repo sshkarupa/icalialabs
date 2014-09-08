@@ -59,3 +59,5 @@ cbpFixedScrollLayout = (function() {
     init: init
   };
 })();
+
+cbpFixedScrollLayout.init();
