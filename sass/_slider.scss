@@ -1,62 +1,25 @@
 .work-slider {
   background: $primary-color;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  height: 650px;
 
 
-.item-slide {
-  background-position: center top !important;
-  background-size: 430px;
-  background-repeat: no-repeat !important;
-  @include transition(all 0.4s ease);
-  padding: 100px 0px;
+  .item-slide {
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    @include transition(all 0.4s ease);
+    padding: 100px 0px;
 
-  .work-title {
-    color: #fff;
-  }
 
-  p {
-    margin: 50px auto;
-    color: #fff;
-    font-size: 3.5em;
-    font-weight: 200;
-    width: 50%;
-  }
-
-  .play-video-btn {
-    background: none;
-    border: 1px solid #FFF;
-    @include border-radius(100px);
-    color: #fff;
-    font-size: 0.8em;
-    letter-spacing: 3px;
-    padding: 15px 40px;
-    text-decoration: none;
-    text-transform: uppercase;
-    @include transition(all 0.3s ease);
+    p {
+      margin: 50px auto;
+      font-size: 3.5em;
+      width: 50%;
+    }
 
     &:hover {
-      cursor: pointer;
-      background: #fff;
-      color: $primary-color;
+      background-size: 35%;
     }
   }
 }
-}
 
 
-.item-slide:hover {
-  background-size: 35%;
-}
-
-
-.suraido-container .pagination .dot {
-  border: 1px solid #fff !important;
-  background: transparent !important;
-}
-
-.suraido-container .pagination .dot.active {
-  background: #fff !important;
-}

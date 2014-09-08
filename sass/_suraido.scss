@@ -19,16 +19,16 @@ $suraido-pagination-z-index: 20 !default;
 //Dots
 $suraido-dot-size: 0.71428571rem !default;
 $suraido-dot-separation: 0.28571429rem !default;
-$suraido-dot-border-width: 0.14285714rem !default;
+$suraido-dot-border-width: 1px !default;
 $suraido-dot-border-style: solid !default;
-$suraido-dot-border-color: #CCC !default;
+$suraido-dot-border-color: #fff !default;
 $suraido-dot-radius: 0.42857143rem !default;
 $suraido-dot-opacity: 0.4 !default;
 $suraido-include-dot-transition: true !default;
 $suraido-dot-transition: background 0.5s, opacity 0.5s !default;
-$suraido-dot-active-background-color: #444 !default;
+$suraido-dot-active-background-color: #fff !default;
 $suraido-dot-active-opacity: 1 !default;
-$suraido-dot-background: #CCC;
+$suraido-dot-background: transparent;
 
 //Arrows
 $suraido-arrows-color: #FFF !default;
@@ -115,6 +115,7 @@ $suraido-caption-background-alpha: 0.5 !default;
   @include border-radius($dot-radius);
   @include opacity($dot-opacity);
   cursor: pointer;
+  border: 1px solid #fff;
   background: $dot-background;
   @if($include-dot-transition) {
     @include transition($suraido-dot-transition);
