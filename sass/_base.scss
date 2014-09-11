@@ -13,7 +13,6 @@ body, input {
   &.index {
 
     .index-background {
-      // background: url('../img/intro.jpg') center;
       background: #e60038;
       background-size: 100%;
       background-attachment: fixed;
@@ -29,7 +28,7 @@ h1 {font-size: 4rem;}
 h2 {font-size: 3rem;}
 h3 {font-size: 2rem;}
 h4 {font-size: 1.5rem;}
-p {font-weight: normal; font-size: 1rem;}
+p {font-weight: normal; font-size: 1.3rem;}
 a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 .clearfix:after {

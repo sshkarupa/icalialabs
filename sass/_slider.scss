@@ -14,6 +14,10 @@
       margin: 50px auto;
       font-size: 3.5em;
       width: 50%;
+
+      @include max-screen($small-screen) {
+        width: 100%;
+      }
     }
 
     &:hover {

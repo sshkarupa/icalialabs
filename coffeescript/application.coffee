@@ -1,11 +1,31 @@
 jQuery(document).ready ->
-  
   setTimeout (->
     $(".load-mask").fadeOut "slow"
     ), 900
 
+  isMobile =
+    Android: ->
+      navigator.userAgent.match /Android/i
 
-  $(".team-section").kinetic()
+    BlackBerry: ->
+      navigator.userAgent.match /BlackBerry/i
+
+    iOS: ->
+      navigator.userAgent.match /iPhone|iPad|iPod/i
+
+    Opera: ->
+      navigator.userAgent.match /Opera Mini/i
+
+    Windows: ->
+      navigator.userAgent.match /IEMobile/i
+
+    any: ->
+      isMobile.Android() or isMobile.BlackBerry() or isMobile.iOS() or isMobile.Opera() or isMobile.Windows()
+
+  if isMobile.any() == null
+    $(".team-section").kinetic()
+  else
+    $('html').addClass 'no-hover'
 
   #Class toggle for burger items
   $('.burger').on 'click', (e) ->
@@ -39,4 +59,16 @@ jQuery(document).ready ->
         mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
 
+if $('body').hasClass 'no-hover'
+  ignore = /:hover\b/
+  try
+    for stylesheet in document.styleSheets
+      console.log document.styleSheets
+      idxs = []
+      # detect hover rules
+      for rule, idx in stylesheet.cssRules
+        if rule.type is CSSRule.STYLE_RULE and ignore.test(rule.selectorText)
+          idxs.unshift idx
 
+      # delete hover rules
+      stylesheet.deleteRule idx for idx in idxs
