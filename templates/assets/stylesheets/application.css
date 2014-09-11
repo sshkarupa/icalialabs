@@ -1712,16 +1712,24 @@ a:visited {
   background: #fff;
   overflow-y: scroll;
 }
-/* line 117, ../../../sass/_team.scss */
+@media only screen and (max-width: 768px) {
+  /* line 108, ../../../sass/_team.scss */
+  .team .team-section .member-modal {
+    left: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+/* line 123, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-image {
   overflow: hidden;
   height: 100%;
 }
-/* line 121, ../../../sass/_team.scss */
+/* line 127, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-image img {
   height: 100%;
 }
-/* line 126, ../../../sass/_team.scss */
+/* line 132, ../../../sass/_team.scss */
 .team .team-section .member-modal .social {
   padding: 10px 20px;
   border: 3px solid #e60038;
@@ -1731,37 +1739,39 @@ a:visited {
   margin: 20px 0px;
   text-transform: capitalize;
 }
-/* line 135, ../../../sass/_team.scss */
+/* line 141, ../../../sass/_team.scss */
 .team .team-section .member-modal .social:hover {
   background: #e60038;
   color: #fff;
 }
-/* line 141, ../../../sass/_team.scss */
+/* line 147, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-info {
   color: #4e4e4e;
   height: 100%;
+  max-height: 600px;
+  overflow-y: auto;
   padding: 50px;
 }
-/* line 146, ../../../sass/_team.scss */
+/* line 154, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-info .member-title {
   color: #e60038;
   font-weight: 100;
   font-family: 'Open Sans', sans-serif;
 }
-/* line 152, ../../../sass/_team.scss */
+/* line 160, ../../../sass/_team.scss */
 .team .team-section .member-modal .modal-info p {
   font-size: 1.5rem;
   font-weight: 200;
   margin: 50px 0px;
 }
-/* line 159, ../../../sass/_team.scss */
+/* line 167, ../../../sass/_team.scss */
 .team .team-section .modal:before {
   display: inline-block;
   vertical-align: middle;
   content: " ";
   height: 100%;
 }
-/* line 166, ../../../sass/_team.scss */
+/* line 174, ../../../sass/_team.scss */
 .team .team-section .modal-close {
   background: #1d252e;
   cursor: pointer;
@@ -1773,7 +1783,7 @@ a:visited {
   top: 20px;
   border-radius: 50%;
 }
-/* line 177, ../../../sass/_team.scss */
+/* line 185, ../../../sass/_team.scss */
 .team .team-section .modal-overlay {
   position: fixed;
   width: 100%;
@@ -1786,29 +1796,29 @@ a:visited {
   background: #fff;
   transition: all 0.3s;
 }
-/* line 192, ../../../sass/_team.scss */
+/* line 200, ../../../sass/_team.scss */
 .team .join {
   background: #FFF;
   padding: 50px;
   text-align: center;
 }
-/* line 197, ../../../sass/_team.scss */
+/* line 205, ../../../sass/_team.scss */
 .team .join .tag {
   margin: 30px 0;
 }
 @media only screen and (max-width: 768px) {
-  /* line 211, ../../../sass/_team.scss */
+  /* line 219, ../../../sass/_team.scss */
   .team .team-section .hider {
     cursor: default;
     height: auto;
     width: auto;
   }
-  /* line 217, ../../../sass/_team.scss */
+  /* line 225, ../../../sass/_team.scss */
   .team .team-section .hider .member .picture {
     cursor: pointer;
     height: auto;
   }
-  /* line 221, ../../../sass/_team.scss */
+  /* line 229, ../../../sass/_team.scss */
   .team .team-section .hider .member:hover .info-circle {
     display: none;
   }
@@ -1819,7 +1829,7 @@ a:visited {
 slideUp
 ==============================================
  */
-/* line 237, ../../../sass/_team.scss */
+/* line 245, ../../../sass/_team.scss */
 .slideUp {
   animation-name: slideUp;
   -webkit-animation-name: slideUp;
@@ -1831,64 +1841,64 @@ slideUp
 }
 
 @keyframes slideUp {
-  /* line 251, ../../../sass/_team.scss */
+  /* line 259, ../../../sass/_team.scss */
   0% {
     transform: translateY(100%);
   }
 
-  /* line 254, ../../../sass/_team.scss */
+  /* line 262, ../../../sass/_team.scss */
   50% {
     transform: translateY(-8%);
   }
 
-  /* line 257, ../../../sass/_team.scss */
+  /* line 265, ../../../sass/_team.scss */
   65% {
     transform: translateY(4%);
   }
 
-  /* line 260, ../../../sass/_team.scss */
+  /* line 268, ../../../sass/_team.scss */
   80% {
     transform: translateY(-4%);
   }
 
-  /* line 263, ../../../sass/_team.scss */
+  /* line 271, ../../../sass/_team.scss */
   95% {
     transform: translateY(2%);
   }
 
-  /* line 266, ../../../sass/_team.scss */
+  /* line 274, ../../../sass/_team.scss */
   100% {
     transform: translateY(0%);
   }
 }
 
 @-webkit-keyframes slideUp {
-  /* line 272, ../../../sass/_team.scss */
+  /* line 280, ../../../sass/_team.scss */
   0% {
     -webkit-transform: translateY(100%);
   }
 
-  /* line 275, ../../../sass/_team.scss */
+  /* line 283, ../../../sass/_team.scss */
   50% {
     -webkit-transform: translateY(-8%);
   }
 
-  /* line 278, ../../../sass/_team.scss */
+  /* line 286, ../../../sass/_team.scss */
   65% {
     -webkit-transform: translateY(4%);
   }
 
-  /* line 281, ../../../sass/_team.scss */
+  /* line 289, ../../../sass/_team.scss */
   80% {
     -webkit-transform: translateY(-4%);
   }
 
-  /* line 284, ../../../sass/_team.scss */
+  /* line 292, ../../../sass/_team.scss */
   95% {
     -webkit-transform: translateY(2%);
   }
 
-  /* line 287, ../../../sass/_team.scss */
+  /* line 295, ../../../sass/_team.scss */
   100% {
     -webkit-transform: translateY(0%);
   }
@@ -1907,22 +1917,37 @@ slideUp
   transition: all 0.3s ease-in-out;
   background-size: 100%;
 }
-/* line 10, ../../../sass/_projects.scss */
+@media only screen and (max-width: 768px) {
+  /* line 1, ../../../sass/_projects.scss */
+  .project {
+    padding: 15px;
+    height: auto;
+  }
+  /* line 14, ../../../sass/_projects.scss */
+  .project .vertical-align {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
+/* line 19, ../../../sass/_projects.scss */
 .project:hover {
   opacity: 0.8;
   background-size: 105%;
 }
-/* line 15, ../../../sass/_projects.scss */
+/* line 24, ../../../sass/_projects.scss */
 .project.row {
   margin: 0;
 }
-/* line 17, ../../../sass/_projects.scss */
+/* line 26, ../../../sass/_projects.scss */
 .project .project-listing {
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
 }
-/* line 22, ../../../sass/_projects.scss */
+/* line 31, ../../../sass/_projects.scss */
 .project .project-listing h4 {
   color: rgba(0, 0, 0, 0.8);
   font-family: 'Open Sans', sans-serif;
@@ -1930,16 +1955,16 @@ slideUp
   letter-spacing: 2px;
   margin-top: 20px;
 }
-/* line 32, ../../../sass/_projects.scss */
+/* line 41, ../../../sass/_projects.scss */
 .project .project-info {
   background: rgba(0, 0, 0, 0.6);
   border-radius: 100px;
   color: #FFF;
-  font-size: 1em;
+  font-size: 1rem;
   padding: 10px;
   text-align: center;
 }
-/* line 42, ../../../sass/_projects.scss */
+/* line 51, ../../../sass/_projects.scss */
 .project .project-link {
   background: transparent;
   color: #FFF;
@@ -1959,7 +1984,13 @@ slideUp
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 58, ../../../sass/_projects.scss */
+@media only screen and (max-width: 768px) {
+  /* line 51, ../../../sass/_projects.scss */
+  .project .project-link {
+    padding: 15px 30px;
+  }
+}
+/* line 71, ../../../sass/_projects.scss */
 .project .project-link:before {
   border-top: 3px solid #FFF;
   border-right: 3px solid #FFF;
@@ -1983,11 +2014,11 @@ slideUp
   transition: all 0.3s;
   top: 50%;
 }
-/* line 75, ../../../sass/_projects.scss */
+/* line 88, ../../../sass/_projects.scss */
 .project .project-link:hover {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 80, ../../../sass/_projects.scss */
+/* line 93, ../../../sass/_projects.scss */
 .project .project-link:hover:before {
   left: 80%;
   opacity: 1;
