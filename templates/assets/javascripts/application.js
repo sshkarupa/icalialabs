@@ -1,5 +1,11 @@
 var idx, idxs, ignore, rule, stylesheet, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
 
+$(document).bind("mobileinit", function() {
+  $.mobile.hidePageLoadingMsg();
+  $.mobile.ajaxEnabled = false;
+  $.mobile.loadingMessage = false;
+});
+
 jQuery(document).ready(function() {
   var isMobile;
   setTimeout((function() {

@@ -1,4 +1,11 @@
+$(document).bind "mobileinit", ->
+  $.mobile.hidePageLoadingMsg()
+  $.mobile.ajaxEnabled = false
+  $.mobile.loadingMessage = false
+  return
+
 jQuery(document).ready ->
+
   setTimeout (->
     $(".load-mask").fadeOut "slow"
     ), 900
