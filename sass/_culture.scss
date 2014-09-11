@@ -1,78 +1,31 @@
-@include max-screen($small-screen) {
-  .no-hover .culture{
-    .career {
-
-
-      .perks {
-
-
-        .perk {
-
-
-          &.col-6:hover {
-            .perk-icon {
-              margin-top: 0%;
-            }
-          }
-          &:hover {
-            figure {
-              @include transition(all 0.4s ease-in-out);
-
-              .perk-icon {
-                margin-top: 0%;
-              }
-
-              figcaption {
-
-                .perk-description {
-                  opacity: 1;
-                }
-
-              }
-            }
-          }
-
-          figure {
-            padding: 20px;
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            @include transform(translateY(-50%));
-          }
-        }
-
+.no-hover .culture{
+  .perks {
+    .perk {
+      &.col-6:hover {
         .perk-icon {
-          margin: 20px auto;
-          max-height: 100px;
-          @include transition(all 0.5s ease-in);
+          margin-top: 0%;
         }
+      }
+      &:hover {
+        figure {
+          @include transition(all 0.4s ease-in-out);
 
-        .perk-title {
-          color: #fff;
-          font-size: 1.1em;
-          letter-spacing: 2px;
-          margin: 10px 0px;
-          text-transform: uppercase;
-        }
-
-        .perk-description {
-          margin: 0 auto;
-          line-height: 1.2em;
-          max-height: 0;
-          font-size: 1.1em;
-          font-weight: 200;
-          opacity: 0;
-          @include transition(all 0.5s ease-in);
-          @include max-screen($small-screen) {
+          .perk-icon {
+            margin-top: 0%;
             opacity: 1;
+          }
+
+          figcaption {
+            .perk-description {
+              opacity: 1;
+            }
           }
         }
       }
-
-
     }
   }
 }
+
 .culture {
 
   .info {
