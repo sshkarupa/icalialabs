@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:title" content="iAcquire’s awesome blog"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:image" content=""/>
-        <meta property="og:url" content="http://blog.iacquire.com"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+<meta property="og:title" content="iAcquire’s awesome blog"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content="http://blog.iacquire.com"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{ page.title }}</title>
 
-        <link rel="stylesheet" href="/assets/stylesheets/application.css">
-        <link rel="stylesheet" href="/assets/stylesheets/animate.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    </head>
-    <body class={{page.type}}>
-      <header class="main-menu">
-        <a href='/'>
-          {% include logo.html %}
-        </a>
-        <div class="burger">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
+<link rel="stylesheet" href="/assets/stylesheets/application.css">
+<link rel="stylesheet" href="/assets/stylesheets/animate.css">
+<link rel="stylesheet" href="/assets/stylesheets/animsition.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="{{page.type}} animsition">
+  <header class="main-menu">
+    <a href='/'>
+      {% include logo.html %}
+    </a>
+    <div class="burger">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+  </header>
+  <nav class="menu-overlay">
+    <div class="container">
+      <div class="menu-content">
+        <h4 class="menu-title">Menu</h4>
+        <a href="/" class="animsition-link">Home</a>
+        <a href="/process#understanding" class="animsition-link">Process</a>
+        <a href="/culture/">Culture</a>
+        <a href="/projects/">Work</a>
+        <a href="/team/">Team</a>
+        <a href="/contact/">Contact</a>
+        <div class="social-info">
+          <a href="https://twitter.com/icalialabs">Twitter</a>
+          <a href="https://github.com/IcaliaLabs/">Github</a>
+          <a href="https://www.facebook.com/icalialabs">Facebook</a>
         </div>
-      </header>
-      <nav class="menu-overlay">
-        <div class="container">
-          <div class="menu-content">
-            <h4 class="menu-title">Menu</h4>
-            <a href="/">Home</a>
-            <a href="/process#understanding">Process</a>
-            <a href="/culture">Culture</a>
-            <a href="/projects">Work</a>
-            <a href="/team">Team</a>
-            <a href="/contact">Contact</a>
-            <div class="social-info">
-              <a href="#">Twitter</a>
-              <a href="#">Github</a>
-              <a href="#">Facebook</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
-    {{ content }}
+  {{ content }}
 
-    <footer class="footer">
-      <div class="container row">
-        <div class="col-6">
-          <a href="/contact" class="contact-link">Do you have an awesome idea? Drink a beer with us.</a>
-        </div>
-        <div class="col-6 align-right">
-          <p><small> Copyright 2014 </small></p>
-        </div>
-        </div>
-      </footer>
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/application.js"></script>
-          <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/classie.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/furatto.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/suraido.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.kinetic.min.js"></script>
-          <script type="text/javascript" charset="utf-8" src="//localhost:35729/livereload.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery-waypoints.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.easing.min.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/process-scroller.js"></script>
-          <script type="text/javascript" charset="utf-8" src="/assets/javascripts/furatto_modal.js"></script>
-    </body>
+  <footer class="footer">
+    <div class="container row">
+      <div class="col-6">
+        <a href="/contact" class="contact-link">Do you have an awesome idea? Drink a beer with us.</a>
+      </div>
+      <div class="col-6 align-right">
+        <p><small> Copyright 2014 </small></p>
+      </div>
+    </div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/application.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/classie.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/animsition.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/furatto.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/suraido.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.kinetic.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="//localhost:35729/livereload.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery-waypoints.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/jquery.easing.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/process-scroller.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/assets/javascripts/furatto_modal.js"></script>
+</body>
 </html>
 

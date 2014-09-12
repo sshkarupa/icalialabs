@@ -8,6 +8,18 @@ $(document).bind("mobileinit", function() {
 
 jQuery(document).ready(function() {
   var isMobile;
+  $(".animsition").animsition({
+    inClass: "zoom-in",
+    outClass: "zoom-out",
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: ".animsition-link",
+    touchSupport: true,
+    loading: true,
+    loadingParentElement: "body",
+    loadingClass: "animsition-loading",
+    unSupportCss: ["animation-duration", "-webkit-animation-duration", "-o-animation-duration"]
+  });
   setTimeout((function() {
     return $(".load-mask").fadeOut("slow");
   }), 900);
