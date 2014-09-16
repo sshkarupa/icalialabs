@@ -25,6 +25,9 @@
   id: lentes
   picture: /assets/img/lentes.jpg
   bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
+  networks:
+    - link: https://twitter.com/eldelentes
+      name: Twitter
 
 - name: Ana Daniel
   title: Developer
@@ -48,6 +51,14 @@
   title: Designer
   id: scarlett
   picture: /assets/img/scarlett.jpg
+  bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br />Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
+  networks:
+    - link: https://twitter.com/scarlettgarza
+      name: Twitter
+    - link: https://dribbble.com/scarlettgarza
+      name: Dribble
+    - link: https://play.spotify.com/user/1282263420
+      name: Spotify
 
 
 - name: Alicia Gonzalez

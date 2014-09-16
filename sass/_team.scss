@@ -121,8 +121,11 @@
       }
 
       .modal-image {
-        overflow: hidden;
+        background-size: cover;
+        background-position: center;
         height: 100%;
+        min-height: 600px;
+        overflow: hidden;
 
         img {
           height: 100%;
