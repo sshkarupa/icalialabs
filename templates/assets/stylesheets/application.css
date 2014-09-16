@@ -2813,7 +2813,7 @@ slideUp
   background: rgba(0, 0, 0, 0.25);
 }
 
-/* line 198, ../../../sass/_suraido.scss */
+/* line 199, ../../../sass/_suraido.scss */
 .suraido-container {
   position: relative;
   overflow: auto;
@@ -2824,14 +2824,15 @@ slideUp
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   min-height: 400px;
+  max-height: 550px;
 }
-/* line 67, ../../../sass/_suraido.scss */
+/* line 68, ../../../sass/_suraido.scss */
 .suraido-container ul {
   margin: 0;
   width: 300%;
   list-style: none;
 }
-/* line 72, ../../../sass/_suraido.scss */
+/* line 73, ../../../sass/_suraido.scss */
 .suraido-container ul li {
   display: block;
   float: left;
@@ -2843,7 +2844,7 @@ slideUp
   -o-background-size: 30% 100%;
   background-size: 30% 100%;
 }
-/* line 201, ../../../sass/_suraido.scss */
+/* line 202, ../../../sass/_suraido.scss */
 .suraido-container .caption {
   font-size: 14px;
   position: absolute;
@@ -2857,7 +2858,7 @@ slideUp
   padding-left: 10px;
   font-weight: lighter;
 }
-/* line 205, ../../../sass/_suraido.scss */
+/* line 206, ../../../sass/_suraido.scss */
 .suraido-container .pagination {
   position: absolute;
   left: 0;
@@ -2867,7 +2868,7 @@ slideUp
   text-align: center;
   z-index: 20;
 }
-/* line 208, ../../../sass/_suraido.scss */
+/* line 209, ../../../sass/_suraido.scss */
 .suraido-container .pagination .dot {
   display: inline-block;
   width: 0.71429rem;
@@ -2889,13 +2890,13 @@ slideUp
   -o-transition: background 0.5s, opacity 0.5s;
   transition: background 0.5s, opacity 0.5s;
 }
-/* line 124, ../../../sass/_suraido.scss */
+/* line 125, ../../../sass/_suraido.scss */
 .suraido-container .pagination .dot.active {
   background: white;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-/* line 213, ../../../sass/_suraido.scss */
+/* line 214, ../../../sass/_suraido.scss */
 .suraido-container .arrows {
   position: absolute;
   top: 50%;
@@ -2905,7 +2906,7 @@ slideUp
   height: 20px;
   z-index: 10;
 }
-/* line 216, ../../../sass/_suraido.scss */
+/* line 217, ../../../sass/_suraido.scss */
 .suraido-container .arrows .arrow {
   display: inline;
   cursor: pointer;
@@ -2914,14 +2915,14 @@ slideUp
   line-height: 60px;
   top: 45%;
 }
-/* line 158, ../../../sass/_suraido.scss */
+/* line 159, ../../../sass/_suraido.scss */
 .suraido-container .arrows .arrow.prev {
   float: left;
   padding-left: 0;
   -webkit-transform: rotate(-140deg);
   left: 40px;
 }
-/* line 165, ../../../sass/_suraido.scss */
+/* line 166, ../../../sass/_suraido.scss */
 .suraido-container .arrows .arrow.next {
   padding-right: 0;
   float: right;
@@ -2929,7 +2930,7 @@ slideUp
   right: 40px;
 }
 
-/* line 223, ../../../sass/_suraido.scss */
+/* line 224, ../../../sass/_suraido.scss */
 .arrow {
   width: 60px;
   border-right: 3px solid #fff;

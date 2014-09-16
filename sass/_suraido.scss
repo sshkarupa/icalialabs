@@ -63,6 +63,7 @@ $suraido-caption-background-alpha: 0.5 !default;
   width: 100%;
   @include backface-visibility(hidden);
   min-height: $slider-min-height;
+  max-height: 550px;
 
   ul {
     margin: 0;
