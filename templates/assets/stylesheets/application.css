@@ -2802,15 +2802,33 @@ slideUp
 .square-bg-1 {
   background: rgba(0, 0, 0, 0.1);
 }
+@media only screen and (max-width: 768px) {
+  /* line 220, ../../../sass/_culture.scss */
+  .square-bg-1 {
+    background: inherit;
+  }
+}
 
-/* line 224, ../../../sass/_culture.scss */
+/* line 227, ../../../sass/_culture.scss */
 .square-bg-2 {
   background: rgba(0, 0, 0, 0.15);
 }
+@media only screen and (max-width: 768px) {
+  /* line 227, ../../../sass/_culture.scss */
+  .square-bg-2 {
+    background: inherit;
+  }
+}
 
-/* line 228, ../../../sass/_culture.scss */
+/* line 234, ../../../sass/_culture.scss */
 .square-bg-3 {
   background: rgba(0, 0, 0, 0.25);
+}
+@media only screen and (max-width: 768px) {
+  /* line 234, ../../../sass/_culture.scss */
+  .square-bg-3 {
+    background: inherit;
+  }
 }
 
 /* line 199, ../../../sass/_suraido.scss */

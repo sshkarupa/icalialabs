@@ -219,12 +219,21 @@
 
 .square-bg-1 {
   background: rgba(0,0,0,0.1);
+  @include max-screen($small-screen) {
+    background: inherit;
+  }
 }
 
 .square-bg-2 {
   background: rgba(0,0,0,0.15);
+  @include max-screen($small-screen) {
+    background: inherit;
+  }
 }
 
 .square-bg-3 {
   background: rgba(0,0,0,0.25);
+  @include max-screen($small-screen) {
+    background: inherit;
+  }
 }
