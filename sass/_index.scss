@@ -154,11 +154,6 @@
     @include transition(width 0.5s ease-in-out);
     width: 100%;
 
-    &:hover {
-      opacity: 0.4;
-    }
-
-
     &.hide-all {
       display: none;
     }

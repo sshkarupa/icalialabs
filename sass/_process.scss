@@ -1,7 +1,14 @@
-.process, .process-scroller, .process-scroller section  {
-  height: 100%;
+.process{  
+  min-height: 100%;
 
-  .process-scroller {
+  &:after {
+    content: ' ';
+    display: inline-block;
+  }
+
+  .process-scroller, .process-scroller section  {
+    height: 100%;
+
 
     nav {
       position: fixed;
@@ -37,7 +44,7 @@
 
     .step {
       text-align: center;
-      padding: 100px 0px;
+      padding: 12rem 0;
 
       .step-number {
         color: $primary-color;
@@ -115,4 +122,3 @@
     background-image: none;
   }
 }
-
