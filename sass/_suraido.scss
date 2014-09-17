@@ -159,14 +159,14 @@ $suraido-caption-background-alpha: 0.5 !default;
     &.prev {
       float: left;
       padding-left: $prev-arrow-padding;
-      -webkit-transform: rotate(-140deg);
+      @include transform(rotate(-140deg));
       left: 40px;
     }
 
     &.next {
       padding-right: $next-arrow-padding;
       float: right;
-      -webkit-transform: rotate(45deg);
+      @include transform(rotate(45deg));
       right: 40px;
     }
 }

@@ -105,7 +105,7 @@
       border-radius: 2px;
       margin: 10px 0px;
       position: relative;
-      -webkit-transition: all 0.5s ease;
+      @include transition(all 0.5s ease);
 
       &:hover {
         background: $primary-color;
@@ -128,7 +128,7 @@
       font-weight: 900;
       color: #000;
       margin: 0 auto;
-      -webkit-transition: all 0.2s ease-in;
+      @include transition(all 0.2s ease-in);
 
       &:hover {
         background: #000;
