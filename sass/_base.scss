@@ -208,7 +208,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     .one, .two, .three {
       width: 35px;
       height: 5px;
-      background: $primary-color;
+      background: #FFF;
       margin: 5px;
       position: relative;
     }
