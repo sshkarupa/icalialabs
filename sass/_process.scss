@@ -86,7 +86,7 @@
 #understanding {
   background-image: url(/assets/img/understanding.png);
   background-color: #f9f9f9;
-  @include max-screen($small-screen-max) {
+  @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
@@ -94,7 +94,7 @@
 #definition {
   background-image: url(/assets/img/definition.png);
   background-color: #fff;
-  @include max-screen($small-screen-max) {
+  @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
@@ -102,7 +102,7 @@
 #design {
   background-image: url(/assets/img/design.png);
   background-color: #f9f9f9;
-  @include max-screen($small-screen-max) {
+  @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
@@ -110,7 +110,7 @@
 #build {
   background-image: url(/assets/img/build.png);
   background-color: #fff;
-  @include max-screen($small-screen-max) {
+  @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
@@ -118,7 +118,7 @@
 #measure {
   background-image: url(/assets/img/measure.png);
   background-color: #f9f9f9;
-  @include max-screen($small-screen-max) {
+  @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
