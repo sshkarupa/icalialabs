@@ -42,7 +42,7 @@
 
 
 - name: Osvaldo Ayala
-  title: Developer
+  title: Hustler
   id: osvie
   picture: /assets/img/osvie.jpg
 
@@ -83,6 +83,8 @@
   title: Developer
   id: pato
   picture: /assets/img/pato.png
+  bio: patricio Beltrán is a Mobile and Web Developer with an eccentric consideration for code standards and defined processes. He works with all sorts of things including back-end, front-end and iOS. He enjoys discussing and designing products from the beginning and he’s always taking care of elements around the user experience on our clients' products. He is a geek who loves to learn new things and is always seeking for new technologies and practices. He can't survive without his music, his photography nor his dog. Patricio is only a kid.
+  networks:
 
 - name: Roel Castaño
   title: Developer
@@ -90,7 +92,7 @@
   picture: /assets/img/roel.png
 
 - name: Carlos Compean
-  title: iOS Developer
+  title: Mobile Developer
   id: carlos
   picture: /assets/img/carlos.jpg
   bio: Carlos is a mobile developer with a thirst for knowledge and a constant need of self-improvement. Borned in San Luis Potosi,  he has lived in other 3 different countries before ending up in Monterrey and working as an iOS developer. Always in the look for new trends in technology, he has a passion for details, and spends lots of time trying to develop in a way that provides a really smooth and great user experience.<br /><br />Carlos is also an adventurer who likes traveling, and trying new activities. He has practiced many kind of sports, but the ones he enjoys the most are water and winter sports. Currently he plays ice hockey, and during his leisure time he likes watching movies, tv series, and hanging out with friends.
