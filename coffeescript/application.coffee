@@ -54,6 +54,7 @@ jQuery(document).ready ->
   $('.burger').on 'click', (e) ->
     $('.menu-overlay').toggleClass 'show-menu'
     $('.menu-content').toggleClass 'show-menu animated bounceInDown'
+    $('.main-menu').toggleClass 'active'
     $('.burger').toggleClass 'active'
     $('.burger > .one').toggleClass 'one-active'
     $('.burger > .two').toggleClass 'hide-two'

@@ -179,6 +179,12 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   margin: 0 auto;
   z-index: 310;
 
+  &.active {
+    left: 0;
+    position: fixed;
+    right: 0;
+  }
+
   .logo {
     position: absolute;
     left: 40px;
@@ -190,6 +196,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       height: 60px;
       margin-top: 10px;
     }
+
   }
 
   .burger {
@@ -198,7 +205,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     right: 40px;
     display: inline-block;
     z-index: 300;
-    top: 10px;
+    top: 20px;
     @include transform-origin(center, 25%);
 
     &:hover {
@@ -217,7 +224,8 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
     &.active {
       @include animation(spin 0.5s ease-in-out);
-      top: 10px;
+      top: 20px;
+
     }
 
     .one-active {
