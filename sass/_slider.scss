@@ -12,8 +12,9 @@
 
     p {
       margin: 50px auto;
-      font-size: 3.5em;
+      font-size: 3em;
       width: 50%;
+      line-height: 1em;
 
       @include max-screen($small-screen) {
         width: 100%;
