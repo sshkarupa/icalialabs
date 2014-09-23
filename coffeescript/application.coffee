@@ -4,7 +4,27 @@ $(document).bind "mobileinit", ->
   $.mobile.loadingMessage = false
   return
 
+scrollToTop = ->
+  verticalOffset = (if typeof (verticalOffset) isnt "undefined" then verticalOffset else 0)
+  element = $("body")
+  offset = element.offset()
+  offsetTop = offset.top
+  $("html, body").animate
+    scrollTop: offsetTop
+  , 500, "linear"
+  return
+
 jQuery(document).ready ->
+
+  $(document).on "scroll", ->
+    if $(window).scrollTop() > 100
+      $(".to-top").addClass "show"
+    else
+      $(".to-top").removeClass "show"
+    return
+
+  $(".to-top").on "click", scrollToTop
+
   $(".animsition").animsition
     inClass: "zoom-in"
     outClass: "zoom-out"
@@ -22,6 +42,7 @@ jQuery(document).ready ->
       "-webkit-animation-duration"
       "-o-animation-duration"
     ]
+
   setTimeout (->
     $(".load-mask").fadeOut "slow"
     ), 900
