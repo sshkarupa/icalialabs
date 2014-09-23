@@ -1,4 +1,4 @@
-var idx, idxs, ignore, rule, stylesheet, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
+var idx, idxs, ignore, rule, scrollToTop, stylesheet, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
 
 $(document).bind("mobileinit", function() {
   $.mobile.hidePageLoadingMsg();
@@ -6,8 +6,28 @@ $(document).bind("mobileinit", function() {
   $.mobile.loadingMessage = false;
 });
 
+scrollToTop = function() {
+  var element, offset, offsetTop, verticalOffset;
+  verticalOffset = (typeof verticalOffset !== "undefined" ? verticalOffset : 0);
+  element = $("body");
+  offset = element.offset();
+  offsetTop = offset.top;
+  $("html, body").animate({
+    scrollTop: offsetTop
+  }, 500, "linear");
+  return retur;
+};
+
 jQuery(document).ready(function() {
   var isMobile;
+  $(document).on("scroll", function() {
+    if ($(window).scrollTop() > 100) {
+      $(".to-top").addClass("show");
+    } else {
+      $(".to-top").removeClass("show");
+    }
+  });
+  $(".to-top").on("click", scrollToTop);
   $(".animsition").animsition({
     inClass: "zoom-in",
     outClass: "zoom-out",
@@ -51,6 +71,7 @@ jQuery(document).ready(function() {
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
     $('.menu-content').toggleClass('show-menu animated bounceInDown');
+    $('.main-menu').toggleClass('active');
     $('.burger').toggleClass('active');
     $('.burger > .one').toggleClass('one-active');
     $('.burger > .two').toggleClass('hide-two');

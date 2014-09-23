@@ -341,6 +341,21 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     color: $primary-color;
     text-decoration: none;
     padding: 15px;
+    display: inline-block;
+  }
+
+  .social-icons-footer {
+    margin: 20px 0px;
+
+    a {
+      margin: 10px 0px;
+      display: inline-block;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
 }
