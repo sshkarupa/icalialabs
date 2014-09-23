@@ -86,7 +86,8 @@
     }
 
     p {
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 200;
 
       @include max-screen($small-screen) {
         margin: 40px 0;
@@ -94,6 +95,7 @@
     }
 
     h2 {
+      margin-bottom: 15px;
       @include max-screen($small-screen) {
         line-height: 3rem;
       }
@@ -101,7 +103,7 @@
   }
 
   .perks {
-    padding: 200px 0px;
+    padding: 100px 0px;
     background: $primary-color;
 
     .section-description {
@@ -170,11 +172,12 @@
     }
 
     .perk-description {
+      color: #FFF;
       margin: 0 auto;
       line-height: 1.2em;
       max-height: 0;
-      font-size: 1.1em;
-      font-weight: 200;
+      font-size: 1em;
+      font-weight: normal;
       opacity: 0;
       @include transition(all 0.5s ease-in);
       @include max-screen($small-screen) {
@@ -203,11 +206,13 @@
       display: inline-block;
       font-size: 1.25rem;
       padding: 1rem 10rem;
+      width: 90%;
       text-decoration: none;
 
       &:hover {
         background: $dark-gray;
         color: #fff;
+        cursor: pointer;
       }
     }
   }
