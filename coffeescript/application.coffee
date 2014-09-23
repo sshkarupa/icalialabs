@@ -4,6 +4,13 @@ $(document).bind "mobileinit", ->
   $.mobile.loadingMessage = false
   return
 
+
+
+
+$(".icon").hover(function() {
+  $(this).addClass('animated bounce');
+});
+
 scrollToTop = ->
   verticalOffset = (if typeof (verticalOffset) isnt "undefined" then verticalOffset else 0)
   element = $("body")

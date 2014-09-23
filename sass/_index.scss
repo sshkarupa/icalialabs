@@ -2,8 +2,7 @@
 
 .intro {
   text-align: center;
-  /*background: url(/assets/img/bg.png) no-repeat center;*/
-  background: $primary-color;
+  background: url(/assets/img/bg.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 
@@ -11,9 +10,12 @@
     padding: 15rem 0;
   }
 
+  .action-btn {
+    display: none;
+  }
+
   p {
-    /*font-weight: 200;*/
-    /*font-size: 2em;*/
+    font-size: 1.5rem;
     margin-bottom: 40px;
     color: #fff;
     position: relative;
@@ -37,7 +39,7 @@
   background: #fff;
 
   .card {
-    padding: 6.25rem 0;
+    padding: 4.25rem 0;
     display: inline-block;
     vertical-align: top;
     @include transition(all 0.3s ease);
@@ -49,12 +51,12 @@
 
     .icon {
       @include transition(all 0.3s ease);
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       display: inline-block;
     }
 
     .card-title {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
       display: block;
     }
 
@@ -63,7 +65,7 @@
       width: 80%;
       margin: 0 auto;
       color: rgba(0,0,0,0.7);
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       font-weight: 100;
     }
 

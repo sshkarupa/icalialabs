@@ -1919,26 +1919,28 @@ a:visited {
 /* line 3, ../../../sass/_index.scss */
 .intro {
   text-align: center;
-  /*background: url(/assets/img/bg.png) no-repeat center;*/
-  background: #e60038;
+  background: url(/assets/img/bg.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
-/* line 10, ../../../sass/_index.scss */
+/* line 9, ../../../sass/_index.scss */
 .intro .intro-content {
   padding: 15rem 0;
 }
-/* line 14, ../../../sass/_index.scss */
+/* line 13, ../../../sass/_index.scss */
+.intro .action-btn {
+  display: none;
+}
+/* line 17, ../../../sass/_index.scss */
 .intro p {
-  /*font-weight: 200;*/
-  /*font-size: 2em;*/
+  font-size: 1.5rem;
   margin-bottom: 40px;
   color: #fff;
   position: relative;
   z-index: 200;
 }
 
-/* line 27, ../../../sass/_index.scss */
+/* line 29, ../../../sass/_index.scss */
 .title-advantages {
   color: #e60038;
   text-align: center;
@@ -1946,15 +1948,15 @@ a:visited {
   padding: 50px 0 0 0;
 }
 
-/* line 34, ../../../sass/_index.scss */
+/* line 36, ../../../sass/_index.scss */
 .advantages {
   text-align: center;
   position: relative;
   background: #fff;
 }
-/* line 39, ../../../sass/_index.scss */
+/* line 41, ../../../sass/_index.scss */
 .advantages .card {
-  padding: 6.25rem 0;
+  padding: 4.25rem 0;
   display: inline-block;
   vertical-align: top;
   -moz-transition: all 0.3s ease;
@@ -1963,34 +1965,34 @@ a:visited {
   transition: all 0.3s ease;
   opacity: 0.7;
 }
-/* line 46, ../../../sass/_index.scss */
+/* line 48, ../../../sass/_index.scss */
 .advantages .card:hover {
   opacity: 1;
 }
-/* line 50, ../../../sass/_index.scss */
+/* line 52, ../../../sass/_index.scss */
 .advantages .card .icon {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: inline-block;
 }
-/* line 56, ../../../sass/_index.scss */
+/* line 58, ../../../sass/_index.scss */
 .advantages .card .card-title {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   display: block;
 }
-/* line 61, ../../../sass/_index.scss */
+/* line 63, ../../../sass/_index.scss */
 .advantages .card p {
   font-size: 1.5rem;
   width: 80%;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   font-weight: 100;
 }
-/* line 70, ../../../sass/_index.scss */
+/* line 72, ../../../sass/_index.scss */
 .advantages .card .card-link {
   color: #e60038;
   cursor: pointer;
@@ -2001,36 +2003,36 @@ a:visited {
   padding: 5px 10px;
   border-radius: 100px;
 }
-/* line 80, ../../../sass/_index.scss */
+/* line 82, ../../../sass/_index.scss */
 .advantages .card .card-link:hover {
   background: #e60038;
   color: #fff;
 }
 
-/* line 90, ../../../sass/_index.scss */
+/* line 92, ../../../sass/_index.scss */
 .skills {
   position: relative;
   width: 100%;
   height: 550px;
   overflow: hidden;
 }
-/* line 96, ../../../sass/_index.scss */
+/* line 98, ../../../sass/_index.scss */
 .skills .design-badge {
   padding-top: 50px;
 }
-/* line 98, ../../../sass/_index.scss */
+/* line 100, ../../../sass/_index.scss */
 .skills .design-badge svg path {
   fill: #e60038;
 }
-/* line 103, ../../../sass/_index.scss */
+/* line 105, ../../../sass/_index.scss */
 .skills .developer-badge {
   padding-top: 50px;
 }
-/* line 105, ../../../sass/_index.scss */
+/* line 107, ../../../sass/_index.scss */
 .skills .developer-badge svg path {
   fill: #e60038;
 }
-/* line 110, ../../../sass/_index.scss */
+/* line 112, ../../../sass/_index.scss */
 .skills .mask {
   background: #FFF;
   -moz-transition: width 1s ease-in-out;
@@ -2044,23 +2046,23 @@ a:visited {
   padding: 0;
   text-align: center;
 }
-/* line 120, ../../../sass/_index.scss */
+/* line 122, ../../../sass/_index.scss */
 .skills .mask.hide {
   width: 0;
 }
-/* line 124, ../../../sass/_index.scss */
+/* line 126, ../../../sass/_index.scss */
 .skills .mask:hover {
   background: #e60038;
 }
-/* line 127, ../../../sass/_index.scss */
+/* line 129, ../../../sass/_index.scss */
 .skills .mask:hover .skill .tagline {
   color: #FFF;
 }
-/* line 131, ../../../sass/_index.scss */
+/* line 133, ../../../sass/_index.scss */
 .skills .mask:hover .developer-badge svg path, .skills .mask:hover .design-badge svg path {
   fill: #FFF;
 }
-/* line 137, ../../../sass/_index.scss */
+/* line 139, ../../../sass/_index.scss */
 .skills .mask .more {
   position: absolute;
   display: none;
@@ -2070,12 +2072,12 @@ a:visited {
   font-weight: 100;
   font-size: 1.4em;
 }
-/* line 146, ../../../sass/_index.scss */
+/* line 148, ../../../sass/_index.scss */
 .skills .mask .more.push-front {
   z-index: 1;
   display: block;
 }
-/* line 153, ../../../sass/_index.scss */
+/* line 155, ../../../sass/_index.scss */
 .skills .skill {
   position: absolute;
   top: 0;
@@ -2085,19 +2087,19 @@ a:visited {
   transition: width 0.5s ease-in-out;
   width: 100%;
 }
-/* line 159, ../../../sass/_index.scss */
+/* line 161, ../../../sass/_index.scss */
 .skills .skill.hide-all {
   display: none;
 }
-/* line 163, ../../../sass/_index.scss */
+/* line 165, ../../../sass/_index.scss */
 .skills .skill h4 {
   padding: 20px 0;
 }
-/* line 167, ../../../sass/_index.scss */
+/* line 169, ../../../sass/_index.scss */
 .skills .skill .tagline {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 173, ../../../sass/_index.scss */
+/* line 175, ../../../sass/_index.scss */
 .skills .expand-content {
   background: #e60038;
   color: #FFF;
@@ -2109,16 +2111,16 @@ a:visited {
   transition: width 1s ease-in-out;
   width: 100%;
 }
-/* line 181, ../../../sass/_index.scss */
+/* line 183, ../../../sass/_index.scss */
 .skills .expand-content .developer-badge svg path, .skills .expand-content .design-badge svg path {
   fill: #fff;
 }
-/* line 185, ../../../sass/_index.scss */
+/* line 187, ../../../sass/_index.scss */
 .skills .expand-content .more {
   display: block;
   z-index: 1;
 }
-/* line 191, ../../../sass/_index.scss */
+/* line 193, ../../../sass/_index.scss */
 .skills .fusion {
   background: #000;
   color: #FFF;
@@ -2127,7 +2129,7 @@ a:visited {
   height: 80px;
   text-transform: uppercase;
 }
-/* line 199, ../../../sass/_index.scss */
+/* line 201, ../../../sass/_index.scss */
 .skills .fusion.circle {
   border-radius: 50%;
   right: 47%;
@@ -2142,14 +2144,14 @@ a:visited {
   font-size: 12px;
   z-index: 100;
 }
-/* line 210, ../../../sass/_index.scss */
+/* line 212, ../../../sass/_index.scss */
 .skills .fusion.circle span {
   line-height: normal;
   display: inline-block;
   vertical-align: middle;
   font-weight: 600;
 }
-/* line 217, ../../../sass/_index.scss */
+/* line 219, ../../../sass/_index.scss */
 .skills .fusion.circle.move-left {
   cursor: pointer;
   -moz-transform: translate(600px, -200px);
@@ -2164,7 +2166,7 @@ a:visited {
   right: 0;
   font-size: 16px;
 }
-/* line 226, ../../../sass/_index.scss */
+/* line 228, ../../../sass/_index.scss */
 .skills .fusion.circle.move-right {
   cursor: pointer;
   -moz-transform: scale(0.5);
@@ -2176,27 +2178,27 @@ a:visited {
   font-size: 24px;
 }
 
-/* line 239, ../../../sass/_index.scss */
+/* line 241, ../../../sass/_index.scss */
 .testimonials {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 243, ../../../sass/_index.scss */
+/* line 245, ../../../sass/_index.scss */
 .testimonials.row {
   margin: 0;
 }
-/* line 247, ../../../sass/_index.scss */
+/* line 249, ../../../sass/_index.scss */
 .testimonials .picture {
   padding: 0;
   position: relative;
   overflow: hidden;
 }
-/* line 252, ../../../sass/_index.scss */
+/* line 254, ../../../sass/_index.scss */
 .testimonials .picture img {
   display: block;
   width: 100%;
 }
-/* line 258, ../../../sass/_index.scss */
+/* line 260, ../../../sass/_index.scss */
 .testimonials .fake-skew {
   width: 200px;
   right: -135px;
@@ -2209,23 +2211,23 @@ a:visited {
   bottom: 0;
   background: #fff;
 }
-/* line 268, ../../../sass/_index.scss */
+/* line 270, ../../../sass/_index.scss */
 .testimonials .quote-container {
   height: 446px;
   position: relative;
 }
-/* line 273, ../../../sass/_index.scss */
+/* line 275, ../../../sass/_index.scss */
 .testimonials .quote {
   padding: 4rem 2rem;
 }
-/* line 278, ../../../sass/_index.scss */
+/* line 280, ../../../sass/_index.scss */
 .testimonials .quote blockquote p {
   color: #e60038;
   font-size: 2em;
   padding: 2rem 0;
   font-weight: 100;
 }
-/* line 285, ../../../sass/_index.scss */
+/* line 287, ../../../sass/_index.scss */
 .testimonials .quote blockquote .cite {
   color: #000;
   padding: 0px 10px;
