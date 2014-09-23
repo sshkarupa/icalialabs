@@ -4,9 +4,6 @@ $(document).bind "mobileinit", ->
   $.mobile.loadingMessage = false
   return
 
-
-
-
 $(".icon").hover(function() {
   $(this).addClass('animated bounce');
 });

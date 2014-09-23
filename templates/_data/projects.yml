@@ -1,18 +1,30 @@
 - name: Pikster App
   client: Pikster
   done: UI/UX Design & Development
-  image: /assets/img/pikster-2.png
+  image: /assets/img/pikster.jpg
   color: 0faef0
   link: /2014/07/24/mexico-100/
 
-- name: Mexico 100
-  client: En nuestras manos
+- name: Furatto
+  client: Personal Project
   done: UI/UX Design & Development
   image: /assets/img/pikster.png
+  color: 0faef0
+
+- name: Gidit App
+  client: Gidit
+  done: UI/UX Design & Development
+  image: /assets/img/gidit.jpg
   color: 8d2f4e
 
-- name: Que prefieres
-  client: Icalia Labs
+- name: Moneypool Web
+  client: Moneypool
   done: UI/UX Design & Development
-  image: /assets/img/pikster.png
+  image: /assets/img/moneypool.jpg
+  color: 0faef0
+
+- name: Lander
+  client: Perosnal Project
+  done: UI/UX Design & Development
+  image: /assets/img/lander.jpg
   color: 0faef0
