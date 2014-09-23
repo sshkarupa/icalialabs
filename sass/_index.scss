@@ -124,6 +124,10 @@
     &:hover {
       background: $primary-color;
 
+      .skill .tagline {
+        color: #FFF;
+      }
+
       .developer-badge svg path, .design-badge svg path {
         fill: #FFF;
       }
