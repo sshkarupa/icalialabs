@@ -49,6 +49,14 @@
       opacity: 1;
     }
 
+    &.experience {
+      @include animation-delay(0.5s);
+    }
+
+    &.knowledge {
+      @include animation-delay(1s);
+    }
+
     .icon {
       @include transition(all 0.3s ease);
       margin-bottom: 1rem;

@@ -117,7 +117,14 @@
   -o-animation: $value;
   animation: $value;
 }
-
+// Animation delay mixin
+@mixin animation-delay($value) {
+  -webkit-animation-delay: $value;
+  -moz-animation-delay: $value;
+  -ms-animation-delay: $value;
+  -o-animation-delay: $value;
+  animation-delay: $value;
+}
 
 // Embossing and letterpress effect
 @mixin box-emboss($outerOpacity, $innerOpacity) {

@@ -3,11 +3,7 @@ $(document).bind "mobileinit", ->
   $.mobile.ajaxEnabled = false
   $.mobile.loadingMessage = false
   return
-
-$(".icon").hover(function() {
-  $(this).addClass('animated bounce');
-});
-
+  
 scrollToTop = ->
   verticalOffset = (if typeof (verticalOffset) isnt "undefined" then verticalOffset else 0)
   element = $("body")
@@ -23,8 +19,15 @@ jQuery(document).ready ->
   $(document).on "scroll", ->
     if $(window).scrollTop() > 100
       $(".to-top").addClass "show"
+      $('.engage').addClass('animated bounceInUp');
+      $('.experience').addClass('animated bounceInUp');
+      $('.knowledge').addClass('animated bounceInUp');
     else
       $(".to-top").removeClass "show"
+      $('.engage').removeClass('animated bounceInUp');
+      $('.experience').removeClass('animated bounceInUp');
+      $('.knowledge').removeClass('animated bounceInUp');
+
     return
 
   $(".to-top").on "click", scrollToTop
