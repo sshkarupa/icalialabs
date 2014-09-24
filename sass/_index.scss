@@ -260,7 +260,6 @@
     overflow: hidden;
 
     img {
-      display: none !important;
       width: 100%;
     }
   }
@@ -276,12 +275,12 @@
   }
 
   .quote-container {
-    height: 446px;
+    height: 340px;
     position: relative;
   }
 
   .quote {
-    padding: 4rem 2rem;
+    // padding: 4rem 2rem;
 
     blockquote {
 

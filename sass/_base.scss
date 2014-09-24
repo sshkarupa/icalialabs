@@ -347,9 +347,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
   .social-icons-footer {
     margin: 20px 0px;
+    display: inline-block;
 
     a {
-      margin: 10px 0px;
+      margin: 10px 5px;
       display: inline-block;
       opacity: 0.8;
 
