@@ -24,7 +24,8 @@
   title: Lead Desginer
   id: lentes
   picture: /assets/img/lentes.jpg
-  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
+  bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. <br/>
+Eduardo (A.k.a Lentes) is also involved in design community, he is the founder of Nongrid a project which tries involve more design students on the product design community. Also writes on blogs about design, music and hipster things.
   networks:
     - link: https://twitter.com/eldelentes
       name: Twitter
@@ -91,6 +92,7 @@
   title: Developer
   id: roel
   picture: /assets/img/roel.png
+  bio: 
 
 - name: Carlos Compean
   title: Mobile Developer
@@ -109,11 +111,9 @@
   title: Developer
   id: nico
   picture: /assets/img/nico.jpg
-  bio: Carlos is a mobile developer with a thirst for knowledge and a constant need of self-improvement. Borned in San Luis Potosi,  he has lived in other 3 different countries before ending up in Monterrey and working as an iOS developer. Always in the look for new trends in technology, he has a passion for details, and spends lots of time trying to develop in a way that provides a really smooth and great user experience.<br /><br />Carlos is also an adventurer who likes traveling, and trying new activities. He has practiced many kind of sports, but the ones he enjoys the most are water and winter sports. Currently he plays ice hockey, and during his leisure time he likes watching movies, tv series, and hanging out with friends.
+  bio: Nicolas is a french Ruby on Rails developer. Longtime fan of the open source systems and always wanting
+to know how things work in their intimate details. He joined IcaliaLabs after year of studiynd abroad in Mexico. <br/>
+Vegan, Nicolas embraces a healthy lifestyle, enjoying sport or organizing outdoor trips. He is constantly looking to make an impact on other peoples lives by introducing them to new ideas.
   networks:
-    - link: http://www.linkedin.com/pub/carlos-alberto-compean-martinez/65/601/745
-      name: Linkedin
-    - link: https://www.facebook.com/carlos.compean.73
-      name: Facebook
-    - link: https://twitter.com/cacmartinez
-      name: Twitter
+    - link: https://github.com/nflorentin
+      name: Github
