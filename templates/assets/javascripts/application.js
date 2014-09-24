@@ -15,7 +15,6 @@ scrollToTop = function() {
   $("html, body").animate({
     scrollTop: offsetTop
   }, 500, "linear");
-  return retur;
 };
 
 jQuery(document).ready(function() {
@@ -23,8 +22,14 @@ jQuery(document).ready(function() {
   $(document).on("scroll", function() {
     if ($(window).scrollTop() > 100) {
       $(".to-top").addClass("show");
+      $('.engage').addClass('animated bounceInUp');
+      $('.experience').addClass('animated bounceInUp');
+      $('.knowledge').addClass('animated bounceInUp');
     } else {
       $(".to-top").removeClass("show");
+      $('.engage').removeClass('animated bounceInUp');
+      $('.experience').removeClass('animated bounceInUp');
+      $('.knowledge').removeClass('animated bounceInUp');
     }
   });
   $(".to-top").on("click", scrollToTop);

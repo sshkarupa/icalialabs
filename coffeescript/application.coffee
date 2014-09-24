@@ -3,7 +3,7 @@ $(document).bind "mobileinit", ->
   $.mobile.ajaxEnabled = false
   $.mobile.loadingMessage = false
   return
-  
+
 scrollToTop = ->
   verticalOffset = (if typeof (verticalOffset) isnt "undefined" then verticalOffset else 0)
   element = $("body")

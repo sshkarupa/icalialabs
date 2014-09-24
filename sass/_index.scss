@@ -50,11 +50,11 @@
     }
 
     &.experience {
-      @include animation-delay(0.5s);
+      @include animation-delay(0.3s);
     }
 
     &.knowledge {
-      @include animation-delay(1s);
+      @include animation-delay(0.7s);
     }
 
     .icon {
