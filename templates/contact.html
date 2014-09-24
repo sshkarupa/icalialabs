@@ -16,17 +16,17 @@ type: contact
     </div>
     <div class="modal-content">
       <div>
-        <form enctype="text/plain" method="get" action="mailto:weare@icalialabs.com" class="contact-form">
+        <form enctype="text/plain" method="get" action="mailto:weare@icalialabs.com" class="contact-form" target="_blank">
           <div class="row">
               <span>Hello my name is</span>
-              <input type="text" name="namme" class="input" placeholder="Name">
+              <input type="text" name="subject" class="input" placeholder="Name">
               <span>and my email is</span>
               <input type="text" name="email" class="input" placeholder="Email">
               <span>I would like to:</span>
-              <select>
-                <option value="">Apply for a job</option>
-                <option value="">Ask about your services</option>
-                <option value="">Have a random coffee</option>
+              <select name="body">
+                <option value="I would like to apply for a job">Apply for a job</option>
+                <option value="I would like to ask abour services">Ask about your services</option>
+                <option value="I would like to have a coffee">Have a random coffee</option>
               </select>
               <input type="submit" value="Send" class="secondary-button">
           </div>
@@ -46,7 +46,7 @@ type: contact
     <div class="col-6">
       <div class="adress-container">
         <p>Juan I. Ramon 801, Suite 206
-          Centro de Monterrey, 64740. 
+          Centro de Monterrey, 64740.
           Monterrey City, NL, Mexico</p>
         <a href="http://bit.ly/IcaliaLabs_address" target="_blank">Google Maps</a>
       </div>

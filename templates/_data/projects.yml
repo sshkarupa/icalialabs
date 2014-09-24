@@ -3,28 +3,32 @@
   done: UI/UX Design & Development
   image: /assets/img/pikster.jpg
   color: 0faef0
-  link: /2014/07/24/mexico-100/
+  link: http://www.pikster.co/
 
 - name: Furatto
   client: Personal Project
   done: UI/UX Design & Development
   image: /assets/img/furatto.jpg
   color: 0faef0
+  link: http://icalialabs.github.io/furatto/
 
 - name: Gidit App
   client: Gidit
   done: UI/UX Design & Development
   image: /assets/img/gidit.jpg
   color: 8d2f4e
+  link: https://itunes.apple.com/us/app/gidit/id846765766?mt=8
 
 - name: Moneypool Web
   client: Moneypool
   done: UI/UX Design & Development
   image: /assets/img/moneypool.jpg
   color: 0faef0
+  link: https://www.moneypool.mx/
 
 - name: Lander
   client: Perosnal Project
   done: UI/UX Design & Development
   image: /assets/img/lander.jpg
   color: 0faef0
+  link: http://landerapp.io/

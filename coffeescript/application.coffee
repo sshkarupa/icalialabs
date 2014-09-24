@@ -19,14 +19,14 @@ jQuery(document).ready ->
   $(document).on "scroll", ->
     if $(window).scrollTop() > 100
       $(".to-top").addClass "show"
-      $('.engage').addClass('animated bounceInUp');
-      $('.experience').addClass('animated bounceInUp');
-      $('.knowledge').addClass('animated bounceInUp');
+      $('.engage').addClass('animated bounceInUp')
+      $('.experience').addClass('animated bounceInUp')
+      $('.knowledge').addClass('animated bounceInUp')
     else
       $(".to-top").removeClass "show"
-      $('.engage').removeClass('animated bounceInUp');
-      $('.experience').removeClass('animated bounceInUp');
-      $('.knowledge').removeClass('animated bounceInUp');
+      $('.engage').removeClass('animated bounceInUp')
+      $('.experience').removeClass('animated bounceInUp')
+      $('.knowledge').removeClass('animated bounceInUp')
 
     return
 

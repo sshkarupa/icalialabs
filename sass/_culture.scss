@@ -186,10 +186,22 @@
     }
   }
 
+
   .positions {
     background: $light-gray;
     min-height: 300px;
     padding: 150px 0px;
+
+    .position-modal {
+      color: rgba(0,0,0,0.7);
+      top: 0;
+      padding: 0;
+
+      .modal-content {
+        text-align: left;
+      }
+    }
+
 
     p {
       width: 60%;
