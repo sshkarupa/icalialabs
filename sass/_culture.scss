@@ -197,8 +197,17 @@
       top: 0;
       padding: 0;
 
+      strong {
+        display: block;
+        margin: 10px 0;
+      }
+
       .modal-content {
         text-align: left;
+
+        .col-6 {
+          padding-right: 25px;
+        }
       }
     }
 

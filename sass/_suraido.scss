@@ -69,9 +69,11 @@ $suraido-caption-background-alpha: 0.5 !default;
     margin: 0;
     width: $list-width;
     list-style: none;
+    max-height: 550px;
 
     li {
       display: block;
+      height: 100%;
       float: left;
       width: $list-item-width;
       min-height: $list-item-min-height;

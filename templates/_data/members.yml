@@ -75,15 +75,16 @@
       name: Spotify
 
 - name: Noe Araujo
-  title: Designer
+  title: Grumpy Designer
   id: noe
   picture: /assets/img/noe.jpg
+  bio: Minimalist.
 
 - name: Patricio Beltran
   title: Developer
   id: pato
   picture: /assets/img/pato.png
-  bio: patricio Beltrán is a Mobile and Web Developer with an eccentric consideration for code standards and defined processes. He works with all sorts of things including back-end, front-end and iOS. He enjoys discussing and designing products from the beginning and he’s always taking care of elements around the user experience on our clients' products. He is a geek who loves to learn new things and is always seeking for new technologies and practices. He can't survive without his music, his photography nor his dog. Patricio is only a kid.
+  bio: Patricio Beltrán is a Mobile and Web Developer with an eccentric consideration for code standards and defined processes. He works with all sorts of things including back-end, front-end and iOS. He enjoys discussing and designing products from the beginning and he’s always taking care of elements around the user experience on our clients' products. He is a geek who loves to learn new things and is always seeking for new technologies and practices. He can't survive without his music, his photography nor his dog. Patricio is only a kid.
   networks:
 
 - name: Roel Castaño
