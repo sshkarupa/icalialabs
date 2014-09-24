@@ -75,9 +75,10 @@
       name: Spotify
 
 - name: Noe Araujo
-  title: Designer
+  title: Grumpy Designer
   id: noe
   picture: /assets/img/noe.jpg
+  bio: Minimalist.
 
 - name: Patricio Beltran
   title: Developer

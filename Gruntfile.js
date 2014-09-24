@@ -60,7 +60,7 @@ module.exports = function(grunt) {
           ignore: ['#added_at_runtime', '.created_by_jQuery']
         },
         files: {
-          'dist/css/tidy.css': ['app/index.html', 'app/team.html']
+          'app/stylesheets/tidy.css': ['app/index.html']
         }
       }
     },
@@ -75,10 +75,10 @@ module.exports = function(grunt) {
           // Set to true to enable the following options…
           expand: true,
           // cwd is 'current working directory'
-          cwd: 'templates/assets/img',
+          cwd: 'templates/assets/img/',
           src: ['**/*.png'],
           // Could also match cwd line above. i.e. project-directory/img/
-          dest: 'app/assets/img',
+          dest: 'app/assets/img/',
           ext: '.png'
         }
         ]
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
           cwd: 'templates/assets/img/',
           src: ['**/*.jpg'],
           // Could also match cwd. i.e. project-directory/img/
-          dest: 'app/assets/img',
+          dest: 'app/assets/img/',
           ext: '.jpg'
         }
         ]
