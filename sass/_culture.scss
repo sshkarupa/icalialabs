@@ -60,7 +60,8 @@
       &.suraido-container {
         min-height: 500px;
         @include max-screen($small-screen) {
-          min-height: 330px;
+          max-height: 220px;
+          min-height: 150px;        
         }
       }
 
@@ -68,7 +69,7 @@
       font-size: 5rem;
 
       @include max-screen($small-screen) {
-        font-size: 4rem;
+        font-size: 3rem;
       }
     }
     }
