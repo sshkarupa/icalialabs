@@ -4,10 +4,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-              ' * Isaki v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-              ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-              ' * Licensed under <%= _.pluck(pkg.licenses, "type") %> (<%= _.pluck(pkg.licenses, "url") %>)\n' +
-              ' */\n',
+      ' * Isaki v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+      ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+      ' * Licensed under <%= _.pluck(pkg.licenses, "type") %> (<%= _.pluck(pkg.licenses, "url") %>)\n' +
+      ' */\n',
 
     clean: {
       js: ["app/assets/javascripts/application.tmp.js"] 
@@ -65,54 +65,92 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
-      options: {
-        spawn: false
-      },
-      sass: {
-        files: 'sass/*.scss',
-        tasks: ["compass"],
+    imagemin: {
+      png: {
         options: {
-          livereload: true
+          optimizationLevel: 7
+        },
+        files: [
+          {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: 'templates/assets/img',
+          src: ['**/*.png'],
+          // Could also match cwd line above. i.e. project-directory/img/
+          dest: 'app/assets/img',
+          ext: '.png'
         }
+        ]
       },
+      jpg: {
+        options: {
+          progressive: true
+        },
+        files: [
+          {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: 'templates/assets/img/',
+          src: ['**/*.jpg'],
+          // Could also match cwd. i.e. project-directory/img/
+          dest: 'app/assets/img',
+          ext: '.jpg'
+        }
+        ]
+      }
+    },
 
-      coffee: {
-        files: "coffeescript/*.coffee",
-        tasks: ["coffee", "concat", "uglify"]
+
+  watch: {
+    options: {
+      spawn: false
+    },
+    sass: {
+      files: 'sass/*.scss',
+      tasks: ["compass"],
+      options: {
+        livereload: true
       }
     },
 
     coffee: {
-      compile: {
-        options: {
-          bare: true
-        },
-        flatten: true,
-        expand: true,
-        cwd: "coffeescript",
-        src: ["*.coffee"],
-        dest: "templates/assets/javascripts",
-        ext: ".js"
-      }
-    },
-
-    shell: {
-      jekyllServer: {
-        command: "jekyll serve --watch"
-      }
-    },
-
-    concurrent: {
-      options: {
-        logConcurrentOutput: true
-      },
-      server: {
-        tasks: ["watch:sass", "watch:coffee", "shell:jekyllServer"]
-      },
+      files: "coffeescript/*.coffee",
+      tasks: ["coffee", "concat", "uglify"]
     }
+  },
 
-  });
+  coffee: {
+    compile: {
+      options: {
+        bare: true
+      },
+      flatten: true,
+      expand: true,
+      cwd: "coffeescript",
+      src: ["*.coffee"],
+      dest: "templates/assets/javascripts",
+      ext: ".js"
+    }
+  },
+
+  shell: {
+    jekyllServer: {
+      command: "jekyll serve --watch"
+    }
+  },
+
+  concurrent: {
+    options: {
+      logConcurrentOutput: true
+    },
+    server: {
+      tasks: ["watch:sass", "watch:coffee", "shell:jekyllServer"]
+    },
+  }
+
+});
 
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
@@ -130,4 +168,5 @@ module.exports = function(grunt) {
 
   // Uncss 
   grunt.loadNpmTasks('grunt-uncss');
+  grunt.registerTask('images', ['imagemin']);
 }
