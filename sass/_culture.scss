@@ -61,7 +61,7 @@
         min-height: 500px;
         @include max-screen($small-screen) {
           max-height: 220px;
-          min-height: 150px;        
+          min-height: 150px;
         }
       }
 
@@ -132,8 +132,7 @@
       }
       &:hover {
         figure {
-          @include transition(all 0.4s ease-in-out);
-
+          @include transform(translateY(-100%));
           .perk-icon {
             margin-top: -80%;
             opacity: 0;
@@ -154,6 +153,7 @@
         position: absolute;
         width: 100%;
         top: 50%;
+        @include transition(all 0.4s ease-in-out);
         @include transform(translateY(-50%));
       }
     }

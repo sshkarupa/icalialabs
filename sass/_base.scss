@@ -92,7 +92,16 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     background: #fff;
     @include transform(scale(1.1));
     cursor: pointer;
+
+    &:visited {
+      color: $primary-color;
+    }
   }
+
+  &:visited {
+    color: #FFF;
+  }
+
 }
 
 .capital {

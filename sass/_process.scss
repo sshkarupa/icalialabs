@@ -1,5 +1,29 @@
 .process{  
+  .info {
+    height: 650px;
+    @include max-screen($small-screen-max) {
+      height: auto;
+    }
+  }
+
   min-height: 100%;
+
+  .services {
+    margin: 20px auto;
+    width: 70%;
+
+    h5 {
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+
+      li {
+        color: rgba(0,0,0,0.7);
+      }
+    }
+  }
 
   &:after {
     content: ' ';
