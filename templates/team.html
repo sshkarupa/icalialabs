@@ -43,7 +43,7 @@ type: team
             <h4 class="member-title">{{ member.title }}</h3>
             <div class="networks">
               {% for network in member.networks %}
-                <a href="{{ network.link }}" class="social {{network.name}}">{{ network.name }}</a>
+                <a href="{{ network.link }}" class="social {{network.name}}" target="_blank">{{ network.name }}</a>
               {% endfor %}
             </div>
             <p>{{ member.bio }}</p>
@@ -61,5 +61,5 @@ type: team
   <h4 class="capital">Join Us.</h4>
   <h2 class="tag">Are you ready for new challenges?</h2>
 
-  <a href="/contact" class="red-button">View our open positions</a>
+  <a href="/culture/#positions" class="red-button">View our open positions</a>
 </section>
