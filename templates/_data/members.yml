@@ -28,6 +28,8 @@
   networks:
     - link: https://twitter.com/eldelentes
       name: Twitter
+    - link: http://www.eldelentes.mx
+      name: Website
 
 - name: Ana Daniel
   title: Developer
@@ -67,11 +69,11 @@
   picture: /assets/img/alicia.jpg
   bio: Alicia works as a Rails and front-end developer. She enjoys taking care of visual details to deliver great experiences for users. She likes to learn new technologies and take ukulele lessons with her brother. <br /><br /> When she was 12 she created her first website and fell in love with the internet. She also loves reading, nature, art and playing videogames on her 3DS.
   networks:
-    - links: http://twitter.com/alicia_catalina
+    - link: http://twitter.com/alicia_catalina
       name: Twitter
-    - links: http://github.com/aliciacatalina
+    - link: http://github.com/aliciacatalina
       name: Github
-    - links: https://play.spotify.com/user/113023278
+    - link: https://play.spotify.com/user/113023278
       name: Spotify
 
 - name: Noe Araujo
@@ -79,6 +81,14 @@
   id: noe
   picture: /assets/img/noe.jpg
   bio: Minimalist.
+  networks:
+    - link: http://instagram.com/noe.ai
+      name: Instagram
+    - link: https://twitter.com/Internox
+      name: Twitter
+    - link: https://dribbble.com/nox
+      name: Dribbble
+
 
 - name: Patricio Beltran
   title: Developer
@@ -86,11 +96,25 @@
   picture: /assets/img/pato.png
   bio: Patricio Beltrán is a Mobile and Web Developer with an eccentric consideration for code standards and defined processes. He works with all sorts of things including back-end, front-end and iOS. He enjoys discussing and designing products from the beginning and he’s always taking care of elements around the user experience on our clients' products. He is a geek who loves to learn new things and is always seeking for new technologies and practices. He can't survive without his music, his photography nor his dog. Patricio is only a kid.
   networks:
+    - link: https://github.com/PatoBeltran
+      name: Github
+    - link: http://500px.com/patobeltran
+      name: 500px
+    - link: https://twitter.com/soypatobeltran
+      name: Twitter
 
 - name: Roel Castaño
   title: Developer
   id: roel
   picture: /assets/img/roel.png
+  bio: Roel is a iOS developer that enjoys spending time learning and sharing ideas with the rest of the team. Interested in always being up to date with current events regarding technology, music and science. He is in his third year for his computer science degree. <br/>Roel enjoys singing and playing guitar as a hobby. He is the treasurer of the ACM student chapter and Google Student Ambassador at ITESM Campus Monterrey. He's a Miami Dolphin and Miami Heat fan and plays basketball as a pastime.
+  networks:
+    - link: https://github.com/roelcastano
+      name: Github
+    - link: http://instagram.com/roelcastano
+      name: Instagram
+    - link: https://www.twitter.com/roelcastano
+      name: Twitter
 
 - name: Carlos Compean
   title: Mobile Developer
@@ -105,7 +129,7 @@
     - link: https://twitter.com/cacmartinez
       name: Twitter
 
-- name: Nicola Florentino
+- name: Nicolas Florentino
   title: Developer
   id: nico
   picture: /assets/img/nico.jpg
