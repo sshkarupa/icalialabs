@@ -178,7 +178,11 @@
       text-align: center;
       top: 20px;
       border-radius: 50%;
+      @include max-screen($small-screen) {
+        padding: 15px 10px;
+      }
     }
+
     .modal-overlay {
       position: fixed;
       width: 100%;
