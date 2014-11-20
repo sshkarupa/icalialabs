@@ -1,6 +1,6 @@
-- name: Pikster App
+- name: Pikster App MVP
   client: Pikster
-  done: UI/UX Design & Development
+  done: UI/UX Design & Development of MVP
   image: /assets/img/pikster.jpg
   color: 0faef0
   link: http://www.pikster.co/
