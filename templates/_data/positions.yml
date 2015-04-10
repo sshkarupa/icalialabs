@@ -1,0 +1,94 @@
+- title: Full-Stack Developer
+  requirements:
+    - Bachelor in Computer Science or equivalent
+    - Extensive knowledge in Object Oriented Programming
+    - 2+ years of Ruby experience
+    - 1+ years of Ruby on Rails experience
+    - Relational database knowledge
+    - 1+ years of Javascript experience
+    - Basic HTML and CSS
+    - Version controller use for personal projects
+  nice_to_haves:
+    - Git knowledge
+    - Experience related to electronic transactions
+    - Test driven development experience, ideally Rspec
+    - Postgresql experience
+    - Experience with jQuery
+    - Experience with front end preprocessors like Haml or Sass
+    - Experience with prototyping frameworks (Bootstrap, Foundation, Furatto)
+    - Open source collaboration
+    - UI implementation
+  send:
+    - Github
+    - Cover Letter
+    - Resume
+
+- title: Digital Designer
+  requirements:
+    - Interest in getting involved on every step of the creative process, from prototyping to launch. You will be designing the platform, experience and will be working closely with developers to bring the product to life
+    - Interest on working in a variety of platforms and products (iPad, Android, Web apps, etc.)
+    - Able to communicate efficiently with clients
+    - Great online portfolio
+    - Being open to receive feedback at any moment from the users identifying crucial changes to improve the app usability
+    - Photoshop and Illustrator experience
+    - Experience (or being open to learn) web tools, like HTML and CSS
+    - Great passion for design and technology
+  send:
+    - Link to Dribble, Behance or personal website
+
+- title: iOS Mobile Engineer
+  requirements:
+    - Bachelor in Computer Science or equivalent
+    - Extensive knowledge in Object Oriented Programming
+    - 1+ years of Objective-C and iOS SDK experience
+    - Experience building at least one app, available for review
+    - Experience working with external libraries with Cocoapods
+    - Version controller use for personal projects
+  nice_to_haves:
+    - Git knowledge
+    - Experience deploying to the AppStore
+    - Ruby on Rails
+    - Postgresql experience
+    - Experience building APIs
+    - Knowledge of iOS frameworks(Core Data, Core Animation, Core Graphics and Core Text)
+  send:
+    - Link to Github
+    - Cover Letter
+    - Resume
+    - Personal website
+    - Apps on marketplaces
+
+- title: Summer Internship - Computer Science
+  type: internship
+  what: Develop a product from scratch, receive mentorship from our developers and designers, gain full access to our learning platforms, rewards and creative time.
+  when: 12 weeks of summer internship. Starting on May 25, ending on August 14. If you build an amazing product, your internship can be extended.
+  profile: Computer Science students
+  requirements:
+    - Web Development
+    - Programming Languages (Ruby, Java, C, C++, Python)
+    - HTML/CSS
+  send:
+    - Your current resume in PDF form
+    - A cover letter explaining why you'd love to be an intern at Icalia Labs
+    - Your personal website and Github account
+  expect: Your resume and cover letter will be reviewed by our Happiness Manager. If you’re a good fit for our internship, she will reach out to you. If you move forward in the hiring process, you’ll participate in a series of interviews to assess your skills - some may be over the phone or on Google+ Hangouts, and others in person. You’ll also need to demonstrate your technical abilities. We will work with you to answer any questions you have and help with scheduling.
+
+- title: Summer Internship - Digital Designer
+  type: internship
+  what: Design a product from scratch, receive mentorship from our developers and designers, gain full access to our learning platforms, rewards and creative time.
+  when: 12 weeks of summer internship. Starting on May 25, ending on August 14. If you build an amazing product, your internship can be extended.
+  profile: Graphic Design students
+  requirements:
+    - Photoshop
+    - Illustratot
+    - "Nice to have: HTML/CSS & Sketch"
+  send:
+    - Your current resume in PDF form
+    - A cover letter explaining why you'd love to be an intern at Icalia Labs
+    - Your personal website and Dribbble and Behance account
+  expect: Your resume and cover letter will be reviewed by our Happiness Manager. If you’re a good fit for our internship, she will reach out to you. If you move forward in the hiring process, you’ll participate in a series of interviews to assess your skills - some may be over the phone or on Google+ Hangouts, and others in person. You’ll also need to demonstrate your technical abilities. We will work with you to answer any questions you have and help with scheduling.
+
+
+
+
+

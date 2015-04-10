@@ -21,7 +21,7 @@
       name: Github
 
 - name: Eduardo Higareda
-  title: Lead Desginer
+  title: Lead Designer
   id: lentes
   picture: /assets/img/lentes.jpg
   bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. <br/>Eduardo (A.k.a Lentes) is also involved in design community, he is the founder of Nongrid a project which tries involve more design students on the product design community. Also writes on blogs about design, music and hipster things.
@@ -35,7 +35,7 @@
   title: Developer
   id: ana
   picture: /assets/img/ana.jpg
-  bio: Ana was the first girl to join the Icalia Team. She's a Ruby on Rails developer and does mostly back-end code, although she has no problem meddling on the front-end when needed. She likes to take (on ?) lead roles that involve much of the analysis and planning of the development of a new product. <br ><br >Ana comes from a big family and is a proud aunt of 7 nephews and nieces. Most of the time she's thinking about her next destination. Ana is kind of a pop enthusiast. Beers and fries are some of her basic needs in life.
+  bio: Ana was the first girl to join the Icalia Team. She's a Ruby on Rails developer and does mostly back-end code, although she has no problem meddling on the front-end when needed. She likes to take lead roles that involve much of the analysis and planning of the development of a new product. <br ><br >Ana comes from a big family and is a proud aunt of 7 nephews and nieces. Most of the time she's thinking about her next destination. Ana is kind of a pop enthusiast. Beers and fries are some of her basic needs in life.
   networks:
     - link: https://play.spotify.com/user/1296214017
       name: Spotify
@@ -129,11 +129,43 @@
     - link: https://twitter.com/cacmartinez
       name: Twitter
 
-- name: Nicolas Florentino
-  title: Developer
-  id: nico
+- name: Lila Miller
+  title: Happiness Manager
+  id: lila
   picture: /assets/img/nico.jpg
-  bio: Nicolas is a french Ruby on Rails developer. Longtime fan of the open source systems and always wanting to know how things work in their intimate details. He joined IcaliaLabs after year of studying abroad in Mexico. <br/> Vegan, Nicolas embraces a healthy lifestyle, enjoying sport or organizing outdoor trips. He is constantly looking to make an impact on other peoples lives by introducing them to new ideas.
+  bio: Lila is our Happiness Manager, and she makes sure everyone is happy and feels at home. She’s also in recruiting, looking for new awesome people to join our team.<br/>She loves to write, draw, sew and blog around.</br>Since she might be a little too active, she’s always looking for new things to make, new people to meet and new places to go.  
   networks:
-    - link: https://github.com/nflorentin
-      name: Github
+    - link: https://twitter.com/lilamiller
+      name: Twitter
+    - link: http://instagram.com/lilaamiller
+      name: Instagram
+    - link: https://medium.com/@lilamiller
+      name: Medium
+    - link: http://lilamiller.me
+      name: Website
+
+- name: Joel Gómez
+  title: Developer
+  id: joel
+  picture: /assets/img/nico.jpg
+  bio: Joel develops software in JavaScript and likes to explore new technologies to use in his projects. He's always looking for new hipster platforms to experiment and improve his knowledge. He is obsessed with Google and Grumpy Cat.
+  networks:
+    - link: http://www.linkedin.com/pub/carlos-alberto-compean-martinez/65/601/745
+      name: Linkedin
+    - link: https://www.facebook.com/carlos.compean.73
+      name: Facebook
+    - link: https://twitter.com/cacmartinez
+      name: Twitter
+
+- name: Javier Guajardo
+  title: Intern
+  id: javo
+  picture: /assets/img/nico.jpg
+  bio: Javier is a rails intern, but he identifies himself as a Creative Technologist. He loves to code, and he’s always looking for ways to improve and trying out new technologies. He also likes to write and he’s a very avid reader. Music is also a passion of him, although he doesn’t play any instruments, he likes to discover new bands and write songs in his spare time. He’s a big Lana del Rey fan, who loves hackathons and Tarantino movies. Overall a very weird geek.
+  networks:
+    - link: http://www.linkedin.com/pub/carlos-alberto-compean-martinez/65/601/745
+      name: Linkedin
+    - link: https://www.facebook.com/carlos.compean.73
+      name: Facebook
+    - link: https://twitter.com/cacmartinez
+      name: Twitter
