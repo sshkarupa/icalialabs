@@ -2424,16 +2424,35 @@ a:visited {
   background: url(/assets/img/bg.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
-/* line 9, ../../../sass/_index.scss */
+/* line 10, ../../../sass/_index.scss */
+.intro video, .intro object {
+  left: 0;
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* line 18, ../../../sass/_index.scss */
+.intro .curtain {
+  width: 100%;
+  height: 100%;
+  background: rgba(230, 0, 56, 0.54);
+  position: absolute;
+  z-index: 1;
+}
+/* line 26, ../../../sass/_index.scss */
 .intro .intro-content {
   padding: 15rem 0;
+  z-index: 1;
+  position: relative;
 }
-/* line 13, ../../../sass/_index.scss */
+/* line 32, ../../../sass/_index.scss */
 .intro .action-btn {
   display: none;
 }
-/* line 17, ../../../sass/_index.scss */
+/* line 36, ../../../sass/_index.scss */
 .intro p {
   font-size: 1.5rem;
   margin-bottom: 40px;
@@ -2442,7 +2461,7 @@ a:visited {
   z-index: 200;
 }
 
-/* line 29, ../../../sass/_index.scss */
+/* line 48, ../../../sass/_index.scss */
 .title-advantages {
   color: #e60038;
   text-align: center;
@@ -2450,13 +2469,13 @@ a:visited {
   padding: 50px 0 0 0;
 }
 
-/* line 36, ../../../sass/_index.scss */
+/* line 55, ../../../sass/_index.scss */
 .advantages {
   text-align: center;
   position: relative;
   background: #fff;
 }
-/* line 41, ../../../sass/_index.scss */
+/* line 60, ../../../sass/_index.scss */
 .advantages .card {
   padding: 4.25rem 0;
   display: inline-block;
@@ -2467,11 +2486,11 @@ a:visited {
   transition: all 0.3s ease;
   opacity: 0.7;
 }
-/* line 48, ../../../sass/_index.scss */
+/* line 67, ../../../sass/_index.scss */
 .advantages .card:hover {
   opacity: 1;
 }
-/* line 52, ../../../sass/_index.scss */
+/* line 71, ../../../sass/_index.scss */
 .advantages .card.experience {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
@@ -2479,7 +2498,7 @@ a:visited {
   -o-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
-/* line 56, ../../../sass/_index.scss */
+/* line 75, ../../../sass/_index.scss */
 .advantages .card.knowledge {
   -webkit-animation-delay: 0.7s;
   -moz-animation-delay: 0.7s;
@@ -2487,7 +2506,7 @@ a:visited {
   -o-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }
-/* line 60, ../../../sass/_index.scss */
+/* line 79, ../../../sass/_index.scss */
 .advantages .card .icon {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -2496,12 +2515,12 @@ a:visited {
   margin-bottom: 1rem;
   display: inline-block;
 }
-/* line 66, ../../../sass/_index.scss */
+/* line 85, ../../../sass/_index.scss */
 .advantages .card .card-title {
   margin-bottom: 2rem;
   display: block;
 }
-/* line 71, ../../../sass/_index.scss */
+/* line 90, ../../../sass/_index.scss */
 .advantages .card p {
   font-size: 1.5rem;
   width: 80%;
@@ -2510,7 +2529,7 @@ a:visited {
   margin-bottom: 1rem;
   font-weight: 100;
 }
-/* line 80, ../../../sass/_index.scss */
+/* line 99, ../../../sass/_index.scss */
 .advantages .card .card-link {
   color: #e60038;
   cursor: pointer;
@@ -2521,36 +2540,36 @@ a:visited {
   padding: 5px 10px;
   border-radius: 100px;
 }
-/* line 90, ../../../sass/_index.scss */
+/* line 109, ../../../sass/_index.scss */
 .advantages .card .card-link:hover {
   background: #e60038;
   color: #fff;
 }
 
-/* line 100, ../../../sass/_index.scss */
+/* line 119, ../../../sass/_index.scss */
 .skills {
   position: relative;
   width: 100%;
   height: 550px;
   overflow: hidden;
 }
-/* line 106, ../../../sass/_index.scss */
+/* line 125, ../../../sass/_index.scss */
 .skills .design-badge {
   padding-top: 50px;
 }
-/* line 108, ../../../sass/_index.scss */
+/* line 127, ../../../sass/_index.scss */
 .skills .design-badge svg path {
   fill: #e60038;
 }
-/* line 113, ../../../sass/_index.scss */
+/* line 132, ../../../sass/_index.scss */
 .skills .developer-badge {
   padding-top: 50px;
 }
-/* line 115, ../../../sass/_index.scss */
+/* line 134, ../../../sass/_index.scss */
 .skills .developer-badge svg path {
   fill: #e60038;
 }
-/* line 120, ../../../sass/_index.scss */
+/* line 139, ../../../sass/_index.scss */
 .skills .mask {
   background: #FFF;
   -webkit-transition: width 1s ease-in-out;
@@ -2564,23 +2583,23 @@ a:visited {
   padding: 0;
   text-align: center;
 }
-/* line 130, ../../../sass/_index.scss */
+/* line 149, ../../../sass/_index.scss */
 .skills .mask.hide {
   width: 0;
 }
-/* line 134, ../../../sass/_index.scss */
+/* line 153, ../../../sass/_index.scss */
 .skills .mask:hover {
   background: #e60038;
 }
-/* line 137, ../../../sass/_index.scss */
+/* line 156, ../../../sass/_index.scss */
 .skills .mask:hover .skill .tagline {
   color: #FFF;
 }
-/* line 141, ../../../sass/_index.scss */
+/* line 160, ../../../sass/_index.scss */
 .skills .mask:hover .developer-badge svg path, .skills .mask:hover .design-badge svg path {
   fill: #FFF;
 }
-/* line 147, ../../../sass/_index.scss */
+/* line 166, ../../../sass/_index.scss */
 .skills .mask .more {
   position: absolute;
   display: none;
@@ -2590,12 +2609,12 @@ a:visited {
   font-weight: 100;
   font-size: 1.4em;
 }
-/* line 156, ../../../sass/_index.scss */
+/* line 175, ../../../sass/_index.scss */
 .skills .mask .more.push-front {
   z-index: 1;
   display: block;
 }
-/* line 163, ../../../sass/_index.scss */
+/* line 182, ../../../sass/_index.scss */
 .skills .skill {
   position: absolute;
   top: 0;
@@ -2605,19 +2624,19 @@ a:visited {
   transition: width 0.5s ease-in-out;
   width: 100%;
 }
-/* line 169, ../../../sass/_index.scss */
+/* line 188, ../../../sass/_index.scss */
 .skills .skill.hide-all {
   display: none;
 }
-/* line 173, ../../../sass/_index.scss */
+/* line 192, ../../../sass/_index.scss */
 .skills .skill h4 {
   padding: 20px 0;
 }
-/* line 177, ../../../sass/_index.scss */
+/* line 196, ../../../sass/_index.scss */
 .skills .skill .tagline {
   color: rgba(0, 0, 0, 0.7);
 }
-/* line 183, ../../../sass/_index.scss */
+/* line 202, ../../../sass/_index.scss */
 .skills .expand-content {
   background: #e60038;
   color: #FFF;
@@ -2629,16 +2648,16 @@ a:visited {
   transition: width 1s ease-in-out;
   width: 100%;
 }
-/* line 191, ../../../sass/_index.scss */
+/* line 210, ../../../sass/_index.scss */
 .skills .expand-content .developer-badge svg path, .skills .expand-content .design-badge svg path {
   fill: #fff;
 }
-/* line 195, ../../../sass/_index.scss */
+/* line 214, ../../../sass/_index.scss */
 .skills .expand-content .more {
   display: block;
   z-index: 1;
 }
-/* line 201, ../../../sass/_index.scss */
+/* line 220, ../../../sass/_index.scss */
 .skills .fusion {
   background: #000;
   color: #FFF;
@@ -2647,7 +2666,7 @@ a:visited {
   height: 80px;
   text-transform: uppercase;
 }
-/* line 209, ../../../sass/_index.scss */
+/* line 228, ../../../sass/_index.scss */
 .skills .fusion.circle {
   border-radius: 50%;
   right: 47%;
@@ -2662,14 +2681,14 @@ a:visited {
   font-size: 12px;
   z-index: 100;
 }
-/* line 220, ../../../sass/_index.scss */
+/* line 239, ../../../sass/_index.scss */
 .skills .fusion.circle span {
   line-height: normal;
   display: inline-block;
   vertical-align: middle;
   font-weight: 600;
 }
-/* line 227, ../../../sass/_index.scss */
+/* line 246, ../../../sass/_index.scss */
 .skills .fusion.circle.move-left {
   cursor: pointer;
   -webkit-transform: translate(600px, -200px);
@@ -2686,7 +2705,7 @@ a:visited {
   right: 0;
   font-size: 16px;
 }
-/* line 236, ../../../sass/_index.scss */
+/* line 255, ../../../sass/_index.scss */
 .skills .fusion.circle.move-right {
   cursor: pointer;
   -webkit-transform: scale(0.5);
@@ -2699,26 +2718,26 @@ a:visited {
   font-size: 24px;
 }
 
-/* line 249, ../../../sass/_index.scss */
+/* line 268, ../../../sass/_index.scss */
 .testimonials {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 253, ../../../sass/_index.scss */
+/* line 272, ../../../sass/_index.scss */
 .testimonials.row {
   margin: 0;
 }
-/* line 257, ../../../sass/_index.scss */
+/* line 276, ../../../sass/_index.scss */
 .testimonials .picture {
   padding: 0;
   position: relative;
   overflow: hidden;
 }
-/* line 262, ../../../sass/_index.scss */
+/* line 281, ../../../sass/_index.scss */
 .testimonials .picture img {
   width: 100%;
 }
-/* line 267, ../../../sass/_index.scss */
+/* line 286, ../../../sass/_index.scss */
 .testimonials .fake-skew {
   width: 200px;
   right: -135px;
@@ -2732,20 +2751,20 @@ a:visited {
   bottom: 0;
   background: #fff;
 }
-/* line 277, ../../../sass/_index.scss */
+/* line 296, ../../../sass/_index.scss */
 .testimonials .quote-container {
   height: 340px;
   position: relative;
   padding: 20px;
 }
-/* line 287, ../../../sass/_index.scss */
+/* line 306, ../../../sass/_index.scss */
 .testimonials .quote blockquote p {
   color: #e60038;
   font-size: 2em;
   padding: 2rem 0;
   font-weight: 100;
 }
-/* line 294, ../../../sass/_index.scss */
+/* line 313, ../../../sass/_index.scss */
 .testimonials .quote blockquote .cite {
   color: #000;
   padding: 0px 10px;
