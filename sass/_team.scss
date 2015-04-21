@@ -31,7 +31,7 @@
 
 
     .hider {
-      width: 2000px;
+      //width: 2000px;
       overflow: hidden;
     }
 
@@ -64,7 +64,7 @@
         width: 150px;
         margin: auto;
         position: absolute;
-        top: 0; left: 0; bottom: -350px; right: 0;
+        top: -130px; left: 0; bottom: -350px; right: 0;
         text-align: center;
         display: none;
         @include transition(all 10s ease);
@@ -90,7 +90,7 @@
 
       .curtain {
         // background-color: rgba(226,58,44,0.5);
-        background-color: rgba(230,0,56,0.5);
+        background-color: rgba(255,255,255,0.5);
         position: absolute;
         top: 0;
         left: 0;
