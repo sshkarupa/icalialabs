@@ -73,9 +73,7 @@ jQuery(document).ready ->
     any: ->
       isMobile.Android() or isMobile.BlackBerry() or isMobile.iOS() or isMobile.Opera() or isMobile.Windows()
 
-  if isMobile.any() == null
-    $(".team-section").kinetic()
-  else
+  if isMobile.any() != null
     $('html').addClass 'no-hover'
 
   #Class toggle for burger items
