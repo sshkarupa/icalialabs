@@ -103,19 +103,6 @@
     - link: https://twitter.com/soypatobeltran
       name: Twitter
 
-- name: Roel Castaño
-  title: Developer
-  id: roel
-  picture: /assets/img/roel.png
-  bio: Roel is a iOS developer that enjoys spending time learning and sharing ideas with the rest of the team. Interested in always being up to date with current events regarding technology, music and science. He is in his third year for his computer science degree. <br/>Roel enjoys singing and playing guitar as a hobby. He is the treasurer of the ACM student chapter and Google Student Ambassador at ITESM Campus Monterrey. He's a Miami Dolphin and Miami Heat fan and plays basketball as a pastime.
-  networks:
-    - link: https://github.com/roelcastano
-      name: Github
-    - link: http://instagram.com/roelcastano
-      name: Instagram
-    - link: https://www.twitter.com/roelcastano
-      name: Twitter
-
 - name: Carlos Compean
   title: Mobile Developer
   id: carlos
@@ -132,8 +119,8 @@
 - name: Lila Miller
   title: Happiness Manager
   id: lila
-  picture: /assets/img/nico.jpg
-  bio: Lila is our Happiness Manager, and she makes sure everyone is happy and feels at home. She’s also in recruiting, looking for new awesome people to join our team.<br/>She loves to write, draw, sew and blog around.</br>Since she might be a little too active, she’s always looking for new things to make, new people to meet and new places to go.  
+  picture: /assets/img/lila.jpg
+  bio: Lila is our Happiness Manager, and she makes sure everyone is happy and feels at home. She’s also in recruiting, looking for new awesome people to join our team.<br/>She loves to write, draw, sew and blog around.</br>Since she might be a little too active, she’s always looking for new things to make, new people to meet and new places to go.
   networks:
     - link: https://twitter.com/lilamiller
       name: Twitter
@@ -147,25 +134,60 @@
 - name: Joel Gómez
   title: Developer
   id: joel
-  picture: /assets/img/nico.jpg
+  picture: /assets/img/joel.jpg
   bio: Joel develops software in JavaScript and likes to explore new technologies to use in his projects. He's always looking for new hipster platforms to experiment and improve his knowledge. He is obsessed with Google and Grumpy Cat.
   networks:
-    - link: http://www.linkedin.com/pub/carlos-alberto-compean-martinez/65/601/745
-      name: Linkedin
-    - link: https://www.facebook.com/carlos.compean.73
-      name: Facebook
-    - link: https://twitter.com/cacmartinez
+    - link: https://twitter.com/DezkaReid
       name: Twitter
+    - link: https://instagram.com/dezkareid/
+      name: Instagram
+    - link: https://github.com/dezkareid
+      name: Github
 
 - name: Javier Guajardo
   title: Intern
   id: javo
-  picture: /assets/img/nico.jpg
+  picture: /assets/img/javo.jpg
   bio: Javier is a rails intern, but he identifies himself as a Creative Technologist. He loves to code, and he’s always looking for ways to improve and trying out new technologies. He also likes to write and he’s a very avid reader. Music is also a passion of him, although he doesn’t play any instruments, he likes to discover new bands and write songs in his spare time. He’s a big Lana del Rey fan, who loves hackathons and Tarantino movies. Overall a very weird geek.
   networks:
-    - link: http://www.linkedin.com/pub/carlos-alberto-compean-martinez/65/601/745
-      name: Linkedin
-    - link: https://www.facebook.com/carlos.compean.73
-      name: Facebook
-    - link: https://twitter.com/cacmartinez
+    - link: https://twitter.com/javiergc
+      name: Twitter
+    - link: https://github.com/javogc
+      name: Github
+    - link: https://medium.com/@javiergc
+      name: Medium
+
+- name: Daniel Lozano
+  title: iOS Developer
+  id: daniel
+  picture: /assets/img/daniel.jpg
+  bio: Daniel works as a iOS developer. He loves reading about different programming paradigms and patterns every day, and working on side projects on the weekends. Values clean, well-crafted code over everything else. He has a passion for photography and traveling, and that’s what he can be found doing whenever he is not at his computer.<br/> He is originally from Torreon, MX, but has lived almost all of his life in Monterrey, MX. He recently came back from living a couple of years in Austin, TX after finishing up his B.S. in Computer Science over there and working at a startup for a year.
+  networks:
+    - link: http://danielozano.com
+      name: Website
+    - link: http://twitter.com/danlozanov
+      name: Twitter
+    - link: http://instagram.com/danlozano
+      name: Instagram
+    - link: http://danlozano.vsco.co
+      name: VSCO
+
+- name: Joaquín Ramírez
+  title: Intern
+  id: joaquin
+  picture: /assets/img/joaquin.jpg
+  bio: Joaquin is a Software Development student, he decided to study this because he likes being able to create something new that can help others to solve problems or even have fun. <br/> He feels passionate about developing mobile applications on iOS and he’s always trying to learn new things that allow him to be better at what he does and what he likes.On his spare time he enjoys developing mobile games, playing video games with friends, going for a run and watching or playing soccer.  
+  networks:
+    - link: https://twitter.com/joaquin_vila
+      name: Twitter
+
+- name: Juan Carlos Mercado
+  title: Full Stack Developer
+  id: jc
+  picture: /assets/img/jc.jpg
+  bio: JC is a Full Stack Developer, nerd, philosophy reader and music addict, He enjoys solving math problems, photography and music production during his free time.
+  networks:
+    - link: https://github.com/zenbakiak
+      name: Github
+    - link: https://twitter.com/zenbakiak
       name: Twitter
