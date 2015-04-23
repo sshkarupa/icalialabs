@@ -3749,9 +3749,17 @@ slideUp
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
-/* line 13, ../../../sass/_slider.scss */
+/* line 12, ../../../sass/_slider.scss */
+.work-slider .item-slide.printoo {
+  background: url(/assets/img/printoo-slider.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 18, ../../../sass/_slider.scss */
 .work-slider .item-slide p {
   margin: 50px auto;
   font-size: 3em;
@@ -3759,14 +3767,10 @@ slideUp
   line-height: 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 13, ../../../sass/_slider.scss */
+  /* line 18, ../../../sass/_slider.scss */
   .work-slider .item-slide p {
     width: 100%;
   }
-}
-/* line 24, ../../../sass/_slider.scss */
-.work-slider .item-slide:hover {
-  background-size: 35%;
 }
 
 /* line 5, ../../../sass/_culture.scss */
@@ -4100,7 +4104,6 @@ slideUp
   float: left;
   width: 33%;
   min-height: 25rem;
-  background-size: contain !important;
   -webkit-background-size: 30% 100%;
   -moz-background-size: 30% 100%;
   -o-background-size: 30% 100%;

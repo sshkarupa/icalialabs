@@ -7,7 +7,12 @@
     background-position: center top !important;
     background-repeat: no-repeat !important;
     @include transition(all 0.4s ease);
-    padding: 100px 0px;
+    padding: 50px 0px;
+
+    &.printoo{
+      background: url(/assets/img/printoo-slider.jpg);
+      @include background-size(cover); 
+    }
 
 
     p {
@@ -22,7 +27,7 @@
     }
 
     &:hover {
-      background-size: 35%;
+      //background-size: 35%;
     }
   }
 }

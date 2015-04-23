@@ -77,7 +77,7 @@ $suraido-caption-background-alpha: 0.5 !default;
       float: left;
       width: $list-item-width;
       min-height: $list-item-min-height;
-      background-size: contain !important;
+      //background-size: contain !important;
       @include background-size(30% 100%);
     }
   }

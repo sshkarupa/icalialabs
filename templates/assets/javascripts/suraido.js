@@ -85,9 +85,6 @@ var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments)
       if (this.options.fluid) {
         this._enablesFluidBehavior();
       }
-      if (window.chrome) {
-        this.items.css('background-size', '100% 100%');
-      }
       if ($.event.special['swipe'] || $.Event('swipe')) {
         this.$el.on('swipeleft swiperight swipeLeft swipeRight', function(e) {
           if (e.type.toLowerCase() === 'swipeleft') {
