@@ -8,11 +8,15 @@
   position: relative;
 
   video, object {
-   left:0;
-   position: absolute;
-   top:0;
-   min-width: 100%;
-   min-height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    //right: 0;
+    //bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
   }
 
   .curtain{
@@ -268,6 +272,8 @@
 .testimonials {
   border-top: 1px solid rgba(0,0,0,0.1);
   border-bottom: 1px solid rgba(0,0,0,0.1);
+  background: white;
+  position: relative;
 
   &.row {
     margin: 0;
