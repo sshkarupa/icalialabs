@@ -8,9 +8,18 @@
     background-repeat: no-repeat !important;
     @include transition(all 0.4s ease);
     padding: 50px 0px;
+    height: 550px;
 
     &.printoo{
       background: url(/assets/img/printoo-slider.jpg);
+      @include background-size(cover); 
+    }
+    &.ovatemp{
+      background: url(/assets/img/ovatemp.jpg);
+      @include background-size(cover); 
+    }
+    &.repair{
+      background: url(/assets/img/repair.jpg);
       @include background-size(cover); 
     }
 

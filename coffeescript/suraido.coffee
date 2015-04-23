@@ -85,8 +85,8 @@
       @_enablesFluidBehavior() if @options.fluid
 
       #chrome fix
-      if window.chrome
-        @items.css 'background-size', '100% 100%'
+      #if window.chrome
+        #@items.css 'background-size', '100% 100%'
 
       if $.event.special['swipe'] or $.Event 'swipe'
         @$el.on 'swipeleft swiperight swipeLeft swipeRight', (e) =>
