@@ -1,16 +1,16 @@
-- name: Pikster App MVP
-  client: Pikster
+- name: Repairshopr
+  client: Repairshopr
   done: UI/UX Design & Development of MVP
-  image: /assets/img/pikster.jpg
+  image: /assets/img/repair-work.jpg
   color: 0faef0
-  link: http://www.pikster.co/
+  link: http://www.repairshopr.com/
 
-- name: Furatto
-  client: Personal Project
+- name: Printoo
+  client: Printoo
   done: UI/UX Design & Development
-  image: /assets/img/furatto.jpg
-  color: 0faef0
-  link: http://icalialabs.github.io/furatto/
+  image: /assets/img/printoo-work.jpg
+  color: 8d2f4e
+  link: https://itunes.apple.com/mx/app/printoo/id932059904?l=en&mt=8
 
 - name: Gidit App
   client: Gidit
@@ -19,16 +19,10 @@
   color: 8d2f4e
   link: https://itunes.apple.com/us/app/gidit/id846765766?mt=8
 
-- name: Moneypool Web
-  client: Moneypool
+- name: Furatto
+  client: Personal Project
   done: UI/UX Design & Development
-  image: /assets/img/moneypool.jpg
+  image: /assets/img/furatto.jpg
   color: 0faef0
-  link: https://www.moneypool.mx/
+  link: http://icalialabs.github.io/furatto/
 
-- name: Lander
-  client: Perosnal Project
-  done: UI/UX Design & Development
-  image: /assets/img/lander.jpg
-  color: 0faef0
-  link: http://landerapp.io/
