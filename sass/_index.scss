@@ -370,4 +370,12 @@
       }
     }
   }
+
+}
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    .quote-container {
+      height: 400px;
+    }
+  }
 }
