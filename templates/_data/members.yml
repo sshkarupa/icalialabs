@@ -1,16 +1,16 @@
 - name: Eduardo López
   id: edo
-  title: CEO / Developer
+  title: CEO
   picture: /assets/img/edo.jpg
   networks:
     - link: http://twitter.com/edolopez
       name: twitter
     - link: http://github.com/edolopez
       name: github
-  bio: Eduardo provides part of the strategy sales and commercialization initiatives in representation of the team. <br ><br > He helps our clients addressing goals, objectives and critical technical decisions looking to achieve their vision. His background is in Computer Science supporting the assessment of complexity and efforts within every new product. <br ><br >Eduardo likes to play guitar, mostly acoustic taking advantage of his fingers because he can't sing anything. He also likes to practice and watch mixed martial arts. Beard, technology, music and new experiences define this founding member.
+  bio: Eduardo provides part of the strategy, sales and commercialization initiatives in representation of the team. <br ><br > He helps our clients addressing goals, objectives and critical technical decisions looking to achieve their vision. His background is in Computer Science supporting the assessment of complexity and efforts within every new product. <br ><br >Eduardo likes to play guitar, mostly acoustic taking advantage of his fingers because he can't sing anything. He also likes to practice and watch mixed martial arts. Beard, technology, music and new experiences define this founding member.
 
 - name: Abraham Kuri
-  title: Hacker in Chief
+  title: CTO
   id: kuri
   picture: /assets/img/kuri.jpg
   bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
@@ -32,7 +32,7 @@
       name: Website
 
 - name: Ana Daniel
-  title: Developer
+  title: Software Engineer
   id: ana
   picture: /assets/img/ana.jpg
   bio: Ana was the first girl to join the Icalia Team. She's a Ruby on Rails developer and does mostly back-end code, although she has no problem meddling on the front-end when needed. She likes to take lead roles that involve much of the analysis and planning of the development of a new product. <br ><br >Ana comes from a big family and is a proud aunt of 7 nephews and nieces. Most of the time she's thinking about her next destination. Ana is kind of a pop enthusiast. Beers and fries are some of her basic needs in life.
@@ -44,13 +44,13 @@
 
 
 - name: Osvaldo Ayala
-  title: Hustler
+  title: Business Development
   id: osvie
   picture: /assets/img/osvie.jpg
 
 
 - name: Scarlett Garza
-  title: Designer
+  title: Digital Designer
   id: scarlett
   picture: /assets/img/scarlett.jpg
   bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br />Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
@@ -65,7 +65,7 @@
 
 - name: Alicia Gonzalez
   id: aliciagonzalez
-  title: Developer
+  title: Software Engineer
   picture: /assets/img/alicia.jpg
   bio: Alicia works as a Rails and front-end developer. She enjoys taking care of visual details to deliver great experiences for users. She likes to learn new technologies and take ukulele lessons with her brother. <br /><br /> When she was 12 she created her first website and fell in love with the internet. She also loves reading, nature, art and playing videogames on her 3DS.
   networks:
@@ -77,7 +77,7 @@
       name: Spotify
 
 - name: Noe Araujo
-  title: Grumpy Designer
+  title: Digital Designer
   id: noe
   picture: /assets/img/noe.jpg
   bio: Minimalist.
@@ -104,7 +104,7 @@
       name: Twitter
 
 - name: Carlos Compean
-  title: Mobile Developer
+  title: Mobile Engineer
   id: carlos
   picture: /assets/img/carlos.jpg
   bio: Carlos is a mobile developer with a thirst for knowledge and a constant need of self-improvement. Borned in San Luis Potosi,  he has lived in other 3 different countries before ending up in Monterrey and working as an iOS developer. Always in the look for new trends in technology, he has a passion for details, and spends lots of time trying to develop in a way that provides a really smooth and great user experience.<br /><br />Carlos is also an adventurer who likes traveling, and trying new activities. He has practiced many kind of sports, but the ones he enjoys the most are water and winter sports. Currently he plays ice hockey, and during his leisure time he likes watching movies, tv series, and hanging out with friends.
@@ -132,7 +132,7 @@
       name: Website
 
 - name: Joel Gómez
-  title: Developer
+  title: Software Engineer
   id: joel
   picture: /assets/img/joel.jpg
   bio: Joel develops software in JavaScript and likes to explore new technologies to use in his projects. He's always looking for new hipster platforms to experiment and improve his knowledge. He is obsessed with Google and Grumpy Cat.
@@ -145,7 +145,7 @@
       name: Github
 
 - name: Javier Guajardo
-  title: Intern
+  title: Developer
   id: javo
   picture: /assets/img/javo.jpg
   bio: Javier is a rails intern, but he identifies himself as a Creative Technologist. He loves to code, and he’s always looking for ways to improve and trying out new technologies. He also likes to write and he’s a very avid reader. Music is also a passion of him, although he doesn’t play any instruments, he likes to discover new bands and write songs in his spare time. He’s a big Lana del Rey fan, who loves hackathons and Tarantino movies. Overall a very weird geek.
@@ -158,7 +158,7 @@
       name: Medium
 
 - name: Daniel Lozano
-  title: iOS Developer
+  title: iOS Engineer
   id: daniel
   picture: /assets/img/daniel.jpg
   bio: Daniel works as a iOS developer. He loves reading about different programming paradigms and patterns every day, and working on side projects on the weekends. Values clean, well-crafted code over everything else. He has a passion for photography and traveling, and that’s what he can be found doing whenever he is not at his computer.<br/> He is originally from Torreon, MX, but has lived almost all of his life in Monterrey, MX. He recently came back from living a couple of years in Austin, TX after finishing up his B.S. in Computer Science over there and working at a startup for a year.
@@ -173,7 +173,7 @@
       name: VSCO
 
 - name: Joaquín Ramírez
-  title: Intern
+  title: Developer
   id: joaquin
   picture: /assets/img/joaquin.jpg
   bio: Joaquin is a Software Development student, he decided to study this because he likes being able to create something new that can help others to solve problems or even have fun. <br/> He feels passionate about developing mobile applications on iOS and he’s always trying to learn new things that allow him to be better at what he does and what he likes.On his spare time he enjoys developing mobile games, playing video games with friends, going for a run and watching or playing soccer.  
@@ -182,7 +182,7 @@
       name: Twitter
 
 - name: Juan Carlos Mercado
-  title: Full Stack Developer
+  title: Full Stack Engineer
   id: jc
   picture: /assets/img/jc.jpg
   bio: JC is a Full Stack Developer, nerd, philosophy reader and music addict, He enjoys solving math problems, photography and music production during his free time.
