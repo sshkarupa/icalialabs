@@ -108,7 +108,9 @@ jQuery(document).ready ->
     else
         mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
-  $('.testimonials .picture img').on 'click', (e) ->
+  $('.testimonials .picture .testimonial-photo').on 'click', (e) ->
+    $('.testimonials .picture .testimonial-photo').removeClass 'active'
+    $(@).addClass 'active'
     $('.quote-container').removeClass 'active'
     $('.quote-container.'+$(@)[0].id).toggleClass 'active'
 
