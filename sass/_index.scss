@@ -283,9 +283,11 @@
     padding: 0;
     position: relative;
     overflow: hidden;
+    height: 340px;
 
     img {
-      width: 100%;
+      width: auto;
+      height: 100%;    
     }
   }
 
@@ -294,6 +296,16 @@
     right: -135px;
     top: 0;
     @include transform(skew(-10deg));
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+  }
+
+  .fake-skew-right {
+    width: 200px;
+    left: -135px;
+    top: 0;
+    @include transform(skew(10deg));
     position: absolute;
     bottom: 0;
     background: #fff;
