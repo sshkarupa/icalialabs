@@ -317,6 +317,11 @@
     height: 340px;
     position: relative;
     padding: 20px;
+    display: none;
+
+    &.active {
+      display: block;
+    }
   }
 
   .quote {

@@ -108,6 +108,9 @@ jQuery(document).ready ->
     else
         mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>"
 
+  $('.testimonials .picture img').on 'click', (e) ->
+    $('.quote-container').removeClass 'active'
+    $('.quote-container.'+$(@)[0].id).toggleClass 'active'
 
 if $('body').hasClass 'no-hover'
   ignore = /:hover\b/
