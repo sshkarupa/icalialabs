@@ -294,6 +294,10 @@
       position: relative;
       display: inline-block;
 
+      img{
+        @include border-radius(100%);
+      }
+
       &.active .tooltip {
         content: "";
         display: block;
@@ -350,6 +354,7 @@
   .quote {
 
     blockquote {
+      padding: 15%;
 
       p {
         color: $primary-color;
