@@ -32,7 +32,6 @@
 
 
     .hider {
-      //width: 2000px;
       overflow: hidden;
     }
 
@@ -45,6 +44,7 @@
       &:hover .info-circle {
         display: block;
       }
+
       &:hover  .picture {
         @include transform(scale(1.1));
         @include transform-origin(center);
@@ -58,7 +58,7 @@
 
       .info-circle {
         background: $dark-gray;
-        border-radius: 50%;
+        @include border-radius(50%);
         color: #FFF;
         cursor: pointer;
         height: 150px;
@@ -71,9 +71,23 @@
         @include transition(all 10s ease);
         z-index: 91;
 
+        @include max-screen(1000px){
+          @include border-radius(0px);
+          display: block;
+          height: 60px;
+          width: 100%;
+          bottom: 0;
+          top: auto;
+          border-right: 1px solid white;
+        }
+
         .name {
           top: 50%;
           margin-top: 60px;
+
+          @include max-screen(1000px){
+            margin-top: 12px;
+          }
         }
 
         .position {
@@ -86,6 +100,10 @@
           height: 3px;
           margin: 10px auto;
           width: 45px;
+
+          @include max-screen(1000px){
+            display: none;
+          }
         }
       }
 
@@ -228,8 +246,16 @@
             cursor: pointer;
             height: auto;
           }
-          &:hover .info-circle {
-            display: none;
+          .info-circle{
+            height: 80px;
+            border-right: none;
+            .name{
+              margin-top: 15px;
+              font-size: 20px;
+            }
+            .position{
+              font-size: 15px;
+            }
           }
 
         }
