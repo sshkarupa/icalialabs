@@ -275,6 +275,11 @@
   background: white;
   position: relative;
 
+  @media only screen 
+  and (max-device-width : 667px){
+    height: 550px;
+  }
+
   &.row {
     margin: 0;
   }
@@ -372,7 +377,7 @@
   }
 
 }
-@media only screen and (max-width: 768px) {
+@include max-screen($small-screen) {
   .testimonials {
     .quote-container {
       height: 400px;

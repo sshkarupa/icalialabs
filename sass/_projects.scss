@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: right center;
   @include transition(all 0.3s ease-in-out);
-  background-size: 100%;
+  @include background-size(cover);
 
   @include max-screen($small-screen) {
     padding: 15px;

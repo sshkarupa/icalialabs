@@ -36,13 +36,10 @@
       @include text-shadow(1px 1px 8px #5a5a5a);
 
       @include max-screen($small-screen) {
-        width: 100%;
+        width: 90%;
       }
     }
 
-    &:hover {
-      //background-size: 35%;
-    }
   }
 }
 

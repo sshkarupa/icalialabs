@@ -129,6 +129,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   margin: 45px;
   display: block;
   line-height: 1em;
+
+  @include max-screen($small-screen){
+    margin: 25px;
+  }
 }
 
 .big-tagline {

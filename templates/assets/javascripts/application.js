@@ -68,9 +68,7 @@ jQuery(document).ready(function() {
       return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
     }
   };
-  if (isMobile.any() === null) {
-    $(".team-section").kinetic();
-  } else {
+  if (isMobile.any() !== null) {
     $('html').addClass('no-hover');
   }
   $('.burger').on('click', function(e) {
@@ -83,7 +81,7 @@ jQuery(document).ready(function() {
     $('.burger > .three').toggleClass('three-active');
     return e.preventDefault();
   });
-  return $('.mask, span.circle').on('click', function(e) {
+  $('.mask, span.circle').on('click', function(e) {
     var mask;
     if ($(this).hasClass('mask')) {
       mask = $(this);
@@ -104,6 +102,12 @@ jQuery(document).ready(function() {
     } else {
       return mask.siblings('.fusion.circle')[0].innerHTML = "<span>Perfect Fusion</span>";
     }
+  });
+  return $('.testimonials .picture .testimonial-photo').on('click', function(e) {
+    $('.testimonials .picture .testimonial-photo').removeClass('active');
+    $(this).addClass('active');
+    $('.quote-container').removeClass('active');
+    return $('.quote-container.' + $(this)[0].id).toggleClass('active');
   });
 });
 

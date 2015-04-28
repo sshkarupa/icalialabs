@@ -113,6 +113,11 @@
 
     .section-description {
       margin: 20px auto 100px auto;
+      
+      @include max-screen($small-screen) {
+        margin-bottom: 45px;
+      }
+
     }
 
     .title-section-perks {

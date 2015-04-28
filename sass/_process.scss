@@ -4,6 +4,9 @@
     @include max-screen($small-screen-max) {
       height: auto;
     }
+   @include max-screen($small-screen){
+        padding-bottom: 60px;
+      }
   }
 
   min-height: 100%;
@@ -69,6 +72,10 @@
     .step {
       text-align: center;
       padding: 12rem 0;
+
+      @include max-screen($small-screen){
+        padding: 40px;
+      }
 
       .step-number {
         color: $primary-color;
