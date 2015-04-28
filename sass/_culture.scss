@@ -134,25 +134,27 @@
         padding-top: 100%;
       }
 
-      &.col-6:hover {
-        .perk-icon {
-          margin-top: -30%;
-        }
-      }
-      &:hover {
-        figure {
-          @include transform(translateY(-100%));
+      @include min-screen(1000px) {
+        &.col-6:hover {
           .perk-icon {
-            margin-top: -80%;
-            opacity: 0;
+            margin-top: -30%;
           }
-
-          figcaption {
-
-            .perk-description {
-              opacity: 1;
+        }
+        &:hover {
+          figure {
+            @include transform(translateY(-100%));
+            .perk-icon {
+              margin-top: -80%;
+              opacity: 0;
             }
 
+            figcaption {
+
+              .perk-description {
+                opacity: 1;
+              }
+
+            }
           }
         }
       }
