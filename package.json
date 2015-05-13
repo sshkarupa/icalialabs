@@ -1,12 +1,11 @@
 {
-  "name": "isaki",
-  "description": "A super simple Grunt web skeleton",
+  "name": "icalialabs",
+  "description": "Icalia Labs Website",
   "version": "0.0.1",
   "keywords": [
-    "isaki",
+    "icalia",
     "grunt",
-    "web",
-    "skeleton"
+    "web"
   ],
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -17,7 +16,7 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-contrib-imagemin": "^0.8.1",
-    "grunt-contrib-uglify": "~0.3.0",
+    "grunt-contrib-uglify": "~0.9.0",
     "grunt-contrib-watch": "~0.5.3",
     "grunt-include-replace": "^2.0.0",
     "grunt-shell": "~0.7.0",
