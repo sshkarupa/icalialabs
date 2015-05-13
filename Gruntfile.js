@@ -3,12 +3,6 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*!\n' +
-      ' * Icalia Labs v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-      ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-      ' * Licensed under <%= _.pluck(pkg.licenses, "type") %> (<%= _.pluck(pkg.licenses, "url") %>)\n' +
-      ' */\n',
-
     concat: {
       js: {
         src: [
@@ -68,17 +62,6 @@ module.exports = function(grunt) {
           dest: "templates/assets/stylesheets",
           ext: ".min.css"
         }]
-      }
-    },
-
-    uncss: {
-      dist: {
-        options: {
-          ignore: ['#added_at_runtime', '.created_by_jQuery']
-        },
-        files: {
-          'app/stylesheets/tidy.css': ['app/index.html']
-        }
       }
     },
 
@@ -183,7 +166,6 @@ module.exports = function(grunt) {
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
 
-  // Uncss 
-  grunt.loadNpmTasks('grunt-uncss');
+  //Image Compression
   grunt.registerTask('images', ['imagemin']);
 }
