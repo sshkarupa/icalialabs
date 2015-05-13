@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       ' */\n',
 
     concat: {
-      icalia: {
+      js: {
         src: [
           "templates/assets/javascripts/application.js",
           "templates/assets/javascripts/classie.js",
@@ -25,6 +25,14 @@ module.exports = function(grunt) {
           "templates/assets/javascripts/player.js"
         ],
         dest: "templates/assets/javascripts/application.tmp.js"
+      },
+      css: {
+        src: [
+          "templates/assets/stylesheets/application.css",
+          "templates/assets/stylesheets/animate.css",
+          "templates/assets/stylesheets/animsition.css"
+        ],
+        dest: "templates/assets/stylesheets/application.tmp.css"
       }
     },
 
@@ -56,8 +64,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'templates/assets/stylesheets',
-          src: ["application.css", "application.min.css"],
-          dest: "app/assets/stylesheets",
+          src: ["application.tmp.css"],
+          dest: "templates/assets/stylesheets",
           ext: ".min.css"
         }]
       }
@@ -164,10 +172,10 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   //CSS distribution task.
-  grunt.registerTask('compile-css', ['compass:development', 'cssmin']);
+  grunt.registerTask('compile-css', ['compass:development', 'concat:css', 'cssmin']);
 
   //JS distribution task
-  grunt.registerTask('compile-js', ['coffee:compile', 'concat', 'uglify']);
+  grunt.registerTask('compile-js', ['coffee:compile', 'concat:js', 'uglify']);
 
   //Package for production
   grunt.registerTask('compile', ['compile-js', 'compile-css']);
