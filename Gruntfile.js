@@ -4,32 +4,39 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-      ' * Isaki v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+      ' * Icalia Labs v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
       ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
       ' * Licensed under <%= _.pluck(pkg.licenses, "type") %> (<%= _.pluck(pkg.licenses, "url") %>)\n' +
       ' */\n',
 
-    clean: {
-      js: ["app/assets/javascripts/application.tmp.js"] 
-    },
-
     concat: {
-      isaki: {
+      icalia: {
         src: [
-          "app/assets/javascripts/*.js"          
+          "templates/assets/javascripts/application.js",
+          "templates/assets/javascripts/classie.js",
+          "templates/assets/javascripts/animsition.js",
+          "templates/assets/javascripts/furatto.js",
+          "templates/assets/javascripts/suraido.js",
+          "templates/assets/javascripts/jquery.kinect.min.js",
+          "templates/assets/javascripts/jquery-waypoints.js",
+          "templates/assets/javascripts/jquery.easing.min.js",
+          "templates/assets/javascripts/process-scroller",
+          "templates/assets/javascripts/furatto_modal.js",
+          "templates/assets/javascripts/player.js"
         ],
-        dest: "app/assets/javascripts/application.tmp.js"
+        dest: "templates/assets/javascripts/application.tmp.js"
       }
     },
 
     uglify: {
-      isaki: {
-        options: {
-          banner: "<%= banner %>",
-          report: "min"
-        },
-        src: "<%= concat.isaki.dest %>",
-        dest: "app/assets/javascripts/application.min.js"
+      icalia: {
+        files: [{
+          expand: true,
+          cwd: "templates/assets/javascripts",
+          src: "application.tmp.js",
+          dest: 'templates/assets/javascripts',
+          ext: '.min.js'
+        }]
       }
     },
 
@@ -45,12 +52,14 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
-      minify: {
-        expand: true,
-        cwd: 'templates/assets/stylesheets',
-        src: ["application.css", "application.min.css"],
-        dest: "app/assets/stylesheets",
-        ext: ".min.css"
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'templates/assets/stylesheets',
+          src: ["application.css", "application.min.css"],
+          dest: "app/assets/stylesheets",
+          ext: ".min.css"
+        }]
       }
     },
 
@@ -109,7 +118,7 @@ module.exports = function(grunt) {
     },
     sass: {
       files: 'sass/*.scss',
-      tasks: ["compass"],
+      tasks: ["compass", "cssmin"],
       options: {
         livereload: true
       }
@@ -137,7 +146,7 @@ module.exports = function(grunt) {
 
   shell: {
     jekyllServer: {
-      command: "jekyll serve --watch"
+      command: "bundle exec jekyll serve --watch"
     }
   },
 
@@ -158,10 +167,10 @@ module.exports = function(grunt) {
   grunt.registerTask('compile-css', ['compass:development', 'cssmin']);
 
   //JS distribution task
-  grunt.registerTask('compile-js', ['coffee:compile', 'concat', 'uglify', 'clean:js']);
+  grunt.registerTask('compile-js', ['coffee:compile', 'concat', 'uglify']);
 
   //Package for production
-  grunt.registerTask('deploy', ['compile-js', 'compile-css']);
+  grunt.registerTask('compile', ['compile-js', 'compile-css']);
   
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
