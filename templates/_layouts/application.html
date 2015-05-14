@@ -8,10 +8,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="software, design, user experience, interaction, usability, responsive, web, mobile, apps, applications, technology, time to market, time2market, vision, quality, reliable, trust, experience, team, wise, ambition, action, commitment, convenience, affordable, mobile-first, wireframes, mockups, research, mvp, product, customer, development, code, ruby on rails, monterrey, mexico, latam, latinamerica, ios, wearables, augmentation, remote, vcto, cto, freelance, Custom Software, Software Development, Web Applications, Mobile Applications, Embedded Applications, Web Design, User Experience Design, User Interface Design, HTML5, CSS3, jQuery, iOS, Ruby, Javascript, Experts" name="keywords">
 <!-- Facebook metatags-->
-<link rel="image_src" href="http://www.icalialabs.com/assets/img/logo.png"/>
+<link rel="image_src" href="{{ site.aws_s3_bucket_url }}/assets/img/logo.png"/>
 <meta property="og:title" content="Icalia Labs"/>
 <meta property="og:type" content="website"/>
-<meta property="og:image" content="http://www.icalialabs.com/assets/img/logo.png"/>
+<meta property="og:image" content="{{ site.aws_s3_bucket_url }}/assets/img/logo.png"/>
 <meta property="og:url" content="http://icalialabs.com"/>
 <meta property=”og:description” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products."/>
 <!-- Twitter metatags -->
@@ -20,10 +20,10 @@
 <meta name=”twitter:title” content=”Icalia Labs”>
 <meta name=”twitter:description” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products.">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name=”twitter:image” content=”http://www.icalialabs.com/assets/img/logo.png”>
+<meta name="twitter:image" content="{{ site.aws_s3_bucket_url }}/assets/img/logo.png">
 
 <title>Icalia Labs | {{ page.title }}</title>
-<link rel="icon" href="/assets/img/favicon.ico">
+<link rel="icon" href="{{ site.aws_s3_bucket_url }}/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/stylesheets/application.min.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <script>
@@ -69,24 +69,24 @@
   </nav>
 
   {{ content }}
-  <img class="to-top" src="/assets/img/top.png" alt="Back to top">
+  <img class="to-top" src="{{ site.aws_s3_bucket_url }}/assets/img/top.png" alt="Back to top">
   <footer class="footer">
     <div class="container row clearfix">
       <div class="col-6">
         <a href="/contact/" class="contact-link">Do you have an awesome idea? Drink a beer with us.</a>
         <div class="social-icons-footer">
-          <a href="https://www.facebook.com/icalialabs"><img src="/assets/img/fb-icon.png" alt="Icalia Labs on Facebook" title="Icalia Labs on Facebook"></a>
-          <a href="https://twitter.com/icalialabs"><img src="/assets/img/tw-icon.png" alt="Icalia Labs on Twitter" title="Icalia Labs on Twitter"></a>
-          <a href="http://blog.icalialabs.com/"><img src="/assets/img/blog-icon.png" alt="Icalia Labs Blog" title="Icalia Labs Blog"></a>
-          <a href="https://dribbble.com/icalialabs"><img src="/assets/img/dribbble-icon.png" alt="Icalia Labs on Dribbble" title="Icalia Labs on Dribbble"></a>
-          <a href="http://instagram.com/icalialabs"><img src="/assets/img/instagram-icon.png" alt="Icalia Labs on Instagram" title="Icalia Labs on Instagram"></a>
-          <a href="https://github.com/IcaliaLabs/"><img src="/assets/img/github-icon.png" alt="Icalia Labs on Github" title="Icalia Labs on Github"></a>
+          <a href="https://www.facebook.com/icalialabs"><img src="{{ site.aws_s3_bucket_url }}/assets/img/fb-icon.png" alt="Icalia Labs on Facebook" title="Icalia Labs on Facebook"></a>
+          <a href="https://twitter.com/icalialabs"><img src="{{ site.aws_s3_bucket_url }}/assets/img/tw-icon.png" alt="Icalia Labs on Twitter" title="Icalia Labs on Twitter"></a>
+          <a href="http://blog.icalialabs.com/"><img src="{{ site.aws_s3_bucket_url }}/assets/img/blog-icon.png" alt="Icalia Labs Blog" title="Icalia Labs Blog"></a>
+          <a href="https://dribbble.com/icalialabs"><img src="{{ site.aws_s3_bucket_url }}/assets/img/dribbble-icon.png" alt="Icalia Labs on Dribbble" title="Icalia Labs on Dribbble"></a>
+          <a href="http://instagram.com/icalialabs"><img src="{{ site.aws_s3_bucket_url }}/assets/img/instagram-icon.png" alt="Icalia Labs on Instagram" title="Icalia Labs on Instagram"></a>
+          <a href="https://github.com/IcaliaLabs/"><img src="{{ site.aws_s3_bucket_url }}/assets/img/github-icon.png" alt="Icalia Labs on Github" title="Icalia Labs on Github"></a>
         </div>
         <a href="mailto:weare@icalialabs.com" class="downcase" target="_blank">weare@icalialabs.com</a><br/>
         <a href="tel://+52 01 (81) 2089 8857"> +52 01 (81) 2089 8857</a>
       </div>
       <div class="col-6 align-right">
-        <p><img src="/assets/img/hecho-mexico.png" alt="Hecho en Mexico" title="Hecho en Mexico"></p>
+        <p><img src="{{ site.aws_s3_bucket_url }}/assets/img/hecho-mexico.png" alt="Hecho en Mexico" title="Hecho en Mexico"></p>
         <span>© 2015 IcaliaLabs</span>
       </div>
     </div>

@@ -9,19 +9,11 @@ namespace :build do
     # Creates the config.ru file for the rack application to run on heroku
     File.open("#{current_dir}/#{build_dir_name}/config.ru", "w") do |file|
       file.write(
-%q{require  'rack/cache'
-
-current_dir = Dir.pwd
-
-use Rack::Cache,
-  :verbose     => true,
-  :metastore   => "file:#{current_dir}/var/cache/rack/meta",
-  :entitystore => "file:#{current_dir}/var/cache/rack/body"
-
-use Rack::Deflater
+%q{use Rack::Deflater
 use Rack::Static,
   :urls => ["/assets/javascripts", "/assets/stylesheets", "/assets/img", "/assets/fonts"],
   :root => "public",
+  :index => "index.html",
   :header_rules => [[:all, {'Cache-Control' => 'public, max-age=31536000'}]]
 
 run Proc.new { |env|

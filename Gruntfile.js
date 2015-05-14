@@ -148,7 +148,24 @@ module.exports = function(grunt) {
     server: {
       tasks: ["watch:sass", "watch:coffee", "shell:jekyllServer"]
     },
+  },
+
+  aws_s3: {
+    options: {
+      accessKeyId: 'AKIAJSCEB45XDXPDW3KA', // Use the variables
+      secretAccessKey: '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', // You can also use env variables
+      uploadConcurrency: 5 // 5 simultaneous uploads
+    },
+    production: {
+      options: {
+        bucket: 'icalia'
+      },
+        files: [
+          {expand: true, cwd: 'app/assets', src: ['**'], dest: 'assets/', params: {CacheControl: 'public, max-age=31536000'}, action: 'upload'}
+        ]
+    }
   }
+
 
 });
 
@@ -165,7 +182,10 @@ module.exports = function(grunt) {
 
   //Package for production
   grunt.registerTask('compile', ['compile-js', 'compile-css', 'images']);
-  
+
+  //Upload assets to AWS-S3
+  grunt.registerTask('upload-assets', ['aws_s3']);
+
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
 

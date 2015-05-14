@@ -1,6 +1,6 @@
 @font-face {
   font-family: Circular;
-  src: url(../fonts/Circular.otf);
+  src: url(https://s3.amazonaws.com/icalia/assets/fonts/Circular.otf);
   font-weight: 400;
 }
 /* line 32, ../../../sass/_responsive_utilities.scss */
@@ -1939,7 +1939,7 @@ a:visited {
 /* line 3, ../../../sass/_index.scss */
 .intro {
   text-align: center;
-  background: url(/assets/img/bg.png) no-repeat center;
+  background: url(https://s3.amazonaws.com/icalia/assets/img/bg.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -3346,7 +3346,7 @@ slideUp
 }
 /* line 13, ../../../sass/_slider.scss */
 .work-slider .item-slide.printoo {
-  background: url(/assets/img/printoo-slider.jpg);
+  background: url(https://s3.amazonaws.com/icalia/assets/img/printoo-slider.jpg);
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -3354,7 +3354,7 @@ slideUp
 }
 /* line 17, ../../../sass/_slider.scss */
 .work-slider .item-slide.ovatemp {
-  background: url(/assets/img/ovatemp.jpg);
+  background: url(https://s3.amazonaws.com/icalia/assets/img/ovatemp.jpg);
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -3362,7 +3362,7 @@ slideUp
 }
 /* line 21, ../../../sass/_slider.scss */
 .work-slider .item-slide.repair {
-  background: url(/assets/img/repair.jpg);
+  background: url(https://s3.amazonaws.com/icalia/assets/img/repair.jpg);
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -3410,7 +3410,7 @@ slideUp
 
 /* line 31, ../../../sass/_culture.scss */
 .culture .info {
-  background: url("../img/bg-culture.jpg") no-repeat;
+  background: url("https://s3.amazonaws.com/icalia/assets/img/bg-culture.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: #FFF;
@@ -3908,7 +3908,7 @@ slideUp
 }
 /* line 81, ../../../sass/_contact.scss */
 .contact .adress {
-  background: url("../img/office.png") no-repeat;
+  background: url("https://s3.amazonaws.com/icalia/assets/img/office.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 100px 0px;
@@ -4121,7 +4121,7 @@ slideUp
 
 /* line 117, ../../../sass/_process.scss */
 #understanding {
-  background-image: url(/assets/img/understanding.png);
+  background-image: url(https://s3.amazonaws.com/icalia/assets/img/understanding.png);
   background-color: #f9f9f9;
 }
 @media only screen and (max-width: 991px) {
@@ -4133,7 +4133,7 @@ slideUp
 
 /* line 125, ../../../sass/_process.scss */
 #definition {
-  background-image: url(/assets/img/definition.png);
+  background-image: url(https://s3.amazonaws.com/icalia/assets/img/definition.png);
   background-color: #fff;
 }
 @media only screen and (max-width: 991px) {
@@ -4145,7 +4145,7 @@ slideUp
 
 /* line 133, ../../../sass/_process.scss */
 #design {
-  background-image: url(/assets/img/design.png);
+  background-image: url(https://s3.amazonaws.com/icalia/assets/img/design.png);
   background-color: #f9f9f9;
 }
 @media only screen and (max-width: 991px) {
@@ -4157,7 +4157,7 @@ slideUp
 
 /* line 141, ../../../sass/_process.scss */
 #build {
-  background-image: url(/assets/img/build.png);
+  background-image: url(https://s3.amazonaws.com/icalia/assets/img/build.png);
   background-color: #fff;
 }
 @media only screen and (max-width: 991px) {
@@ -4169,7 +4169,7 @@ slideUp
 
 /* line 149, ../../../sass/_process.scss */
 #measure {
-  background-image: url(/assets/img/measure.png);
+  background-image: url(https://s3.amazonaws.com/icalia/assets/img/measure.png);
   background-color: #f9f9f9;
 }
 @media only screen and (max-width: 991px) {

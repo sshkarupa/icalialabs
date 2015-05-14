@@ -1,7 +1,7 @@
 - name: Eduardo López
   id: edo
   title: CEO
-  picture: /assets/img/edo.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/edo.jpg
   networks:
     - link: http://twitter.com/edolopez
       name: twitter
@@ -12,7 +12,7 @@
 - name: Abraham Kuri
   title: CTO
   id: kuri
-  picture: /assets/img/kuri.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/kuri.jpg
   bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
   networks:
     - link: https://twitter.com/kurenn
@@ -23,7 +23,7 @@
 - name: Eduardo Higareda
   title: Lead Designer
   id: lentes
-  picture: /assets/img/lentes.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/lentes.jpg
   bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. <br/>Eduardo (A.k.a Lentes) is also involved in design community, he is the founder of Nongrid a project which tries involve more design students on the product design community. Also writes on blogs about design, music and hipster things.
   networks:
     - link: https://twitter.com/eldelentes
@@ -34,7 +34,7 @@
 - name: Ana Daniel
   title: Software Engineer
   id: ana
-  picture: /assets/img/ana.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/ana.jpg
   bio: Ana was the first girl to join the Icalia Team. She's a Ruby on Rails developer and does mostly back-end code, although she has no problem meddling on the front-end when needed. She likes to take lead roles that involve much of the analysis and planning of the development of a new product. <br ><br >Ana comes from a big family and is a proud aunt of 7 nephews and nieces. Most of the time she's thinking about her next destination. Ana is kind of a pop enthusiast. Beers and fries are some of her basic needs in life.
   networks:
     - link: https://play.spotify.com/user/1296214017
@@ -46,13 +46,13 @@
 - name: Osvaldo Ayala
   title: Business Development
   id: osvie
-  picture: /assets/img/osvie.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/osvie.jpg
   bio: Bitters beard semiotics, bicycle rights seitan YOLO fanny pack pickled leggings tote bag disrupt cold-pressed selvage heirloom mumblecore. 8-bit Shoreditch direct trade paleo, keytar Schlitz beard shabby chic hoodie Pinterest bicycle rights Odd Future DIY. Raw denim Truffaut DIY hoodie slow-carb. DIY artisan Portland flexitarian, selvage cliche Godard irony plaid Etsy tattooed. Echo Park vinyl trust fund, biodiesel drinking vinegar XOXO meditation butcher Thundercats single-origin coffee selvage. Occupy Thundercats deep v messenger bag, tattooed umami forage chia wolf moon put a bird on it 90's pork belly artisan bicycle rights. Taxidermy tilde organic Echo Park butcher.
 
 - name: Scarlett Garza
   title: Digital Designer
   id: scarlett
-  picture: /assets/img/scarlett.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/scarlett.jpg
   bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br />Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
   networks:
     - link: https://twitter.com/scarlettgarza
@@ -65,7 +65,7 @@
 - name: Noe Araujo
   title: Digital Designer
   id: noe
-  picture: /assets/img/noe.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/noe.jpg
   bio: Minimalist.
   networks:
     - link: http://instagram.com/noe.ai
@@ -78,7 +78,7 @@
 - name: Carlos Compean
   title: Mobile Engineer
   id: carlos
-  picture: /assets/img/carlos.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/carlos.jpg
   bio: Carlos is a mobile developer with a thirst for knowledge and a constant need of self-improvement. Borned in San Luis Potosi,  he has lived in other 3 different countries before ending up in Monterrey and working as an iOS developer. Always in the look for new trends in technology, he has a passion for details, and spends lots of time trying to develop in a way that provides a really smooth and great user experience.<br /><br />Carlos is also an adventurer who likes traveling, and trying new activities. He has practiced many kind of sports, but the ones he enjoys the most are water and winter sports. Currently he plays ice hockey, and during his leisure time he likes watching movies, tv series, and hanging out with friends.
   networks:
     - link: http://www.linkedin.com/pub/carlos-alberto-compean-martinez/65/601/745
@@ -91,7 +91,7 @@
 - name: Lila Miller
   title: Happiness Manager
   id: lila
-  picture: /assets/img/lila.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/lila.jpg
   bio: Lila is our Happiness Manager, and she makes sure everyone is happy and feels at home. She’s also in recruiting, looking for new awesome people to join our team.<br/>She loves to write, draw, sew and blog around.</br>Since she might be a little too active, she’s always looking for new things to make, new people to meet and new places to go.
   networks:
     - link: https://twitter.com/lilamiller
@@ -106,7 +106,7 @@
 - name: Joel Gómez
   title: Software Engineer
   id: joel
-  picture: /assets/img/joel.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/joel.jpg
   bio: Joel develops software in JavaScript and likes to explore new technologies to use in his projects. He's always looking for new hipster platforms to experiment and improve his knowledge. He is obsessed with Google and Grumpy Cat.
   networks:
     - link: https://twitter.com/DezkaReid
@@ -119,7 +119,7 @@
 - name: Javier Guajardo
   title: Developer
   id: javo
-  picture: /assets/img/javo.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/javo.jpg
   bio: Javier is a rails intern, but he identifies himself as a Creative Technologist. He loves to code, and he’s always looking for ways to improve and trying out new technologies. He also likes to write and he’s a very avid reader. Music is also a passion of him, although he doesn’t play any instruments, he likes to discover new bands and write songs in his spare time. He’s a big Lana del Rey fan, who loves hackathons and Tarantino movies. Overall a very weird geek.
   networks:
     - link: https://twitter.com/javiergc
@@ -132,7 +132,7 @@
 - name: Daniel Lozano
   title: iOS Engineer
   id: daniel
-  picture: /assets/img/daniel.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/daniel.jpg
   bio: Daniel works as a iOS developer. He loves reading about different programming paradigms and patterns every day, and working on side projects on the weekends. Values clean, well-crafted code over everything else. He has a passion for photography and traveling, and that’s what he can be found doing whenever he is not at his computer.<br/> He is originally from Torreon, MX, but has lived almost all of his life in Monterrey, MX. He recently came back from living a couple of years in Austin, TX after finishing up his B.S. in Computer Science over there and working at a startup for a year.
   networks:
     - link: http://danielozano.com
@@ -147,7 +147,7 @@
 - name: Joaquín Ramírez
   title: Developer
   id: joaquin
-  picture: /assets/img/joaquin.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/joaquin.jpg
   bio: Joaquin is a Software Development student, he decided to study this because he likes being able to create something new that can help others to solve problems or even have fun. <br/> He feels passionate about developing mobile applications on iOS and he’s always trying to learn new things that allow him to be better at what he does and what he likes.On his spare time he enjoys developing mobile games, playing video games with friends, going for a run and watching or playing soccer.  
   networks:
     - link: https://twitter.com/joaquin_vila
@@ -156,7 +156,7 @@
 - name: Juan Carlos Mercado
   title: Full Stack Engineer
   id: jc
-  picture: /assets/img/jc.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/jc.jpg
   bio: JC is a Full Stack Developer, nerd, philosophy reader and music addict, He enjoys solving math problems, photography and music production during his free time.
   networks:
     - link: https://github.com/zenbakiak
