@@ -62,20 +62,6 @@
     - link: https://play.spotify.com/user/1282263420
       name: Spotify
 
-
-- name: Alicia Gonzalez
-  id: aliciagonzalez
-  title: Software Engineer
-  picture: /assets/img/alicia.jpg
-  bio: Alicia works as a Rails and front-end developer. She enjoys taking care of visual details to deliver great experiences for users. She likes to learn new technologies and take ukulele lessons with her brother. <br /><br /> When she was 12 she created her first website and fell in love with the internet. She also loves reading, nature, art and playing videogames on her 3DS.
-  networks:
-    - link: http://twitter.com/alicia_catalina
-      name: Twitter
-    - link: http://github.com/aliciacatalina
-      name: Github
-    - link: https://play.spotify.com/user/113023278
-      name: Spotify
-
 - name: Noe Araujo
   title: Digital Designer
   id: noe
@@ -88,20 +74,6 @@
       name: Twitter
     - link: https://dribbble.com/nox
       name: Dribbble
-
-
-- name: Patricio Beltran
-  title: Developer
-  id: pato
-  picture: /assets/img/pato.png
-  bio: Patricio Beltrán is a Mobile and Web Developer with an eccentric consideration for code standards and defined processes. He works with all sorts of things including back-end, front-end and iOS. He enjoys discussing and designing products from the beginning and he’s always taking care of elements around the user experience on our clients' products. He is a geek who loves to learn new things and is always seeking for new technologies and practices. He can't survive without his music, his photography nor his dog. Patricio is only a kid.
-  networks:
-    - link: https://github.com/PatoBeltran
-      name: Github
-    - link: http://500px.com/patobeltran
-      name: 500px
-    - link: https://twitter.com/soypatobeltran
-      name: Twitter
 
 - name: Carlos Compean
   title: Mobile Engineer
