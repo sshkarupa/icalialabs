@@ -160,12 +160,13 @@ module.exports = function(grunt) {
   //JS distribution task
   grunt.registerTask('compile-js', ['coffee:compile', 'concat:js', 'uglify']);
 
+  //Image Compression
+  grunt.registerTask('images', ['imagemin']);
+
   //Package for production
-  grunt.registerTask('compile', ['compile-js', 'compile-css']);
+  grunt.registerTask('compile', ['compile-js', 'compile-css', 'images']);
   
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
 
-  //Image Compression
-  grunt.registerTask('images', ['imagemin']);
 }

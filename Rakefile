@@ -9,17 +9,27 @@ namespace :build do
     # Creates the config.ru file for the rack application to run on heroku
     File.open("#{current_dir}/#{build_dir_name}/config.ru", "w") do |file|
       file.write(
-%Q{use Rack::Static,
-  :urls => [""],
-  :root => "public",
-  :index => "index.html"
+%q{require  'rack/cache'
 
-run lambda { |env|
+current_dir = Dir.pwd
+
+use Rack::Cache,
+  :verbose     => true,
+  :metastore   => "file:#{current_dir}/var/cache/rack/meta",
+  :entitystore => "file:#{current_dir}/var/cache/rack/body"
+
+use Rack::Deflater
+use Rack::Static,
+  :urls => ["/assets/javascripts", "/assets/stylesheets", "/assets/img", "/assets/fonts"],
+  :root => "public",
+  :header_rules => [[:all, {'Cache-Control' => 'public, max-age=31536000'}]]
+
+run Proc.new { |env|
   [
     200,
     {
       'Content-Type'  => 'text/html',
-      'Cache-Control' => 'public, max-age=86400'
+      'Cache-Control' => 'public, max-age=31536000'
     },
     File.open('public/index.html', File::RDONLY)
   ]
@@ -39,7 +49,8 @@ gem 'rack'
     end
 
     #Copy the contents for the compiled version
-    FileUtils.cp_r "#{current_dir}/app/.", "#{current_dir}/#{build_dir_name}"
+    Dir.mkdir("build/public") unless Dir.exist?("build/public")
+    FileUtils.cp_r "#{current_dir}/app/.", "#{current_dir}/#{build_dir_name}/public"
 
     #Runs the bundle command
     puts `cd #{current_dir}/#{build_dir_name} && bundle install`
