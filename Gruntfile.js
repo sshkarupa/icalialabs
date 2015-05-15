@@ -138,6 +138,12 @@ module.exports = function(grunt) {
   shell: {
     jekyllServer: {
       command: "bundle exec jekyll serve --watch"
+    },
+    jekyllBuild: {
+      command: "bundle exec jekyll build"
+    },
+    buildForDeploy: {
+      command: "bundle exec rake build:production"
     }
   },
 
@@ -154,7 +160,7 @@ module.exports = function(grunt) {
     options: {
       accessKeyId: 'AKIAJSCEB45XDXPDW3KA', // Use the variables
       secretAccessKey: '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', // You can also use env variables
-      uploadConcurrency: 5 // 5 simultaneous uploads
+      uploadConcurrency: 10 // 5 simultaneous uploads
     },
     production: {
       options: {
@@ -181,10 +187,13 @@ module.exports = function(grunt) {
   grunt.registerTask('images', ['imagemin']);
 
   //Package for production
-  grunt.registerTask('compile', ['compile-js', 'compile-css', 'images']);
+  grunt.registerTask('compile', ['compile-js', 'compile-css', 'images', 'shell:jekyllBuild']);
 
   //Upload assets to AWS-S3
   grunt.registerTask('upload-assets', ['aws_s3']);
+
+  //Build website
+  grunt.registerTask('build', ['compile', 'shell:buildForDeploy']);
 
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
