@@ -1,8 +1,7 @@
-$(document).bind "mobileinit", ->
+$(document).on "mobileinit", ->
   $.mobile.hidePageLoadingMsg()
   $.mobile.ajaxEnabled = false
   $.mobile.loadingMessage = false
-  return
 
 scrollToTop = ->
   verticalOffset = (if typeof (verticalOffset) isnt "undefined" then verticalOffset else 0)

@@ -1,9 +1,9 @@
 var idx, idxs, ignore, rule, scrollToTop, stylesheet, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
 
-$(document).bind("mobileinit", function() {
+$(document).on("mobileinit", function() {
   $.mobile.hidePageLoadingMsg();
   $.mobile.ajaxEnabled = false;
-  $.mobile.loadingMessage = false;
+  return $.mobile.loadingMessage = false;
 });
 
 scrollToTop = function() {

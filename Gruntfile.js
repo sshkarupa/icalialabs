@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           "templates/assets/javascripts/jquery.kinect.min.js",
           "templates/assets/javascripts/jquery-waypoints.js",
           "templates/assets/javascripts/jquery.easing.min.js",
-          "templates/assets/javascripts/process-scroller",
+          "templates/assets/javascripts/process-scroller.js",
           "templates/assets/javascripts/furatto_modal.js",
           "templates/assets/javascripts/player.js"
         ],

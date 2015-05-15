@@ -15,7 +15,6 @@ cinemaJs = (event) ->
 $(document).ready ->
   # Crea overlay
   $('body').append '<div id="cinema-overlay"></div>'
-  console.log $('#cinema-overlay')
   $('#cinema-overlay').css
     'display': 'none'
     'width': '100%'
