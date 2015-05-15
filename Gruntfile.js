@@ -188,12 +188,14 @@ module.exports = function(grunt) {
 
   //Package for production
   grunt.registerTask('compile', ['compile-js', 'compile-css', 'images', 'shell:jekyllBuild']);
+  grunt.registerTask('compile-no-images', ['compile-js', 'compile-css', 'shell:jekyllBuild']);
 
   //Upload assets to AWS-S3
   grunt.registerTask('upload-assets', ['aws_s3']);
 
   //Build website
   grunt.registerTask('build', ['compile', 'shell:buildForDeploy']);
+  grunt.registerTask('build-no-images', ['compile-no-images', 'shell:buildForDeploy']);
 
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
