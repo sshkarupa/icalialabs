@@ -12,7 +12,6 @@
       @modal.addClass "#{@theme}"
 
     init: =>
-      console.log @modal
       @$el.click @show
       @close.click (ev) =>
         ev.stopPropagation()

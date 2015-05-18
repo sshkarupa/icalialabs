@@ -120,21 +120,11 @@ type: culture
     </div>
   </div>
 
-  <div class="row clearfix">
+  <div class="row">
     <div class="col-6">
       <a class="position modal-trigger" data-furatto="modal" data-target="#position-3">iOS Mobile Engineer</a>
     </div>
-    <div class="col-6">
-      <a class="position modal-trigger" data-furatto="modal" data-target="#position-4">Summer Intern - CS</a>
-    </div>
   </div>
-
-  <div class="row clearfix">
-    <div class="col-6">
-      <a class="position modal-trigger" data-furatto="modal" data-target="#position-5">Summer Intern - DD</a>
-    </div>
-  </div>
-
 
 {% for position in site.data.positions %}
   <div class="position-modal simple-modal modal" id="position-{{forloop.index}}">

@@ -835,7 +835,6 @@ var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments)
 
     Modal.prototype.init = function() {
       var _this = this;
-      console.log(this.modal);
       this.$el.click(this.show);
       return this.close.click(function(ev) {
         ev.stopPropagation();
