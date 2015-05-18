@@ -33,10 +33,19 @@ run Proc.new { |env|
     File.open("#{build_dir_name}/Gemfile", "w") do |file|
       file.write(
 %Q{# A sample Gemfile
+ruby '2.2.1'
 source "https://rubygems.org"
 
 gem 'rack'
+gem 'puma'
         }
+      )
+    end
+
+    # Creates the Prcofile
+    File.open("#{build_dir_name}/Procfile", "w") do |file|
+      file.write(
+%Q{web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-development}}
       )
     end
 
