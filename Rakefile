@@ -48,3 +48,20 @@ gem 'rack'
     puts `cd #{current_dir}/#{build_dir_name} && bundle install`
   end
 end
+
+namespace :deploy do
+
+  task :staging do
+    Dir.mkdir("../icalia-website") unless Dir.exist?("../icalia-website")
+
+    FileUtils.cp_r "build/.", "../icalia-website"
+
+    Dir.chdir("../icalia-website") do
+      puts "Commiting..."
+      puts `git add .`
+      puts `git commit -am "Deploy to staging"`
+      puts "Deploying..."
+      puts `git push staging master`
+    end
+  end
+end
