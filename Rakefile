@@ -73,4 +73,18 @@ namespace :deploy do
       puts `git push staging master`
     end
   end
+
+  task :production do
+    Dir.mkdir("../icalia-website") unless Dir.exist?("../icalia-website")
+
+    FileUtils.cp_r "build/.", "../icalia-website"
+
+    Dir.chdir("../icalia-website") do
+      puts "Commiting..."
+      puts `git add .`
+      puts `git commit -am "Deploy to production"`
+      puts "Deploying..."
+      puts `git push production master`
+    end
+  end
 end

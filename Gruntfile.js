@@ -147,6 +147,9 @@ module.exports = function(grunt) {
     },
     stagingDeploy: {
       command: "bundle exec rake deploy:staging"
+    },
+    productionDeploy: {
+      command: "bundle exec rake deploy:production"
     }
   },
 
@@ -202,6 +205,7 @@ module.exports = function(grunt) {
 
   //Deplyoment tasks
   grunt.registerTask('deploy-staging', ['build', 'shell:stagingDeploy']);
+  grunt.registerTask('deploy-production', ['build', 'shell:productionDeploy']);
 
   //Lift the server
   grunt.registerTask('server', ['concurrent:server'])
