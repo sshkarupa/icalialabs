@@ -163,3 +163,27 @@
       name: Github
     - link: https://twitter.com/zenbakiak
       name: Twitter
+
+- name: Bárbara Martínez
+  title: Mobile Intern
+  id: bm
+  picture: https://s3.amazonaws.com/icalia/assets/img/barbara.jpg
+  bio: Barbara is a mobile intern, currently focusing in iOS development. She likes to constantly learn new technologies and improve her skills. In her spare time, she loves to hang out with friends, read and play sports such as basketball, soccer and golf.
+  networks:
+    - link: https://github.com/bmbrina
+      name: Github
+    - link: https://twitter.com/bmbrina
+      name: Twitter
+    - link: http://www.mbrina.com
+      name: Website
+
+- name: Óscar Elizondo
+  title: Rails Intern
+  id: oe
+  picture: https://s3.amazonaws.com/icalia/assets/img/oscar.jpg
+  bio: Oscar is an aspiring web developer, currently focusing in Rails and Express. He likes to look for new challenges, and learns new things everyday. He also likes computer modding and running in his free time. Oscar is always trying to share his knowledge with everyone.
+  networks:
+    - link: https://github.com/oscarmarcelo95
+      name: Github
+    - link: https://twitter.com/oehinojosa
+      name: Twitter
