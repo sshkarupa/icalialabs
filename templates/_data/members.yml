@@ -187,3 +187,49 @@
       name: Github
     - link: https://twitter.com/oehinojosa
       name: Twitter
+
+- name: Luis Manzur
+  title: Design Intern
+  id: lm
+  picture: https://s3.amazonaws.com/icalia/assets/img/luis.jpg
+  bio: Luis, better known as Luigi, is a graphic design student with experience in branding and audiovisual communication; passionate about typography, geometric shapes and technology. Apprentice in front-end development, he’s always trying to apply creativity in building and creating stuff. On his free time, he plays bass guitar and enjoys riding his longboard around town, street fútbol matches, discovering new music, and playing The Legend of Zelda.
+  networks:
+    - link: https://instagram.com/luismnzr
+      name: Instagram
+    - link: https://twitter.com/luismnzr
+      name: Twitter
+    - link: www.cargocollective.com/luismnzr
+      name: Portfolio
+
+- name: Jesús Galván
+  title: Rails Intern
+  id: jg
+  picture: https://s3.amazonaws.com/icalia/assets/img/chuy.jpg
+  bio: Chuy is a Robotics Engineering student, who is passionate about software development and technology. He's into competitive programming and likes to solve puzzles, read, watch Netlix and hang out with friends. He plays guitar and loves to jam out on ukulele.
+  networks:
+    - link: https://instagram.com/chuyg
+      name: Instagram
+    - link: https://twitter.com/chuy_gv
+      name: Twitter
+
+- name: Ramón E. Valles
+  title: Rails Intern
+  id: rv
+  picture: https://s3.amazonaws.com/icalia/assets/img/ramon.jpg
+  bio: 'Ramón is a lifelong learner who enjoys breathing, computer science, and music. //TODO: Add a better description.'
+  networks:
+    - link: https://github.com/MrOutis
+      name: Github
+    - link: http://www.codewars.com/users/MrOutis
+      name: CodeWars
+
+- name: Evan Aarón Juárez
+  title: Rails Intern
+  id: ej
+  picture: https://s3.amazonaws.com/icalia/assets/img/evan.jpg
+  bio: Evan defines himself as a critical thinker who likes to discuss and learn new things daily. Music is his fuel. His hobbies are reading, playing guitar, stumbling with interesting stuff and playing videogames.
+  networks:
+    - link: https://github.com/evanjuv
+      name: Github
+    - link: https://twitter.com/wevanohm
+      name: Twitter
