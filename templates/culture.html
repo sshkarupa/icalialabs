@@ -126,6 +126,12 @@ type: culture
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-6">
+      <a class="position modal-trigger" data-furatto="modal" data-target="#position-4">Sales Engineer</a>
+    </div>
+  </div>
+
 {% for position in site.data.positions %}
   <div class="position-modal simple-modal modal" id="position-{{forloop.index}}">
     {% if position.type == "internship" %}
