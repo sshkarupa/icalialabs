@@ -42,13 +42,6 @@
     - link: http://instagram.com/anidaniel
       name: Instagram
 
-
-- name: Osvaldo Ayala
-  title: Business Development
-  id: osvie
-  picture: https://s3.amazonaws.com/icalia/assets/img/osvie.jpg
-  bio: I'm 24 and I like ramen, oh and I'm also in charge of the business development and partnerships.
-
 - name: Scarlett Garza
   title: Digital Designer
   id: scarlett
@@ -115,19 +108,6 @@
       name: Instagram
     - link: https://github.com/dezkareid
       name: Github
-
-- name: Javier Guajardo
-  title: Developer
-  id: javo
-  picture: https://s3.amazonaws.com/icalia/assets/img/javo.jpg
-  bio: Javier is a rails intern, but he identifies himself as a Creative Technologist. He loves to code, and he’s always looking for ways to improve and trying out new technologies. He also likes to write and he’s a very avid reader. Music is also a passion of him, although he doesn’t play any instruments, he likes to discover new bands and write songs in his spare time. He’s a big Lana del Rey fan, who loves hackathons and Tarantino movies. Overall a very weird geek.
-  networks:
-    - link: https://twitter.com/javiergc
-      name: Twitter
-    - link: https://github.com/javogc
-      name: Github
-    - link: https://medium.com/@javiergc
-      name: Medium
 
 - name: Daniel Lozano
   title: iOS Engineer
@@ -233,3 +213,14 @@
       name: Github
     - link: https://twitter.com/wevanohm
       name: Twitter
+
+- name: Nicholas Imondi
+  title: UX Designer
+  id: ni
+  picture: https://s3.amazonaws.com/icalia/assets/img/nick.jpg
+  bio: Hailing originally from New York and recently relocating to Monterrey, Nick joins us as a User Experience Designer.  Over the years he's designed interactive experiences across mobile and web applications for both startups and Fortune 500 companies alike, and has a deep-rooted passion for research and intensely critical design conversations. Outside of work Nick is happy to accept invitations to carne asada, and trips around the world.
+  networks:
+    - link: https://www.linkedin.com/in/nicholasimondi
+      name: Linkedin
+    - link: https://vimeo.com/nickimondi
+      name: Vimeo
