@@ -96,19 +96,6 @@
     - link: http://lilamiller.me
       name: Website
 
-- name: Joel Gómez
-  title: Software Engineer
-  id: joel
-  picture: https://s3.amazonaws.com/icalia/assets/img/joel.jpg
-  bio: Joel develops software in JavaScript and likes to explore new technologies to use in his projects. He's always looking for new hipster platforms to experiment and improve his knowledge. He is obsessed with Google and Grumpy Cat.
-  networks:
-    - link: https://twitter.com/DezkaReid
-      name: Twitter
-    - link: https://instagram.com/dezkareid/
-      name: Instagram
-    - link: https://github.com/dezkareid
-      name: Github
-
 - name: Daniel Lozano
   title: iOS Engineer
   id: daniel
@@ -125,7 +112,7 @@
       name: VSCO
 
 - name: Joaquín Ramírez
-  title: Developer
+  title: iOS Intern
   id: joaquin
   picture: https://s3.amazonaws.com/icalia/assets/img/joaquin.jpg
   bio: Joaquin is a Software Development student, he decided to study this because he likes being able to create something new that can help others to solve problems or even have fun. <br/> He feels passionate about developing mobile applications on iOS and he’s always trying to learn new things that allow him to be better at what he does and what he likes.On his spare time he enjoys developing mobile games, playing video games with friends, going for a run and watching or playing soccer.  
@@ -202,17 +189,6 @@
       name: Github
     - link: http://www.codewars.com/users/MrOutis
       name: CodeWars
-
-- name: Evan Aarón Juárez
-  title: Rails Intern
-  id: ej
-  picture: https://s3.amazonaws.com/icalia/assets/img/evan.jpg
-  bio: Evan defines himself as a critical thinker who likes to discuss and learn new things daily. Music is his fuel. His hobbies are reading, playing guitar, stumbling with interesting stuff and playing videogames.
-  networks:
-    - link: https://github.com/evanjuv
-      name: Github
-    - link: https://twitter.com/wevanohm
-      name: Twitter
 
 - name: Nicholas Imondi
   title: UX Designer
