@@ -24,7 +24,7 @@
   title: Lead Designer
   id: lentes
   picture: https://s3.amazonaws.com/icalia/assets/img/lentes.jpg
-  bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. <br/>Eduardo (A.k.a Lentes) is also involved in design community, he is the founder of Nongrid a project which tries involve more design students on the product design community. Also writes on blogs about design, music and hipster things.
+  bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
   networks:
     - link: https://twitter.com/eldelentes
       name: Twitter
@@ -59,7 +59,7 @@
   title: Digital Designer
   id: noe
   picture: https://s3.amazonaws.com/icalia/assets/img/noe.jpg
-  bio: I am multidisciplinary designer, type lover and creator, perfectionist and picky with all the products at Icalia’s. I like to make simple but functional things also I have a crush with flat design and white colour.
+  bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky with all the products at Icalia’s. He likes to make simple but functional things and also has a crush with flat design and white colour.
   networks:
     - link: http://instagram.com/noe.ai
       name: Instagram
@@ -124,7 +124,7 @@
   title: Full Stack Engineer
   id: jc
   picture: https://s3.amazonaws.com/icalia/assets/img/jc.jpg
-  bio: JC is a Full Stack Developer, nerd, philosophy reader and music addict, He enjoys solving math problems, photography and music production during his free time.
+  bio: JC is a Full Stack Developer, nerd, philosophy reader and music addict, he enjoys math problems, photography and music production during his free time.
   networks:
     - link: https://github.com/zenbakiak
       name: Github
@@ -148,7 +148,7 @@
   title: Rails Intern
   id: oe
   picture: https://s3.amazonaws.com/icalia/assets/img/oscar.jpg
-  bio: Oscar is an aspiring web developer, currently focusing in Rails and Express. He likes to look for new challenges, and learns new things everyday. He also likes computer modding and running in his free time. Oscar is always trying to share his knowledge with everyone.
+  bio: Oscar is an aspiring web developer, currently focusing in Rails and Express. He likes to look for new challenges and learn new things everyday. He also likes computer modding and running in his free time. Oscar is always trying to share his knowledge with everyone.
   networks:
     - link: https://github.com/oscarmarcelo95
       name: Github
@@ -159,7 +159,7 @@
   title: Design Intern
   id: lm
   picture: https://s3.amazonaws.com/icalia/assets/img/luis.jpg
-  bio: Luis, better known as Luigi, is a graphic design student with experience in branding and audiovisual communication; passionate about typography, geometric shapes and technology. Apprentice in front-end development, he’s always trying to apply creativity in building and creating stuff. On his free time, he plays bass guitar and enjoys riding his longboard around town, street fútbol matches, discovering new music, and playing The Legend of Zelda.
+  bio: Luis, better known as Luigi, is a graphic design student with experience in branding and audiovisual communication; passionate about typography, geometric shapes and technology. Apprentice in front-end development, he’s always trying to apply creativity in building and creating stuff. On his free time, he plays bass guitar and enjoys riding his longboard around town, street football matches, discovering new music, and playing The Legend of Zelda.
   networks:
     - link: https://instagram.com/luismnzr
       name: Instagram
@@ -183,7 +183,7 @@
   title: Rails Intern
   id: rv
   picture: https://s3.amazonaws.com/icalia/assets/img/ramon.jpg
-  bio: 'Ramón is a lifelong learner who enjoys breathing, computer science, and music. //TODO: Add a better description.'
+  bio: 'Ramón is a lifelong learner who enjoys breathing, computer science and music. //TODO: Add a better description.'
   networks:
     - link: https://github.com/MrOutis
       name: Github
