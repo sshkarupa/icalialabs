@@ -31,16 +31,16 @@
     - link: http://www.eldelentes.mx
       name: Website
 
-- name: Ana Daniel
+- name: Emily Berkeley
   title: Software Engineer
-  id: ana
-  picture: https://s3.amazonaws.com/icalia/assets/img/ana.jpg
-  bio: Ana was the first girl to join the Icalia Team. She's a Ruby on Rails developer and does mostly back-end code, although she has no problem meddling on the front-end when needed. She likes to take lead roles that involve much of the analysis and planning of the development of a new product. <br ><br >Ana comes from a big family and is a proud aunt of 7 nephews and nieces. Most of the time she's thinking about her next destination. Ana is kind of a pop enthusiast. Beers and fries are some of her basic needs in life.
+  id: emily
+  picture: https://s3.amazonaws.com/icalia/assets/img/emily.jpg
+  bio: Having grown up in Colorado, Emily is delighted to live somewhere that doesn't require putting studded snow tires on her bike. She loves chickens, urbanism, stories, and cleaning up Ruby code.
   networks:
-    - link: https://play.spotify.com/user/1296214017
-      name: Spotify
-    - link: http://instagram.com/anidaniel
-      name: Instagram
+    - link: https://github.com/EmilyMB
+      name: Github
+    - link: https://twitter.com/mexicoemily
+      name: Twitter
 
 - name: Scarlett Garza
   title: Digital Designer
@@ -168,17 +168,6 @@
     - link: www.cargocollective.com/luismnzr
       name: Portfolio
 
-- name: Jesús Galván
-  title: Rails Intern
-  id: jg
-  picture: https://s3.amazonaws.com/icalia/assets/img/chuy.jpg
-  bio: Chuy is a Robotics Engineering student, who is passionate about software development and technology. He's into competitive programming and likes to solve puzzles, read, watch Netlix and hang out with friends. He plays guitar and loves to jam out on ukulele.
-  networks:
-    - link: https://instagram.com/chuyg
-      name: Instagram
-    - link: https://twitter.com/chuy_gv
-      name: Twitter
-
 - name: Ramón E. Valles
   title: Rails Intern
   id: rv
@@ -189,6 +178,17 @@
       name: Github
     - link: http://www.codewars.com/users/MrOutis
       name: CodeWars
+
+- name: Roberto Quintanilla
+  title: Software Engineer
+  id: rq
+  picture: https://s3.amazonaws.com/icalia/assets/img/bobby.jpg
+  bio: "An innate machine whisperer, coding since he was 10 years old - he used cassettes before diskettes existed! Experienced in both frontend and backend development, he loves Ruby and Docker, but keeps an eye on other tech trends. <br> Docker, but keeps an eye on other tech trends. <br> Whenever he’s not whispering code into machines, he’s either playing rock music, hangin’ out with his wife and nerdy, rockstar and/or close friends, drinking spiced rum, watching NFL, F1 or UFC (he’s a Patriots fan), or doing whacky stuff."
+  networks:
+    - link: https://github.com/vovimayhem
+      name: Github
+    - link: https://twitter.com/vovimayhem
+      name: Twitter
 
 - name: Nicholas Imondi
   title: UX Designer
