@@ -168,6 +168,19 @@
     - link: www.cargocollective.com/luismnzr
       name: Portfolio
 
+- name: Ricardo Sepúlveda
+  title: Rails Intern
+  id: rs
+  picture: https://s3.amazonaws.com/icalia/assets/img/ricardo.jpg
+  bio: Ricardo is a Computer Science student who loves creating products and discovering new technologies. He also enjoys designing games, reading books, watching football (soccer), listening to music, drinking tea and hanging out with friends.
+  networks:
+    - link: http://www.ricardors.me
+      name: Personal Website
+    - link: https://twitter.com/rrs94
+      name: Twitter
+    - link: https://github.com/rrs94
+      name: Github
+
 - name: Ramón E. Valles
   title: Rails Intern
   id: rv
