@@ -213,3 +213,28 @@
       name: Linkedin
     - link: https://vimeo.com/nickimondi
       name: Vimeo
+
+- name: Lizeth Aguayo
+  title: Sales Engineer
+  id: lza
+  picture: https://s3.amazonaws.com/icalia/assets/img/lizeth.jpg
+  bio: "Liz enjoys visiting and discovering every city of our colorful country -traveling is one of the things she loves the most- She also loves to learn new things, specially those things related with creativity and to discover hidden or underground places."
+  networks:
+    - link: https://instagram.com/lizzaguayo
+      name: Instagram
+    - link: https://twitter.com/lizaguayo
+      name: Twitter
+
+- name: Alejandro Sandoval
+  title: Software Engineer
+  id: asd
+  picture: https://s3.amazonaws.com/icalia/assets/img/alejandro.jpg
+  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to
+learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity available."
+  networks:
+    - link: https://twitter.com/lejandro83
+      name: Twitter
+    - link: https://github.com/lejandro83
+      name: Github
+    - link: https://instagram.com/ricordiepanini/
+      name: Instagram
