@@ -1,3 +1,8 @@
+ @include keyframes(bg-size) {
+    from {background-size: 100%;}
+    to {background-size: 105%}
+} 
+
 .project {
   padding: 100px;
   height: 500px;
@@ -16,7 +21,7 @@
   }
 
   &:hover {
-    background-size: 105%;
+    @include animation(bg-size 0.3s forwards);
     box-shadow: inset 0px 0px 50px 20px rgba(0,0,0,0.4);
   }
 
