@@ -170,7 +170,7 @@
 - name: Roberto Quintanilla
   title: Software Engineer
   id: rq
-  picture: https://s3.amazonaws.com/icalia/assets/img/bobby.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/graf.jpg
   bio: "An innate machine whisperer, coding since he was 10 years old - he used cassettes before diskettes existed! - Experienced in both frontend and backend development, he loves Ruby and Docker, but keeps an eye on other tech trends. <br> Docker, but keeps an eye on other tech trends. <br> Whenever he’s not whispering code into machines, he’s either playing rock music, hangin’ out with his wife and nerdy, rockstar and/or close friends, drinking spiced rum, watching NFL, F1 or UFC (he’s a Patriots fan), or doing whacky stuff."
   networks:
     - link: https://github.com/vovimayhem
@@ -213,3 +213,4 @@ learn random facts about anything and everything and tries to get off his ass as
       name: Github
     - link: https://instagram.com/ricordiepanini/
       name: Instagram
+
