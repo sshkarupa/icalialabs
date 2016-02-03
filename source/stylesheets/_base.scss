@@ -568,6 +568,11 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   }
 }
 
+#talkus-button {
+  bottom: 30px !important;
+  right: 85px !important;
+}
+
 @include screen($small-screen, 1280px){
   .menu-overlay {
     a {
@@ -575,6 +580,4 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     }
   }
 }
-
-
 
