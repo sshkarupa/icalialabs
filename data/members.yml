@@ -20,6 +20,15 @@
     - link: https://github.com/kurenn
       name: Github
 
+- name: Daniel Graf
+  title: Business Development Manager
+  id: dg
+  picture: https://s3.amazonaws.com/icalia/assets/img/graf.jpg
+  bio: Daniel our resident business developer and designer. Lover of the merger between tech and beautiful design that works. A Techstars ’15 and Babson MBA ’06 alumn, he loves food, a good book, and… knows kung-fu.
+  networks:
+    - link: https://twitter.com/daniel_graf
+      name: Twitter
+
 - name: Monica De la Torre
   title: Happiness Manager
   id: monica
@@ -44,43 +53,6 @@
     - link: http://www.eldelentes.mx
       name: Website
 
-- name: Emily Berkeley
-  title: Software Engineer
-  id: emily
-  picture: https://s3.amazonaws.com/icalia/assets/img/emily.jpg
-  bio: Having grown up in Colorado, Emily is delighted to live somewhere that doesn't require putting studded snow tires on her bike. She loves chickens, urbanism, stories, and cleaning up Ruby code.
-  networks:
-    - link: https://github.com/EmilyMB
-      name: Github
-    - link: https://twitter.com/mexicoemily
-      name: Twitter
-
-- name: Noe Araujo
-  title: Digital Designer
-  id: noe
-  picture: https://s3.amazonaws.com/icalia/assets/img/noe.jpg
-  bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky with all the products at Icalia’s. He likes to make simple but functional things and also has a crush with flat design and white colour.
-  networks:
-    - link: http://instagram.com/noe.ai
-      name: Instagram
-    - link: https://twitter.com/Internox
-      name: Twitter
-    - link: https://dribbble.com/nox
-      name: Dribbble
-
-- name: Carlos Compean
-  title: Mobile Engineer
-  id: carlos
-  picture: https://s3.amazonaws.com/icalia/assets/img/carlos.jpg
-  bio: Carlos is a mobile developer with a thirst for knowledge and a constant need of self-improvement. Borned in San Luis Potosi,  he has lived in other 3 different countries before ending up in Monterrey and working as an iOS developer. Always in the look for new trends in technology, he has a passion for details, and spends lots of time trying to develop in a way that provides a really smooth and great user experience.<br /><br />Carlos is also an adventurer who likes traveling, and trying new activities. He has practiced many kind of sports, but the ones he enjoys the most are water and winter sports. Currently he plays ice hockey, and during his leisure time he likes watching movies, tv series, and hanging out with friends.
-  networks:
-    - link: http://www.linkedin.com/pub/carlos-alberto-compean-martinez/65/601/745
-      name: Linkedin
-    - link: https://www.facebook.com/carlos.compean.73
-      name: Facebook
-    - link: https://twitter.com/cacmartinez
-      name: Twitter
-
 - name: Scarlett Garza
   title: Digital Designer
   id: scarlett
@@ -93,6 +65,30 @@
       name: Dribble
     - link: http://scarlettgarza.com/
       name: Website
+
+- name: Noe Araujo
+  title: Digital Designer
+  id: noe
+  picture: https://s3.amazonaws.com/icalia/assets/img/noe.jpg
+  bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky with all the products at Icalia’s. He likes to make simple but functional things and also has a crush with flat design and white colour.
+  networks:
+    - link: http://instagram.com/noe.ai
+      name: Instagram
+    - link: https://twitter.com/Internox
+      name: Twitter
+    - link: https://dribbble.com/nox
+      name: Dribbbles
+
+- name: Emily Berkeley
+  title: Software Engineer
+  id: emily
+  picture: https://s3.amazonaws.com/icalia/assets/img/emily.jpg
+  bio: Having grown up in Colorado, Emily is delighted to live somewhere that doesn't require putting studded snow tires on her bike. She loves chickens, urbanism, stories, and cleaning up Ruby code.
+  networks:
+    - link: https://github.com/EmilyMB
+      name: Github
+    - link: https://twitter.com/mexicoemily
+      name: Twitter
 
 - name: Joaquín Ramírez
   title: iOS Intern
@@ -170,7 +166,7 @@
 - name: Roberto Quintanilla
   title: Software Engineer
   id: rq
-  picture: https://s3.amazonaws.com/icalia/assets/img/graf.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/bobby.jpg
   bio: "An innate machine whisperer, coding since he was 10 years old - he used cassettes before diskettes existed! - Experienced in both frontend and backend development, he loves Ruby and Docker, but keeps an eye on other tech trends. <br> Docker, but keeps an eye on other tech trends. <br> Whenever he’s not whispering code into machines, he’s either playing rock music, hangin’ out with his wife and nerdy, rockstar and/or close friends, drinking spiced rum, watching NFL, F1 or UFC (he’s a Patriots fan), or doing whacky stuff."
   networks:
     - link: https://github.com/vovimayhem
