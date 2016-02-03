@@ -139,17 +139,6 @@
     - link: http://www.mbrina.com
       name: Website
 
-- name: Oscar Elizondo
-  title: Rails Intern
-  id: oe
-  picture: https://s3.amazonaws.com/icalia/assets/img/oscar.jpg
-  bio: Oscar is an aspiring web developer, currently focusing in Rails and Express. He likes to look for new challenges and learn new things everyday. He also likes computer modding and running in his free time. Oscar is always trying to share his knowledge with everyone.
-  networks:
-    - link: https://github.com/oscarmarcelo95
-      name: Github
-    - link: https://twitter.com/oehinojosa
-      name: Twitter
-
 - name: Luis Manzur
   title: Design Intern
   id: lm
