@@ -45,7 +45,7 @@
 - name: Eduardo Higareda
   title: Lead Designer
   id: lentes
-  picture: https://s3.amazonaws.com/icalia/assets/img/lentes.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/eldelentes.jpg
   bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
   networks:
     - link: https://twitter.com/eldelentes
@@ -56,7 +56,7 @@
 - name: Scarlett Garza
   title: Digital Designer
   id: scarlett
-  picture: https://s3.amazonaws.com/icalia/assets/img/scarlett.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/scar.jpg
   bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br />Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
   networks:
     - link: https://twitter.com/scarlettgarza
@@ -198,4 +198,36 @@ learn random facts about anything and everything and tries to get off his ass as
       name: Github
     - link: https://instagram.com/ricordiepanini/
       name: Instagram
+
+- name: Elena Flores
+  title: Interaction Designer
+  id: elena
+  picture: https://s3.amazonaws.com/icalia/assets/img/elena.jpg
+  bio: "Elena is a designer , front-end developer , entrepreneur and traveler. Her passions is determined and therefore enjoys meeting different languages, either in technology or in everyday life .
+
+She is from Mexico City but has lived in the last five years in different parts of the world, now is the turn of Monterrey.
+
+She loves to visit museums, cycling, go for a walk with Guru (a Venezuelan dog),  read books, movies, give reiki therapy and paint mandalas."
+  networks:
+    - link: https://twitter.com/LUCIOLEfashion
+      name: Twitter
+    - link: https://www.instagram.com/lucirfashion/
+      name: Instagram
+
+- name: Mayra Cabrera
+  title: Software Engineer
+  id: mayra
+  picture: https://s3.amazonaws.com/icalia/assets/img/mayra.jpg
+  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier.
+
+Mayra does mostly backend but also loves the frontend magical power. Obsessed with programming, she likes to create beautiful, concise and well crafted code through best practices & patterns.
+
+She also enjoys geeky stuff in general like science, books, movies, tv series and cats of course."
+  networks:
+    - link: https://github.com/mayra-cabrera
+      name: Github
+    - link: https://twitter.com/may_cabrera
+      name: Twitter
+    - link: http://mayra-cabrera.github.io/
+      name: Blog
 
