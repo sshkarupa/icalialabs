@@ -1,108 +1,108 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- Google metatags -->
-<meta charset="utf-8">
-<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-<meta name="description" content='Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products.'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="software, design, user experience, interaction, usability, responsive, web, mobile, apps, applications, technology, time to market, time2market, vision, quality, reliable, trust, experience, team, wise, ambition, action, commitment, convenience, affordable, mobile-first, wireframes, mockups, research, mvp, product, customer, development, code, ruby on rails, monterrey, mexico, latam, latinamerica, ios, wearables, augmentation, remote, vcto, cto, freelance, Custom Software, Software Development, Web Applications, Mobile Applications, Embedded Applications, Web Design, User Experience Design, User Interface Design, HTML5, CSS3, jQuery, iOS, Ruby, Javascript, Experts" name="keywords">
+  <head>
+    <!-- Google metatags -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="description" content='Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products.'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="software, design, user experience, interaction, usability, responsive, web, mobile, apps, applications, technology, time to market, time2market, vision, quality, reliable, trust, experience, team, wise, ambition, action, commitment, convenience, affordable, mobile-first, wireframes, mockups, research, mvp, product, customer, development, code, ruby on rails, monterrey, mexico, latam, latinamerica, ios, wearables, augmentation, remote, vcto, cto, freelance, Custom Software, Software Development, Web Applications, Mobile Applications, Embedded Applications, Web Design, User Experience Design, User Interface Design, HTML5, CSS3, jQuery, iOS, Ruby, Javascript, Experts" name="keywords">
 
-<!-- Cache control -->
-<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Feb 2016 11:12:01 GMT">
+    <!-- Cache control -->
+    <meta http-equiv="Cache-control" content="no-cache">
+    <!-- <META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Feb 2016 11:12:01 GMT"> -->
 
-<!-- Facebook metatags-->
-<link rel="image_src" href="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/logo.png"/>
-<meta property="og:title" content="Icalia Labs"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/logo.png"/>
-<meta property="og:url" content="http://icalialabs.com"/>
-<meta property=”og:description” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products."/>
+    <!-- Facebook metatags-->
+    <link rel="image_src" href="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/logo.png"/>
+    <meta property="og:title" content="Icalia Labs"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/logo.png"/>
+    <meta property="og:url" content="http://icalialabs.com"/>
+    <meta property=”og:description” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products."/>
 
-<!-- Twitter metatags -->
-<meta name=”twitter:card” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products.">
-<meta name=”twitter:url” content="www.icalialabs.com">
-<meta name=”twitter:title” content=”Icalia Labs”>
-<meta name=”twitter:description” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products.">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="twitter:image" content="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/logo.png">
+    <!-- Twitter metatags -->
+    <meta name=”twitter:card” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products.">
+    <meta name=”twitter:url” content="www.icalialabs.com">
+    <meta name=”twitter:title” content=”Icalia Labs”>
+    <meta name=”twitter:description” content="Your vision into action. Icalia Labs is a product design and development firm. We guide our clients through an agile process leveraging opportunities with digital products.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="twitter:image" content="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/logo.png">
 
-<title>Icalia Labs</title>
-<link rel="icon" href="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/favicon.ico">
-<%= stylesheet_link_tag :site %>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-<script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <title>Icalia Labs</title>
+    <link rel="icon" href="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/favicon.ico">
+    <%= stylesheet_link_tag :site %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-   ga('create', 'UA-32608013-1', 'auto');
-   ga('send', 'pageview');
-</script>
-</head>
-<body class="<%= current_page.data.type %>">
-  <header class="main-menu">
-    <a href='/'>
-      <%= partial "logo" %>
-    </a>
-    <div class="burger">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-    </div>
-  </header>
-  <nav class="menu-overlay">
-    <div class="container">
-      <div class="menu-content">
-        <h4 class="menu-title">Menu</h4>
-        <a href="/" class="animsition-link">Home</a>
-        <a href="process.html" class="animsition-link">Process</a>
-        <a href="culture.html">Culture</a>
-        <a href="projects.html">Work</a>
-        <a href="team.html">Team</a>
-        <a href="contact.html">Contact</a>
-        <div class="social-info">
-          <a href="https://twitter.com/icalialabs">Twitter</a>
-          <a href="https://github.com/IcaliaLabs/">Github</a>
-          <a href="https://www.facebook.com/icalialabs">Facebook</a>
-          <a href="https://medium.com/icalia-labs">Medium</a>
+       ga('create', 'UA-32608013-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+  </head>
+  <body class="<%= current_page.data.type %>">
+    <header class="main-menu">
+      <a href='/'>
+        <%= partial "logo" %>
+      </a>
+      <div class="burger">
+        <div class="one"></div>
+        <div class="two"></div>
+        <span class="burger-label">Menu</span>
+      </div>
+    </header>
+    <nav class="menu-overlay">
+      <div class="container">
+        <div class="menu-content">
+          <h4 class="menu-title">Menu</h4>
+          <a href="/" class="animsition-link">Home</a>
+          <a href="process.html" class="animsition-link">Process</a>
+          <a href="culture.html">Culture</a>
+          <a href="projects.html">Work</a>
+          <a href="team.html">Team</a>
+          <a href="contact.html">Contact</a>
+          <div class="social-info">
+            <a href="https://twitter.com/icalialabs">Twitter</a>
+            <a href="https://github.com/IcaliaLabs/">Github</a>
+            <a href="https://www.facebook.com/icalialabs">Facebook</a>
+            <a href="https://medium.com/icalia-labs">Medium</a>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <%= yield %>
+    <%= yield %>
 
-  <img class="to-top" src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/top.png" alt="Back to top">
-  <footer class="footer">
-    <div class="container row clearfix">
-      <div class="col-6">
-        <a href="contact.html" class="contact-link">Do you have an awesome idea? Drink a beer with us.</a>
-        <div class="social-icons-footer">
-          <a href="https://www.facebook.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/fb-icon.png" alt="Icalia Labs on Facebook" title="Icalia Labs on Facebook"></a>
-          <a href="https://twitter.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/tw-icon.png" alt="Icalia Labs on Twitter" title="Icalia Labs on Twitter"></a>
-          <a href="http://blog.icalialabs.com/"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/blog-icon.png" alt="Icalia Labs Blog" title="Icalia Labs Blog"></a>
-          <a href="https://dribbble.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/dribbble-icon.png" alt="Icalia Labs on Dribbble" title="Icalia Labs on Dribbble"></a>
-          <a href="http://instagram.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/instagram-icon.png" alt="Icalia Labs on Instagram" title="Icalia Labs on Instagram"></a>
-          <a href="https://github.com/IcaliaLabs/"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/github-icon.png" alt="Icalia Labs on Github" title="Icalia Labs on Github"></a>
+    <img class="to-top" src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/top.png" alt="Back to top">
+    <footer class="footer">
+      <div class="container row clearfix">
+        <div class="col-6">
+          <a href="contact.html" class="contact-link">Do you have an awesome idea? Drink a beer with us.</a>
+          <div class="social-icons-footer">
+            <a href="https://www.facebook.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/fb-icon.png" alt="Icalia Labs on Facebook" title="Icalia Labs on Facebook"></a>
+            <a href="https://twitter.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/tw-icon.png" alt="Icalia Labs on Twitter" title="Icalia Labs on Twitter"></a>
+            <a href="http://blog.icalialabs.com/"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/blog-icon.png" alt="Icalia Labs Blog" title="Icalia Labs Blog"></a>
+            <a href="https://dribbble.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/dribbble-icon.png" alt="Icalia Labs on Dribbble" title="Icalia Labs on Dribbble"></a>
+            <a href="http://instagram.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/instagram-icon.png" alt="Icalia Labs on Instagram" title="Icalia Labs on Instagram"></a>
+            <a href="https://github.com/IcaliaLabs/"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/github-icon.png" alt="Icalia Labs on Github" title="Icalia Labs on Github"></a>
+          </div>
+          <a href="mailto:weare@icalialabs.com" class="downcase" target="_blank">weare@icalialabs.com</a><br/>
+          <a href="tel://+52 01 (81) 2089 8857"> +52 01 (81) 2089 8857</a>
         </div>
-        <a href="mailto:weare@icalialabs.com" class="downcase" target="_blank">weare@icalialabs.com</a><br/>
-        <a href="tel://+52 01 (81) 2089 8857"> +52 01 (81) 2089 8857</a>
+        <div class="col-6 align-right">
+          <p><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/hecho-mexico.png" alt="Hecho en Mexico" title="Hecho en Mexico"></p>
+          <span>© 2015 IcaliaLabs</span>
+        </div>
       </div>
-      <div class="col-6 align-right">
-        <p><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/hecho-mexico.png" alt="Hecho en Mexico" title="Hecho en Mexico"></p>
-        <span>© 2015 IcaliaLabs</span>
-      </div>
-    </div>
-  </footer>
-  <script>
-    (function(t,a,l,k,u,s,_){if(!t[u]){t[u]=function(){(t[u].q=t[u].q||[]).push(arguments)},t[u].l=1*new Date();s=a.createElement(l),_=a.getElementsByTagName(l)[0];s.async=1;s.src=k;_.parentNode.insertBefore(s,_)}})(window,document,'script','//www.talkus.io/plugin.js','talkus');
-    talkus('create', 'RCdYbQnW8zHYkusXR');
-  </script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <%= javascript_include_tag :all %>
-  <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
-</body>
+    </footer>
+    <script>
+      (function(t,a,l,k,u,s,_){if(!t[u]){t[u]=function(){(t[u].q=t[u].q||[]).push(arguments)},t[u].l=1*new Date();s=a.createElement(l),_=a.getElementsByTagName(l)[0];s.async=1;s.src=k;_.parentNode.insertBefore(s,_)}})(window,document,'script','//www.talkus.io/plugin.js','talkus');
+      talkus('create', 'RCdYbQnW8zHYkusXR');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <%= javascript_include_tag :all %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+  </body>
 </html>

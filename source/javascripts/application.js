@@ -76,9 +76,9 @@ jQuery(document).ready(function() {
     $('.menu-content').toggleClass('show-menu animated bounceInDown');
     $('.main-menu').toggleClass('active');
     $('.burger').toggleClass('active');
-    $('.burger > .one').toggleClass('one-active');
-    $('.burger > .two').toggleClass('hide-two');
-    $('.burger > .three').toggleClass('three-active');
+    $('.burger > .one').toggleClass('active');
+    $('.burger > .two').toggleClass('active');
+    $('.burger > .burger-label').toggleClass('active');
     return e.preventDefault();
   });
   $('.mask, span.circle').on('click', function(e) {

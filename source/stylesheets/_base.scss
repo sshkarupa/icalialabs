@@ -5,7 +5,6 @@
 
 html {
   font-size: 16px;
-  //border: 15px solid #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,7 +12,6 @@ html {
 body, input {
   font-family: 'Open Sans', sans-serif;
   &.index {
-
     .index-background {
       background: #e60038;
       background-size: 100%;
@@ -104,25 +102,15 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 }
 
-.capital {
-  text-transform: uppercase;
-}
-
-.text-center {
-  text-align: center;
-}
+.capital { text-transform: uppercase; }
+.text-center { text-align: center; }
 
 .vertical-align {
   @include vertical-align;
 }
 
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
-}
+.pull-right { float: right; }
+.pull-left { float: left; }
 
 .big-header {
   color: #FFF;
@@ -145,14 +133,13 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 .menu-overlay {
   position: fixed;
-  background: rgba(230,0,56,0.9);
+  background: $menu-bg-color;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: 300;
   display: none;
 
 
   .menu-content {
-    text-align: center;
     color: $secondary-color;
     padding: 100px 0px;
     display: none;
@@ -160,22 +147,17 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 
   a {
-    font-size: 3em;
-    color: #fff;
+    font-size: 2em;
+    color: $primary-color;
     display: block;
     font-weight: 700;
     margin: 10px 0px;
     text-decoration: none;
-
-    &:hover {
-      @include transform(scale(1.05));
-    }
   }
 
   .social-info a {
     display: inline-block;
     font-size: 2em;
-    margin: 20px 30px;
   }
 }
 
@@ -208,58 +190,58 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
     svg {
       fill: white;
-      width: 60px;
-      height: 60px;
+      width: 30px;
+      height: 30px;
       margin-top: 10px;
     }
 
   }
 
   .burger {
-    width: 45px;
     position: absolute;
+    width: 30px;
     right: 40px;
     display: inline-block;
     z-index: 300;
     top: 20px;
     @include transform-origin(center, 25%);
-
-    &:hover {
-      opacity: 0.7;
-      cursor: pointer;
-    }
-
-    .one, .two, .three {
-      width: 35px;
-      height: 5px;
-      background: #FFF;
-      margin: 5px;
+    
+    .one, .two {
+      height: 2px;
+      background: #fff;
+      margin: 10px 0px;
       position: relative;
-      @include transition(all 0.5s ease-in-out);
+      @include transition(all 0.3s ease-in-out);
+    }
+    
+    .burger-label {
+      @include transform(rotate(90deg)translateX(50%));
+      @include transition(all 0.3s ease-in-out);
+      color: #fff;
+      display: block;
+      margin: 0 auto;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 0.7em;
+      letter-spacing: 2px;
     }
 
-    &.active {
-      @include animation(spin 0.5s ease-in-out);
-      top: 20px;
+     &:hover > .one  {@include transform(translateY(200%)translateX(-20%));}
+     &:hover > .two  {@include transform(translateY(200%));}
+     &:hover > .burger-label  {@include transform(rotate(-45deg)translate(10px,-10px));}
 
+    .one.active {
+      background: $primary-color;
+       transform: rotate(45deg);
     }
 
-    .one-active {
-      @include animation(rotate-left .5s ease-in);
-      animation-delay: 0.1s;
-      z-index: 999;;
+    .two.active {
+      background: $primary-color;
+       transform: rotate(-45deg)translate(-10px);
     }
 
-    .three-active {
-      @include animation(rotate-right .5s ease-in);
-      animation-delay: 0.1s;
-      z-index: 999;
-    }
-
-    .hide-two {
-      @include animation(hide .5s ease-in);
-      animation-delay: 0.1s;
-      z-index: 999;
+    .burger-label.active {
+      color: $primary-color;
     }
   }
 }
@@ -284,21 +266,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       }
     }
   }
-}
-
-.one-active {
-  @include transform(rotate(45deg));
-}
-
-.hide-two {
-  opacity: 0;
-}
-
-
-.three-active {
-  @include transform(rotate(-45deg));
-  right: 0px;
-  top: -20px;
 }
 
 // ######## Load Image ############
@@ -414,45 +381,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 }
 
-
-@include keyframes(spin) {
-
-  0% {
-    @include transform(rotate(0deg));
-  }
-
-  100% {
-    @include transform(rotate(180deg));
-  }
-}
-
-
-
-@include keyframes(rotate-left) {
-
-  0% { @include transform(rotate(0deg));}
-  100% { @include transform(rotate(45deg));}
-
-}
-
-
-@include keyframes(hide) {
-
-  0% {
-    @include transform(rotate(0deg));
-    top: 0px;
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    @include transform(rotate(90deg));
-    top: 200px;
-  }
-}
 
 @include keyframes(move) {
 
