@@ -145,19 +145,71 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     display: none;
   }
 
-
-  a {
-    font-size: 2em;
-    color: $primary-color;
+  .label-menu {
     display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.2em;
+    color: $primary-color;
     font-weight: 700;
-    margin: 10px 0px;
-    text-decoration: none;
+    transition: all 0.5s ease;
   }
 
-  .social-info a {
-    display: inline-block;
-    font-size: 2em;
+  .menu-content-primary-menu {
+    .list-menu {
+      display: inline-block;
+      width: 24%;
+      vertical-align: top;
+      margin: 3% 0%;
+      opacity: 0;
+      transition: all 0.4s ease;
+      transition-delay: 700ms;
+      transform: translateY(-100%);
+
+      &.show-list-menu {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+
+      .label-menu {
+        font-size: 0.6em;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+      }
+    }
+
+    .big-link {
+      font-size: 3em;
+      color: $primary-color;
+      display: inline-block;
+      font-weight: 700;
+      margin: 10px 0px;
+      text-decoration: none;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+      opacity: 0;
+      transform: translateY(-100%);
+      width: 23%;
+      margin: 3% 0;
+
+      &.l1 {transition-delay: 100ms;}
+      &.l2 {transition-delay: 200ms;}
+      &.l3 {transition-delay: 300ms;}
+      &.l4 {transition-delay: 400ms;}
+      &.l5 {transition-delay: 500ms;}
+      &.l6 {transition-delay: 600ms;}
+
+      &.show-link {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+
+      &:hover > span {
+        transform: translateY(-100%);
+      }
+    }
   }
 }
 
@@ -185,7 +237,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
   .logo {
     position: absolute;
-    left: 40px;
     z-index: 100;
 
     svg {
@@ -193,6 +244,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       width: 30px;
       height: 30px;
       margin-top: 10px;
+    }
+
+    &.active > svg {
+      fill: $primary-color;
     }
 
   }
@@ -228,20 +283,23 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
      &:hover > .one  {@include transform(translateY(200%)translateX(-20%));}
      &:hover > .two  {@include transform(translateY(200%));}
-     &:hover > .burger-label  {@include transform(rotate(-45deg)translate(10px,-10px));}
+     &:hover > .burger-label  {@include transform(rotate(0deg));}
 
     .one.active {
       background: $primary-color;
-       transform: rotate(45deg);
+      @include transform(rotate(45deg));
     }
 
     .two.active {
       background: $primary-color;
-       transform: rotate(-45deg)translate(-10px);
+      @include transform(rotate(-45deg)translate(3px, 2px));
+      transform-origin: 0px 0px;
     }
 
     .burger-label.active {
       color: $primary-color;
+      @include transform(rotate(0deg)translateX(-15%));
+
     }
   }
 }
@@ -254,7 +312,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
         fill: $primary-color;
       }
     }
-
     .burger {
       .one, .two, .three {
         background: $primary-color;
@@ -343,9 +400,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 }
 
-
 // ############ Animations ##################
-
 @include keyframes(bounceInDown) {
   0% {
     opacity: 0;
@@ -462,6 +517,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   }
 
   .menu-overlay {
+    
     a {
       margin: 0 0;
     }

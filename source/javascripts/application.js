@@ -73,7 +73,12 @@ jQuery(document).ready(function() {
   }
   $('.burger').on('click', function(e) {
     $('.menu-overlay').toggleClass('show-menu');
-    $('.menu-content').toggleClass('show-menu animated bounceInDown');
+    $('.menu-content').toggleClass('show-menu');
+    $('.logo').toggleClass('active');
+    setTimeout(function(){
+      $('.menu-content a').toggleClass('show-link');
+      $('.menu-content .list-menu').toggleClass('show-list-menu');
+    }, 200);
     $('.main-menu').toggleClass('active');
     $('.burger').toggleClass('active');
     $('.burger > .one').toggleClass('active');
@@ -81,6 +86,8 @@ jQuery(document).ready(function() {
     $('.burger > .burger-label').toggleClass('active');
     return e.preventDefault();
   });
+
+
   $('.mask, span.circle').on('click', function(e) {
     var mask;
     if ($(this).hasClass('mask')) {
