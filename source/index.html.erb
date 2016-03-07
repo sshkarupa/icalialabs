@@ -3,173 +3,18 @@ layout: application
 title: Icalia Labs
 type: index
 ---
-<!-- Advantages modals  -->
-<div class="simple-modal modal" id="modal-engage">
-  <div class="modal-header">
-    <h3>Engage.</h3>
-  </div>
-  <div class="modal-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a class="modal-close">Close</a>
-  </div>
-</div>
-
-<div class="simple-modal modal" id="modal-experience">
-  <div class="modal-header">
-    <h3>Experience.</h3>
-  </div>
-  <div class="modal-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-    <a class="modal-close">Close</a>
-  </div>
-</div>
-
-<div class="simple-modal modal" id="modal-knowledge">
-  <div class="modal-header">
-    <h3>Knowledge.</h3>
-  </div>
-  <div class="modal-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a class="modal-close">Close</a>
-  </div>
-</div>
-<!-- End of advantages modals -->
-
 <div class="index-background">
   <section class="intro row">
-    <div class="curtain"></div>
-    <video autoplay muted loop>
+    <!-- <video autoplay muted loop>
       <source src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/loop.mp4">
       <source src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/loop.webmhd.webm">
-    </video>
+    </video> -->
+    <canvas id="particles"></canvas>
     <div class="container">
-      <div class="intro-content">
-        <h1 class="big-header">Your vision into action.</h1>
-        <p class="big-tagline">We guide our clients through an agile process, staying ahead of their competition and leveraging opportunities with digital products.</p>
-        <button class="action-btn">Play Video.</button>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="advantages row">
-    <h4 class="title-advantages">Our Advantages</h4>
-    <div class="container row clearfix">
-      <div class="card engage col-4">
-        <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/engage.png" alt="Relationship" title="Relationship" class="icon">
-        <h4 class="card-title red">Relationship.</h4>
-        <p>More than a service provider we like to be your strategic partner along the way.</p>
-        <!--{% comment %}<a class="card-link modal-trigger" data-furatto="modal" data-target="#modal-engage">See More</a>{% endcomment %} -->
-      </div>
-      <div class="card experience col-4">
-        <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/experience.png" alt="Lineup" title="Lineup" class="icon">
-        <h4 class="card-title red">Lineup.</h4>
-        <p>Providing you the most desired team, caring about decisions within the products.</p>
-        <!--{% comment %}<a class="card-link modal-trigger" data-target="#modal-experience" data-furatto="modal">See More</a>{% endcomment %} -->
-      </div>
-      <div class="card knowledge col-4">
-        <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/knowledge.png" alt="Practices" title="Practices" class="icon">
-        <h4 class="card-title red">Practices.</h4>
-        <p>We understand the importance of deliverables, management and collaboration.</p>
-        <!--{% comment %}<a class="card-link modal-trigger" data-target="#modal-knowledge" data-furatto="modal">See More</a>{% endcomment %} -->
+      <div class="intro-content vertical-align">
+        <h4 class="intro-content_subtitle animated fadeInDown">Hack & Design</h4>
+        <h2 class="intro-content_title animated fadeInUp">We Craft Amazing Software <br> to empower your <span id="intro-text"></span></h2>
       </div>
     </div>
   </section>
 </div>
-
-
-<div class="load-mask"></div>
-
-
-<section class="work">
-  <div class="suraido-container work-slider" data-suraido>
-    <ul>
-      <li class="item-slide printoo">
-      <h2 class="big-header">Printoo</h2>
-      <p class="big-tagline">Your favorite photos from your phone delivered to your home, free.</p>
-      <a class="action-btn" href="projects.html">More about our work</a>
-      </li>
-      <li class="item-slide ovatemp" >
-      <h2 class="big-header">Ovatemp</h2>
-      <p class="big-tagline">Helps you to naturally take control of your reproductive health.</p>
-      <a class="action-btn" href="projects.html">More about our work</a>
-      </li>
-      <li class="item-slide repair">
-      <h2 class="big-header">Repairshopr</h2>
-      <p class="big-tagline">The Most Complete Repair Shop Software as a Service Platform Available.</p>
-      <a class="action-btn" href="projects.html">More about our work</a>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="skills clearfix row visible-on-large">
-  <div class="mask col-6">
-    <div class="technology skill row">
-      <div class="col-6 text-center">
-        
-        <%= partial "developer-skill" %>
-        <h4>Technology</h4>
-        <p class="tagline visible-on-large">Understanding the problem</p>
-      </div>
-      <div class="col-6">
-        <p class="more vertical-align">We believe in products able to change and ready to scale based on their demand. We cannot build a product without prioritazing the most important functions and the way to measure them in order to make a possitive impact in the people willing to use it.</p>
-      </div>
-    </div>
-  </div>
-
-  <span class="fusion circle"><span>Perfect Balance</span></span>
-
-  <div class="mask col-6">
-    <div class="aesthetics skill row">
-      <div class="col-6 text-center">
-        <%= partial "design-skill" %>
-        <h4>Aesthetics</h4>
-        <p class="tagline visible-on-large">Understanding the user</p>
-      </div>
-      <div class="col-6">
-        <p class="more vertical-align">We believe not only in working products, but also usable, useful and intuitive experiences. We live in a world where people don't need to adapt to the technology, it is the technology the one that will adapt to the user conditions. Design is the discipline making this possible.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="testimonials row clearfix">
-  <h3 class="title-advantages">Testimonials</h3>
-  <div class="col-12 quote-container active gidit" id="">
-    <div class="quote vertical-align">
-      <blockquote>
-        <p>
-        "Icalia has a great team with passionate, experienced and honest people. Not only did they do a great job at designing and developing the app, but they helped us through the entire app deployment process."
-        </p>
-        <footer class="cite">
-          <span>Javier Ramirez / <strong>CEO Gidit</strong></span>
-        </footer>
-      </blockquote>
-    </div>
-  </div>
-  <div class="col-12 quote-container printoo">
-    <div class="quote vertical-align">
-      <blockquote>
-        <p>
-        "I used to have some tech partners issues. Now I can focus on my startup strategy and just trust in this guys; as an start-up CEO there is not such a good felling."
-        </p>
-        <footer class="cite">
-          <span>José Miguel Sainz / <strong>CEO & Co-founder Printoo</strong></span>
-        </footer>
-      </blockquote>
-    </div>
-  </div>
-  <div class="picture col-12 hidden-on-xsmall hidden-on-small">
-    <div class="testimonial-photo active" id="gidit">
-      <div class='tooltip'></div>
-      <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/testimonial.png" alt="Testimonial" />
-    </div>
-    <div class="testimonial-photo" id="printoo">
-      <div class="tooltip"></div>
-      <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/testimonials-pato-black.png" alt="Testimonial"/>
-    </div>
-    <!--div class="fake-skew-right"></div-->
-  </div>
-  </div>
-</section>

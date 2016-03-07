@@ -13,7 +13,7 @@ body, input {
   font-family: 'Open Sans', sans-serif;
   &.index {
     .index-background {
-      background: #e60038;
+      background: $primary-color;
       background-size: 100%;
       background-attachment: fixed;
     }
@@ -217,12 +217,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   display: block !important;
 }
 
-.index {
-  .main-menu {
-    @include animation(bounceInDown 2s);
-  }
-}
-
 .main-menu {
   position: relative;
   width: 90%;
@@ -249,7 +243,35 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     &.active > svg {
       fill: $primary-color;
     }
+  }
 
+  .logo-menu {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    animation: bounceInDown 1.5s ease;
+
+    &:before {
+      content:'/';
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0px 20px;
+      animation: bounceInDown 1.5s ease;
+      transition: all 0.4s ease;
+
+      &:hover {
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(1) {animation-delay: 100ms;}
+      &:nth-child(2) {animation-delay: 200ms;}
+    }
   }
 
   .burger {

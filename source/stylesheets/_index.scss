@@ -2,382 +2,44 @@
 
 .intro {
   text-align: center;
-  background: url(https://s3.amazonaws.com/icalia/assets/img/bg.png) no-repeat center;
+  // background: url(https://s3.amazonaws.com/icalia/assets/img/bg.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
   position: relative;
 
-  video, object {
+  video, object, .particles {
     position: fixed;
     top:0;
     left: 0;
-    //right: 0;
-    //bottom: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
   }
 
-  .curtain{
-    width: 100%;
-    height: 100%;
-    background: rgba(230, 0, 56, 0.54);
-    position: absolute;
-    z-index: 1;
-  }
-
   .intro-content {
-    padding: 15rem 0;
     z-index: 1;
-    position: relative;
-  }
+    position: absolute;
+    width: 100%;
+    left: 0;
 
-  .action-btn {
-    display: none;
-  }
+    &_subtitle {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 0.8em;
+      letter-spacing:0.5em; 
+    }
 
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-    color: #fff;
-    position: relative;
-    z-index: 200;
+    &_title {
+      color: #fff;
+      font-size: 2em;
+    }
   }
-
 }
 
 // ############ Advantages ##################
 
-.title-advantages {
-  color: $primary-color;
-  text-align: center;
-  background: #fff;
-  padding: 50px 0 0 0;
-}
-
-.advantages {
-  text-align: center;
-  position: relative;
-  background: #fff;
-
-  .card {
-    padding: 4.25rem 0;
-    display: inline-block;
-    vertical-align: top;
-    @include transition(all 0.3s ease);
-    opacity: 0.7;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &.experience {
-      @include animation-delay(0.3s);
-    }
-
-    &.knowledge {
-      @include animation-delay(0.7s);
-    }
-
-    .icon {
-      @include transition(all 0.3s ease);
-      margin-bottom: 1rem;
-      display: inline-block;
-    }
-
-    .card-title {
-      margin-bottom: 2rem;
-      display: block;
-    }
-
-    p {
-      font-size: 1.5rem;
-      width: 80%;
-      margin: 0 auto;
-      color: rgba(0,0,0,0.7);
-      margin-bottom: 1rem;
-      font-weight: 100;
-    }
-
-    .card-link{
-      color: $primary-color;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      border: 1px solid $primary-color;
-      padding: 5px 10px;
-      border-radius: 100px;
-
-      &:hover {
-        background: $primary-color;
-        color: #fff;   
-      }
-    }
-  }
-}
-
-
-//#################### Skills ##################################
-.skills {
-  position: relative;
-  width: 100%;
-  height: 550px;
-  overflow: hidden;
-
-  .design-badge {
-    padding-top: 50px;
-    svg path {
-      fill: $primary-color;
-    }
-  }
-
-  .developer-badge {
-    padding-top: 50px;
-    svg path {
-      fill: $primary-color;
-    }
-  }
-
-  .mask {
-    background: #FFF;
-    @include transition(width 1s ease-in-out);
-    cursor: pointer;
-    float: left;
-    display: inline-block;
-    height: 550px;
-    padding: 0;
-    text-align: center;
-
-    &.hide {
-      width: 0;
-    }
-
-    &:hover {
-      background: $primary-color;
-
-      .skill .tagline {
-        color: #FFF;
-      }
-
-      .developer-badge svg path, .design-badge svg path {
-        fill: #FFF;
-      }
-    }
-
-
-    .more {
-      position: absolute;
-      display: none;
-      top: 50%;
-      z-index: -1;
-      padding: 0px 100px;
-      font-weight: 100;
-      font-size: 1.4em;
-
-      &.push-front {
-        z-index: 1;
-        display: block;
-      }
-    }
-  }
-
-  .skill {
-    position: absolute;
-    top: 0;
-    @include transition(width 0.5s ease-in-out);
-    width: 100%;
-
-    &.hide-all {
-      display: none;
-    }
-
-    h4 {
-      padding: 20px 0;
-    }
-
-    .tagline {
-      color: rgba(0,0,0,0.7);
-    }
-
-  }
-
-  .expand-content {
-    background: $primary-color;
-    color: #FFF;
-    display: block;
-    opacity: 1;
-    @include transition(width 1s ease-in-out);
-    width: 100%;
-
-    .developer-badge svg path, .design-badge svg path {
-      fill: #fff;
-    }
-
-    .more {
-      display: block;
-      z-index: 1;
-    }
-  }
-
-  .fusion {
-    background: #000;
-    color: #FFF;
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    text-transform: uppercase;
-
-    &.circle {
-      border-radius: 50%;
-      right: 47%;
-      position: absolute;
-      top: 35%;
-      @include transition(1s ease-in-out);
-      line-height: 80px;
-      text-align: center;
-      font-size: 12px;
-      z-index: 100;
-
-      span {
-        line-height: normal;
-        display:inline-block;
-        vertical-align: middle;
-        font-weight: 600;
-      }
-
-      &.move-left {
-        cursor: pointer;
-        @include transform(translate(600px, -200px));
-        @include transform(scale(0.5));
-        top: 0;
-        right: 0;
-        font-size: 16px;
-      }
-
-      &.move-right {
-        cursor: pointer;
-        @include transform(scale(0.5));
-        top:0;
-        right: 93%;
-        font-size: 24px;
-      }
-    }
-  }
-}
-
-//########################Testimonials###########
-
-.testimonials {
-  border-top: 1px solid rgba(0,0,0,0.1);
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  background: white;
-  position: relative;
-
-  @media only screen 
-  and (max-device-width : 667px){
-    height: 550px;
-  }
-
-  &.row {
-    margin: 0;
-  }
-
-  .picture {
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    height: auto;
-    text-align: center;
-    padding-bottom: 100px;
-
-    .testimonial-photo {
-      width: 8%;
-      height: auto;
-      cursor: pointer;
-      position: relative;
-      display: inline-block;
-
-      img{
-        @include border-radius(100%);
-      }
-
-      &.active .tooltip {
-        content: "";
-        display: block;
-        /* height: 20px; */
-        /* width: 20px; */
-        border-style: solid;
-        border-width: 20px 20px 0 20px;
-        border-color: #ffffff transparent transparent transparent;
-        position: absolute;
-        left: 30px;
-        /* right: 0; */
-        /* top: -11px; */
-        /* bottom: 0; */
-      }
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-
-  .fake-skew {
-    width: 200px;
-    right: -135px;
-    top: 0;
-    @include transform(skew(-10deg));
-    position: absolute;
-    bottom: 0;
-    background: #fff;
-  }
-
-  .fake-skew-right {
-    width: 200px;
-    left: -135px;
-    top: 0;
-    @include transform(skew(10deg));
-    position: absolute;
-    bottom: 0;
-    background: #fff;
-  }
-
-  .quote-container {
-    height: 340px;
-    position: relative;
-    padding: 20px;
-    display: none;
-
-    &.active {
-      display: block;
-    }
-  }
-
-  .quote {
-
-    blockquote {
-      padding: 15%;
-
-      p {
-        color: $primary-color;
-        font-size: 2em;
-        padding: 2rem 0;
-        font-weight: 100;
-      }
-
-      .cite {
-        color: #000;
-        padding: 0px 10px;
-        text-align: left;
-      }
-    }
-  }
-
-}
 @include max-screen($small-screen) {
   .testimonials {
     .quote-container {
