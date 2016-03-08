@@ -17,7 +17,7 @@
     </script>
   </head>
   <body class="<%= current_page.data.type %>">
-    <header class="main-menu">
+    <header class="main-menu animated bounceInDown">
       <a href='/'><%= partial "logo" %></a>
       <nav class="logo-menu">
         <a href="#">For Startups</a>
@@ -57,26 +57,8 @@
 
     <%= yield %>
 
-    <img class="to-top" src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/top.png" alt="Back to top">
     <footer class="footer">
       <div class="container row clearfix">
-        <div class="col-6">
-          <a href="contact.html" class="contact-link">Do you have an awesome idea? Drink a beer with us.</a>
-          <div class="social-icons-footer">
-            <a href="https://www.facebook.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/fb-icon.png" alt="Icalia Labs on Facebook" title="Icalia Labs on Facebook"></a>
-            <a href="https://twitter.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/tw-icon.png" alt="Icalia Labs on Twitter" title="Icalia Labs on Twitter"></a>
-            <a href="http://blog.icalialabs.com/"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/blog-icon.png" alt="Icalia Labs Blog" title="Icalia Labs Blog"></a>
-            <a href="https://dribbble.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/dribbble-icon.png" alt="Icalia Labs on Dribbble" title="Icalia Labs on Dribbble"></a>
-            <a href="http://instagram.com/icalialabs"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/instagram-icon.png" alt="Icalia Labs on Instagram" title="Icalia Labs on Instagram"></a>
-            <a href="https://github.com/IcaliaLabs/"><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/github-icon.png" alt="Icalia Labs on Github" title="Icalia Labs on Github"></a>
-          </div>
-          <a href="mailto:weare@icalialabs.com" class="downcase" target="_blank">weare@icalialabs.com</a><br/>
-          <a href="tel://+52 01 (81) 2089 8857"> +52 01 (81) 2089 8857</a>
-        </div>
-        <div class="col-6 align-right">
-          <p><img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/hecho-mexico.png" alt="Hecho en Mexico" title="Hecho en Mexico"></p>
-          <span>© 2015 IcaliaLabs</span>
-        </div>
       </div>
     </footer>
     <script>
@@ -98,5 +80,6 @@
       });
     </script>
     <script src="javascripts/canvas.js"></script>
+    <script src="javascripts/words.js"></script>
   </body>
 </html>

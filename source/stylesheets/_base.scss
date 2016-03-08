@@ -163,7 +163,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       margin: 3% 0%;
       opacity: 0;
       transition: all 0.4s ease;
-      transition-delay: 700ms;
+      transition-delay: 800ms;
       transform: translateY(-100%);
 
       &.show-list-menu {
@@ -222,6 +222,11 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   width: 90%;
   margin: 0 auto;
   z-index: 310;
+  height: auto;
+  padding: 30px 0px;
+  position: absolute;
+  left: 5%;
+  top: 10px;
 
   &.active {
     left: 0;
@@ -230,8 +235,9 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   }
 
   .logo {
-    position: absolute;
+    position: relative;
     z-index: 100;
+    display: inline-block;
 
     svg {
       fill: white;
@@ -248,7 +254,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   .logo-menu {
     position: absolute;
     left: 50px;
-    top: 50px;
+
     animation: bounceInDown 1.5s ease;
 
     &:before {
@@ -266,7 +272,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       transition: all 0.4s ease;
 
       &:hover {
-        transform: translateY(-50%);
+        transform: translateX(10%);
       }
 
       &:nth-child(1) {animation-delay: 100ms;}
@@ -280,7 +286,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     right: 40px;
     display: inline-block;
     z-index: 300;
-    top: 20px;
+    top: 38px;
     @include transform-origin(center, 25%);
     
     .one, .two {
@@ -423,6 +429,9 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 }
 
 // ############ Animations ##################
+
+
+
 @include keyframes(bounceInDown) {
   0% {
     opacity: 0;
