@@ -375,57 +375,22 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   z-index: 200;
 }
 
-.to-top {
-  bottom: 30px;
-  height: 50px;
-  position: fixed;
-  right: 30px;
-  opacity: 0;
-  visibility: hidden;
-  width: 50px;
 
-  &.show {
-    cursor: pointer;
-    opacity: 1;
-    visibility: visible;
+.main-footer {
+  background: #250606;
+
+  .logo > svg {
+    fill: $primary-color;
+    width: 60px;
+    height: 60px;
   }
-}
-
-.footer {
-  background: #fff;
-  color: $primary-color;
-  text-transform: uppercase;
-  padding: 2rem 0;
-  position:relative;
-
-  p, a {
-    font-size: 16px;
-  }
-
-  .contact-link {
-    border: 1px solid;
-    @include border-radius(3px);
-    color: $primary-color;
+  
+  .direction, a, .nav-title {
+    color: rgba(255,255,255,0.5);
+    font-size: 1em;
+    display: block;
     text-decoration: none;
-    padding: 15px;
-    display: inline-block;
   }
-
-  .social-icons-footer {
-    margin: 20px 0px;
-    display: inline-block;
-
-    a {
-      margin: 10px 5px;
-      display: inline-block;
-      opacity: 0.8;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-
 }
 
 // ############ Animations ##################
