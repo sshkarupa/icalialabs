@@ -55,6 +55,10 @@
       </div>
     </nav>
 
+    <aside class="indicator">
+      <span class="indicator_number"></span>
+      <span class="indicator_title"></span>
+    </aside>
     <%= yield %>
 
     <footer class="main-footer">
@@ -109,5 +113,9 @@
     </script>
     <script src="javascripts/canvas.js"></script>
     <script src="javascripts/words.js"></script>
+    <script src="javascripts/skrollr.js"></script>
+    <script type="text/javascript">
+       var s = skrollr.init();
+    </script>
   </body>
 </html>

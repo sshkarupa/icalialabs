@@ -3,7 +3,7 @@ layout: application
 title: Icalia Labs
 type: index
 ---
-<div class="index-background">
+<section data-section="home" class="index-background">
   <section class="intro row">
     <!-- <video autoplay muted loop>
       <source src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/loop.mp4">
@@ -17,8 +17,8 @@ type: index
       </div>
     </div>
   </section>
-</div>
-<section class="clients-section">
+</section>
+<section data-section="clients" class="clients-section">
   <div class="container">
     <h4 class="section-title white">Our clients</h4>
     <div class="cd-intro">
@@ -40,5 +40,83 @@ type: index
       <%= image_tag 'logo7.png', class: 'clients-logos_item animated'%>
       <%= image_tag 'logo8.png', class: 'clients-logos_item animated'%>
     </article>
+    <div class="call-buttons-group red">
+      <a href="#" class="left">Get a quote</a>
+      <i class="sep"></i>
+      <a href="#" class="right">View our work</a>
+    </div>
+  </div>
+</section>
+<section class="areas-section">
+  <div class="areas-container">
+    <div class="vertical-align" id="areas-info" data-1000="opacity:0;" data-1100="opacity:1;">
+      <h2 class="big-title">WE ARE</h2>
+      <a class="action-btn">About our process</a>
+    </div>
+    <article class="area-element" id="ar-1" data-800="top:60%;" data-1000="top:50%;">
+      <h2>Design</h2>
+    </article>
+    <article class="area-element" id="ar-2" data-800="top:70%;" data-1000="top:35%;">
+      <h2>Business</h2>
+    </article>
+    <article class="area-element" id="ar-3" data-800="top:60%;" data-1000="top:78%;">
+      <h2>Intelligence</h2>
+    </article>
+    <article class="area-element" id="ar-4" data-800="top:60%;" data-1000="top:38%;">
+      <h2>Development</h2>
+    </article>
+    <article class="area-element" id="ar-5" data-800="top:60%;" data-1000="top:67%;">
+      <h2>Labs</h2>
+    </article>
+  </div>
+</section>
+<section data-section="stats" class="stats-section">
+  <h4 class="section-title white text-center">Icalia over the time</h4>
+  <div class="stats-container clearfix">
+    <div class="stat-item">
+      <span class="stat-item-number">50</span>
+      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item-number">1,500</span>
+      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item-number">1,500</span>
+      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item-number">1,500</span>
+      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item-number">$2m</span>
+      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
+    </div>
+    <div class="stat-item">
+      <span class="stat-item-number">500</span>
+      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
+    </div>
+  </div>
+</section>
+<section class="quotes">
+    <h4 class="section-title white text-center">Our client says</h4>
+    <article class="quote-item">
+      <div class="container">
+        <h4 class="quote-item-text">“I’m astounded by the creativity and quality of MetaLab’s work.”</h4>
+        <div class="quite-item-info">
+          <img src="http://metalab.co/images/testimonials/david_karp-9c8ff1e8.jpg" class="quote-item-avatar">
+          <span class="quote-item-name">David Karp, CEO, Tumblr</span>
+        </div>
+      </div>
+    </article>
+</section>
+<section class="contact-section">
+  <h4 class="section-title white text-center">We can work together</h4>
+  <h2 class="contact-section-title">We can make something great take the first step</h2>
+  <div class="call-buttons-group white">
+    <a href="#" class="left">Get a quote</a>
+    <i class="sep"></i>
+    <a href="#" class="right">View our work</a>
   </div>
 </section>

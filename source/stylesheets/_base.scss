@@ -375,9 +375,36 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   z-index: 200;
 }
 
+.indicator {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  z-index: 100;
+
+  &_number {
+    color: #fff;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $primary-color;
+  }
+
+
+  &_title {
+    transform: rotate(-90deg) translate(-150%, 30%);
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    transform-origin: left;
+  }
+}
+
 
 .main-footer {
   background: #250606;
+  padding: 50px 0px;
 
   .logo > svg {
     fill: $primary-color;

@@ -10,6 +10,56 @@
   }
 }
 
+.call-buttons-group {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 100px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:after {
+      content:'';
+      height: 2px;
+      width: 20%;
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      transform: translateX(-50%);
+      transition: all 0.3s ease;
+    }
+
+    &:hover:after {
+      transform: translateX(-50%)scaleX(3);
+    }
+  }
+
+  .sep {
+    width: 2px;
+    height: 3em;
+    display: inline-block;
+    transform: skewX(-15deg);
+    vertical-align: middle;
+  }
+
+  &.red {
+    a {color: $primary-color;&:after{background:$primary-color;}}
+    .sep {background: $primary-color;}
+  }
+
+  &.white {
+    a {color: #fff;&:after{background:#fff;}}
+    .sep {background: #fff;}
+  }
+}
+
 .intro {
   text-align: center;
   // background: url(https://s3.amazonaws.com/icalia/assets/img/bg.png) no-repeat center;
@@ -131,7 +181,6 @@
     vertical-align: top;
 
     &::after {
-      /* loading bar */
       content: '';
       position: absolute;
       left: 0;
@@ -159,5 +208,251 @@
       opacity: 1;
       transform: translateY(0%);
     }
+  }
+}
+
+.stats-section {
+  padding: 50px 0px;
+  background: $primary-color;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content:'';
+    @include background-image(linear-gradient(left,  rgba($primary-color,100%) 0%,rgba($primary-color, 0%) 100%));
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+  }
+
+  &:after {
+    content:'';
+    @include background-image(linear-gradient(left, rgba($primary-color, 0%) 0%,rgba($primary-color, 100%) 100%));
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+  }
+
+  .stats-container {
+    padding: 50px 0px;
+  }
+
+  
+  .stat-item {
+    float: left;
+    margin: 0px 20px;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+    position: relative;
+    transform: scale(0.8);
+
+    &-number {
+      font-size: 2.2em;
+      font-weight: 900;
+      color: #fff;
+    }
+
+    &-label {
+      font-size: 1em;
+      font-weight: 300;
+      color: #fff;
+      border-left: 2px solid #fff;
+      padding-left: 10px;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.areas-section {
+  height: 700px;
+  height: 100vh;
+  position: relative;
+  background: $primary-color;
+}
+
+
+.blobs{
+  filter:url('#goo');
+  -webkit-filter: url("#goo");
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+
+.blob{
+  position:absolute;
+  background: #fff;
+  left:50%;
+  top:50%;
+  width:100px;
+  height:100px;
+  line-height:100px;
+  text-align:center;
+  color:white;
+  font-size:40px;
+  border-radius:100%;
+  margin-top:-50px;
+  margin-left:-50px;
+  transition: all 0.4s ease;
+
+}
+
+.design {
+  transform: scale(1.1) translate(-70px,0);
+}
+
+.development {
+  animation: move 10s ease infinite;
+}
+
+
+.intelligence {
+  transform: scale(1) translate(70px,0px);
+}
+
+.center {
+  transform: scale(2) translate(0px,0px);
+}
+
+
+.areas-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
+
+
+  .big-title {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: lowercase;
+  }
+
+  #areas-info {
+    z-index: 100;
+  }
+
+}
+
+.area-element {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+
+  h2 {
+    font-size: 1em;
+    position: relative;
+    top: 50%;
+    color: #fff;
+  }
+
+  &#ar-1 {
+    width: 188px;
+    height: 334px;
+    left: 26%;
+    background: url(../images/area-design.png) no-repeat center center $primary-color;
+    background-blend-mode: multiply;
+  }
+
+  &#ar-2 {
+    width: 188px;
+    height: 334px;
+    left: 42%;
+    top: 35%;
+    background: url(../images/area-biz.png) no-repeat center center $primary-color;
+    background-blend-mode: multiply;
+  }
+
+  &#ar-3 {
+    width: 334px;
+    height: 188px;
+    top: 78%;
+    left: 48%;
+    background: url(../images/area-int.png) no-repeat center center $primary-color;
+    background-blend-mode: multiply;
+  }
+
+  &#ar-4 {
+    width: 334px;
+    height: 188px;
+    left: 64%;
+    top: 38%;
+    background: url(../images/area-development.png) no-repeat center center $primary-color;
+    background-blend-mode: multiply;
+  }
+
+  &#ar-5 {
+    width: 334px;
+    height: 188px;
+    top: 67%;
+    left: 75%;
+    background: url(../images/area-labs.png) no-repeat center center $primary-color;
+    background-blend-mode: multiply;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.quotes {
+  text-align: center;
+  background: $primary-color;
+  padding: 50px 0px;
+
+  .quote-item {
+    margin: 20px 0px;
+
+    &-text {
+      color: #fff;
+      font-size: 3em;
+      margin: 20px 0px;
+    }
+
+    &-avatar {
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 80px;
+    }
+
+    &-name {
+      font-weight: 600;
+      margin: 10px auto;
+      display: inline-block;
+      color: rgba(0,0,0,0.6);
+      font-size: 0.77em;
+    }
+  }
+}
+
+.contact-section {
+  background: $primary-color;
+  text-align: center;
+  padding: 50px 0px;
+
+  &-title {
+    color: #fff;
+    font-size: 2em;
+    margin: 20px auto;
   }
 }
