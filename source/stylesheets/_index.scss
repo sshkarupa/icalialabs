@@ -2,8 +2,9 @@
 
 .section-title {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.9em;
+  letter-spacing: 0.3em;
+  font-size: 0.7em;
+  color: red;
 
   &.white {
     color: #fff;
@@ -62,7 +63,7 @@
 
 .intro {
   text-align: center;
-  // background: url(https://s3.amazonaws.com/icalia/assets/img/bg.png) no-repeat center;
+  background: url(../images/bg.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -109,7 +110,7 @@
 }
 
 .clients-section {
-  background: #250606;
+  background: #fff;
   padding: 100px 0px;
   text-align: center;
 
@@ -213,13 +214,14 @@
 
 .stats-section {
   padding: 50px 0px;
-  background: $primary-color;
+  background: #fff;
   overflow: hidden;
   position: relative;
+  border-bottom: 1px solid rgba(255,0,0, 0.1);
 
   &:before {
     content:'';
-    @include background-image(linear-gradient(left,  rgba($primary-color,100%) 0%,rgba($primary-color, 0%) 100%));
+    @include background-image(linear-gradient(left,  rgba(#fff,100%) 0%,rgba(#fff, 0%) 100%));
     position: absolute;
     z-index: 10;
     left: 0;
@@ -230,7 +232,7 @@
 
   &:after {
     content:'';
-    @include background-image(linear-gradient(left, rgba($primary-color, 0%) 0%,rgba($primary-color, 100%) 100%));
+    @include background-image(linear-gradient(left, rgba(#fff, 0%) 0%,rgba(#fff, 100%) 100%));
     position: absolute;
     z-index: 10;
     right: 0;
@@ -255,14 +257,14 @@
     &-number {
       font-size: 2.2em;
       font-weight: 900;
-      color: #fff;
+      color: $primary-color;
     }
 
     &-label {
       font-size: 1em;
       font-weight: 300;
-      color: #fff;
-      border-left: 2px solid #fff;
+      color: $primary-color;
+      border-left: 2px solid $primary-color;
       padding-left: 10px;
     }
 
@@ -278,55 +280,8 @@
   height: 100vh;
   position: relative;
   background: $primary-color;
+  border-bottom: 1px solid rgba(255,0,0, 0.1);
 }
-
-
-.blobs{
-  filter:url('#goo');
-  -webkit-filter: url("#goo");
-  position:absolute;
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-}
-
-
-.blob{
-  position:absolute;
-  background: #fff;
-  left:50%;
-  top:50%;
-  width:100px;
-  height:100px;
-  line-height:100px;
-  text-align:center;
-  color:white;
-  font-size:40px;
-  border-radius:100%;
-  margin-top:-50px;
-  margin-left:-50px;
-  transition: all 0.4s ease;
-
-}
-
-.design {
-  transform: scale(1.1) translate(-70px,0);
-}
-
-.development {
-  animation: move 10s ease infinite;
-}
-
-
-.intelligence {
-  transform: scale(1) translate(70px,0px);
-}
-
-.center {
-  transform: scale(2) translate(0px,0px);
-}
-
 
 .areas-container {
   width: 100%;
@@ -416,14 +371,15 @@
 
 .quotes {
   text-align: center;
-  background: $primary-color;
+  background: #fff;
   padding: 50px 0px;
+  border-bottom: 1px solid rgba(255,0,0, 0.1);
 
   .quote-item {
     margin: 20px 0px;
 
     &-text {
-      color: #fff;
+      color: $primary-color;
       font-size: 3em;
       margin: 20px 0px;
     }
@@ -445,13 +401,89 @@
   }
 }
 
-.contact-section {
+
+.selected-works {
+  position: relative;
+
+  .next-arrow, .prev-arrow {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1em;
+  }
+
+  .prev-arrow { left: 3%;}
+  .next-arrow { right: 3%;}
+}
+
+.selected-works-slider {
   background: $primary-color;
+  padding: 100px 0px;
+
+  &-item {
+    outline: 0;
+    padding: 0px 100px;
+
+    &-title {
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      font-weight: 100;
+    }
+
+    &-client {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: #fff;
+      margin: 30px 0px;
+    }
+
+    &-num {
+      font-weight: 900;
+      color: #fff;
+    }
+
+    &-link {
+        text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 20px 0px;
+        position: relative;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        color: #fff;
+
+      &:after {
+        content:'';
+        height: 2px;
+        width: 20%;
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+        transition: all 0.3s ease;
+        background: #fff;
+      }
+
+      &:hover:after {
+        transform: translateX(-50%)scaleX(6);
+      }
+    }
+  }
+}
+
+.contact-section {
+  background: #fff;
   text-align: center;
   padding: 50px 0px;
 
   &-title {
-    color: #fff;
+    color: $primary-color;
     font-size: 2em;
     margin: 20px auto;
   }

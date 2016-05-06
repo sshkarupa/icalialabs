@@ -72,7 +72,7 @@ function Circle(xCoordinate, yCoordinate, radius) {
 
 	this.draw = function() {
 		c.beginPath();
-		c.arc(this.xCoordinate, this.yCoordinate, this.radius, 0, Math.PI * 2)
+		c.arc(this.xCoordinate, this.yCoordinate, this.radius, 0, Math.PI * 3)
 		c.fillStyle = this.color;
 		c.fill();
 	}

@@ -19,10 +19,10 @@ $suraido-pagination-z-index: 20 !default;
 //Dots
 $suraido-dot-size: 0.71428571rem !default;
 $suraido-dot-separation: 0.28571429rem !default;
-$suraido-dot-border-width: 1px !default;
+$suraido-dot-border-width: 0 !default;
 $suraido-dot-border-style: solid !default;
 $suraido-dot-border-color: #fff !default;
-$suraido-dot-radius: 0.42857143rem !default;
+$suraido-dot-radius: 0 !default;
 $suraido-dot-opacity: 0.4 !default;
 $suraido-include-dot-transition: true !default;
 $suraido-dot-transition: background 0.5s, opacity 0.5s !default;
@@ -33,7 +33,7 @@ $suraido-dot-background: transparent;
 //Arrows
 $suraido-arrows-color: #FFF !default;
 $suraido-arrows-z-index: $suraido-pagination-z-index - 10 !default;
-$suraido-arrow-height: 60px !default;
+$suraido-arrow-height: 20px !default;
 $suraido-arrow-line-height: $suraido-arrow-height !default;
 $suraido-next-arrow-padding: 0 !default;
 $suraido-prev-arrow-padding: 0 !default;
@@ -209,7 +209,20 @@ $suraido-caption-background-alpha: 0.5 !default;
     @include slider-pagination;
 
     .dot {
-      @include slider-pagination-dot;
+      background: rgba(255,255,255,0.3);
+      width: 5px;
+      height: 20px;
+      display: inline-block;
+      margin: 0px 10px;
+      color: transparent;
+      transition-property: all;
+      transition-duration: 0.4s;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+      &.active {
+        background: rgba(255,255,255,1);
+        transform: scaleY(1.5);
+      }
     }
   }
 
@@ -224,7 +237,7 @@ $suraido-caption-background-alpha: 0.5 !default;
 
 
 .arrow {
-  width: 60px;
+  width: 20px;
   border-right: 3px solid #fff;
   border-top: 3px solid #fff;
   opacity: 0.5;

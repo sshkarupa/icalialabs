@@ -27,22 +27,35 @@
 }
 
 .culture {
+  .section-header {
+    background: #000;
+  }
 
-  .info {
-    background: url('https://s3.amazonaws.com/icalia/assets/img/bg-culture.jpg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #FFF;
-    height: 800px;
-    position: relative;
+  .section-header video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
 
-    @include max-screen($small-screen) {
-      height: auto;
+  .culture-info {
+    z-index: 100;
+
+    h2 {
+      color: #fff;
+      font-size: 1rem;
     }
+  }
+}
 
-    .section-tag {
-      color: rgba(0,0,0,0.5);
-    }
+.culture {
+
+  .values-section {
+    height: 100vh;
+    background: $primary-color;
+    text-align: center;
 
     .culture-description {
       font-weight: 200;
@@ -53,25 +66,22 @@
 
     .values {
       padding: 100px 0px;
-      @include max-screen($small-screen) {
-        padding: 0;
-      }
-
-      &.suraido-container {
-        min-height: 500px;
-        @include max-screen($small-screen) {
-          max-height: 220px;
-          min-height: 150px;
-        }
-      }
 
       .big-header { 
-      font-size: 5rem;
-
-      @include max-screen($small-screen) {
-        font-size: 3rem;
+        font-size: 4rem;
       }
-    }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        font-size: 0.8em;
+        padding: 10px 20px;
+        border: 2px solid rgba(255,255,255,0.3);
+        border-radius: 100px;
+      }
     }
   }
 
@@ -81,14 +91,6 @@
     min-height: 400px;
     padding: 70px 0px 100px 0px;
     width: 60%;
-
-    @include max-screen($small-screen) {
-      width: 90%;
-    }
-
-    video{
-      margin-bottom: 30px;
-    }
 
     p {
       color: rgba(0, 0, 0, 0.5);
