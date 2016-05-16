@@ -1,0 +1,58 @@
+.text-header {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 80%;
+
+	h1 {
+		margin-bottom: 159px;
+	}
+
+	.section-description {
+		height: 200px;
+		margin-bottom: 30px;
+		width: 100%;
+
+		.medium {
+			width: 58%;
+		}
+		.small {
+			width: 35%;
+		}
+
+		h6 {
+			margin-bottom: 45px;
+		}
+	}
+}
+
+.startup-work {
+	margin-bottom: 50px;
+	.startup-work-container {
+		background: #EA3431;
+		color: white;
+		height: 400px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		padding: 80px;
+		width: 85%;
+
+		.project-description {
+			font-weight: 400;
+		}
+	}
+}
+
+.case-study {
+	.vertical-text {
+		@include transform(rotate(-90deg) translateX(-90%));
+		letter-spacing: 2px;
+	}
+	h6 {
+		margin-bottom: 30px;
+	}
+	h1 {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		width: 60%;
+	}
+}
