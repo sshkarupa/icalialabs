@@ -1,15 +1,40 @@
+$text-red: #E63838;
+
+a {
+	text-decoration: none;
+}
+
+.vertical-text {
+	@include transform(rotate(-90deg) translateX(-90%));
+}
+
+.letter-spacing {
+	letter-spacing: 4px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.text-red {
+	color: $text-red;
+}
+
 .text-header {
-	margin: 0 auto;
-	margin-bottom: 50px;
+	margin: 0 auto 4rem auto;
 	width: 80%;
 
 	h1 {
-		margin-bottom: 159px;
+		margin-bottom: 10rem;
+	}
+
+	h6 {
+		margin-bottom: 2.5rem;
 	}
 
 	.section-description {
-		height: 200px;
-		margin-bottom: 30px;
+		height: 10rem;
+		margin-bottom: 2rem;
 		width: 100%;
 
 		.medium {
@@ -18,41 +43,60 @@
 		.small {
 			width: 35%;
 		}
-
-		h6 {
-			margin-bottom: 45px;
-		}
 	}
 }
 
 .startup-work {
-	margin-bottom: 50px;
+	margin-bottom: 4rem;
+
 	.startup-work-container {
 		background: #EA3431;
 		color: white;
-		height: 400px;
-		margin: 0 auto;
-		margin-bottom: 50px;
-		padding: 80px;
+		margin: 0 auto 4px auto;
+		padding: 7rem 4rem;
 		width: 85%;
 
 		.project-description {
 			font-weight: 400;
+			margin-bottom: 3rem;
 		}
 	}
 }
 
 .case-study {
-	.vertical-text {
-		@include transform(rotate(-90deg) translateX(-90%));
-		letter-spacing: 2px;
-	}
+	margin: 0 auto 4rem auto;
+	width: 85%;
+
 	h6 {
-		margin-bottom: 30px;
+		margin-bottom: 2rem;
 	}
+
 	h1 {
-		margin: 0 auto;
-		margin-bottom: 30px;
+		margin: 0 auto 2rem auto;
 		width: 60%;
+	}
+
+	.border {
+		border-bottom: 3px solid $text-red;
+		margin: 0 auto;
+		width: 4rem;
+	}
+
+	.pull-left {
+		h5, h6 {
+			position: relative;
+		}
+
+		h5 {
+			border-bottom: 1px solid $text-red;
+			padding-bottom: .5rem;
+			top: 8rem;
+			width: 1rem;
+		}
+
+		.vertical-text {
+			left: -1.5rem;
+			top: 8rem;
+		}
 	}
 }
