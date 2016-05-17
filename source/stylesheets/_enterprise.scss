@@ -3,3 +3,55 @@
 		margin-bottom: 2rem;
 	}
 }
+
+#pinContainer {
+	@include perspective(1000);
+ 	@include transform(skewY(-7deg));
+ 	height: 90vh;
+ 	margin-bottom: 30rem !important;
+  overflow: hidden;
+ 	top: 5rem!important;
+ 	width: 100%;
+}
+
+#slideContainer {
+	height: 100vh;
+  width: 400%;
+}
+
+.slide {
+	background: $primary-color;
+	float: left;
+  height: 90vh;
+  width: 25%;
+}
+
+.one, .two, .three, .four {
+  color: white;
+
+  .slide-text {
+  	@include transform(skewY(7deg));
+  }
+
+  .slide-text.vertical-align {
+  	top: 45%;
+  	left: 10rem;
+  }
+
+  p.slide-text {
+  	position: relative;
+  	top: 10rem;
+  	right: 10rem;
+  }
+}
+
+.circle {
+	@include border-radius(50%);
+	@include transform(skewY(7deg));
+	background: white;
+	height: 150px;
+	left: 5rem;
+	width: 150px;
+	position: relative;
+  top: 15rem;
+}
