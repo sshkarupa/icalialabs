@@ -14,12 +14,32 @@ a {
 	clear: both;
 }
 
+.startup-button {
+	@include border-radius(50px);
+	background: #fff;
+	color: #2FA2D9;
+	padding: .5rem 2rem;
+	position: relative;
+	top: -5rem;
+}
+
+.section-header {
+	svg {
+		width: 30%;
+	}
+
+	.startup-icon {
+		position: relative;
+		top: 6em;
+	}
+}
+
 .text-header {
 	margin: 0 auto 4rem auto;
 	width: 80%;
 
 	h1 {
-		margin-bottom: 10rem;
+		margin: 10rem 0;
 	}
 
 	h6 {
@@ -46,13 +66,29 @@ a {
 	.startup-work-container {
 		background: $primary-color;
 		color: white;
-		margin: 0 auto 4px auto;
-		padding: 7rem 4rem;
+		margin: 0 auto 3rem auto;
+		padding: 9rem 4rem 5rem 4rem;
 		width: 85%;
 
 		.project-description {
 			font-weight: 400;
 			margin-bottom: 3rem;
+		}
+
+		img {
+			margin-bottom: .5rem;
+			width: 3%;
+		}
+	}
+
+	.view-more {
+		display: block;
+
+		img {
+			margin-left: .5rem;
+			position: relative;
+			top: .5rem;
+			width: 2%;
 		}
 	}
 }

@@ -119,7 +119,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   display: block;
   line-height: 1em;
 
-  @include max-screen($small-screen){
+  @include max-screen($small-screen) {
     margin: 25px;
   }
 }
