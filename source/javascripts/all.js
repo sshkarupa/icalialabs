@@ -8,4 +8,5 @@
 //= require jquery.easing.min
 //= require process-scroller
 //= require furatto_modal
+//= require magicscroll
 //= require player
