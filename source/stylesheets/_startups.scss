@@ -63,6 +63,10 @@ a {
 .startup-work {
 	margin-bottom: 4rem;
 
+	h6, p {
+		margin-bottom: 2.5rem;
+	}
+
 	.startup-work-container {
 		background: $primary-color;
 		color: white;
