@@ -334,7 +334,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 }
 
 // ####################### White background main menu overrides################################
-.team, .contact, .projects, .process {
+.team, .contact, .projects, .process, .startups, .enterprise {
   .main-menu{
     .logo {
       svg {
