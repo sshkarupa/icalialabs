@@ -110,12 +110,6 @@ a {
 		width: 60%;
 	}
 
-	.border {
-		border-bottom: 3px solid $primary-color;
-		margin: 0 auto;
-		width: 4rem;
-	}
-
 	.pull-left {
 		h5, h6 {
 			position: relative;
@@ -132,5 +126,11 @@ a {
 			left: -1.5rem;
 			top: 8rem;
 		}
+	}
+}
+
+.call-buttons-group {
+	h6 {
+		margin-bottom: 0;
 	}
 }
