@@ -17,6 +17,12 @@
 #enterpriseSlideContainer {
 	height: 100vh;
   width: 400%;
+
+  .pull-right {
+    @include phone {
+      float: none;
+    }
+  }
 }
 
 .slide {
@@ -34,14 +40,23 @@
   }
 
   .slide-text.vertical-align {
-  	top: 45%;
   	left: 10rem;
+    top: 45%;
+
+    @include phone {
+      left: 7rem;
+      top: 10%;
+    }
   }
 
   p.slide-text {
   	position: relative;
   	top: 10rem;
   	right: 10rem;
+
+    @include phone {
+      left: 2rem;
+    }
   }
 }
 
@@ -54,4 +69,12 @@
 	position: relative;
   top: 15rem;
   width: 150px;
+
+  &.pull-left {
+    @include phone {
+      float: none;
+      left: 11rem;
+      top: 2rem;
+    }
+  }
 }
