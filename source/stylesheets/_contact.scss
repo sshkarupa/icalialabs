@@ -77,28 +77,42 @@
   .input::-webkit-input-placeholder {
     color: $primary-color;
   }
+  h4 {
+    color: #fff;
+    text-transform: uppercase;
+  }
 
-  .adress {
+  .address-section {
     background: url("https://s3.amazonaws.com/icalia/assets/img/office.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px 0px;
-    margin: 50px 0px;
 
-    h2 {
-      color: #fff;
+    h4 {
+      padding: 4rem 0;
     }
 
-    .adress-container {
-      background: #fff;
-      padding: 20px;
+    .container {
+      padding-bottom: 8rem;
+    }
+
+    .address-container {
+      background: #2D1A1A;
       border-radius: 4px;
+      padding: 5rem 3rem;
+
+      .address {
+        margin: 0 3rem 3rem 0;
+      }
+
+      h4 {
+        color: $primary-color;
+        margin-bottom: 2rem;
+        padding: 0;
+      }
     }
 
     p {
       font-weight: 100;
-      font-size: 1.5em;
-      margin: 20px 0px;
     }
 
     a {
