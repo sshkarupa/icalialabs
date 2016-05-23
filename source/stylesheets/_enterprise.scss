@@ -10,7 +10,7 @@
  	height: 90vh;
  	margin-bottom: 30rem !important;
   overflow: hidden;
- 	top: 5rem!important;
+ 	top: 5rem !important;
  	width: 100%;
 }
 
@@ -32,7 +32,10 @@
   width: 25%;
 }
 
-.one, .two, .three, .four {
+.one, 
+.two, 
+.three, 
+.four {
   color: white;
 
   .slide-text {
@@ -49,7 +52,7 @@
     }
   }
 
-  p.slide-text {
+  .slide-text {
   	position: relative;
   	top: 10rem;
   	right: 10rem;

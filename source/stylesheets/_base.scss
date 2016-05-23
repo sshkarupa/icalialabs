@@ -335,16 +335,22 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 }
 
 // ####################### White background main menu overrides################################
-.team, .contact, .projects, .process, .startups, .enterprise {
-  .main-menu{
-    .logo-menu {
-      &:before, a {
-        color: $primary-color;
-      }
-    }
+
+.team, 
+.contact, 
+.projects, 
+.process, 
+.startups, 
+.enterprise {
+  .main-menu {
     .logo {
       svg {
         fill: $primary-color;
+      }
+    }
+    .logo-menu {
+      &:before, a {
+        color: $primary-color;
       }
     }
     .burger {
