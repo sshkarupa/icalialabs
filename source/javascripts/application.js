@@ -16,7 +16,7 @@ $(window).scroll(function(){
   var cutoff = $(window).scrollTop();
   var sectionNumber = 01;
   
-  $('[data-section').each(function(){
+  $('[data-section]').each(function(){
       if($(this).offset().top + $(this).height() > cutoff){
           $('[data-section]').removeClass('current');
           var sectionName = $(this).attr('data-section');

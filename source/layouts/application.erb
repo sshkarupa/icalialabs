@@ -23,7 +23,7 @@
       <a href='/'><%= partial "logo" %></a>
       <nav class="logo-menu">
         <a href="startups.html">For Startups</a>
-        <a href="#">For Enterprise</a>
+        <a href="enterprise.html">For Enterprise</a>
       </nav>
       <div class="burger">
         <div class="one"></div>
@@ -135,5 +135,13 @@
         });
       });
     </script>
+    <script>
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="javascripts/magicscroll.js"></script>
   </body>
 </html>

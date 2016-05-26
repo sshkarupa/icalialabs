@@ -9,3 +9,4 @@
 //= require process-scroller
 //= require furatto_modal
 //= require player
+//= require parallax
