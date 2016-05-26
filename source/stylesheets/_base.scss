@@ -7,6 +7,13 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include phone {
+    overflow: auto !important;
+  }
+  @include ipad {
+    overflow: auto !important;
+  }
 }
 
 body, input {
