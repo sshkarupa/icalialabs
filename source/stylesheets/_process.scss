@@ -38,6 +38,14 @@ body.process {
   height: 100vh;
   position: relative;
 
+  @include phone {
+    height: 60vh;
+  }
+
+  @include ipad {
+    height: 60vh;
+  }
+
   &-info {
     height: 40vh;
     width: 40vw;
@@ -46,6 +54,15 @@ body.process {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+
+    @include phone {
+      width: 90%;
+      top: 20%;
+    }
+
+    @include ipad {
+      width: 90%;
+    }
   }
 
   .step-number {
