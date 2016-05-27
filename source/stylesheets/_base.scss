@@ -7,6 +7,13 @@ html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @include phone {
+    overflow: auto !important;
+  }
+  @include ipad {
+    overflow: auto !important;
+  }
 }
 
 body, input {
@@ -209,6 +216,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
       &:hover > span {
         transform: translateY(-100%);
+      }
+
+      @include phone {
+        width: 100%;
       }
     }
   }
@@ -558,7 +569,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     }
 
     .menu-content {
-      padding: 50px 0;
+      padding: 110px 0;
     }
 
     .social-info {
@@ -585,11 +596,6 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       padding: 10rem 0;
     }
   }
-}
-
-#talkus-button {
-  bottom: 30px !important;
-  right: 85px !important;
 }
 
 @include screen($small-screen, 1280px){
