@@ -3,59 +3,70 @@ layout: application
 title: Team
 type: team
 ---
-<section class="info row">
-  <h4 class="section-name">The Team</h4>
-  <h1 class="section-tag">We are people like you</h1>
-  <p class="section-description">
-    A combination of skilled developers, creative designers and business strategists, willing to be part of your dream team. 
-  </p>
+<section class="section-header">
+  <div class="team-header">
+    <h6 class="letter-spacing">Our team</h6>
+    <h1 class="section-tag">Our passion is our job, we craft awesome products.</h1>
+  </div>
 </section>
- 
 
-<div class="wrapper">
-<section class="team-section clearfix row">
-  <div class="hider row">
-<!-- Members -->
-    
-    <% data.members.each do |member| %>
-    <figure class="member col-3" data-furatto="modal" data-target="#modal-<%= member.id %>" data-transition="2">
-      <img src="<%=member.picture%>" alt="<%= member.name %>" class="picture"/>
-      <div class="info-circle slideUp">
-        <a href="#member-info"></a>
+<section class="team-section">
+  <% data.members.each do |member| %>     
+    <figure class="member">
+      <div class="member-info">
         <h5 class="name"><%= member.name %></h5>
         <h6 class="position"><%= member.title %></h6>
-        <div class="line"></div>
+        <p><%= member.bio %></p>
       </div>
-      <div class="curtain">
-      </div>
+      <img src="<%=member.picture%>" alt="<%= member.name %>">
     </figure>
-  <% end %>
-
- <!-- Modal info for member -->
-  <% data.members.each do |member| %>
-    <div class="member-modal modal" id="modal-<%=member.id%>">
-        <a class="modal-close">BACK</a>
-        <div class="row">
-          <div class="col-4 modal-image visible-on-large" style="background-image: url(<%=member.picture%>)">
-          </div>
-          <div class="col-8 modal-info">
-            <h3 class="member-name"><%= member.name %></h3>
-            <h4 class="member-title"><%= member.title %></h3>
-            <div class="networks">
-              <% member.networks.each do |network| %>
-                <a href="<%= network.link %>" class="social <%=network.name%>" target="_blank"><%= network.name %></a>
-              <% end %>
-            </div>
-            <p><%= member.bio %></p>
-          </div>
-        </div>
-    </div>
-<% end %>
-
-  </div>
-
+  <% end %> 
 </section>
-</div>
+ 
+<!--div class="wrapper" >
+  <section class="team-section clearfix row">
+    <div class="hider row">
+    < Members -->
+     
+      <%# data.members.each do |member| %>
+      <!--figure class="member col-3" data-furatto="modal" data-target="#modal-<%#= member.id %>" data-transition="2">
+        <img src="<%#=member.picture%>" alt="<%#= member.name %>" class="picture"/>
+        <div class="info-circle slideUp">
+          <a href="#member-info"></a>
+          <h5 class="name"><%#= member.name %></h5>
+          <h6 class="position"><%#= member.title %></h6>
+          <div class="line"></div>
+        </div>
+        <div class="curtain">
+        </div>
+      </figure -->
+    <%# end %>
+
+   <!-- Modal info for member -->
+    <!-- % data.members.each do |member| %>
+      <div class="member-modal modal" id="modal-<%#=member.id%>">
+          <a class="modal-close">BACK</a>
+          <div class="row">
+            <div class="col-4 modal-image visible-on-large" style="background-image: url(<%#=member.picture%>)">
+            </div>
+            <div class="col-8 modal-info">
+              <h3 class="member-name"><%#= member.name %></h3>
+              <h4 class="member-title"><%#= member.title %></h3>
+              <div class="networks">
+                <%# member.networks.each do |network| %>
+                  <a href="<%#= network.link %>" class="social <%#=network.name%>" target="_blank"><%#= network.name %></a>
+                <%# end %>
+              </div>
+              <p><%#= member.bio %></p>
+            </div>
+          </div>
+      </div>
+  <%# end %>
+
+    </div>
+
+  </section>
+</div -->
 
 <section class="join row">
   <h4 class="capital">Join Us.</h4>

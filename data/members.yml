@@ -1,7 +1,7 @@
 - name: Eduardo López
   id: edo
-  title: CEO
-  picture: https://s3.amazonaws.com/icalia/assets/img/edo.jpg
+  title: CEO/FOUNDER
+  picture: images/team-example.png #https://s3.amazonaws.com/icalia/assets/img/edo.jpg
   networks:
     - link: http://twitter.com/edolopez
       name: twitter
@@ -173,17 +173,6 @@
       name: Linkedin
     - link: https://vimeo.com/nickimondi
       name: Vimeo
-
-- name: Lizeth Aguayo
-  title: Sales Engineer
-  id: lza
-  picture: https://s3.amazonaws.com/icalia/assets/img/lizeth.jpg
-  bio: "Liz enjoys visiting and discovering every city of our colorful country -traveling is one of the things she loves the most- She also loves to learn new things, specially those things related with creativity and to discover hidden or underground places."
-  networks:
-    - link: https://instagram.com/lizzaguayo
-      name: Instagram
-    - link: https://twitter.com/lizaguayo
-      name: Twitter
 
 - name: Alejandro Sandoval
   title: Software Engineer

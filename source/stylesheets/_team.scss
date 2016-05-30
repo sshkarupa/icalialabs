@@ -1,5 +1,4 @@
 .section-description {
-  color: rgba(0,0,0,0.8);
   font-weight: 100;
   width: 60%;
   font-size: 1.3em;
@@ -22,24 +21,55 @@
     }
   }
 
-  .team-section {
-    overflow: hidden;
-    width: 100%;
+  .section-header {
+    background: url(../images/team-section.png);
+    color: white;
+    text-align: left;
+    @include background-size(cover);
+  }
+
+  .team-header {
+    margin: 0 auto;
     position: relative;
+    top: 60%;
+    width: 60%;
+  }
+
+  .team-section {
     cursor: pointer;
-
-
-
-    .hider {
-      overflow: hidden;
-    }
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 
     .member {
-      height: auto;
+      height: 100vh;
       padding: 0;
       position: relative;
       overflow: hidden;
 
+      .member-info {
+        color: white;
+        left: 20%;
+        position: relative;
+        top: 50%;
+        width: 40%;
+        z-index: 100;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      img {
+        height: auto;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    .member {
       &:hover .info-circle {
         display: block;
       }
