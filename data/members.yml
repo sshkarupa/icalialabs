@@ -29,18 +29,6 @@
     - link: https://twitter.com/daniel_graf
       name: Twitter
 
-- name: Monica De la Torre
-  title: Happiness Manager
-  id: monica
-  picture: https://s3.amazonaws.com/icalia/assets/img/monica.jpg
-  bio: Monica is our Happiness Manager, she takes care of leaving the ordinary aside and making our space feel like home. 
-        She's also a recruitment guru, constantly looking for talented and enthusiastic people to join our team.
-        She loves coffee, books, meeting new people, visiting new restaurants, and traveling around every corner of Mexico when she has the time.
-        As an expert in laughter, a smile goes a long way, but if you're needing guidance on the discipline of organization, she's happy to lead the way.
-  networks:
-    - link: https://www.facebook.com/monica.delatorre?fref=ts
-      name: Facebook
-
 
 - name: Eduardo Higareda
   title: Lead Designer
@@ -78,37 +66,6 @@
       name: Twitter
     - link: https://dribbble.com/nox
       name: Dribbbles
-
-- name: Emily Berkeley
-  title: Software Engineer
-  id: emily
-  picture: https://s3.amazonaws.com/icalia/assets/img/emily.jpg
-  bio: Having grown up in Colorado, Emily is delighted to live somewhere that doesn't require putting studded snow tires on her bike. She loves chickens, urbanism, stories, and cleaning up Ruby code.
-  networks:
-    - link: https://github.com/EmilyMB
-      name: Github
-    - link: https://twitter.com/mexicoemily
-      name: Twitter
-
-- name: Joaquín Ramírez
-  title: iOS Intern
-  id: joaquin
-  picture: https://s3.amazonaws.com/icalia/assets/img/joaquin.jpg
-  bio: Joaquin is a Software Development student, he decided to study this because he likes being able to create something new that can help others to solve problems or even have fun. <br/> He feels passionate about developing mobile applications on iOS and he’s always trying to learn new things that allow him to be better at what he does and what he likes.On his spare time he enjoys developing mobile games, playing video games with friends, going for a run and watching or playing soccer.  
-  networks:
-    - link: https://twitter.com/joaquin_vila
-      name: Twitter
-
-- name: Juan Carlos Mercado
-  title: Full Stack Engineer
-  id: jc
-  picture: https://s3.amazonaws.com/icalia/assets/img/jc.jpg
-  bio: JC is a Full Stack Developer, nerd, philosophy reader and music addict, he enjoys math problems, photography and music production during his free time.
-  networks:
-    - link: https://github.com/zenbakiak
-      name: Github
-    - link: https://twitter.com/zenbakiak
-      name: Twitter
 
 - name: Daniel Lozano
   title: iOS Engineer
@@ -163,17 +120,6 @@
     - link: https://twitter.com/vovimayhem
       name: Twitter
 
-- name: Nicholas Imondi
-  title: UX Designer
-  id: ni
-  picture: https://s3.amazonaws.com/icalia/assets/img/nick.jpg
-  bio: Hailing originally from New York and recently relocating to Monterrey, Nick joins us as a User Experience Designer.  Over the years he's designed interactive experiences across mobile and web applications for both startups and Fortune 500 companies alike, and has a deep-rooted passion for research and intensely critical design conversations. Outside of work Nick is happy to accept invitations to carne asada, and trips around the world.
-  networks:
-    - link: https://www.linkedin.com/in/nicholasimondi
-      name: Linkedin
-    - link: https://vimeo.com/nickimondi
-      name: Vimeo
-
 - name: Alejandro Sandoval
   title: Software Engineer
   id: asd
@@ -186,21 +132,6 @@ learn random facts about anything and everything and tries to get off his ass as
     - link: https://github.com/lejandro83
       name: Github
     - link: https://instagram.com/ricordiepanini/
-      name: Instagram
-
-- name: Elena Flores
-  title: Interaction Designer
-  id: elena
-  picture: https://s3.amazonaws.com/icalia/assets/img/elena.jpg
-  bio: "Elena is a designer , front-end developer , entrepreneur and traveler. Her passions is determined and therefore enjoys meeting different languages, either in technology or in everyday life .
-
-She is from Mexico City but has lived in the last five years in different parts of the world, now is the turn of Monterrey.
-
-She loves to visit museums, cycling, go for a walk with Guru (a Venezuelan dog),  read books, movies, give reiki therapy and paint mandalas."
-  networks:
-    - link: https://twitter.com/LUCIOLEfashion
-      name: Twitter
-    - link: https://www.instagram.com/lucirfashion/
       name: Instagram
 
 - name: Mayra Cabrera

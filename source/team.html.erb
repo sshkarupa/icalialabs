@@ -11,16 +11,26 @@ type: team
 </section>
 
 <section class="team-section">
-  <% data.members.each do |member| %>     
-    <figure class="member">
-      <div class="member-info">
-        <h5 class="name"><%= member.name %></h5>
-        <h6 class="position"><%= member.title %></h6>
-        <p><%= member.bio %></p>
-      </div>
-      <img src="<%=member.picture%>" alt="<%= member.name %>">
-    </figure>
-  <% end %> 
+  <aside>
+    <h6 class="letter-spacing">Our team members</h6>
+    <nav class="members-nav" >
+      <% data.members.each do |member| %>   
+      <a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a>
+      <% end %> 
+    </nav>
+  </aside>
+  <div class="members-container">
+    <% data.members.each do |member| %>     
+      <figure class="member" data-name="<%= member.name %>">
+        <div class="member-info">
+          <h5 class="name"><%= member.name %></h5>
+          <h6 class="position"><%= member.title %></h6>
+          <p><%= member.bio %></p>
+        </div>
+        <img src="<%=member.picture%>" alt="<%= member.name %>">
+      </figure>
+    <% end %> 
+  </div>
 </section>
  
 <!--div class="wrapper" >
