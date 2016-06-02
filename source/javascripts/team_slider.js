@@ -3,3 +3,10 @@ $('.members-nav a').click(function(){
   $('.member').hide();
   $('.member[data-name="'+ member +'"]').show();
 });
+
+$(".members-nav a:first").addClass('active');
+
+$(".members-nav a").click(function(){
+	$('.active').removeClass('active');
+  $(this).addClass('active');
+});
