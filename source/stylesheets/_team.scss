@@ -71,10 +71,6 @@
       }
     }
 
-    .member:first-child {
-      display: block;
-    }
-
     .member {
       color: white;
       height: 100vh;
@@ -83,11 +79,16 @@
       position: absolute;
       overflow: hidden;
       width: 100%;
+      @include background-size(cover);
+      @include transition(all 1s ease-in-out);
 
       &.show {
         display: block;
       }
 
+      &:first-child{
+        display: block;
+      }
 
       .member-info {
         color: white;
@@ -100,13 +101,6 @@
         p {
           font-size: 14px;
         }
-      }
-
-      img {
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        width: 100%;
       }
     }
   }
