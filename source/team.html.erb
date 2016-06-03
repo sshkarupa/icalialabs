@@ -11,23 +11,35 @@ type: team
 </section>
 
 <section class="team-section">
-  <aside>
-    <h6 class="letter-spacing">Our team members</h6>
-    <nav class="members-nav" >
-      <% data.members.each do |member| %>   
-      <a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a>
+  <div class="members-fullpage">
+    <div class="hide">
+      <img src="images/see-all.png" alt="">
+      <h6 class="letter-spacing">View all the team</h6>
+    </div>
+    <aside>
+      <h6 class="letter-spacing">Our team members</h6>
+      <nav class="members-nav" >
+        <% data.members.each do |member| %>   
+        <a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a>
+        <% end %> 
+      </nav>
+    </aside>
+    <div class="members-container">
+      <% data.members.each do |member| %>     
+        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>')">
+          <div class="member-info">
+            <h5 class="name"><%= member.name %></h5>
+            <h6 class="position"><%= member.title %></h6>
+            <p><%= member.bio %></p>
+          </div>
+        </figure>
       <% end %> 
-    </nav>
-  </aside>
-  <div class="members-container">
-    <% data.members.each do |member| %>     
-      <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>')">
-        <div class="member-info">
-          <h5 class="name"><%= member.name %></h5>
-          <h6 class="position"><%= member.title %></h6>
-          <p><%= member.bio %></p>
-        </div>
-      </figure>
+    </div>
+  </div>
+  <div class="members-grid row">
+    <% data.members.each do |member| %> 
+      <div class="col-2" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>')">
+      </div>
     <% end %> 
   </div>
 </section>
