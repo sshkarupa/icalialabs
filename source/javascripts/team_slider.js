@@ -16,6 +16,11 @@ $(".hide").click(function(){
 	$('.members-grid').fadeIn();
 });
 
+$('.close').click(function() {
+	$('.members-grid').fadeOut();
+	$('.members-fullpage').fadeIn();
+});
+
 $('.members-grid .col-2').click(function() {
 	var member = $(this).attr('data-name');
 	$('.active').removeClass('active');

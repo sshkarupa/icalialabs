@@ -104,6 +104,17 @@
       color: white;
     }
 
+    .close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 4%;
+
+      @include phone {
+        width: 10%;
+      }
+    }
+
     .members-grid {
       display: none;
       height: 100vh;

@@ -37,6 +37,7 @@ type: team
     </div>
   </div>
   <div class="members-grid row">
+    <img src="images/close.png" class="close" alt="">
     <% data.members.each do |member| %> 
       <div class="col-2" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>')">
       </div>
