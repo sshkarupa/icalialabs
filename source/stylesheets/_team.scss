@@ -151,9 +151,14 @@
         color: white;
         left: 25%;
         position: relative;
-        top: 50%;
-        width: 40%;
+        text-align: justify;
+        top: 40%;
+        width: 35%;
         z-index: 100;
+
+        .name, .position {
+          margin-bottom: 1rem;
+        }
 
         @include phone {
           left: 27%;
@@ -166,6 +171,42 @@
         }
       }
     }
+
+    .networks {
+      position: relative;
+      left: 90%;
+
+      .social {
+        color: white;
+        cursor: pointer;
+        display: block;
+        height: 1.5rem;
+        font-family: FontAwesome;
+        font-size: 1.5rem;
+        margin: 1rem;
+        overflow: hidden;
+        width: 1.5rem;
+
+        &.facebook:before {
+          content: "\f09a";
+        }
+
+        &.twitter:before {
+          content: "\f099";
+        }
+        &.github:before {
+          content: "\f113";
+        }
+
+        &.medium:before {
+          content: "\f23a";
+        }
+
+        &.website:before {
+          content: "\f0c1"
+        }
+    }
+    }
   }
 
   .join {
@@ -177,101 +218,4 @@
       margin: 30px 0;
     }
   }
-
-
-  /*
-  =============================================
-  Media queries
-  =============================================
-   */
-
-  @include max-screen(768px){
-    .team-section {
-      .hider {
-        cursor: default;
-        height: auto;
-        width: auto;
-
-        .member {
-          .picture {
-            cursor: pointer;
-            height: auto;
-          }
-          .info-circle{
-            height: 80px;
-            border-right: none;
-            .name{
-              margin-top: 15px;
-              font-size: 20px;
-            }
-            .position{
-              font-size: 15px;
-            }
-          }
-
-        }
-      }
-    }
-  }
 }
-/*
-==============================================
-slideUp
-==============================================
- */
-
-
-  .slideUp{
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;	
-
-    animation-duration: .7s;	
-    -webkit-animation-duration: .7s;
-
-    animation-timing-function: ease;	
-    -webkit-animation-timing-function: ease;
-
-    visibility: visible !important;
-  }
-
-  @keyframes slideUp {
-    0% {
-      transform: translateY(100%);
-    }
-    50%{
-      transform: translateY(-8%);
-    }
-    65%{
-      transform: translateY(4%);
-    }
-    80%{
-      transform: translateY(-4%);
-    }
-    95%{
-      transform: translateY(2%);
-    }			
-    100% {
-      transform: translateY(0%);
-    }	
-  }
-
-  @-webkit-keyframes slideUp {
-    0% {
-      -webkit-transform: translateY(100%);
-    }
-    50%{
-      -webkit-transform: translateY(-8%);
-    }
-    65%{
-      -webkit-transform: translateY(4%);
-    }
-    80%{
-      -webkit-transform: translateY(-4%);
-    }
-    95%{
-      -webkit-transform: translateY(2%);
-    }			
-    100% {
-      -webkit-transform: translateY(0%);
-    }	
-  }

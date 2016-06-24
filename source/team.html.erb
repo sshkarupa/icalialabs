@@ -32,6 +32,11 @@ type: team
             <h6 class="position"><%= member.title %></h6>
             <p><%= member.bio %></p>
           </div>
+          <div class="networks">
+            <% member.networks.each do |network| %>
+              <a href="<%= network.link %>" class="social <%=network.name%>" target="_blank"><%= network.name %></a>
+            <% end %>
+          </div>
         </figure>
       <% end %> 
     </div>
