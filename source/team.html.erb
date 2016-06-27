@@ -4,6 +4,7 @@ title: Team
 type: team
 ---
 <section class="section-header">
+  <div class="curtain"></div>
   <div class="team-header">
     <h6 class="letter-spacing">Our team</h6>
     <h1 class="section-tag">Our passion is our job, we craft awesome products.</h1>
@@ -26,7 +27,7 @@ type: team
     </aside>
     <div class="members-container">
       <% data.members.each do |member| %>     
-        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>')">
+        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>'); background-size: 80vh;">
           <div class="member-info">
             <h5 class="name"><%= member.name %></h5>
             <h6 class="position"><%= member.title %></h6>
@@ -44,7 +45,7 @@ type: team
   <div class="members-grid row">
     <img src="images/close.png" class="close" alt="">
     <% data.members.each do |member| %> 
-      <div class="col-2" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>')">
+      <div class="col-2" data-name="<%= member.name %>" style="background-image: url('<%=member.closeup%>')">
       </div>
     <% end %> 
   </div>

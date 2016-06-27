@@ -22,10 +22,19 @@
   }
 
   .section-header {
-    background: url(../images/team.png);
+    background: url(https://s3.amazonaws.com/icalia/assets/img/team-section.jpg);
+    background-position: center center;
     color: white;
     text-align: left;
     @include background-size(cover);
+
+    .curtain {
+      background: $primary-color;
+      height: 100%;
+      opacity: .5;
+      position: absolute;
+      width: 100%;
+    }
   }
 
   .team-header {
@@ -71,7 +80,7 @@
       height: 100%;
       float: left;
       left: 0;
-      padding: 4rem 2rem;
+      padding: 2rem;
       position: absolute;
       top: 0;
       width: 20%;
@@ -83,7 +92,7 @@
       }
 
       h6 {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
       }
       
       nav {
@@ -118,7 +127,9 @@
     .members-grid {
       display: none;
       height: 100vh;
+
       .col-2 {
+        background: #202020;
         height: 15rem;
         @include background-size(cover);
       }
@@ -129,6 +140,9 @@
     }
 
     .member {
+      background: #202020;
+      background-repeat: no-repeat;
+      background-position: right top;
       color: white;
       height: 100vh;
       display: none;
@@ -153,7 +167,7 @@
         position: relative;
         text-align: justify;
         top: 40%;
-        width: 35%;
+        width: 25%;
         z-index: 100;
 
         .name, .position {
