@@ -10,13 +10,13 @@
 .projects-container-item {
   height: 85vh;
   width: 85vw;
-  margin: 3vh auto;
+  margin: 20vh auto;
   border-radius: 10px;
-  box-shadow: 0 6px 40px rgba(146, 6, 6, 0.78), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  //box-shadow: 0 6px 40px rgb(40,40,40), inset 0 1px 1px rgba(255, 255, 255, 0.25);
   position: relative;
   
   background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  //background-blend-mode: multiply;
   background-position: right center;
   @include transition(all 0.3s ease-in-out);
   @include background-size(cover);

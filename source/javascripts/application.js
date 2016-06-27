@@ -71,8 +71,13 @@ $('.stat-item').hover(function(){
   $(this).addClass('active');
 });
 
+
 $('body.projects').attr('data-400','background-color:rgb(255,255,255);');
-$('body.projects').attr('data-500','background-color:rgb(255, 52, 52);');
+$('body.projects').attr('data-700','background-color:rgb(234,62,106);');
+$('body.projects').attr('data-1700','background-color:rgb(67,197,213);');
+$('body.projects').attr('data-2300','background-color:rgb(113,57,158);');
+$('body.projects').attr('data-3000','background-color:rgb(52,99,169);');
+
 
 $('body.process').attr('data-400','background-color:rgb(255,255,255);');
 $('body.process').attr('data-500','background-color:rgb(255, 52, 52);');

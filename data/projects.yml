@@ -1,32 +1,28 @@
-- name: Repairshopr
-  client: Repairshopr
-  done: Product Maintenance and Team Augmentation
-  # image: https://s3.amazonaws.com/icalia/assets/img/repair-work.jpg
-  image: images/repair-work.jpg
-  color: FF3434
-  link: http://www.repairshopr.com/
+- name: Cochi
+  client: Banregio
+  done: UI/UX Design & Development
+  image: https://s3.amazonaws.com/icalia/assets/img/cochi.jpg
+  color: ac284a
+  link: https://www.cochi.mx/
 
 - name: Printoo
   client: Printoo
   done: UI/UX Design & Development
-  # image: https://s3.amazonaws.com/icalia/assets/img/printoo-work.jpg
-  image: images/printoo-work.jpg
-  color: FF3434
+  image: https://s3.amazonaws.com/icalia/assets/img/printoo.jpg
+  color: 2d7f89
   link: https://www.printoo.me/
 
-- name: Gidit App
-  client: Gidit
+- name: Okudoc
+  client: Okudoc
   done: UI/UX Design & Development
-  # image: https://s3.amazonaws.com/icalia/assets/img/gidit.jpg
-  image: images/gidit.jpg
-  color: FF3434
+  image: images/okudoc.jpg
+  color: 572c7a
   link: https://itunes.apple.com/us/app/gidit/id846765766?mt=8
 
-- name: Furatto
+- name: Aire N.L
   client: Personal Project
   done: UI/UX Design & Development
-  # image: https://s3.amazonaws.com/icalia/assets/img/furatto.jpg
-  image: images/furatto.jpg
-  color: FF3434
+  image: https://s3.amazonaws.com/icalia/assets/img/aire.jpg
+  color: 284a7c
   link: http://icalialabs.github.io/furatto/
 
