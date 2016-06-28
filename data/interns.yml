@@ -1,0 +1,27 @@
+- name: Luis Manzur
+  title: Design Intern
+  id: lm
+  picture: https://s3.amazonaws.com/icalia/assets/img/luigui-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
+  bio: Luis, better known as Luigi, is a graphic design student with experience in branding and audiovisual communication; passionate about typography, geometric shapes and technology. Apprentice in front-end development, he’s always trying to apply creativity in building and creating stuff. On his free time, he plays bass guitar and enjoys riding his longboard around town, street football matches, discovering new music, and playing The Legend of Zelda.
+  networks:
+    - link: https://instagram.com/luismnzr
+      name: instagram
+    - link: https://twitter.com/luismnzr
+      name: twitter
+
+- name: Sara De Leon
+  title: Design Intern
+  id: sara
+  picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
+  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  networks:
+    - link: https://github.com/thelastinuit
+      name: github
+    - link: https://medium.com/@max.feinberg
+      name: medium
+    - link: https://twitter.com/thelastinuit
+      name: twitter
+    - link: http://bravarianpawstudios.com/
+      name: website

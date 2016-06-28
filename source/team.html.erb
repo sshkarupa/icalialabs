@@ -17,13 +17,13 @@ type: team
       <img src="images/see-all.png" alt="">
       <h6 class="letter-spacing">View all the team</h6>
     </div>
-    <aside>
+    <aside class="members-nav">
       <h6 class="letter-spacing">Our team members</h6>
-      <nav class="members-nav" >
+      <ul>
         <% data.members.each do |member| %>   
-        <a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a>
+        <li><a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a></li>
         <% end %> 
-      </nav>
+      </ul>
     </aside>
     <div class="members-container">
       <% data.members.each do |member| %>     

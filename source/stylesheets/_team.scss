@@ -1,3 +1,8 @@
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 100%;}
+}
+
 .section-description {
   font-weight: 100;
   width: 60%;
@@ -80,6 +85,7 @@
       height: 100%;
       float: left;
       left: 0;
+      overflow: hidden;
       padding: 2rem;
       position: absolute;
       top: 0;
@@ -95,28 +101,29 @@
         margin-bottom: 2rem;
       }
       
-      nav {
+      ul {
         color: white;
         list-style: none;
 
         a {
-          font-size: 0.8rem;
+          @include transition(all 0.2s ease-in-out);
           color: black;
           display: block;
+          font-size: 0.8rem;
           margin-bottom: 1rem;
         }
       }
     }
 
     .active {
-      font-size: 1.5rem;
       color: white;
+      font-size: 1.5rem;
     }
 
     .close {
       position: absolute;
-      top: 1rem;
       right: 1rem;
+      top: 1rem;
       width: 4%;
 
       @include phone {
@@ -130,19 +137,18 @@
 
       .col-2 {
         background: #202020;
-        height: 15rem;
-        @include background-size(cover);
+        height: 8.8rem;
+        background-size: 23vh;
+        background-repeat: no-repeat;
+        background-position: center top;
       }
     }
 
-    .members-fullpage {
-      
-    }
-
     .member {
+      animation: appear 0.8s;
       background: #202020;
       background-repeat: no-repeat;
-      background-position: right top;
+      background-position: right;
       color: white;
       height: 100vh;
       display: none;
@@ -187,8 +193,9 @@
     }
 
     .networks {
-      position: relative;
       left: 90%;
+      top: 40%;
+      position: absolute;
 
       .social {
         color: white;
@@ -203,21 +210,37 @@
 
         &.facebook:before {
           content: "\f09a";
+          margin-right: 2rem;
         }
 
         &.twitter:before {
           content: "\f099";
+          margin-right: 2rem;
         }
+
         &.github:before {
           content: "\f113";
+          margin-right: 2rem;
         }
 
         &.medium:before {
           content: "\f23a";
+          margin-right: 2rem;
         }
 
         &.website:before {
-          content: "\f0c1"
+          content: "\f0c1";
+          margin-right: 2rem;
+        }
+
+        &.dribbble:before {
+          content: "\f17d";
+          margin-right: 2rem;
+        }
+
+        &.instagram:before {
+          content: "\f16d";
+          margin-right: 2rem;
         }
     }
     }
