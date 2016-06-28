@@ -15,7 +15,7 @@
 - name: Okudoc
   client: Okudoc
   done: UI/UX Design & Development
-  image: images/okudoc.jpg
+  image: https://s3.amazonaws.com/icalia/assets/img/okudoc.jpg
   color: 572c7a
   link: https://itunes.apple.com/us/app/gidit/id846765766?mt=8
 
