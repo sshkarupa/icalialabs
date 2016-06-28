@@ -8,16 +8,13 @@
 }
 
 .projects-container-item {
-  height: 85vh;
-  width: 85vw;
-  margin: 3vh auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 40px rgba(146, 6, 6, 0.78), inset 0 1px 1px rgba(255, 255, 255, 0.25);
-  position: relative;
-  
   background-repeat: no-repeat;
-  background-blend-mode: multiply;
   background-position: right center;
+  border-radius: 10px;
+  height: 85vh;
+  margin: 20vh auto;
+  position: relative;
+  width: 85vw;
   @include transition(all 0.3s ease-in-out);
   @include background-size(cover);
 
@@ -35,26 +32,26 @@
     }
 
     &-link {
-        text-decoration: none;
-        display: inline-block;
-        vertical-align: middle;
-        padding: 20px 0px;
-        position: relative;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        color: #fff;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 20px 0px;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.3s ease;
 
       &:after {
-        content:'';
-        height: 2px;
-        width: 20%;
-        display: block;
-        position: absolute;
-        left: 50%;
+        background: #fff;
         bottom: 0px;
+        content:'';
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
         transform: translateX(-50%);
         transition: all 0.3s ease;
-        background: #fff;
+        width: 20%;
       }
 
       &:hover:after {
