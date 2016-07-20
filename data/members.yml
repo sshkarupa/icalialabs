@@ -37,7 +37,7 @@
   id: dg
   picture: https://s3.amazonaws.com/icalia/assets/img/mel-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/mel-closeup.png
-  bio: Daniel our resident business developer and designer. Lover of the merger between tech and beautiful design that works. A Techstars ’15 and Babson MBA ’06 alumn, he loves food, a good book, and… knows kung-fu.
+  bio: Mel is an emphatic and comprehensive psychologist. She is very cheerful and always has a smile.  Works towards creating a healthy and work friendly environment. She is always there for solving problems and make our life more happy.  Mel is always looking to learn new things and she is always ready to adapt to new scenarios in life. She is not scared of big challenges and creating great things. She likes to go to the movies and longboarding on cool days, enjoys hearing music, dancing, being with her 3 dogs and spending quality time with her significant other.
   networks:
     - link: https://twitter.com/daniel_graf
       name: twitter
@@ -72,7 +72,7 @@
 - name: Noe Araujo
   title: Digital Designer
   id: noe
-  picture: https://s3.amazonaws.com/icalia/assets/img/noe.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/noe-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/noe-closeup.png
   bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky with all the products at Icalia’s. He likes to make simple but functional things and also has a crush with flat design and white colour.
   networks:
@@ -103,13 +103,11 @@
   id: bm
   picture: https://s3.amazonaws.com/icalia/assets/img/barbs-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/barbs-closeup.png
-  bio: Barbara is a mobile intern, currently focusing in iOS development. She likes to constantly learn new technologies and improve her skills. In her spare time, she loves to hang out with friends, read and play sports such as basketball, soccer and golf.
+  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and she’s always up for playing sports with friends."
   networks:
     - link: https://github.com/bmbrina
       name: github
-    - link: https://twitter.com/bmbrina
-      name: twitter
-    - link: http://www.mbrina.com
+    - link: http://www.brina.mx
       name: website
 
 - name: Roberto Quintanilla
@@ -129,8 +127,7 @@
   id: asd
   picture: https://s3.amazonaws.com/icalia/assets/img/alex-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/alex-closeup.png
-  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to
-learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity available."
+  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity available."
   networks:
     - link: https://twitter.com/lejandro83
       name: twitter
@@ -151,7 +148,7 @@ learn random facts about anything and everything and tries to get off his ass as
     - link: https://twitter.com/may_cabrera
       name: twitter
     - link: http://mayra-cabrera.github.io/
-      name: Blog
+      name: website
 
 - name: Luis Cejudo
   title: Software Developer
@@ -174,32 +171,24 @@ learn random facts about anything and everything and tries to get off his ass as
   id: walter
   picture: https://s3.amazonaws.com/icalia/assets/img/walter-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/walter-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Walter is a Software Engineer, mostly for backend but he is also getting interested in the frontend magic. He is always looking for ways to improve his programming skills by doing personal projects, collaborating on open source or reading books. When he is not coding, you can find him playing his harmonica, reading, working out or just doing anything that he finds interesting."
   networks:
-    - link: https://github.com/thelastinuit
+    - link: https://www.github.com/walreyes
       name: github
-    - link: https://medium.com/@max.feinberg
-      name: medium
-    - link: https://twitter.com/thelastinuit
+    - link: https://www.twitter.com/walreyes11
       name: twitter
-    - link: http://bravarianpawstudios.com/
-      name: website
 
 - name: Emmanuel De Oleo
   title: Software Developer
   id: emmy
   picture: https://s3.amazonaws.com/icalia/assets/img/emi-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/emi-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Emmy is our full-stack developer, but love and prefer front-end technologies. JavaScript and web development lover, coding since he was just 14 years old. Love to spend time learning new technologies and reading articles, blogs and watching tutorials on youtube. Wants to play basketball all day long, even when he is not good at it."
   networks:
-    - link: https://github.com/thelastinuit
+    - link: https://github.com/Emmy02
       name: github
-    - link: https://medium.com/@max.feinberg
-      name: medium
-    - link: https://twitter.com/thelastinuit
+    - link: https://twitter.com/Emmyklok
       name: twitter
-    - link: http://bravarianpawstudios.com/
-      name: website
 
 - name: Luis Manzur
   title: Design Intern
@@ -222,7 +211,7 @@ learn random facts about anything and everything and tries to get off his ass as
   id: sara
   picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Sara is a graphic design student with passion for front-end development. She loves photography and giraffes, you can easily find her in good pizza places or learning something new, always ready for experience new things. In her free time she loves to visit art museums, travel to new places and doing different activities everyday like cooking, painting, crafting, dancing and more. A little girl with great enthusiasm and energy trying to always smile and be thankful for her life."
   networks:
     - link: https://github.com/thelastinuit
       name: github
