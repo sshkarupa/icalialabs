@@ -141,7 +141,7 @@
   id: mayra
   picture: https://s3.amazonaws.com/icalia/assets/img/mayra-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/mayra-closeup.png
-  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier. Mayra does mostly backend but also loves the frontend magical power. Obsessed with programming, she likes to create beautiful, concise and well crafted code through best practices & patterns. She also enjoys geeky stuff in general like science, books, movies, tv series and cats of course."
+  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier. Mayra does mostly backend but also loves the frontend magical power. <br ><br > Obsessed with programming, she likes to create beautiful, concise and well crafted code through best practices & patterns. <br ><br > She also enjoys geeky stuff in general like science, books, movies, tv series and cats of course."
   networks:
     - link: https://github.com/mayra-cabrera
       name: github
@@ -222,11 +222,11 @@
     - link: http://bravarianpawstudios.com/
       name: website
 
-- name: Luis Manzur
-  title: Design Intern
-  id: lm
-  picture: https://s3.amazonaws.com/icalia/assets/img/luigui-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
+- name: Gala
+  title: Intern
+  id: gala
+  picture: https://s3.amazonaws.com/icalia/assets/img/gala-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/gala-closeup.png
   bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
   networks:
     - link: www.instagram.com/luisphernelia
@@ -238,11 +238,11 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Sara De Leon
-  title: Design Intern
-  id: sara
-  picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
+- name: Hector
+  title: Intern
+  id: hector
+  picture: https://s3.amazonaws.com/icalia/assets/img/hector-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/hector-closeup.png
   bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
   networks:
     - link: https://github.com/thelastinuit
@@ -254,11 +254,11 @@
     - link: http://bravarianpawstudios.com/
       name: website
 
-- name: Luis Manzur
-  title: Design Intern
-  id: lm
-  picture: https://s3.amazonaws.com/icalia/assets/img/luigui-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
+- name: Joao
+  title: Intern
+  id: joao
+  picture: https://s3.amazonaws.com/icalia/assets/img/joao-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/joao-closeup.png
   bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
   networks:
     - link: www.instagram.com/luisphernelia
@@ -270,11 +270,11 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Sara De Leon
-  title: Design Intern
-  id: sara
-  picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
+- name: Jorge
+  title: Intern
+  id: jorge
+  picture: https://s3.amazonaws.com/icalia/assets/img/jorge-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/jorge-closeup.png
   bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
   networks:
     - link: https://github.com/thelastinuit
@@ -286,11 +286,11 @@
     - link: http://bravarianpawstudios.com/
       name: website
 
-- name: Luis Manzur
-  title: Design Intern
-  id: lm
-  picture: https://s3.amazonaws.com/icalia/assets/img/luigui-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
+- name: Oscar Hinojosa
+  title: Intern
+  id: oscar
+  picture: https://s3.amazonaws.com/icalia/assets/img/oscar-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/oscar-closeup.png
   bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
   networks:
     - link: www.instagram.com/luisphernelia
@@ -302,11 +302,11 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Sara De Leon
-  title: Design Intern
-  id: sara
-  picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
+- name: Rene
+  title: Intern
+  id: rene
+  picture: https://s3.amazonaws.com/icalia/assets/img/rene-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/rene-closeup.png
   bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
   networks:
     - link: https://github.com/thelastinuit
@@ -318,11 +318,11 @@
     - link: http://bravarianpawstudios.com/
       name: website
 
-- name: Luis Manzur
-  title: Design Intern
-  id: lm
-  picture: https://s3.amazonaws.com/icalia/assets/img/luigui-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
+- name: Renata
+  title: Intern
+  id: renata
+  picture: https://s3.amazonaws.com/icalia/assets/img/renata-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/renata-closeup.png
   bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
   networks:
     - link: www.instagram.com/luisphernelia
@@ -334,11 +334,11 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Sara De Leon
-  title: Design Intern
-  id: sara
-  picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
+- name: Tony
+  title: Intern
+  id: tony
+  picture: https://s3.amazonaws.com/icalia/assets/img/tony-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/tony-closeup.png
   bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
   networks:
     - link: https://github.com/thelastinuit
@@ -350,11 +350,11 @@
     - link: http://bravarianpawstudios.com/
       name: website
 
-- name: Luis Manzur
-  title: Design Intern
-  id: lm
-  picture: https://s3.amazonaws.com/icalia/assets/img/luigui-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
+- name: Pedro
+  title: Intern
+  id: pedro
+  picture: https://s3.amazonaws.com/icalia/assets/img/pedro-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/pedro-closeup.png
   bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
   networks:
     - link: www.instagram.com/luisphernelia
@@ -366,18 +366,16 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Sara De Leon
-  title: Design Intern
-  id: sara
-  picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
-  closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
+- name: Victor
+  title: Intern
+  id: victor
+  picture: https://s3.amazonaws.com/icalia/assets/img/victor-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/victor-closeup.png
   bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
   networks:
-    - link: https://github.com/thelastinuit
-      name: github
-    - link: https://medium.com/@max.feinberg
-      name: medium
-    - link: https://twitter.com/thelastinuit
-      name: twitter
-    - link: http://bravarianpawstudios.com/
-      name: website
+    - link: https://www.behance.net/saraleon1017
+      name: behance
+    - link: http://facebook.com/saraleonphotography
+      name: facebook
+    - link: https://www.instagram.com/saraleon17/
+      name: instagram
