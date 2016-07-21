@@ -19,22 +19,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
   <body class="<%= current_page.data.type %>">
+
     <div class="project-container" id="project-container">
-      <header class="animated bounceInDown header">
+    	<header class="main-menu animated bounceInDown">
+	      <a href='/'><%= partial "logo" %></a>
+	      <nav class="logo-menu">
+	        <a href="startups.html">For Startups</a>
+	        <a href="enterprise.html">For Enterprise</a>
+	      </nav>
+	      <div class="burger">
+	        <div class="one"></div>
+	        <div class="two"></div>
+	        <span class="burger-label">Menu</span>
+	      </div>
+	    </header>
+	    <nav class="menu-overlay">
+	      <div class="container">
+	        <div class="menu-content">
+	          <div class="menu-content-primary-menu">
+	            <a class="l1 big-link" href="culture.html"><span class="label-menu">About</span>Culture</a>
+	            <a class="l2 big-link" href="process.html"><span class="label-menu">Icalier way</span>Process</a>
+	            <a class="l3 big-link" href="projects.html"><span class="label-menu">Expertise</span>Work</a>
+	            <a class="l4 big-link" href="team.html"><span class="label-menu">Our Family</span>Team</a>
+	            <a class="l5 big-link" href="contact.html"><span class="label-menu">Tell us abour your project</span>Contact</a>
+	            <nav class="list-menu">
+	              <span class="label-menu">Other pages</span>
+	              <a href="#">Open Source Projects</a>
+	              <a href="#">Meetups</a>
+	              <a href="#">Jobs</a>
+	              <a href="#">Blog</a>
+	            </nav>
+	            <nav class="list-menu">
+	              <span class="label-menu">Get in Touch</span>
+	              <a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a>
+	              <a href="tel:8120898857">+52 01 (81) 2089 8857</a>
+	            </nav>
+	          </div>
+	        </div>
+	      </div>
+	    </nav>
+      <section class="animated bounceInDown header">
 				<div class="bg-img">
 	        <img src="<%= current_page.data.bg_img %>" alt="<%= current_page.data.title %>" >
-	      </div>
-	      <div class="main-menu">
-	      	<a href='/'><%= partial "logo" %></a>
-		      <nav class="logo-menu">
-		        <a href="startups.html">For Startups</a>
-		        <a href="enterprise.html">For Enterprise</a>
-		      </nav>
-		      <div class="burger">
-		        <div class="one"></div>
-		        <div class="two"></div>
-		        <span class="burger-label">Menu</span>
-		      </div>
 	      </div>
 	       <div class="title">
 	          <div class="project-name">
@@ -63,32 +89,7 @@
 
 	        <p class="subline"> <%= current_page.data.subtitle %> </p>
 	      </div>
-	    </header>
-	    <nav class="menu-overlay">
-	      <div class="container">
-	        <div class="menu-content">
-	          <div class="menu-content-primary-menu">
-	            <a class="l1 big-link" href="culture.html"><span class="label-menu">About</span>Culture</a>
-	            <a class="l2 big-link" href="process.html"><span class="label-menu">Icalier way</span>Process</a>
-	            <a class="l3 big-link" href="projects.html"><span class="label-menu">Expertise</span>Work</a>
-	            <a class="l4 big-link" href="team.html"><span class="label-menu">Our Family</span>Team</a>
-	            <a class="l5 big-link" href="contact.html"><span class="label-menu">Tell us abour your project</span>Contact</a>
-	            <nav class="list-menu">
-	              <span class="label-menu">Other pages</span>
-	              <a href="#">Open Source Projects</a>
-	              <a href="#">Meetups</a>
-	              <a href="#">Jobs</a>
-	              <a href="#">Blog</a>
-	            </nav>
-	            <nav class="list-menu">
-	              <span class="label-menu">Get in Touch</span>
-	              <a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a>
-	              <a href="tel:8120898857">+52 01 (81) 2089 8857</a>
-	            </nav>
-	          </div>
-	        </div>
-	      </div>
-	    </nav>
+	    </section>
       <button class="trigger">
         <span class="span-trigger">Trigger</span>
       </button>
