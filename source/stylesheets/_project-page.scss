@@ -2,6 +2,30 @@
   border: none;
   height: 100%;
 
+  .main-menu {
+    .logo {
+      svg {
+        fill: white;
+      }
+    }
+    .logo-menu {
+      &:before, a {
+        color: white;
+      }
+    }
+    .burger {
+      .one, .two, .three {
+        background: white;
+      }
+
+      .burger-label {
+        color: white;
+      }
+    }
+  }
+
+  .ma
+
   h1, h3 {
     font-family: 'Open Sans', sans-serif;
   }
