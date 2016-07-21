@@ -52,7 +52,7 @@ $color-5: #FFFFFF; // White
       }
 
       .printoo-colors {
-        width: 82%;
+        width: 85%;
         margin: 0 auto;
         margin-bottom: 2rem;
 
@@ -63,9 +63,9 @@ $color-5: #FFFFFF; // White
           @include border-radius(5px);
           border: 1px solid #E9E9E9;
           display: inline-block;
-          height: 280px;
-          margin: 20px 10px;
-          width: 200px;
+          height: 13rem;
+          margin: .5rem;
+          width: 10rem;
           background: #43C0CC;
           position: relative;
 
@@ -96,53 +96,52 @@ $color-5: #FFFFFF; // White
     }
 
     .printoo-tutorial {
-      width: 86%;
-      margin: 0 auto;
       margin-bottom: 2rem;
 
       img {
-        height: 380px;
-        margin: 15px 10px;
+        height: 21rem;
+        margin: .5rem;
         width: auto;
       }
     }
 
     .printoo-screens {
       height: 1000px;
+      left: -4rem;
       margin: 0 auto;
       position: relative;
       width: 95%;
 
       img {
-        height: 450px;
+        height: 25rem;
         width: auto;
         position: absolute;
         top: 120px;
         left: 10px;
 
         &:nth-child(2) {
-          left: 277px;
+          left: 255px;
           top: 80px;
         }
 
         &:nth-child(3) {
-          left: 525px;
+          left: 485px;
           top: 0px;
         }
 
         &:nth-child(4) {
-          left: 800px;
+          left: 730px;
           top: 150px;
         }
         
         &:nth-child(5) {
-          left: 270px;
-          top: 545px;
+          left: 254px;
+          top: 495px;
         }
 
         &:nth-child(6) {
-          top: 460px;
-          left: 535px;
+          left: 495px;
+          top: 415px;
         }
       }
     }
