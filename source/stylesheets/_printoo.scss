@@ -14,7 +14,7 @@ $color-5: #FFFFFF; // White
       margin-bottom: 1em;
     }
 
-    .printoo-branding {
+    .branding {
       .quote {
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -35,7 +35,7 @@ $color-5: #FFFFFF; // White
         }
       }
 
-      .printoo-img-container {
+      .img-container {
         margin-bottom: 2rem;
         text-align: center;
 
@@ -51,13 +51,30 @@ $color-5: #FFFFFF; // White
         }
       }
 
-      .printoo-colors {
+      .colors {
         width: 85%;
         margin: 0 auto;
         margin-bottom: 2rem;
 
         h3 {
           color: gray;
+        }
+
+        &.printoo-colors {
+          .color {
+            &:nth-child(2) {
+              background: #43C0CC;
+            }
+            &:nth-child(3) {
+              background: #FC6624;
+            }
+            &:nth-child(4) {
+              background: #F5F5F5;
+            }
+            &:nth-child(5) {
+              background: #497482;
+            }
+          }
         }
         .color {
           @include border-radius(5px);
@@ -66,18 +83,7 @@ $color-5: #FFFFFF; // White
           height: 13rem;
           margin: .5rem;
           width: 10rem;
-          background: #43C0CC;
           position: relative;
-
-          &:nth-child(3) {
-            background: #FC6624;
-          }
-          &:nth-child(4) {
-            background: #F5F5F5;
-          }
-          &:nth-child(5) {
-            background: #497482;
-          }
 
           .color-hex {
             background: white;
