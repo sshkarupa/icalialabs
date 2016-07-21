@@ -238,24 +238,22 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Hector
-  title: Intern
+- name: Héctor Morales González
+  title: Software Engineering Intern
   id: hector
   picture: https://s3.amazonaws.com/icalia/assets/img/hector-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/hector-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Héctor is an intern who strives to develop a well-rounded set of software development skills. He likes to think of himself as the embodiment of curiosity, and is in constant search of stimulating intelectual discourse. When he’ s not coding, he can be found either reading, drawing, wakeboarding or having an intense philosophical discussion with pretty much anyone."
   networks:
-    - link: https://github.com/thelastinuit
+    - link: https://github.com/HectorMg
       name: github
-    - link: https://medium.com/@max.feinberg
-      name: medium
-    - link: https://twitter.com/thelastinuit
-      name: twitter
-    - link: http://bravarianpawstudios.com/
+    - link: https://www.instagram.com/hectormgwake/
+      name: instagram
+    - link: mgdev.herokuapp.com
       name: website
 
 - name: Joao
-  title: Intern
+  title: Software Engineering Intern
   id: joao
   picture: https://s3.amazonaws.com/icalia/assets/img/joao-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/joao-closeup.png
@@ -271,7 +269,7 @@
       name: website  
 
 - name: Jorge
-  title: Intern
+  title: IOS Intern
   id: jorge
   picture: https://s3.amazonaws.com/icalia/assets/img/jorge-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/jorge-closeup.png
@@ -287,7 +285,7 @@
       name: website
 
 - name: Oscar Hinojosa
-  title: Intern
+  title: Software Engineering Intern
   id: oscar
   picture: https://s3.amazonaws.com/icalia/assets/img/oscar-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/oscar-closeup.png
@@ -303,7 +301,7 @@
       name: website  
 
 - name: Rene
-  title: Intern
+  title: Software Engineering Intern
   id: rene
   picture: https://s3.amazonaws.com/icalia/assets/img/rene-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/rene-closeup.png
@@ -319,7 +317,7 @@
       name: website
 
 - name: Renata
-  title: Intern
+  title: Software Engineering Intern
   id: renata
   picture: https://s3.amazonaws.com/icalia/assets/img/renata-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/renata-closeup.png
@@ -335,7 +333,7 @@
       name: website  
 
 - name: Tony
-  title: Intern
+  title: IOS Intern
   id: tony
   picture: https://s3.amazonaws.com/icalia/assets/img/tony-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/tony-closeup.png
@@ -351,7 +349,7 @@
       name: website
 
 - name: Pedro
-  title: Intern
+  title: Software Engineering Intern
   id: pedro
   picture: https://s3.amazonaws.com/icalia/assets/img/pedro-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/pedro-closeup.png
@@ -367,7 +365,7 @@
       name: website  
 
 - name: Victor
-  title: Intern
+  title: Software Engineering Intern
   id: victor
   picture: https://s3.amazonaws.com/icalia/assets/img/victor-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/victor-closeup.png
