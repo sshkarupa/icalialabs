@@ -1,7 +1,8 @@
 - name: Eduardo López
   id: edo
-  title: CEO
-  picture: https://s3.amazonaws.com/icalia/assets/img/edo.jpg
+  title: CEO/FOUNDER
+  picture: https://s3.amazonaws.com/icalia/assets/img/edo-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/edo-closeup.png
   networks:
     - link: http://twitter.com/edolopez
       name: twitter
@@ -12,222 +13,343 @@
 - name: Abraham Kuri
   title: CTO
   id: kuri
-  picture: https://s3.amazonaws.com/icalia/assets/img/kuri.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/kuri-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/kuri-closeup.png
   bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
   networks:
     - link: https://twitter.com/kurenn
-      name: Twitter
+      name: twitter
     - link: https://github.com/kurenn
-      name: Github
+      name: github
 
 - name: Daniel Graf
   title: Business Development Manager
   id: dg
-  picture: https://s3.amazonaws.com/icalia/assets/img/graf.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/graf-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/graf-closeup.png
   bio: Daniel our resident business developer and designer. Lover of the merger between tech and beautiful design that works. A Techstars ’15 and Babson MBA ’06 alumn, he loves food, a good book, and… knows kung-fu.
   networks:
     - link: https://twitter.com/daniel_graf
-      name: Twitter
+      name: twitter
 
-- name: Monica De la Torre
+- name: Melissa De La Garza
   title: Happiness Manager
-  id: monica
-  picture: https://s3.amazonaws.com/icalia/assets/img/monica.jpg
-  bio: Monica is our Happiness Manager, she takes care of leaving the ordinary aside and making our space feel like home. 
-        She's also a recruitment guru, constantly looking for talented and enthusiastic people to join our team.
-        She loves coffee, books, meeting new people, visiting new restaurants, and traveling around every corner of Mexico when she has the time.
-        As an expert in laughter, a smile goes a long way, but if you're needing guidance on the discipline of organization, she's happy to lead the way.
+  id: dg
+  picture: https://s3.amazonaws.com/icalia/assets/img/mel-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/mel-closeup.png
+  bio: Mel is an emphatic and comprehensive psychologist. She is very cheerful and always has a smile.  Works towards creating a healthy and work friendly environment. She is always there for solving problems and make our life more happy.  Mel is always looking to learn new things and she is always ready to adapt to new scenarios in life. She is not scared of big challenges and creating great things. She likes to go to the movies and longboarding on cool days, enjoys hearing music, dancing, being with her 3 dogs and spending quality time with her significant other.
   networks:
-    - link: https://www.facebook.com/monica.delatorre?fref=ts
-      name: Facebook
+    - link: https://twitter.com/daniel_graf
+      name: twitter
 
 
 - name: Eduardo Higareda
   title: Lead Designer
   id: lentes
-  picture: https://s3.amazonaws.com/icalia/assets/img/eldelentes.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/lentes-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/lentes-closeup.png
   bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
   networks:
     - link: https://twitter.com/eldelentes
-      name: Twitter
+      name: twitter
     - link: http://www.eldelentes.mx
-      name: Website
+      name: website
 
 - name: Scarlett Garza
   title: Digital Designer
   id: scarlett
-  picture: https://s3.amazonaws.com/icalia/assets/img/scar.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/scar-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/scar-closeup.png
   bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br />Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
   networks:
     - link: https://twitter.com/scarlettgarza
-      name: Twitter
+      name: twitter
     - link: https://dribbble.com/scarlettgarza
-      name: Dribble
+      name: dribbble
     - link: http://scarlettgarza.com/
-      name: Website
+      name: website
 
 - name: Noe Araujo
   title: Digital Designer
   id: noe
-  picture: https://s3.amazonaws.com/icalia/assets/img/noe.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/noe-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/noe-closeup.png
   bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky with all the products at Icalia’s. He likes to make simple but functional things and also has a crush with flat design and white colour.
   networks:
     - link: http://instagram.com/noe.ai
-      name: Instagram
+      name: instagram
     - link: https://twitter.com/Internox
-      name: Twitter
+      name: twitter
     - link: https://dribbble.com/nox
-      name: Dribbbles
-
-- name: Emily Berkeley
-  title: Software Engineer
-  id: emily
-  picture: https://s3.amazonaws.com/icalia/assets/img/emily.jpg
-  bio: Having grown up in Colorado, Emily is delighted to live somewhere that doesn't require putting studded snow tires on her bike. She loves chickens, urbanism, stories, and cleaning up Ruby code.
-  networks:
-    - link: https://github.com/EmilyMB
-      name: Github
-    - link: https://twitter.com/mexicoemily
-      name: Twitter
-
-- name: Joaquín Ramírez
-  title: iOS Intern
-  id: joaquin
-  picture: https://s3.amazonaws.com/icalia/assets/img/joaquin.jpg
-  bio: Joaquin is a Software Development student, he decided to study this because he likes being able to create something new that can help others to solve problems or even have fun. <br/> He feels passionate about developing mobile applications on iOS and he’s always trying to learn new things that allow him to be better at what he does and what he likes.On his spare time he enjoys developing mobile games, playing video games with friends, going for a run and watching or playing soccer.  
-  networks:
-    - link: https://twitter.com/joaquin_vila
-      name: Twitter
-
-- name: Juan Carlos Mercado
-  title: Full Stack Engineer
-  id: jc
-  picture: https://s3.amazonaws.com/icalia/assets/img/jc.jpg
-  bio: JC is a Full Stack Developer, nerd, philosophy reader and music addict, he enjoys math problems, photography and music production during his free time.
-  networks:
-    - link: https://github.com/zenbakiak
-      name: Github
-    - link: https://twitter.com/zenbakiak
-      name: Twitter
+      name: dribbble
 
 - name: Daniel Lozano
   title: iOS Engineer
   id: daniel
-  picture: https://s3.amazonaws.com/icalia/assets/img/daniel.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/dan-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/dan-closeup.png
   bio: Daniel works as a iOS developer. He loves reading about different programming paradigms and patterns every day, and working on side projects on the weekends. Values clean, well-crafted code over everything else. He has a passion for photography and traveling, and that’s what he can be found doing whenever he is not at his computer.<br/> He is originally from Torreon, MX, but has lived almost all of his life in Monterrey, MX. He recently came back from living a couple of years in Austin, TX after finishing up his B.S. in Computer Science over there and working at a startup for a year.
   networks:
     - link: http://danielozano.com
-      name: Website
+      name: website
     - link: http://twitter.com/danlozanov
-      name: Twitter
+      name: twitter
     - link: http://instagram.com/danlozano
-      name: Instagram
-    - link: http://danlozano.vsco.co
-      name: VSCO
+      name: instagram
 
 
 - name: Bárbara Martínez
   title: Mobile Intern
   id: bm
-  picture: https://s3.amazonaws.com/icalia/assets/img/barbara.jpg
-  bio: Barbara is a mobile intern, currently focusing in iOS development. She likes to constantly learn new technologies and improve her skills. In her spare time, she loves to hang out with friends, read and play sports such as basketball, soccer and golf.
+  picture: https://s3.amazonaws.com/icalia/assets/img/barbs-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/barbs-closeup.png
+  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and she’s always up for playing sports with friends."
   networks:
     - link: https://github.com/bmbrina
-      name: Github
-    - link: https://twitter.com/bmbrina
-      name: Twitter
-    - link: http://www.mbrina.com
-      name: Website
-
-- name: Luis Manzur
-  title: Design Intern
-  id: lm
-  picture: https://s3.amazonaws.com/icalia/assets/img/luis.jpg
-  bio: Luis, better known as Luigi, is a graphic design student with experience in branding and audiovisual communication; passionate about typography, geometric shapes and technology. Apprentice in front-end development, he’s always trying to apply creativity in building and creating stuff. On his free time, he plays bass guitar and enjoys riding his longboard around town, street football matches, discovering new music, and playing The Legend of Zelda.
-  networks:
-    - link: https://instagram.com/luismnzr
-      name: Instagram
-    - link: https://twitter.com/luismnzr
-      name: Twitter
-    - link: www.cargocollective.com/luismnzr
-      name: Portfolio
+      name: github
+    - link: http://www.brina.mx
+      name: website
 
 - name: Roberto Quintanilla
   title: Software Engineer
   id: rq
-  picture: https://s3.amazonaws.com/icalia/assets/img/bobby.jpg
+  picture: https://s3.amazonaws.com/icalia/assets/img/bob-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/bob-closeup.png
   bio: "An innate machine whisperer, coding since he was 10 years old - he used cassettes before diskettes existed! - Experienced in both frontend and backend development, he loves Ruby and Docker, but keeps an eye on other tech trends. <br> Docker, but keeps an eye on other tech trends. <br> Whenever he’s not whispering code into machines, he’s either playing rock music, hangin’ out with his wife and nerdy, rockstar and/or close friends, drinking spiced rum, watching NFL, F1 or UFC (he’s a Patriots fan), or doing whacky stuff."
   networks:
     - link: https://github.com/vovimayhem
-      name: Github
+      name: github
     - link: https://twitter.com/vovimayhem
-      name: Twitter
-
-- name: Nicholas Imondi
-  title: UX Designer
-  id: ni
-  picture: https://s3.amazonaws.com/icalia/assets/img/nick.jpg
-  bio: Hailing originally from New York and recently relocating to Monterrey, Nick joins us as a User Experience Designer.  Over the years he's designed interactive experiences across mobile and web applications for both startups and Fortune 500 companies alike, and has a deep-rooted passion for research and intensely critical design conversations. Outside of work Nick is happy to accept invitations to carne asada, and trips around the world.
-  networks:
-    - link: https://www.linkedin.com/in/nicholasimondi
-      name: Linkedin
-    - link: https://vimeo.com/nickimondi
-      name: Vimeo
-
-- name: Lizeth Aguayo
-  title: Sales Engineer
-  id: lza
-  picture: https://s3.amazonaws.com/icalia/assets/img/lizeth.jpg
-  bio: "Liz enjoys visiting and discovering every city of our colorful country -traveling is one of the things she loves the most- She also loves to learn new things, specially those things related with creativity and to discover hidden or underground places."
-  networks:
-    - link: https://instagram.com/lizzaguayo
-      name: Instagram
-    - link: https://twitter.com/lizaguayo
-      name: Twitter
+      name: twitter
 
 - name: Alejandro Sandoval
   title: Software Engineer
   id: asd
-  picture: https://s3.amazonaws.com/icalia/assets/img/alejandro.jpg
-  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to
-learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity available."
+  picture: https://s3.amazonaws.com/icalia/assets/img/alex-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/alex-closeup.png
+  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity available."
   networks:
     - link: https://twitter.com/lejandro83
-      name: Twitter
+      name: twitter
     - link: https://github.com/lejandro83
-      name: Github
+      name: github
     - link: https://instagram.com/ricordiepanini/
-      name: Instagram
-
-- name: Elena Flores
-  title: Interaction Designer
-  id: elena
-  picture: https://s3.amazonaws.com/icalia/assets/img/elena.jpg
-  bio: "Elena is a designer , front-end developer , entrepreneur and traveler. Her passions is determined and therefore enjoys meeting different languages, either in technology or in everyday life .
-
-She is from Mexico City but has lived in the last five years in different parts of the world, now is the turn of Monterrey.
-
-She loves to visit museums, cycling, go for a walk with Guru (a Venezuelan dog),  read books, movies, give reiki therapy and paint mandalas."
-  networks:
-    - link: https://twitter.com/LUCIOLEfashion
-      name: Twitter
-    - link: https://www.instagram.com/lucirfashion/
-      name: Instagram
+      name: instagram
 
 - name: Mayra Cabrera
   title: Software Engineer
   id: mayra
-  picture: https://s3.amazonaws.com/icalia/assets/img/mayra.jpg
-  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier.
-
-Mayra does mostly backend but also loves the frontend magical power. Obsessed with programming, she likes to create beautiful, concise and well crafted code through best practices & patterns.
-
-She also enjoys geeky stuff in general like science, books, movies, tv series and cats of course."
+  picture: https://s3.amazonaws.com/icalia/assets/img/mayra-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/mayra-closeup.png
+  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier. Mayra does mostly backend but also loves the frontend magical power. <br ><br > Obsessed with programming, she likes to create beautiful, concise and well crafted code through best practices & patterns. <br ><br > She also enjoys geeky stuff in general like science, books, movies, tv series and cats of course."
   networks:
     - link: https://github.com/mayra-cabrera
-      name: Github
+      name: github
     - link: https://twitter.com/may_cabrera
-      name: Twitter
+      name: twitter
     - link: http://mayra-cabrera.github.io/
-      name: Blog
+      name: website
 
+- name: Luis Cejudo
+  title: Software Developer
+  id: cejas
+  picture: https://s3.amazonaws.com/icalia/assets/img/cejas-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/cejas-closeup.png
+  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  networks:
+    - link: https://github.com/thelastinuit
+      name: github
+    - link: https://medium.com/@max.feinberg
+      name: medium
+    - link: https://twitter.com/thelastinuit
+      name: twitter
+    - link: http://bravarianpawstudios.com/
+      name: website
+
+- name: Walter Reyes
+  title: Software Developer
+  id: walter
+  picture: https://s3.amazonaws.com/icalia/assets/img/walter-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/walter-closeup.png
+  bio: "Walter is a Software Engineer, mostly for backend but he is also getting interested in the frontend magic. He is always looking for ways to improve his programming skills by doing personal projects, collaborating on open source or reading books. When he is not coding, you can find him playing his harmonica, reading, working out or just doing anything that he finds interesting."
+  networks:
+    - link: https://www.github.com/walreyes
+      name: github
+    - link: https://www.twitter.com/walreyes11
+      name: twitter
+
+- name: Emmanuel De Oleo
+  title: Software Developer
+  id: emmy
+  picture: https://s3.amazonaws.com/icalia/assets/img/emi-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/emi-closeup.png
+  bio: "Emmy is our full-stack developer, but love and prefer front-end technologies. JavaScript and web development lover, coding since he was just 14 years old. Love to spend time learning new technologies and reading articles, blogs and watching tutorials on youtube. Wants to play basketball all day long, even when he is not good at it."
+  networks:
+    - link: https://github.com/Emmy02
+      name: github
+    - link: https://twitter.com/Emmyklok
+      name: twitter
+
+- name: Luis Manzur
+  title: Design Intern
+  id: lm
+  picture: https://s3.amazonaws.com/icalia/assets/img/luigui-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
+  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  networks:
+    - link: www.instagram.com/luisphernelia
+      name: instagram
+    - link: www.twitter.com/luisphernelia
+      name: twitter
+    - link: www.dribbble.com/luisphernelia
+      name: dribbble
+    - link: www.luismanzur.com
+      name: website  
+
+- name: Sara De Leon
+  title: Design Intern
+  id: sara
+  picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
+  bio: "Sara is a graphic design student with passion for front-end development. She loves photography and giraffes, you can easily find her in good pizza places or learning something new, always ready for experience new things. In her free time she loves to visit art museums, travel to new places and doing different activities everyday like cooking, painting, crafting, dancing and more. A little girl with great enthusiasm and energy trying to always smile and be thankful for her life."
+  networks:
+    - link: https://github.com/thelastinuit
+      name: github
+    - link: https://medium.com/@max.feinberg
+      name: medium
+    - link: https://twitter.com/thelastinuit
+      name: twitter
+    - link: http://bravarianpawstudios.com/
+      name: website
+
+- name: Gala Islas
+  title: Intern
+  id: gala
+  picture: https://s3.amazonaws.com/icalia/assets/img/gala-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/gala-closeup.png
+  bio: "Gala is a software intern, who loves to do both backend and frontend, she is always looking for an opportunity to learn more and improve her coding skills. In her free time, she loves to watch movies and series, dance, draw with pencil and listen to music."
+  networks:
+    - link: https://github.com/GalaRamos
+      name: github
+    - link: https://twitter.com/GalaIslas
+      name: twitter 
+
+- name: Héctor Morales González
+  title: Software Engineering Intern
+  id: hector
+  picture: https://s3.amazonaws.com/icalia/assets/img/hector-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/hector-closeup.png
+  bio: "Héctor is an intern who strives to develop a well-rounded set of software development skills. He likes to think of himself as the embodiment of curiosity, and is in constant search of stimulating intelectual discourse. When he’ s not coding, he can be found either reading, drawing, wakeboarding or having an intense philosophical discussion with pretty much anyone."
+  networks:
+    - link: https://github.com/HectorMg
+      name: github
+    - link: https://www.instagram.com/hectormgwake/
+      name: instagram
+    - link: mgdev.herokuapp.com
+      name: website
+
+- name: Joao Moura
+  title: Software Engineering Intern
+  id: joao
+  picture: https://s3.amazonaws.com/icalia/assets/img/joao-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/joao-closeup.png
+  bio: "Joao is a software engineer intern, currently focusing on Ruby on Rails backend development. He is passionate about technology, learning new things and is part of HackMTY’s organizing board. During his free time he enjoys playing sports, listening to new music, and traveling."
+  networks:
+    - link: https://github.com/JoaoGabrielMoura
+      name: github
+    - link: www.twitter.com/luisphernelia
+      name: twitter
+
+- name: Jorge Elizondo
+  title: IOS Intern
+  id: jorge
+  picture: https://s3.amazonaws.com/icalia/assets/img/jorge-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/jorge-closeup.png
+  bio: "Jorge is an IOS intern focusing in swift programming language. His passion is to make mobile applications and in his free time he likes to play chess or read a good book."
+  networks:
+    - link: https://github.com/Jelizondo
+      name: github
+
+- name: Oscar Hinojosa
+  title: Software Engineering Intern
+  id: oscar
+  picture: https://s3.amazonaws.com/icalia/assets/img/oscar-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/oscar-closeup.png
+  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  networks:
+    - link: www.instagram.com/luisphernelia
+      name: instagram
+    - link: www.twitter.com/luisphernelia
+      name: twitter
+    - link: www.dribbble.com/luisphernelia
+      name: dribbble
+    - link: www.luismanzur.com
+      name: website  
+
+- name: Rene Saenz
+  title: Software Engineering Intern
+  id: rene
+  picture: https://s3.amazonaws.com/icalia/assets/img/rene-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/rene-closeup.png
+  bio: "Rene is a Computer Science student who is highly interested in game and web dev. He is very enthusiastic about coding and likes to gather with his friends to hack. During his free time, Rene, loves to learn about new technologies, swim and play video games."
+  networks:
+    - link: https://github.com/ReneSG
+      name: github
+    - link: https://medium.com/@max.feinberg
+      name: medium
+    - link: https://twitter.com/Renee_Saenz
+      name: twitter
+
+- name: Renata Saldívar
+  title: Software Engineering Intern
+  id: renata
+  picture: https://s3.amazonaws.com/icalia/assets/img/renata-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/renata-closeup.png
+  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  networks:
+    - link: https://github.com/renata-sg
+      name: github
+    - link: https://twitter.com/renata_saldivar
+      name: twitter 
+
+- name: Antonio Toussaint
+  title: IOS Intern
+  id: tony
+  picture: https://s3.amazonaws.com/icalia/assets/img/tony-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/tony-closeup.png
+  bio: "Tony is an intern who thinks of technology and code as a form of expression, the possibilities are endless, you make your limits. Music is one of his passions, one day can’t pass without him listening to something new or learning a new song. He loves to play  the guitar and the ukelele. When he is nos coding or making music he likes to hang out with friends or sleep. He enjoys the simple things in life."
+  networks:
+    - link: https://github.com/tonyyasi
+      name: github
+    - link: https://twitter.com/Tonyyasi
+      name: twitter
+
+- name: Pedro Sordo
+  title: Software Engineering Intern
+  id: pedro
+  picture: https://s3.amazonaws.com/icalia/assets/img/pedro-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/pedro-closeup.png
+  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  networks:
+    - link: www.instagram.com/luisphernelia
+      name: instagram
+    - link: www.twitter.com/luisphernelia
+      name: twitter
+    - link: www.dribbble.com/luisphernelia
+      name: dribbble
+    - link: www.luismanzur.com
+      name: website  
+
+- name: Victor Elizalde
+  title: Software Engineering Intern
+  id: victor
+  picture: https://s3.amazonaws.com/icalia/assets/img/victor-full.png
+  closeup: https://s3.amazonaws.com/icalia/assets/img/victor-closeup.png
+  bio: "Victor is a software engineer intern who loves to learn and create code and tools. He is passionate about what he does and is in love with open source and complex algorithms. He loves to play all kinds of sports, music, drums, percussions, videogames and food. He really likes food."
+  networks:
+    - link: https://github.com/VictorElizalde
+      name: github
+    - link: https://www.facebook.com/victor.potgieter.52?ref=bookmarks
+      name: facebook
+    - link: https://twitter.com/Victor_Eli4
+      name: twitter

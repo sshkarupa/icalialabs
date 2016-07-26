@@ -43,7 +43,7 @@
   }
 
   .slide-text.vertical-align {
-  	left: 10rem;
+  	left: 8rem;
     top: 45%;
 
     @include phone {
@@ -55,7 +55,7 @@
   .slide-text {
   	position: relative;
   	top: 10rem;
-  	right: 10rem;
+  	right: 5rem;
 
     @include phone {
       left: 2rem;

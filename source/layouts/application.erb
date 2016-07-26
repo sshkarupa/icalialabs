@@ -17,6 +17,7 @@
        ga('send', 'pageview');
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/54685ae476.js"></script>
   </head>
   <body class="<%= current_page.data.type %>">
     <header class="main-menu animated bounceInDown">
@@ -134,6 +135,11 @@
     <script>
       var scene = document.getElementById('scene');
       var parallax = new Parallax(scene);
+    </script>
+    <script>
+      $(function(){
+        $('.members-nav').scroller({ direction: 'vertical', fixed: 'h6', step:10 });
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>

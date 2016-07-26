@@ -1,5 +1,9 @@
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 100%;}
+}
+
 .section-description {
-  color: rgba(0,0,0,0.8);
   font-weight: 100;
   width: 60%;
   font-size: 1.3em;
@@ -22,304 +26,233 @@
     }
   }
 
-  .team-section {
-    overflow: hidden;
-    width: 100%;
+  .section-header {
+    background: url(https://s3.amazonaws.com/icalia/assets/img/team-section.jpg);
+    background-position: center center;
+    color: white;
+    text-align: left;
+    @include background-size(cover);
+
+    .curtain {
+      background: $primary-color;
+      height: 100%;
+      opacity: .5;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .team-header {
+    margin: 0 auto;
     position: relative;
+    top: 60%;
+    width: 60%;
+
+    @include phone {
+      top: 50%;
+      width: 95%;
+    }
+  }
+
+  .team-section {
     cursor: pointer;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 
+    .hide {
+      color: white;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      z-index: 100;
 
+      h6 {
+        margin-top: 0.3rem;
+        float: right;
+      }
 
-    .hider {
+      img {
+        width: 10%;
+        float: left;
+      }
+    }
+
+    aside {
+      background: $primary-color;
+      color: white;
+      height: 100%;
+      float: left;
+      left: 0;
       overflow: hidden;
+      padding: 2rem;
+      position: absolute;
+      top: 0;
+      width: 20%;
+      z-index: 100;
+
+      @include phone {
+        padding: 1rem;
+        width: 25%
+      }
+
+      h6 {
+        margin-bottom: 2rem;
+      }
+      
+      ul {
+        color: white;
+        list-style: none;
+
+        a {
+          @include transition(all 0.2s ease-in-out);
+          color: black;
+          display: block;
+          font-size: 0.8rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .active {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 4%;
+
+      @include phone {
+        width: 10%;
+      }
+    }
+
+    .members-grid {
+      display: none;
+      height: 100vh;
+
+      .col-2 {
+        background: #202020;
+        height: 10rem;
+        background-size: 23vh;
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
     }
 
     .member {
-      height: auto;
+      animation: appear 0.8s;
+      background: #202020;
+      background-repeat: no-repeat;
+      background-position: right;
+      color: white;
+      height: 100vh;
+      display: none;
       padding: 0;
-      position: relative;
+      position: absolute;
       overflow: hidden;
+      width: 100%;
+      @include background-size(cover);
+      @include transition(all 1s ease-in-out);
 
-      &:hover .info-circle {
+      &.show {
         display: block;
       }
 
-      &:hover  .picture {
-        @include transform(scale(1.1));
-        @include transform-origin(center);
-      }
-
-      .picture {
+      &:first-child{
         display: block;
-        width: 100%;
-        @include transition(transform 0.5s ease);
       }
 
-      .info-circle {
-        background: $dark-gray;
-        @include border-radius(50%);
-        color: #FFF;
-        cursor: pointer;
-        height: 150px;
-        width: 150px;
-        margin: auto;
-        position: absolute;
-        top: -130px; left: 0; bottom: -350px; right: 0;
-        text-align: center;
-        display: none;
-        @include transition(all 10s ease);
-        z-index: 91;
+      .member-info {
+        color: white;
+        left: 25%;
+        position: relative;
+        text-align: justify;
+        top: 40%;
+        width: 25%;
+        z-index: 100;
 
-        @include max-screen(1000px){
-          @include border-radius(0px);
-          display: block;
-          height: 60px;
-          width: 100%;
-          bottom: 0;
-          top: auto;
-          border-right: 1px solid white;
+        .name, .position {
+          margin-bottom: 1rem;
         }
 
-        .name {
-          top: 50%;
-          margin-top: 60px;
-
-          @include max-screen(1000px){
-            margin-top: 12px;
-          }
-        }
-
-        .position {
-          color: #BF4F4D;
-          text-transform: uppercase;
-        }
-
-        .line {
-          background: #FFF;
-          height: 3px;
-          margin: 10px auto;
-          width: 45px;
-
-          @include max-screen(1000px){
-            display: none;
-          }
-        }
-      }
-
-      .curtain {
-        // background-color: rgba(226,58,44,0.5);
-        background-color: rgba(255,255,255,0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include single-transition(all 0.5s ease);
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        /*padding: 1.5em;*/
-        z-index: 90;
-        &:hover {
-          background: none;
-        }
-      }
-    }
-    .member-modal {
-      cursor: default;
-      position: fixed;
-      top: 0;
-      background: #fff;
-      overflow-y: scroll;
-
-      @include max-screen($small-screen) {
-        left: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .modal-image {
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-        min-height: 600px;
-        overflow: hidden;
-
-        img {
-          height: 100%;
-        }
-      }
-
-      .social {
-        padding: 10px 20px;
-        border: 3px solid $primary-color;
-        display: inline-block;
-        border-radius: 5px;
-        text-decoration: none;
-        margin: 20px 0px;
-        text-transform: capitalize;
-
-        &:hover {
-          background: $primary-color;
-          color: #fff;
-        }
-      }
-
-      .modal-info {
-        color: #4e4e4e;
-        height: 100%;
-        max-height: 600px;
-        overflow-y: auto;
-        padding: 50px;
-
-        .member-title {
-          color: #e60038;
-          font-weight: 100;
-          font-family: 'Open Sans', sans-serif;
+        @include phone {
+          left: 27%;
+          top: 20%;
+          width: 75%;
         }
 
         p {
-          font-size: 1.5rem;
-          font-weight: 200;
-          margin: 50px 0px;
+          font-size: 14px;
         }
       }
     }
 
-
-    .modal-close {
-      background: #1d252e;
-      cursor: pointer;
-      color: #FFF;
+    .networks {
+      left: 90%;
+      top: 40%;
       position: absolute;
-      padding: 30px 20px;
-      right: 50px;
-      text-align: center;
-      top: 20px;
-      border-radius: 50%;
-      @include max-screen($small-screen) {
-        padding: 15px 10px;
-      }
-    }
 
-    .modal-overlay {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      visibility: hidden;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      opacity: 0;
-      background: #fff;
-      transition: all 0.3s;
+      .social {
+        color: white;
+        cursor: pointer;
+        display: block;
+        height: 1.5rem;
+        font-family: FontAwesome;
+        font-size: 1.5rem;
+        margin: 1rem;
+        overflow: hidden;
+        width: 1.5rem;
+
+        &.facebook:before {
+          content: "\f09a";
+          margin-right: 2rem;
+        }
+
+        &.twitter:before {
+          content: "\f099";
+          margin-right: 2rem;
+        }
+
+        &.github:before {
+          content: "\f113";
+          margin-right: 2rem;
+        }
+
+        &.medium:before {
+          content: "\f23a";
+          margin-right: 2rem;
+        }
+
+        &.website:before {
+          content: "\f0c1";
+          margin-right: 2rem;
+        }
+
+        &.dribbble:before {
+          content: "\f17d";
+          margin-right: 2rem;
+        }
+
+        &.instagram:before {
+          content: "\f16d";
+          margin-right: 2rem;
+        }
     }
-    
+    }
   }
 
   .join {
     background: #FFF;
-    padding: 50px;
+    height: 60vh;
     text-align: center;
 
     .tag {
       margin: 30px 0;
     }
   }
-
-
-  /*
-  =============================================
-  Media queries
-  =============================================
-   */
-
-  @include max-screen(768px){
-    .team-section {
-      .hider {
-        cursor: default;
-        height: auto;
-        width: auto;
-
-        .member {
-          .picture {
-            cursor: pointer;
-            height: auto;
-          }
-          .info-circle{
-            height: 80px;
-            border-right: none;
-            .name{
-              margin-top: 15px;
-              font-size: 20px;
-            }
-            .position{
-              font-size: 15px;
-            }
-          }
-
-        }
-      }
-    }
-  }
 }
-/*
-==============================================
-slideUp
-==============================================
- */
-
-
-  .slideUp{
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;	
-
-    animation-duration: .7s;	
-    -webkit-animation-duration: .7s;
-
-    animation-timing-function: ease;	
-    -webkit-animation-timing-function: ease;
-
-    visibility: visible !important;
-  }
-
-  @keyframes slideUp {
-    0% {
-      transform: translateY(100%);
-    }
-    50%{
-      transform: translateY(-8%);
-    }
-    65%{
-      transform: translateY(4%);
-    }
-    80%{
-      transform: translateY(-4%);
-    }
-    95%{
-      transform: translateY(2%);
-    }			
-    100% {
-      transform: translateY(0%);
-    }	
-  }
-
-  @-webkit-keyframes slideUp {
-    0% {
-      -webkit-transform: translateY(100%);
-    }
-    50%{
-      -webkit-transform: translateY(-8%);
-    }
-    65%{
-      -webkit-transform: translateY(4%);
-    }
-    80%{
-      -webkit-transform: translateY(-4%);
-    }
-    95%{
-      -webkit-transform: translateY(2%);
-    }			
-    100% {
-      -webkit-transform: translateY(0%);
-    }	
-  }

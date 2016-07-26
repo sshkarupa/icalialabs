@@ -3,63 +3,60 @@ layout: application
 title: Team
 type: team
 ---
-<section class="info row">
-  <h4 class="section-name">The Team</h4>
-  <h1 class="section-tag">We are people like you</h1>
-  <p class="section-description">
-    A combination of skilled developers, creative designers and business strategists, willing to be part of your dream team. 
-  </p>
+<section class="section-header">
+  <div class="curtain"></div>
+  <div class="team-header">
+    <h6 class="letter-spacing">Our team</h6>
+    <h1 class="section-tag">Our passion is our job, we craft awesome products.</h1>
+  </div>
 </section>
- 
 
-<div class="wrapper">
-<section class="team-section clearfix row">
-  <div class="hider row">
-<!-- Members -->
-    
-    <% data.members.each do |member| %>
-    <figure class="member col-3" data-furatto="modal" data-target="#modal-<%= member.id %>" data-transition="2">
-      <img src="<%=member.picture%>" alt="<%= member.name %>" class="picture"/>
-      <div class="info-circle slideUp">
-        <a href="#member-info"></a>
-        <h5 class="name"><%= member.name %></h5>
-        <h6 class="position"><%= member.title %></h6>
-        <div class="line"></div>
-      </div>
-      <div class="curtain">
-      </div>
-    </figure>
-  <% end %>
-
- <!-- Modal info for member -->
-  <% data.members.each do |member| %>
-    <div class="member-modal modal" id="modal-<%=member.id%>">
-        <a class="modal-close">BACK</a>
-        <div class="row">
-          <div class="col-4 modal-image visible-on-large" style="background-image: url(<%=member.picture%>)">
-          </div>
-          <div class="col-8 modal-info">
-            <h3 class="member-name"><%= member.name %></h3>
-            <h4 class="member-title"><%= member.title %></h3>
-            <div class="networks">
-              <% member.networks.each do |network| %>
-                <a href="<%= network.link %>" class="social <%=network.name%>" target="_blank"><%= network.name %></a>
-              <% end %>
-            </div>
+<section class="team-section">
+  <div class="members-fullpage">
+    <div class="hide">
+      <img src="images/see-all.png" alt="">
+      <h6 class="letter-spacing">View all the team</h6>
+    </div>
+    <aside class="members-nav">
+      <h6 class="letter-spacing">Our team members</h6>
+      <ul>
+        <% data.members.each do |member| %>   
+        <li><a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a></li>
+        <% end %> 
+      </ul>
+    </aside>
+    <div class="members-container">
+      <% data.members.each do |member| %>     
+        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>'); background-size: 80vh;">
+          <div class="member-info">
+            <h5 class="name"><%= member.name %></h5>
+            <h6 class="position"><%= member.title %></h6>
             <p><%= member.bio %></p>
           </div>
-        </div>
+          <div class="networks">
+            <% member.networks.each do |network| %>
+              <a href="<%= network.link %>" class="social <%=network.name%>" target="_blank"><%= network.name %></a>
+            <% end %>
+          </div>
+        </figure>
+      <% end %> 
     </div>
-<% end %>
-
   </div>
-
+  <div class="members-grid row">
+    <img src="images/close.png" class="close" alt="">
+    <% data.members.each do |member| %> 
+      <div class="col-2" data-name="<%= member.name %>" style="background-image: url('<%=member.closeup%>')">
+      </div>
+    <% end %> 
+  </div>
 </section>
-</div>
 
 <section class="join row">
-  <h4 class="capital">Join Us.</h4>
-  <h2 class="tag">Are you ready for new challenges?</h2>
-
-  <a href="culture.html#positions" class="red-button">View our open positions</a>
+  <div class="vertical-align">
+    <h6 class="letter-spacing red">Join Us.</h6>
+    <h2 class="tag">Are you ready for new challenges?</h2>
+    <div class="call-buttons-group red">
+      <a href="culture.html#positions"><h6 class="letter-spacing">View our open positions</h6></a>
+    </div>
+  </div>
 </section>
