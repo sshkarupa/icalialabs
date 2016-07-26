@@ -222,21 +222,17 @@
     - link: http://bravarianpawstudios.com/
       name: website
 
-- name: Gala
+- name: Gala Islas
   title: Intern
   id: gala
   picture: https://s3.amazonaws.com/icalia/assets/img/gala-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/gala-closeup.png
-  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  bio: "Gala is a software intern, who loves to do both backend and frontend, she is always looking for an opportunity to learn more and improve her coding skills. In her free time, she loves to watch movies and series, dance, draw with pencil and listen to music."
   networks:
-    - link: www.instagram.com/luisphernelia
-      name: instagram
-    - link: www.twitter.com/luisphernelia
-      name: twitter
-    - link: www.dribbble.com/luisphernelia
-      name: dribbble
-    - link: www.luismanzur.com
-      name: website  
+    - link: https://github.com/GalaRamos
+      name: github
+    - link: https://twitter.com/GalaIslas
+      name: twitter 
 
 - name: Héctor Morales González
   title: Software Engineering Intern
@@ -252,37 +248,27 @@
     - link: mgdev.herokuapp.com
       name: website
 
-- name: Joao
+- name: Joao Moura
   title: Software Engineering Intern
   id: joao
   picture: https://s3.amazonaws.com/icalia/assets/img/joao-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/joao-closeup.png
-  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  bio: "Joao is a software engineer intern, currently focusing on Ruby on Rails backend development. He is passionate about technology, learning new things and is part of HackMTY’s organizing board. During his free time he enjoys playing sports, listening to new music, and traveling."
   networks:
-    - link: www.instagram.com/luisphernelia
-      name: instagram
+    - link: https://github.com/JoaoGabrielMoura
+      name: github
     - link: www.twitter.com/luisphernelia
       name: twitter
-    - link: www.dribbble.com/luisphernelia
-      name: dribbble
-    - link: www.luismanzur.com
-      name: website  
 
-- name: Jorge
+- name: Jorge Elizondo
   title: IOS Intern
   id: jorge
   picture: https://s3.amazonaws.com/icalia/assets/img/jorge-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/jorge-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Jorge is an IOS intern focusing in swift programming language. His passion is to make mobile applications and in his free time he likes to play chess or read a good book."
   networks:
-    - link: https://github.com/thelastinuit
+    - link: https://github.com/Jelizondo
       name: github
-    - link: https://medium.com/@max.feinberg
-      name: medium
-    - link: https://twitter.com/thelastinuit
-      name: twitter
-    - link: http://bravarianpawstudios.com/
-      name: website
 
 - name: Oscar Hinojosa
   title: Software Engineering Intern
@@ -300,55 +286,45 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Rene
+- name: Rene Saenz
   title: Software Engineering Intern
   id: rene
   picture: https://s3.amazonaws.com/icalia/assets/img/rene-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/rene-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Rene is a Computer Science student who is highly interested in game and web dev. He is very enthusiastic about coding and likes to gather with his friends to hack. During his free time, Rene, loves to learn about new technologies, swim and play video games."
   networks:
-    - link: https://github.com/thelastinuit
+    - link: https://github.com/ReneSG
       name: github
     - link: https://medium.com/@max.feinberg
       name: medium
-    - link: https://twitter.com/thelastinuit
+    - link: https://twitter.com/Renee_Saenz
       name: twitter
-    - link: http://bravarianpawstudios.com/
-      name: website
 
-- name: Renata
+- name: Renata Saldívar
   title: Software Engineering Intern
   id: renata
   picture: https://s3.amazonaws.com/icalia/assets/img/renata-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/renata-closeup.png
-  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
   networks:
-    - link: www.instagram.com/luisphernelia
-      name: instagram
-    - link: www.twitter.com/luisphernelia
-      name: twitter
-    - link: www.dribbble.com/luisphernelia
-      name: dribbble
-    - link: www.luismanzur.com
-      name: website  
+    - link: https://github.com/renata-sg
+      name: github
+    - link: https://twitter.com/renata_saldivar
+      name: twitter 
 
-- name: Tony
+- name: Antonio Toussaint
   title: IOS Intern
   id: tony
   picture: https://s3.amazonaws.com/icalia/assets/img/tony-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/tony-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Tony is an intern who thinks of technology and code as a form of expression, the possibilities are endless, you make your limits. Music is one of his passions, one day can’t pass without him listening to something new or learning a new song. He loves to play  the guitar and the ukelele. When he is nos coding or making music he likes to hang out with friends or sleep. He enjoys the simple things in life."
   networks:
-    - link: https://github.com/thelastinuit
+    - link: https://github.com/tonyyasi
       name: github
-    - link: https://medium.com/@max.feinberg
-      name: medium
-    - link: https://twitter.com/thelastinuit
+    - link: https://twitter.com/Tonyyasi
       name: twitter
-    - link: http://bravarianpawstudios.com/
-      name: website
 
-- name: Pedro
+- name: Pedro Sordo
   title: Software Engineering Intern
   id: pedro
   picture: https://s3.amazonaws.com/icalia/assets/img/pedro-full.png
@@ -364,16 +340,16 @@
     - link: www.luismanzur.com
       name: website  
 
-- name: Victor
+- name: Victor Elizalde
   title: Software Engineering Intern
   id: victor
   picture: https://s3.amazonaws.com/icalia/assets/img/victor-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/victor-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Victor is a software engineer intern who loves to learn and create code and tools. He is passionate about what he does and is in love with open source and complex algorithms. He loves to play all kinds of sports, music, drums, percussions, videogames and food. He really likes food."
   networks:
-    - link: https://www.behance.net/saraleon1017
-      name: behance
-    - link: http://facebook.com/saraleonphotography
+    - link: https://github.com/VictorElizalde
+      name: github
+    - link: https://www.facebook.com/victor.potgieter.52?ref=bookmarks
       name: facebook
-    - link: https://www.instagram.com/saraleon17/
-      name: instagram
+    - link: https://twitter.com/Victor_Eli4
+      name: twitter
