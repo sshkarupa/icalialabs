@@ -1,0 +1,17 @@
+version: "2"
+
+volumes:
+  gems-data:
+    driver: local
+
+services:
+  web:
+    image: ruby:2.2.5
+    command: "middleman server --server-name 0.0.0.0 --verbose"
+    working_dir: /usr/src/app
+    ports:
+      - 4567:4567
+      - 35729:35729
+    volumes:
+      - .:/usr/src/app
+      - gems-data:/usr/local/bundle
