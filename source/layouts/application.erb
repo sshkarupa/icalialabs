@@ -93,6 +93,7 @@
       </div>
     </footer>
     <%= javascript_include_tag :all %>
+    <%= yield_content :javascripts %>
     <script src="javascripts/typeit.min.js"></script>
     <script>
       $('#intro-text').typeIt({
@@ -110,7 +111,7 @@
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script type="text/javascript">
-       var s = skrollr.init();
+       var s = skrollr.init({forceHeight: false});
        window.sr = ScrollReveal();
        sr.reveal('.reveal');
     </script>
