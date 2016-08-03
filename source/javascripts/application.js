@@ -12,20 +12,6 @@ $(window).scroll(function(){
   if ($('.clients-logos_item').visible( true )) {
     $('.clients-logos_item').show().addClass('fadeInUp');
   }
- 
-  var cutoff = $(window).scrollTop();
-  var sectionNumber = 01;
-  
-  $('[data-section]').each(function(){
-      if($(this).offset().top + $(this).height() > cutoff){
-          $('[data-section]').removeClass('current');
-          var sectionName = $(this).attr('data-section');
-          var sectionNumber = $('section').index(this);
-          $('.indicator_title').text(sectionName);
-          $('.indicator_number').text(sectionNumber);
-          return false; 
-      }
-  });
 });
 
 $('.burger').on('click', function(e) {
