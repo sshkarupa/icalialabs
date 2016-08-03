@@ -414,6 +414,10 @@
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 1em;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .prev-arrow { left: 3%;}
@@ -456,6 +460,10 @@
         transition: all 0.3s ease;
         cursor: pointer;
         color: #fff;
+
+      &:visited {
+        color: #fff;
+      }
 
       &:after {
         content:'';
