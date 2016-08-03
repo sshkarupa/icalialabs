@@ -42,6 +42,7 @@ function openMenu() {
   $('.burger > .one').addClass('active');
   $('.burger > .two').addClass('active');
   $('.burger > .burger-label').addClass('active');
+  isOpen = true;
 };
 
 function closeMenu() {
@@ -57,25 +58,23 @@ function closeMenu() {
   $('.burger > .one').removeClass('active');
   $('.burger > .two').removeClass('active');
   $('.burger > .burger-label').removeClass('active');
+  isOpen = false;
 };
 
 
 
 $('.burger').on('click', function(e) {
-  if (isOpen === false){
-    openMenu();
-    isOpen = true;
-  } else {
+  if (isOpen){
     closeMenu();
-    isOpen = false;
+  } else {
+    openMenu();
   }
   return e.preventDefault();
 });
 
 $(document).keyup(function(e) {
   if (e.keyCode == 27) {  
-    closeMenu();
-    isOpen = false;    
+    closeMenu();   
   }   // esc
 });
 
