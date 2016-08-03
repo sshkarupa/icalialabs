@@ -28,7 +28,7 @@ $(window).scroll(function(){
   });
 });
 
-$('.burger').on('click', function(e) {
+function toggleMenu() {
   $('.menu-overlay').toggleClass('show-menu');
   $('.menu-content').toggleClass('show-menu');
   $('.logo').toggleClass('active');
@@ -41,7 +41,17 @@ $('.burger').on('click', function(e) {
   $('.burger > .one').toggleClass('active');
   $('.burger > .two').toggleClass('active');
   $('.burger > .burger-label').toggleClass('active');
+};
+
+$('.burger').on('click', function(e) {
+  toggleMenu();
   return e.preventDefault();
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode == 27) {  
+    toggleMenu();    
+  }   // esc
 });
 
 var statItemsW =  $('.stat-item').outerWidth();
