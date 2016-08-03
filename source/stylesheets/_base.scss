@@ -21,7 +21,7 @@ body, input {
 
   &.index {
     .index-background {
-    
+
       background-size: 100%;
       background-attachment: fixed;
     }
@@ -301,7 +301,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     z-index: 300;
     top: 38px;
     @include transform-origin(center, 25%);
-    
+
     .one, .two {
       height: 2px;
       background: #fff;
@@ -309,7 +309,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       position: relative;
       @include transition(all 0.3s ease-in-out);
     }
-    
+
     .burger-label {
       @include transform(rotate(90deg)translateX(50%));
       @include transition(all 0.3s ease-in-out);
@@ -322,9 +322,17 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       letter-spacing: 2px;
     }
 
-     &:hover > .one  {@include transform(translateY(200%)translateX(-20%));}
-     &:hover > .two  {@include transform(translateY(200%));}
-     &:hover > .burger-label  {@include transform(rotate(0deg));}
+    &:hover > .one  {
+      @include transform(translateY(200%)translateX(-20%));
+    }
+
+    &:hover > .two  {
+      @include transform(translateY(200%));
+    }
+
+    &:hover > .burger-label {
+      @include transform(rotate(0deg) translateX(20%));
+    }
 
     .one.active {
       background: $primary-color;
@@ -346,7 +354,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 }
 
 // ####################### White background main menu overrides################################
- 
+
 .contact, 
 .projects, 
 .process, 
@@ -433,7 +441,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
     width: 60px;
     height: 60px;
   }
-  
+
   .direction, a, .nav-title {
     color: $primary-color;
     font-size: 1em;
@@ -468,7 +476,7 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 
 @include keyframes(rotate-right) {
-   0% {
+  0% {
     @include transform(rotate(0deg));
     right: 0px;
     top: 0px;
@@ -492,116 +500,116 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 
 // ************************** Info banner ***********************************//
-.section-header {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
+  .section-header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
 
-  a, span {
-    text-decoration: none;
-  }
-}
-
-// ************************** Modals *******************************
-
-.simple-modal {
- position: fixed;
- top: 10%;
- visibility: hidden;
-
- .modal-header {
-   background: transparent;
-   text-align: center;
-   color: #e60038 ;
-
-   h3 {
-     font-size: 4rem;
-   }
- }
-
-
- .modal-content {
-   overflow: visible;
-   padding: 50px;
-   text-align: center;
-
-   p {
-     font-weight: 100;
-     font-size: 2em;
-     color: rgba(0,0,0,0.5);
-   }
-
-
-   .modal-close {
-     cursor: pointer;
-     position: absolute;
-     right: 5%;
-     top: 8%;
-     letter-spacing: 1px;
-     border: 2px solid;
-     border-radius: 100px;
-     padding: 5px 20px;
-   }
-
-   .modal-content {
-     min-height: 300px;
-     opacity: 1;
-   }
- }
-}
-
-/*
- * ====================================================
- *  General responsive fixes
- * ====================================================
- */
-@include max-screen($small-screen-max) {
-  html {
-    font-size: 11px;
-    border: none;
+    a, span {
+      text-decoration: none;
+    }
   }
 
-  .menu-overlay {
-    
-    a {
-      margin: 0 0;
-    }
+  // ************************** Modals *******************************
 
-    .menu-content {
-      padding: 110px 0;
-    }
+  .simple-modal {
+    position: fixed;
+    top: 10%;
+    visibility: hidden;
 
-    .social-info {
-      a {
-        margin: 10px;
+    .modal-header {
+      background: transparent;
+      text-align: center;
+      color: #e60038 ;
+
+      h3 {
+        font-size: 4rem;
       }
     }
 
+
+    .modal-content {
+      overflow: visible;
+      padding: 50px;
+      text-align: center;
+
+      p {
+        font-weight: 100;
+        font-size: 2em;
+        color: rgba(0,0,0,0.5);
+      }
+
+
+      .modal-close {
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        top: 8%;
+        letter-spacing: 1px;
+        border: 2px solid;
+        border-radius: 100px;
+        padding: 5px 20px;
+      }
+
+      .modal-content {
+        min-height: 300px;
+        opacity: 1;
+      }
+    }
   }
 
-  .main-menu {
-    .logo {
-      left: 0;
+  /*
+   * ====================================================
+   *  General responsive fixes
+   * ====================================================
+   */
+  @include max-screen($small-screen-max) {
+    html {
+      font-size: 11px;
+      border: none;
     }
 
-    .burger {
-      right: 30px;
-      top: 20px;
+    .menu-overlay {
+
+      a {
+        margin: 0 0;
+      }
+
+      .menu-content {
+        padding: 110px 0;
+      }
+
+      .social-info {
+        a {
+          margin: 10px;
+        }
+      }
+
+    }
+
+    .main-menu {
+      .logo {
+        left: 0;
+      }
+
+      .burger {
+        right: 30px;
+        top: 20px;
+      }
+    }
+
+    .intro {
+      .intro-content {
+        padding: 10rem 0;
+      }
     }
   }
 
-  .intro {
-    .intro-content {
-      padding: 10rem 0;
+  @include screen($small-screen, 1280px){
+    .menu-overlay {
+      a {
+        margin: 3px 0;
+      }
     }
   }
-}
-
-@include screen($small-screen, 1280px){
-  .menu-overlay {
-    a {
-      margin: 3px 0;
-    }
-  }
-}
 
