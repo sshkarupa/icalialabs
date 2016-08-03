@@ -1,0 +1,258 @@
+@keyframes appear {
+  from {opacity: 0;}
+  to {opacity: 100%;}
+}
+
+.section-description {
+  font-weight: 100;
+  width: 60%;
+  font-size: 1.3em;
+  margin: 0 auto;
+}
+
+.team {
+
+  .wrapper {
+    position: relative;
+
+    .gradient {
+      @include background-image(linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0.75)));
+      width: 100px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 1;
+    }
+  }
+
+  .section-header {
+    background: url(https://s3.amazonaws.com/icalia/assets/img/team-section.jpg);
+    background-position: center center;
+    color: white;
+    text-align: left;
+    @include background-size(cover);
+
+    .curtain {
+      background: $primary-color;
+      height: 100%;
+      opacity: .5;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .team-header {
+    margin: 0 auto;
+    position: relative;
+    top: 60%;
+    width: 60%;
+
+    @include phone {
+      top: 50%;
+      width: 95%;
+    }
+  }
+
+  .team-section {
+    cursor: pointer;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .hide {
+      color: white;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      z-index: 100;
+
+      h6 {
+        margin-top: 0.3rem;
+        float: right;
+      }
+
+      img {
+        width: 10%;
+        float: left;
+      }
+    }
+
+    aside {
+      background: $primary-color;
+      color: white;
+      height: 100%;
+      float: left;
+      left: 0;
+      overflow: hidden;
+      padding: 2rem;
+      position: absolute;
+      top: 0;
+      width: 20%;
+      z-index: 100;
+
+      @include phone {
+        padding: 1rem;
+        width: 25%
+      }
+
+      h6 {
+        margin-bottom: 2rem;
+      }
+      
+      ul {
+        color: white;
+        list-style: none;
+
+        a {
+          @include transition(all 0.2s ease-in-out);
+          color: black;
+          display: block;
+          font-size: 0.8rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .active {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 4%;
+
+      @include phone {
+        width: 10%;
+      }
+    }
+
+    .members-grid {
+      display: none;
+      height: 100vh;
+
+      .col-2 {
+        background: #202020;
+        height: 10rem;
+        background-size: 23vh;
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
+    }
+
+    .member {
+      animation: appear 0.8s;
+      background: #202020;
+      background-repeat: no-repeat;
+      background-position: right;
+      color: white;
+      height: 100vh;
+      display: none;
+      padding: 0;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      @include background-size(cover);
+      @include transition(all 1s ease-in-out);
+
+      &.show {
+        display: block;
+      }
+
+      &:first-child{
+        display: block;
+      }
+
+      .member-info {
+        color: white;
+        left: 25%;
+        position: relative;
+        text-align: justify;
+        top: 40%;
+        width: 25%;
+        z-index: 100;
+
+        .name, .position {
+          margin-bottom: 1rem;
+        }
+
+        @include phone {
+          left: 27%;
+          top: 20%;
+          width: 75%;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .networks {
+      left: 90%;
+      top: 40%;
+      position: absolute;
+
+      .social {
+        color: white;
+        cursor: pointer;
+        display: block;
+        height: 1.5rem;
+        font-family: FontAwesome;
+        font-size: 1.5rem;
+        margin: 1rem;
+        overflow: hidden;
+        width: 1.5rem;
+
+        &.facebook:before {
+          content: "\f09a";
+          margin-right: 2rem;
+        }
+
+        &.twitter:before {
+          content: "\f099";
+          margin-right: 2rem;
+        }
+
+        &.github:before {
+          content: "\f113";
+          margin-right: 2rem;
+        }
+
+        &.medium:before {
+          content: "\f23a";
+          margin-right: 2rem;
+        }
+
+        &.website:before {
+          content: "\f0c1";
+          margin-right: 2rem;
+        }
+
+        &.dribbble:before {
+          content: "\f17d";
+          margin-right: 2rem;
+        }
+
+        &.instagram:before {
+          content: "\f16d";
+          margin-right: 2rem;
+        }
+    }
+    }
+  }
+
+  .join {
+    background: #FFF;
+    height: 60vh;
+    text-align: center;
+
+    .tag {
+      margin: 30px 0;
+    }
+  }
+}

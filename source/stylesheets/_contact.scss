@@ -1,0 +1,254 @@
+.contact {
+
+  .modal-overlay {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  background: #F4F4F4;
+  border: none;
+
+  .subtitle {
+    margin: 30px auto;
+    font-weight: 100;
+    font-size: 1.4em;
+    width: 70%;
+    color: rgba(0,0,0,0.7);
+  }
+
+  .info, .footer {
+    background: #F4F4F4;
+
+    a {
+      cursor: pointer;
+    }
+  }
+
+  .form-modal {
+    .modal-header {
+      color: $primary-color;
+    }
+
+    span {
+      color: $primary-color;
+      font-weight: 100;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .modal-close {
+      right: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    .contact-form {
+      .input, select {
+        background: transparent;
+        border-bottom: 3px dashed #e60038;
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+        outline: 0;
+        font-size: 2rem;
+        color: #e60038;
+        text-align: center;
+        margin: 10px auto 30px auto;
+        display: block;
+        width: 40%;
+      }
+
+      .secondary-button {
+        background: transparent;
+        border: 3px solid $primary-color;
+        color: $primary-color;
+        display: inline-block;
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 100px;
+        text-decoration: none;
+        padding: 10px 30px;
+      }
+    }
+  }
+
+  .input:hover {
+    outline: 0;
+  }
+
+  .input::-webkit-input-placeholder {
+    color: $primary-color;
+  }
+  h4 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .address-section {
+    background: url("https://s3.amazonaws.com/icalia/assets/img/office.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    h4 {
+      padding: 4rem 0;
+    }
+
+    .container {
+      padding-bottom: 8rem;
+    }
+
+    .address-container {
+      background: #2D1A1A;
+      border-radius: 4px;
+      padding: 5rem 3rem;
+
+      .address {
+        margin: 0 3rem 3rem 0;
+      }
+
+      h4 {
+        color: $primary-color;
+        margin-bottom: 2rem;
+        padding: 0;
+      }
+    }
+
+    p {
+      font-weight: 100;
+    }
+
+    a {
+      border: 1px solid $primary-color;
+      text-decoration: none;
+      padding: 20px 50px;
+      display: inline-block;
+      border-radius: 2px;
+      margin: 10px 0px;
+      position: relative;
+      @include transition(all 0.5s ease);
+
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+
+  .social-networks {
+    height: 90vh;
+    padding: 5rem;
+
+    ul li {
+      display: inline-block;
+    }
+
+    p {
+      font-weight: 200;
+      margin: 40px;
+    }
+
+    .icons-container {
+      padding-top: 3rem;
+    }
+
+    .icon {
+
+      img {
+        @include transition(all 0.2s ease-in-out);
+      }
+    }
+
+    .fb-icon {
+      left: -23rem !important;
+
+      @include phone {
+        left: -9rem !important;
+      }
+
+      img {
+        width: 10%;
+      }
+    }
+
+    .medium-icon {
+      left: 15rem !important;
+      top: 15rem !important;
+
+      @include phone {
+        left: 0 !important;
+        top: 20rem !important;
+      }
+
+      img {
+        width: 53%;
+      }
+    }
+    
+    .dribbble-icon {
+      left: 25rem !important;
+      top: 5rem !important;
+
+      @include phone {
+        left: 10rem !important;
+        top: 0 !important;
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+
+    .instagram-icon {
+      left: 35rem !important;
+      top: 3rem !important;
+
+      @include phone {
+        left: 13rem !important;
+        top: 11rem !important;
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+
+    .github-icon {
+      left: 40rem !important;
+      top: 13rem !important;
+
+      @include phone {
+        left: 14rem !important;
+        top: 25rem !important;
+      }
+
+      img {
+        width: 70%;
+      }
+
+    }
+    a {
+      &:hover img{
+        @include transform(scale(1.5));
+      }
+    }
+  }
+}
+
+@include max-screen($small-screen){
+  .contact{
+    .info{
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    .form-modal {
+      .contact-form {
+        .input, select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

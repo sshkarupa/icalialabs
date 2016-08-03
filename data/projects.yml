@@ -1,0 +1,28 @@
+- name: Cochi
+  client: Banregio
+  done: UI/UX Design & Development
+  image: https://s3.amazonaws.com/icalia/assets/img/cochi.jpg
+  color: ac284a
+  link: cochi.html
+
+- name: Printoo
+  client: Printoo
+  done: UI/UX Design & Development
+  image: https://s3.amazonaws.com/icalia/assets/img/printoo.jpg
+  color: 2d7f89
+  link: printoo.html
+
+- name: Okudoc
+  client: Okudoc
+  done: UI/UX Design & Development
+  image: https://s3.amazonaws.com/icalia/assets/img/okudoc.jpg
+  color: 572c7a
+  link: okudoc.html
+
+- name: Aire N.L
+  client: Personal Project
+  done: UI/UX Design & Development
+  image: https://s3.amazonaws.com/icalia/assets/img/aire.jpg
+  color: 284a7c
+  link: aire.html
+

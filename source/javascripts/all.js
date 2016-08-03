@@ -1,0 +1,14 @@
+//= require application
+//= require classie
+//= require animsition
+//= require furatto
+//= require suraido
+//= require jquery.kinetic.min
+//= require jquery-waypoints
+//= require jquery.easing.min
+//= require process-scroller
+//= require furatto_modal
+//= require player
+//= require parallax
+//= require team_slider
+//= require jquery.scroller

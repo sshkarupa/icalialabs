@@ -1,0 +1,46 @@
+.work-slider {
+  background: $primary-color;
+  text-align: center;
+
+
+  .item-slide {
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    @include transition(all 0.4s ease);
+    padding: 50px 0px;
+    height: 550px;
+
+    &.printoo{
+      background: url(https://s3.amazonaws.com/icalia/assets/img/printoo-slider.jpg);
+      @include background-size(cover); 
+    }
+    &.ovatemp{
+      background: url(https://s3.amazonaws.com/icalia/assets/img/ovatemp.jpg);
+      @include background-size(cover); 
+    }
+    &.repair{
+      background: url(https://s3.amazonaws.com/icalia/assets/img/repair.jpg);
+      @include background-size(cover); 
+    }
+
+    .big-header{
+      @include text-shadow(1px 1px 8px #5a5a5a);
+    }
+
+
+    p {
+      margin: 50px auto;
+      font-size: 3em;
+      width: 50%;
+      line-height: 1em;
+      @include text-shadow(1px 1px 8px #5a5a5a);
+
+      @include max-screen($small-screen) {
+        width: 90%;
+      }
+    }
+
+  }
+}
+
+

@@ -1,0 +1,159 @@
+body.process {
+  transition: all 0.3s ease;
+}
+
+.process-scroller {
+
+  nav {
+    position: fixed;
+    z-index: 9999;
+    left: 5%;
+    top: 50%;
+    @include transform(translateY(-50%));
+
+    a {
+      background: rgba(255, 255, 255, 0.6);
+      display: block;
+      position: relative;
+      height: 4px;
+      width: 30px;
+      margin: 10px 0px;
+      transition-property: all;
+      transition-duration: 0.4s;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+      &:hover {
+        background: rgba(255,255,255,1);
+      }
+
+      &.scroller-current {
+        background: rgba(255,255,255,1);
+        width: 60px;
+      }
+    }
+  }
+}
+
+.step {
+  height: 100vh;
+  position: relative;
+
+  @include phone {
+    height: 60vh;
+  }
+
+  @include ipad {
+    height: 60vh;
+  }
+
+  &-info {
+    height: 40vh;
+    width: 40vw;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include phone {
+      width: 90%;
+      top: 20%;
+    }
+
+    @include ipad {
+      width: 90%;
+    }
+  }
+
+  .step-number {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    border: 3px solid;
+  }
+
+  .step-title {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    transform: translateX(-10%);
+    margin: 20px 0px;
+
+    &:after {
+      content: '';
+      height: 3px;
+      width: 10%;
+      background: #fff;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 1rem;
+    }
+  }
+  .step-description {
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6em;
+  }
+}
+
+#understanding {
+  background-image: url(../images/understanding.png), url(../images/process-bg.png);
+  background-position: 10% 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: $primary-color;
+
+  @include max-screen($medium-screen-max) {
+    background-image: none;
+  }
+}
+
+#definition {
+  background-image: url(../images/definition.png), url(../images/process-bg.png);
+  background-position: 10% 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: $primary-color;
+
+  @include max-screen($medium-screen-max) {
+    background-image: none;
+  }
+}
+
+#design {
+  background-image: url(../images/design.png) , url(../images/process-bg.png); 
+  background-position: 10% 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: $primary-color;
+
+  @include max-screen($medium-screen-max) {
+    background-image: none;
+  }
+}
+
+#build {
+  background-image: url(../images/build.png) , url(../images/process-bg.png);
+  background-position: 10% 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: $primary-color;
+
+  @include max-screen($medium-screen-max) {
+    background-image: none;
+  }
+}
+
+#measure {
+  background-image: url(../images/measure.png) , url(../images/process-bg.png);
+  background-position: 10% 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: $primary-color;
+
+  @include max-screen($medium-screen-max) {
+    background-image: none;
+  }
+}
