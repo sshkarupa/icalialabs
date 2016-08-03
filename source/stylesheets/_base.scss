@@ -187,6 +187,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
         display: block;
         text-decoration: none;
       }
+
+      a:hover {
+        opacity: 0.5;
+      }
     }
 
     .big-link {
