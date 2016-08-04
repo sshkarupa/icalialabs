@@ -4,6 +4,32 @@
 	}
 }
 
+.text-header {
+  margin: 0 auto 4rem auto;
+  width: 80%;
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  h6 {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-description {
+    height: 10rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    .medium {
+      width: 58%;
+    }
+    .small {
+      width: 35%;
+    }
+  }
+}
+
 .partners {
   img {
     margin-right: 2rem;
