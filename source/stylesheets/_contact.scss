@@ -133,7 +133,7 @@
   }
 
   .social-networks {
-    height: 80vh;
+    height: 95vh;
     padding: 5rem;
 
     ul li {
@@ -257,10 +257,8 @@
   }
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-    .social-networks {
+@include min-screen($extra-large-screen) {
+  .social-networks {
     height: 60vh !important;
   }
 }

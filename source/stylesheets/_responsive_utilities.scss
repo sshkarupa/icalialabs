@@ -23,6 +23,8 @@ $medium-screen-range: "#{$media-display} and (min-width: #{$medium-screen}) and 
 $large-screen: 1200px !default;
 $large-screen-range: "#{$media-display} and (min-width: #{$large-screen})" !default;
 
+$extra-large-screen: 1400px !default;
+
 // Responsive screen orientations
 $portrait-media: "#{$media-display} and (orientation: portrait)" !default;
 $landscape-media: "#{$media-display} and (orientation: landscape)" !default;
