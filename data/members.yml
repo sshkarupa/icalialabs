@@ -60,7 +60,7 @@
   id: scarlett
   picture: https://s3.amazonaws.com/icalia/assets/img/scar-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/scar-closeup.png
-  bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br />Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
+  bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br/><br>Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
   networks:
     - link: https://twitter.com/scarlettgarza
       name: twitter
@@ -223,7 +223,7 @@
       name: website
 
 - name: Gala Islas
-  title: Intern
+  title: Software Engineering Intern
   id: gala
   picture: https://s3.amazonaws.com/icalia/assets/img/gala-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/gala-closeup.png
@@ -275,16 +275,10 @@
   id: oscar
   picture: https://s3.amazonaws.com/icalia/assets/img/oscar-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/oscar-closeup.png
-  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  bio: "Oscar has an emotional attraction to minimalism in code and lifestyle, avid computer builder and aspiring short-story writer. He likes to exercise in the morning and is always looking to improve by helping others."
   networks:
-    - link: www.instagram.com/luisphernelia
-      name: instagram
-    - link: www.twitter.com/luisphernelia
-      name: twitter
-    - link: www.dribbble.com/luisphernelia
-      name: dribbble
-    - link: www.luismanzur.com
-      name: website  
+    - link: https://github.com/oelizondo
+      name: github
 
 - name: Rene Saenz
   title: Software Engineering Intern
@@ -329,16 +323,10 @@
   id: pedro
   picture: https://s3.amazonaws.com/icalia/assets/img/pedro-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/pedro-closeup.png
-  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a visual communication student at CEDIM. Enthusiast for aesthetic order, typography, geometry, symmetry and technology. He’s the fútbol aficionado of the gang. Florist. Nintendo geek (especially Zelda). Amateur skater. Part-time rocker."
+  bio: "Pedro is a ruby on rails intern. He’s currently learning the dark ways of back-end coding but is also interested in front-end development. Pedro has been involved in organizing events at his university as well as conferences and workshops for his fellow classmates.<br><br> Whenever he’s not in the matrix, Pedro is spending time with friends, paying videogames, practicing guitar or walking his Labrador friend named “Holly”."
   networks:
-    - link: www.instagram.com/luisphernelia
-      name: instagram
-    - link: www.twitter.com/luisphernelia
-      name: twitter
-    - link: www.dribbble.com/luisphernelia
-      name: dribbble
-    - link: www.luismanzur.com
-      name: website  
+    - link: https://github.com/pedroasgarza
+      name: github 
 
 - name: Victor Elizalde
   title: Software Engineering Intern
