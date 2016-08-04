@@ -133,7 +133,7 @@
   }
 
   .social-networks {
-    height: 95vh;
+    height: 80vh;
     padding: 5rem;
 
     ul li {
@@ -237,7 +237,11 @@
     .info{
     padding-top: 180px;
     padding-bottom: 60px;
+    }
   }
+
+  .social-networks {
+    height: 100vh !important;
   }
 }
 
@@ -250,5 +254,13 @@
         }
       }
     }
+  }
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .social-networks {
+    height: 60vh !important;
   }
 }
