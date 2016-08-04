@@ -363,7 +363,8 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 .projects, 
 .process, 
 .startups, 
-.enterprise {
+.enterprise,
+.job {
   .main-menu {
     .logo {
       svg {
