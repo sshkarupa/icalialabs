@@ -338,17 +338,10 @@ a {
       letter-spacing: 2px;
     }
 
-    &:hover > .one  {
-      @include transform(translateY(200%)translateX(-20%));
-    }
-
-    &:hover > .two  {
-      @include transform(translateY(200%)translateX(-20%));
-    }
-
     &:hover > .burger-label {
-      @include transform(rotate(0deg) translateX(-20%));
+      @include transform(rotate(0deg));
       font-size: 0.5em;
+
     }
 
     .one.active {
@@ -365,7 +358,7 @@ a {
     .burger-label.active {
       color: $primary-color;
       @include transform(rotate(0deg)translateX(-15%));
-
+      font-size: 0.7em;
     }
   }
 }
