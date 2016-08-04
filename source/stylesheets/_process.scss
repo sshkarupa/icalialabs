@@ -157,3 +157,26 @@ body.process {
     background-image: none;
   }
 }
+
+@include phone {
+  .step {
+    padding: 10px;
+  }
+
+  .step-title {
+    padding-left: 34px;
+    padding-top: 10px;
+  }
+
+  .step-description {
+    padding-right: 40px;
+  }
+
+  .sep {
+    display: none;
+  }
+
+  .step-info {
+    top: 50%;
+  }
+}
