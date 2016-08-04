@@ -506,6 +506,11 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   }
 }
 
+.work-together {
+  margin: 8rem auto 4rem auto;
+  width: 85%;
+}
+
 
 // ************************** Info banner ***********************************//
   .section-header {
@@ -662,4 +667,5 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
       }
     }
   }
+
 
