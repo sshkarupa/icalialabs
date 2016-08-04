@@ -16,9 +16,9 @@ $(".hide").click(function(){
 	$('.members-grid').fadeIn();
 });
 
-$('.close').click(function() {
-	$('.members-grid').fadeOut();
-	$('.members-fullpage').fadeIn();
+$('.close-mobile').click(function() {
+	$('.members-fullpage').fadeOut();
+	$('.members-grid').fadeIn();
 });
 
 $('.members-grid .col-2').click(function() {

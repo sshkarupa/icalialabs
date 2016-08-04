@@ -79,6 +79,10 @@
         width: 10%;
         float: left;
       }
+
+      @include phone {
+        right: 10rem;
+      }
     }
 
     aside {
@@ -122,11 +126,12 @@
       font-size: 1.5rem;
     }
 
-    .close {
+    .close-mobile {
       position: absolute;
       right: 1rem;
       top: 1rem;
       width: 4%;
+      z-index: 200;
 
       @include phone {
         width: 10%;
@@ -135,6 +140,13 @@
 
     .members-fullpage {
       display: none;
+
+      @include phone {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 200;
+      }
     }
 
     .members-grid {
@@ -176,6 +188,10 @@
       @include background-size(cover);
       @include transition(all 1s ease-in-out);
 
+      @include phone {
+         background-image: none !important;
+      }
+
       &.show {
         display: block;
       }
@@ -198,9 +214,9 @@
         }
 
         @include phone {
-          left: 27%;
+          left: 5%;
           top: 20%;
-          width: 75%;
+          width: 80%;
         }
 
         p {
