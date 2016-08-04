@@ -157,3 +157,13 @@ body.process {
     background-image: none;
   }
 }
+
+@include phone {
+  .sep {
+    visibility: hidden;
+  }
+
+  .step-info {
+    top: 50%;
+  }
+}
