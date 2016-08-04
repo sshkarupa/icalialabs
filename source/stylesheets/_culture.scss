@@ -206,26 +206,6 @@
     min-height: 300px;
     padding: 150px 0px;
 
-    .position-modal {
-      color: rgba(0,0,0,0.7);
-      top: 0;
-      padding: 0;
-
-      strong {
-        display: block;
-        margin: 10px 0;
-      }
-
-      .modal-content {
-        text-align: left;
-
-        .col-6 {
-          padding-right: 25px;
-        }
-      }
-    }
-
-
     p {
       width: 60%;
       margin: 30px auto;
@@ -275,5 +255,18 @@
   background: rgba(0,0,0,0.25);
   @include max-screen($small-screen) {
     background: inherit;
+  }
+}
+
+.requirements {
+  padding: px-to-rems(100);
+
+  ul li {
+      margin: px-to-rems(10) 0;
+  }
+  
+  strong {
+    display: block;
+    margin: 10px 0;
   }
 }

@@ -16,29 +16,41 @@ html {
   }
 }
 
-body, input {
+body {
+  background: #F4F4F4;
   font-family: 'Open Sans', sans-serif;
 
   &.index {
     .index-background {
-
       background-size: 100%;
       background-attachment: fixed;
     }
   }
 }
 
+input {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1, h2, h3, h4 {
   font-family: $brand-font;
   font-weight: 400;
 }
+
 h1 {font-size: 4rem;}
 h2 {font-size: 3rem;}
 h3 {font-size: 2rem;}
 h4 {font-size: 1.5rem;}
 p {font-weight: normal; font-size: 1.3rem;}
-a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
-.downcase { text-transform: lowercase; }
+a {
+  color: $primary-color;
+  
+  &:visited {
+    color: rgba($primary-color, 0.5)
+  }
+}
+
+.downcase {text-transform: lowercase;}
 
 .clearfix:after {
   content: " ";
@@ -514,12 +526,23 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
 
 // ************************** Info banner ***********************************//
   .section-header {
-    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100vh;
     text-align: center;
+    width: 100%;
+
+    &.middle {
+      height: 50vh;
+    }
 
     a, span {
       text-decoration: none;
+    }
+
+    h2.light {
+      color: #fff;
     }
   }
 

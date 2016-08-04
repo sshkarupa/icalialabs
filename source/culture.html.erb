@@ -12,7 +12,7 @@ type: culture
   </video>
 </section>
 <section class="values-section">
-  <div class="suraido-container  vertical-align values" data-suraido>
+  <div class="suraido-container vertical-align values" data-suraido>
     <h3>Our values</h3>
     <ul>
       <li class="item-slide">
@@ -117,94 +117,11 @@ type: culture
   <p>If you want to live a different work experience, develop your true passions and grow as an individual, join us in this adventure. Let us know you want to be an Icalier.</p>
   <div class="row clearfix">
     <div class="col-6">
-      <a class="position modal-trigger" data-furatto="modal" data-target="#position-1">Senior Developer</a>
+      <a href="software-engineer.html" target="_blank" class="position">Senior Developer</a>
     </div>
     <div class="col-6">
-      <a class="position modal-trigger" data-furatto="modal" data-target="#position-2">Digital Designer</a>
+      <a href="digital-designer.html" target="_blank" class="position">Digital Designer</a>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-6">
-      <a class="position modal-trigger" data-furatto="modal" data-target="#position-3">iOS Mobile Engineer</a>
-    </div>
-  </div>
- 
-<% data.positions.each_with_index do |position, index| %>
-  <div class="position-modal simple-modal modal" id="position-<%= index + 1 %>">
-    <% if position.type == "internship" %>
-      <div class="modal-content">
-        <h3><%= position.title %></h3>
-        <div class="row clearfix">
-          <div class="col-6">
-            <strong>What?</strong>
-            <%=  position.what  %>
-            <strong>When?</strong>
-            <%=  position.when  %>
-          </div>
-
-            <div class="col-6">
-              <strong>Who?</strong>
-              <%=  position.profile  %> with knowledge of:
-            <ul>
-              <% position.requirements.each do |requirement| %>
-                <li><%= requirement %></li>
-              <% end %>
-            </ul>
-            </div>
-        </div>
-        <br />
-        <div class="row clearfix">
-          <strong>Ready to apply? Great! You'll only need a few things:</strong>
-          Send please to <a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a> before May 1st:
-          <ul>
-            <% position.documents.each do |document| %>
-              <li><%= document %></li>
-            <% end %>
-          </ul>
-        </div>
-        <a class="modal-close">Close</a>
-      </div>
-    </div>
-    <% else %>
-      <div class="modal-content">
-        <h3><%= position.title %></h3>
-        <div class="row clearfix">
-          <div class="col-6">
-            <strong>Requirements:</strong>
-            <ul>
-              <% position.requirements.each do |requirement| %>
-                <li><%= requirement %></li>
-              <% end %>
-            </ul>
-          </div>
-          <% if !position.nice_to_haves.nil? %>
-            <div class="col-6">
-              <strong>Nice to have:</strong>
-              <ul>
-                <% position.nice_to_haves.each do |bonus| %>
-                  <li><%= bonus %></li>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-        </div>
-        <br />
-        <div class="row clearfix">
-          <strong>Send please to <a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a>:</strong>
-          <ul>
-            <% position.documents.each do |document| %>
-              <li><%= document %></li>
-            <% end %>
-          </ul>
-        </div>
-        <a class="modal-close">Close</a>
-      </div>
-    </div>
-  <% end %>
-  </div>
-<% end %>
-  <div class="modal-overlay"></div>
-
 </section>
 
