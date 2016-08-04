@@ -482,7 +482,7 @@
 }
 
 .contact-section {
-  background: #fff;
+  background: #fararff;
   text-align: center;
   padding: 50px 0px;
 
@@ -490,5 +490,42 @@
     color: $primary-color;
     font-size: 2em;
     margin: 20px auto;
+  }
+}
+@include max-screen($small-screen){
+    .sep {
+      visibility: hidden;
+    }
+
+    #ar-5 {
+    left: 65% !important;
+  }
+  }
+
+@include phone{
+  .sep {
+    visibility: hidden;
+  }
+
+  #ar-5 {
+    left: 55% !important;
+  }
+
+  #ar-4 {
+    left: 54% !important;
+  }
+}
+
+@include iphone5{
+  .sep {
+    visibility: hidden;
+  }
+
+  #ar-5 {
+    left: 45% !important;
+  }
+
+  #ar-4 {
+    left: 44% !important;
   }
 }
