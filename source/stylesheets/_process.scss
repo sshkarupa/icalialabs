@@ -159,8 +159,21 @@ body.process {
 }
 
 @include phone {
+  .step {
+    padding: 10px;
+  }
+
+  .step-title {
+    padding-left: 34px;
+    padding-top: 10px;
+  }
+
+  .step-description {
+    padding-right: 40px;
+  }
+
   .sep {
-    visibility: hidden;
+    display: none;
   }
 
   .step-info {
