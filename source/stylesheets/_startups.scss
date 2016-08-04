@@ -61,6 +61,17 @@ a {
 	}
 }
 
+.startupsSlideContainer {
+	height: 100vh;
+  	width: 400%;
+
+  .pull-right {
+    @include phone {
+      float: none;
+    }
+  }
+}
+
 .startup-work {
 	margin-bottom: 4rem;
 
@@ -89,7 +100,7 @@ a {
 
 	.view-more {
 		display: block;
-
+		
 		img {
 			margin-left: .5rem;
 			position: relative;

@@ -237,7 +237,11 @@
     .info{
     padding-top: 180px;
     padding-bottom: 60px;
+    }
   }
+
+  .social-networks {
+    height: 100vh !important;
   }
 }
 
@@ -250,5 +254,11 @@
         }
       }
     }
+  }
+}
+
+@include min-screen($extra-large-screen) {
+  .social-networks {
+    height: 60vh !important;
   }
 }

@@ -64,34 +64,6 @@ $(document).keyup(function(e) {
   }   // esc
 });
 
-var statItemsW =  $('.stat-item').outerWidth();
-var statItemsNumber = $('.stat-item').size();
-var statWidth = (statItemsNumber * statItemsW) * 1.20; 
-var statItemContainer = $('.stats-container');
-var windowCenter = $(window).width() / 2;
-
-statItemContainer.width(statWidth);
-
-$('.stats-section').on( "mousemove", function(event){
-  var x = event.pageX;
-  y = x - (x * .20);
-  b = x - (x * .60);
-
-  if (x >= windowCenter) {
-    $('.stat-item').css('left','-' + y +'px');
-  }
-
-  if (x <= windowCenter) {
-    $('.stat-item').css('left','' + b +'px');
-  }
-});
-
-$('.stat-item').hover(function(){
-  $('.stat-item').removeClass('active');
-  $(this).addClass('active');
-});
-
-
 $('body.projects').attr('data-400','background-color:rgb(255,255,255);');
 $('body.projects').attr('data-700','background-color:rgb(234,62,106);');
 $('body.projects').attr('data-1700','background-color:rgb(67,197,213);');
