@@ -57,7 +57,8 @@
 
   .team-section {
     cursor: pointer;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -86,7 +87,7 @@
       height: 100%;
       float: left;
       left: 0;
-      overflow: hidden;
+      overflow: auto;
       padding: 2rem;
       position: absolute;
       top: 0;
@@ -132,16 +133,31 @@
       }
     }
 
-    .members-grid {
+    .members-fullpage {
       display: none;
-      height: 100vh;
+    }
+
+    .members-grid {
+      height: auto;
 
       .col-2 {
+        overflow: hidden;
+        transition: all 0.5 ease-in-out;
+
+        &:hover {
+          .members-grid--member {
+            transform: scale(1.2);
+          }
+        }
+      }
+
+      &--member {
         background: #202020;
-        height: 10rem;
-        background-size: 23vh;
+        height: 26vh;
+        background-size: 26vh;
         background-repeat: no-repeat;
         background-position: center top;
+        transition: all 0.2s ease-in-out;
       }
     }
 

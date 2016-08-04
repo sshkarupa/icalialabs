@@ -12,6 +12,15 @@ type: team
 </section>
 
 <section class="team-section">
+  <div class="members-grid row">
+    <img src="images/close.png" class="close" alt="">
+    <% data.members.each do |member| %> 
+      <div class="col-2 nopadding" data-name="<%= member.name %>">
+        <div class="members-grid--member" style="background-image: url('<%=member.closeup%>')">
+        </div>
+      </div>
+    <% end %> 
+  </div>
   <div class="members-fullpage">
     <div class="hide">
       <img src="images/see-all.png" alt="">
@@ -41,13 +50,6 @@ type: team
         </figure>
       <% end %> 
     </div>
-  </div>
-  <div class="members-grid row">
-    <img src="images/close.png" class="close" alt="">
-    <% data.members.each do |member| %> 
-      <div class="col-2" data-name="<%= member.name %>" style="background-image: url('<%=member.closeup%>')">
-      </div>
-    <% end %> 
   </div>
 </section>
 
