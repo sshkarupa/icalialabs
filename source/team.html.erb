@@ -12,12 +12,21 @@ type: team
 </section>
 
 <section class="team-section">
+  <div class="members-grid row">
+    <% data.members.each do |member| %> 
+      <div class="col-2 nopadding" data-name="<%= member.name %>">
+        <div class="members-grid--member" style="background-image: url('<%=member.closeup%>')">
+        </div>
+      </div>
+    <% end %> 
+  </div>
   <div class="members-fullpage">
+    <img src="images/close.png" class="close-mobile visible-on-small visible-on-xsmall" alt="">
     <div class="hide">
       <img src="images/see-all.png" alt="">
       <h6 class="letter-spacing">View all the team</h6>
     </div>
-    <aside class="members-nav">
+    <aside class="members-nav hidden-on-small hidden-on-xsmall">
       <h6 class="letter-spacing">Our team members</h6>
       <ul>
         <% data.members.each do |member| %>   
@@ -41,13 +50,6 @@ type: team
         </figure>
       <% end %> 
     </div>
-  </div>
-  <div class="members-grid row">
-    <img src="images/close.png" class="close" alt="">
-    <% data.members.each do |member| %> 
-      <div class="col-2" data-name="<%= member.name %>" style="background-image: url('<%=member.closeup%>')">
-      </div>
-    <% end %> 
   </div>
 </section>
 

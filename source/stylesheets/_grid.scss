@@ -149,6 +149,9 @@ $col-border-alpha: 0.5 !default;
   [class*="col-"] {
     padding-left: 0; 
   }
+  &.nopadding {
+    padding: 0; 
+  }
 
   &.nopaddingleft {
     padding-left: 0; 
