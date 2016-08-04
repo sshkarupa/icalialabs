@@ -1,0 +1,40 @@
+.branding {
+  margin-bottom: 2rem;
+  &.aire {
+    .img-container {
+      img {
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+}
+.colors {
+	&.aire-colors {
+		.color {
+			&:nth-child(2) {
+        background: #51CD54;
+      }
+      &:nth-child(3) {
+        background: #733487;
+      }
+      &:nth-child(4) {
+        background: #E6413C;
+      }
+      &:nth-child(5) {
+        background: #F39A35;
+      }
+    }
+	}
+}
+
+.project-page {
+  .aire-screens {
+    margin-bottom: 2rem;
+    img {
+      height: auto;
+      margin: .5rem;
+      width: 30%;
+    }
+  }
+}
