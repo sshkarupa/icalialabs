@@ -259,7 +259,12 @@
 }
 
 .requirements {
-  height: 50vh;
+  padding: px-to-rems(100);
+
+  ul li {
+      margin: px-to-rems(10) 0;
+  }
+  
   strong {
     display: block;
     margin: 10px 0;

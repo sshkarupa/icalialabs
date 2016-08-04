@@ -4,10 +4,11 @@
 }
 
 .section-description {
+  color: rgba(#000, 0.7);
   font-weight: 100;
-  width: 60%;
-  font-size: 1.3em;
-  margin: 0 auto;
+  font-size: 1.4em;
+  margin: px-to-rems(30) auto;
+  width: 70%;
 }
 
 .team {
