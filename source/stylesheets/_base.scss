@@ -343,11 +343,12 @@ a {
     }
 
     &:hover > .two  {
-      @include transform(translateY(200%));
+      @include transform(translateY(200%)translateX(-20%));
     }
 
     &:hover > .burger-label {
-      @include transform(rotate(0deg) translateX(20%));
+      @include transform(rotate(0deg) translateX(-20%));
+      font-size: 0.5em;
     }
 
     .one.active {
