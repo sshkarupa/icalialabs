@@ -43,10 +43,10 @@
             <a class="l5 big-link" href="contact.html"><span class="label-menu">Tell us abour your project</span>Contact</a>
             <nav class="list-menu">
               <span class="label-menu">Other pages</span>
-              <a href="#">Open Source Projects</a>
-              <a href="#">Meetups</a>
-              <a href="#">Jobs</a>
-              <a href="#">Blog</a>
+              <a href="http://www.meetup.com/Monterrey-Ruby-Meetup/" target="_blank">Ruby Meetup</a>
+              <a href="https://www.meetup.com/iosmty/" target="_blank">iOS Meetup</a>
+              <a href="culture.html#positions">Jobs</a>
+              <a href="https://medium.com/@icalialabs" target="_blank">Blog</a>
             </nav>
             <nav class="list-menu">
               <span class="label-menu">Get in Touch</span>
@@ -69,14 +69,14 @@
           <p class="direction"><b>Juan I. Ramon 801, Suite 206</b><br/ >Centro de Monterrey, 64000. <br/ >
           <br>
           Monterrey City, NL, Mexico</p>
-          <p class="direction">+52 01 (81) 2089 8857<br />weare@icalialabs.com</p>
+          <p class="direction">+52 01 (81) 2089 8857<br /><a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a></p>
         </div>
         <div class="col-2">
           <h4 class="nav-title">Company</h4>
-          <a href="#">Culture</a>
-          <a href="#">Services</a>
-          <a href="#">Team</a>
-          <a href="#">Jobs</a>
+          <a href="culture.html">Culture</a>
+          <a href="process.html">Process</a>
+          <a href="team.html">Team</a>
+          <a href="culture.html#positions">Jobs</a>
         </div>
         <div class="col-2">
           <h4 class="nav-title">Social</h4>
@@ -93,6 +93,7 @@
       </div>
     </footer>
     <%= javascript_include_tag :all %>
+    <%= yield_content :javascripts %>
     <script src="javascripts/typeit.min.js"></script>
     <script>
       $('#intro-text').typeIt({
@@ -110,7 +111,7 @@
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script type="text/javascript">
-       var s = skrollr.init();
+       var s = skrollr.init({forceHeight: false});
        window.sr = ScrollReveal();
        sr.reveal('.reveal');
     </script>
@@ -137,9 +138,9 @@
         $('.members-nav').scroller({ direction: 'vertical', fixed: 'h6', step:10 });
       });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="javascripts/magicscroll.js"></script>
   </body>
 </html>

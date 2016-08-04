@@ -106,7 +106,6 @@ GEM
     padrino-support (0.13.2)
       activesupport (>= 3.1)
     parallel (1.9.0)
-    puma (3.6.0)
     rack (1.6.4)
     rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
@@ -141,7 +140,6 @@ DEPENDENCIES
   middleman-compass (>= 4.0.0)
   middleman-livereload
   middleman-sprockets (~> 4.0.0.rc)
-  puma
   rack-contrib
   therubyracer
   tzinfo-data

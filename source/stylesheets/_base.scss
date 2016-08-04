@@ -187,6 +187,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
         display: block;
         text-decoration: none;
       }
+
+      a:hover {
+        opacity: 0.5;
+      }
     }
 
     .big-link {
@@ -436,6 +440,10 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
   background: #fff;
   padding: 50px 0px;
 
+  a:hover {
+    opacity: 0.5;
+  }
+
   .logo > svg {
     fill: $primary-color;
     width: 60px;
@@ -563,6 +571,48 @@ a { color: $primary-color; &:visited { color: rgba($primary-color, 0.5) }}
    *  General responsive fixes
    * ====================================================
    */
+  @include max-screen($small-screen) {
+    html {
+      font-size: 11px;
+      border: none;
+    }
+
+    .menu-overlay {
+
+      a {
+        margin: 0 0;
+      }
+
+      .menu-content {
+        padding: 110px 0;
+      }
+
+      .social-info {
+        a {
+          margin: 10px;
+        }
+      }
+
+    }
+
+    .main-menu {
+      .logo {
+        left: 0;
+      }
+
+      .burger {
+        right: 30px;
+        top: 20px;
+      }
+    }
+
+    .intro {
+      .intro-content {
+        padding: 10rem 0;
+      }
+    }
+  }
+
   @include max-screen($small-screen-max) {
     html {
       font-size: 11px;
