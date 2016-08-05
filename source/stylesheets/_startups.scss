@@ -18,7 +18,7 @@ a {
 .startup-button {
 	@include border-radius(50px);
 	background: #fff;
-	color: #2FA2D9;
+	color: #FF3434;
 	padding: .5rem 2rem;
 	position: relative;
 	top: -5rem;
@@ -26,12 +26,14 @@ a {
 
 .section-header {
 	svg {
-		width: 30%;
+		max-width: px-to-rems(300);
 	}
 
 	.startup-icon {
 		position: relative;
-		top: 6rem;
+		img {
+			max-width: px-to-rems(600);
+		}
 	}
 }
 
@@ -104,8 +106,8 @@ a {
 		img {
 			margin-left: .5rem;
 			position: relative;
-			top: .5rem;
-			width: 2%;
+			top: 8px;
+			width: 30px;
 		}
 	}
 }

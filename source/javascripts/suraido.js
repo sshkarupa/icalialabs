@@ -106,8 +106,7 @@ var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments)
     Suraido.prototype._setsMainElement = function() {
       return this.$el.css({
         width: this.maxSize.width,
-        height: this.items.first().outerHeight(),
-        overflow: 'hidden'
+        height: this.items.first().outerHeight()
       });
     };
 

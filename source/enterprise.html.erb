@@ -3,11 +3,19 @@ layout: application
 title: Enterprise
 type: enterprise
 ---
+
+<% content_for :javascripts do %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="javascripts/magicscroll.js"></script>
+<% end %>
+
 <section class="section-header">
 	<div class="vertical-align">
 		<h1 class="section-tag red">Digitally Transform your Business.</h1>
 		<div class="startup-icon">
-			<%= partial "shared/startups-icon" %>
+			<%= image_tag "enterprise.svg", class: "animated fadeIn"%>
 		</div>
 	</div>
 </section>
@@ -79,14 +87,14 @@ type: enterprise
 		<p>Learn more about our work with enterprise </p>
 	</div>
 	<div class="startup-work-container">
-		<a href="" class="startup-button pull-right">MVP</a>
+		<span class="startup-button pull-right">MVP</span>
 		<img src="images/img-icon.png" alt="">
 		<h2 class="project-description">
 			"Icalia, has been a pivotal technology partner for RTS. They have single handedly help us become more competitive."
 		</h2>
 		<h6 class="project-name letter-spacing">Josh Hartwell, COO RTS</h6>
 	</div>
-	<a href="projects.html" class="text-center view-more">View more projects <img src="images/more-icon.png" alt=""></a>
+	<a href="projects" class="text-center view-more">View more projects <img src="images/more-icon.png" alt=""></a>
 </section>
 
 <section class="startup-work partners">
@@ -105,6 +113,6 @@ type: enterprise
 	<h6 class="text-center letter-spacing red clearfix">LET'S WORK TOGETHER</h6>
 	<h2 class="text-center">Let us know how we can help!</h2>
   <div class="call-buttons-group red text-center">
-    <a href=""><h6 class="letter-spacing">Get a quote</h6></a>
+    <a href="https://graf2.typeform.com/to/VEd4e1"><h6 class="letter-spacing">Get a quote</h6></a>
   </div>
 </section>
