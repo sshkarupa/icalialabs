@@ -3,13 +3,28 @@ layout: application
 title: Icalia Labs
 type: index
 ---
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "countUp" %>
+  <script type="text/javascript" charset="utf-8">
+    var statsContainerPosition = $('.stats-section').offset().top;
+    var distanceToTop = 0;
+    $(window).on('scroll', function(e){
+      distanceToTop = $(window).scrollTop() + 250;
+      if (distanceToTop > statsContainerPosition) {
+        $('.stat-item-number:not(.counted)').each(function(index) {
+          var maxValue = $(this).data('stat-number');
+          var numAnim = new CountUp(this, 0, maxValue, 0, 3);
+          numAnim.start();
+          $(this).addClass('counted');
+        });
+      }
+    });
+  </script>
+<% end %>
+
 <section data-section="home" class="index-background">
   <section class="intro row">
-    <!-- <video autoplay muted loop>
-      <source src="<%#= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/loop.mp4">
-      <source src="<%#= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/loop.webmhd.webm">
-    </video> -->
-    <!-- <canvas id="particles"></canvas> -->
     <div class="container">
       <div class="intro-content vertical-align">
         <h4 class="intro-content_subtitle animated fadeInDown">Hackers & Designers</h4>
@@ -18,6 +33,7 @@ type: index
     </div>
   </section>
 </section>
+
 <section data-section="clients" class="clients-section">
   <div class="container">
     <h4 class="section-title">We help our clients</h4>
@@ -25,8 +41,8 @@ type: index
       <h1 class="cd-headline loading-bar">
         <span class="cd-words-wrapper">
           <b class="is-visible light-text red">Validate their ideas</b>
-          <b class="is-visible light-text red">Get product/market fit</b>
-          <b class="is-visible light-text red">Get funded</b>
+          <b class="light-text red">Get product/market fit</b>
+          <b class="light-text red">Get funded</b>
           <b class="light-text red">Scale their platforms</b>
           <b class="light-text red">To think and move like a Startup</b>
         </span>
@@ -76,27 +92,19 @@ type: index
   <h4 class="section-title  text-center">Icalia over time</h4>
   <div class="stats-container clearfix">
     <div class="stat-item">
-      <span class="stat-item-number">50</span>
+      <span class="stat-item-number" data-stat-number="1500">0</span>
       <h4 class="stat-item-label">Users within Icalia developed apps</h4>
     </div>
     <div class="stat-item">
-      <span class="stat-item-number">1,500</span>
+      <span class="stat-item-number" data-stat-number="1500">0</span>
       <h4 class="stat-item-label">Users within Icalia developed apps</h4>
     </div>
     <div class="stat-item">
-      <span class="stat-item-number">1,500</span>
+      <span class="stat-item-number" data-stat-number="1500">0</span>
       <h4 class="stat-item-label">Users within Icalia developed apps</h4>
     </div>
     <div class="stat-item">
-      <span class="stat-item-number">1,500</span>
-      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item-number">$2m</span>
-      <h4 class="stat-item-label">Users within Icalia developed apps</h4>
-    </div>
-    <div class="stat-item">
-      <span class="stat-item-number">500</span>
+      <span class="stat-item-number" data-stat-number="1500">0</span>
       <h4 class="stat-item-label">Users within Icalia developed apps</h4>
     </div>
   </div>
