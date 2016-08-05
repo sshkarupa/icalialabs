@@ -3,10 +3,10 @@ layout: application
 title: Icalia Labs
 type: index
 ---
-<% content_for :javascripts do %>
-	<%= javascript_include_tag "countUp" %>
 
-	 <script type="text/javascript" charset="utf-8">
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "countUp" %>
+  <script type="text/javascript" charset="utf-8">
     var statsContainerPosition = $('.stats-section').offset().top;
     var distanceToTop = 0;
     $(window).on('scroll', function(e){
@@ -20,29 +20,31 @@ type: index
         });
       }
     });
-	 </script>
+  </script>
 <% end %>
 
 <section data-section="home" class="index-background">
   <section class="intro row">
     <div class="container">
       <div class="intro-content vertical-align">
-        <h4 class="intro-content_subtitle animated fadeInDown">Hack & Design</h4>
-        <h2 class="intro-content_title animated fadeInUp">We Craft Amazing Software <br> to empower your <span id="intro-text"></span></h2>
-        <a href="#" class="intro-content_get-a-quote animated fadeIn">Get a quote</a>
+        <h4 class="intro-content_subtitle animated fadeInDown">Hackers & Designers</h4>
+        <h2 class="intro-content_title animated fadeInUp">That Craft Amazing Software <br> to empower your <span id="intro-text"></span></h2>
       </div>
     </div>
   </section>
 </section>
+
 <section data-section="clients" class="clients-section">
   <div class="container">
-    <h4 class="section-title">Our clients</h4>
+    <h4 class="section-title">We help our clients</h4>
     <div class="cd-intro">
       <h1 class="cd-headline loading-bar">
         <span class="cd-words-wrapper">
-          <b class="is-visible light-text red">We increase time to market</b>
-          <b class="light-text red">We get funds for startups</b>
-          <b class="light-text red">We make funny things</b>
+          <b class="is-visible light-text red">Validate their ideas</b>
+          <b class="light-text red">Get product/market fit</b>
+          <b class="light-text red">Get funded</b>
+          <b class="light-text red">Scale their platforms</b>
+          <b class="light-text red">To think and move like a Startup</b>
         </span>
       </h1>
     </div>
@@ -57,35 +59,37 @@ type: index
       <%= image_tag 'logo8.png', class: 'clients-logos_item animated'%>
     </article>
     <div class="call-buttons-group red">
-      <a href="projects.html" class="right">View our work</a>
+      <a href="#" class="left">Get a quote</a>
+      <i class="sep"></i>
+      <a href="#" class="right">View our work</a>
     </div>
   </div>
 </section>
 <section class="areas-section">
   <div class="areas-container">
     <div class="vertical-align" id="areas-info" data-1000="opacity:0;" data-1100="opacity:1;">
-      <h2 class="big-title">WE ARE</h2>
-      <a class="action-btn">About our process</a>
+      <h2 class="big-title">What we do</h2>
+      <a class="action-btn">Our process</a>
     </div>
     <article class="area-element" id="ar-1" data-800="top:60%;" data-1000="top:50%;">
       <h2>Design</h2>
     </article>
     <article class="area-element" id="ar-2" data-800="top:70%;" data-1000="top:35%;">
-      <h2>Business</h2>
+      <h2>Digital Strategy</h2>
     </article>
     <article class="area-element" id="ar-3" data-800="top:60%;" data-1000="top:78%;">
-      <h2>Intelligence</h2>
+      <h2>Platform Design</h2>
     </article>
     <article class="area-element" id="ar-4" data-800="top:60%;" data-1000="top:38%;">
-      <h2>Development</h2>
+      <h2>Web & Mobile Development</h2>
     </article>
     <article class="area-element" id="ar-5" data-800="top:60%;" data-1000="top:67%;">
-      <h2>Labs</h2>
+      <h2>Innovation Consulting</h2>
     </article>
   </div>
 </section>
 <section data-section="stats" class="stats-section">
-  <h4 class="section-title  text-center">Icalia over the time</h4>
+  <h4 class="section-title  text-center">Icalia over time</h4>
   <div class="stats-container clearfix">
     <div class="stat-item">
       <span class="stat-item-number" data-stat-number="1500">0</span>
@@ -106,7 +110,7 @@ type: index
   </div>
 </section>
 <section class="quotes">
-    <h4 class="section-title text-center">Our client says</h4>
+    <h4 class="section-title text-center">Testimonials</h4>
     <article class="quote-item">
       <div class="container">
         <h4 class="quote-item-text">“I’m astounded by the creativity and quality of Icalia's work.”</h4>
@@ -121,30 +125,30 @@ type: index
   <div class="selected-works-slider">
     <div class="selected-works-slider-item">
       <span class="selected-works-slider-item-num">01</span>
-      <h3 class="selected-works-slider-item-client">Printoo</h3>
-      <h2 class="selected-works-slider-item-title">Change the photo print business with design</h2>
+      <h3 class="selected-works-slider-item-client">BanRegio</h3>
+      <h2 class="selected-works-slider-item-title">How to get a Bank moving faster.</h2>
       <a href="#" class="selected-works-slider-item-link">See case study</a>
     </div>
     <div class="selected-works-slider-item">
       <span class="selected-works-slider-item-num">02</span>
-      <h3 class="selected-works-slider-item-client">Printoo</h3>
-      <h2 class="selected-works-slider-item-title">Change the photo print business with design</h2>
+      <h3 class="selected-works-slider-item-client">Tap to Fund</h3>
+      <h2 class="selected-works-slider-item-title">Changing the way to fund charities.</h2>
       <a href="#" class="selected-works-slider-item-link">See case study</a>
     </div>
     <div class="selected-works-slider-item">
       <span class="selected-works-slider-item-num">03</span>
-      <h3 class="selected-works-slider-item-client">Printoo</h3>
-      <h2 class="selected-works-slider-item-title">Change the photo print business with design</h2>
+      <h3 class="selected-works-slider-item-client">Datoz</h3>
+      <h2 class="selected-works-slider-item-title">Making Real Estate business intelligence easy.</h2>
       <a href="#" class="selected-works-slider-item-link">See case study</a>
     </div>
   </div>
 </section>
 <section class="contact-section">
-  <h4 class="section-title text-center">We can work together</h4>
-  <h2 class="contact-section-title">We can make something great take the first step</h2>
+  <h4 class="section-title text-center">Have an idea?</h4>
+  <h2 class="contact-section-title">Let's get shit done!</h2>
   <div class="call-buttons-group red">
     <a href="#" class="left">Get a quote</a>
     <i class="sep"></i>
-    <a href="projects.html" class="right">View our work</a>
-  </div> 
+    <a href="#" class="right">View our work</a>
+  </div>
 </section>
