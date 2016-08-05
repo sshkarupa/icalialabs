@@ -3,12 +3,19 @@ layout: application
 title: Culture
 type: culture
 ---
+
+<% content_for :javascripts do %>
+  <script src="https://cdn.plyr.io/1.8.12/plyr.js"></script>
+  <script type="text/javascript">plyr.setup({
+      autoplay: true,
+      controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume']
+  });
+  </script>
+<% end %>
+
 <section class="section-header">
-  <div class="culture-info vertical-align">
-    <h2 class="animated fadeInUp">Make something that matters.</h2>
-  </div>
-  <video controls autoplay muted>
-    <source src="http://videos.thisalso.com/desktop/main/video.mp4" type="video/mp4">
+  <video controls>
+    <source src="https://s3.amazonaws.com/icalia/assets/img/culture.mp4" type="video/mp4">
   </video>
 </section>
 
