@@ -26,21 +26,19 @@
   }
 }
 
-.section-header {
-  background: #000;
-
-  video, .plyr, .plyr__video-wrapper {
-    height: 100%;
-  }
-
-  video {
-    opacity: 0.8;
-  }
-
-}
-
 .culture {
+  .section-header {
+    background: #000;
 
+    video, .plyr, .plyr__video-wrapper {
+      height: 100%;
+    }
+
+    video {
+      opacity: 0.8;
+    }
+  }
+  
   .values-section {
     text-align: center;
     padding: px-to-rems(100) 0;
