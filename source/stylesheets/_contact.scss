@@ -93,10 +93,14 @@
       padding-bottom: 8rem;
     }
 
-    .address-container {
+  .address-container {
       background: #2D1A1A;
       border-radius: 4px;
       padding: 5rem 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
 
       .address {
         margin: 0 3rem 3rem 0;
@@ -106,6 +110,14 @@
         color: $primary-color;
         margin-bottom: 2rem;
         padding: 0;
+      }
+
+      .building {
+        img {
+          height: 280px;
+          width: auto;
+          display: inline-block;
+        }
       }
     }
 
