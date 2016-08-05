@@ -44,6 +44,7 @@ configure :build do
   activate :minify_javascript
 
   activate :sprockets
+  activate :directory_indexes
 end
 
 #Environment variables
