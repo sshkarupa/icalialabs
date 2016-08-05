@@ -47,11 +47,11 @@ body.process {
   }
 
   &-info {
+    width: 45%;
     height: 40vh;
-    width: 40vw;
     transition: all 0.3s ease;
     position: absolute;
-    right: 0;
+    left: 50%;
     top: 50%;
     transform: translateY(-50%);
 
@@ -100,7 +100,7 @@ body.process {
 
 #understanding {
   background-image: url(../images/understanding.png), url(../images/process-bg.png);
-  background-position: 10% 90%;
+  background-position: 15% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: $primary-color;
@@ -112,7 +112,7 @@ body.process {
 
 #definition {
   background-image: url(../images/definition.png), url(../images/process-bg.png);
-  background-position: 10% 90%;
+  background-position: 15% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: $primary-color;
@@ -124,7 +124,7 @@ body.process {
 
 #design {
   background-image: url(../images/design.png) , url(../images/process-bg.png); 
-  background-position: 10% 90%;
+  background-position: 15% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: $primary-color;
@@ -136,7 +136,7 @@ body.process {
 
 #build {
   background-image: url(../images/build.png) , url(../images/process-bg.png);
-  background-position: 10% 90%;
+  background-position: 15% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: $primary-color;
@@ -148,7 +148,7 @@ body.process {
 
 #measure {
   background-image: url(../images/measure.png) , url(../images/process-bg.png);
-  background-position: 10% 90%;
+  background-position: 15% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: $primary-color;
