@@ -25,7 +25,6 @@ $( document ).ready(function() {
       })
       .setPin("#pinContainer")
       .setTween(wipeAnimation)
-      .addIndicators()
       .addTo(controller);
 
 

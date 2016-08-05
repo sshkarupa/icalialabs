@@ -26,11 +26,13 @@
   }
 }
 
+
 .culture {
+
   .section-header {
     background: #000;
   }
-
+  
   .section-header video {
     width: 100%;
     height: 100%;
@@ -42,67 +44,52 @@
 
   .culture-info {
     z-index: 100;
-
-    h2 {
-      color: #fff;
-      font-size: 1rem;
-    }
   }
-}
-
-.culture {
 
   .values-section {
-    height: 100vh;
-    background: $primary-color;
     text-align: center;
+    padding: px-to-rems(100) 0;
 
-    .culture-description {
-      font-weight: 200;
-      font-size: 1.3em;
-      margin: 0 auto;
-      width: 50%;
+    .suraido-container.suraido-container ul {
+      height: 20vh;
     }
 
-    .values {
-      padding: 100px 0px;
+    .big-header { 
+      font-size: 4rem;
+    }
 
-      .big-header { 
-        font-size: 4rem;
-      }
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 600;
-        font-size: 0.8em;
-        padding: 10px 20px;
-        border: 2px solid rgba(255,255,255,0.3);
-        border-radius: 100px;
-      }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 0.8em;
+      padding: 10px 20px;
+      border: 2px solid rgba($primary-color,0.3);
+      border-radius: 100px;
+      position: relative;
+      top: 95px;
     }
   }
 
  
   .career {
-    margin: 30px auto;
-    min-height: 400px;
-    padding: 70px 0px 100px 0px;
-    width: 60%;
+    background: $primary-color;
+    color: rgba(255, 255, 255, 0.9);
+    padding: px-to-rems(150) 0;
+    margin: px-to-rems(30) auto;
+
+    .career-icon {
+      width: px-to-rems(300);
+    }
 
     p {
-      color: rgba(0, 0, 0, 0.5);
-      font-weight: 200;
-
-      @include max-screen($small-screen) {
-        margin: 40px 0;
-      }
+      font-size: px-to-rems(16);
+      margin: 1.875rem auto;
+      max-width: px-to-rems(600);
     }
 
     h2 {
-      margin-bottom: 15px;
       @include max-screen($small-screen) {
         line-height: 3rem;
       }
@@ -111,19 +98,12 @@
 
   .perks {
     padding: 100px 0px;
-    background: $primary-color;
 
     .section-description {
       margin: 20px auto 100px auto;
-      
       @include max-screen($small-screen) {
         margin-bottom: 45px;
       }
-
-    }
-
-    .title-section-perks {
-      color: #fff;
     }
 
     .perk {
@@ -178,21 +158,17 @@
     }
 
     .perk-title {
-      color: #fff;
+      color: $primary-color;
       font-size: 1.1em;
-      letter-spacing: 2px;
       margin: 10px 0px;
-      text-transform: uppercase;
     }
 
     .perk-description {
-      color: #FFF;
-      margin: 0 auto;
-      line-height: 1.2em;
+      color: rgba(#000, 0.5);
+      margin: px-to-rems(14) auto;
       max-height: 0;
-      font-size: 1em;
-      font-weight: normal;
-      opacity: 0;
+      font-size: px-to-rems(12);
+      font-weight: 400;
       @include transition(all 0.5s ease-in);
       @include max-screen($small-screen) {
         opacity: 1;
@@ -202,9 +178,7 @@
 
 
   .positions {
-    background: $light-gray;
-    min-height: 300px;
-    padding: 150px 0px;
+    padding: 0 0 px-to-rems(100) 0;
 
     p {
       width: 60%;
@@ -216,43 +190,44 @@
     }
 
     .position {
-      border: 3px solid $dark-gray;
-      color: $dark-gray;
+      background: rgba(#000,0.05);
+      color: $primary-color;
       display: inline-block;
       font-size: 1.25rem;
-      padding: 1rem 10rem;
-      width: 90%;
+      padding: 1rem;
       text-decoration: none;
+      transition: all 0.3s ease;
+
+      img {
+        display: block;
+        width: px-to-rems(200);
+      }
 
       &:hover {
-        background: $dark-gray;
-        color: #fff;
         cursor: pointer;
+        background: rgba(#000,0.1);
+        transform: translateY(-10%);
       }
     }
   }
 }
 
-.position:hover > svg path {
-  fill: #fff;
-}
-
 .square-bg-1 {
-  background: rgba(0,0,0,0.1);
+  background: rgba(#000,0.01);
   @include max-screen($small-screen) {
     background: inherit;
   }
 }
 
 .square-bg-2 {
-  background: rgba(0,0,0,0.15);
+  background: rgba(#000,0.03);
   @include max-screen($small-screen) {
     background: inherit;
   }
 }
 
 .square-bg-3 {
-  background: rgba(0,0,0,0.25);
+  background: rgba(#000,0.05);
   @include max-screen($small-screen) {
     background: inherit;
   }
@@ -264,7 +239,7 @@
   ul li {
       margin: px-to-rems(10) 0;
   }
-  
+
   strong {
     display: block;
     margin: 10px 0;
