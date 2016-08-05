@@ -136,14 +136,12 @@
   .clients-logos {
     margin: 20px 0px;
 
-    img {
-      width: 13%;
-    }
-
     &_item {
       margin: 20px;
       display: none;
       opacity: 0.8;
+      vertical-align: middle;
+      width: 13%;
 
       &:nth-child(1) {animation-delay: 300ms;}
       &:nth-child(2) {animation-delay: 500ms;}
@@ -165,7 +163,7 @@
       }
       &:nth-child(7) {
         animation-delay: 1500ms;
-        width: 9%;
+        width: 6%;
       }
       &:nth-child(8) {animation-delay: 1700ms;}
       &:nth-child(9) {
@@ -427,11 +425,17 @@
 .startup-enterprise {
   background: #ffffff;
   border-bottom: 1px solid rgba(255, 0, 0, 0.1);
-  height: 60vh;
-  padding: 2.5em;
+  height: 50vh;
+  padding: 2.8em;
 
   .section-title {
     margin-bottom: 3em;
+  }
+
+  .startup {
+    .clients-logos_item:nth-child(1) {
+      width: 18%;
+    }
   }
 
   .logo-container {
@@ -441,15 +445,21 @@
     .container {
       width: 78%;
 
-      img {
+      .clients-logos_item {
         margin: 0 2em 0 1rem;
         width: 33%;
+
+        &:nth-child(2) {
+          width: 28%;
+        }
       }
     }
   }
-  img {
+  .clients-logos_item {
+    display: inline-block;
     margin: 2em;
     width: 21%;
+    vertical-align: middle;
   }
   p {
     font-size: 1em;
