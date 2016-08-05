@@ -319,7 +319,7 @@
 
   .big-title {
     color: #fff;
-    font-size: 8rem;
+    font-size: px-to-rems(62px);
     font-weight: 900;
     text-transform: lowercase;
   }
