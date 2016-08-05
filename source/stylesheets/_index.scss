@@ -425,8 +425,13 @@
 .startup-enterprise {
   background: #ffffff;
   border-bottom: 1px solid rgba(255, 0, 0, 0.1);
-  height: 50vh;
+  height: auto;
+  min-height: 50vh;
   padding: 2.8em;
+
+  @include phone {
+    padding: 0;
+  }
 
   .section-title {
     margin-bottom: 3em;
@@ -440,10 +445,10 @@
 
   .logo-container {
     margin: 0 auto;
-    width: 85%;
+    width: 95%;
 
     .container {
-      width: 78%;
+      width: 70%;
 
       .clients-logos_item {
         margin: 0 2em 0 1rem;
