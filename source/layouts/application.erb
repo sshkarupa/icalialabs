@@ -17,7 +17,6 @@
        ga('send', 'pageview');
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/54685ae476.js"></script>
   </head>
   <body class="<%= current_page.data.type %>">
     <header class="main-menu animated bounceInDown">
@@ -58,8 +57,10 @@
         </div>
       </div>
     </nav>
-
-    <%= yield %>
+  
+    <div id="skrollr-body">
+      <%= yield %>
+    </div>
 
     <footer class="main-footer">
       <div class="container row clearfix">
@@ -106,10 +107,9 @@
         breakDelay: 100,
       });
     </script>
-    <script src="javascripts/canvas.js"></script>
     <script src="javascripts/words.js"></script>
     <script src="javascripts/skrollr.js"></script>
-    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script src="//cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script type="text/javascript">
        var s = skrollr.init({forceHeight: false});
@@ -130,15 +130,6 @@
         });
       });
     </script>
-    <script>
-      var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene);
-    </script>
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="javascripts/magicscroll.js"></script>
     <script>
       window.intercomSettings = {
         app_id: "k19z5z2b"
