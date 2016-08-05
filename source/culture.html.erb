@@ -11,6 +11,7 @@ type: culture
     <source src="http://videos.thisalso.com/desktop/main/video.mp4" type="video/mp4">
   </video>
 </section>
+
 <section class="values-section">
   <div class="suraido-container vertical-align values" data-suraido>
     <h3>Our values</h3>
@@ -34,6 +35,7 @@ type: culture
     </ul>
   </div>
 </section>
+
 <section class="career text-center">
   <h2>The Icalier Career Path</h2>
   <p>If you're a hacker by nature, you have a passion for making delightful digital products, then you sound like a person we'd like to work with. </p>
@@ -41,7 +43,6 @@ type: culture
   <p>You will join a family of young, talented, individuals striving to make an impact.  </p>
   <p>At Icalia, you'll get paid to give a shit. </p>
 </section>
-
 <section class="perks text-center">
   <div class="container">
     <h4 class="title-section-perks">Perks for the team</h4>
@@ -50,7 +51,7 @@ type: culture
 
       <div class="perk col-3 square-bg-1 ">
         <figure>
-          <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/learn.png" alt="" class="perk-icon">
+          <%= image_tag "perk1.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Training</h3>
           <p class="perk-description">Leverage our collective knowledge, through constant training.</p>
@@ -60,7 +61,7 @@ type: culture
 
       <div class="perk col-3 square-bg-2">
         <figure>
-          <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/medical.png" alt="" class="perk-icon">
+          <%= image_tag "perk2.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Medical insurance</h3>
           <p class="perk-description">Besides the basic insurance for full-time memebers, we offer an additional medical insurance to guarantee your tranquility when something happens.</p>
@@ -70,7 +71,7 @@ type: culture
 
       <div class="perk col-6 square-bg-3">
         <figure>
-          <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/launch.png" alt="" class="perk-icon">
+          <%= image_tag "perk3.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Your launch pad</h3>
           <p class="perk-description">Take advantage of a great team and share with anyone your idea. You can build something great with all the talent available, and maybe start the next great thing. </p>
@@ -82,7 +83,7 @@ type: culture
     <div class="row clearfix">
       <div class="perk col-6 square-bg-3">
         <figure>
-          <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/creative.png" alt="" class="perk-icon">
+          <%= image_tag "perk4.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Creative Time</h3>
           <p class="perk-description">As technology advances and changes, we need to be up to date every single day. Creative Time allows team members to spend 20% of their time on something not-client related.</p>
@@ -92,7 +93,7 @@ type: culture
 
       <div class="perk col-3 square-bg-1">
         <figure>
-          <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/remote.png" alt="" class="perk-icon">
+          <%= image_tag "perk5.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Remote work</h3>
           <p class="perk-description">Sometimes inspiration is outside the building. Work from home or your favorite coffeeshop. </p>
@@ -102,7 +103,7 @@ type: culture
 
       <div class="perk col-3 square-bg-2">
         <figure>
-          <img src="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/certificate.png" alt="" class="perk-icon">
+          <%= image_tag "perk6.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Online certifications</h3>
           <p class="perk-description">If you want to take your newly acquired knowledge to the next level, we can sponsor your certification in any MOOC or platform available. </p>
@@ -114,14 +115,16 @@ type: culture
 </section>
 
 <section class="positions text-center" id="positions">
-  <h2>Join our family!</h2>
+  <h2>Join the team!</h2>
   <p> Let us know you want to be an Icalier.</p>
   <div class="row clearfix">
-    <div class="col-6">
-      <a href="software-engineer.html" target="_blank" class="position">Senior Developer</a>
-    </div>
-    <div class="col-6">
-      <a href="digital-designer.html" target="_blank" class="position">Digital Designer</a>
-    </div>
+    <a href="software-engineer" target="_blank" class="position">
+      <%= image_tag "devs-job-icon.png" %>
+      Senior Developer
+    </a>
+    <a href="digital-designer" target="_blank" class="position">
+      <%= image_tag "design-job-icon.png" %>
+      Digital Designer
+    </a>
   </div>
 </section>

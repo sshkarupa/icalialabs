@@ -3,26 +3,26 @@
   done: UI/UX Design & Development
   image: https://s3.amazonaws.com/icalia/assets/img/cochi.jpg
   color: ac284a
-  link: cochi.html
+  link: cochi
 
 - name: Printoo
   client: Printoo
   done: UI/UX Design & Development
   image: https://s3.amazonaws.com/icalia/assets/img/printoo.jpg
   color: 2d7f89
-  link: printoo.html
+  link: printoo
 
 - name: Okudoc
   client: Okudoc
   done: UI/UX Design & Development
   image: https://s3.amazonaws.com/icalia/assets/img/okudoc.jpg
   color: 572c7a
-  link: okudoc.html
+  link: okudoc
 
 - name: Aire N.L
   client: Personal Project
   done: UI/UX Design & Development
   image: https://s3.amazonaws.com/icalia/assets/img/aire.jpg
   color: 284a7c
-  link: aire.html
+  link: aire
 

@@ -3,11 +3,19 @@ layout: application
 title: Startups
 type: startups
 ---
+
+<% content_for :javascripts do %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="javascripts/magicscroll.js"></script>
+<% end %>
+
 <section class="section-header">
 	<div class="vertical-align">
 		<%= partial "shared/startups-svg" %>
 		<div class="startup-icon">
-			<%= partial "shared/startups-icon" %>
+			<%= image_tag "starturps.svg", class: "animated fadeIn"%>
 		</div>
 	</div>
 </section>
@@ -80,19 +88,20 @@ We code. You execute.</h1>
 		<p>Learn more about our work with startups</p>
 	</div>
 	<div class="startup-work-container">
-		<a href="" class="startup-button pull-right">MVP</a>
+		<span class="startup-button pull-right">MVP</span>
 		<img src="images/img-icon.png" alt="">
 		<h2 class="project-description">
 			We created a vibrant app that stands out from other photography-based apps.
 		</h2>
 		<h6 class="project-name letter-spacing">PRINTOO</h6>
 	</div>
-	<a href="projects.html" class="text-center view-more">View more projects <img src="images/more-icon.png" alt=""></a>
+	<a href="projects" class="text-center view-more">View more projects <img src="images/more-icon.png" alt=""></a>
 </section>
+
 <section class="work-together">
 	<h6 class="text-center letter-spacing red clearfix">Work with us</h6>
 	<h1 class="text-center">Let's make something together.</h1>
 	<div class="call-buttons-group red text-center">
-		<a href=""><h6 class="letter-spacing">Get a quote</h6></a>
+		<a href="https://graf2.typeform.com/to/VEd4e1"><h6 class="letter-spacing">Get a quote</h6></a>
 	</div>
 </section>

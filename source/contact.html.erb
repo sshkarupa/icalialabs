@@ -4,14 +4,22 @@ title: Contact
 type: contact
 ---
 
+<% content_for :javascripts do %>
+  <script src="javascripts/parallax.js"></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  </script>
+<% end %>
+
 <section class="section-header">
   <div class="vertical-align">
     <h2 class="section-tag red">Let's build the future together.</h2>
     <!-- <p class="subtitle">Tell us more about your project requirements so we can connect and learn more about how we can help bring your idea to life.</p> -->
 
     <div class="call-buttons-group red">
-      <a href="#" class="center">Get a quote</a>
-    </div>
+      <a href="https://graf2.typeform.com/to/VEd4e1" class="center">Get a quote</a>
+    </div> 
   </div>
 </section>
 
@@ -31,10 +39,7 @@ type: contact
           <br/>600 Congress Ave
         <br/>Austin, TX 78701, USA</p>
       </div>
-      <div>
-        <p>weare@icalialabs.com</p>
-        <p>+52 01 (81) 2089 8857</p>
-      </div>
+      <div class="building"></div>
     </div>
   </div>
 </section>
@@ -57,6 +62,9 @@ type: contact
       </li>
       <li class="layer github-icon" data-depth="0.80">
         <a href="http://github.com/icalialabs" class="icon"><img src="images/github-circle-icon.png" alt=""></a>
+      </li>
+      <li class="layer twitter-icon" data-depth="1.0">
+        <a href="https://twitter.com/icalialabs" class="icon"><img src="images/twitter-circle-icon.png" alt=""></a>
       </li>
     </ul>
   </div>

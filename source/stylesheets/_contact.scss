@@ -77,37 +77,51 @@
   }
   h4 {
     color: #fff;
-    text-transform: uppercase;
+    margin-bottom: 1em;
   }
 
   .address-section {
     background: url("https://s3.amazonaws.com/icalia/assets/img/office.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 5em 0;
 
     h4 {
-      padding: 4rem 0;
+      padding: 1rem 0;
     }
 
     .container {
-      padding-bottom: 8rem;
+      margin: 0 auto;
     }
 
-    .address-container {
-      background: #2D1A1A;
-      border-radius: 4px;
-      padding: 5rem 3rem;
-
-      .address {
-        margin: 0 3rem 3rem 0;
-      }
-
-      h4 {
-        color: $primary-color;
-        margin-bottom: 2rem;
-        padding: 0;
-      }
+  .address-container {
+    background: #2D1A1A;
+    border-radius: 4px;
+    padding: 4em 0;
+    position: relative;
+    
+    .address {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 2em;
     }
+
+    h4 {
+      color: $primary-color;
+      margin-bottom: 2rem;
+      padding: 0;
+    }
+  }
+
+  .building {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/Building.jpg) no-repeat center center;
+    background-size: cover;
+  }
 
     p {
       font-weight: 100;
@@ -222,6 +236,21 @@
       }
 
     }
+    .twitter-icon {
+      left: 55rem !important;
+      top: 6rem !important;
+
+      @include phone {
+        left: 17rem !important;
+        top: 17rem !important;
+      }
+
+      img {
+        width: 60%;
+      }
+
+    }
+
     a {
       &:hover img{
         @include transform(scale(1.5));

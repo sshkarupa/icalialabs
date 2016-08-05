@@ -22,6 +22,7 @@ page '/*.txt', layout: false
 configure :development do
   activate :livereload
   activate :sprockets
+  activate :directory_indexes
 end
 
 ###
@@ -44,6 +45,7 @@ configure :build do
   activate :minify_javascript
 
   activate :sprockets
+  activate :directory_indexes
 end
 
 #Environment variables
