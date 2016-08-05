@@ -4,6 +4,14 @@ title: Contact
 type: contact
 ---
 
+<% content_for :javascripts do %>
+  <script src="javascripts/parallax.js"></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  </script>
+<% end %>
+
 <section class="section-header">
   <div class="vertical-align">
     <h2 class="section-tag red">Let's build the future together.</h2>
