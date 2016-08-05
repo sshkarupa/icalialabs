@@ -136,6 +136,10 @@
   .clients-logos {
     margin: 20px 0px;
 
+    img {
+      width: 16%;
+    }
+
     &_item {
       margin: 20px;
       display: none;
