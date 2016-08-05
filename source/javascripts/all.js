@@ -9,6 +9,5 @@
 //= require process-scroller
 //= require furatto_modal
 //= require player
-//= require parallax
 //= require team_slider
 //= require jquery.scroller

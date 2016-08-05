@@ -3,6 +3,14 @@ layout: application
 title: Enterprise
 type: enterprise
 ---
+
+<% content_for :javascripts do %>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="javascripts/magicscroll.js"></script>
+<% end %>
+
 <section class="section-header">
 	<div class="vertical-align">
 		<h1 class="section-tag red">Digitally Transform your Business.</h1>
