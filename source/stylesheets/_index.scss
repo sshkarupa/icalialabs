@@ -1,5 +1,9 @@
 // ######## Intro ############
 
+.slick-slide:not(.slick-current) {
+  opacity: 0.1;
+}
+
 .section-title {
   text-transform: uppercase;
   letter-spacing: 0.3em;
