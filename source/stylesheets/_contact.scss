@@ -236,6 +236,21 @@
       }
 
     }
+    .twitter-icon {
+      left: 55rem !important;
+      top: 6rem !important;
+
+      @include phone {
+        left: 17rem !important;
+        top: 17rem !important;
+      }
+
+      img {
+        width: 60%;
+      }
+
+    }
+
     a {
       &:hover img{
         @include transform(scale(1.5));
