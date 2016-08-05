@@ -6,12 +6,12 @@
 //
 
 //General
-$suraido-slider-min-height: 400px !default;
+$suraido-slider-min-height: 220px !default;
 
-$suraido-item-min-height: 25rem !default;
+$suraido-item-min-height: 2rem !default;
 
 //Pagination
-$suraido-pagination-position: 0 !default;
+$suraido-pagination-position: 0px !default;
 $suraido-list-width: 300% !default;
 $suraido-list-item-width: 33% !default;
 $suraido-pagination-z-index: 20 !default;
@@ -59,11 +59,11 @@ $suraido-caption-background-alpha: 0.5 !default;
                    $list-item-min-height: $suraido-item-min-height,
                    $slider-min-height: $suraido-slider-min-height) {
   position: relative;
-  overflow: auto;
   width: 100%;
   @include backface-visibility(hidden);
   min-height: $slider-min-height;
   max-height: 550px;
+  padding: 20px 0;
 
   ul {
     margin: 0;
@@ -73,7 +73,6 @@ $suraido-caption-background-alpha: 0.5 !default;
 
     li {
       display: block;
-      height: 100%;
       float: left;
       width: $list-item-width;
       min-height: $list-item-min-height;
@@ -156,7 +155,8 @@ $suraido-caption-background-alpha: 0.5 !default;
     position: relative;
     height: $arrow-height;
     line-height: $arrow-line-height;
-    top: 45%;
+    top: 50%;
+    transform: translateY(-50%);
 
     &.prev {
       float: left;
@@ -209,7 +209,7 @@ $suraido-caption-background-alpha: 0.5 !default;
     @include slider-pagination;
 
     .dot {
-      background: rgba(255,255,255,0.3);
+      background: rgba($primary-color,0.3);
       width: 5px;
       height: 20px;
       display: inline-block;
@@ -220,7 +220,7 @@ $suraido-caption-background-alpha: 0.5 !default;
       transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
       &.active {
-        background: rgba(255,255,255,1);
+        background: rgba($primary-color,1);
         transform: scaleY(1.5);
       }
     }
@@ -238,7 +238,7 @@ $suraido-caption-background-alpha: 0.5 !default;
 
 .arrow {
   width: 20px;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
+  border-right: 3px solid $primary-color;
+  border-top: 3px solid $primary-color;
   opacity: 0.5;
 }
