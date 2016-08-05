@@ -15,3 +15,5 @@ services:
     volumes:
       - .:/usr/src/app
       - gems-data:/usr/local/bundle
+    environment:
+      LANG: 'C.UTF-8'
