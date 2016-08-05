@@ -26,28 +26,17 @@
   }
 }
 
-.culture {
-  .section-header {
-    background: #000;
-  }
+.section-header {
+  background: #000;
 
-  .section-header video {
-    width: 100%;
+  video, .plyr, .plyr__video-wrapper {
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
   }
 
-  .culture-info {
-    z-index: 100;
-
-    h2 {
-      color: #fff;
-      font-size: 1rem;
-    }
+  video {
+    opacity: 0.8;
   }
+
 }
 
 .culture {
