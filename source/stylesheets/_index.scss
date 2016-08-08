@@ -562,12 +562,14 @@
 .contact-section {
   background: #F4F4F4;
   text-align: center;
-  padding: 50px 0px;
+  padding: px-to-rems(50) 0;
+  position: relative;
+  z-index: 2;
 
   &-title {
     color: $primary-color;
     font-size: 2em;
-    margin: 20px auto;
+    margin: px-to-rems(20) auto;
   }
 }
 @include max-screen($small-screen){
