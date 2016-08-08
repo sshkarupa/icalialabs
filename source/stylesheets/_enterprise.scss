@@ -1,9 +1,10 @@
-.section-description {
-	p {
-		margin-bottom: 2rem;
-	}
+.enterprise {
+  .section-header {
+    .section-tag {
+      margin: 4rem 0;
+    }
+  }
 }
-
 .text-header {
   margin: 0 auto 4rem auto;
   width: 80%;
@@ -20,6 +21,10 @@
     height: 10rem;
     margin-bottom: 2rem;
     width: 100%;
+
+    p {
+      margin-bottom: 2rem;
+    }
 
     .medium {
       width: 58%;
