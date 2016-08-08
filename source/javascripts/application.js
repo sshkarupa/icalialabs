@@ -73,3 +73,12 @@ $('body.projects').attr('data-3000','background-color:rgb(52,99,169);');
 
 $('body.process').attr('data-400','background-color:rgb(244,244,244);');
 $('body.process').attr('data-500','background-color:rgb(255, 52, 52);');
+
+
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+    $('.main-menu').addClass('is-active');
+  } else {
+    $('.main-menu').removeClass('is-active');
+  }
+});

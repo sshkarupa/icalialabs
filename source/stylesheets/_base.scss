@@ -183,7 +183,7 @@ a {
 
   .menu-content {
     color: $secondary-color;
-    padding: 100px 0px;
+    padding: px-to-rems(150) 0;
     display: none;
   }
 
@@ -268,15 +268,13 @@ a {
 }
 
 .main-menu {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
+  @include transition(all 0.3s ease-in-out);
   z-index: 310;
   height: auto;
-  padding: 30px 0px;
+  padding: px-to-rems(30) 0;
   position: absolute;
-  left: 5%;
-  top: 10px;
+  top: px-to-rems(10);
+  width: 100%;
 
   &.active {
     left: 0;
@@ -303,9 +301,10 @@ a {
 
   .logo-menu {
     position: absolute;
-    left: 50px;
-
     animation: bounceInDown 1.5s ease;
+    top: 42%;
+    left: 10%;
+
 
     &:before {
       content:'/';
@@ -330,22 +329,32 @@ a {
     }
   }
 
+  &.active .logo-menu a {
+    color: $primary-color;
+  }
+
   .burger {
+    @include transition(all 0.3s ease-in-out);
+    @include transform-origin(center, 25%);
     cursor: pointer;
     position: absolute;
     width: 30px;
     right: 40px;
     display: inline-block;
+    transform: translateY(-50%);
+    top: 50%;
     z-index: 300;
-    top: 38px;
-    @include transform-origin(center, 25%);
+
+    &.active {
+      transform: translateY(-45%);
+    }
 
     .one, .two {
+      @include transition(all 0.3s ease-in-out);
       height: 2px;
       background: #fff;
       margin: 10px 0px;
       position: relative;
-      @include transition(all 0.3s ease-in-out);
     }
 
     .burger-label {
@@ -383,16 +392,8 @@ a {
       font-size: 0.7em;
     }
   }
-}
 
-// ####################### White background main menu overrides################################
-
-.contact, 
-.projects, 
-.process, 
-.startups, 
-.enterprise {
-  .main-menu {
+  &.inverse {
     .logo {
       svg {
         fill: $primary-color;
@@ -413,8 +414,39 @@ a {
       }
     }
   }
-}
 
+  &.is-active {
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    padding: px-to-rems(10) 0;
+    top: 0;
+
+    .burger-label {
+      color: $primary-color;
+      @include transform(rotate(0deg)translateX(-15%));
+      font-size: 0.7em;
+    }
+
+    .logo {
+      svg {
+        fill: $primary-color;
+      }
+    }
+    .logo-menu {
+      &:before, a {
+        color: $primary-color;
+      }
+    }
+    .burger {
+      .one,
+      .two,
+      .three {
+        background: $primary-color;
+      }
+    }
+  }
+}
 // ######## Load Image ############
 
 .load-mask {
@@ -628,7 +660,7 @@ a {
       }
 
       .menu-content {
-        padding: 110px 0;
+        padding: px-to-rems(150) 0;
       }
 
       .social-info {
@@ -670,7 +702,7 @@ a {
       }
 
       .menu-content {
-        padding: 110px 0;
+        padding: px-to-rems(150) 0;
       }
 
       .social-info {
