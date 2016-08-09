@@ -145,7 +145,7 @@
   }
 
   .social-networks {
-    height: 95vh;
+    height: 90vh;
     padding: 5rem;
 
     ul li {
@@ -281,11 +281,5 @@
         }
       }
     }
-  }
-}
-
-@include min-screen($extra-large-screen) {
-  .social-networks {
-    height: 60vh !important;
   }
 }
