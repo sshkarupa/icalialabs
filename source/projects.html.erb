@@ -14,18 +14,19 @@ type: projects
 <section class="projects-wrapper">
   <section class="projects-container">
       <% data.projects.each do |project| %>
-        <article class="projects-container-item <%= project.name %> reveal" style="background-image:url(<%=  project.image %>); box-shadow: 0 6px 40px #<%= project.color %>, inset 0 1px 1px rgba(255, 255, 255, 0.25);">
-          <div class="container row clearfix">
-            <div class="col-8 vertical-align">
-              <hgroup class="project-listing">
-                <span class="project-listing-number">01</span>
-                <h2 class="project-listing-name"><%= project.name %></h2>
-                <a href="<%= project.link %>" class="project-listing-link" target="_blank">See Project</a>
-                <h3 class="project-info"><%= project.done %></h3>
-              </hgroup>
+        <a href="<%= project.link %>" target="blank" class="projects-link">
+          <article class="projects-container-item <%= project.name %> reveal" style="background-image:url(<%=  project.image %>); box-shadow: 0 6px 40px #<%= project.color %>, inset 0 1px 1px rgba(255, 255, 255, 0.25);">
+            <div class="container row clearfix">
+              <div class="col-8 vertical-align">
+                <hgroup class="project-listing">
+                  <span class="project-listing-number">01</span>
+                  <h2 class="project-listing-name"><%= project.name %></h2>
+                  <h3 class="project-info"><%= project.done %></h3>
+                </hgroup>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </a>
       <% end %>
   </section>
 </section>
