@@ -8,6 +8,15 @@
   display: inline-block; //ensures element has block properties
 }
 
+%no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
 //Clears the float from any element
 %clearfix {
   &:before, &:after {

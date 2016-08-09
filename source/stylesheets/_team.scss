@@ -87,6 +87,7 @@
     }
 
     aside {
+      @extend %no-scrollbar;
       background: $primary-color;
       color: white;
       height: 100%;
