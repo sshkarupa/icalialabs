@@ -8,14 +8,15 @@
       name: twitter
     - link: http://github.com/edolopez
       name: github
-  bio: Eduardo provides part of the strategy, sales and commercialization initiatives in representation of the team. <br ><br > He helps our clients addressing goals, objectives and critical technical decisions looking to achieve their vision. His background is in Computer Science supporting the assessment of complexity and efforts within every new product. <br ><br >Eduardo likes to play guitar, mostly acoustic taking advantage of his fingers because he can't sing anything. He also likes to practice and watch mixed martial arts. Beard, technology, music and new experiences define this founding member.
+  bio: As CEO and Founder, Eduardo sets the strategic vision for Icalia. <br><br> Since Icalia's founding he has continued to push the boundaries of the software industry in Mexico. <br><br> With a background in Computer Science,  he's actively helping clients to adopt new standards and technologies. <br><br>Eduardo is an avid guitar player, he also likes to practice and watch mixed martial arts. Beard maintenance, technology, music and new experiences define this founding member.
+
 
 - name: Abraham Kuri
   title: CTO
   id: kuri
   picture: https://s3.amazonaws.com/icalia/assets/img/kuri-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/kuri-closeup.png
-  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br ><br >Abraham is the hacker in chief in charge of keeping sane and healthy code for every app. <br ><br >He also likes to stay fit, play around with his dog and learn new cooking recipes.
+  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br><br>Abraham is the hacker in chief in charge of keeping sane and healthy code for all of our products. <br><br>He also likes to stay fit, play around with his dog and to learn new cooking recipes.
   networks:
     - link: https://twitter.com/kurenn
       name: twitter
@@ -27,20 +28,22 @@
   id: dg
   picture: https://s3.amazonaws.com/icalia/assets/img/graf-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/graf-closeup.png
-  bio: Daniel our resident business developer and designer. Lover of the merger between tech and beautiful design that works. A Techstars ’15 and Babson MBA ’06 alumn, he loves food, a good book, and… knows kung-fu.
+  bio: Daniel as Head of Business Development, is in charge of helping our clients embrace the ambiguity of becoming software and data driven organizations. <br><br>He's a lover of the merger between tech and beautiful design that works. A Techstars ’15 and Babson MBA ’06 alumn, he loves food, a good book, and knows kung-fu.
   networks:
     - link: https://twitter.com/daniel_graf
       name: twitter
+    - link: https://linkedin.com/in/dgrafarmada
+      name: fa-linkedin-square
 
 - name: Melissa De La Garza
   title: Happiness Manager
   id: dg
   picture: https://s3.amazonaws.com/icalia/assets/img/mel-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/mel-closeup.png
-  bio: Mel is an emphatic and comprehensive psychologist. She is very cheerful and always has a smile.  Works towards creating a healthy and work friendly environment. She is always there for solving problems and make our life more happy.  Mel is always looking to learn new things and she is always ready to adapt to new scenarios in life. She is not scared of big challenges and creating great things. She likes to go to the movies and longboarding on cool days, enjoys hearing music, dancing, being with her 3 dogs and spending quality time with her significant other.
+  bio: Mel is an emphatic and comprehensive psychologist. Always cheerful and with a smile she works towards creating a healthy and work friendly environment at Icalia. She is always there for solving problems and make our life more happy.  <br><br>Mel is always looking to learn new things and she is always ready to adapt to new scenarios in life. She is not scared of big challenges and creating great things. She likes to go to the movies and longboarding on cool days, enjoys hearing music, dancing, being with her 3 dogs and spending quality time with her significant other.
   networks:
-    - link: https://twitter.com/daniel_graf
-      name: twitter
+    - link:
+      name:
 
 
 - name: Eduardo Higareda
@@ -48,7 +51,7 @@
   id: lentes
   picture: https://s3.amazonaws.com/icalia/assets/img/lentes-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/lentes-closeup.png
-  bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings on the users. Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
+  bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings from users.<br><br> Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
   networks:
     - link: https://twitter.com/eldelentes
       name: twitter
@@ -60,7 +63,7 @@
   id: scarlett
   picture: https://s3.amazonaws.com/icalia/assets/img/scar-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/scar-closeup.png
-  bio: Scarlett is a graphic designer and front-ender who’s always looking forward for the next big thing, she’s in love with mobile and web design. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. She likes to stay in the loop for new trends in design and fashion. <br/><br>Scarlett loves to eat, play around with her dog and sing. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends, she’s kind of a video game lover and a little bit too crazy.
+  bio: Scarlett is a graphic designer and front-end developer who’s always looking forward for the next big thing as she’s in love with mobile, web design and fashion. <br/><br>Scarlett loves to eat, play around with her dog and sing. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends. She’s kind of a video game lover and a little bit crazy too.
   networks:
     - link: https://twitter.com/scarlettgarza
       name: twitter
@@ -74,7 +77,7 @@
   id: noe
   picture: https://s3.amazonaws.com/icalia/assets/img/noe-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/noe-closeup.png
-  bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky with all the products at Icalia. He likes to make simple but functional things and also has a crush with flat design and the color white.
+  bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky to the point of perfection with all the products at Icalia. He likes to make simple but functional things and has a crush with flat design, and the color white.
   networks:
     - link: http://instagram.com/noe.ai
       name: instagram
@@ -88,7 +91,7 @@
   id: daniel
   picture: https://s3.amazonaws.com/icalia/assets/img/dan-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/dan-closeup.png
-  bio: Daniel works as a iOS developer. He loves reading about different programming paradigms and patterns every day, and working on side projects on the weekends. Values clean, well-crafted code over everything else. He has a passion for photography and traveling, whenever he is not at his computer.<br/> He is originally from Torreon, MX, but has lived almost all of his life in Monterrey, MX. He recently came back from living a couple of years in Austin, TX after finishing up his B.S. in Computer Science over there and working at a startup for a year.
+  bio: Daniel works as a iOS developer. He loves reading about different programming paradigms and patterns every day, while working on side projects on the weekends. Values clean, well-crafted code over everything else. <br><br>He has a passion for photography and traveling, whenever he is not at his computer. He is originally from Torreon, MX, but has lived almost all of his life in Monterrey, MX. He recently came back from living a couple of years in Austin, TX after finishing up his B.S. in Computer Science over there and working at a startup for a year.
   networks:
     - link: http://danielozano.com
       name: website
@@ -103,7 +106,7 @@
   id: bm
   picture: https://s3.amazonaws.com/icalia/assets/img/barbs-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/barbs-closeup.png
-  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and she’s always up for playing sports with friends."
+  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
   networks:
     - link: https://github.com/bmbrina
       name: github
@@ -115,7 +118,7 @@
   id: rq
   picture: https://s3.amazonaws.com/icalia/assets/img/bob-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/bob-closeup.png
-  bio: "An innate machine whisperer, coding since he was 10 years old - he used cassettes before diskettes existed! - Experienced in both frontend and backend development, he loves Ruby and Docker, but keeps an eye on other tech trends. <br> Docker, but keeps an eye on other tech trends. <br> Whenever he’s not whispering code into machines, he’s either playing rock music, hangin’ out with his wife and nerdy rockstar, and/or close friends, drinking spiced rum, watching NFL (he’s a Patriots fan), F1,  UFC , or doing whacky stuff."
+  bio: "An innate machine whisperer, coding since he was 10 years old - he used cassettes before diskettes existed! - Experienced in both frontend and backend development, he loves Ruby and Docker, but keeps an eye on other tech trends. <br><br> Whenever he’s not whispering code into machines, he’s either playing rock music, hangin’ out with his wife and nerdy rockstar, and/or close friends, drinking spiced rum, watching NFL (he’s a Patriots fan), F1,  UFC , or doing whacky things."
   networks:
     - link: https://github.com/vovimayhem
       name: github
@@ -127,7 +130,7 @@
   id: asd
   picture: https://s3.amazonaws.com/icalia/assets/img/alex-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/alex-closeup.png
-  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity available."
+  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity he encounters."
   networks:
     - link: https://twitter.com/lejandro83
       name: twitter
@@ -155,7 +158,7 @@
   id: cejas
   picture: https://s3.amazonaws.com/icalia/assets/img/cejas-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/cejas-closeup.png
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass with red wine and discuss philosophical subjects just for fun."
+  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass of red wine and discuss philosophical subjects just for fun."
   networks:
     - link: https://github.com/thelastinuit
       name: github
@@ -183,7 +186,7 @@
   id: emmy
   picture: https://s3.amazonaws.com/icalia/assets/img/emi-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/emi-closeup.png
-  bio: "Emmy is our full-stack developer, but love and prefer front-end technologies. JavaScript and web development lover, coding since he was just 14 years old. Love to spend time learning new technologies and reading articles, blogs and watching tutorials on youtube. Wants to play basketball all day long, even when he is not good at it."
+  bio: "Emmy is our full-stack developer, but loves and prefers front-end technologies. A JavaScript and web development lover, he's been coding since he was just 14 years old. Loves to spend time learning new technologies and reading articles, blogs and watching tutorials on youtube. Dreams of playing basketball all day long, even when he is not good at it."
   networks:
     - link: https://github.com/Emmy02
       name: github
@@ -211,7 +214,7 @@
   id: sara
   picture: https://s3.amazonaws.com/icalia/assets/img/sara-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
-  bio: "Sara is a graphic design student with passion for front-end development. She loves photography and giraffes, you can easily find her in good pizza places or learning something new, always ready for experience new things. In her free time she loves to visit art museums, travel to new places and doing different activities everyday like cooking, painting, crafting, dancing and more. A little girl with great enthusiasm and energy trying to always smile and be thankful for her life."
+  bio: "Sara is a graphic design student with passion for front-end development. She loves photography and giraffes, you can easily find her in good pizza places or learning something new, always ready for experience new things. In her free time she loves to visit art museums, travel to new places and doing different activities everyday like cooking, painting, crafting, dancing and more. Always filled with great enthusiasm and energy,trying to always smile and be thankful for life."
   networks:
     - link: https://github.com/thelastinuit
       name: github
@@ -227,7 +230,7 @@
   id: gala
   picture: https://s3.amazonaws.com/icalia/assets/img/gala-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/gala-closeup.png
-  bio: "Gala is a software intern, who loves to do both backend and frontend, she is always looking for an opportunity to learn more and improve her coding skills. In her free time, she loves to watch movies and series, dance, draw with pencil and listen to music."
+  bio: "Gala is a software intern, who loves to do both backend and frontend, she is always looking for an opportunity to learn more and improve her coding skills. In her free time, she loves to watch movies and series, dance, drawing with pencil and listening to music."
   networks:
     - link: https://github.com/GalaRamos
       name: github
@@ -239,7 +242,7 @@
   id: hector
   picture: https://s3.amazonaws.com/icalia/assets/img/hector-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/hector-closeup.png
-  bio: "Héctor is an intern who strives to develop a well-rounded set of software development skills. He likes to think of himself as the embodiment of curiosity, and is in constant search of stimulating intelectual discourse. When he’ s not coding, he can be found either reading, drawing, wakeboarding or having an intense philosophical discussion with pretty much anyone."
+  bio: "Héctor is an intern who strives to develop a well-rounded set of software development skills. He likes to think of himself as the embodiment of curiosity, and is in constant search of stimulating intelectual discourse. When he’s not coding, he can be found either reading, drawing, wakeboarding or having an intense philosophical discussion with pretty much anyone."
   networks:
     - link: https://github.com/HectorMg
       name: github
@@ -285,7 +288,7 @@
   id: rene
   picture: https://s3.amazonaws.com/icalia/assets/img/rene-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/rene-closeup.png
-  bio: "Rene is a Computer Science student who is highly interested in game and web dev. He is very enthusiastic about coding and likes to gather with his friends to hack. During his free time, Rene, loves to learn about new technologies, swim and play video games."
+  bio: "Rene is a Computer Science student who is highly interested in game and web dev. He is very enthusiastic about coding and likes to gather with his friends to hack. During his free time, Rene loves to learn about new technologies, swim and play video games."
   networks:
     - link: https://github.com/ReneSG
       name: github
@@ -333,7 +336,7 @@
   id: victor
   picture: https://s3.amazonaws.com/icalia/assets/img/victor-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/victor-closeup.png
-  bio: "Victor is a software engineer intern who loves to learn and create code and tools. He is passionate about what he does and is in love with open source and complex algorithms. He loves to play all kinds of sports, music, drums, percussions, videogames and food. He really likes food."
+  bio: "Victor is a software engineer intern who loves to learning new coding skills. He is in love with open source and complex algorithms. He loves to play all kinds of sports, music, drums, percussions, videogames and food. He really likes food."
   networks:
     - link: https://github.com/VictorElizalde
       name: github

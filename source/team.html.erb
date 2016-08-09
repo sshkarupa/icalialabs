@@ -7,18 +7,18 @@ type: team
   <div class="curtain"></div>
   <div class="team-header">
     <h6 class="letter-spacing">Our team</h6>
-    <h1 class="section-tag">Our passion is our job, we craft awesome products.</h1>
+    <h1 class="section-tag">Our passion is to craft awesome products.</h1>
   </div>
 </section>
 
 <section class="team-section">
   <div class="members-grid row">
-    <% data.members.each do |member| %> 
+    <% data.members.each do |member| %>
       <div class="col-2 nopadding" data-name="<%= member.name %>">
         <div class="members-grid--member" style="background-image: url('<%=member.closeup%>')">
         </div>
       </div>
-    <% end %> 
+    <% end %>
   </div>
   <div class="members-fullpage">
     <img src="images/close.png" class="close-mobile visible-on-small visible-on-xsmall" alt="">
@@ -29,13 +29,13 @@ type: team
     <aside class="members-nav hidden-on-small hidden-on-xsmall">
       <h6 class="letter-spacing">Our team members</h6>
       <ul>
-        <% data.members.each do |member| %>   
+        <% data.members.each do |member| %>
         <li><a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a></li>
-        <% end %> 
+        <% end %>
       </ul>
     </aside>
     <div class="members-container">
-      <% data.members.each do |member| %>     
+      <% data.members.each do |member| %>
         <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>'); background-size: 80vh;">
           <div class="member-info">
             <h5 class="name"><%= member.name %></h5>
@@ -48,7 +48,7 @@ type: team
             <% end %>
           </div>
         </figure>
-      <% end %> 
+      <% end %>
     </div>
   </div>
 </section>
