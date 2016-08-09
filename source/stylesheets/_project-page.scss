@@ -2,7 +2,36 @@
   border: none;
   height: 100%;
 
+  body {
+    background: #ffffff;
+  }
+  .main-menu.is-active, .main-menu.active {
+      z-index: 2000;
+      .logo {
+        svg {
+          fill: $primary-color;
+        }
+      }
+      .logo-menu {
+        &:before, a {
+          color: $primary-color;
+        }
+      }
+      .burger {
+        .one, .two, .three {
+          background: $primary-color;
+        }
+
+        .burger-label {
+          color: $primary-color;
+        }
+      }
+  }
+
   .main-menu {
+    .menu-overlay {
+      z-index: 2000;
+    }
     .logo {
       svg {
         fill: white;
@@ -23,8 +52,6 @@
       }
     }
   }
-
-  .ma
 
   h1, h3 {
     font-family: 'Open Sans', sans-serif;
@@ -155,34 +182,13 @@
     display: block;
     margin-left: -0.5em;
     padding: 0;
-    width: 1em;
+    width: auto;
     height: 1em;
     border: none;
     background: transparent;
     color: transparent;
     font-size: 2em;
     cursor: pointer; 
-
-    &::before {
-      position: absolute;
-      bottom: 100%;
-      left: -100%;
-      padding: 0.8em;
-      width: 300%;
-      color: #fff;
-      content: attr(data-info);
-      font-size: 0.35em;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-    }
-
-    .span-trigger {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-    }
 
     .span-trigger::before {
       position: absolute;
@@ -191,12 +197,12 @@
       width: 100%;
       height: 100%;
       color: #fff;
-      content: "\e097";
+      content: "\f078";
       text-transform: none;
       font-weight: normal;
       font-style: normal;
       font-variant: normal;
-      font-family: 'icomoon';
+      font-family: 'FontAwesome';
       line-height: 1;
       speak: none;
       -webkit-font-smoothing: antialiased;
@@ -324,7 +330,7 @@
     }
   }
   .content {
-    z-index: 1000;
+    z-index: 100;
     position: relative;
     
     > div {
@@ -445,7 +451,7 @@
     }
   }
   .content {
-    z-index: 1000;
+    z-index: 100;
     position: relative;
     top: -300px;
     bottom: 0px;
