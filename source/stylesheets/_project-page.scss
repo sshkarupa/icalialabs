@@ -2,6 +2,14 @@
   border: none;
   height: 100%;
 
+  .container {
+    max-width: 90%;
+  }
+
+  p {
+    font-weight: lighter;
+  }
+
   body {
     background: #ffffff;
   }
@@ -52,441 +60,87 @@
       }
     }
   }
+}
 
-  h1, h3 {
-    font-family: 'Open Sans', sans-serif;
-  }
+.header {
+  height: 100vh;
+  overflow: hidden;
 
-  .content-wrapper {
-    position: relative;
-    top: 30vh;
-  }
-
-  .project-container {
-    height: 100vh;
-  }
-  
-  background: #fff;
-
-  .header {
-    height: 100%;
-    margin: 0 auto;
-    min-height: 560px;
-    position: relative;
-    overflow: hidden;
+  img {
     width: 100%;
-
-    .bg-img, .bg-img::after, .content > div {
-      @include transition-property(transform);
-      @include transition-duration(0.5s);
-    }
-
-    .bg-img {
-      @include backface-visibility(hidden);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      overflow: hidden;
-
-      &::after {
-        @include background-image(linear-gradient(to bottom,
-        rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%));
-        content: '';
-        height: 101%;
-        opacity: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-
-      img {
-        display: block;
-        min-height: 100%;
-        min-width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
   }
+}
 
-  .title {
+.title {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 1.25em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  @include transform(translateX(-50%) translateY(-50%));
+  text-align: left;
+  z-index: 1000;
+
+  .project-name {
+    font-weight: 800;
+    line-height: 1;
     margin: 0 auto;
-    max-width: 900px;
-    padding: 0 1.25em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    @include transform(translateX(-50%) translateY(-50%));
-    text-align: left;
-    z-index: 1000;
+    padding: 0 0 0 0.2em;
+    @include transition(color 0.5s);
 
-    .project-name {
+    .project-title {
+      font-size: 4em;
       font-weight: 800;
-      line-height: 1;
-      margin: 0 auto;
-      padding: 0 0 0 0.2em;
-      @include transition(color 0.5s);
-
-      .project-title {
-        font-size: 4em;
-        font-weight: 800;
-        color: #fff;
-        text-align: center;
-      }
-
-      .details {
-        color: #fff;
-        padding-top: 50px;
-        text-align: center;
-
-        h3 {
-          font-weight: 100;
-          text-transform: uppercase;
-          font-size: 1em;
-          letter-spacing: 2px;
-        }
-
-        .light {
-          font-weight: 600;
-          font-size: 1.5em;
-        }
-      }
-    }
-
-
-
-    .subline {
-      color: $primary-color;
-      text-align: center;
-      font-size: 1.75em;
-      margin: 0 auto;
-      opacity: 0;
-      padding: 0 0 0.6em;
-      @include transform(translateX(-150px));
-      @include transition(transform, opacity);
-      @include transition-duration(0.5s);
-    }
-  }
-
-  .trigger {
-    position: fixed;
-    bottom: 40px;
-    left: 50%;
-    z-index: 5000;
-    display: block;
-    margin-left: -0.5em;
-    padding: 0;
-    width: auto;
-    height: 1em;
-    border: none;
-    background: transparent;
-    color: transparent;
-    font-size: 2em;
-    cursor: pointer; 
-
-    .span-trigger::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       color: #fff;
-      content: "\f078";
-      text-transform: none;
-      font-weight: normal;
-      font-style: normal;
-      font-variant: normal;
-      font-family: 'FontAwesome';
-      line-height: 1;
-      speak: none;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
     }
   }
+}
 
-  .content {
+.case-study-block {
+  @extend %clearfix;
+  margin: 5em auto;
+
+  p {
+    font-size: 1.1em;
     margin: 0 auto;
-    padding: 0 0 3em;
-    position: relative;
-    z-index: 1000;
-
-    img {
-      width: 100%;
-      margin: 20px auto;
-    }
-
-    > div {
-      margin: -80px auto 0;
-      max-width: 900px;
-      padding: 0 1.25em;
-      opacity: 0;
-      @include transform(translateY(350px));
-    }
+    line-height: 2em;
+    width: 90%;
   }
 
-  .trigger {
-    -webkit-transition: opacity 0.3s 0.5s;
-    transition: opacity 0.3s 0.5s;
-  }
-  &.modify .trigger {
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-  }
-    .bg-img {
-      -webkit-transition-property: -webkit-transform;
-      transition-property: transform;
-      &::after {
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-      }
-    }
-
-    .header {
-      .project-title {
-        -webkit-transition-property: color;
-        transition-property: color;
-        color: #000;
-      }
-      p {
-        -webkit-transition-property: -webkit-transform, opacity;
-        transition-property: transform, opacity;
-      }
-    }
-    .content > div {
-      -webkit-transition-property: -webkit-transform, opacity;
-      transition-property: transform, opacity;
-    }
-    .bg-img {
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-      &::after {
-        -webkit-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-      }
-    }
-    .header {
-      h1, p {
-        -webkit-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-      }
-    }
-    .content > div {
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-    }
-
-  .header {
-    overflow: hidden;
-  }
-
-  &.modify .bg-img {
-    -webkit-transform: translateY(-25%);
-    transform: translateY(-25%);
-  }
-  
-  .bg-img::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 101%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-  }
-  &.modify .bg-img::after {
-    opacity: 1;
-  }
-  .title {
-    text-align: left;
-    max-width: 900px;
-  }
-  .header p {
-    opacity: 0;
-    &:nth-child(2) {
-      -webkit-transform: translateX(150px);
-      transform: translateX(150px);
-    }
-    &:nth-child(3) {
-      -webkit-transform: translateX(-150px);
-      transform: translateX(-150px);
-    }
-  }
-  &.modify .header p {
-    &:nth-child(2), &:nth-child(3) {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-  .content {
-    z-index: 100;
-    position: relative;
-    
-    > div {
-      opacity: 0;
-      -webkit-transform: translateY(350px);
-      transform: translateY(350px);
-    }
-  }
-  &.modify {
-    .header {
-      .details, .details-info {
-        display: none;
-      }
-    }
-    .content > div {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
-  }
-
-}
-
-.project-container {
-  .trigger {
-    -webkit-transition: opacity 0.3s 0.5s;
-    transition: opacity 0.3s 0.5s;
-  }
-  &.modify .trigger {
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
-  }
-    .bg-img {
-      -webkit-transition-property: -webkit-transform;
-      transition-property: transform;
-      &::after {
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-      }
-    }
-    .header {
-      h1 {
-        -webkit-transition-property: color;
-        transition-property: color;
-      }
-      p {
-        -webkit-transition-property: -webkit-transform, opacity;
-        transition-property: transform, opacity;
-      }
-    }
-    .content > div {
-      -webkit-transition-property: -webkit-transform, opacity;
-      transition-property: transform, opacity;
-    }
-    .bg-img {
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-      &::after {
-        -webkit-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-      }
-    }
-    .header {
-      h1, p {
-        -webkit-transition-duration: 0.5s;
-        transition-duration: 0.5s;
-      }
-    }
-    .content > div {
-      -webkit-transition-duration: 0.5s;
-      transition-duration: 0.5s;
-    }
-
-  .header {
-    overflow: hidden;
-  }
-  &.modify .bg-img {
-    -webkit-transform: translateY(-25%);
-    transform: translateY(-25%);
-  }
-  .bg-img::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 101%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-  }
-  &.modify .bg-img::after {
-    opacity: 1;
-  }
-  .title {
-    text-align: left;
-    max-width: 900px;
-  }
-  .header p {
-    opacity: 0;
-    &:nth-child(2) {
-      -webkit-transform: translateX(150px);
-      transform: translateX(150px);
-    }
-    &:nth-child(3) {
-      -webkit-transform: translateX(-150px);
-      transform: translateX(-150px);
-    }
-  }
-  &.modify .header p {
-    &:nth-child(2), &:nth-child(3) {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-  .content {
-    z-index: 100;
-    position: relative;
-    top: -300px;
-    bottom: 0px;
-
-    p {
-      font-weight: 100;
-      font-size: 1.5em;
-      line-height: 1.6em;
-    }
-
-    h3 {
-      font-size: 3em;
-      font-weight: 900;
-      margin: 20px 0px;
-    }
-    
-
-
-    > div {
-      opacity: 0;
-      -webkit-transform: translateY(350px);
-      transform: translateY(350px);
-    }
-  }
-  &.modify {
-    .header {
-      .details, .details-info {
-        display: none;
-      }
-    }
-    .content > div {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-    }
+  .case-study-title {
+    font-size: 1.6em;
   }
 }
 
+.quote {
+  font-family: 'Playfair', serif;
+  font-size: 3em;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+.small-block {
+  width: 20%;
+}
+
+.big-block {
+  width: 70%;
+}
+
+.img-block {
+  @include background-size(cover);
+  background-position: center;
+  height: 80vh;
+  margin-bottom: 2%;
+  overflow: hidden;
+}
+.half {
+  width: 49%;
+
+  &.pull-left {
+    margin-right: 2%;
+  }
+}
