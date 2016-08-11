@@ -29,7 +29,7 @@
 - name: Tap to fund
   client: Steve
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/taptofund.png
+  image: https://s3.amazonaws.com/icalia/assets/img/taptofund.jpg
   color: 46a84c
   link: tap-to-fund
 
