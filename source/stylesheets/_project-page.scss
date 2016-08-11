@@ -63,12 +63,9 @@
 }
 
 .header {
+  @include background-size(cover);
   height: 100vh;
   overflow: hidden;
-
-  img {
-    width: 100%;
-  }
 }
 
 .title {
@@ -95,6 +92,7 @@
       font-weight: 800;
       color: #fff;
       text-align: center;
+      text-shadow: 2px 2px 20px #B6B6B6;
     }
   }
 }
@@ -138,12 +136,32 @@
 .img-block {
   @include background-size(cover);
   background-position: center;
+  background-repeat: no-repeat;
   height: 80vh;
   margin-bottom: 2%;
   overflow: hidden;
 }
+
+.img-block {
+  &.half-full {
+    background-size: 50%;
+
+    @include phone {
+      background-size: 100%;
+    }
+  }
+}
+
+.half-full {
+  height: 150vh;
+}
+
 .half {
   width: 49%;
+
+  @include phone {
+    width: 100%;
+  }
 
   &.pull-left {
     margin-right: 2%;

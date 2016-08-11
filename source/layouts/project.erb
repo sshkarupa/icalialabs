@@ -21,7 +21,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
   <body class="<%= current_page.data.type %>">
-
     <div class="project-container" id="project-container">
     	<header class="main-menu animated bounceInDown inverse">
 	      <div class="container">
@@ -63,10 +62,7 @@
 	        </div>
 	      </div>
 	    </nav>
-      <section class="header">
-				<div class="bg-img">
-	        <img src="<%= current_page.data.bg_img %>" alt="<%= current_page.data.title %>" >
-	      </div>
+      <section class="header" style="background-image: url(<%= current_page.data.bg_img %>" alt="<%= current_page.data.title %>); ">
 	       <div class="title">
 	          <div class="project-name">
 	            <h1 class="project-title"><%= current_page.data.title %></h1>
