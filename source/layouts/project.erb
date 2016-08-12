@@ -62,25 +62,16 @@
 	        </div>
 	      </div>
 	    </nav>
-      <section class="header" style="background-image: url(<%= current_page.data.bg_img %>" alt="<%= current_page.data.title %>); ">
-	       <div class="title">
+      <section class="header" style="background-image: url(<%= current_page.data.bg_img %>)" alt="<%= current_page.data.title %>); ">
+      	<div class="container">
+      	 	<div class="title">
 	          <div class="project-name">
-	            <h1 class="project-title"><%= current_page.data.title %></h1>
-
-	            <div class="details">
-	              <div class="row clearfix">
-	                <div class="col-6">
-	                  <h3 class="light"><%= current_page.data.product %></h3>
-	                </div>
-	                <div class="col-6">
-	                  <h3 class="light"><%= current_page.data.client %></h3>
-	                </div>
-	              </div>
-	            </div>
+	            <h1 class="project-title"><%= current_page.data.title %></h1>    
+	            <h3 class="light">Client: <%= current_page.data.client %></h3>
 	          </div>
-
-	        <p class="subline"> <%= current_page.data.subtitle %> </p>
-	      </div>
+	        	<p class="subline"><%= current_page.data.subtitle %> </p>
+	      	</div>
+      	</div>
 	    </section>
       <article class="content container">
         <div>
