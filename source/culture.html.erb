@@ -6,63 +6,60 @@ type: culture
 
 <% content_for :javascripts do %>
   <script src="https://cdn.plyr.io/1.8.12/plyr.js"></script>
-  <script type="text/javascript">plyr.setup({
+  <script type="text/javascript">
+    plyr.setup({
       autoplay: true,
       controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume']
-  });
+    });
   </script>
 <% end %>
-
 <section class="section-header">
-  <video controls>
+  <video controls autoplay muted>
     <source src="https://s3.amazonaws.com/icalia/assets/img/culture.mp4" type="video/mp4">
   </video>
 </section>
-
 <section class="values-section">
-  <div class="suraido-container vertical-align values" data-suraido>
-    <h3>Our values</h3>
-    <ul>
-      <li class="item-slide">
-        <h1 class="big-header"><span class="value">Passion:</span> Love what you do.<br /> Never stop improving.</h1>
-        <a href="#">Learn more</a>
-      </li>
-      <li class="item-slide">
-        <h1 class="big-header"><span class="value">Integrity:</span> <br /> Apply it to everything you do.</h1>
-        <a href="#">Learn more</a>
-      </li>
-      <li class="item-slide">
-        <h1 class="big-header"><span class="value">Kindness:</span>  Always give <br />before you get.</h1>
-        <a href="#">Learn more</a>
-      </li>
-      <li class="item-slide">
-        <h1 class="big-header"><span class="value">Communication:</span>  Vital for  <br />truly understading our user's needs.</h1>
-        <a href="#">Learn more</a>
-      </li>
-    </ul>
+  <div class="values">
+    <h4>Our values</h4>
+    <div class="suraido-container" data-suraido>
+      <ul>
+        <li class="item-slide red">
+          <h1 class="big-header red">Motivation comes <br />from true <span class="value">passion</span>.</h1>
+        </li>
+        <li class="item-slide red">
+          <h1 class="big-header">Every member <br />has <span class="value">integrity</span>.</h1>
+        </li>
+        <li class="item-slide red">
+          <h1 class="big-header"><span class="value">Kindness</span> to give <br />before you get.</h1>
+        </li>
+        <li class="item-slide red">
+          <h1 class="big-header"><span class="value">Communication</span> as the <br />team strategy.</h1>
+        </li>
+      </ul>
+    </div>
+    <a href="#">Learn more</a>
   </div>
 </section>
-
 <section class="career text-center">
-  <h2>The Icalier Career Path</h2>
-  <p>If you're a hacker by nature, you have a passion for making delightful digital products, then you sound like a person we'd like to work with. </p>
-  <br />
-  <p>You will join a family of young, talented, individuals striving to make an impact.  </p>
-  <p>At Icalia, you'll get paid to give a shit. </p>
+  <div class="container">
+    <%= image_tag "career.png", class: "career-icon" %>
+    <h3>The Icalier Career Path</h3>
+    <p>For several days we have analysed different elements considered by technical and creative people in the digital industry. We believe more options are going to be added in the near future, but so far this is a path that can lead you to learn and grow in a constant, unstoppable but most importantly, human way. </p>
+    <p>Every single memeber in our team has a monetary and emotional remuneration, sustained by the knowledge and experiences he or she gets. Along the Icalier life, every 3 months we celebrate a team evaluation to assess new developed capabilities and challenges faced. </p>
+  </div>
 </section>
 <section class="perks text-center">
   <div class="container">
-    <h4 class="title-section-perks">Perks for the team</h4>
-    <p class="section-description">Instantly get on a path of becoming a better Hacker, Designer, Business Person. </p>
-
+    <h3 class="red">Perks for the team</h3>
+    <p class="section-description">We care about our team. We offer different perks to motivate and encourage the constant development of our passions and professional skills. These elements are additional to any basic offering as a part-time or full-time team member.</p>
     <div class="row clearfix">
 
       <div class="perk col-3 square-bg-1 ">
         <figure>
           <%= image_tag "perk1.png", class: "perk-icon" %>
           <figcaption>
-          <h3 class="perk-title">Training</h3>
-          <p class="perk-description">Improve your coding skills, through constant training and by working with world class programmers.</p>
+          <h3 class="perk-title">Learning platforms</h3>
+          <p class="perk-description">Every single memeber can access to a bunch of different online platforms and leverage all knowledge available.</p>
           </figcaption>
         </figure>
       </div>
@@ -72,7 +69,7 @@ type: culture
           <%= image_tag "perk2.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Medical insurance</h3>
-          <p class="perk-description">Your peace of mind matters. We offer medical insurance to all of our full-time team members. </p>
+          <p class="perk-description">Besides the basic insurance for full-time memebers, we offer an additional medical insurance to guarantee your tranquility when something happens.</p>
           </figcaption>
         </figure>
       </div>
@@ -82,7 +79,7 @@ type: culture
           <%= image_tag "perk3.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Your launch pad</h3>
-          <p class="perk-description">Use Icalia as your stepping stone to become a better programmer. Learn about real world problems and how to launch products that solve them. You might even meet your next co-founder or get to work on the next big thing. </p>
+          <p class="perk-description">Take advantage of a great team and share with anyone your idea. You can build something great with all the talent available, and maybe start from here the next great thing. </p>
           </figcaption>
         </figure>
       </div>
@@ -94,7 +91,7 @@ type: culture
           <%= image_tag "perk4.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Creative Time</h3>
-          <p class="perk-description">As technology advances and changes, we need to keep up to date. Creative Time allows team members to spend 20% of their time on something not-client related.</p>
+          <p class="perk-description">As technology advances and changes, we need to be up to date every single day. Creative Time takes our fridays to spend the 20% of the week on something not-client related.</p>
           </figcaption>
         </figure>
       </div>
@@ -103,8 +100,8 @@ type: culture
         <figure>
           <%= image_tag "perk5.png", class: "perk-icon" %>
           <figcaption>
-          <h3 class="perk-title">Remote work</h3>
-          <p class="perk-description">Sometimes inspiration is outside the building. Work from home or your favorite coffeeshop. </p>
+          <h3 class="perk-title">Remote work possibilities</h3>
+          <p class="perk-description">You will miss our great office, but if something happens or you need to stay at your place, we are open to work in different places.</p>
           </figcaption>
         </figure>
       </div>
@@ -114,7 +111,7 @@ type: culture
           <%= image_tag "perk6.png", class: "perk-icon" %>
           <figcaption>
           <h3 class="perk-title">Online certifications</h3>
-          <p class="perk-description">Take your knowledge to the next level, we can sponsor your certification in any MOOC or online learning platform available. </p>
+          <p class="perk-description">If you want to take your brand new knowledge to the next level, we can sponsore you a certification in any MOOC or platform available. </p>
           </figcaption>
         </figure>
       </div>
@@ -123,14 +120,14 @@ type: culture
 </section>
 
 <section class="positions text-center" id="positions">
-  <h2>Join the team!</h2>
-  <p> Let us know if you want to become an Icalier.</p>
+  <h3 class="red">Join our family!</h3>
+  <p>If you want to live a different work experience, develop your true passions and grow as an individual, join us in this adventure. Let us know you want to be an Icalier.</p>
   <div class="row clearfix">
-    <a href="software-engineer" target="_blank" class="position">
+    <a href="software-engineer.html" target="_blank" class="position">
       <%= image_tag "devs-job-icon.png" %>
       Senior Developer
     </a>
-    <a href="digital-designer" target="_blank" class="position">
+    <a href="digital-designer.html" target="_blank" class="position">
       <%= image_tag "design-job-icon.png" %>
       Digital Designer
     </a>
