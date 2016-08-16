@@ -172,6 +172,11 @@
         background-repeat: no-repeat;
         background-position: center top;
         transition: all 0.2s ease-in-out;
+
+        @include phone {
+          height: 50vh;
+          background-size: 50vh;
+        }
       }
     }
 
