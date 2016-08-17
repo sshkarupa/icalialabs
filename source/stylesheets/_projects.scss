@@ -1,6 +1,27 @@
 @include keyframes(bg-size) {
     from {background-size: 100%;}
     to {background-size: 105%}
+}
+
+.projects {
+  .main-menu {
+    svg {
+      fill: $primary-color;
+    }
+    .logo-menu {
+      a {
+        color: $primary-color;
+      }
+    }
+    .burger {
+      .one, .two {
+        background: $primary-color;
+      }
+      .burger-label {
+        color: $primary-color;
+      }
+    }
+  }
 } 
 
 .projects-container {
