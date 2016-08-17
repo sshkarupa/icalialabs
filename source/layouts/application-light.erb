@@ -61,10 +61,8 @@
         </div>
       </div>
     </nav>
-  
-    <div id="skrollr-body">
-      <%= yield %>
-    </div>
+
+    <%= yield %>
 
     <footer class="main-footer">
       <div class="container row clearfix">
@@ -113,11 +111,9 @@
       });
     </script>
     <script src="javascripts/words.js"></script>
-    <script src="javascripts/skrollr.js"></script>
     <script src="//cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script type="text/javascript">
-       var s = skrollr.init({forceHeight: false});
        window.sr = ScrollReveal();
        sr.reveal('.reveal');
     </script>
