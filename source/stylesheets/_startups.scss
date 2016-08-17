@@ -41,6 +41,10 @@ a {
 	margin: 0 auto 4rem auto;
 	width: 80%;
 
+	@include phone {
+		min-height: 100vh;
+	}
+
 	h1 {
 		margin: 2rem 0;
 	}
