@@ -4,25 +4,6 @@ title: Icalia Labs
 type: index
 ---
 
-<% content_for :javascripts do %>
-  <%= javascript_include_tag "countUp" %>
-  <script type="text/javascript" charset="utf-8">
-    var statsContainerPosition = $('.stats-section').offset().top;
-    var distanceToTop = 0;
-    $(window).on('scroll', function(e){
-      distanceToTop = $(window).scrollTop() + 250;
-      if (distanceToTop > statsContainerPosition) {
-        $('.stat-item-number:not(.counted)').each(function(index) {
-          var maxValue = $(this).data('stat-number');
-          var numAnim = new CountUp(this, 0, maxValue, 0, 3);
-          numAnim.start();
-          $(this).addClass('counted');
-        });
-      }
-    });
-  </script>
-<% end %>
-
 <section data-section="home" class="index-background">
   <section class="intro row">
     <div class="container">
