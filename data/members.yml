@@ -47,11 +47,11 @@
 
 
 - name: Eduardo Higareda
-  title: Lead Designer
+  title: Designer
   id: lentes
   picture: https://s3.amazonaws.com/icalia/assets/img/lentes-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/lentes-closeup.png
-  bio: Eduardo Higareda is the Lead Designer of the team (also the first designer at Icalia Labs). He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings from users.<br><br> Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
+  bio: Eduardo Higareda is the first designer of the team. He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings from users.<br><br> Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
   networks:
     - link: https://twitter.com/eldelentes
       name: twitter
@@ -73,7 +73,7 @@
       name: website
 
 - name: Noe Araujo
-  title: Digital Designer
+  title: Head of Design
   id: noe
   picture: https://s3.amazonaws.com/icalia/assets/img/noe-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/noe-closeup.png
@@ -126,7 +126,7 @@
       name: twitter
 
 - name: Alejandro Sandoval
-  title: Software Engineer
+  title: Head of Product
   id: asd
   picture: https://s3.amazonaws.com/icalia/assets/img/alex-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/alex-closeup.png
