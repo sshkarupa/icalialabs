@@ -1,35 +1,35 @@
 - name: Cochi
   client: Banregio
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/cochi.jpg
+  image: images/cochi/cochi.jpg
   color: ac284a
   link: cochi
 
 - name: Printoo
   client: Printoo
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/printoo.jpg
+  image: images/printoo/printoo.jpg
   color: 2d7f89
   link: printoo
 
 - name: Okudoc
   client: Okudoc
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/okudoc.jpg
+  image: images/okudoc/okudoc.jpg
   color: 572c7a
   link: okudoc
 
 - name: Aire N.L
   client: Personal Project
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/aire.jpg
+  image: images/aire/aire.jpg
   color: 284a7c
   link: aire
 
 - name: Tap to fund
   client: Steve
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/taptofund.jpg
+  image: images/taptofund/taptofund.jpg
   color: 46a84c
   link: tap-to-fund
 
