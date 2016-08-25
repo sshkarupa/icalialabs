@@ -326,7 +326,7 @@
   id: pedro
   picture: images/team/pedro-full.png
   closeup: images/team/pedro-closeup.png
-  bio: "Pedro is a ruby on rails intern. He’s currently learning the dark ways of back-end coding but is also interested in front-end development. Pedro has been involved in organizing events at his university as well as conferences and workshops for his fellow classmates.<br><br> Whenever he’s not in the matrix, Pedro is spending time with friends, paying videogames, practicing guitar or walking his Labrador friend named “Holly”."
+  bio: "Pedro is a ruby on rails intern. He’s currently learning the dark ways of back-end coding but is also interested in front-end development. Pedro has been involved in organizing events at his university as well as conferences and workshops for his fellow classmates.<br><br> Whenever he’s not in the matrix, Pedro is spending time with friends, playing videogames, practicing guitar or walking his Labrador friend named “Holly”."
   networks:
     - link: https://github.com/pedroasgarza
       name: github
