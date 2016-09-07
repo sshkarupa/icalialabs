@@ -164,8 +164,6 @@
       name: github
     - link: https://medium.com/@max.feinberg
       name: medium
-    - link: https://twitter.com/thelastinuit
-      name: twitter
     - link: http://bravarianpawstudios.com/
       name: website
 
@@ -200,13 +198,11 @@
   closeup: https://s3.amazonaws.com/icalia/assets/img/luigui-closeup.png
   bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a graphic communication student. Enthusiast for aesthetic order, beautiful typography, geometry,  and symmetry. Technology curious since he can recall. The futbol aficionado of the gang. Nintendo geek (especially Zelda). Amateur skater. Analog photography supporter."
   networks:
-    - link: www.instagram.com/luisphernelia
+    - link: https://www.instagram.com/luisphernelia/
       name: instagram
-    - link: www.twitter.com/luisphernelia
-      name: twitter
-    - link: www.dribbble.com/luisphernelia
+    - link: https://dribbble.com/luisphernelia
       name: dribbble
-    - link: www.luismanzur.com
+    - link: http://luismanzur.com/
       name: website
 
 - name: Sara De Leon
@@ -216,14 +212,14 @@
   closeup: https://s3.amazonaws.com/icalia/assets/img/sara-closeup.png
   bio: "Sara is a graphic design student with passion for front-end development. She loves photography and giraffes, you can easily find her in good pizza places or learning something new, always ready for experience new things. In her free time she loves to visit art museums, travel to new places and doing different activities everyday like cooking, painting, crafting, dancing and more. Always filled with great enthusiasm and energy,trying to always smile and be thankful for life."
   networks:
-    - link: https://github.com/thelastinuit
-      name: github
-    - link: https://medium.com/@max.feinberg
-      name: medium
-    - link: https://twitter.com/thelastinuit
-      name: twitter
-    - link: http://bravarianpawstudios.com/
-      name: website
+    - link: https://www.instagram.com/saradeleons
+      name: instagram
+    - link: https://www.facebook.com/saraleonphotography
+      name: facebook
+    - link: https://www.behance.net/saraleon1017
+      name: behance
+    - link: https://dribbble.com/saraleon
+      name: dribbble
 
 - name: Gala Islas
   title: Software Engineering Intern
@@ -248,8 +244,6 @@
       name: github
     - link: https://www.instagram.com/hectormgwake/
       name: instagram
-    - link: mgdev.herokuapp.com
-      name: website
 
 - name: Jorge Elizondo
   title: IOS Intern

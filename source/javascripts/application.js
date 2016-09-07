@@ -64,18 +64,6 @@ $(document).keyup(function(e) {
   }   // esc
 });
 
-$('body.projects').attr('data-400','background-color:rgb(244,244,244);');
-$('body.projects').attr('data-700','background-color:rgb(234,62,106);');
-$('body.projects').attr('data-1700','background-color:rgb(67,197,213);');
-$('body.projects').attr('data-2300','background-color:rgb(113,57,158);');
-$('body.projects').attr('data-3000','background-color:rgb(52,99,169);');
-$('body.projects').attr('data-4700','background-color:rgb(70,168,76)');
-
-
-$('body.process').attr('data-400','background-color:rgb(244,244,244);');
-$('body.process').attr('data-500','background-color:rgb(255, 52, 52);');
-
-
 $(window).scroll(function(){
   if ($(this).scrollTop() > 100) {
     $('.main-menu').addClass('is-active');
