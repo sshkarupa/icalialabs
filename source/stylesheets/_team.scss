@@ -28,7 +28,7 @@
   }
 
   .section-header {
-    background: url(/images/team.jpg);
+    background: url(https://s3.amazonaws.com/icalia/assets/img/team.jpg);
     background-position: center center;
     color: white;
     text-align: left;
@@ -145,7 +145,7 @@
       display: none;
 
       @include phone {
-        position: fixed;
+        //position: fixed;
         width: 100%;
         z-index: 200;
       }
