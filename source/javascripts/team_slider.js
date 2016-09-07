@@ -31,8 +31,3 @@ $('.members-grid .col-2').click(function() {
 	$('.member[data-name="'+ member +'"]').show();
 });
 
-$(".members-grid .col-2").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".team-section").offset().top},
-        'slow');
-});
