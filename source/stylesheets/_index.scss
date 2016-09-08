@@ -73,6 +73,13 @@
   height: 100vh;
   position: relative;
 
+  @include phone {
+    background-attachment: initial;
+  }
+  @include ipad {
+    background-attachment: initial;
+  }
+
   video,
   object,
   #particles {
@@ -146,6 +153,10 @@
       opacity: 0.8;
       vertical-align: middle;
       width: 13%;
+
+      @include phone {
+        display: inline-block;
+      }
 
       &:nth-child(1) {animation-delay: 300ms;}
       &:nth-child(2) {animation-delay: 500ms;}
