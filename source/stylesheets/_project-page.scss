@@ -79,10 +79,6 @@
     height: 50%;
     position: absolute;
     width: 100%;
-
-    @include phone {
-      bottom: -6em;
-    }
   }
 }
 
