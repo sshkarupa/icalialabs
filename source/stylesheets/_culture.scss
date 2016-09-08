@@ -29,9 +29,14 @@
 .culture {
   .section-header {
     background: #000;
+    overflow: hidden;
 
     video, .plyr, .plyr__video-wrapper {
       height: 100%;
+
+      @include phone {
+        width: 100vw;
+      }
     }
 
     video {
