@@ -29,4 +29,9 @@ ratings:
   - "**.php"
   - "**.py"
   - "**.rb"
-exclude_paths: []
+
+exclude_paths: 
+- "config/"
+- "db/"
+- "source/javascripts/"
+- "source/stylesheets/animate.css"
