@@ -38,7 +38,8 @@ a {
 }
 
 .text-header {
-	margin: 0 auto 4rem auto;
+	margin: 0 auto;
+	height: 60vh;
 	width: 80%;
 
 	@include phone {
@@ -65,17 +66,6 @@ a {
 			width: 35%;
 		}
 	}
-}
-
-.startupsSlideContainer {
-	height: 100vh;
-  	width: 400%;
-
-  .pull-right {
-    @include phone {
-      float: none;
-    }
-  }
 }
 
 .startup-work {
@@ -153,4 +143,42 @@ a {
 	h6 {
 		margin-bottom: 0;
 	}
+}
+
+.steps-block {
+	background: $primary-color;
+	color: white;
+
+  &__item {
+  	height: 50vh;
+  	margin-bottom: px-to-rems(50);
+  }
+
+  &__title {
+    display: inline;
+    font-size: px-to-rems(40);
+    vertical-align: middle;
+  }
+
+  .step-elements {
+  	list-style: none;
+  	font-size: px-to-rems(20);
+  	vertical-align: middle;
+  	width: 90%;
+
+  	li {
+  		margin-bottom: px-to-rems(15);
+  		vertical-align: middle;
+  	}
+  }
+
+  .circle {
+    @include border-radius(50%);
+    background: white;
+    display: inline-block;
+    height: px-to-rems(150);
+    margin-right: px-to-rems(20);
+    vertical-align: middle;
+    width: px-to-rems(150);
+  }
 }
