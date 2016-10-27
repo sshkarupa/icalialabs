@@ -38,7 +38,8 @@ a {
 }
 
 .text-header {
-	margin: 0 auto 4rem auto;
+	margin: 0 auto;
+	height: 60vh;
 	width: 80%;
 
 	@include phone {
