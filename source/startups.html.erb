@@ -4,13 +4,6 @@ title: Startups
 type: startups
 ---
 
-<% content_for :javascripts do %>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-  <script src="javascripts/magicscroll.js"></script>
-<% end %>
-
 <section class="section-header">
 	<div class="vertical-align">
 		<%= partial "shared/startups-svg" %>
@@ -26,7 +19,7 @@ We code. You execute.</h1>
 		<h6 class="letter-spacing red">Get from idea to a working product faster.</h6>
 		<div class="section-description">
 			<p>
-				It's no secret starups are hard. Believe us, we have the battle scars that prove it.
+				It's no secret startups are hard. Believe us, we have the battle scars that prove it.
 			</p>
 			<p>
 				To ensure your ideas are properly nurtured, allow us to guide you to take the right steps at the nascent stages of your company. These are the most important decisions you will make and having us as a partner will ensure your success.
@@ -34,53 +27,70 @@ We code. You execute.</h1>
 		</div>
 	</div>
 </section>
-<div id="pinContainer" class="pinContainer">
-  <div id="enterpriseSlideContainer" class="enterpriseSlideContainer">
-     <div class="slide one">
-    	<div class="pull-left circle text-center">
-    		<h2 class="red vertical-align">1.</h2>
-    	</div>
-      <h1 class="vertical-align slide-text">Idea Stage.</h1>
-      <div class="pull-right">
-				<p class="slide-text">Find a problem. </p>
-				<p class="slide-text">Validate your solution. </p>
-      	<p class="slide-text">Do the things that don't scale.</p>
-				<p class="slide-text">Define your MVP.</p>
-      </div>
-    </div>
-    <div class="slide two">
-      <div class="pull-left circle text-center">
-    		<h2 class="red vertical-align">2.</h2>
-    	</div>
-      <h1 class="vertical-align slide-text">Build. Measure. Learn.</h1>
-      <div class="pull-right">
-      	<p class="slide-text">Build your MVP. </p>
-      	<p class="slide-text">Talk to users.</p>
-				<p class="slide-text">Learn how to make your product better.</p>
-      </div>
-    </div>
-    <div class="slide three">
-      <div class="pull-left circle text-center">
-    		<h2 class="red vertical-align">3.</h2>
-    	</div>
-      <h1 class="vertical-align slide-text">Product/market fit.</h1>
-      <div class="pull-right">
-      	<p class="slide-text">Find your AHA moment.</p>
-      	<p class="slide-text">Focus on growth.</p>
-      </div>
-    </div>
-		<div class="slide four">
-			<div class="pull-left circle text-center">
-				<h2 class="red vertical-align">4.</h2>
-			</div>
-			<h1 class="vertical-align slide-text">Scale.</h1>
-			<div class="pull-right">
-				<p class="slide-text">Execute. Execute. Execute.</p>
-				<p class="slide-text">Build a high performing machine that idiots can run.</p>
-			</div>
+<section class="steps-block">
+	<div class="row container steps-block__item clearfix">
+		<div class="col-8 vertical-align">
+			<div class="circle text-center">
+	  		<h2 class="red vertical-align">1.</h2>
+	  	</div>
+	    <h1 class="steps-block__title">Idea Stage</h1>
+		</div>
+		<div class="col-4 vertical-align">
+			<ul class="step-elements pull-right">
+				<li>Find a problem.</li>
+				<li>Validate your solution.</li>
+	    	<li>Do the things that don't scale.</li>
+				<li>Define your MVP.</li>
+	    </ul>
 		</div>
   </div>
-</div>
+
+  <div class="row container steps-block__item clearfix">
+		<div class="col-8 vertical-align">
+			<div class="circle text-center">
+	  		<h2 class="red vertical-align">2.</h2>
+	  	</div>
+	    <h1 class="steps-block__title">Build. Measure. Learn</h1>
+		</div>
+		<div class="col-4 vertical-align">
+			<ul class="step-elements pull-right">
+				<li>Build your MVP.</li>
+				<li>Talk to users.</li>
+	    	<li>Learn how to make your product better.</li>
+	    </ul>
+		</div>
+  </div>
+
+  <div class="row container steps-block__item clearfix">
+		<div class="col-8 vertical-align">
+			<div class="circle text-center">
+	  		<h2 class="red vertical-align">3.</h2>
+	  	</div>
+	    <h1 class="steps-block__title">Product/market fit</h1>
+		</div>
+		<div class="col-4 vertical-align">
+			<ul class="step-elements pull-right">
+				<li>Find your AHA moment.</li>
+				<li>Focus on growth.</li>
+	    </ul>
+		</div>
+  </div>
+
+  <div class="row container steps-block__item clearfix">
+		<div class="col-8 vertical-align">
+			<div class="circle text-center">
+	  		<h2 class="red vertical-align">4.</h2>
+	  	</div>
+	    <h1 class="steps-block__title">Scale</h1>
+		</div>
+		<div class="col-4 vertical-align">
+			<ul class="step-elements pull-right">
+				<li>Execute. Execute. Execute.</li>
+				<li>Build a high performing machine that idiots can run.</li>
+	    </ul>
+		</div>
+  </div>
+</section>
 
 <section class="startup-work">
 	<div class="text-center">
