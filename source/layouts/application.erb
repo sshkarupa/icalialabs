@@ -100,34 +100,9 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <%= javascript_include_tag :all %>
     <%= yield_content :javascripts %>
-    <script>
-      $('#intro-text').typeIt({
-        strings: ["Business.", "Customers.", "Startup.", "Users."],
-        speed: 300,
-        breakLines: false,
-        startDelay: 300,
-        loop: true,
-        breakDelay: 100,
-      });
-    </script>
-    <script src="javascripts/words.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.selected-works-slider').slick({
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          centerMode: true,
-          variableWidth: true,
-          arrows: true,
-          prevArrow: '<a class="prev-arrow">Prev</a>',
-          nextArrow: '<a class="next-arrow">Next</a>'
-        });
-      });
-    </script>
     <script>
       window.intercomSettings = {
         app_id: "k19z5z2b"
