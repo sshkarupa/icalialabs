@@ -79,11 +79,7 @@
         </div>
       </article>
     </div>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/javascripts/application.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/javascripts/classie.js"></script>
-    
-    <script type="text/javascript" charset="utf-8" src="/javascripts/jquery.kinetic.min.js"></script>
+    <%= javascript_include_tag :all %>
+    <%= yield_content :javascripts %>
   </body>
 </html>
