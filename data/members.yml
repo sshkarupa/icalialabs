@@ -144,7 +144,7 @@
   id: mayra
   picture: https://s3.amazonaws.com/icalia/assets/img/mayra-full.png
   closeup: https://s3.amazonaws.com/icalia/assets/img/mayra-closeup.png
-  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier. Mayra does mostly backend but also loves the frontend's magical power. <br ><br > Obsessed with programming, she likes to create beautiful, concise and well crafted code through best practices & patterns. <br ><br > She also enjoys geeky stuff in general like science, books, movies, tv series and of course, cats."
+  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier. <br ><br > Obsessed with programming, she loves a merge request that can be accepted without comments & beautiful, concise and well crafted code created through best practices & patterns. <br ><br > She also enjoys geeky stuff in general like science, books, movies, tv series and of course, cats."
   networks:
     - link: https://github.com/mayra-cabrera
       name: github
