@@ -11,15 +11,15 @@
     height: 550px;
 
     &.printoo{
-      background: url(https://s3.amazonaws.com/icalia/assets/img/printoo-slider.jpg);
+      background: url(//s3.amazonaws.com/icalia/assets/img/printoo-slider.jpg);
       @include background-size(cover); 
     }
     &.ovatemp{
-      background: url(https://s3.amazonaws.com/icalia/assets/img/ovatemp.jpg);
+      background: url(//s3.amazonaws.com/icalia/assets/img/ovatemp.jpg);
       @include background-size(cover); 
     }
     &.repair{
-      background: url(https://s3.amazonaws.com/icalia/assets/img/repair.jpg);
+      background: url(//s3.amazonaws.com/icalia/assets/img/repair.jpg);
       @include background-size(cover); 
     }
 
