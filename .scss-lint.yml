@@ -1,0 +1,19 @@
+scss_files: 'source/stylesheets/*.scss'
+
+exclude:
+  - 'source/stylesheets/animate.css'
+  - 'source/stylesheets/animsition.css'
+  - 'source/stylesheets/jquery.scroller.css'
+
+linters:
+  VendorPrefix:
+    exclude:
+      - 'scss/_mixins.scss'
+  ImportantRule:
+    exclude:
+      - 'scss/_mixins.scss'
+  BorderZero:
+    enabled: false
+  Indentation:
+    severity: warning
+    width: 2

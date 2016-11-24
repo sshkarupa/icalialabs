@@ -18,3 +18,4 @@ gem "middleman-sprockets", "~> 4.0.0.rc"
 gem "therubyracer", platform: :ruby
 gem "puma"
 gem "rack-contrib"
+gem 'scss_lint', require: false

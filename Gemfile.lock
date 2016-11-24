@@ -113,11 +113,15 @@ GEM
       rack (~> 1.4)
     rack-livereload (0.3.16)
       rack
+    rake (11.3.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     ref (2.0.0)
     sass (3.4.22)
+    scss_lint (0.50.3)
+      rake (>= 0.9, < 12)
+      sass (~> 3.4.20)
     servolux (0.12.0)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
@@ -143,9 +147,13 @@ DEPENDENCIES
   middleman-sprockets (~> 4.0.0.rc)
   puma
   rack-contrib
+  scss_lint
   therubyracer
   tzinfo-data
   wdm (~> 0.1.0)
+
+RUBY VERSION
+   ruby 2.2.5p319
 
 BUNDLED WITH
    1.12.5
