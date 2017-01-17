@@ -59,14 +59,6 @@ a {
   clear: both;
 }
 
-.align-right {
-  text-align: right;
-}
-
-.light-gray {
-  color: $light-gray;
-}
-
 .red {
   color: $primary-color;
 }
@@ -93,25 +85,6 @@ a {
 
 .section-tag + .button {
   margin-top: 2em;
-}
-
-.primary-button {
-  background: $secondary-color;
-  border: 1px solid $primary-color;
-  border-radius: 2px;
-  display: inline-block;
-  padding: 2rem;
-  text-decoration: none;
-}
-
-.secondary-button {
-  background: $primary-color;
-  border: 1px solid #FFF;
-  color: #FFF;
-  display: inline-block;
-  font-size: 1rem;
-  padding: 2rem;
-  text-decoration: none;
 }
 
 .action-btn {
@@ -146,7 +119,6 @@ a {
 
 }
 
-.capital { text-transform: uppercase; }
 .text-center { text-align: center; }
 
 .vertical-align {
@@ -163,12 +135,6 @@ a {
   @include max-screen($small-screen) {
     margin: 25px;
   }
-}
-
-.big-tagline {
-  color: #FFF;
-  font-size: 2rem;
-  font-weight: 400;
 }
 
 // ######## Menu ############
@@ -462,38 +428,6 @@ a {
   opacity: 0;
 }
 
-.focus {
-  position: relative;
-  z-index: 200;
-}
-
-.indicator {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5%;
-  z-index: 100;
-
-  &_number {
-    color: #fff;
-    padding-bottom: 1em;
-    border-bottom: 1px solid $primary-color;
-  }
-
-
-  &_title {
-    transform: rotate(-90deg) translate(-150%, 30%);
-    text-transform: uppercase;
-    display: block;
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.8em;
-    letter-spacing: 2px;
-    transform-origin: left;
-  }
-}
-
-
 .main-footer {
   background: #F4F4F4;
   padding: 50px 0px;
@@ -592,59 +526,11 @@ a {
     }
   }
 
-  // ************************** Modals *******************************
-
-  .simple-modal {
-    position: fixed;
-    top: 10%;
-    visibility: hidden;
-
-    .modal-header {
-      background: transparent;
-      text-align: center;
-      color: #e60038 ;
-
-      h3 {
-        font-size: 4rem;
-      }
-    }
-
-
-    .modal-content {
-      overflow: visible;
-      padding: 50px;
-      text-align: center;
-
-      p {
-        font-weight: 100;
-        font-size: 2em;
-        color: rgba(0,0,0,0.5);
-      }
-
-
-      .modal-close {
-        cursor: pointer;
-        position: absolute;
-        right: 5%;
-        top: 8%;
-        letter-spacing: 1px;
-        border: 2px solid;
-        border-radius: 100px;
-        padding: 5px 20px;
-      }
-
-      .modal-content {
-        min-height: 300px;
-        opacity: 1;
-      }
-    }
-  }
-
-  /*
-   * ====================================================
-   *  General responsive fixes
-   * ====================================================
-   */
+/*
+ * ====================================================
+ *  General responsive fixes
+ * ====================================================
+ */
   @include max-screen($small-screen) {
     html {
       font-size: 11px;
