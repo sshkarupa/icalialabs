@@ -8,3 +8,5 @@
 //= require team_slider
 //= require jquery.scroller
 //= require typeit.min
+//= require modernizr.custom.min
+//= require jquery.catslider

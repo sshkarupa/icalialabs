@@ -72,13 +72,3 @@ $(window).scroll(function(){
   }
 });
 
-$('.selected-works-slider').slick({
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true,
-  arrows: true,
-  prevArrow: '<a class="prev-arrow">Prev</a>',
-  nextArrow: '<a class="next-arrow">Next</a>'
-});

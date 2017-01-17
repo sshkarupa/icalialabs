@@ -101,6 +101,13 @@
     <%= javascript_include_tag :all %>
     <%= yield_content :javascripts %>
     <script>
+      $(function() {
+
+        $( '#mi-slider' ).catslider();
+
+      });
+    </script>
+    <script>
       window.intercomSettings = {
         app_id: "k19z5z2b"
       };
