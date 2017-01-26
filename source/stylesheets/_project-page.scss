@@ -143,9 +143,13 @@
 
 .big-block {
   width: 70%;
+
+  &.center {
+    margin: 0 auto;
+  }
 }
 
-.big-blocl, .small-block {
+.small-block {
   p {
     width: 70%;
   }

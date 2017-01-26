@@ -33,3 +33,18 @@
   color: 46a84c
   link: tap-to-fund
 
+- name: IOS Offices
+  client: IOS Offices
+  done: Design Sprint
+  image: https://s3.amazonaws.com/icalia/assets/img/IOS-offices/notes.jpeg
+  color: 284a7c
+  link: ios-offices
+
+
+- name: Messa
+  client: Jorge Borbolla
+  done: Design Sprint
+  image: https://s3.amazonaws.com/icalia/assets/img/messa/messa.jpg
+  color: 284a7c
+  link: messa
+
