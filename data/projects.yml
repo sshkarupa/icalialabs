@@ -1,35 +1,50 @@
 - name: Cochi
   client: Banregio
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/cochi.jpg
+  image: https://s3.amazonaws.com/icalialabs/assets/img/cochi.jpg
   color: ac284a
   link: cochi
 
 - name: Printoo
   client: Printoo
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/printoo.jpg
+  image: https://s3.amazonaws.com/icalialabs/assets/img/printoo.jpg
   color: 2d7f89
   link: printoo
 
 - name: Okudoc
   client: Okudoc
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/okudoc.jpg
+  image: https://s3.amazonaws.com/icalialabs/assets/img/okudoc.jpg
   color: 572c7a
   link: okudoc
 
 - name: Aire N.L
   client: Personal Project
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/aire.jpg
+  image: https://s3.amazonaws.com/icalialabs/assets/img/aire.jpg
   color: 284a7c
   link: aire
 
 - name: Tap to fund
   client: Steve
   done: UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalia/assets/img/taptofund.jpg
+  image: https://s3.amazonaws.com/icalialabs/assets/img/taptofund.jpg
   color: 46a84c
   link: tap-to-fund
+
+- name: IOS Offices
+  client: IOS Offices
+  done: Design Sprint
+  image: https://s3.amazonaws.com/icalialabs/assets/img/IOS-offices/notes.jpeg
+  color: 284a7c
+  link: ios-offices
+
+
+- name: Messa
+  client: Jorge Borbolla
+  done: Design Sprint
+  image: https://s3.amazonaws.com/icalialabs/assets/img/messa/messa.jpg
+  color: 284a7c
+  link: messa
 

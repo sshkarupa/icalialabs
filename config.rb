@@ -49,4 +49,4 @@ configure :build do
 end
 
 #Environment variables
-ENV["AWS_S3_BUCKET_URL"] = "https://s3.amazonaws.com/icalia"
+ENV["AWS_S3_BUCKET_URL"] = "https://s3.amazonaws.com/icalialabs"
