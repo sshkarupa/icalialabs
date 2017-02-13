@@ -23,18 +23,6 @@
     - link: https://github.com/kurenn
       name: github
 
-- name: Daniel Graf
-  title: Head of Business Development
-  id: dg
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/graf-full.png
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/graf-closeup.png
-  bio: Daniel as Head of Business Development, is in charge of helping our clients embrace the ambiguity of becoming software and data driven organizations. <br><br>He's a lover of the merger between tech and beautiful design that works. A Techstars ’15 and Babson MBA ’06 alumn, he loves food, a good book, and knows kung-fu.
-  networks:
-    - link: https://twitter.com/daniel_graf
-      name: twitter
-    - link: https://linkedin.com/in/dgrafarmada
-      name: fa-linkedin-square
-
 - name: Melissa De La Garza
   title: Happiness Manager
   id: dg
@@ -44,7 +32,6 @@
   networks:
     - link:
       name:
-
 
 - name: Eduardo Higareda
   title: Designer
@@ -72,20 +59,6 @@
     - link: http://scarlettgarza.com/
       name: website
 
-- name: Noe Araujo
-  title: Head of Design
-  id: noe
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/noe-full.png
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/noe-closeup.png
-  bio: Noe is a multidisciplinary designer, type lover and creator, perfectionist and picky to the point of perfection with all the products at Icalia. He likes to make simple but functional things and has a crush with flat design, and the color white.
-  networks:
-    - link: http://instagram.com/noe.ai
-      name: instagram
-    - link: https://twitter.com/Internox
-      name: twitter
-    - link: https://dribbble.com/nox
-      name: dribbble
-
 - name: Daniel Lozano
   title: iOS Engineer
   id: daniel
@@ -99,7 +72,6 @@
       name: twitter
     - link: http://instagram.com/danlozano
       name: instagram
-
 
 - name: Bárbara Martínez
   title: Mobile Intern
@@ -124,20 +96,6 @@
       name: github
     - link: https://twitter.com/vovimayhem
       name: twitter
-
-- name: Alejandro Sandoval
-  title: Head of Product
-  id: asd
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/alex-full.png
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/alex-closeup.png
-  bio: "Closet chef, gadget lover. Alejandro finds himself reading new tech advances posts. He loves to learn random facts about anything and everything and tries to get off his ass as much as he can by doing any sport or activity he encounters."
-  networks:
-    - link: https://twitter.com/lejandro83
-      name: twitter
-    - link: https://github.com/lejandro83
-      name: github
-    - link: https://instagram.com/ricordiepanini/
-      name: instagram
 
 - name: Mayra Cabrera
   title: Software Engineer
@@ -205,34 +163,6 @@
     - link: http://luismanzur.com/
       name: website
 
-- name: Sara De Leon
-  title: Design Intern
-  id: sara
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/sara-full.png
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/sara-closeup.png
-  bio: "Sara is a graphic design student with passion for front-end development. She loves photography and giraffes, you can easily find her in good pizza places or learning something new, always ready for experience new things. In her free time she loves to visit art museums, travel to new places and doing different activities everyday like cooking, painting, crafting, dancing and more. Always filled with great enthusiasm and energy,trying to always smile and be thankful for life."
-  networks:
-    - link: https://www.instagram.com/saradeleons
-      name: instagram
-    - link: https://www.facebook.com/saraleonphotography
-      name: facebook
-    - link: https://www.behance.net/saraleon1017
-      name: behance
-    - link: https://dribbble.com/saraleon
-      name: dribbble
-
-- name: Gala Islas
-  title: Software Engineering Intern
-  id: gala
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/gala-full.png
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/gala-closeup.png
-  bio: "Gala is a software intern, who loves to do both backend and frontend, she is always looking for an opportunity to learn more and improve her coding skills. In her free time, she loves to watch movies and series, dance, drawing with pencil and listening to music."
-  networks:
-    - link: https://github.com/GalaRamos
-      name: github
-    - link: https://twitter.com/GalaIslas
-      name: twitter
-
 - name: Héctor Morales González
   title: Software Engineering Intern
   id: hector
@@ -253,16 +183,6 @@
   bio: "Jorge is an IOS intern focusing in swift programming language. His passion is to make mobile applications and in his free time he likes to play chess or read a good book."
   networks:
     - link: https://github.com/Jelizondo
-      name: github
-
-- name: Oscar Hinojosa
-  title: Software Engineering Intern
-  id: oscar
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/oscar-full.png
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/oscar-closeup.png
-  bio: "Oscar has an emotional attraction to minimalism in code and lifestyle, avid computer builder and aspiring short-story writer. He likes to exercise in the morning and is always looking to improve by helping others."
-  networks:
-    - link: https://github.com/oelizondo
       name: github
 
 - name: Rene Saenz
@@ -302,13 +222,3 @@
       name: github
     - link: https://twitter.com/Tonyyasi
       name: twitter
-
-- name: Pedro Sordo
-  title: Software Engineering Intern
-  id: pedro
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/pedro-full.png
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/pedro-closeup.png
-  bio: "Pedro is a ruby on rails intern. He’s currently learning the dark ways of back-end coding but is also interested in front-end development. Pedro has been involved in organizing events at his university as well as conferences and workshops for his fellow classmates.<br><br> Whenever he’s not in the matrix, Pedro is spending time with friends, playing videogames, practicing guitar or walking his Labrador friend named “Holly”."
-  networks:
-    - link: https://github.com/pedroasgarza
-      name: github

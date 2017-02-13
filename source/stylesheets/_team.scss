@@ -59,7 +59,7 @@
     background: #202020; 
     cursor: pointer;
     height: auto;
-    min-height: 100vh;
+    min-height: 90vh;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -145,7 +145,6 @@
       display: none;
 
       @include phone {
-        //position: fixed;
         width: 100%;
         z-index: 200;
       }
@@ -167,8 +166,8 @@
 
       &--member {
         background: #202020;
-        height: 26vh;
-        background-size: 26vh;
+        height: 30vh;
+        background-size: 30vh;
         background-repeat: no-repeat;
         background-position: center top;
         transition: all 0.2s ease-in-out;
