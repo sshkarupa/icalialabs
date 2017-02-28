@@ -146,7 +146,7 @@ a {
 }
 
 .steps-slider	{
-	background: $primary-color;
+	background: white;
 	height: 100vh;
 	margin-bottom: 4rem;
 }
@@ -160,7 +160,7 @@ a {
 	height: 490px;
 
 	a {
-		color: white;
+		color: $primary-color;
 	}
 }
 
@@ -221,6 +221,7 @@ a {
 
 .mi-slider ul li h4 {
 	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	padding: 20px 10px 0;
 }
@@ -248,7 +249,7 @@ a {
 	letter-spacing: 5px;
 	padding: 40px 30px 30px 34px;
 	position: relative;
-	color: #fff;
+	color: #000;
 	outline: none;
 	-webkit-transition: color 0.2s linear;
 	transition: color 0.2s linear;
@@ -256,7 +257,7 @@ a {
 
 .mi-slider nav a:hover,
 .mi-slider nav a.mi-selected {
-	color: #333;
+	color: $primary-color;
 }
 
 .mi-slider nav a.mi-selected:after,
@@ -273,7 +274,7 @@ a {
 
 .mi-slider nav a.mi-selected:after {
 	border-color: transparent;
-	border-top-color: $primary-color;
+	border-top-color: #333;
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
