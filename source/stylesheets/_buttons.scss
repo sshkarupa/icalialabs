@@ -1,0 +1,114 @@
+.button {
+  @include transition(all 0.5s ease);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  background: #FF3434;
+  padding: 1.2em;
+  color: #FFF;
+  font-weight: 600;
+  display: inline-block;
+
+  &:hover {
+    @include transform(scale(1.2));
+  }
+
+  &:visited {
+    color: #FFF;
+  }
+}
+
+.section-tag + .button {
+  margin-top: 2em;
+}
+
+.action-btn {
+  background: transparent;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  position: relative;
+  @include transition(all 0.3s ease);
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  border-radius: 100px;
+  border: 3px solid #fff;
+  font-weight: 900;
+
+  &:hover {
+    color: $primary-color;
+    background: #fff;
+    @include transform(scale(1.1));
+    cursor: pointer;
+
+    &:visited {
+      color: $primary-color;
+    }
+  }
+
+  &:visited {
+    color: #FFF;
+  }
+
+}
+
+.call-buttons-group {
+  display: block;
+  width: 100%;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px 100px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:after {
+      content:'';
+      height: 2px;
+      width: 20%;
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      transform: translateX(-50%);
+      transition: all 0.3s ease;
+    }
+
+    &:hover:after {
+      transform: translateX(-50%)scaleX(3);
+    }
+  }
+
+  .sep {
+    width: 2px;
+    height: 3em;
+    display: inline-block;
+    transform: skewX(-15deg);
+    vertical-align: middle;
+  }
+
+  &.red {
+    a {color: $primary-color;&:after{background:$primary-color;}}
+    .sep {background: $primary-color;}
+  }
+
+  &.white {
+    a {color: #fff;&:after{background:#fff;}}
+    .sep {background: #fff;}
+  }
+}
+
+.startup-button {
+	@include border-radius(50px);
+	background: #fff;
+	color: #FF3434;
+	padding: .5rem 2rem;
+	position: relative;
+	top: -5rem;
+}

@@ -1,0 +1,11 @@
+input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.input:hover {
+  outline: 0;
+}
+
+.input::-webkit-input-placeholder {
+  color: $primary-color;
+}

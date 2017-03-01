@@ -10,3 +10,24 @@
       margin-bottom: 30px;
     }
   }
+
+  .section-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+
+    &.middle {
+      height: 50vh;
+    }
+
+    a, span {
+      text-decoration: none;
+    }
+
+    h2.light {
+      color: #fff;
+    }
+  }

@@ -6,8 +6,6 @@
 @import 'grid';
 @import 'selectors';
 @import 'furatto-modal';
-@import 'base';
-@import 'header';
 @import 'index';
 @import 'team';
 @import 'projects';
@@ -23,3 +21,14 @@
 @import 'cochi';
 @import 'okudoc';
 @import 'aire';
+
+@import 'base';
+@import 'navigation_bar';
+@import 'buttons';
+@import 'forms';
+@import 'utilities';
+@import 'footer';
+@import 'animations';
+@import 'header';
+@import 'responsiveness';
+@import 'shame';

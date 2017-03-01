@@ -1,0 +1,43 @@
+@include keyframes(bounceInDown) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(-2000px));
+  }
+
+  60% {
+    opacity: 1;
+    @include transform(translateY(30px));
+  }
+
+  80% {
+    @include transform(translateY(-10px));
+  }
+
+  100% {
+    @include transform(translateY(0));
+  }
+}
+
+
+@include keyframes(rotate-right) {
+  0% {
+    @include transform(rotate(0deg));
+    right: 0px;
+    top: 0px;
+  }
+
+  100% {
+    @include transform(rotate(-45deg));
+    right: 0px;
+  }
+
+}
+
+
+@include keyframes(move) {
+
+  50% {
+    bottom: 50%;
+    left: -70%;
+  }
+}

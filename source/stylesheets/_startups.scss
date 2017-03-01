@@ -15,15 +15,6 @@ a {
 	clear: both;
 }
 
-.startup-button {
-	@include border-radius(50px);
-	background: #fff;
-	color: #FF3434;
-	padding: .5rem 2rem;
-	position: relative;
-	top: -5rem;
-}
-
 .section-header {
 	svg {
 		max-width: px-to-rems(300);
@@ -71,7 +62,7 @@ a {
 .startup-work {
 	margin-bottom: 4rem;
 
-	h6, 
+	h6,
 	p {
 		margin-bottom: 2.5rem;
 	}
@@ -96,7 +87,7 @@ a {
 
 	.view-more {
 		display: block;
-		
+
 		img {
 			margin-left: .5rem;
 			position: relative;
@@ -120,7 +111,7 @@ a {
 	}
 
 	.pull-left {
-		h5, 
+		h5,
 		h6 {
 			position: relative;
 		}
@@ -223,7 +214,7 @@ svg {
   transform: translateX(-50%);
   font-size: 0;
   list-style-type: none;
-  
+
   &__elem {
     position: relative;
     display: inline-block;
@@ -234,7 +225,7 @@ svg {
     border-radius: 50%;
     border: 2px solid #fff;
     cursor: pointer;
-    
+
     &:before {
       content: "";
       position: absolute;
@@ -247,7 +238,7 @@ svg {
       transition: transform 0.3s;
       transform: translate(-50%, -50%) scale(0);
     }
-    
+
     &.active:before,
     &:hover:before {
       transform: translate(-50%, -50%) scale(1);
@@ -311,7 +302,7 @@ svg {
     @include mediaMaxWidth(991px) {
       .slide__text {
         background-color: $primary-color;
-      } 
+      }
     }
   }
   &:nth-child(2) {
@@ -329,7 +320,7 @@ svg {
     @include mediaMaxWidth(991px) {
       .slide__text {
         background-color: $primary-color;
-      } 
+      }
     }
   }
   &:nth-child(3) {
@@ -347,7 +338,7 @@ svg {
     @include mediaMaxWidth(991px) {
       .slide__text {
         background-color: $primary-color;
-      } 
+      }
     }
   }
   &:nth-child(4) {
@@ -365,7 +356,7 @@ svg {
     @include mediaMaxWidth(991px) {
       .slide__text {
         background-color: $primary-color;
-      } 
+      }
     }
   }
 
@@ -422,7 +413,7 @@ svg {
 
     &-heading {
       margin-bottom: 2rem;
-      
+
       @include mediaMaxWidth(991px) {
         font-size: 3.5rem;
       }
@@ -446,7 +437,7 @@ svg {
       font-family: $openSans;
       font-size: 2.3rem;
       perspective: 1000px;
-      
+
       @include mediaMaxWidth(991px) {
         display: none;
       }

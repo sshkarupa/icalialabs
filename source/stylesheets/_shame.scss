@@ -1,0 +1,29 @@
+.big-header {
+  display: block;
+  line-height: 1em;
+
+  @include max-screen($small-screen) {
+    margin: 25px;
+  }
+}
+
+.show-menu {
+  display: block !important;
+}
+
+// ######## Load Image ############
+
+.load-mask {
+  background: $primary-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 101;
+  opacity: 1;
+}
+
+.hide-mask {
+  opacity: 0;
+}
