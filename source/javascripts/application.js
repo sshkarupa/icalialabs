@@ -71,3 +71,11 @@ $(window).scroll(function(){
     $('.main-menu').removeClass('is-active');
   }
 });
+
+$("a[data-label]").on("click", function(){
+  ga("send", "event", "clicks", $(this).data('label'))
+})
+
+
+
+
