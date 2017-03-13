@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -9,20 +9,23 @@ a {
 
 html {
   font-size: 16px;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 
   @include phone {
+
     overflow: auto !important;
   }
+
   @include ipad {
+
     overflow: auto !important;
   }
 }
 
 @font-face {
     font-family: Circular;
-    src: url(//s3.amazonaws.com/icalialabs/assets/fonts/CircularStd-Bold.otf);
+    src: url("//s3.amazonaws.com/icalialabs/assets/fonts/CircularStd-Bold.otf");
     font-weight:400;
 }
 
@@ -43,16 +46,31 @@ h1, h2, h3, h4 {
   font-weight: 400;
 }
 
-h1 {font-size: 4rem;}
-h2 {font-size: 3rem;}
-h3 {font-size: 2rem;}
-h4 {font-size: 1.5rem;}
-p {font-weight: normal; font-size: 1.3rem;}
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: normal; font-size: 1.3rem;
+}
+
 a {
   color: $primary-color;
 
   &:visited {
-    color: rgba($primary-color, 0.5)
+    color: rgba($primary-color, .5);
   }
 }
 
