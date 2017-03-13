@@ -1,13 +1,13 @@
 .button {
-  @include transition(all 0.5s ease);
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 0.2em;
-  background: #FF3434;
-  padding: 1.2em;
-  color: #FFF;
-  font-weight: 600;
+  @include transition(all .5s ease);
+  background: #ff3434;
+  color: #fff;
   display: inline-block;
+  font-size: .8em;
+  font-weight: 600;
+  letter-spacing: .2em;
+  padding: 1.2em;
+  text-transform: uppercase;
 
   &:hover {
     @include transform(scale(1.2));
@@ -23,24 +23,24 @@
 }
 
 .action-btn {
+  @include transition(all .3s ease);
   background: transparent;
-  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 100px;
   color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 900;
+  letter-spacing: 3px;
   padding: 15px 40px;
   position: relative;
-  @include transition(all 0.3s ease);
-  font-size: 0.8em;
-  letter-spacing: 3px;
-  border-radius: 100px;
-  border: 3px solid #fff;
-  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
-    color: $primary-color;
-    background: #fff;
     @include transform(scale(1.1));
+    background: #fff;
+    color: $primary-color;
     cursor: pointer;
 
     &:visited {
@@ -49,35 +49,35 @@
   }
 
   &:visited {
-    color: #FFF;
+    color: #fff;
   }
 
 }
 
 .call-buttons-group {
   display: block;
-  width: 100%;
   position: relative;
+  width: 100%;
 
   a {
-    text-decoration: none;
+    cursor: pointer;
     display: inline-block;
-    vertical-align: middle;
     padding: 20px 100px;
     position: relative;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    transition: all .3s ease;
+    text-decoration: none;
+    vertical-align: middle;
 
     &:after {
+      bottom: 0;
       content:'';
-      height: 2px;
-      width: 20%;
       display: block;
-      position: absolute;
+      height: 2px;
       left: 50%;
-      bottom: 0px;
+      position: absolute;
       transform: translateX(-50%);
-      transition: all 0.3s ease;
+      transition: all .3s ease;
+      width: 20%;
     }
 
     &:hover:after {
@@ -86,16 +86,11 @@
   }
 
   .sep {
-    width: 2px;
     height: 3em;
     display: inline-block;
     transform: skewX(-15deg);
     vertical-align: middle;
-  }
-
-  &.red {
-    a {color: $primary-color;&:after{background:$primary-color;}}
-    .sep {background: $primary-color;}
+    width: 2px;
   }
 
   &.white {
@@ -108,10 +103,24 @@
 	}
 }
 
+.call-buttons-group.red {
+  a {
+    color: $primary-color;
+
+    &:after {
+      background:$primary-color;
+    }
+  }
+
+  .sep {
+    background: $primary-color;
+  }
+}
+
 .startup-button {
 	@include border-radius(50px);
 	background: #fff;
-	color: #FF3434;
+	color: #ff3434;
 	padding: .5rem 2rem;
 	position: relative;
 	top: -5rem;
