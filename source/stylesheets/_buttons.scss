@@ -64,13 +64,14 @@
     display: inline-block;
     padding: 20px 100px;
     position: relative;
-    transition: all .3s ease;
     text-decoration: none;
+    transition: all .3s ease;
     vertical-align: middle;
 
-    &:after {
+    &::after {
       bottom: 0;
       content:'';
+
       display: block;
       height: 2px;
       left: 50%;
@@ -80,22 +81,17 @@
       width: 20%;
     }
 
-    &:hover:after {
+    &:hover::after {
       transform: translateX(-50%)scaleX(3);
     }
   }
 
   .sep {
-    height: 3em;
     display: inline-block;
+    height: 3em;
     transform: skewX(-15deg);
     vertical-align: middle;
     width: 2px;
-  }
-
-  &.white {
-    a {color: #fff;&:after{background:#fff;}}
-    .sep {background: #fff;}
   }
 
   h6 {
@@ -103,12 +99,26 @@
 	}
 }
 
+.call-buttons-group.white {
+  a {
+    color: #fff;
+
+    &::after {
+      background: #fff;
+    }
+  }
+
+  .sep {
+    background: #fff;
+  }
+}
+
 .call-buttons-group.red {
   a {
     color: $primary-color;
 
-    &:after {
-      background:$primary-color;
+    &::after {
+      background: $primary-color;
     }
   }
 
@@ -118,9 +128,9 @@
 }
 
 .startup-button {
-	@include border-radius(50px);
-	background: #fff;
-	color: #ff3434;
+  @include border-radius(50px);
+  background: #fff;
+  color: #ff3434;
 	padding: .5rem 2rem;
 	position: relative;
 	top: -5rem;
