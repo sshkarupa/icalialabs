@@ -8,14 +8,14 @@
 $modal-width: 80% !default;
 $modal-margin-left: ((40 * $modal-width) / 80) !default;
 $modal-z-index: 1050 !default;
-$modal-color: #FFF !default;
+$modal-color: #fff !default;
 $modal-top-position: px-to-rems(80) !default;
 $modal-position: absolute !default;
 
 //Modal styles
-$modal-primary-background-color: #3498DB !default;
-$modal-default-background-color: #F0F0F0 !default;
-$modal-danger-background-color: #E74C3C !default;
+$modal-primary-background-color: #3498db !default;
+$modal-default-background-color: #f0f0f0 !default;
+$modal-danger-background-color: #e74c3c !default;
 $modal-funky-background-color: #9b59b6 !default;
 $modal-warning-background-color: #e67e22 !default;
 $modal-success-background-color: #2ecc71 !default;
@@ -31,7 +31,7 @@ $modal-content-list-item-padding: px-to-rems(5) 0 !default;
 //Overlay
 $modal-overlay-z-index: $modal-z-index - 10 !default;
 $modal-overlay-background: #000 !default;
-$modal-overlay-background-opacity: 0.8 !default;
+$modal-overlay-background-opacity: .8 !default;
 $modal-overlay-show-opacity: 1 !default;
 
 //Header
@@ -40,7 +40,7 @@ $modal-header-text-align: center !default;
 $modal-header-font-size: px-to-rems(38) !default;
 $modal-header-font-weight: $modal-content-font-weight !default;
 $modal-header-background-color: #000 !default;
-$modal-header-opacity: 0.8 !default;
+$modal-header-opacity: .8 !default;
 
 //Modal variations
 $modal-radius: px-to-rems(3) !default;
@@ -104,7 +104,7 @@ $include-super-scaled-effect: true !default;
   z-index: $modal-overlay-z-index;
   opacity: 0;
   background: rgba($modal-overlay-background, $modal-overlay-background-opacity);
-  @include transition(all 0.3s);
+  @include transition(all .3s);
 }
 
 //
@@ -119,7 +119,7 @@ $include-super-scaled-effect: true !default;
 
 //
 //@mixin
-// We us this mixin to define the modal header 
+//We us this mixin to define the modal header
 //
 
 @mixin modal-header {
@@ -129,7 +129,7 @@ $include-super-scaled-effect: true !default;
   font-size: $modal-header-font-size;
   font-weight: $modal-header-font-weight;
   opacity: $modal-header-opacity;
-  background: rgba($modal-header-background-color ,0.1);
+  background: rgba($modal-header-background-color, .1);
   color: $modal-color;
 }
 
@@ -144,8 +144,8 @@ $include-super-scaled-effect: true !default;
   font-size: $modal-content-font-size;
 
   & > ul {
-    padding: $modal-content-ul-padding;
     margin: 0;
+    padding: $modal-content-ul-padding;
 
     li {
       padding: $modal-content-list-item-padding;
@@ -173,6 +173,7 @@ $include-super-scaled-effect: true !default;
       @include modal-footer;
     }
   }
+
   &.alpha { @include modal-theme(transparent) }
   &.default { @include modal-theme($modal-default-background-color)}
   &.primary { @include modal-theme($modal-primary-background-color)}
@@ -204,9 +205,9 @@ $include-super-scaled-effect: true !default;
 @if($include-fade-in-scale-up-effect) {
   // Effect 1: Fade in and scale up
   .modal-effect-1 {
-    @include transform(scale(0.7));
+    @include transform(scale(.7));
     @include opacity(0);
-    @include transition(all 0.3s);
+    @include transition(all .3s);
   }
 
   .modal-show.modal-effect-1 {
@@ -217,24 +218,24 @@ $include-super-scaled-effect: true !default;
 
 @if($include-slide-from-right-effect) {
   // Effect 2: Slide from the right
-  .modal-effect-2  {
+  .modal-effect-2 {
     @include transform(translateX(20%));
     @include opacity(0);
-    @include transition(all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9));
+    @include transition(all .3s cubic-bezier(.25, .5, .5, .9));
   }
 
-  .modal-show.modal-effect-2  {
+  .modal-show.modal-effect-2 {
     @include transform(translateX(0));
     @include opacity(1);
   }
 }
 
 @if($include-slide-from-bottom-effect) {
-  /* Effect 3: Slide from the bottom */
+  // Effect 3: Slide from the bottom
   .modal-effect-3 {
     @include transform(translateY(20%));
     @include opacity(0);
-    @include transition(all 0.3s);
+    @include transition(all .3s);
   }
 
   .modal-show.modal-effect-3 {
@@ -244,51 +245,51 @@ $include-super-scaled-effect: true !default;
 }
 
 @if($include-fall-effect) {
-  /* Effect 4: fall */
+  // Effect 4: fall
   .modal-effect-4.modal-modal {
     @include perspective($p: 1300px);
   }
 
-  .modal-effect-4  {
+  .modal-effect-4 {
     @include transform-style(preserve-3d);
     @include transform(translateZ(600px) rotateX(20deg));
     @include opacity(0);
   }
 
-  .modal-show.modal-effect-4  {
-    @include transition(all 0.3s ease-in);
-    @include transform(translateZ(0px) rotatex(0deg));
+  .modal-show.modal-effect-4 {
+    @include transition(all .3s ease-in);
+    @include transform(translateZ(0) rotatex(0deg));
     @include opacity(1);
   }
 }
 
 @if($include-slide-stick-effect) {
-  /* Effect 5:  slide and stick to top */
+  // Effect 5:  slide and stick to top
   .modal-effect-5 {
-    top: 0;
     @include transform(translateX(-50%));
+    top: 0;
   }
 
   .modal-effect-5 {
     @include transform(translateY(-200%));
-    @include transition(all 0.3s);
+    @include transition(all .3s);
     @include opacity(0);
   }
 
   .modal-show.modal-effect-5 {
     @include transform(translateY(0%));
     @include border-radius(0 0 3px 3px);
-    border-radius: 0 0 3px 3px;
     @include opacity(1);
+    border-radius: 0 0 3px 3px;
   }
 }
 
 @if($include-super-scaled-effect) {
-  /* Effect 6: Super scaled */
-  .modal-effect-6  {
+  // Effect 6: Super scaled
+  .modal-effect-6 {
     @include transform(scale(2));
     @include opacity(0);
-    @include transition(all 0.3s);
+    @include transition(all .3s);
   }
 
   .modal-show.modal-effect-6 {
