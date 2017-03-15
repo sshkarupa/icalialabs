@@ -1,26 +1,26 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 $max-width: 1200px;
 
 .container {
-	max-width: $max-width;
-	width: 90%;
-	margin: 0 auto;
   height: 100%;
+  margin: 0 auto;
+  max-width: $max-width;
+  width: 90%;
 }
 
 
-.col-2{
-	display: inline-block;
-	width: 49%;
+.col-2 {
+  display: inline-block;
+  width: 49%;
 }
 
 //Grid by Furatto - @kurenn
 
 // @compass dependencies
-@import "compass/css3";
+@import 'compass/css3';
 
 //
 //@variables
@@ -29,11 +29,11 @@ $max-width: 1200px;
 //Grid settings
 $number-of-columns: 12 !default;
 $offset-columns: $number-of-columns !default;
-$column-separation-factor: 0.1833 !default;
+$column-separation-factor: .1833 !default;
 
 //Row config
 $row-text-rendering: optimizespeed !default;
-$row-next-to-row-separation: 0.14285714rem !default;
+$row-next-to-row-separation: .14285714rem !default;
 
 //Columns settings
 $col-top-padding: 8px !default;
@@ -51,14 +51,14 @@ $stack-column-padding-left: 0 !default;
 $grid-max-width: 768px !default;
 
 //Row variations
-$grid-primary-background-color: rgba(52, 152, 219, 0.8) !default;
-$grid-danger-background-color: rgba(231, 76, 60, 0.8) !default;
-$grid-warning-background-color: rgba(241, 196, 15, 0.8) !default;
-$grid-success-background-color: rgba(46, 204, 113, 0.8) !default;
+$grid-primary-background-color: rgba(52, 152, 219, .8) !default;
+$grid-danger-background-color: rgba(231, 76, 60, .8) !default;
+$grid-warning-background-color: rgba(241, 196, 15, .8) !default;
+$grid-success-background-color: rgba(46, 204, 113, .8) !default;
 
 //columns border
-$col-border-color: #FFF !default;
-$col-border-alpha: 0.5 !default;
+$col-border-color: #fff !default;
+$col-border-alpha: .5 !default;
 
 //
 //@mixin
@@ -88,85 +88,86 @@ $col-border-alpha: 0.5 !default;
 }
 
 .row {
-  /*@extend %clearfix;*/
+	//Columns
+  @include grid-columns;
+  @include grid-columns-offset;
+
+  //@extend %clearfix;//
   display: block;
   text-rendering: $row-text-rendering;
 
   &.primary,
-  [class*="col-"].primary { 
-    background: $grid-primary-background-color; 
+  [class*="col-"].primary {
+    background: $grid-primary-background-color;
   }
 
   &.danger,
-  [class*="col-"].danger { 
-    background: $grid-danger-background-color; 
+  [class*="col-"].danger {
+    background: $grid-danger-background-color;
   }
 
   &.warning,
-  [class*="col-"].warning { 
-    background: $grid-warning-background-color; 
+  [class*="col-"].warning {
+    background: $grid-warning-background-color;
   }
 
   &.success,
-  [class*="col-"].success { 
-    background: $grid-success-background-color; 
+  [class*="col-"].success {
+    background: $grid-success-background-color;
   }
-
-  //Columns
-  @include grid-columns;
-  @include grid-columns-offset;
 }
 
 
 //Borders and paddings are applied inside the div element
 //This prevents the columns to stack by a border or padding
 [class*="col-"] {
-  padding: $col-padding;
   float: left;
+  padding: $col-padding;
 
   &.border {
-    border-width: 1px;
-    border-style: solid;
     border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
 
     &.left {
-     border-left-color: rgba($col-border-color, $col-border-alpha);
+      border-left-color: rgba($col-border-color, $col-border-alpha);
     }
 
     &.right {
-     border-right-color: rgba($col-border-color, $col-border-alpha);
+      border-right-color: rgba($col-border-color, $col-border-alpha);
     }
 
     &.top {
-     border-top-color: rgba($col-border-color, $col-border-alpha);
+      border-top-color: rgba($col-border-color, $col-border-alpha);
     }
 
     &.bottom {
-     border-bottom-color: rgba($col-border-color, $col-border-alpha);
+      border-bottom-color: rgba($col-border-color, $col-border-alpha);
     }
   }
 
   [class*="col-"] {
-    padding-left: 0; 
+    padding-left: 0;
   }
+
   &.nopadding {
-    padding: 0; 
+    padding: 0;
   }
 
   &.nopaddingleft {
-    padding-left: 0; 
+    padding-left: 0;
   }
 
   &.nopaddingtop {
-    padding-top: 0; 
+    padding-top: 0;
   }
 
   &.nopaddingright {
-    padding-right: 0; 
+    padding-right: 0;
   }
 
   &.nopaddingbottom {
-    padding-bottom: 0; 
+    padding-bottom: 0;
   }
 }
 
@@ -175,8 +176,8 @@ $col-border-alpha: 0.5 !default;
     &.border {
 
       &.left {
-        border-top-color: rgba($col-border-color, $col-border-alpha);
         border-left-color: transparent;
+        border-top-color: rgba($col-border-color, $col-border-alpha);
       }
 
       &.right {
@@ -185,15 +186,16 @@ $col-border-alpha: 0.5 !default;
       }
     }
   }
+
   .row > [class*="col-"] {
-    width: 100%;
-    margin-left: 0;
     margin-bottom: $stack-column-separation;
-    padding-right: $stack-column-padding-right;
+    margin-left: 0;
     padding-left: $stack-column-padding-left;
+    padding-right: $stack-column-padding-right;
+    width: 100%;
   }
 
   [class*="offset-"] {
-    margin-left: 0; 
+    margin-left: 0;
   }
 }
