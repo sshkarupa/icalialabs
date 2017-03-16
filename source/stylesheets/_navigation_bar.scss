@@ -23,81 +23,80 @@
     text-transform: uppercase;
     transition: all .5s ease;
   }
+}
 
-  .menu-content-primary-menu {
-    .list-menu {
-      display: inline-block;
-      margin: 3% 0%;
-      opacity: 0;
-      transform: translateY(-100%);
-      transition: all .4s ease;
-      transition-delay: 800ms;
-      vertical-align: top;
-      width: 24%;
+.menu-content-primary-menu {
+  .list-menu {
+    display: inline-block;
+    margin: 3% 0%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .4s ease;
+    transition-delay: 800ms;
+    vertical-align: top;
+    width: 24%;
 
-      &.show-list-menu {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-
-      .label-menu {
-        font-size: .6em;
-      }
-
-      a {
-        display: block;
-        text-decoration: none;
-      }
-
-      a:hover {
-        opacity: .5;
-      }
+    &.show-list-menu {
+      opacity: 1;
+      transform: translateY(0%);
     }
 
-    .big-link {
-      color: $primary-color;
-      display: inline-block;
-      font-size: 3em;
-      font-weight: 700;
-      margin: 10px 0;
-      margin: 3% 0;
-      opacity: 0;
+    .label-menu {
+      font-size: .6em;
+    }
+
+    a {
+      display: block;
       text-decoration: none;
+    }
+
+    a:hover {
+      opacity: .5;
+    }
+  }
+
+  .big-link {
+    color: $primary-color;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 3% 0;
+    opacity: 0;
+    text-decoration: none;
+    transform: translateY(-100%);
+    transition: transform .4s ease, opacity .4s ease;
+    width: 23%;
+
+    @include phone {
+      width: 100%;
+    }
+
+    &.l1 {
+      transition-delay: 100ms;
+    }
+    &.l2 {
+      transition-delay: 200ms;
+    }
+    &.l3 {
+      transition-delay: 300ms;
+    }
+    &.l4 {
+      transition-delay: 400ms;
+    }
+    &.l5 {
+      transition-delay: 500ms;
+    }
+    &.l6 {
+      transition-delay: 600ms;
+    }
+
+    &.show-link {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+
+    &:hover > span {
       transform: translateY(-100%);
-      transition: transform .4s ease, opacity .4s ease;
-      width: 23%;
-
-      &.l1 {
-        transition-delay: 100ms;
-      }
-      &.l2 {
-        transition-delay: 200ms;
-      }
-      &.l3 {
-        transition-delay: 300ms;
-      }
-      &.l4 {
-        transition-delay: 400ms;
-      }
-      &.l5 {
-        transition-delay: 500ms;
-      }
-      &.l6 {
-        transition-delay: 600ms;
-      }
-
-      &.show-link {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-
-      &:hover > span {
-        transform: translateY(-100%);
-      }
-
-      @include phone {
-        width: 100%;
-      }
     }
   }
 }
