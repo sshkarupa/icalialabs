@@ -74,18 +74,23 @@
     &.l1 {
       transition-delay: 100ms;
     }
+
     &.l2 {
       transition-delay: 200ms;
     }
+
     &.l3 {
       transition-delay: 300ms;
     }
+
     &.l4 {
       transition-delay: 400ms;
     }
+
     &.l5 {
       transition-delay: 500ms;
     }
+
     &.l6 {
       transition-delay: 600ms;
     }
@@ -118,6 +123,10 @@
     left: 0;
     position: fixed;
     right: 0;
+
+    .logo-menu a {
+      color: $primary-color;
+    }
   }
 
   .logo {
@@ -126,7 +135,7 @@
     z-index: 100;
 
     svg {
-      fill: #fff;
+      fill: $light-color;
       height: 30px;
       margin-top: 10px;
       width: 30px;
@@ -145,24 +154,25 @@
 
     a {
       animation: bounceInDown 1.5s ease;
-      color: #fff;
+      color: $light-color;
       display: inline-block;
       font-weight: 600;
       margin: 0 20px;
       text-decoration: none;
       transition: all .4s ease;
-
-      &:hover {
-        transform: translateX(10%);
-      }
-
-      &:nth-child(1) {animation-delay: 100ms;}
-      &:nth-child(2) {animation-delay: 200ms;}
     }
-  }
 
-  &.active .logo-menu a {
-    color: $primary-color;
+    a:hover {
+      transform: translateX(10%);
+    }
+
+    a:nth-child(1) {
+      animation-delay: 100ms;
+    }
+
+    a:nth-child(2) {
+      animation-delay: 200ms;
+    }
   }
 
   .burger {
@@ -184,22 +194,10 @@
     .one,
     .two {
       @include transition(all .3s ease-in-out);
-      background: #fff;
+      background: $light-color;
       height: 2px;
       margin: 10px 0;
       position: relative;
-    }
-
-    .burger-label {
-      @include transform(rotate(90deg)translateX(50%));
-      @include transition(all .3s ease-in-out);
-      color: #fff;
-      display: block;
-      font-size: .7em;
-      font-weight: 900;
-      margin: 0 auto;
-      letter-spacing: 2px;
-      text-transform: uppercase;
     }
 
     &:hover > .burger-label {
@@ -215,72 +213,76 @@
     .two.active {
       @include transform(rotate(-45deg)translate(3px, 2px));
       background: $primary-color;
-      transform-origin: 0px 0px;
-    }
-
-    .burger-label.active {
-      @include transform(rotate(0deg)translateX(-15%));
-      color: $primary-color;
-      font-size: 0.7em;
+      transform-origin: 0 0;
     }
   }
 
   &.inverse {
-    .logo {
-      svg {
-        fill: $primary-color;
-      }
+    .logo svg {
+      fill: $primary-color;
     }
-    .logo-menu {
-      &:before,
-      a {
-        color: $primary-color;
-      }
-    }
-    .burger {
-      .one,
-      .two,
-      .three {
-        background: $primary-color;
-      }
 
-      .burger-label {
-        color: $primary-color;
-      }
+    .logo-menu::before,
+    .logo-menu a {
+      color: $primary-color;
+    }
+
+    .burger .burger-label {
+      color: $primary-color;
+    }
+
+    .burger .one,
+    .burger .two,
+    .burger .three {
+      background: $primary-color;
     }
   }
 
   &.is-active {
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.05);
-    position: fixed;
+    background: $light-color;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .05);
     padding: px-to-rems(10) 0;
+    position: fixed;
     top: 0;
 
     .burger-label {
       @include transform(rotate(0deg)translateX(-15%));
       color: $primary-color;
-      font-size: 0.7em;
+      font-size: .7em;
     }
 
-    .logo {
-      svg {
-        fill: $primary-color;
-      }
+    .logo svg {
+      fill: $primary-color;
     }
-    .logo-menu {
-      &:before,
-      a {
-        color: $primary-color;
-      }
+
+    .logo-menu::before,
+    .logo-menu a {
+      color: $primary-color;
     }
-    .burger {
-      .one,
-      .two,
-      .three {
-        background: $primary-color;
-      }
+
+    .burger .one,
+    .burger .two,
+    .burger .three {
+      background: $primary-color;
     }
+  }
+}
+
+.burger-label {
+  @include transform(rotate(90deg)translateX(50%));
+  @include transition(all .3s ease-in-out);
+  color: $light-color;
+  display: block;
+  font-size: .7em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+  &.active {
+    @include transform(rotate(0deg)translateX(-15%));
+    color: $primary-color;
+    font-size: .7em;
   }
 }
 
@@ -289,19 +291,18 @@
     svg {
       fill: $primary-color;
     }
-    .logo-menu {
-      a {
-        color: $primary-color;
-      }
+
+    .logo-menu a {
+      color: $primary-color;
     }
-    .burger {
-      .one,
-      .two {
-        background: $primary-color;
-      }
-      .burger-label {
-        color: $primary-color;
-      }
-    }
+  }
+
+  .burger .one,
+  .burger .two {
+    background: $primary-color;
+  }
+
+  .burger .burger-label {
+    color: $primary-color;
   }
 }
