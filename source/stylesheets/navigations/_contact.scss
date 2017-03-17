@@ -1,15 +1,16 @@
 .contact {
 
   .subtitle {
-    margin: 30px auto;
-    font-weight: 100;
+    color: rgba(0, 0, 0, .7);
     font-size: 1.4em;
+    font-weight: 100;
+    margin: 30px auto;
     width: 70%;
-    color: rgba(0,0,0,0.7);
   }
 
-  .info, .footer {
-    background: #F4F4F4;
+  .info,
+  .footer {
+    background: $light-space-gray;
 
     a {
       cursor: pointer;
@@ -23,56 +24,54 @@
 
     span {
       color: $primary-color;
-      font-weight: 100;
       font-size: 2rem;
+      font-weight: 100;
       letter-spacing: 1px;
     }
 
     .modal-close {
-      right: 0;
       position: absolute;
+      right: 0;
       top: 0;
     }
 
-    .contact-form {
-      .input, select {
+    .contact-form .input,
+    .contact-form select {
         background: transparent;
         border-bottom: 3px dashed #e60038;
-        border-right: 0;
         border-left: 0;
+        border-right: 0;
         border-top: 0;
-        outline: 0;
-        font-size: 2rem;
         color: #e60038;
-        text-align: center;
-        margin: 10px auto 30px auto;
         display: block;
+        font-size: 2rem;
+        margin: 10px auto 30px auto;
+        outline: 0;
+        text-align: center;
         width: 40%;
-      }
+    }
 
-      .secondary-button {
-        background: transparent;
-        border: 3px solid $primary-color;
-        color: $primary-color;
-        display: inline-block;
-        font-size: 1rem;
-        padding: 10px;
-        border-radius: 100px;
-        text-decoration: none;
-        padding: 10px 30px;
-      }
+    .contact-form .secondary-button {
+      background: transparent;
+      border: 3px solid $primary-color;
+      border-radius: 100px;
+      color: $primary-color;
+      display: inline-block;
+      font-size: 1rem;
+      padding: 10px 30px;
+      text-decoration: none;
     }
   }
   
   h4 {
-    color: #fff;
+    color: $light-color;
     margin-bottom: 1em;
   }
 
   .address-section {
-    background: url("//s3.amazonaws.com/icalialabs/assets/img/office.png") no-repeat;
-    background-size: cover;
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/office.png') no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     padding: 5em 0;
 
     h4 {
@@ -103,13 +102,13 @@
   }
 
   .building {
-    width: 40%;
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg') no-repeat center center;
+    background-size: cover; 
     height: 100%;
     position: absolute;
-    top: 0;
     right: 0;
-    background: url(//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg) no-repeat center center;
-    background-size: cover;
+    top: 0;
+    width: 40%;
   }
 
     p {
@@ -117,14 +116,14 @@
     }
 
     a {
-      border: 1px solid $primary-color;
-      text-decoration: none;
-      padding: 20px 50px;
-      display: inline-block;
-      border-radius: 2px;
-      margin: 10px 0px;
-      position: relative;
       @include transition(all 0.5s ease);
+      border: 1px solid $primary-color;
+      border-radius: 2px;
+      display: inline-block;
+      margin: 10px 0px;
+      padding: 20px 50px;
+      position: relative;
+      text-decoration: none;
 
       &:hover {
         background: $primary-color;

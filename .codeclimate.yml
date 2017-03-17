@@ -12,3 +12,7 @@ exclude_paths:
 - "config/"
 - "source/javascripts/"
 - "source/stylesheets/animate.css"
+- "source/stylesheets/_slider.scss"
+- "source/stylesheets/_media_queries.scss"
+- "source/stylesheets/_animations.scss"
+- "source/stylesheets/_mixins.scss"
