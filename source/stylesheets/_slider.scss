@@ -11,15 +11,15 @@
     height: 550px;
 
     &.printoo{
-      background: url(//s3.amazonaws.com/icalialabs/assets/img/printoo-slider.jpg);
+      background: url('//s3.amazonaws.com/icalialabs/assets/img/printoo-slider.jpg');
       @include background-size(cover);
     }
     &.ovatemp{
-      background: url(//s3.amazonaws.com/icalialabs/assets/img/ovatemp.jpg);
+      background: url('//s3.amazonaws.com/icalialabs/assets/img/ovatemp.jpg');
       @include background-size(cover);
     }
     &.repair{
-      background: url(//s3.amazonaws.com/icalialabs/assets/img/repair.jpg);
+      background: url('//s3.amazonaws.com/icalialabs/assets/img/repair.jpg');
       @include background-size(cover);
     }
 
@@ -606,5 +606,52 @@ svg {
       font-size: px-to-rems(16);
       padding: px-to-rems(10) 0;
     }
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 910px){
+  .mi-slider nav {
+    max-width: 90%;
+  }
+  .mi-slider nav a {
+    font-size: 12px;
+    padding: 40px 10px 30px 14px;
+  }
+}
+
+@media screen and (max-width: 740px){
+  .mi-slider {
+    height: 300px;
+  }
+  .mi-slider nav {
+    top: 220px;
+  }
+}
+
+@media screen and (max-width: 490px){
+  .mi-slider {
+    text-align: center;
+    height: auto;
+  }
+
+  .mi-slider ul {
+    position: relative;
+    display: inline;
+    bottom: auto;
+    pointer-events: auto;
+  }
+
+  .mi-slider ul li {
+    -webkit-animation: none !important;
+    animation: none !important;
+    -webkit-transform: translateX(0) !important;
+    transform: translateX(0) !important;
+    padding: 10px 3px;
+    min-width: 140px;
+  }
+
+  .mi-slider nav {
+    display: none;
   }
 }
