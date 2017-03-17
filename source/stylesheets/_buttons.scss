@@ -1,0 +1,137 @@
+.button {
+  @include transition(all .5s ease);
+  background: $light-red;
+  color: $light-color;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 600;
+  letter-spacing: .2em;
+  padding: 1.2em;
+  text-transform: uppercase;
+
+  &:hover {
+    @include transform(scale(1.2));
+  }
+
+  &:visited {
+    color: $light-color;
+  }
+}
+
+.section-tag + .button {
+  margin-top: 2em;
+}
+
+.action-btn {
+  @include transition(all .3s ease);
+  background: transparent;
+  border: 3px solid $light-color;
+  border-radius: 100px;
+  color: $light-color;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  padding: 15px 40px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    @include transform(scale(1.1));
+    background: $light-color;
+    color: $primary-color;
+    cursor: pointer;
+
+    &:visited {
+      color: $primary-color;
+    }
+  }
+
+  &:visited {
+    color: $light-color;
+  }
+
+}
+
+.call-buttons-group {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  a {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px 100px;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+    vertical-align: middle;
+
+    &::after {
+      bottom: 0;
+      content: '';
+
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      transition: all .3s ease;
+      width: 20%;
+    }
+
+    &:hover::after {
+      transform: translateX(-50%)scaleX(3);
+    }
+  }
+
+  .sep {
+    display: inline-block;
+    height: 3em;
+    transform: skewX(-15deg);
+    vertical-align: middle;
+    width: 2px;
+  }
+
+  h6 {
+    margin-bottom: 0;
+	}
+}
+
+.call-buttons-group.white {
+  a {
+    color: $light-color;
+
+    &::after {
+      background: $light-color;
+    }
+  }
+
+  .sep {
+    background: $light-color;
+  }
+}
+
+.call-buttons-group.red {
+  a {
+    color: $primary-color;
+
+    &::after {
+      background: $primary-color;
+    }
+  }
+
+  .sep {
+    background: $primary-color;
+  }
+}
+
+.startup-button {
+  @include border-radius(50px);
+  background: $light-color;
+  color: $light-red;
+  padding: .5rem 2rem;
+  position: relative;
+  top: -5rem;
+}

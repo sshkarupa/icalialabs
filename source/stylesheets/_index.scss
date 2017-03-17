@@ -15,56 +15,6 @@
   }
 }
 
-.call-buttons-group {
-  display: block;
-  width: 100%;
-  position: relative;
-
-  a {
-    text-decoration: none;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 20px 100px;
-    position: relative;
-    transition: all 0.3s ease;
-    cursor: pointer;
-
-    &:after {
-      content:'';
-      height: 2px;
-      width: 20%;
-      display: block;
-      position: absolute;
-      left: 50%;
-      bottom: 0px;
-      transform: translateX(-50%);
-      transition: all 0.3s ease;
-    }
-
-    &:hover:after {
-      transform: translateX(-50%)scaleX(3);
-    }
-  }
-
-  .sep {
-    width: 2px;
-    height: 3em;
-    display: inline-block;
-    transform: skewX(-15deg);
-    vertical-align: middle;
-  }
-
-  &.red {
-    a {color: $primary-color;&:after{background:$primary-color;}}
-    .sep {background: $primary-color;}
-  }
-
-  &.white {
-    a {color: #fff;&:after{background:#fff;}}
-    .sep {background: #fff;}
-  }
-}
-
 .intro {
   text-align: center;
   background: url(//s3.amazonaws.com/icalialabs/assets/img/bg.png) no-repeat center;
@@ -222,7 +172,7 @@
 
   .no-js & b {
     opacity: 0;
-    
+
     &.is-visible {
       opacity: 1;
     }

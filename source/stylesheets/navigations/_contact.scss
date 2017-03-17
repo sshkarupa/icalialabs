@@ -63,14 +63,7 @@
       }
     }
   }
-
-  .input:hover {
-    outline: 0;
-  }
-
-  .input::-webkit-input-placeholder {
-    color: $primary-color;
-  }
+  
   h4 {
     color: #fff;
     margin-bottom: 1em;
@@ -95,7 +88,7 @@
     border-radius: 4px;
     padding: 4em 0;
     position: relative;
-    
+
     .address {
       display: inline-block;
       vertical-align: top;
@@ -189,7 +182,7 @@
         width: 53%;
       }
     }
-    
+
     .dribbble-icon {
       left: 25rem !important;
       top: 5rem !important;
