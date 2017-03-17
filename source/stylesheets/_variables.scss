@@ -1,6 +1,4 @@
 // General variables
-// $primary-color: #e23a2c;
-// $primary-color: #e60038;
 $primary-color: #FF3434;
 $secondary-color: #f9f9f9;
 $menu-bg-color: rgba(255,255,255,0.95);
@@ -8,13 +6,13 @@ $light-gray: rgba(0,0,0,0.05);
 $dark-gray: #1D252E;
 $brand-font: 'Circular' , sans-serif;
 
+$light-color: #fff;
+$light-red: #ff3434;
+$light-space-gray: #f4f4f4;
+
 // Media queries
 $media-display: "only screen" !default;
-@font-face {
-    font-family: Circular;
-    src: url(//s3.amazonaws.com/icalialabs/assets/fonts/CircularStd-Bold.otf);
-    font-weight:400;
-}
+
 //Furatto Overrides
 $modal-default-background-color: transparent !default;
 $modal-overlay-show-opacity: 1 !default;

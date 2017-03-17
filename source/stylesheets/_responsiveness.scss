@@ -1,0 +1,91 @@
+@include max-screen($small-screen) {
+  html {
+    font-size: 11px;
+    border: none;
+  }
+
+  .menu-overlay {
+
+    a {
+      margin: 0 0;
+    }
+
+    .menu-content {
+      padding: px-to-rems(150) 0;
+    }
+
+    .social-info {
+      a {
+        margin: 10px;
+      }
+    }
+
+  }
+
+  .main-menu {
+    .logo {
+      left: 0;
+    }
+
+    .burger {
+      right: 30px;
+      top: 20px;
+    }
+  }
+
+  .intro {
+    .intro-content {
+      padding: 10rem 0;
+    }
+  }
+}
+
+@include max-screen($small-screen-max) {
+  html {
+    font-size: 11px;
+    border: none;
+  }
+
+  .menu-overlay {
+
+    a {
+      margin: 0 0;
+    }
+
+    .menu-content {
+      padding: px-to-rems(150) 0;
+    }
+
+    .social-info {
+      a {
+        margin: 10px;
+      }
+    }
+
+  }
+
+  .main-menu {
+    .logo {
+      left: 0;
+    }
+
+    .burger {
+      right: 30px;
+      top: 20px;
+    }
+  }
+
+  .intro {
+    .intro-content {
+      padding: 10rem 0;
+    }
+  }
+}
+
+@include screen($small-screen, 1280px){
+  .menu-overlay {
+    a {
+      margin: 3px 0;
+    }
+  }
+}

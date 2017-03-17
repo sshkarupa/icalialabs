@@ -1,0 +1,308 @@
+.menu-overlay {
+  background: $menu-bg-color;
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 300;
+
+  .menu-content {
+    color: $secondary-color;
+    display: none;
+    padding: px-to-rems(150) 0;
+  }
+
+  .label-menu {
+    color: $primary-color;
+    display: block;
+    font-size: .2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+  }
+}
+
+.menu-content-primary-menu {
+  .list-menu {
+    display: inline-block;
+    margin: 3% 0%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .4s ease;
+    transition-delay: 800ms;
+    vertical-align: top;
+    width: 24%;
+
+    &.show-list-menu {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+
+    .label-menu {
+      font-size: .6em;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    a:hover {
+      opacity: .5;
+    }
+  }
+
+  .big-link {
+    color: $primary-color;
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 3% 0;
+    opacity: 0;
+    text-decoration: none;
+    transform: translateY(-100%);
+    transition: transform .4s ease, opacity .4s ease;
+    width: 23%;
+
+    @include phone {
+      width: 100%;
+    }
+
+    &.l1 {
+      transition-delay: 100ms;
+    }
+
+    &.l2 {
+      transition-delay: 200ms;
+    }
+
+    &.l3 {
+      transition-delay: 300ms;
+    }
+
+    &.l4 {
+      transition-delay: 400ms;
+    }
+
+    &.l5 {
+      transition-delay: 500ms;
+    }
+
+    &.l6 {
+      transition-delay: 600ms;
+    }
+
+    &.show-link {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+
+    &:hover > span {
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.main-menu {
+  @include transition(all .3s ease-in-out);
+  height: auto;
+  padding: px-to-rems(30) 0;
+  position: absolute;
+  top: px-to-rems(10);
+  width: 100%;
+  z-index: 310;
+
+  .container {
+    max-width: 100%;
+  }
+
+  &.active {
+    left: 0;
+    position: fixed;
+    right: 0;
+
+    .logo-menu a {
+      color: $primary-color;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+
+    svg {
+      fill: $light-color;
+      height: 30px;
+      margin-top: 10px;
+      width: 30px;
+    }
+
+    &.active > svg {
+      fill: $primary-color;
+    }
+  }
+
+  .logo-menu {
+    animation: bounceInDown 1.5s ease;
+    left: 10%;
+    position: absolute;
+    top: 42%;
+
+    a {
+      animation: bounceInDown 1.5s ease;
+      color: $light-color;
+      display: inline-block;
+      font-weight: 600;
+      margin: 0 20px;
+      text-decoration: none;
+      transition: all .4s ease;
+    }
+
+    a:hover {
+      transform: translateX(10%);
+    }
+
+    a:nth-child(1) {
+      animation-delay: 100ms;
+    }
+
+    a:nth-child(2) {
+      animation-delay: 200ms;
+    }
+  }
+
+  .burger {
+    @include transition(all .3s ease-in-out);
+    @include transform-origin(center, 25%);
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    z-index: 300;
+
+    &.active {
+      transform: translateY(-45%);
+    }
+
+    .one,
+    .two {
+      @include transition(all .3s ease-in-out);
+      background: $light-color;
+      height: 2px;
+      margin: 10px 0;
+      position: relative;
+    }
+
+    &:hover > .burger-label {
+      @include transform(rotate(0deg));
+      font-size: .5em;
+    }
+
+    .one.active {
+      @include transform(rotate(45deg));
+      background: $primary-color;
+    }
+
+    .two.active {
+      @include transform(rotate(-45deg)translate(3px, 2px));
+      background: $primary-color;
+      transform-origin: 0 0;
+    }
+  }
+
+  &.inverse {
+    .logo svg {
+      fill: $primary-color;
+    }
+
+    .logo-menu::before,
+    .logo-menu a {
+      color: $primary-color;
+    }
+
+    .burger .burger-label {
+      color: $primary-color;
+    }
+
+    .burger .one,
+    .burger .two,
+    .burger .three {
+      background: $primary-color;
+    }
+  }
+
+  &.is-active {
+    background: $light-color;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .05);
+    padding: px-to-rems(10) 0;
+    position: fixed;
+    top: 0;
+
+    .burger-label {
+      @include transform(rotate(0deg)translateX(-15%));
+      color: $primary-color;
+      font-size: .7em;
+    }
+
+    .logo svg {
+      fill: $primary-color;
+    }
+
+    .logo-menu::before,
+    .logo-menu a {
+      color: $primary-color;
+    }
+
+    .burger .one,
+    .burger .two,
+    .burger .three {
+      background: $primary-color;
+    }
+  }
+}
+
+.burger-label {
+  @include transform(rotate(90deg)translateX(50%));
+  @include transition(all .3s ease-in-out);
+  color: $light-color;
+  display: block;
+  font-size: .7em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+  &.active {
+    @include transform(rotate(0deg)translateX(-15%));
+    color: $primary-color;
+    font-size: .7em;
+  }
+}
+
+.projects {
+  .main-menu {
+    svg {
+      fill: $primary-color;
+    }
+
+    .logo-menu a {
+      color: $primary-color;
+    }
+  }
+
+  .burger .one,
+  .burger .two {
+    background: $primary-color;
+  }
+
+  .burger .burger-label {
+    color: $primary-color;
+  }
+}
