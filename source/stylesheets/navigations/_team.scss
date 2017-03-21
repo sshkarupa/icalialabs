@@ -1,6 +1,11 @@
 @keyframes appear {
-  from {opacity: 0;}
-  to {opacity: 100%;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
 
 .section-description {
@@ -56,238 +61,6 @@
     }
   }
 
-  .team-section {
-    background: #202020;
-    cursor: pointer;
-    height: auto;
-    min-height: 90vh;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-
-    .hide {
-      color: $light-color;
-      position: absolute;
-      right: 2rem;
-      top: 2rem;
-      z-index: 100;
-
-      @include phone {
-        right: 10rem;
-        top: 7rem;
-      }
-
-      h6 {
-        float: right;
-        margin-top: .3rem;
-      }
-
-      img {
-        float: left;
-        width: 10%;
-      }
-    }
-
-    aside {
-      @extend %no-scrollbar;
-      background: $primary-color;
-      color: $light-color;
-      float: left;
-      height: 100%;
-      left: 0;
-      overflow: auto;
-      padding: 2rem;
-      position: absolute;
-      top: 0;
-      width: 20%;
-      z-index: 100;
-
-      @include phone {
-        padding: 1rem;
-        width: 25%;
-      }
-
-      h6 {
-        margin-bottom: 2rem;
-      }
-
-      ul {
-        color: $light-color;
-        list-style: none;
-
-        a {
-          @include transition(all .2s ease-in-out);
-          color: $dark-color;
-          display: block;
-          font-size: .8rem;
-          margin-bottom: 1rem;
-        }
-      }
-    }
-
-    .active {
-      color: $light-color;
-      font-size: 1.5rem;
-    }
-
-    .close-mobile {
-      position: absolute;
-      right: 1rem;
-      top: 6rem;
-      width: 4%;
-      z-index: 200;
-
-      @include phone {
-        width: 10%;
-      }
-    }
-
-    .members-fullpage {
-      display: none;
-
-      @include phone {
-        width: 100%;
-        z-index: 200;
-      }
-    }
-
-    .members-grid {
-      height: auto;
-
-      .col-2 {
-        overflow: hidden;
-        transition: all .5 ease-in-out;
-
-        &:hover {
-          .members-grid--member {
-            transform: scale(1.2);
-          }
-        }
-      }
-
-      &--member {
-        background: #202020;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: 30vh;
-        height: 30vh;
-        transition: all .2s ease-in-out;
-
-        @include phone {
-          background-size: 50vh;
-          height: 50vh;
-        }
-      }
-    }
-
-    .member {
-      @include background-size(cover);
-      @include transition(all 1s ease-in-out);
-
-      animation: appear .8s;
-      background: #202020;
-      background-position: right;
-      background-repeat: no-repeat;
-      color: $light-color;
-      display: none;
-      height: 100vh;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 100%;
-
-      @include phone {
-        background-image: none !important;
-      }
-
-      &.show {
-        display: block;
-      }
-
-      &:first-child {
-        display: block;
-      }
-
-      .member-info {
-        color: $light-color;
-        left: 25%;
-        position: relative;
-        text-align: justify;
-        top: 40%;
-        width: 25%;
-        z-index: 100;
-
-        @include phone {
-          left: 5%;
-          top: 20%;
-          width: 80%;
-        }
-
-        .name,
-        .position {
-          margin-bottom: 1rem;
-        }
-
-        p {
-          font-size: 14px;
-        }
-      }
-    }
-
-    .networks {
-      left: 90%;
-      position: absolute;
-      top: 40%;
-
-      .social {
-        color: $light-color;
-        cursor: pointer;
-        display: block;
-        font-family: FontAwesome;
-        font-size: 1.5rem;
-        height: 1.5rem;
-        margin: 1rem;
-        overflow: hidden;
-        width: 1.3rem;
-
-        &.facebook::before {
-          content: '\f09a';
-          margin-right: 2rem;
-        }
-
-        &.twitter::before {
-          content: '\f099';
-          margin-right: 2rem;
-        }
-
-        &.github::before {
-          content: '\f113';
-          margin-right: 2rem;
-        }
-
-        &.medium::before {
-          content: '\f23a';
-          margin-right: 2rem;
-        }
-
-        &.website::before {
-          content: '\f0c1';
-          margin-right: 2rem;
-        }
-
-        &.dribbble::before {
-          content: '\f17d';
-          margin-right: 2rem;
-        }
-
-        &.instagram::before {
-          content: '\f16d';
-          margin-right: 2rem;
-        }
-      }
-    }
-  }
-
   .join {
     background: $light-color;
     height: 60vh;
@@ -295,6 +68,236 @@
 
     .tag {
       margin: 30px 0;
+    }
+  }
+}
+
+.team-section {
+  background: #202020;
+  cursor: pointer;
+  height: auto;
+  min-height: 90vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .hide {
+    color: $light-color;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 100;
+
+    @include phone {
+      right: 10rem;
+      top: 7rem;
+    }
+
+    h6 {
+      float: right;
+      margin-top: .3rem;
+    }
+
+    img {
+      float: left;
+      width: 10%;
+    }
+  }
+
+  aside {
+    @extend %no-scrollbar;
+    background: $primary-color;
+    color: $light-color;
+    float: left;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    width: 20%;
+    z-index: 100;
+
+    @include phone {
+      padding: 1rem;
+      width: 25%;
+    }
+
+    h6 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .team-sidebar {
+    color: $light-color;
+    list-style: none;
+
+    a {
+      @include transition(all .2s ease-in-out);
+      color: $dark-color;
+      display: block;
+      font-size: .8rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .active {
+    color: $light-color;
+    font-size: 1.5rem;
+  }
+
+  .close-mobile {
+    position: absolute;
+    right: 1rem;
+    top: 6rem;
+    width: 4%;
+    z-index: 200;
+
+    @include phone {
+      width: 10%;
+    }
+  }
+
+  .members-fullpage {
+    display: none;
+
+    @include phone {
+      width: 100%;
+      z-index: 200;
+    }
+  }
+
+  .members-grid {
+    height: auto;
+
+    .col-2 {
+      overflow: hidden;
+      transition: all .5 ease-in-out;
+    }
+
+    .col-2:hover .members-grid--member {
+      transform: scale(1.2);
+    }
+
+    &--member {
+      background: #202020;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 30vh;
+      height: 30vh;
+      transition: all .2s ease-in-out;
+
+      @include phone {
+        background-size: 50vh;
+        height: 50vh;
+      }
+    }
+  }
+
+  .member {
+    @include background-size(cover);
+    @include transition(all 1s ease-in-out);
+
+    animation: appear .8s;
+    background: #202020;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: $light-color;
+    display: none;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+
+    @include phone {
+      background-image: none !important;
+    }
+
+    &.show {
+      display: block;
+    }
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+  .member-info {
+    color: $light-color;
+    left: 25%;
+    position: relative;
+    text-align: justify;
+    top: 40%;
+    width: 25%;
+    z-index: 100;
+
+    @include phone {
+      left: 5%;
+      top: 20%;
+      width: 80%;
+    }
+
+    .name,
+    .position {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.networks {
+  left: 90%;
+  position: absolute;
+  top: 40%;
+
+  .social {
+    color: $light-color;
+    cursor: pointer;
+    display: block;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem;
+    overflow: hidden;
+    width: 1.3rem;
+
+    &.facebook::before {
+      content: '\f09a';
+      margin-right: 2rem;
+    }
+
+    &.twitter::before {
+      content: '\f099';
+      margin-right: 2rem;
+    }
+
+    &.github::before {
+      content: '\f113';
+      margin-right: 2rem;
+    }
+
+    &.medium::before {
+      content: '\f23a';
+      margin-right: 2rem;
+    }
+
+    &.website::before {
+      content: '\f0c1';
+      margin-right: 2rem;
+    }
+
+    &.dribbble::before {
+      content: '\f17d';
+      margin-right: 2rem;
+    }
+
+    &.instagram::before {
+      content: '\f16d';
+      margin-right: 2rem;
     }
   }
 }
