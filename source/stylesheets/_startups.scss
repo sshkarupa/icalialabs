@@ -49,7 +49,7 @@ a {
 
 .text-header {
   margin: 0 auto;
-  height: 60vh;
+  min-height: 70vh;
   width: 80%;
 
   @include phone {
@@ -65,8 +65,7 @@ a {
   }
 
   .section-description {
-    height: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: px-to-rems(50);
     width: 100%;
 
     .medium {

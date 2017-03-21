@@ -287,22 +287,50 @@
 }
 
 .projects {
-  .main-menu {
-    svg {
+  .main-menu.is-active,
+  .main-menu.active {
+    z-index: 2000;
+
+    .logo svg {
       fill: $primary-color;
     }
 
     .logo-menu a {
       color: $primary-color;
     }
+
+    .burger .one,
+    .burger .two,
+    .burger .three {
+      background: $primary-color;
+    }
+
+    .burger .burger-label {
+      color: $primary-color;
+    }
   }
 
-  .burger .one,
-  .burger .two {
-    background: $primary-color;
-  }
+  .main-menu {
+    .menu-overlay {
+      z-index: 2000;
+    }
 
-  .burger .burger-label {
-    color: $primary-color;
+    .logo svg {
+      fill: $light-color;
+    }
+
+    .logo-menu a {
+      color: $light-color;
+    }
+
+    .burger .one,
+    .burger .two,
+    .burger .three {
+      background: $light-color;
+    }
+
+    .burger .burger-label {
+      color: $light-color;
+    }
   }
 }
