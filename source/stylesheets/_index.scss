@@ -534,7 +534,7 @@
         color: $light-color;
       }
 
-      &:after {
+      &::after {
         background: $light-color;
         bottom: 0;
         content: '';
@@ -547,7 +547,7 @@
         width: 20%;
       }
 
-      &:hover:after {
+      &:hover::after {
         transform: translateX(-50%)scaleX(6);
       }
     }
