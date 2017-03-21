@@ -1,34 +1,36 @@
-body.process {
-  transition: all 0.3s ease;
+body {
+  &.process {
+    transition: all .3s ease;
+  }
 }
 
 .process-scroller {
 
   nav {
-    position: fixed;
-    z-index: 9999;
-    left: 5%;
-    top: 50%;
     @include transform(translateY(-50%));
+    left: 5%;
+    position: fixed;
+    top: 50%;
+    z-index: 9999;
 
     a {
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, .6);
       display: block;
-      position: relative;
       height: 4px;
-      width: 30px;
-      margin: 10px 0px;
+      margin: 10px 0;
+      position: relative;
+      transition-duration: .4s;
       transition-property: all;
-      transition-duration: 0.4s;
-      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-      &:hover {
-        background: rgba(255,255,255,1);
-      }
+      transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55);
+      width: 30px;
 
       &.scroller-current {
-        background: rgba(255,255,255,1);
+        background: rgba(255, 255, 255, 1);
         width: 60px;
+      }
+
+      a:hover {
+        background: rgba(255, 255, 255, 1);
       }
     }
   }
@@ -47,17 +49,17 @@ body.process {
   }
 
   &-info {
-    width: 45%;
     height: 40vh;
-    transition: all 0.3s ease;
-    position: absolute;
     left: 50%;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    transition: all .3s ease;
+    width: 45%;
 
     @include phone {
-      width: 90%;
       top: 20%;
+      width: 90%;
     }
 
     @include ipad {
@@ -66,92 +68,93 @@ body.process {
   }
 
   .step-number {
-    color: #fff;
-    font-weight: 900;
-    font-size: 1rem;
-    padding: 0.6rem 1rem;
     border: 3px solid;
+    color: $light-color;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: .6rem 1rem;
   }
 
   .step-title {
-    color: #fff;
-    letter-spacing: 1px;
+    color: $light-color;
     font-size: 2rem;
+    letter-spacing: 1px;
+    margin: 20px 0;
     transform: translateX(-10%);
-    margin: 20px 0px;
 
-    &:after {
+    &::after {
+      background: $light-color;
       content: '';
-      height: 3px;
-      width: 10%;
-      background: #fff;
       display: inline-block;
-      vertical-align: middle;
+      height: 3px;
       margin-left: 1rem;
+      vertical-align: middle;
+      width: 10%;
     }
   }
+
   .step-description {
+    color: $light-color;
     font-size: 1em;
     font-weight: 400;
-    color: #fff;
     line-height: 1.6em;
   }
 }
 
-#understanding {
-  background-image: url(//s3.amazonaws.com/icalialabs/assets/img/process/understanding.png), url(//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png);
-  background-position: 15% 50%;
-  background-repeat: no-repeat;
+.understanding {
   background-attachment: fixed;
   background-color: $primary-color;
+  background-image: url('//s3.amazonaws.com/icalialabs/assets/img/process/understanding.png'), url('//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png');
+  background-position: 15% 50%;
+  background-repeat: no-repeat;
 
   @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
 
-#definition {
-  background-image: url(//s3.amazonaws.com/icalialabs/assets/img/process/definition.png), url(//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png);
-  background-position: 15% 50%;
-  background-repeat: no-repeat;
+.definition {
   background-attachment: fixed;
   background-color: $primary-color;
+  background-image: url('//s3.amazonaws.com/icalialabs/assets/img/process/definition.png'), url('//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png');
+  background-position: 15% 50%;
+  background-repeat: no-repeat;
 
   @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
 
-#design {
-  background-image: url(//s3.amazonaws.com/icalialabs/assets/img/process/design.png) , url(//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png); 
-  background-position: 15% 50%;
-  background-repeat: no-repeat;
+.design {
   background-attachment: fixed;
   background-color: $primary-color;
+  background-image: url('//s3.amazonaws.com/icalialabs/assets/img/process/design.png') , url('//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png');
+  background-position: 15% 50%;
+  background-repeat: no-repeat;
 
   @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
 
-#build {
-  background-image: url(//s3.amazonaws.com/icalialabs/assets/img/process/build.png) , url(//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png);
-  background-position: 15% 50%;
-  background-repeat: no-repeat;
+.build {
   background-attachment: fixed;
   background-color: $primary-color;
+  background-image: url('//s3.amazonaws.com/icalialabs/assets/img/process/build.png') , url('//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png');
+  background-position: 15% 50%;
+  background-repeat: no-repeat;
 
   @include max-screen($medium-screen-max) {
     background-image: none;
   }
 }
 
-#measure {
-  background-image: url(//s3.amazonaws.com/icalialabs/assets/img/process/measure.png) , url(//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png);
-  background-position: 15% 50%;
-  background-repeat: no-repeat;
+.measure {
   background-attachment: fixed;
   background-color: $primary-color;
+  background-image: url('//s3.amazonaws.com/icalialabs/assets/img/process/measure.png') , url('//s3.amazonaws.com/icalialabs/assets/img/process/process-bg.png');
+  background-position: 15% 50%;
+  background-repeat: no-repeat;
 
   @include max-screen($medium-screen-max) {
     background-image: none;
