@@ -34,35 +34,8 @@
       right: 0;
       top: 0;
     }
-
-    .contact-form .input,
-    .contact-form select {
-        background: transparent;
-        border-bottom: 3px dashed #e60038;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        color: #e60038;
-        display: block;
-        font-size: 2rem;
-        margin: 10px auto 30px auto;
-        outline: 0;
-        text-align: center;
-        width: 40%;
-    }
-
-    .contact-form .secondary-button {
-      background: transparent;
-      border: 3px solid $primary-color;
-      border-radius: 100px;
-      color: $primary-color;
-      display: inline-block;
-      font-size: 1rem;
-      padding: 10px 30px;
-      text-decoration: none;
-    }
   }
-  
+
   h4 {
     color: $light-color;
     margin-bottom: 1em;
@@ -82,52 +55,52 @@
       margin: 0 auto;
     }
 
-  .address-container {
-    background: #2D1A1A;
-    border-radius: 4px;
-    padding: 4em 0;
-    position: relative;
+    .address-container {
+      background: #2d1a1a;
+      border-radius: 4px;
+      padding: 4em 0;
+      position: relative;
 
-    .address {
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 2em;
+      .address {
+        display: inline-block;
+        padding-left: 2em;
+        vertical-align: top;
+      }
+
+      h4 {
+        color: $primary-color;
+        margin-bottom: 2rem;
+        padding: 0;
+      }
     }
 
-    h4 {
-      color: $primary-color;
-      margin-bottom: 2rem;
-      padding: 0;
+    .building {
+      background: url('//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
     }
-  }
-
-  .building {
-    background: url('//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg') no-repeat center center;
-    background-size: cover; 
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40%;
-  }
 
     p {
       font-weight: 100;
     }
 
     a {
-      @include transition(all 0.5s ease);
+      @include transition(all .5s ease);
       border: 1px solid $primary-color;
       border-radius: 2px;
       display: inline-block;
-      margin: 10px 0px;
+      margin: 10px 0;
       padding: 20px 50px;
       position: relative;
       text-decoration: none;
 
       &:hover {
         background: $primary-color;
-        color: #fff;
+        color: $light-color;
       }
     }
   }
@@ -152,7 +125,7 @@
     .icon {
 
       img {
-        @include transition(all 0.2s ease-in-out);
+        @include transition(all .2s ease-in-out);
       }
     }
 
@@ -224,6 +197,7 @@
       }
 
     }
+
     .twitter-icon {
       left: 55rem !important;
       top: 6rem !important;
@@ -240,18 +214,18 @@
     }
 
     a {
-      &:hover img{
+      &:hover img {
         @include transform(scale(1.5));
       }
     }
   }
 }
 
-@include max-screen($small-screen){
-  .contact{
-    .info{
-    padding-top: 180px;
-    padding-bottom: 60px;
+@include max-screen($small-screen) {
+  .contact {
+    .info {
+      padding-top: 180px;
+      padding-bottom: 60px;
     }
   }
 
@@ -264,7 +238,8 @@
   .contact {
     .form-modal {
       .contact-form {
-        .input, select {
+        .input,
+        select {
           width: 100%;
         }
       }
