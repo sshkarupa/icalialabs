@@ -28,7 +28,7 @@ type: team
     </div>
     <aside class="members-nav hidden-on-small hidden-on-xsmall">
       <h6 class="letter-spacing">Our team members</h6>
-      <ul>
+      <ul class="team-sidebar">
         <% data.members.each do |member| %>
         <li><a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a></li>
         <% end %>
