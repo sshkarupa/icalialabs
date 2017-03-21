@@ -40,183 +40,183 @@
     color: $light-color;
     margin-bottom: 1em;
   }
+}
 
-  .address-section {
-    background: url('//s3.amazonaws.com/icalialabs/assets/img/office.png') no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 5em 0;
+.address-section {
+  background: url('//s3.amazonaws.com/icalialabs/assets/img/office.png') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5em 0;
+
+  h4 {
+    padding: 1rem 0;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .address-container {
+    background: #2d1a1a;
+    border-radius: 4px;
+    padding: 4em 0;
+    position: relative;
+
+    .address {
+      display: inline-block;
+      padding-left: 2em;
+      vertical-align: top;
+    }
 
     h4 {
-      padding: 1rem 0;
-    }
-
-    .container {
-      margin: 0 auto;
-    }
-
-    .address-container {
-      background: #2d1a1a;
-      border-radius: 4px;
-      padding: 4em 0;
-      position: relative;
-
-      .address {
-        display: inline-block;
-        padding-left: 2em;
-        vertical-align: top;
-      }
-
-      h4 {
-        color: $primary-color;
-        margin-bottom: 2rem;
-        padding: 0;
-      }
-    }
-
-    .building {
-      background: url('//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg') no-repeat center center;
-      background-size: cover;
-      height: 100%;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 40%;
-    }
-
-    p {
-      font-weight: 100;
-    }
-
-    a {
-      @include transition(all .5s ease);
-      border: 1px solid $primary-color;
-      border-radius: 2px;
-      display: inline-block;
-      margin: 10px 0;
-      padding: 20px 50px;
-      position: relative;
-      text-decoration: none;
-
-      &:hover {
-        background: $primary-color;
-        color: $light-color;
-      }
+      color: $primary-color;
+      margin-bottom: 2rem;
+      padding: 0;
     }
   }
 
-  .social-networks {
-    height: 90vh;
-    padding: 5rem;
+  .building {
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+  }
 
-    ul li {
-      display: inline-block;
+  p {
+    font-weight: 100;
+  }
+
+  a {
+    @include transition(all .5s ease);
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 20px 50px;
+    position: relative;
+    text-decoration: none;
+
+    &:hover {
+      background: $primary-color;
+      color: $light-color;
+    }
+  }
+}
+
+.social-networks {
+  height: 90vh;
+  padding: 5rem;
+
+  ul li {
+    display: inline-block;
+  }
+
+  p {
+    font-weight: 200;
+    margin: 40px;
+  }
+
+  .icons-container {
+    padding-top: 3rem;
+  }
+
+  .icon {
+
+    img {
+      @include transition(all .2s ease-in-out);
+    }
+  }
+
+  .fb-icon {
+    left: -23rem !important;
+
+    @include phone {
+      left: -9rem !important;
     }
 
-    p {
-      font-weight: 200;
-      margin: 40px;
+    img {
+      width: 10%;
+    }
+  }
+
+  .medium-icon {
+    left: 15rem !important;
+    top: 15rem !important;
+
+    @include phone {
+      left: 0 !important;
+      top: 20rem !important;
     }
 
-    .icons-container {
-      padding-top: 3rem;
+    img {
+      width: 53%;
+    }
+  }
+
+  .dribbble-icon {
+    left: 25rem !important;
+    top: 5rem !important;
+
+    @include phone {
+      left: 10rem !important;
+      top: 0 !important;
     }
 
-    .icon {
+    img {
+      width: 50%;
+    }
+  }
 
-      img {
-        @include transition(all .2s ease-in-out);
-      }
+  .instagram-icon {
+    left: 35rem !important;
+    top: 3rem !important;
+
+    @include phone {
+      left: 13rem !important;
+      top: 11rem !important;
     }
 
-    .fb-icon {
-      left: -23rem !important;
+    img {
+      width: 50%;
+    }
+  }
 
-      @include phone {
-        left: -9rem !important;
-      }
+  .github-icon {
+    left: 40rem !important;
+    top: 13rem !important;
 
-      img {
-        width: 10%;
-      }
+    @include phone {
+      left: 14rem !important;
+      top: 25rem !important;
     }
 
-    .medium-icon {
-      left: 15rem !important;
-      top: 15rem !important;
-
-      @include phone {
-        left: 0 !important;
-        top: 20rem !important;
-      }
-
-      img {
-        width: 53%;
-      }
+    img {
+      width: 70%;
     }
 
-    .dribbble-icon {
-      left: 25rem !important;
-      top: 5rem !important;
+  }
 
-      @include phone {
-        left: 10rem !important;
-        top: 0 !important;
-      }
+  .twitter-icon {
+    left: 55rem !important;
+    top: 6rem !important;
 
-      img {
-        width: 50%;
-      }
+    @include phone {
+      left: 17rem !important;
+      top: 17rem !important;
     }
 
-    .instagram-icon {
-      left: 35rem !important;
-      top: 3rem !important;
-
-      @include phone {
-        left: 13rem !important;
-        top: 11rem !important;
-      }
-
-      img {
-        width: 50%;
-      }
+    img {
+      width: 60%;
     }
 
-    .github-icon {
-      left: 40rem !important;
-      top: 13rem !important;
+  }
 
-      @include phone {
-        left: 14rem !important;
-        top: 25rem !important;
-      }
-
-      img {
-        width: 70%;
-      }
-
-    }
-
-    .twitter-icon {
-      left: 55rem !important;
-      top: 6rem !important;
-
-      @include phone {
-        left: 17rem !important;
-        top: 17rem !important;
-      }
-
-      img {
-        width: 60%;
-      }
-
-    }
-
-    a {
-      &:hover img {
-        @include transform(scale(1.5));
-      }
+  a {
+    &:hover img {
+      @include transform(scale(1.5));
     }
   }
 }
@@ -237,11 +237,9 @@
 @media only screen and (max-width: 768px) {
   .contact {
     .form-modal {
-      .contact-form {
-        .input,
-        select {
-          width: 100%;
-        }
+      .contact-form .input,
+      .contact-form select {
+        width: 100%;
       }
     }
   }
