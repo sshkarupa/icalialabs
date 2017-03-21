@@ -4,9 +4,9 @@
 }
 
 .section-description {
-  color: rgba(#000, 0.7);
-  font-weight: 100;
+  color: rgba(#000, .7);
   font-size: 1.4em;
+  font-weight: 100;
   margin: px-to-rems(30) auto;
   width: 70%;
 }
@@ -17,22 +17,23 @@
     position: relative;
 
     .gradient {
-      @include background-image(linear-gradient(to right,rgba(0,0,0,0), rgba(0,0,0,0.75)));
-      width: 100px;
+      @include background-image(linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75)));
       height: 100%;
       position: absolute;
-      top: 0px;
-      right: 0px;
+      right: 0;
+      top: 0;
+      width: 100px;
       z-index: 1;
     }
   }
 
   .section-header {
-    background: url(//s3.amazonaws.com/icalialabs/assets/img/team.jpg);
-    background-position: center center;
-    color: white;
-    text-align: left;
     @include background-size(cover);
+
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/team.jpg');
+    background-position: center center;
+    color: $light-color;
+    text-align: left;
 
     .curtain {
       background: $primary-color;
@@ -56,7 +57,7 @@
   }
 
   .team-section {
-    background: #202020; 
+    background: #202020;
     cursor: pointer;
     height: auto;
     min-height: 90vh;
@@ -65,34 +66,34 @@
     width: 100%;
 
     .hide {
-      color: white;
+      color: $light-color;
       position: absolute;
-      top: 2rem;
       right: 2rem;
+      top: 2rem;
       z-index: 100;
-
-      h6 {
-        margin-top: 0.3rem;
-        float: right;
-      }
-
-      img {
-        width: 10%;
-        float: left;
-      }
 
       @include phone {
         right: 10rem;
         top: 7rem;
+      }
+
+      h6 {
+        float: right;
+        margin-top: .3rem;
+      }
+
+      img {
+        float: left;
+        width: 10%;
       }
     }
 
     aside {
       @extend %no-scrollbar;
       background: $primary-color;
-      color: white;
-      height: 100%;
+      color: $light-color;
       float: left;
+      height: 100%;
       left: 0;
       overflow: auto;
       padding: 2rem;
@@ -103,29 +104,29 @@
 
       @include phone {
         padding: 1rem;
-        width: 25%
+        width: 25%;
       }
 
       h6 {
         margin-bottom: 2rem;
       }
-      
+
       ul {
-        color: white;
+        color: $light-color;
         list-style: none;
 
         a {
-          @include transition(all 0.2s ease-in-out);
-          color: black;
+          @include transition(all .2s ease-in-out);
+          color: $dark-color;
           display: block;
-          font-size: 0.8rem;
+          font-size: .8rem;
           margin-bottom: 1rem;
         }
       }
     }
 
     .active {
-      color: white;
+      color: $light-color;
       font-size: 1.5rem;
     }
 
@@ -155,7 +156,7 @@
 
       .col-2 {
         overflow: hidden;
-        transition: all 0.5 ease-in-out;
+        transition: all .5 ease-in-out;
 
         &:hover {
           .members-grid--member {
@@ -166,48 +167,49 @@
 
       &--member {
         background: #202020;
-        height: 30vh;
-        background-size: 30vh;
-        background-repeat: no-repeat;
         background-position: center top;
-        transition: all 0.2s ease-in-out;
+        background-repeat: no-repeat;
+        background-size: 30vh;
+        height: 30vh;
+        transition: all .2s ease-in-out;
 
         @include phone {
-          height: 50vh;
           background-size: 50vh;
+          height: 50vh;
         }
       }
     }
 
     .member {
-      animation: appear 0.8s;
-      background: #202020;
-      background-repeat: no-repeat;
-      background-position: right;
-      color: white;
-      height: 100vh;
-      display: none;
-      padding: 0;
-      position: absolute;
-      overflow: hidden;
-      width: 100%;
       @include background-size(cover);
       @include transition(all 1s ease-in-out);
 
+      animation: appear .8s;
+      background: #202020;
+      background-position: right;
+      background-repeat: no-repeat;
+      color: $light-color;
+      display: none;
+      height: 100vh;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+
       @include phone {
-         background-image: none !important;
+        background-image: none !important;
       }
 
       &.show {
         display: block;
       }
 
-      &:first-child{
+      &:first-child {
         display: block;
       }
 
       .member-info {
-        color: white;
+        color: $light-color;
         left: 25%;
         position: relative;
         text-align: justify;
@@ -215,14 +217,15 @@
         width: 25%;
         z-index: 100;
 
-        .name, .position {
-          margin-bottom: 1rem;
-        }
-
         @include phone {
           left: 5%;
           top: 20%;
           width: 80%;
+        }
+
+        .name,
+        .position {
+          margin-bottom: 1rem;
         }
 
         p {
@@ -233,60 +236,60 @@
 
     .networks {
       left: 90%;
-      top: 40%;
       position: absolute;
+      top: 40%;
 
       .social {
-        color: white;
+        color: $light-color;
         cursor: pointer;
         display: block;
-        height: 1.5rem;
         font-family: FontAwesome;
         font-size: 1.5rem;
+        height: 1.5rem;
         margin: 1rem;
         overflow: hidden;
         width: 1.3rem;
 
-        &.facebook:before {
-          content: "\f09a";
+        &.facebook::before {
+          content: '\f09a';
           margin-right: 2rem;
         }
 
-        &.twitter:before {
-          content: "\f099";
+        &.twitter::before {
+          content: '\f099';
           margin-right: 2rem;
         }
 
-        &.github:before {
-          content: "\f113";
+        &.github::before {
+          content: '\f113';
           margin-right: 2rem;
         }
 
-        &.medium:before {
-          content: "\f23a";
+        &.medium::before {
+          content: '\f23a';
           margin-right: 2rem;
         }
 
-        &.website:before {
-          content: "\f0c1";
+        &.website::before {
+          content: '\f0c1';
           margin-right: 2rem;
         }
 
-        &.dribbble:before {
-          content: "\f17d";
+        &.dribbble::before {
+          content: '\f17d';
           margin-right: 2rem;
         }
 
-        &.instagram:before {
-          content: "\f16d";
+        &.instagram::before {
+          content: '\f16d';
           margin-right: 2rem;
         }
-    }
+      }
     }
   }
 
   .join {
-    background: #FFF;
+    background: $light-color;
     height: 60vh;
     text-align: center;
 
