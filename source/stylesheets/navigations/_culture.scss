@@ -1,37 +1,28 @@
-.no-hover .culture{
-  .perks {
-    .perk {
-      &.col-6:hover {
-        .perk-icon {
-          margin-top: 0%;
-        }
-      }
-      &:hover {
-        figure {
-          @include transition(all 0.4s ease-in-out);
+.perk:hover .perk-icon {
+  margin-top: 0%;
+}
 
-          .perk-icon {
-            margin-top: 0%;
-            opacity: 1;
-          }
+.perk:hover figure {
+  @include transition(all .4s ease-in-out);
 
-          figcaption {
-            .perk-description {
-              opacity: 1;
-            }
-          }
-        }
-      }
-    }
+  .perk-icon {
+    margin-top: 0%;
+    opacity: 1;
+  }
+
+  .perk-description {
+    opacity: 1;
   }
 }
 
 .culture {
   .section-header {
-    background: #000;
+    background: $dark-color;
     overflow: hidden;
 
-    video, .plyr, .plyr__video-wrapper {
+    video,
+    .plyr,
+    .plyr__video-wrapper {
       height: 100%;
 
       @include phone {
@@ -40,36 +31,28 @@
     }
 
     video {
-      opacity: 0.8;
+      opacity: .8;
     }
   }
-  
+
   .values-section {
-    text-align: center;
     padding: px-to-rems(100) 0;
+    text-align: center;
 
-    .suraido-container {
-      overflow: hidden;
-    }
-
-    .suraido-container.suraido-container ul {
-      height: 20vh;
-    }
-
-    .big-header { 
+    .big-header {
       font-size: 4rem;
     }
 
     a {
+      border: 2px solid rgba($primary-color, .3);
+      border-radius: 100px;
+      font-size: .8em;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      position: relative;
       text-decoration: none;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 600;
-      font-size: 0.8em;
-      padding: 10px 20px;
-      border: 2px solid rgba($primary-color,0.3);
-      border-radius: 100px;
-      position: relative;
       top: 95px;
 
       @include phone {
@@ -78,12 +61,12 @@
     }
   }
 
- 
+
   .career {
     background: $primary-color;
-    color: rgba(255, 255, 255, 0.9);
-    padding: px-to-rems(150) 0;
+    color: rgba(255, 255, 255, .9);
     margin: px-to-rems(30) auto;
+    padding: px-to-rems(150) 0;
 
     .career-icon {
       width: px-to-rems(300);
@@ -103,137 +86,136 @@
   }
 
   .perks {
-    padding: 100px 0px;
+    padding: 100px 0;
 
     .section-description {
-      margin: 20px auto 100px auto;
+      margin: 20px auto 100px;
+
       @include max-screen($small-screen) {
         margin-bottom: 45px;
       }
     }
 
-    .perk {
-      position: relative;
-      padding-top: 33.33%;
-      @include transition(all 0.4s ease-in-out);
-      overflow: hidden;
-
-      @include max-screen($small-screen) {
-        padding-top: 100%;
-      }
-
-      @include min-screen(1000px) {
-        &.col-6:hover {
-          .perk-icon {
-            margin-top: -30%;
-          }
-        }
-        &:hover {
-          figure {
-            @include transform(translateY(-100%));
-            .perk-icon {
-              margin-top: -80%;
-              opacity: 0;
-            }
-
-            figcaption {
-
-              .perk-description {
-                opacity: 1;
-              }
-
-            }
-          }
-        }
-      }
-
-      figure {
-        padding: 20px;
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        @include transition(all 0.4s ease-in-out);
-        @include transform(translateY(-50%));
-      }
-    }
-
     .perk-icon {
+      @include transition(all .5s ease-in);
       margin: 20px auto;
       max-height: 100px;
-      @include transition(all 0.5s ease-in);
     }
 
     .perk-title {
       color: $primary-color;
       font-size: 1.1em;
-      margin: 10px 0px;
+      margin: 10px 0;
     }
 
     .perk-description {
-      color: rgba(#000, 0.5);
-      margin: px-to-rems(14) auto;
-      max-height: 0;
+      @include transition(all .5s ease-in);
+      color: rgba($dark-color, .5);
       font-size: px-to-rems(12);
       font-weight: 400;
-      @include transition(all 0.5s ease-in);
+      margin: px-to-rems(14) auto;
+      max-height: 0;
+
       @include max-screen($small-screen) {
         opacity: 1;
       }
     }
   }
 
-
   .positions {
-    padding: 0 0 px-to-rems(100) 0;
+    padding: 0 0 px-to-rems(100);
 
     p {
-      width: 60%;
-      margin: 30px auto;
-      color: rgba(0, 0, 0, 0.7);
-      line-height: 1.4em;
+      color: rgba(0, 0, 0, .7);
       font-size: 1.3em;
       font-weight: 200;
+      line-height: 1.4em;
+      margin: 30px auto;
+      width: 60%;
     }
 
     .position {
-      background: rgba(#000,0.05);
+      background: rgba($dark-color, .05);
       color: $primary-color;
       display: inline-block;
       font-size: 1.25rem;
       padding: 1rem;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: all .3s ease;
+    }
 
-      img {
-        display: block;
-        width: px-to-rems(200);
-      }
+    .position:hover {
+      background: rgba($dark-color, .1);
+      cursor: pointer;
+      transform: translateY(-10%);
+    }
 
-      &:hover {
-        cursor: pointer;
-        background: rgba(#000,0.1);
-        transform: translateY(-10%);
-      }
+    .position img {
+      display: block;
+      width: px-to-rems(200);
     }
   }
 }
 
+.perk {
+  @include transition(all .4s ease-in-out);
+  overflow: hidden;
+  padding-top: 33.33%;
+  position: relative;
+
+  @include max-screen($small-screen) {
+    padding-top: 100%;
+  }
+
+  @include min-screen(1000px) {
+    &:hover .perk-icon {
+      margin-top: -30%;
+    }
+
+    &:hover figure {
+      @include transform(translateY(-100%));
+    }
+
+    &:hover figure .perk-icon {
+      margin-top: -80%;
+      opacity: 0;
+    }
+
+    &:hover figure .perk-description {
+      opacity: 1;
+    }
+
+  }
+
+  figure {
+    @include transition(all .4s ease-in-out);
+    @include transform(translateY(-50%));
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+}
+
 .square-bg-1 {
-  background: rgba(#000,0.01);
+  background: rgba($dark-color, .01);
+
   @include max-screen($small-screen) {
     background: inherit;
   }
 }
 
 .square-bg-2 {
-  background: rgba(#000,0.03);
+  background: rgba($dark-color, .03);
+
   @include max-screen($small-screen) {
     background: inherit;
   }
 }
 
 .square-bg-3 {
-  background: rgba(#000,0.05);
+  background: rgba($dark-color, .05);
+
   @include max-screen($small-screen) {
     background: inherit;
   }
@@ -243,7 +225,7 @@
   padding: px-to-rems(100);
 
   ul li {
-      margin: px-to-rems(10) 0;
+    margin: px-to-rems(10) 0;
   }
 
   strong {
