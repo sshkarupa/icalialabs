@@ -316,6 +316,32 @@
     }
 
     .logo svg {
+      fill: $primary-color;
+    }
+
+    .logo-menu a {
+      color: $primary-color;
+    }
+
+    .burger .one,
+    .burger .two,
+    .burger .three {
+      background: $primary-color;
+    }
+
+    .burger .burger-label {
+      color: $primary-color;
+    }
+  }
+}
+
+.project-container {
+  .main-menu {
+    .menu-overlay {
+      z-index: 2000;
+    }
+
+    .logo svg {
       fill: $light-color;
     }
 
@@ -334,3 +360,4 @@
     }
   }
 }
+
