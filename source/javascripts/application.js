@@ -59,8 +59,8 @@ $('.burger').on('click', function(e) {
 });
 
 $(document).keyup(function(e) {
-  if (e.keyCode == 27) {  
-    closeMenu();   
+  if (e.keyCode == 27) {
+    closeMenu();
   }   // esc
 });
 
@@ -75,7 +75,3 @@ $(window).scroll(function(){
 $("a[data-label]").on("click", function(){
   ga("send", "event", "clicks", $(this).data('label'))
 })
-
-
-
-
