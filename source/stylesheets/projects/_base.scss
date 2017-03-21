@@ -1,6 +1,11 @@
 @include keyframes(bg-size) {
-    from {background-size: 100%;}
-    to {background-size: 105%}
+  from {
+    background-size: 100%;
+  }
+
+  to {
+    background-size: 105%;
+  }
 }
 
 .projects-container {
@@ -8,18 +13,18 @@
 }
 
 .projects-container-item {
-  background-repeat: no-repeat;
+  @include background-size(cover);
+  @include transition(all .3s ease-in-out);
   background-position: right center;
+  background-repeat: no-repeat;
   border-radius: 10px;
   height: 85vh;
   margin: 20vh auto;
   position: relative;
   width: 85vw;
-  @include transition(all 0.3s ease-in-out);
-  @include background-size(cover);
 
   @include phone {
-    opacity: 1 !important;
+    opacity: 1;
   }
 
   &:hover {
@@ -30,47 +35,47 @@
   .project-listing {
 
     &-number {
-      color: #fff;
+      color: $light-color;
       font-weight: 900;
     }
 
     &-name {
-      color: #fff;
-      font-weight: 900;
+      color: $light-color;
       font-size: 3.5em;
+      font-weight: 900;
     }
 
     &-link {
-      color: #fff;
+      color: $light-color;
       cursor: pointer;
       display: inline-block;
-      vertical-align: middle;
-      padding: 20px 0px;
+      padding: 20px 0;
       position: relative;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: all .3s ease;
+      vertical-align: middle;
+    }
 
-      &:after {
-        background: #fff;
-        bottom: 0px;
-        content:'';
-        display: block;
-        height: 2px;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-        transition: all 0.3s ease;
-        width: 20%;
-      }
+    &-link::after {
+      background: $light-color;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      transition: all .3s ease;
+      width: 20%;
+    }
 
-      &:hover:after {
-        transform: translateX(-50%)scaleX(6);
-      }
+    &-link:hover::after {
+      transform: translateX(-50%)scaleX(6);
     }
   }
 
   .project-info {
-    color: #fff;
+    color: $light-color;
     font-size: 1em;
     margin-top: 2em;
   }
@@ -89,60 +94,13 @@
   }
 
   body {
-    background: #ffffff;
-  }
-  .main-menu.is-active, .main-menu.active {
-      z-index: 2000;
-      .logo {
-        svg {
-          fill: $primary-color;
-        }
-      }
-      .logo-menu {
-        &:before, a {
-          color: $primary-color;
-        }
-      }
-      .burger {
-        .one, .two, .three {
-          background: $primary-color;
-        }
-
-        .burger-label {
-          color: $primary-color;
-        }
-      }
-  }
-
-  .main-menu {
-    .menu-overlay {
-      z-index: 2000;
-    }
-    .logo {
-      svg {
-        fill: white;
-      }
-    }
-    .logo-menu {
-      &:before, a {
-        color: white;
-      }
-    }
-    .burger {
-      .one, .two, .three {
-        background: white;
-      }
-
-      .burger-label {
-        color: white;
-      }
-    }
+    background: $light-color;
   }
 }
 
 .header {
   @include background-size(cover);
-  background-attachment:fixed;
+  background-attachment: fixed;
   height: 100vh;
   overflow: hidden;
 
@@ -150,10 +108,10 @@
     background-attachment: initial;
   }
 
-  &:after {
-    background-image: linear-gradient(-180deg, rgba(0,170,255,0.00) 0%, rgba(0,0,0,0.45) 100%);
+  &::after {
+    background-image: linear-gradient(-180deg, rgba(0, 170, 255, .00) 0%, rgba(0, 0, 0, .45) 100%);
     bottom: 0;
-    content: "";
+    content: '';
     height: 50%;
     position: absolute;
     width: 100%;
@@ -174,21 +132,21 @@
   }
 
   h3 {
-    color: white;
+    color: $light-color;
     font-size: 1.5em;
   }
 
   .project-name {
+    @include transition(color .5s);
     font-weight: 800;
     line-height: 1;
     margin: 0 auto;
-    padding: 0 0 0 0.2em;
-    @include transition(color 0.5s);
+    padding: 0 0 0 .2em;
 
     .project-title {
+      color: $light-color;
       font-size: 4em;
       font-weight: 800;
-      color: #fff;
     }
   }
 }
@@ -199,8 +157,8 @@
 
   p {
     font-size: 1.1em;
-    margin: 0 auto;
     line-height: 2em;
+    margin: 0 auto;
   }
 
   .case-study-title {
@@ -217,6 +175,10 @@
 
 .small-block {
   width: 20%;
+
+  p {
+    width: 70%;
+  }
 }
 
 .big-block {
@@ -227,12 +189,6 @@
   }
 }
 
-.small-block {
-  p {
-    width: 70%;
-  }
-}
-
 .img-block {
   @include background-size(cover);
   background-position: center;
@@ -240,9 +196,7 @@
   height: 80vh;
   margin-bottom: 2%;
   overflow: hidden;
-}
 
-.img-block {
   &.half-full {
     background-size: 50%;
 
