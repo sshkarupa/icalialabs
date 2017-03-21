@@ -1,5 +1,5 @@
 // General variables
-$primary-color: #FF3434;
+$primary-color: #ff3434;
 $secondary-color: #f9f9f9;
 $menu-bg-color: rgba(255,255,255,0.95);
 $light-gray: rgba(0,0,0,0.05);
@@ -14,11 +14,13 @@ $light-white-red: rgba(255, 0, 0, 0.1);
 $gray: rgba(0, 0, 0, 0.3);
 $dark-gray2: rgba(0, 0, 0, 0.6);
 
+$dark-color: #000;
+
 // Media queries
 $media-display: "only screen" !default;
 
 //Furatto Overrides
 $modal-default-background-color: transparent !default;
 $modal-overlay-show-opacity: 1 !default;
-$modal-overlay-background: #FFF !default;
-$modal-header-background-color: #FFF !default;
+$modal-overlay-background: $light-color !default;
+$modal-header-background-color: $light-color !default;

@@ -81,8 +81,7 @@
 .mi-slider ul li {
   display: inline-block;
   padding: 20px;
-  width: 20%;
-  max-width: 300px;
+  max-width: 315px;
   -webkit-transform: translateX(600%);
   transform: translateX(600%);
   -webkit-transition: opacity 0.2s linear;
@@ -138,7 +137,7 @@
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 5px;
-  padding: 40px 30px 30px 34px;
+  padding: 40px 30px 30px 10px;
   position: relative;
   color: #000;
   outline: none;

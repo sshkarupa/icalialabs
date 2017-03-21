@@ -16,7 +16,7 @@
 }
 
 .intro {
-  background: url(//s3.amazonaws.com/icalialabs/assets/img/bg.png) no-repeat center;
+  background: url('//s3.amazonaws.com/icalialabs/assets/img/bg.png') no-repeat center;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -109,33 +109,48 @@
         display: inline-block;
       }
 
-      &:nth-child(1) {animation-delay: 300ms;}
-      &:nth-child(2) {animation-delay: 500ms;}
+      &:nth-child(1) {
+        animation-delay: 300ms;
+      }
+
+      &:nth-child(2) {
+        animation-delay: 500ms;
+      }
+
       &:nth-child(3) {
         animation-delay: 700ms;
         width: 15%;
       }
+
       &:nth-child(4) {
         animation-delay: 900ms;
         width: 11%;
       }
+
       &:nth-child(5) {
         animation-delay: 1100ms;
         width: 15%;
       }
+
       &:nth-child(6) {
         animation-delay: 1300ms;
         width: 11%;
       }
+
       &:nth-child(7) {
         animation-delay: 1500ms;
         width: 6%;
       }
-      &:nth-child(8) {animation-delay: 1700ms;}
+
+      &:nth-child(8) {
+        animation-delay: 1700ms;
+      }
+
       &:nth-child(9) {
         animation-delay: 1900ms;
         width: 17%;
       }
+
       &:nth-child(10) {
         animation-delay: 2000ms;
         width: 15%;
@@ -265,7 +280,6 @@
 .areas-section {
   background: $primary-color;
   border-bottom: 1px solid $light-white-red;
-  height: 700px;
   height: 100vh;
   position: relative;
 }
@@ -308,7 +322,7 @@
   }
 
   &#ar-1 {
-    background: url(//s3.amazonaws.com/icalialabs/assets/img/area-design.png) no-repeat center center $primary-color;
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/area-design.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
     height: 334px;
     left: 26%;
@@ -316,7 +330,7 @@
   }
 
   &#ar-2 {
-    background: url(//s3.amazonaws.com/icalialabs/assets/img/area-biz.png) no-repeat center center $primary-color;
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/area-biz.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
     height: 334px;
     left: 42%;
@@ -325,7 +339,7 @@
   }
 
   &#ar-3 {
-    background: url(//s3.amazonaws.com/icalialabs/assets/img/area-int.png) no-repeat center center $primary-color;
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/area-int.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
     height: 188px;
     left: 48%;
@@ -334,7 +348,7 @@
   }
 
   &#ar-4 {
-    background: url(//s3.amazonaws.com/icalialabs/assets/img/area-development.png) no-repeat center center $primary-color;
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/area-development.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
     height: 188px;
     left: 64%;
@@ -343,7 +357,7 @@
   }
 
   &#ar-5 {
-    background: url(//s3.amazonaws.com/icalialabs/assets/img/area-labs.png) no-repeat center center $primary-color;
+    background: url('//s3.amazonaws.com/icalialabs/assets/img/area-labs.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
     height: 188px;
     left: 75%;
@@ -434,6 +448,7 @@
     vertical-align: middle;
     width: 21%;
   }
+
   p {
     font-size: 1em;
   }
