@@ -13,7 +13,7 @@ a {
 }
 
 html {
-  font-size: 16px;
+  font-size: px-to-rems(16);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
@@ -34,7 +34,7 @@ html {
 
 body {
   background: $light-space-gray;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $regular-font;
 
   &.index {
     .index-background {
@@ -53,27 +53,27 @@ h4 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: px-to-rems(64);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: px-to-rems(48);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: px-to-rems(32);
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: px-to-rems(24);
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: px-to-rems(20);
   font-weight: normal;
 }
 
 .work-together {
-  margin: 8rem auto 4rem;
+  margin: px-to-rems(128) auto px-to-rems(64);
   width: 85%;
 }

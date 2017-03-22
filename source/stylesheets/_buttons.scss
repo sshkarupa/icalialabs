@@ -3,10 +3,10 @@
   background: $light-red;
   color: $light-color;
   display: inline-block;
-  font-size: .8em;
+  font-size: px-to-rems(13);
   font-weight: 600;
-  letter-spacing: .2em;
-  padding: 1.2em;
+  letter-spacing: px-to-rems(3);
+  padding: px-to-rems(20);
   text-transform: uppercase;
 
   &:hover {
@@ -19,20 +19,20 @@
 }
 
 .section-tag + .button {
-  margin-top: 2em;
+  margin-top: px-to-rems(2);
 }
 
 .action-btn {
   @include transition(all .3s ease);
   background: transparent;
-  border: 3px solid $light-color;
-  border-radius: 100px;
+  border: px-to-rems(3) solid $light-color;
+  border-radius: px-to-rems(100);
   color: $light-color;
   display: inline-block;
-  font-size: .8em;
+  font-size: px-to-rems(13);
   font-weight: 900;
-  letter-spacing: 3px;
-  padding: 15px 40px;
+  letter-spacing: px-to-rems(3);
+  padding: px-to-rems(15) px-to-rems(40);
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -62,7 +62,7 @@
   a {
     cursor: pointer;
     display: inline-block;
-    padding: 20px 100px;
+    padding: px-to-rems(20) px-to-rems(100);
     position: relative;
     text-decoration: none;
     transition: all .3s ease;
@@ -73,7 +73,7 @@
       content: '';
 
       display: block;
-      height: 2px;
+      height: px-to-rems(2);
       left: 50%;
       position: absolute;
       transform: translateX(-50%);
@@ -88,10 +88,10 @@
 
   .sep {
     display: inline-block;
-    height: 3em;
+    height: px-to-rems(48);
     transform: skewX(-15deg);
     vertical-align: middle;
-    width: 2px;
+    width: px-to-rems(2);
   }
 
   h6 {
@@ -131,7 +131,7 @@
   @include border-radius(50px);
   background: $light-color;
   color: $light-red;
-  padding: .5rem 2rem;
+  padding: px-to-rems(8) px-to-rems(32);
   position: relative;
-  top: -5rem;
+  top: px-to-rems(-80);
 }

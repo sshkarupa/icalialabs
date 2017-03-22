@@ -6,8 +6,8 @@
 
 .section-title {
   color: $red;
-  font-size: .7em;
-  letter-spacing: .3em;
+  font-size: px-to-rems(12);
+  letter-spacing: px-to-rems(4);
   text-transform: uppercase;
 
   &.white {
@@ -67,22 +67,22 @@
 
     &_subtitle {
       color: $light-color;
-      font-size: .8em;
-      letter-spacing: .5em;
+      font-size: px-to-rems(13);
+      letter-spacing: px-to-rems(5);
       text-transform: uppercase;
     }
 
     &_title {
       color: $light-color;
-      font-size: 2em;
-      margin-bottom: 2em;
+      font-size: px-to-rems(32);
+      margin-bottom: px-to-rems(32);
     }
   }
 }
 
 .light-text {
   font-family: 'Open Sans';
-  font-size: .6em;
+  font-size: px-to-rems(9.5);
   font-weight: 100 !important;
 
   &.red {
@@ -92,15 +92,15 @@
 
 .clients-section {
   background: $light-color;
-  padding: 100px 0;
+  padding: px-to-rems(100) 0;
   text-align: center;
 
   .clients-logos {
-    margin: 20px 0;
+    margin: px-to-rems(20) 0;
 
     &_item {
       display: none;
-      margin: 20px;
+      margin: px-to-rems(20);
       opacity: .8;
       vertical-align: middle;
       width: 13%;
@@ -164,7 +164,7 @@
 @include max-screen($small-screen) {
   .testimonials {
     .quote-container {
-      height: 400px;
+      height: px-to-rems(400);
     }
   }
 }
@@ -211,7 +211,7 @@
       background: $primary-color;
       bottom: 0;
       content: '';
-      height: 3px;
+      height: px-to-rems(3);
       left: 0;
       position: absolute;
       width: 0;
@@ -240,32 +240,32 @@
 .stats-section {
   background: $light-color;
   border-bottom: 1px solid $light-white-red;
-  padding: 50px 0;
+  padding: px-to-rems(50) 0;
 
   .stats-container {
-    height: 135px;
+    height: px-to-rems(135);
     overflow-x: scroll;
     overflow-y: hidden;
-    padding-top: 50px;
+    padding-top: px-to-rems(50);
   }
 
   .stat-item {
     float: left;
-    margin: 0 20px;
+    margin: 0 px-to-rems(20);
     position: relative;
     transform: scale(.8);
     transition: all .3s ease;
 
     &-number {
       color: $primary-color;
-      font-size: 2.2em;
+      font-size: px-to-rems(35);
       font-weight: 900;
     }
 
     &-label {
-      border-left: 2px solid $primary-color;
+      border-left: px-to-rems(2) solid $primary-color;
       color: $primary-color;
-      font-size: 1em;
+      font-size: px-to-rems(16);
       font-weight: 300;
       padding-left: 10px;
     }
@@ -279,7 +279,7 @@
 
 .areas-section {
   background: $primary-color;
-  border-bottom: 1px solid $light-white-red;
+  border-bottom: px-to-rems(1) solid $light-white-red;
   height: 100vh;
   position: relative;
 }
@@ -307,7 +307,7 @@
 }
 
 .area-element {
-  box-shadow: 0 20px 30px $gray;
+  box-shadow: 0 px-to-rems(20) px-to-rems(30) $gray;
   display: inline-block;
   position: absolute;
   text-align: center;
@@ -316,7 +316,7 @@
 
   h2 {
     color: $light-color;
-    font-size: 1em;
+    font-size: px-to-rems(16);
     position: relative;
     top: 50%;
   }
@@ -324,45 +324,45 @@
   &#ar-1 {
     background: url('//s3.amazonaws.com/icalialabs/assets/img/area-design.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
-    height: 334px;
+    height: px-to-rems(334);
     left: 26%;
-    width: 188px;
+    width: px-to-rems(188);
   }
 
   &#ar-2 {
     background: url('//s3.amazonaws.com/icalialabs/assets/img/area-biz.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
-    height: 334px;
+    height: px-to-rems(334);
     left: 42%;
     top: 35%;
-    width: 188px;
+    width: px-to-rems(188);
   }
 
   &#ar-3 {
     background: url('//s3.amazonaws.com/icalialabs/assets/img/area-int.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
-    height: 188px;
+    height: px-to-rems(188);
     left: 48%;
     top: 78%;
-    width: 334px;
+    width: px-to-rems(334);
   }
 
   &#ar-4 {
     background: url('//s3.amazonaws.com/icalialabs/assets/img/area-development.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
-    height: 188px;
+    height: px-to-rems(188);
     left: 64%;
     top: 38%;
-    width: 334px;
+    width: px-to-rems(334);
   }
 
   &#ar-5 {
     background: url('//s3.amazonaws.com/icalialabs/assets/img/area-labs.png') no-repeat center center $primary-color;
     background-blend-mode: multiply;
-    height: 188px;
+    height: px-to-rems(188);
     left: 75%;
     top: 67%;
-    width: 334px;
+    width: px-to-rems(334);
   }
 
   &:hover {
@@ -373,41 +373,41 @@
 .quotes {
   background: $light-color;
   border-bottom: 1px solid $light-white-red;
-  padding: 50px 0;
+  padding: px-to-rems(50) 0;
   text-align: center;
 
   .quote-item {
-    margin: 20px 0;
+    margin: px-to-rems(20) 0;
 
     &-text {
       color: $primary-color;
-      font-size: 3em;
-      margin: 20px 0;
+      font-size: px-to-rems(48);
+      margin: px-to-rems(20) 0;
     }
 
     &-avatar {
       border-radius: 50%;
       display: block;
       margin: 0 auto;
-      width: 80px;
+      width: px-to-rems(80);
     }
 
     &-name {
       color: $dark-gray2;
       display: inline-block;
-      font-size: .77em;
+      font-size: px-to-rems(12);
       font-weight: 600;
-      margin: 10px auto;
+      margin: px-to-rems(10) auto;
     }
   }
 }
 
 .startup-enterprise {
   background: $light-color;
-  border-bottom: 1px solid $light-white-red;
+  border-bottom: px-to-rems(1) solid $light-white-red;
   height: auto;
   min-height: 50vh;
-  padding: 2.8em;
+  padding: px-to-rems(45);
 
   @include phone {
     min-height: 65vh;
@@ -415,7 +415,7 @@
   }
 
   .section-title {
-    margin-bottom: 3em;
+    margin-bottom: px-to-rems(48);
   }
 
   .startup {
@@ -432,7 +432,7 @@
       width: 70%;
 
       .clients-logos_item {
-        margin: 0 2em 0 1rem;
+        margin: 0 px-to-rems(32) 0 px-to-rems(16);
         width: 33%;
 
         &:nth-child(2) {
@@ -444,13 +444,13 @@
 
   .clients-logos_item {
     display: inline-block;
-    margin: 2em;
+    margin: px-to-rems(32);
     vertical-align: middle;
     width: 21%;
   }
 
   p {
-    font-size: 1em;
+    font-size: px-to-rems(16);
   }
 }
 
@@ -461,9 +461,9 @@
   .next-arrow,
   .prev-arrow {
     color: $light-color;
-    font-size: 1em;
+    font-size: px-to-rems(16);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: px-to-rems(2);
     position: absolute;
     text-transform: uppercase;
     top: 50%;
@@ -480,15 +480,15 @@
 
 .selected-works-slider {
   background: $primary-color;
-  padding: 100px 0;
+  padding: px-to-rems(100) 0;
 
   &-item {
     outline: 0;
-    padding: 0 100px;
+    padding: 0 px-to-rems(100);
 
     &-title {
       color: $light-color;
-      font-family: 'Open Sans', sans-serif;
+      font-family: $regular-font;
       font-weight: 100;
 
       @include phone {
@@ -499,9 +499,9 @@
 
     &-client {
       color: $light-color;
-      font-size: 1rem;
+      font-size: px-to-rems(16);
       letter-spacing: 4px;
-      margin: 30px 0;
+      margin: px-to-rems(30) 0;
       text-transform: uppercase;
 
       @include phone {
@@ -519,7 +519,7 @@
       color: $light-color;
       cursor: pointer;
       display: inline-block;
-      padding: 20px 0;
+      padding: px-to-rems(20) 0;
       position: relative;
       text-decoration: none;
       transition: all .3s ease;
@@ -539,7 +539,7 @@
         bottom: 0;
         content: '';
         display: block;
-        height: 2px;
+        height: px-to-rems(2);
         left: 50%;
         position: absolute;
         transform: translateX(-50%);
@@ -563,7 +563,7 @@
 
   &-title {
     color: $primary-color;
-    font-size: 2em;
+    font-size: px-to-rems(32);
     margin: px-to-rems(20) auto;
   }
 }

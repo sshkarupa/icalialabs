@@ -1,24 +1,24 @@
 .enterprise {
   .section-header {
     .section-tag {
-      margin: 4rem 0;
+      margin: px-to-rems(64) 0;
     }
   }
 }
 
 .text-header {
   h1 {
-    margin: 1rem 0;
+    margin: px-to-rems(16) 0;
   }
 
   h6 {
-    margin-bottom: 2.5rem;
+    margin-bottom: px-to-rems(40);
   }
 
   .section-description {
 
     p {
-      margin-bottom: 2rem;
+      margin-bottom: px-to-rems(32);
     }
 
     .medium {
@@ -33,7 +33,7 @@
 
 .partners {
   img {
-    margin-right: 2rem;
+    margin-right: px-to-rems(32);
     vertical-align: middle;
     width: 15%;
   }
