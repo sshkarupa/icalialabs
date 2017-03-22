@@ -17,9 +17,9 @@
   .label-menu {
     color: $primary-color;
     display: block;
-    font-size: .2em;
+    font-size: px-to-rems(3);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: px-to-rems(2);
     text-transform: uppercase;
     transition: all .5s ease;
   }
@@ -42,7 +42,7 @@
     }
 
     .label-menu {
-      font-size: .6em;
+      font-size: px-to-rems(9);
     }
 
     a {
@@ -58,7 +58,7 @@
   .big-link {
     color: $primary-color;
     display: inline-block;
-    font-size: 3em;
+    font-size: px-to-rems(48);
     font-weight: 700;
     margin: 3% 0;
     opacity: 0;
@@ -136,9 +136,9 @@
 
     svg {
       fill: $light-color;
-      height: 30px;
-      margin-top: 10px;
-      width: 30px;
+      height: px-to-rems(30);
+      margin-top: px-to-rems(10);
+      width: px-to-rems(30);
     }
 
     &.active > svg {
@@ -157,7 +157,7 @@
       color: $light-color;
       display: inline-block;
       font-weight: 600;
-      margin: 0 20px;
+      margin: 0 px-to-rems(20);
       text-decoration: none;
       transition: all .4s ease;
     }
@@ -181,10 +181,10 @@
     cursor: pointer;
     display: inline-block;
     position: absolute;
-    right: 40px;
+    right: px-to-rems(40);
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
+    width: px-to-rems(30);
     z-index: 300;
 
     &.active {
@@ -195,14 +195,14 @@
     .two {
       @include transition(all .3s ease-in-out);
       background: $light-color;
-      height: 2px;
-      margin: 10px 0;
+      height: px-to-rems(2);
+      margin: px-to-rems(10) 0;
       position: relative;
     }
 
     &:hover > .burger-label {
       @include transform(rotate(0deg));
-      font-size: .5em;
+      font-size: px-to-rems(8);
     }
 
     .one.active {
@@ -211,7 +211,7 @@
     }
 
     .two.active {
-      @include transform(rotate(-45deg)translate(3px, 2px));
+      @include transform(rotate(-45deg)translate(px-to-rems(3), px-to-rems(2)));
       background: $primary-color;
       transform-origin: 0 0;
     }
@@ -240,7 +240,7 @@
 
   &.is-active {
     background: $light-color;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, .05);
+    box-shadow: 0 px-to-rems(1) px-to-rems(10) $dark-gray2;
     padding: px-to-rems(10) 0;
     position: fixed;
     top: 0;
@@ -248,7 +248,7 @@
     .burger-label {
       @include transform(rotate(0deg)translateX(-15%));
       color: $primary-color;
-      font-size: .7em;
+      font-size: px-to-rems(11);
     }
 
     .logo svg {
@@ -273,16 +273,16 @@
   @include transition(all .3s ease-in-out);
   color: $light-color;
   display: block;
-  font-size: .7em;
+  font-size: px-to-rems(11);
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: px-to-rems(2);
   margin: 0 auto;
   text-transform: uppercase;
 
   &.active {
     @include transform(rotate(0deg)translateX(-15%));
     color: $primary-color;
-    font-size: .7em;
+    font-size: px-to-rems(11);
   }
 }
 
