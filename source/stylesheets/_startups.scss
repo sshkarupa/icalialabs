@@ -7,7 +7,7 @@ a {
 }
 
 .letter-spacing {
-  letter-spacing: 4px;
+  letter-spacing: px-to-rems(4);
   text-transform: uppercase;
 }
 
@@ -57,11 +57,11 @@ a {
   }
 
   h1 {
-    margin: 2rem 0;
+    margin: px-to-rems(32) 0;
   }
 
   h6 {
-    margin-bottom: 2.5rem;
+    margin-bottom: px-to-rems(40);
   }
 
   .section-description {
@@ -78,27 +78,27 @@ a {
 }
 
 .startup-work {
-  margin-bottom: 4rem;
+  margin-bottom: px-to-rems(64);
 
   h6,
   p {
-    margin-bottom: 2.5rem;
+    margin-bottom: px-to-rems(40);
   }
 
   .startup-work-container {
     background: $primary-color;
     color: white;
-    margin: 0 auto 3rem auto;
-    padding: 9rem 4rem 5rem 4rem;
+    margin: 0 auto px-to-rems(48) auto;
+    padding: px-to-rems(144) px-to-rems(64) px-to-rems(80) px-to-rems(64);
     width: 85%;
 
     .project-description {
       font-weight: 400;
-      margin-bottom: 3rem;
+      margin-bottom: px-to-rems(48);
     }
 
     img {
-      margin-bottom: .5rem;
+      margin-bottom: px-to-rems(8);
       width: 3%;
     }
   }
@@ -107,43 +107,10 @@ a {
     display: block;
 
     img {
-      margin-left: .5rem;
+      margin-left: px-to-rems(8);
       position: relative;
-      top: 8px;
-      width: 30px;
-    }
-  }
-}
-
-.case-study {
-  margin: 0 auto 4rem auto;
-  width: 85%;
-
-  h6 {
-    margin-bottom: 2rem;
-  }
-
-  h1 {
-    margin: 0 auto 2rem auto;
-    width: 60%;
-  }
-
-  .pull-left {
-    h5,
-    h6 {
-      position: relative;
-    }
-
-    h5 {
-      border-bottom: 1px solid $primary-color;
-      padding-bottom: .5rem;
-      top: 8rem;
-      width: 1rem;
-    }
-
-    .vertical-text {
-      left: -1.5rem;
-      top: 8rem;
+      top: px-to-rems(2);
+      width: px-to-rems(30);
     }
   }
 }
@@ -153,7 +120,7 @@ a {
   .steps-slider {
     background: white;
     height: 100vh;
-    margin-bottom: 4rem;
+    margin-bottom: px-to-rems(64);
 
     @include phone {
       display: none;
@@ -167,5 +134,4 @@ a {
       display: block;
     }
   }
-
 }
