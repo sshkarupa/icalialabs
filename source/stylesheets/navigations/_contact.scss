@@ -68,12 +68,12 @@
       vertical-align: top;
     }
 
-      h4 {
-        color: $primary-color;
-        margin-bottom: 2rem;
-        padding: 0;
-      }
+    h4 {
+      color: $primary-color;
+      margin-bottom: 2rem;
+      padding: 0;
     }
+  }
 
   .building {
     background: url('//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg') no-repeat center center;
@@ -223,8 +223,8 @@
 @include max-screen($small-screen) {
   .contact {
     .info {
-      padding-top: 180px;
       padding-bottom: 60px;
+      padding-top: 180px;
     }
   }
 
