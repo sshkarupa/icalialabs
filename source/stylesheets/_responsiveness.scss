@@ -1,13 +1,13 @@
 @include max-screen($small-screen) {
   html {
-    font-size: 11px;
     border: none;
+    font-size: 11px;
   }
 
   .menu-overlay {
 
     a {
-      margin: 0 0;
+      margin: 0;
     }
 
     .menu-content {
@@ -42,14 +42,14 @@
 
 @include max-screen($small-screen-max) {
   html {
-    font-size: 11px;
     border: none;
+    font-size: 11px;
   }
 
   .menu-overlay {
 
     a {
-      margin: 0 0;
+      margin: 0;
     }
 
     .menu-content {
@@ -82,7 +82,7 @@
   }
 }
 
-@include screen($small-screen, 1280px){
+@include screen($small-screen, 1280px) {
   .menu-overlay {
     a {
       margin: 3px 0;

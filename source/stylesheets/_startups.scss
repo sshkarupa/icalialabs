@@ -16,9 +16,9 @@ a {
 }
 
 .section-header {
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   text-align: center;
   width: 100%;
@@ -27,12 +27,13 @@ a {
     height: 50vh;
   }
 
-  a, span {
+  a,
+  span {
     text-decoration: none;
   }
 
   h2.light {
-    color: #fff;
+    color: $light-color;
   }
 
   svg {
@@ -41,6 +42,7 @@ a {
 
   .startup-icon {
     position: relative;
+
     img {
       max-width: px-to-rems(600);
     }
@@ -71,6 +73,7 @@ a {
     .medium {
       width: 58%;
     }
+
     .small {
       width: 35%;
     }
@@ -87,9 +90,9 @@ a {
 
   .startup-work-container {
     background: $primary-color;
-    color: white;
-    margin: 0 auto 3rem auto;
-    padding: 9rem 4rem 5rem 4rem;
+    color: $light-color;
+    margin: 0 auto 3rem;
+    padding: 9rem 4rem 5rem;
     width: 85%;
 
     .project-description {
@@ -116,7 +119,7 @@ a {
 }
 
 .case-study {
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 4rem;
   width: 85%;
 
   h6 {
@@ -124,7 +127,7 @@ a {
   }
 
   h1 {
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2rem;
     width: 60%;
   }
 
@@ -149,9 +152,8 @@ a {
 }
 
 .startups {
-
   .steps-slider {
-    background: white;
+    background: $light-color;
     height: 100vh;
     margin-bottom: 4rem;
 
@@ -167,5 +169,4 @@ a {
       display: block;
     }
   }
-
 }

@@ -5,7 +5,6 @@ body {
 }
 
 .process-scroller {
-
   nav {
     @include transform(translateY(-50%));
     left: 5%;
@@ -23,15 +22,15 @@ body {
       transition-property: all;
       transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55);
       width: 30px;
+    }
 
-      &.scroller-current {
-        background: rgba(255, 255, 255, 1);
-        width: 60px;
-      }
+    a.scroller-current {
+      background: rgba(255, 255, 255, 1);
+      width: 60px;
+    }
 
-      a:hover {
-        background: rgba(255, 255, 255, 1);
-      }
+    a a:hover {
+      background: rgba(255, 255, 255, 1);
     }
   }
 }
