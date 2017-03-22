@@ -1,9 +1,9 @@
 .big-header {
   display: block;
-  line-height: 1em;
+  line-height: px-to-rems(16);
 
   @include max-screen($small-screen) {
-    margin: 25px;
+    margin: px-to-rems(25);
   }
 }
 
