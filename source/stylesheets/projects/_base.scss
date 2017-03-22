@@ -17,7 +17,7 @@
   @include transition(all .3s ease-in-out);
   background-position: right center;
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: px-to-rems(10);
   height: 85vh;
   margin: 20vh auto;
   position: relative;
@@ -41,7 +41,7 @@
 
     &-name {
       color: $light-color;
-      font-size: 3.5em;
+      font-size: px-to-rems(56);
       font-weight: 900;
     }
 
@@ -49,7 +49,7 @@
       color: $light-color;
       cursor: pointer;
       display: inline-block;
-      padding: 20px 0;
+      padding: px-to-rems(20) 0;
       position: relative;
       text-decoration: none;
       transition: all .3s ease;
@@ -61,7 +61,7 @@
       bottom: 0;
       content: '';
       display: block;
-      height: 2px;
+      height: px-to-rems(2);
       left: 50%;
       position: absolute;
       transform: translateX(-50%);
@@ -76,8 +76,8 @@
 
   .project-info {
     color: $light-color;
-    font-size: 1em;
-    margin-top: 2em;
+    font-size: px-to-rems(16);
+    margin-top: px-to-rems(32);
   }
 }
 
@@ -119,21 +119,21 @@
 }
 
 .title {
-  bottom: 2em;
+  bottom: px-to-rems(32);
   margin: 0 auto;
-  max-width: 900px;
-  padding: 2em;
+  max-width: px-to-rems(900);
+  padding: px-to-rems(32);
   position: absolute;
   text-align: left;
   z-index: 1000;
 
   h1 {
-    margin-bottom: .3em;
+    margin-bottom: px-to-rems(4);
   }
 
   h3 {
     color: $light-color;
-    font-size: 1.5em;
+    font-size: px-to-rems(24);
   }
 
   .project-name {
@@ -141,11 +141,11 @@
     font-weight: 800;
     line-height: 1;
     margin: 0 auto;
-    padding: 0 0 0 .2em;
+    padding: 0 0 0 px-to-rems(3);
 
     .project-title {
       color: $light-color;
-      font-size: 4em;
+      font-size: px-to-rems(64);
       font-weight: 800;
     }
   }
@@ -153,24 +153,24 @@
 
 .case-study-block {
   @extend %clearfix;
-  margin: 5em auto;
+  margin: px-to-rems(80) auto;
 
   p {
-    font-size: 1.1em;
-    line-height: 2em;
+    font-size: px-to-rems(17);
+    line-height: px-to-rems(32);
     margin: 0 auto;
   }
 
   .case-study-title {
-    font-size: 1.6em;
+    font-size: px-to-rems(25);
   }
 }
 
 .quote {
   font-family: 'Playfair', serif;
-  font-size: 3em;
+  font-size: px-to-rems(48);
   font-weight: lighter;
-  line-height: 1.5em;
+  line-height: px-to-rems(24);
 }
 
 .small-block {
