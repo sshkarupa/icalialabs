@@ -36,7 +36,7 @@ type: team
     </aside>
     <div class="members-container">
       <% data.members.each do |member| %>
-        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>'); background-size: 80vh;">
+        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>');">
           <div class="member-info">
             <h5 class="name"><%= member.name %></h5>
             <h6 class="position"><%= member.title %></h6>
