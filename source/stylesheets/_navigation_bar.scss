@@ -43,6 +43,7 @@
 
     .label-menu {
       font-size: px-to-rems(9.5);
+    }
 
     a {
       display: block;
@@ -239,11 +240,7 @@
 
   &.is-active {
     background: $light-color;
-<<<<<<< HEAD
-    box-shadow: 0 px-to-rems(1) px-to-rems(10) rgba(0, 0, 0, .05);
-=======
     box-shadow: 0 px-to-rems(1) px-to-rems(10) $dark-gray2;
->>>>>>> 22d1bc72c55dff1eca45ab20cbace5fbeecab85f
     padding: px-to-rems(10) 0;
     position: fixed;
     top: 0;
@@ -363,4 +360,3 @@
     }
   }
 }
-

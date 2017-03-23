@@ -54,10 +54,10 @@
       background: $light-color;
       color: $light-red;
       display: inline-block;
-      font-size: .8em;
+      font-size: px-to-rems(13);
       font-weight: 600;
-      letter-spacing: .2em;
-      padding: 1.2em;
+      letter-spacing: px-to-rems(3);
+      padding: px-to-rems(19);
       text-transform: uppercase;
     }
 

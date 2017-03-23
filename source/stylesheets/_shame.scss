@@ -1,12 +1,3 @@
-.big-header {
-  display: block;
-  line-height: px-to-rems(16);
-
-  @include max-screen($small-screen) {
-    margin: px-to-rems(25);
-  }
-}
-
 .show-menu {
   display: block !important;
 }
@@ -26,4 +17,22 @@
 
 .hide-mask {
   opacity: 0;
+}
+
+//JOBS
+
+.job {
+  .requirements {
+    .container {
+      padding: px-to-rems(40) 0;
+    }
+
+    strong {
+      line-height: 3;
+    }
+
+    .col-6 {
+      padding: 0 px-to-rems(20);
+    }
+  }
 }
