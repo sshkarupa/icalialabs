@@ -1,12 +1,12 @@
 .info {
-  padding: 100px 0;
+  padding: px-to-rems(100) 0;
   text-align: center;
 
   .section-name {
-    margin-bottom: 20px;
+    margin-bottom: px-to-rems(20);
   }
 
   .section-tag {
-    margin-bottom: 30px;
+    margin-bottom: px-to-rems(30);
   }
 }

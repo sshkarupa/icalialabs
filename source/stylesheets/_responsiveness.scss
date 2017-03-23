@@ -1,7 +1,7 @@
 @include max-screen($small-screen) {
   html {
     border: none;
-    font-size: 11px;
+    font-size: px-to-rems(11);
   }
 
   .menu-overlay {
@@ -16,7 +16,7 @@
 
     .social-info {
       a {
-        margin: 10px;
+        margin: px-to-rems(10);
       }
     }
 
@@ -28,14 +28,14 @@
     }
 
     .burger {
-      right: 30px;
-      top: 20px;
+      right: px-to-rems(30);
+      top: px-to-rems(20);
     }
   }
 
   .intro {
     .intro-content {
-      padding: 10rem 0;
+      padding: px-to-rems(160) 0;
     }
   }
 }
@@ -43,7 +43,7 @@
 @include max-screen($small-screen-max) {
   html {
     border: none;
-    font-size: 11px;
+    font-size: px-to-rems(11);
   }
 
   .menu-overlay {
@@ -58,7 +58,7 @@
 
     .social-info {
       a {
-        margin: 10px;
+        margin: px-to-rems(10);
       }
     }
 
@@ -70,14 +70,14 @@
     }
 
     .burger {
-      right: 30px;
-      top: 20px;
+      right: px-to-rems(30);
+      top: px-to-rems(20);
     }
   }
 
   .intro {
     .intro-content {
-      padding: 10rem 0;
+      padding: px-to-rems(160) 0;
     }
   }
 }
@@ -85,7 +85,7 @@
 @include screen($small-screen, 1280px) {
   .menu-overlay {
     a {
-      margin: 3px 0;
+      margin: px-to-rems(3) 0;
     }
   }
 }

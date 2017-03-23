@@ -10,7 +10,7 @@
 
 .section-description {
   color: rgba(#000, .7);
-  font-size: 1.4em;
+  font-size: px-to-rems(22.4);
   font-weight: 100;
   margin: px-to-rems(30) auto;
   width: 70%;
@@ -27,7 +27,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      width: 100px;
+      width: px-to-rems(100);
       z-index: 1;
     }
   }
@@ -67,7 +67,7 @@
     text-align: center;
 
     .tag {
-      margin: 30px 0;
+      margin: px-to-rems(30) 0;
     }
   }
 }
@@ -84,18 +84,18 @@
   .hide {
     color: $light-color;
     position: absolute;
-    right: 2rem;
-    top: 2rem;
+    right: px-to-rems(32);
+    top: px-to-rems(32);
     z-index: 100;
 
     @include phone {
-      right: 10rem;
-      top: 7rem;
+      right: px-to-rems(160);
+      top: px-to-rems(112);
     }
 
     h6 {
       float: right;
-      margin-top: .3rem;
+      margin-top: px-to-rems(4.8);
     }
 
     img {
@@ -112,19 +112,19 @@
     height: 100%;
     left: 0;
     overflow: auto;
-    padding: 2rem;
+    padding: px-to-rems(32);
     position: absolute;
     top: 0;
     width: 20%;
     z-index: 100;
 
     @include phone {
-      padding: 1rem;
+      padding: px-to-rems(16);
       width: 25%;
     }
 
     h6 {
-      margin-bottom: 2rem;
+      margin-bottom: px-to-rems(32);
     }
   }
 
@@ -136,20 +136,20 @@
       @include transition(all .2s ease-in-out);
       color: $dark-color;
       display: block;
-      font-size: .8rem;
-      margin-bottom: 1rem;
+      font-size: px-to-rems(12.8);
+      margin-bottom: px-to-rems(16);
     }
   }
 
   .active {
     color: $light-color;
-    font-size: 1.5rem;
+    font-size: px-to-rems(24);
   }
 
   .close-mobile {
     position: absolute;
-    right: 1rem;
-    top: 6rem;
+    right: px-to-rems(16);
+    top: px-to-rems(96);
     width: 4%;
     z-index: 200;
 
@@ -240,11 +240,11 @@
 
     .name,
     .position {
-      margin-bottom: 1rem;
+      margin-bottom: px-to-rems(16);
     }
 
     p {
-      font-size: 14px;
+      font-size: px-to-rems(14);
     }
   }
 }
@@ -259,45 +259,45 @@
     cursor: pointer;
     display: block;
     font-family: FontAwesome;
-    font-size: 1.5rem;
-    height: 1.5rem;
-    margin: 1rem;
+    font-size: px-to-rems(24);
+    height: px-to-rems(24);
+    margin: px-to-rems(16);
     overflow: hidden;
-    width: 1.3rem;
+    width: px-to-rems(20.8);
 
     &.facebook::before {
       content: '\f09a';
-      margin-right: 2rem;
+      margin-right: px-to-rems(32);
     }
 
     &.twitter::before {
       content: '\f099';
-      margin-right: 2rem;
+      margin-right: px-to-rems(32);
     }
 
     &.github::before {
       content: '\f113';
-      margin-right: 2rem;
+      margin-right: px-to-rems(32);
     }
 
     &.medium::before {
       content: '\f23a';
-      margin-right: 2rem;
+      margin-right: px-to-rems(32);
     }
 
     &.website::before {
       content: '\f0c1';
-      margin-right: 2rem;
+      margin-right: px-to-rems(32);
     }
 
     &.dribbble::before {
       content: '\f17d';
-      margin-right: 2rem;
+      margin-right: px-to-rems(32);
     }
 
     &.instagram::before {
       content: '\f16d';
-      margin-right: 2rem;
+      margin-right: px-to-rems(32);
     }
   }
 }

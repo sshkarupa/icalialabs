@@ -1,6 +1,6 @@
 .main-footer {
   background: $light-space-gray;
-  padding: 50px 0;
+  padding: px-to-rems(50) 0;
 
   a:hover {
     opacity: .5;
@@ -8,8 +8,8 @@
 
   .logo > svg {
     fill: $primary-color;
-    height: 60px;
-    width: 60px;
+    height: px-to-rems(60);
+    width: px-to-rems(60);
   }
 
   .direction,
@@ -17,7 +17,7 @@
   .nav-title {
     color: $primary-color;
     display: block;
-    font-size: 1em;
+    font-size: px-to-rems(16);
     text-decoration: none;
   }
 }

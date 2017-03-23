@@ -15,13 +15,18 @@ body {
     a {
       background: rgba(255, 255, 255, .6);
       display: block;
-      height: 4px;
-      margin: 10px 0;
+      height: px-to-rems(4);
+      margin: px-to-rems(10) 0;
       position: relative;
       transition-duration: .4s;
       transition-property: all;
       transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55);
-      width: 30px;
+      width: px-to-rems(30);
+
+      &.scroller-current {
+        background: rgba(255, 255, 255, 1);
+        width: px-to-rems(60);
+      }
     }
 
     a.scroller-current {
@@ -67,26 +72,26 @@ body {
   }
 
   .step-number {
-    border: 3px solid;
+    border: px-to-rems(3) solid;
     color: $light-color;
-    font-size: 1rem;
+    font-size: px-to-rems(16);
     font-weight: 900;
-    padding: .6rem 1rem;
+    padding: .6rem px-to-rems(16);
   }
 
   .step-title {
     color: $light-color;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    margin: 20px 0;
+    font-size: px-to-rems(32);
+    letter-spacing: px-to-rems(1);
+    margin: px-to-rems(20) 0;
     transform: translateX(-10%);
 
     &::after {
       background: $light-color;
       content: '';
       display: inline-block;
-      height: 3px;
-      margin-left: 1rem;
+      height: px-to-rems(3);
+      margin-left: px-to-rems(16);
       vertical-align: middle;
       width: 10%;
     }
@@ -94,9 +99,9 @@ body {
 
   .step-description {
     color: $light-color;
-    font-size: 1em;
+    font-size: px-to-rems(16);
     font-weight: 400;
-    line-height: 1.6em;
+    line-height: px-to-rems(28);
   }
 }
 
@@ -162,16 +167,16 @@ body {
 
 @include phone {
   .step {
-    padding: 10px;
+    padding: px-to-rems(10);
   }
 
   .step-title {
-    padding-left: 34px;
-    padding-top: 10px;
+    padding-left: px-to-rems(34);
+    padding-top: px-to-rems(10);
   }
 
   .step-description {
-    padding-right: 40px;
+    padding-right: px-to-rems(40);
   }
 
   .sep {

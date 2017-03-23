@@ -1,55 +1,16 @@
-.contact {
-
-  .subtitle {
-    color: rgba(0, 0, 0, .7);
-    font-size: 1.4em;
-    font-weight: 100;
-    margin: 30px auto;
-    width: 70%;
-  }
-
-  .info,
-  .footer {
-    background: $light-space-gray;
-
-    a {
-      cursor: pointer;
-    }
-  }
-
-  .form-modal {
-    .modal-header {
-      color: $primary-color;
-    }
-
-    span {
-      color: $primary-color;
-      font-size: 2rem;
-      font-weight: 100;
-      letter-spacing: 1px;
-    }
-
-    .modal-close {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-  }
-
-  h4 {
+h4 {
     color: $light-color;
-    margin-bottom: 1em;
+    margin-bottom: px-to-rems(16);
   }
-}
 
 .address-section {
   background: url('//s3.amazonaws.com/icalialabs/assets/img/office.png') no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 5em 0;
+  padding: px-to-rems(80) 0;
 
   h4 {
-    padding: 1rem 0;
+    padding: px-to-rems(16) 0;
   }
 
   .container {
@@ -58,20 +19,21 @@
 
   .address-container {
     background: #2d1a1a;
-    border-radius: 4px;
-    padding: 4em 0;
+    border-radius: px-to-rems(4);
+    padding: px-to-rems(64) 0;
     position: relative;
 
     .address {
       display: inline-block;
-      padding-left: 2em;
+      padding-left: px-to-rems(32);
       vertical-align: top;
     }
 
-    h4 {
-      color: $primary-color;
-      margin-bottom: 2rem;
-      padding: 0;
+      h4 {
+        color: $primary-color;
+        margin-bottom: px-to-rems(32);
+        padding: 0;
+      }
     }
   }
 
@@ -91,11 +53,11 @@
 
   a {
     @include transition(all .5s ease);
-    border: 1px solid $primary-color;
-    border-radius: 2px;
+    border: px-to-rems(1) solid $primary-color;
+    border-radius: px-to-rems(2);
     display: inline-block;
-    margin: 10px 0;
-    padding: 20px 50px;
+    margin: px-to-rems(10) 0;
+    padding: px-to-rems(20) px-to-rems(50);
     position: relative;
     text-decoration: none;
 
@@ -108,7 +70,7 @@
 
 .social-networks {
   height: 90vh;
-  padding: 5rem;
+  padding: px-to-rems(80);
 
   ul li {
     display: inline-block;
@@ -116,11 +78,11 @@
 
   p {
     font-weight: 200;
-    margin: 40px;
+    margin: px-to-rems(40);
   }
 
   .icons-container {
-    padding-top: 3rem;
+    padding-top: px-to-rems(48);
   }
 
   .icon {
@@ -131,10 +93,10 @@
   }
 
   .fb-icon {
-    left: -23rem !important;
+    left: px-to-rems(-368) !important;
 
     @include phone {
-      left: -9rem !important;
+      left: px-to-rems(-144) !important;
     }
 
     img {
@@ -143,12 +105,12 @@
   }
 
   .medium-icon {
-    left: 15rem !important;
-    top: 15rem !important;
+    left: px-to-rems(240) !important;
+    top: px-to-rems(240) !important;
 
     @include phone {
       left: 0 !important;
-      top: 20rem !important;
+      top: px-to-rems(320) !important;
     }
 
     img {
@@ -157,11 +119,11 @@
   }
 
   .dribbble-icon {
-    left: 25rem !important;
-    top: 5rem !important;
+    left: px-to-rems(400) !important;
+    top: px-to-rems(80) !important;
 
     @include phone {
-      left: 10rem !important;
+      left: px-to-rems(160) !important;
       top: 0 !important;
     }
 
@@ -171,12 +133,12 @@
   }
 
   .instagram-icon {
-    left: 35rem !important;
-    top: 3rem !important;
+    left: px-to-rems(560) !important;
+    top: px-to-rems(48) !important;
 
     @include phone {
-      left: 13rem !important;
-      top: 11rem !important;
+      left: px-to-rems(208) !important;
+      top: px-to-rems(176) !important;
     }
 
     img {
@@ -185,12 +147,12 @@
   }
 
   .github-icon {
-    left: 40rem !important;
-    top: 13rem !important;
+    left: px-to-rems(640) !important;
+    top: px-to-rems(208) !important;
 
     @include phone {
-      left: 14rem !important;
-      top: 25rem !important;
+      left: px-to-rems(224) !important;
+      top: px-to-rems(400) !important;
     }
 
     img {
@@ -200,12 +162,12 @@
   }
 
   .twitter-icon {
-    left: 55rem !important;
-    top: 6rem !important;
+    left: px-to-rems(880) !important;
+    top: px-to-rems(96) !important;
 
     @include phone {
-      left: 17rem !important;
-      top: 17rem !important;
+      left: px-to-rems(272) !important;
+      top: px-to-rems(272) !important;
     }
 
     img {
@@ -230,16 +192,5 @@
 
   .social-networks {
     height: 100vh !important;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .contact {
-    .form-modal {
-      .contact-form .input,
-      .contact-form select {
-        width: 100%;
-      }
-    }
   }
 }
