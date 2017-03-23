@@ -42,7 +42,7 @@
 
 @include max-screen($small-screen-max) {
   html {
-    font-size: 11px;
+    font-size: px-to-rems(11);
     border: none;
   }
 
@@ -58,7 +58,7 @@
 
     .social-info {
       a {
-        margin: 10px;
+        margin: px-to-rems(10);
       }
     }
 
@@ -70,22 +70,26 @@
     }
 
     .burger {
-      right: 30px;
-      top: 20px;
+      right: px-to-rems(30);
+      top: px-to-rems(20);
     }
   }
 
   .intro {
     .intro-content {
-      padding: 10rem 0;
+      padding: px-to-rems(160) 0;
     }
   }
 }
 
+<<<<<<< HEAD
 @include screen($small-screen, 1280px) {
+=======
+@include screen($small-screen, px-to-rems(1280)){
+>>>>>>> 22d1bc72c55dff1eca45ab20cbace5fbeecab85f
   .menu-overlay {
     a {
-      margin: 3px 0;
+      margin: px-to-rems(3) 0;
     }
   }
 }

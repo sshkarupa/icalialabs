@@ -40,23 +40,23 @@
     text-align: center;
 
     .big-header {
-      font-size: 4rem;
+      font-size: px-to-rems(64);
     }
 
     a {
-      border: 2px solid rgba($primary-color, .3);
+      border: px-to-rems(2) solid rgba($primary-color, .3);
       border-radius: 100px;
       font-size: .8em;
       font-weight: 600;
-      letter-spacing: 2px;
-      padding: 10px 20px;
+      letter-spacing: px-to-rems(2);
+      padding: px-to-rems(10) px-to-rems(20);
       position: relative;
       text-decoration: none;
       text-transform: uppercase;
-      top: 95px;
+      top: px-to-rems(95);
 
       @include phone {
-        top: 30px;
+        top: px-to-rems(30);
       }
     }
   }
@@ -74,38 +74,38 @@
 
     p {
       font-size: px-to-rems(16);
-      margin: 1.875rem auto;
+      margin: px-to-rems(30) auto;
       max-width: px-to-rems(600);
     }
 
     h2 {
       @include max-screen($small-screen) {
-        line-height: 3rem;
+        line-height: px-to-rems(48);
       }
     }
   }
 
   .perks {
-    padding: 100px 0;
+    padding: px-to-rems(100) 0;
 
     .section-description {
-      margin: 20px auto 100px;
+      margin: px-to-rems(20) auto px-to-rems(100);
 
       @include max-screen($small-screen) {
-        margin-bottom: 45px;
+        margin-bottom: px-to-rems(45);
       }
     }
 
     .perk-icon {
       @include transition(all .5s ease-in);
-      margin: 20px auto;
-      max-height: 100px;
+      margin: px-to-rems(20) auto;
+      max-height: px-to-rems(100);
     }
 
     .perk-title {
       color: $primary-color;
-      font-size: 1.1em;
-      margin: 10px 0;
+      font-size: px-to-rems(17.6);
+      margin: px-to-rems(10) 0;
     }
 
     .perk-description {
@@ -127,10 +127,10 @@
 
     p {
       color: rgba(0, 0, 0, .7);
-      font-size: 1.3em;
+      font-size: px-to-rems(20.8);
       font-weight: 200;
-      line-height: 1.4em;
-      margin: 30px auto;
+      line-height: px-to-rems(22.4);
+      margin: px-to-rems(30) auto;
       width: 60%;
     }
 
@@ -138,8 +138,8 @@
       background: rgba($dark-color, .05);
       color: $primary-color;
       display: inline-block;
-      font-size: 1.25rem;
-      padding: 1rem;
+      font-size: px-to-rems(20);
+      padding: px-to-rems(16);
       text-decoration: none;
       transition: all .3s ease;
     }
@@ -190,7 +190,7 @@
   figure {
     @include transition(all .4s ease-in-out);
     @include transform(translateY(-50%));
-    padding: 20px;
+    padding: px-to-rems(20);
     position: absolute;
     top: 50%;
     width: 100%;
@@ -218,18 +218,5 @@
 
   @include max-screen($small-screen) {
     background: inherit;
-  }
-}
-
-.requirements {
-  padding: px-to-rems(100);
-
-  ul li {
-    margin: px-to-rems(10) 0;
-  }
-
-  strong {
-    display: block;
-    margin: 10px 0;
   }
 }
