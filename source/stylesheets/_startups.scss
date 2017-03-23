@@ -16,9 +16,9 @@ a {
 }
 
 .section-header {
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   text-align: center;
   width: 100%;
@@ -27,12 +27,13 @@ a {
     height: 50vh;
   }
 
-  a, span {
+  a,
+  span {
     text-decoration: none;
   }
 
   h2.light {
-    color: #fff;
+    color: $light-color;
   }
 
   svg {
@@ -41,6 +42,7 @@ a {
 
   .startup-icon {
     position: relative;
+
     img {
       max-width: px-to-rems(600);
     }
@@ -71,6 +73,7 @@ a {
     .medium {
       width: 58%;
     }
+
     .small {
       width: 35%;
     }
@@ -115,10 +118,42 @@ a {
   }
 }
 
-.startups {
+.case-study {
+  margin: 0 auto 4rem;
+  width: 85%;
 
+  h6 {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin: 0 auto 2rem;
+    width: 60%;
+  }
+
+  .pull-left {
+    h5,
+    h6 {
+      position: relative;
+    }
+
+    h5 {
+      border-bottom: 1px solid $primary-color;
+      padding-bottom: .5rem;
+      top: 8rem;
+      width: 1rem;
+    }
+
+    .vertical-text {
+      left: -1.5rem;
+      top: 8rem;
+    }
+  }
+}
+
+.startups {
   .steps-slider {
-    background: white;
+    background: $light-color;
     height: 100vh;
     margin-bottom: px-to-rems(64);
 

@@ -35,6 +35,7 @@ h4 {
         padding: 0;
       }
     }
+  }
 
   .building {
     background: url('//s3.amazonaws.com/icalialabs/assets/img/contact/building.jpg') no-repeat center center;
@@ -182,6 +183,13 @@ h4 {
 }
 
 @include max-screen($small-screen) {
+  .contact {
+    .info {
+      padding-bottom: 60px;
+      padding-top: 180px;
+    }
+  }
+
   .social-networks {
     height: 100vh !important;
   }
