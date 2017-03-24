@@ -403,8 +403,10 @@
 }
 
 .startup-enterprise {
+  align-items: center;
   background: $light-color;
   border-bottom: px-to-rems(1) solid $light-white-red;
+  display: flex;
   height: auto;
   min-height: 60vh;
   padding: px-to-rems(45);
