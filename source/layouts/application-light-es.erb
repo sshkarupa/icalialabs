@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= partial "shared/metatags" %>
+    <title>Icalia Labs</title>
+    <link rel="icon" href="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/favicon.ico">
+    <%= stylesheet_link_tag :site %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" type='text/css' href="//cdn.plyr.io/1.8.12/plyr.css">
+    <link rel="stylesheet" href="//opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
+    <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-32608013-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  </head>
+  <body class="<%= current_page.data.type %>">
+    <header class="main-menu animated bounceInDown inverse">
+      <div class="container">
+        <a href='/es'><%= partial "logo" %></a>
+        <nav class="logo-menu">
+          <a href="startups">Para Startups</a>
+          <a href="enterprise">Para Empresas</a>
+        </nav>
+        <div class="burger">
+          <div class="one"></div>
+          <div class="two"></div>
+          <span class="burger-label hidden-on-xsmall hidden-on-small">Menu</span>
+        </div>
+      </div>
+    </header>
+    <nav class="menu-overlay">
+      <div class="container">
+        <div class="menu-content">
+          <div class="menu-content-primary-menu">
+            <a class="l1 big-link" href="es/culture"><span class="label-menu">Acerca de nuestra</span>Cultura</a>
+            <a class="l2 big-link" href="es/process"><span class="label-menu">Acerca de Nuestros</span>Procesos</a>
+            <a class="l3 big-link" href="es/projects"><span class="label-menu">Conoce Nuestro</span>Trabajo</a>
+            <a class="l4 big-link" href="es/team"><span class="label-menu">Conoce a Nuestra</span>Familia</a>
+            <a class="l5 big-link" href="es/contact"><span class="label-menu">Cuéntanos tu proyecto</span>Contacto</a>
+            <nav class="list-menu">
+              <span class="label-menu">Otras páginas</span>
+              <a href="http://www.meetup.com/Monterrey-Ruby-Meetup/" target="_blank">Ruby Meetup</a>
+              <a href="http://www.meetup.com/Docker-Monterrey/" target="_blank">Docker Meetup</a>
+              <a href="https://www.meetup.com/iosmty/" target="_blank">iOS Meetup</a>
+              <a href="es/culture#positions">Trabajos</a>
+              <a href="https://medium.com/@icalialabs" target="_blank">Blog</a>
+            </nav>
+            <nav class="list-menu">
+              <span class="label-menu">Contáctanos</span>
+              <a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a>
+              <a href="tel:8120898857">+52 01 (81) 2089 8857</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <%= yield %>
+
+    <footer class="main-footer">
+      <div class="container row clearfix">
+        <div class="col-3">
+          <%= partial "logo" %>
+        </div>
+        <div class="col-3">
+          <p class="direction"><b>Juan I. Ramon 801, Suite 206</b><br/ >Centro de Monterrey, 64000. <br/ >
+          <br>
+          Monterrey City, NL, Mexico</p>
+          <p class="direction">+52 01 (81) 2089 8857<br /><a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a></p>
+        </div>
+        <div class="col-2">
+          <h4 class="nav-title">Compañía</h4>
+            <a href="es/culture">Cultura</a>
+            <a href="es/process">Procesos</a>
+            <a href="es/projects">Proyectos</a>
+            <a href="es/team">Familia</a>
+            <a href="es/culture#positions">Trabajos</a>
+            <a href="es/contact">Contacto</a>
+        </div>
+        <div class="col-2">
+          <h4 class="nav-title">Social</h4>
+          <a href="https://github.com/IcaliaLabs/">Github</a>
+          <a href="https://dribbble.com/icalialabs">Dribbble</a>
+          <a href="https://medium.com/icalia-labs">Medium</a>
+          <a href="https://www.facebook.com/icalialabs">Facebook</a>
+          <a href="https://twitter.com/icalialabs">Twitter</a>
+          <a href="https://www.instagram.com/icalialabs/">Instagram</a>
+        </div>
+        <div class="col-2">
+          <%= image_tag '//s3.amazonaws.com/icalialabs/assets/img/hecho-mexico.png' %>
+        </div>
+      </div>
+    </footer>
+    <%= javascript_include_tag :all %>
+    <%= yield_content :javascripts %>
+    <script>
+      $(function() {
+
+        $( '#mi-slider' ).catslider();
+
+      });
+    </script>
+    <script>
+      window.intercomSettings = {
+        app_id: "k19z5z2b"
+      };
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/k19z5z2b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+    <script>
+      $(document).ready(function() {
+  
+        var $slider = $(".slider"),
+            $slideBGs = $(".slide__bg"),
+            diff = 0,
+            curSlide = 0,
+            numOfSlides = $(".slide").length-1,
+            animating = false,
+            animTime = 500,
+            autoSlideTimeout,
+            autoSlideDelay = 6000,
+            $pagination = $(".slider-pagi");
+        
+        function createBullets() {
+          for (var i = 0; i < numOfSlides+1; i++) {
+            var $li = $("<li class='slider-pagi__elem'></li>");
+            $li.addClass("slider-pagi__elem-"+i).data("page", i);
+            if (!i) $li.addClass("active");
+            $pagination.append($li);
+          }
+        };
+        
+        createBullets();
+        
+        function manageControls() {
+          $(".slider-control").removeClass("inactive");
+          if (!curSlide) $(".slider-control.left").addClass("inactive");
+          if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+        };
+        
+        function autoSlide() {
+          autoSlideTimeout = setTimeout(function() {
+            curSlide++;
+            if (curSlide > numOfSlides) curSlide = 0;
+            changeSlides();
+          }, autoSlideDelay);
+        };
+        
+        autoSlide();
+        
+        function changeSlides(instant) {
+          if (!instant) {
+            animating = true;
+            manageControls();
+            $slider.addClass("animating");
+            $slider.css("top");
+            $(".slide").removeClass("active");
+            $(".slide-"+curSlide).addClass("active");
+            setTimeout(function() {
+              $slider.removeClass("animating");
+              animating = false;
+            }, animTime);
+          }
+          window.clearTimeout(autoSlideTimeout);
+          $(".slider-pagi__elem").removeClass("active");
+          $(".slider-pagi__elem-"+curSlide).addClass("active");
+          $slider.css("transform", "translate3d("+ -curSlide*100 +"%,0,0)");
+          $slideBGs.css("transform", "translate3d("+ curSlide*50 +"%,0,0)");
+          diff = 0;
+          autoSlide();
+        }
+
+        function navigateLeft() {
+          if (animating) return;
+          if (curSlide > 0) curSlide--;
+          changeSlides();
+        }
+
+        function navigateRight() {
+          if (animating) return;
+          if (curSlide < numOfSlides) curSlide++;
+          changeSlides();
+        }
+
+        $(document).on("mousedown touchstart", ".slider", function(e) {
+          if (animating) return;
+          window.clearTimeout(autoSlideTimeout);
+          var startX = e.pageX || e.originalEvent.touches[0].pageX,
+              winW = $(window).width();
+          diff = 0;
+          
+          $(document).on("mousemove touchmove", function(e) {
+            var x = e.pageX || e.originalEvent.touches[0].pageX;
+            diff = (startX - x) / winW * 70;
+            if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+            $slider.css("transform", "translate3d("+ (-curSlide*100 - diff) +"%,0,0)");
+            $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
+          });
+        });
+        
+        $(document).on("mouseup touchend", function(e) {
+          $(document).off("mousemove touchmove");
+          if (animating) return;
+          if (!diff) {
+            changeSlides(true);
+            return;
+          }
+          if (diff > -8 && diff < 8) {
+            changeSlides();
+            return;
+          }
+          if (diff <= -8) {
+            navigateLeft();
+          }
+          if (diff >= 8) {
+            navigateRight();
+          }
+        });
+        
+        $(document).on("click", ".slider-control", function() {
+          if ($(this).hasClass("left")) {
+            navigateLeft();
+          } else {
+            navigateRight();
+          }
+        });
+        
+        $(document).on("click", ".slider-pagi__elem", function() {
+          curSlide = $(this).data("page");
+          changeSlides();
+        });
+        
+      });
+    </script>
+</html>

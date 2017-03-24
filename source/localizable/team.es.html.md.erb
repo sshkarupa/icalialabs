@@ -1,0 +1,64 @@
+---
+layout: application-es
+title: Equipo
+type: team
+---
+<section class="section-header">
+  <div class="curtain"></div>
+  <div class="team-header">
+    <h6 class="letter-spacing">Nuestro Equipo</h6>
+    <h2 class="section-tag">Nuestra pasión es crear productos digitales geniales.</h2>
+  </div>
+</section>
+
+<section class="team-section">
+  <div class="members-grid row">
+    <% data.members.each do |member| %>
+      <div class="col-2 nopadding" data-name="<%= member.name %>">
+        <div class="members-grid--member" style="background-image: url('<%=member.closeup%>')">
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="members-fullpage">
+    <img src="//s3.amazonaws.com/icalialabs/assets/img/close.png" class="close-mobile visible-on-small visible-on-xsmall" alt="">
+    <div class="hide">
+      <img src="//s3.amazonaws.com/icalialabs/assets/img/see-all.png" alt="">
+      <h6 class="letter-spacing">Ver a todo el equipo</h6>
+    </div>
+    <aside class="members-nav hidden-on-small hidden-on-xsmall">
+      <h6 class="letter-spacing">Nuestros Miembros</h6>
+      <ul class="team-sidebar">
+        <% data.members.each do |member| %>
+        <li><a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a></li>
+        <% end %>
+      </ul>
+    </aside>
+    <div class="members-container">
+      <% data.members.each do |member| %>
+        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>'); background-size: 80vh;">
+          <div class="member-info">
+            <h5 class="name"><%= member.name %></h5>
+            <h6 class="position"><%= member.title %></h6>
+            <p><%= member.bio %></p>
+          </div>
+          <div class="networks">
+            <% member.networks.each do |network| %>
+              <a href="<%= network.link %>" class="social <%=network.name%>" target="_blank"><%= network.name %></a>
+            <% end %>
+          </div>
+        </figure>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="join row">
+  <div class="vertical-align">
+    <h6 class="letter-spacing red">Únete al equipo.</h6>
+    <h2 class="tag">¿Listo para un nuevo reto?</h2>
+    <div class="call-buttons-group red">
+      <a href="es/culture#positions"><h6 class="letter-spacing">Ver nuestras posiciones abiertas.</h6></a>
+    </div>
+  </div>
+</section>
