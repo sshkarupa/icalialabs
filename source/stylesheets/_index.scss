@@ -406,12 +406,12 @@
   background: $light-color;
   border-bottom: px-to-rems(1) solid $light-white-red;
   height: auto;
-  min-height: 50vh;
+  min-height: 60vh;
   padding: px-to-rems(45);
 
   @include phone {
     min-height: 65vh;
-    padding: 0;
+    padding: px-to-rems(50) 0;
   }
 
   .section-title {
