@@ -23,15 +23,15 @@
     - link: https://github.com/kurenn
       name: github
 
-#- name: Melissa De La Garza
-#  title: Happiness Manager
-#  id: dg
-#  picture: https://s3.amazonaws.com/icalialabs/assets/img/mel-full.png
-#  closeup: https://s3.amazonaws.com/icalialabs/assets/img/mel-closeup.png
-#  bio: Mel is an emphatic and comprehensive psychologist. Always cheerful and with a smile she works towards creating a healthy and work friendly environment at Icalia. She is always there for solving problems and make our life more happy.  <br><br>Mel is always looking to learn new things and she is always ready to adapt to new scenarios in life. She is not scared of big challenges and creating great things. She likes to go to the movies and longboarding on cool days, enjoys hearing music, dancing, being with her 3 dogs and spending quality time with her significant other.
-#  networks:
-#    - link:
-#      name:
+- name: Melissa De La Garza
+  title: Happiness Manager
+  id: dg
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/mel.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/mel-close.jpg
+  bio: Mel is an emphatic and comprehensive psychologist. Always cheerful and with a smile she works towards creating a healthy and work friendly environment at Icalia. She is always there for solving problems and make our life more happy.  <br><br>Mel is always looking to learn new things and she is always ready to adapt to new scenarios in life. She is not scared of big challenges and creating great things. She likes to go to the movies and longboarding on cool days, enjoys hearing music, dancing, being with her 3 dogs and spending quality time with her significant other.
+  networks:
+    - link:
+      name:
 
 - name: Eduardo Higareda
   title: Designer
@@ -78,6 +78,18 @@
   id: bm
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs-close.jpg
+  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
+  networks:
+    - link: https://github.com/bmbrina
+      name: github
+    - link: http://www.brina.mx
+      name: website
+
+- name: Carlos Medellin
+  title: Mobile Intern
+  id: bm
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos-close.jpg
   bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
   networks:
     - link: https://github.com/bmbrina
@@ -235,15 +247,15 @@
     - link: https://www.instagram.com/hectormgwake/
       name: instagram
 
-#- name: Jorge Elizondo
-#  title: IOS Intern
-#  id: jorge
-#  picture: https://s3.amazonaws.com/icalialabs/assets/img/jorge-full.png
-#  closeup: https://s3.amazonaws.com/icalialabs/assets/img/jorge-closeup.png
-#  bio: "Jorge is an IOS intern focusing in swift programming language. His passion is to make mobile applications and in his free time he likes to play chess or read a good book."
-#  networks:
-#    - link: https://github.com/Jelizondo
-#      name: github
+- name: Jorge Elizondo
+  title: IOS Intern
+  id: jorge
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/jorge.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/jorge-close.jpg
+  bio: "Jorge is an IOS intern focusing in swift programming language. His passion is to make mobile applications and in his free time he likes to play chess or read a good book."
+  networks:
+    - link: https://github.com/Jelizondo
+      name: github
 
 - name: Rene Saenz
   title: Software Engineering Intern
@@ -271,14 +283,14 @@
     - link: https://twitter.com/renata_saldivar
       name: twitter
 
-#- name: Antonio Toussaint
-#  title: IOS Intern
-#  id: tony
-#  picture: https://s3.amazonaws.com/icalialabs/assets/img/tony-full.png
-#  closeup: https://s3.amazonaws.com/icalialabs/assets/img/tony-closeup.png
-#  bio: "Tony is an intern who thinks of technology and code as a form of expression, the possibilities are endless, you make your limits. Music is one of his passions, one day can’t pass without him listening to something new or learning a new song. He loves to play  the guitar and the ukelele. When he is nos coding or making music he likes to hang out with friends or sleep. He enjoys the simple things in life."
-#  networks:
-#    - link: https://github.com/tonyyasi
-#      name: github
-#    - link: https://twitter.com/Tonyyasi
-#      name: twitter
+- name: Antonio Toussaint
+  title: IOS Intern
+  id: tony
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/tony.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/tony-close.jpg
+  bio: "Tony is an intern who thinks of technology and code as a form of expression, the possibilities are endless, you make your limits. Music is one of his passions, one day can’t pass without him listening to something new or learning a new song. He loves to play  the guitar and the ukelele. When he is nos coding or making music he likes to hang out with friends or sleep. He enjoys the simple things in life."
+  networks:
+    - link: https://github.com/tonyyasi
+      name: github
+    - link: https://twitter.com/Tonyyasi
+      name: twitter
