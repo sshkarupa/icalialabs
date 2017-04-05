@@ -59,6 +59,20 @@
     - link: http://scarlettgarza.com/
       name: website
 
+- name: Luis Manzur
+  title: Junior Digital Designer
+  id: lm
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/loui-g.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/loui-g-close.jpg
+  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a graphic communication student. Enthusiast for aesthetic order, beautiful typography, geometry,  and symmetry. Technology curious since he can recall. The futbol aficionado of the gang. Nintendo geek (especially Zelda). Amateur skater. Analog photography supporter."
+  networks:
+    - link: https://www.instagram.com/luisphernelia/
+      name: instagram
+    - link: https://dribbble.com/luisphernelia
+      name: dribbble
+    - link: http://luismanzur.com/
+      name: website
+
 - name: Daniel Lozano
   title: iOS Engineer
   id: daniel
@@ -73,9 +87,21 @@
     - link: http://instagram.com/danlozano
       name: instagram
 
+- name: Walter Reyes
+  title: Software Developer
+  id: walter
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/walter.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/walter-close.jpg
+  bio: "Walter is a Software Engineer, mostly for backend but he is also getting interested in the frontend magic. He is always looking for ways to improve his programming skills by doing personal projects, collaborating on open source or reading books. When he is not coding, you can find him playing his harmonica, reading, working out or just doing anything that he finds interesting."
+  networks:
+    - link: https://www.github.com/walreyes
+      name: github
+    - link: https://www.twitter.com/walreyes11
+      name: twitter
+
 - name: Bárbara Martínez
   title: Mobile Intern
-  id: bm
+  id: barbs
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs-close.jpg
   bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
@@ -85,11 +111,11 @@
     - link: http://www.brina.mx
       name: website
 
-- name: Carlos Medellin
+- name: Paco 
   title: Mobile Intern
   id: bm
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos.jpg
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos-close.jpg
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/paco.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/paco-close.jpg
   bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
   networks:
     - link: https://github.com/bmbrina
@@ -137,17 +163,15 @@
     - link: http://bravarianpawstudios.com/
       name: website
 
-- name: Walter Reyes
+- name: Alejandro Sherwell
   title: Software Developer
-  id: walter
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/walter.jpg
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/walter-close.jpg
-  bio: "Walter is a Software Engineer, mostly for backend but he is also getting interested in the frontend magic. He is always looking for ways to improve his programming skills by doing personal projects, collaborating on open source or reading books. When he is not coding, you can find him playing his harmonica, reading, working out or just doing anything that he finds interesting."
+  id: sherwell
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/sherwell.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/sherwell-close.jpg
+  bio: "Sherwell is a friendly developer who is passionate about learning and creating digital solutions. In his free time, he is either having a great time with his friends or playing video games. He’s always open to get together and drink a couple of cold beers."
   networks:
-    - link: https://www.github.com/walreyes
+    - link: https://github.com/Sherwell
       name: github
-    - link: https://www.twitter.com/walreyes11
-      name: twitter
 
 - name: Emmanuel De Oleo
   title: Software Developer
@@ -166,24 +190,20 @@
   id: charlie
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie-close.jpg
-  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  bio: "Carlos is a Sales Engineer who focuses primarily on startups and other emerging innovating businesses. His mission is to help entrepreneurs figure out what they need today in order to succeed tomorrow, and how they can use technology to achieve those goals. When he’s not talking to clients or helping entrepreneurs you can find him coding, reading (or listening to) a book or product-hunting. A big part of his life is finding, digesting and curating new relevant info, trends, products, services and strategies to help improve the daily lives of everyone around him."
   networks:
-    - link: https://github.com/renata-sg
-      name: github
-    - link: https://twitter.com/renata_saldivar
-      name: twitter
+    - link:
+      name:
 
 - name: Rafael Cárdenas
   title: Sales
   id: rafa
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/rafa.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/rafa-close.jpg
-  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  bio: "Rafael is a software engineer specialized in iOS and mobile application development. He’s been very passionate about computers and electronics since he can remember and he’s always looking for new ways to use technology to solve society’s hardest problems. He’s also a musician and composer who plays a variety of instruments including guitar, piano, synthesizer, bass, etc."
   networks:
-    - link: https://github.com/renata-sg
+    - link: https://github.com/rafaelcr
       name: github
-    - link: https://twitter.com/renata_saldivar
-      name: twitter
 
 - name: Marcelo
   title: Sales
@@ -202,12 +222,11 @@
   id: billy
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/billy.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/billy-close.jpg
-  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  bio: "Billy is an Electronic Engineer with passion for software development. Eager of learning new things, dynamic and cheerful, he likes to have a good time with his friends. He also enjoys playing billiards, listening to music and reading books."
   networks:
-    - link: https://github.com/renata-sg
+    - link: https://github.com/billyabm
       name: github
-    - link: https://twitter.com/renata_saldivar
-      name: twitter
+
 
 - name: Pablo Rocha
   title: Engineer
@@ -221,18 +240,16 @@
     - link: https://twitter.com/renata_saldivar
       name: twitter
 
-- name: Luis Manzur
-  title: Junior Digital Designer
-  id: lm
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/loui-g.jpg
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/loui-g-close.jpg
-  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a graphic communication student. Enthusiast for aesthetic order, beautiful typography, geometry,  and symmetry. Technology curious since he can recall. The futbol aficionado of the gang. Nintendo geek (especially Zelda). Amateur skater. Analog photography supporter."
+- name: Carlos Medellin
+  title: Mobile Intern
+  id: carlos
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos-close.jpg
+  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
   networks:
-    - link: https://www.instagram.com/luisphernelia/
-      name: instagram
-    - link: https://dribbble.com/luisphernelia
-      name: dribbble
-    - link: http://luismanzur.com/
+    - link: https://github.com/bmbrina
+      name: github
+    - link: http://www.brina.mx
       name: website
 
 - name: Héctor Morales González
@@ -281,16 +298,4 @@
     - link: https://github.com/renata-sg
       name: github
     - link: https://twitter.com/renata_saldivar
-      name: twitter
-
-- name: Antonio Toussaint
-  title: IOS Intern
-  id: tony
-  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/tony.jpg
-  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/tony-close.jpg
-  bio: "Tony is an intern who thinks of technology and code as a form of expression, the possibilities are endless, you make your limits. Music is one of his passions, one day can’t pass without him listening to something new or learning a new song. He loves to play  the guitar and the ukelele. When he is nos coding or making music he likes to hang out with friends or sleep. He enjoys the simple things in life."
-  networks:
-    - link: https://github.com/tonyyasi
-      name: github
-    - link: https://twitter.com/Tonyyasi
       name: twitter
