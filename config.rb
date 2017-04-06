@@ -23,6 +23,7 @@ configure :development do
   activate :livereload
   activate :sprockets
   activate :directory_indexes
+  activate :i18n, :langs => [:en, :es]
 end
 
 ###

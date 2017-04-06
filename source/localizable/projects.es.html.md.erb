@@ -1,0 +1,57 @@
+---
+layout: application-es
+title: Nuestro Trabajo
+type: projects
+---
+
+<section class="section-header">
+  <div class="vertical-align">
+    <h4 class="section-title">Nuestro Trabajo</h4>
+    <h2 class="section-tag red">Hacemos productos que causan impacto.</h2>
+    <p class="section-description">Somos una empresa de desarrollo y diseño enfocada en productos de <span class="red">software</span> tanto B2B como B2C.</p>
+  </div>
+</section>
+<section class="projects-wrapper">
+  <section class="projects-container">
+      <% data.projects.each do |project| %>
+        <a href="<%= project.link %>" target="blank" class="projects-link">
+          <article class="projects-container-item <%= project.name %> reveal" style="background-image: url(<%= project.image %>); box-shadow: 0 6px 40px #<%= project.color %>, inset 0 1px 1px rgba(255, 255, 255, 0.25);">
+            <div class="container row clearfix">
+              <div class="col-8 vertical-align">
+                <hgroup class="project-listing">
+                  <h2 class="project-listing-name"><%= project.name %></h2>
+                  <h3 class="project-info"><%= project.done %></h3>
+                </hgroup>
+              </div>
+            </div>
+          </article>
+        </a>
+      <% end %>
+  </section>
+</section>
+<section class="contact-section">
+  <h4 class="section-title text-center">Podemos trabajar juntos</h4>
+  <h2 class="text-center">Contrátanos ¡podemos ayudarte!</h2>
+  <div class="call-buttons-group red">
+    <a href="https://graf2.typeform.com/to/VEd4e1" class="left" data-label="quote projects">Cotizar Ahora</a>
+    <i class="sep"></i>
+    <a href="#" class="right">Nuestro Trabajo</a>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $('body.projects').attr('data-400','background-color:rgb(244,244,244);');
+  $('body.projects').attr('data-700','background-color:rgb(234,62,106);');
+  $('body.projects').attr('data-1700','background-color:rgb(67,197,213);');
+  $('body.projects').attr('data-2300','background-color:rgb(113,57,158);');
+  $('body.projects').attr('data-3000','background-color:rgb(52,99,169);');
+  $('body.projects').attr('data-4700','background-color:rgb(70,168,76)');
+</script>
+
+<script src="../javascripts/skrollr.js"></script>
+<script src="//cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+<script type="text/javascript">
+   var s = skrollr.init({forceHeight: false});
+   window.sr = ScrollReveal();
+   sr.reveal('.reveal');
+</script>

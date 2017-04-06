@@ -1,17 +1,18 @@
-# Icalialabs
+[![Code Climate](https://codeclimate.com/github/IcaliaLabs/icalialabs/badges/gpa.svg)](https://codeclimate.com/github/IcaliaLabs/icalialabs)
+[![Issue Count](https://codeclimate.com/github/IcaliaLabs/icalialabs/badges/issue_count.svg)](https://codeclimate.com/github/IcaliaLabs/icalialabs)
 
-[![Code Climate](https://codeclimate.com/repos/57e48896300b534c2b004be7/badges/976de06025881af0c7e8/gpa.svg)](https://codeclimate.com/repos/57e48896300b534c2b004be7/feed)
-[![Issue Count](https://codeclimate.com/repos/57e48896300b534c2b004be7/badges/976de06025881af0c7e8/issue_count.svg)](https://codeclimate.com/repos/57e48896300b534c2b004be7/feed)
-
-# Running the site using Docker
-
-This guide will help you get started to setup the project using Docker, and keep using it as part of your development process.
+# Icalia Labs Website
 
 ## Table of contents
 
+- [Overview](#overview)
 - [Installing Docker](#installing-docker)
 - [Running the app](#running-the-app)
 - [Stopping the app](#stopping-the-app)
+
+## Overview
+
+This guide will help you get started to setup the project using Docker, and keep using it as part of your development process.
 
 ## Installing Docker
 
