@@ -111,17 +111,15 @@
     - link: http://www.brina.mx
       name: website
 
-- name: Paco 
-  title: Mobile Intern
-  id: bm
+- name: Paco Martínez
+  title: Ix and UXD Lead
+  id: paco
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/paco.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/paco-close.jpg
-  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
+  bio: "Paco is an Interaction and User Experience Designer with a current focus on Digital Product Design & Strategy. On his free time he’s most definitely learning new Design & Code skills; reading about tech and society; and rambling about the future of interactive experiences."
   networks:
-    - link: https://github.com/bmbrina
-      name: github
-    - link: http://www.brina.mx
-      name: website
+    - link: https://medium.com/@ornitoringostar
+      name: medium
 
 - name: Roberto Quintanilla
   title: Software Engineer
@@ -185,8 +183,8 @@
     - link: https://twitter.com/Emmyklok
       name: twitter
 
-- name: Carlos 
-  title: Sales
+- name: Carlos García
+  title: Sales Engineer
   id: charlie
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie-close.jpg
@@ -229,19 +227,17 @@
 
 
 - name: Pablo Rocha
-  title: Engineer
+  title: Organizational Development
   id: pablo
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/pablo.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/pablo-close.jpg
-  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  bio: "Pablo is an Organizational Culture consultant with more than 20 years of experience in training processes; training design; team integration and Human Resources processes. He currently works half time in Icalia Labs, where he is responsible of facilitating human development processes within the team."
   networks:
-    - link: https://github.com/renata-sg
-      name: github
-    - link: https://twitter.com/renata_saldivar
-      name: twitter
+    - link:
+      name:
 
 - name: Carlos Medellin
-  title: Mobile Intern
+  title: CFO
   id: carlos
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos-close.jpg
