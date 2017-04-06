@@ -188,7 +188,7 @@
   id: charlie
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie-close.jpg
-  bio: "Carlos is a Sales Engineer who focuses primarily on startups and other emerging innovating businesses. His mission is to help entrepreneurs figure out what they need today in order to succeed tomorrow, and how they can use technology to achieve those goals. When he’s not talking to clients or helping entrepreneurs you can find him coding, reading (or listening to) a book or product-hunting. A big part of his life is finding, digesting and curating new relevant info, trends, products, services and strategies to help improve the daily lives of everyone around him."
+  bio: "Carlos is a Sales Engineer who focuses primarily on startups and other emerging innovating businesses. His mission is to help entrepreneurs figure out what they need today in order to succeed tomorrow, and how they can use technology to achieve those goals.<br><br> When he’s not talking to clients or helping entrepreneurs you can find him coding, reading (or listening to) a book or product-hunting. A big part of his life is finding, digesting and curating new relevant info, trends, products, services and strategies to help improve the daily lives of everyone around him."
   networks:
     - link:
       name:
@@ -241,7 +241,7 @@
   id: carlos
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos-close.jpg
-  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
+  bio: "Carlos is the CFO of Icalia Labs, he's in charge of the numbers.<br><br> With a Finance and Economics background, and a deep passion for Psychology, Software and Music, Carlos is always trying to understand how things work and to predict the future based on money, tech and politics. He claims that if he hadn't gone into the business world, he'd probably be coding here with us.<br><br> Carlos is involved in several startups, ranging from Education, Well-Being to Marketing, and he's always thinking on new business models, when he's not, he's probably drumming or cleaning his Toms."
   networks:
     - link: https://github.com/bmbrina
       name: github
