@@ -208,7 +208,9 @@
   id: marcelo
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/marcelo.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/marcelo-close.jpg
-  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  bio: "Marcelo es un ejecutivo en finanzas enfocado en las relaciones de negocios. Siempre buscando los desafíos intelectuales e intrigado por conocer más de tecnología para ofrecer a sus contactos mejores procesos de transformación digital.
+
+>Fanático del fútbol, fiel al Real Madrid y a Rayados de Monterrey. Le gusta cocinar, especialmente en el asador para disfrutar el sabor ahumado, mantiene su pequeño huerto de distintas especies para complementar con el sabor natural."
   networks:
     - link: https://github.com/renata-sg
       name: github
