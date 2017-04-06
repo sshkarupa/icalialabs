@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="project-page">
+  <head>
+    <%= partial "shared/metatags" %>
+    <title>Icalia Labs</title>
+    <link rel="icon" href="<%= ENV["AWS_S3_BUCKET_URL"] %>/assets/img/favicon.ico">
+    <%= stylesheet_link_tag :site %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <link rel="stylesheet" href="//opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-32608013-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  </head>
+  <body class="<%= current_page.data.type %>">
+    <div class="project-container" id="project-container">
+    	<header class="main-menu animated bounceInDown inverse">
+	      <div class="container">
+	        <a href='/'><%= partial "logo" %></a>
+	        <nav class="logo-menu">
+	          <a href="startups">Para Startups</a>
+	          <a href="enterprise">Para Empresas</a>
+	        </nav>
+	        <div class="burger">
+	          <div class="one"></div>
+	          <div class="two"></div>
+	          <span class="burger-label hidden-on-xsmall hidden-on-small">Menú</span>
+	        </div>
+	      </div>
+	    </header>
+	    <nav class="menu-overlay">
+	      <div class="container">
+	        <div class="menu-content">
+	          <div class="menu-content-primary-menu">
+	            <a class="l1 big-link" href="/es/culture"><span class="label-menu">Acerca de nuestra</span>Cultura</a>
+	            <a class="l2 big-link" href="/es/process"><span class="label-menu">Acerca de Nuestros</span>Procesos</a>
+	            <a class="l3 big-link" href="/es/projects"><span class="label-menu">Conoce Nuestro</span>Trabajo</a>
+	            <a class="l4 big-link" href="/es/team"><span class="label-menu">Conoce a Nuestra</span>Familia</a>
+	            <a class="l5 big-link" href="/es/contact"><span class="label-menu">Cuéntanos tu proyecto</span>Contacto</a>
+	            <nav class="list-menu">
+	              <span class="label-menu">Otras páginas</span>
+	              <a href="http://www.meetup.com/Monterrey-Ruby-Meetup/" target="_blank">Ruby Meetup</a>
+	              <a href="http://www.meetup.com/Docker-Monterrey/" target="_blank">Docker Meetup</a>
+	              <a href="https://www.meetup.com/iosmty/" target="_blank">iOS Meetup</a>
+	              <a href="es/culture#positions">Trabajos</a>
+	              <a href="https://medium.com/@icalialabs" target="_blank">Blog</a>
+	            </nav>
+	            <nav class="list-menu">
+	              <span class="label-menu">Contáctanos</span>
+	              <a href="mailto:weare@icalialabs.com">weare@icalialabs.com</a>
+	              <a href="tel:8120898857">+52 01 (81) 2089 8857</a>
+	            </nav>
+	          </div>
+	        </div>
+	      </div>
+	    </nav>
+      <section class="header" style="background-image: url(<%= current_page.data.bg_img %>)" alt="<%= current_page.data.title %>); ">
+      	<div class="container">
+      	 	<div class="title">
+	          <div class="project-name">
+	            <h1 class="project-title"><%= current_page.data.title %></h1>    
+	            <h3 class="light">Cliente: <%= current_page.data.client %></h3>
+	          </div>
+	        	<p class="subline"><%= current_page.data.subtitle %> </p>
+	      	</div>
+      	</div>
+	    </section>
+      <article class="content container">
+        <div>
+          <%= yield %>
+        </div>
+      </article>
+    </div>
+    <%= javascript_include_tag :all %>
+    <%= yield_content :javascripts %>
+  </body>
+</html>

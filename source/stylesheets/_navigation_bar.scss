@@ -152,6 +152,12 @@
     position: absolute;
     top: 42%;
 
+    &.es-en {
+      color: $light-color;
+      left: initial;
+      right: 10%;
+    }
+
     a {
       animation: bounceInDown 1.5s ease;
       color: $light-color;
