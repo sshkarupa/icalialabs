@@ -34,7 +34,7 @@
       name:
 
 - name: Eduardo Higareda
-  title: Designer
+  title: Digital Designer
   id: lentes
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/lentes.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/lentes-close.jpg
@@ -222,18 +222,18 @@
   id: billy
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/billy.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/billy-close.jpg
-  bio: "Billy is an Electronic Engineer with passion for software development. Eager of learning new things, dynamic and cheerful, he likes to have a good time with his friends. He also enjoys playing billiards, listening to music and reading books."
+  bio: "Billy es un ingeniero en electrónica con pasión por el desarrollo de software. Con gusto de aprender cosas nuevas, dinámico y alegre, le gusta pasar un buen rato con sus amigos. También le gusta jugar billar, escuchar música y leer libros."
   networks:
     - link: https://github.com/billyabm
       name: github
 
 
 - name: Pablo Rocha
-  title: Organizational Development
+  title: Desarrollo Organizacional
   id: pablo
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/pablo.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/pablo-close.jpg
-  bio: "Pablo is an Organizational Culture consultant with more than 20 years of experience in training processes; training design; team integration and Human Resources processes. He currently works half time in Icalia Labs, where he is responsible of facilitating human development processes within the team."
+  bio: "Pablo es un consultor en cultura organizacional. Con más de 20 años de experiencia en proceso de capacitación, diseño de entrenamientos, integración de equipos, coaching y procesos de Recursos Humanos. Actualmente labora medio tiempo con Icalia Labs, es  responsable de facilitar los procesos de desarrollo humano del personal."
   networks:
     - link:
       name:
