@@ -127,6 +127,10 @@
     .logo-menu a {
       color: $primary-color;
     }
+
+    .logo-menu.es-en {
+      color: $primary-color;
+    }
   }
 
   .logo {
@@ -230,6 +234,10 @@
 
     .logo-menu::before,
     .logo-menu a {
+      color: $primary-color;
+    }
+
+    .logo-menu.es-en {
       color: $primary-color;
     }
 

@@ -23,7 +23,7 @@ type: team
   <div class="members-fullpage">
     <img src="//s3.amazonaws.com/icalialabs/assets/img/close.png" class="close-mobile visible-on-small visible-on-xsmall" alt="">
     <div class="hide">
-      <img src="//s3.amazonaws.com/icalialabs/assets/img/see-all.png" alt="">
+      <img src="//s3.amazonaws.com/icalialabs/assets/img/see-all-red.png" alt="">
       <h6 class="letter-spacing">View all the team</h6>
     </div>
     <aside class="members-nav hidden-on-small hidden-on-xsmall">
@@ -36,7 +36,7 @@ type: team
     </aside>
     <div class="members-container">
       <% data.members.each do |member| %>
-        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>'); background-size: 80vh;">
+        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>');">
           <div class="member-info">
             <h5 class="name"><%= member.name %></h5>
             <h6 class="position"><%= member.title %></h6>

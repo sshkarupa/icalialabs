@@ -13,7 +13,7 @@ type: team
 
 <section class="team-section">
   <div class="members-grid row">
-    <% data.members.each do |member| %>
+    <% data.members_es.each do |member| %>
       <div class="col-2 nopadding" data-name="<%= member.name %>">
         <div class="members-grid--member" style="background-image: url('<%=member.closeup%>')">
         </div>
@@ -23,20 +23,20 @@ type: team
   <div class="members-fullpage">
     <img src="//s3.amazonaws.com/icalialabs/assets/img/close.png" class="close-mobile visible-on-small visible-on-xsmall" alt="">
     <div class="hide">
-      <img src="//s3.amazonaws.com/icalialabs/assets/img/see-all.png" alt="">
+      <img src="//s3.amazonaws.com/icalialabs/assets/img/see-all-red.png" alt="">
       <h6 class="letter-spacing">Ver a todo el equipo</h6>
     </div>
     <aside class="members-nav hidden-on-small hidden-on-xsmall">
       <h6 class="letter-spacing">Nuestros Miembros</h6>
       <ul class="team-sidebar">
-        <% data.members.each do |member| %>
+        <% data.members_es.each do |member| %>
         <li><a href="javascript:;" data-name="<%= member.name %>"><%= member.name %></a></li>
         <% end %>
       </ul>
     </aside>
     <div class="members-container">
-      <% data.members.each do |member| %>
-        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>'); background-size: 80vh;">
+      <% data.members_es.each do |member| %>
+        <figure class="member" data-name="<%= member.name %>" style="background-image: url('<%=member.picture%>');">
           <div class="member-info">
             <h5 class="name"><%= member.name %></h5>
             <h6 class="position"><%= member.title %></h6>
