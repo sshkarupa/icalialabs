@@ -1,6 +1,6 @@
 - name: Eduardo López
   id: edo
-  title: CEO/FOUNDER
+  title: CEO/FUNDADOR
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/edo.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/edo-close.jpg
   networks:
@@ -8,15 +8,15 @@
       name: twitter
     - link: http://github.com/edolopez
       name: github
-  bio: As CEO and Founder, Eduardo sets the strategic vision for Icalia. <br><br> Since Icalia's founding he has continued to push the boundaries of the software industry in Mexico. <br><br> With a background in Computer Science,  he's actively helping clients to adopt new standards and technologies. <br><br>Eduardo is an avid guitar player, he also likes to practice and watch mixed martial arts. Beard maintenance, technology, music and new experiences define this founding member.
+  bio: Como CEO y Fundador, Eduardo establece la visión estratégica de Icalia. <br />Desde la fundación de Icalia ha continuado empujando los límites de la industria del software en México. <br />Con una formación en Ciencias de la Computación, está ayudando activamente a nuestros clientes a adoptar nuevos estándares y tecnologías. <br />Eduardo es un ávido guitarrista, también le gusta practicar y ver artes marciales mixtas. El mantenimiento de la barba, la tecnología, la música y las nuevas experiencias definen a este miembro fundador.
 
 
 - name: Abraham Kuri
-  title: CTO
+  title: CTO/FUNDADOR
   id: kuri
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/kuri.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/kuri-close.jpg
-  bio: Abraham Kuri is a Rails and iOS developer with an addiction to open source. He is the author of APIs on Rails ebook and has created many open source libraries such as Furatto.<br><br>Abraham is the hacker in chief in charge of keeping sane and healthy code for all of our products. <br><br>He also likes to stay fit, play around with his dog and to learn new cooking recipes.
+  bio: Abraham Kuri es un desarrollador de Rails y iOS con una adicción a código abierto. Él es el autor del ebook “APIs on Rails” y ha creado varias bibliotecas de código abierto como Furatto. <br />Abraham es el hacker en jefe encargado de mantener un código sano y saludable para todos nuestros productos. <br />También le gusta mantenerse en forma, jugar con su perro y aprender nuevas recetas de cocina.
   networks:
     - link: https://twitter.com/kurenn
       name: twitter
@@ -28,17 +28,17 @@
   id: dg
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/mel.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/mel-close.jpg
-  bio: Mel is an emphatic and comprehensive psychologist. Always cheerful and with a smile she works towards creating a healthy and work friendly environment at Icalia. She is always there for solving problems and make our life more happy.  <br><br>Mel is always looking to learn new things and she is always ready to adapt to new scenarios in life. She is not scared of big challenges and creating great things. She likes to go to the movies and longboarding on cool days, enjoys hearing music, dancing, being with her 3 dogs and spending quality time with her significant other.
+  bio: Mel es una psicóloga enfática y comprensiva. Siempre alegre y con una sonrisa que trabaja hacia la creación de un ambiente saludable y el trabajo amistoso en Icalia. Ella siempre está ahí para resolver problemas y hacer nuestra vida más feliz. <br />Mel siempre busca aprender cosas nuevas y siempre está lista para adaptarse a nuevos escenarios en la vida. No tiene miedo de los grandes desafíos y la creación de grandes cosas. A ella le gusta ir al cine y longboarding en días frescos, disfruta escuchar música, bailar, estar con sus 3 perros y pasar tiempo de calidad con su pareja.
   networks:
     - link:
       name:
 
 - name: Eduardo Higareda
-  title: Digital Designer
+  title: Diseñador Digital
   id: lentes
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/lentes.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/lentes-close.jpg
-  bio: Eduardo Higareda is the first designer of the team. He's always looking for the latest trends and technologies, learning new tools and ways to create experiences that evoke feelings from users.<br><br> Eduardo (A.k.a Lentes) is also involved in the design community, he is the founder of Nongrid a project which involves design students on the product design community. He’s also a design, music and hipster blogger.
+  bio: Eduardo Higareda es el primer diseñador del equipo. Siempre está buscando las últimas tendencias y tecnologías, aprendiendo nuevas herramientas y formas de crear experiencias que evocan sentimientos de los usuarios. <br />Eduardo (A.k.a Lentes) también está involucrado en la comunidad de diseño, es el fundador de Nongrid un proyecto que involucra a los estudiantes de diseño en la comunidad de creadores de productos. También es blogger del diseño, de la música y de lo hipster.
   networks:
     - link: https://twitter.com/eldelentes
       name: twitter
@@ -46,11 +46,11 @@
       name: website
 
 - name: Scarlett Garza
-  title: Digital Designer
+  title: Diseñadora Digital
   id: scarlett
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/scarlett.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/scarlett-close.jpg
-  bio: Scarlett is a graphic designer and front-end developer who’s always looking forward for the next big thing as she’s in love with mobile, web design and fashion. <br/><br>Scarlett loves to eat, play around with her dog and sing. Very spontaneous, curious, enthuasiastic and a reeeal talker, she is always wearing a smile and keeping the conversation alive at the office. Coffee is a must in her life. In her free time she loves to watch tv series, go to the movies or just hang out with friends. She’s kind of a video game lover and a little bit crazy too.
+  bio: Scarlett es una diseñadora gráfica y desarrolladora de front-end que siempre está esperando “la próxima gran cosa” ya que está enamorada de los móviles, el diseño web y la moda. <br />A Scarlett le encanta comer, jugar con su perro y cantar. Muy espontánea, curiosa, entusiasta y una verdadera parlanchina, está siempre llevando una sonrisa y que mantiene la conversación viva en la oficina. El café es una necesidad en su vida. En su tiempo libre le encanta ver series de televisión, ir al cine o simplemente salir con amigos. También es una especie de amante de videojuegos y un poco loca.
   networks:
     - link: https://twitter.com/scarlettgarza
       name: twitter
@@ -60,11 +60,11 @@
       name: website
 
 - name: Luis Manzur
-  title: Junior Digital Designer
+  title: Diseñador Digital Junior
   id: lm
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/loui-g.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/loui-g-close.jpg
-  bio: "Luis, better known as Luigi, is a designer, front-end developer, and currently a graphic communication student. Enthusiast for aesthetic order, beautiful typography, geometry,  and symmetry. Technology curious since he can recall. The futbol aficionado of the gang. Nintendo geek (especially Zelda). Amateur skater. Analog photography supporter."
+  bio: Luis, más conocido como Luigi, es un diseñador, desarrollador de front-end, y actualmente estudiante de comunicación gráfica. Entusiasta por el orden estético, tipografía hermosa, geometría y simetría. Curioso de la tecología desde sus primeras memorias. El futbol aficionado de la pandilla. Nintendo geek (especialmente Zelda). Patinador aficionado. Defensor de la fotografía analógica.
   networks:
     - link: https://www.instagram.com/luisphernelia/
       name: instagram
@@ -74,11 +74,11 @@
       name: website
 
 - name: Daniel Lozano
-  title: iOS Engineer
+  title: Ingeniero iOS
   id: daniel
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/dan.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/dan-close.jpg
-  bio: Daniel works as a iOS developer. He loves reading about different programming paradigms and patterns every day, while working on side projects on the weekends. Values clean, well-crafted code over everything else. <br><br>He has a passion for photography and traveling, whenever he is not at his computer. He is originally from Torreon, MX, but has lived almost all of his life in Monterrey, MX. He recently came back from living a couple of years in Austin, TX after finishing up his B.S. in Computer Science over there and working at a startup for a year.
+  bio: Daniel trabaja como desarrollador de iOS. Le encanta leer sobre diferentes paradigmas de programación y patrones cada día, mientras trabaja en proyectos paralelos los fines de semana. Valora un código limpio y bien diseñado sobre todo lo demás. <br />Tiene pasión por la fotografía y los viajes, cuando no está en su computadora. Es originario de Torreón, MX, pero ha vivido casi toda su vida en Monterrey, MX. Recientemente regresó de vivir un par de años en Austin, TX después de terminar su licenciatura en ciencias computacionales ahí y trabajado en un startup por un año.
   networks:
     - link: http://danielozano.com
       name: website
@@ -88,11 +88,11 @@
       name: instagram
 
 - name: Walter Reyes
-  title: Software Developer
+  title: Ingeniero de Software
   id: walter
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/walter.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/walter-close.jpg
-  bio: "Walter is a Software Engineer, mostly for backend but he is also getting interested in the frontend magic. He is always looking for ways to improve his programming skills by doing personal projects, collaborating on open source or reading books. When he is not coding, you can find him playing his harmonica, reading, working out or just doing anything that he finds interesting."
+  bio: Walter es un Ingeniero de Software, principalmente para backend, pero también está interesado en la magia del frontend. Siempre está buscando maneras de mejorar sus habilidades de programación haciendo proyectos personales, colaborando en código abierto o leyendo libros. Cuando no está codificando, puedes encontrarlo tocando su armónica, leyendo, trabajando o simplemente haciendo cualquier cosa que le resulte interesante.
   networks:
     - link: https://www.github.com/walreyes
       name: github
@@ -100,11 +100,11 @@
       name: twitter
 
 - name: Bárbara Martínez
-  title: Mobile Intern
+  title: Practicante Desarrollo Móvil
   id: barbs
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs-close.jpg
-  bio: "Bárbara is a CS student who constantly seeks to learn new technologies and ways to improve her coding skills. Currently, she’s working as an iOS developer. On her free time, she enjoys reading, Halo matches, watching horror movies and is always up for playing sports with friends."
+  bio: Bárbara es una estudiante de Ciencias Computacionales que constantemente busca aprender nuevas tecnologías y maneras de mejorar sus habilidades de programación. Actualmente trabaja como desarrolladora de iOS. <br />En su tiempo libre, le gusta leer, jugar Halo, ver películas de terror y siempre está dispuesta a practicar deportes con amigos.
   networks:
     - link: https://github.com/bmbrina
       name: github
@@ -112,21 +112,21 @@
       name: website
 
 - name: Paco Martínez
-  title: Ix and UXD Lead
+  title: Diseñador de IX y UX
   id: paco
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/paco.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/paco-close.jpg
-  bio: "Paco is an Interaction and User Experience Designer with a current focus on Digital Product Design & Strategy. On his free time he’s most definitely learning new Design & Code skills; reading about tech and society; and rambling about the future of interactive experiences."
+  bio: Paco es un Diseñador de Interacción y Experiencia de Usuario con un enfoque actual en Diseño y Estrategia de Productos Digitales. En su tiempo libre definitivamente lo encontrarás aprendiendo nuevas habilidades de diseño y programación; También le gusta leer sobre la tecnología y la sociedad; Y divagando sobre el futuro de las experiencias interactivas.
   networks:
     - link: https://medium.com/@ornitoringostar
       name: medium
 
 - name: Roberto Quintanilla
-  title: Software Engineer
+  title: Ingeniero de Software
   id: rq
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/vov.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/vov-close.jpg
-  bio: "An innate machine whisperer, coding since he was 10 years old - he used cassettes before diskettes existed! - Experienced in both frontend and backend development, he loves Ruby and Docker, but keeps an eye on other tech trends. <br><br> Whenever he’s not whispering code into machines, he’s either playing rock music, hangin’ out with his wife and nerdy rockstar, and/or close friends, drinking spiced rum, watching NFL (he’s a Patriots fan), F1,  UFC , or doing whacky things."
+  bio: Un 'maquina-parlante' innato, programando desde que los 10 años - le tocó usar cassettes antes de que existieran los disquetes! - Experimentado en el desarrollo de frontend y backend, le encanta Ruby y Docker, pero mantiene un ojo en otras tendencias tecnológicas. <br> <br> Cuando no está susurrando código a las máquinas, está tocando música rock, pasando tiempo con su esposa y nerdy rockstar y/o con sus amigos cercanos, bebiendo ron especiado, viendo NFL (fanático de los Patriots), F1 , UFC, o haciendo cosas 'whacky'.
   networks:
     - link: https://github.com/vovimayhem
       name: github
@@ -134,11 +134,11 @@
       name: twitter
 
 - name: Mayra Cabrera
-  title: Software Engineer
+  title: Ingeniera de Software
   id: mayra
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/mayra.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/mayra-close.jpg
-  bio: "Mayra is our software engineer and crazy cat lady. She loves building products that help people achieve their goals and make their lives easier. <br ><br > Obsessed with programming, she loves a merge request that can be accepted without comments & beautiful, concise and well crafted code created through best practices & patterns. <br ><br > She also enjoys geeky stuff in general like science, books, movies, tv series and of course, cats."
+  bio: Mayra es nuestra ingeniera de software y 'crazy cat lady'. Le encanta crear productos que ayuden a las personas a lograr sus metas y facilitar su vida. <br /> <br> Obsesionada con la programación, le encanta una 'merge request' que pueda ser aceptada sin comentarios y código hermoso, conciso y bien diseñado creado a través de las mejores prácticas y patrones. <br /> <br> También disfruta de cosas geeky en general como ciencia, libros, películas, series de televisión y por supuesto, gatos.
   networks:
     - link: https://github.com/mayra-cabrera
       name: github
@@ -148,11 +148,11 @@
       name: website
 
 - name: Luis Cejudo
-  title: Software Developer
+  title: Ingeniero de Software
   id: cejas
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/cejas.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/cejas-close.jpg
-  bio: "Cejas is a simple being with a simple life in a complex universe. He majored in physics but he happens to love coding. He is the kind of human being who collects more questions than answers. He spends his days coding, drawing, designing, writing or just meditating. Indeed he is always busy but open to have a glass of red wine and discuss philosophical subjects just for fun."
+  bio: Cejas es un ser simple con una vida sencilla en un universo complejo. Se especializó en física, pero le encanta codificar. Él es el tipo de ser humano que recoge más preguntas que respuestas. Pasa sus días codificando, dibujando, diseñando, escribiendo o simplemente meditando. De hecho, está siempre ocupado, pero abierto a tomar una copa de vino tinto y discutir temas filosóficos sólo por diversión.
   networks:
     - link: https://github.com/thelastinuit
       name: github
@@ -162,21 +162,21 @@
       name: website
 
 - name: Alejandro Sherwell
-  title: Software Developer
+  title: Ingeniero de Software
   id: sherwell
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/sherwell.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/sherwell-close.jpg
-  bio: "Sherwell is a friendly developer who is passionate about learning and creating digital solutions. In his free time, he is either having a great time with his friends or playing video games. He’s always open to get together and drink a couple of cold beers."
+  bio: Sherwell es un desarrollador amigable y apasionado de aprender y crear soluciones digitales. En su tiempo libre se dedica a pasar buenos ratos con sus amigos o jugando videojuegos. Siempre está abierto para reunirse y beber un par de cervezas frías.
   networks:
     - link: https://github.com/Sherwell
       name: github
 
 - name: Emmanuel De Oleo
-  title: Software Developer
+  title: Ingeniero de Software
   id: emmy
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/emmy.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/emmy-close.jpg
-  bio: "Emmy is our full-stack developer, but loves and prefers front-end technologies. A JavaScript and web development lover, he's been coding since he was just 14 years old. Loves to spend time learning new technologies and reading articles, blogs and watching tutorials on youtube. Dreams of playing basketball all day long, even when he is not good at it."
+  bio: Emmy es desarrollador full-stack, pero le encanta y prefiere las tecnologías front-end. Un amante de JavaScript y desarrollo web, ha estado programando desde que tenía sólo 14 años. Le encanta pasar tiempo aprendiendo nuevas tecnologías y leyendo artículos, blogs y viendo tutoriales en youtube. Sueña con jugar basketball todo el día, aunque no es tan bueno.
   networks:
     - link: https://github.com/Emmy02
       name: github
@@ -184,33 +184,31 @@
       name: twitter
 
 - name: Carlos García
-  title: Sales Engineer
+  title: Tech Lead | Desarrollador de Negocios
   id: charlie
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie-close.jpg
-  bio: "Carlos is a Sales Engineer who focuses primarily on startups and other emerging innovating businesses. His mission is to help entrepreneurs figure out what they need today in order to succeed tomorrow, and how they can use technology to achieve those goals.<br><br> When he’s not talking to clients or helping entrepreneurs you can find him coding, reading (or listening to) a book or product-hunting. A big part of his life is finding, digesting and curating new relevant info, trends, products, services and strategies to help improve the daily lives of everyone around him."
+  bio: Carlos es nuestro guía en tecnología de negocios que se enfoca principalmente en nuevas empresas emergentes y startups. Su misión es ayudar a los empresarios a averiguar lo que necesitan hoy en día para tener éxito mañana y cómo pueden utilizar la tecnología para lograr esos objetivos. Cuando no está hablando con clientes o ayudando a emprendedores puedes encontrarlo programando, leyendo (o escuchando) un libro o cazando nuevos productos. Una gran parte de su vida es encontrar, digerir y curar información relevante, tendencias, productos, servicios y estrategias para ayudar a mejorar la vida cotidiana de todos los que lo rodean.
   networks:
     - link:
       name:
 
 - name: Rafael Cárdenas
-  title: Sales
+  title: Desarrollador iOS
   id: rafa
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/rafa.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/rafa-close.jpg
-  bio: "Rafael is a software engineer specialized in iOS and mobile application development. He’s been very passionate about computers and electronics since he can remember and he’s always looking for new ways to use technology to solve society’s hardest problems. He’s also a musician and composer who plays a variety of instruments including guitar, piano, synthesizer, bass, etc."
+  bio: Rafael es ingeniero de software especializado en iOS y desarrollo de aplicaciones móviles. Muy apasionado por las computadoras y la electrónica desde que puede recordar y siempre está buscando nuevas formas de utilizar la tecnología para resolver los problemas más difíciles de la sociedad. También es músico y compositor que toca una variedad de instrumentos como guitarra, piano, sintetizador, bajo, etc.
   networks:
     - link: https://github.com/rafaelcr
       name: github
 
 - name: Marcelo
-  title: Sales
+  title: Líder del Área Comercial
   id: marcelo
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/marcelo.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/marcelo-close.jpg
-  bio: "Marcelo es un ejecutivo en finanzas enfocado en las relaciones de negocios. Siempre buscando los desafíos intelectuales e intrigado por conocer más de tecnología para ofrecer a sus contactos mejores procesos de transformación digital.
-
->Fanático del fútbol, fiel al Real Madrid y a Rayados de Monterrey. Le gusta cocinar, especialmente en el asador para disfrutar el sabor ahumado, mantiene su pequeño huerto de distintas especies para complementar con el sabor natural."
+  bio: Marcelo es un ejecutivo en finanzas enfocado en las relaciones de negocios. Siempre buscando los desafíos intelectuales e intrigado por conocer más de tecnología para ofrecer a sus contactos mejores procesos de transformación digital. <br />Fanático del fútbol, fiel al Real Madrid y a Rayados de Monterrey. Le gusta cocinar, especialmente en el asador para disfrutar el sabor ahumado, mantiene su pequeño huerto de distintas especies para complementar con el sabor natural.
   networks:
     - link: https://github.com/renata-sg
       name: github
@@ -218,11 +216,11 @@
       name: twitter
 
 - name: Abraham Montemayor
-  title: Engineer
+  title: Ingeniero de Software
   id: billy
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/billy.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/billy-close.jpg
-  bio: "Billy es un ingeniero en electrónica con pasión por el desarrollo de software. Con gusto de aprender cosas nuevas, dinámico y alegre, le gusta pasar un buen rato con sus amigos. También le gusta jugar billar, escuchar música y leer libros."
+  bio: Billy es un ingeniero en electrónica con pasión por el desarrollo de software. Con gusto de aprender cosas nuevas, dinámico y alegre, le gusta pasar un buen rato con sus amigos. También le gusta jugar billar, escuchar música y leer libros.
   networks:
     - link: https://github.com/billyabm
       name: github
@@ -233,7 +231,7 @@
   id: pablo
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/pablo.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/pablo-close.jpg
-  bio: "Pablo es un consultor en cultura organizacional. Con más de 20 años de experiencia en proceso de capacitación, diseño de entrenamientos, integración de equipos, coaching y procesos de Recursos Humanos. Actualmente labora medio tiempo con Icalia Labs, es  responsable de facilitar los procesos de desarrollo humano del personal."
+  bio: Pablo es un consultor en cultura organizacional. Con más de 20 años de experiencia en proceso de capacitación, diseño de entrenamientos, integración de equipos, coaching y procesos de Recursos Humanos. Actualmente labora medio tiempo con Icalia Labs, es  responsable de facilitar los procesos de desarrollo humano del personal.
   networks:
     - link:
       name:
@@ -243,7 +241,7 @@
   id: carlos
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/carlos-close.jpg
-  bio: "Carlos is the CFO of Icalia Labs, he's in charge of the numbers.<br><br> With a Finance and Economics background, and a deep passion for Psychology, Software and Music, Carlos is always trying to understand how things work and to predict the future based on money, tech and politics. He claims that if he hadn't gone into the business world, he'd probably be coding here with us.<br><br> Carlos is involved in several startups, ranging from Education, Well-Being to Marketing, and he's always thinking on new business models, when he's not, he's probably drumming or cleaning his Toms."
+  bio: Carlos es el Director Financiero de Icalia Labs, él es el responsable de los números. <br> <br> Con una formación en Finanzas y Economía, y una profunda pasión por la Psicología, el Software y la Música, Carlos siempre está tratando de entender cómo funcionan las cosas y cómo predecir el futuro basado en el dinero, la tecnología y la política. Él afirma que si no hubiera entrado en el mundo de los negocios, probablemente estaría programando aquí con nosotros. Carlos está involucrado en varias startups, desde Educación y Bienestar hasta Marketing, y siempre está pensando en nuevos modelos de negocios, cuando no lo está, probablemente está tamborileando o limpiando a su Toms.
   networks:
     - link: https://github.com/bmbrina
       name: github
@@ -251,11 +249,11 @@
       name: website
 
 - name: Héctor Morales González
-  title: Software Engineering Intern
+  title: Practicante de Ingeniería de Software
   id: hector
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/hector.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/hector-close.jpg
-  bio: "Héctor is an intern who strives to develop a well-rounded set of software development skills. He likes to think of himself as the embodiment of curiosity, and is in constant search of stimulating intelectual discourse. When he’s not coding, he can be found either reading, drawing, wakeboarding or having an intense philosophical discussion with pretty much anyone."
+  bio: Héctor es un practicante que se esfuerza por desarrollar un conjunto completo de habilidades de desarrollo de software. Le gusta pensar en sí mismo como la encarnación de la curiosidad, y está en constante búsqueda de estimular el discurso intelectual. Cuando no está codificando, se le puede encontrar ya sea leyendo, dibujando, wakeboardeando o teniendo una intensa discusión filosófica con casi cualquier persona.
   networks:
     - link: https://github.com/HectorMg
       name: github
@@ -263,21 +261,21 @@
       name: instagram
 
 - name: Jorge Elizondo
-  title: IOS Intern
+  title: Practicante iOS 
   id: jorge
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/jorge.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/jorge-close.jpg
-  bio: "Jorge is an IOS intern focusing in swift programming language. His passion is to make mobile applications and in his free time he likes to play chess or read a good book."
+  bio: Jorge es un practicante de iOS que se centra en Swift. Su pasión es hacer aplicaciones móviles y en su tiempo libre le gusta jugar ajedrez o leer un buen libro.
   networks:
     - link: https://github.com/Jelizondo
       name: github
 
 - name: Renata Saldívar
-  title: Software Engineering Intern
+  title: Practicante de Ingeniería de Software
   id: renata
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/renata.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/renata-close.jpg
-  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  bio: Renata es una practicante que busca adquirir nuevas habilidades tecnológicas. Le encanta reír y conocer gente. En su tiempo libre suele cantar a todo pulmón, leer libros o practicar patinaje sobre hielo.
   networks:
     - link: https://github.com/renata-sg
       name: github

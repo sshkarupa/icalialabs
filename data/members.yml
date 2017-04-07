@@ -184,17 +184,17 @@
       name: twitter
 
 - name: Carlos García
-  title: Sales Engineer
+  title: Tech Lead / BizDev
   id: charlie
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/charlie-close.jpg
-  bio: "Carlos is a Sales Engineer who focuses primarily on startups and other emerging innovating businesses. His mission is to help entrepreneurs figure out what they need today in order to succeed tomorrow, and how they can use technology to achieve those goals.<br><br> When he’s not talking to clients or helping entrepreneurs you can find him coding, reading (or listening to) a book or product-hunting. A big part of his life is finding, digesting and curating new relevant info, trends, products, services and strategies to help improve the daily lives of everyone around him."
+  bio: "Carlos is our Business Tech Lead who focuses primarily on startups and other emerging innovating businesses. His mission is to help entrepreneurs figure out what they need today in order to succeed tomorrow, and how they can use technology to achieve those goals.<br><br> When he’s not talking to clients or helping entrepreneurs you can find him coding, reading (or listening to) a book or product-hunting. A big part of his life is finding, digesting and curating new relevant info, trends, products, services and strategies to help improve the daily lives of everyone around him."
   networks:
     - link:
       name:
 
 - name: Rafael Cárdenas
-  title: Sales
+  title: iOS Developer
   id: rafa
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/rafa.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/rafa-close.jpg
@@ -204,11 +204,11 @@
       name: github
 
 - name: Marcelo
-  title: Sales
+  title: Head of Business Development
   id: marcelo
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/marcelo.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/marcelo-close.jpg
-  bio: "Renata is an intern that seeks to acquire new technology skills . She loves to laugh and meet people. In her free time she is usually singing her lungs out, reading books or practicing ice skating."
+  bio: "Marcelo is an finance executive focused on business relationships. Always looking for intellectual challenges and intrigued to know more about technology to offer their contacts better processes of digital transformation. <br/> Football fan, loyal to Real Madrid and Rayados de Monterrey. He likes to cook, especially in the grill to enjoy the smoked flavor, and he also keeps his small orchard of different species to complement with the natural flavor."
   networks:
     - link: https://github.com/renata-sg
       name: github
