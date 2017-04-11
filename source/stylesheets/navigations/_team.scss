@@ -187,7 +187,7 @@
       transition: all .2s ease-in-out;
 
       @include phone {
-        background-size: 50vh;
+        background-size: 55vh;
         height: 50vh;
       }
     }
@@ -198,7 +198,7 @@
     animation: appear .8s;
     background-position: 110%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90%;
     color: $light-color;
     display: none;
     height: 100vh;

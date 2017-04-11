@@ -29,5 +29,5 @@ $('.members-grid .col-2').click(function() {
 	$('.members-grid').fadeOut();
 	$('.member').hide();
 	$('.member[data-name="'+ member +'"]').show();
-	$('body').scrollTo($(".team-section").offset().top);
+	$('body').animate({scrollTop: $('.team-section').offset().top -65 }, 'slow');
 });
