@@ -138,7 +138,7 @@
   id: mayra
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/mayra.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/mayra-close.jpg
-  bio: Mayra es nuestra ingeniera de software y 'crazy cat lady'. Le encanta crear productos que ayuden a las personas a lograr sus metas y facilitar su vida. <br /> <br> Obsesionada con la programación, le encanta una 'merge request' que pueda ser aceptada sin comentarios y código hermoso, conciso y bien diseñado creado a través de las mejores prácticas y patrones. <br /> <br> También disfruta de cosas geeky en general como ciencia, libros, películas, series de televisión y por supuesto, gatos.
+  bio: Mayra es nuestra ingeniera de software y 'crazy cat lady'. Le encanta crear productos excepcionales que ayudan a las personas a lograr sus metas y facilitar su vida. <br /> <br> También le gusta el código hermoso y los 'pull requests' que puedan ser aceptados sin comentarios. <br /> <br> En su tiempo libre disfruta de cosas geeky en general como ciencia, libros, películas, series de televisión y por supuesto, gatos.
   networks:
     - link: https://github.com/mayra-cabrera
       name: github
