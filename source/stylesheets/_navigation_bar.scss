@@ -119,7 +119,7 @@
     max-width: 100%;
   }
 
-  &.is-active {
+  &.active {
     left: 0;
     position: fixed;
     right: 0;
@@ -145,7 +145,7 @@
       width: px-to-rems(30);
     }
 
-    &.is-active > svg {
+    &.active > svg {
       fill: $primary-color;
     }
   }
