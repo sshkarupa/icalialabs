@@ -13,7 +13,7 @@ type: projects
 </section>
 <section class="projects-wrapper">
   <section class="projects-container">
-      <% data.projects.each do |project| %>
+      <% data.projects_es.each do |project| %>
         <a href="<%= project.link %>" target="blank" class="projects-link">
           <article class="projects-container-item <%= project.name %> reveal" style="background-image: url(<%= project.image %>); box-shadow: 0 6px 40px #<%= project.color %>, inset 0 1px 1px rgba(255, 255, 255, 0.25);">
             <div class="container row clearfix">
