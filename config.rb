@@ -47,6 +47,7 @@ configure :build do
 
   activate :sprockets
   activate :directory_indexes
+  activate :i18n, :langs => [:en, :es]
 end
 
 #Environment variables
