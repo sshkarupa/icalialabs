@@ -111,6 +111,16 @@
     - link: http://www.brina.mx
       name: website
 
+- name: Miguel Garcia
+  title: Software Engineer
+  id: mike
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/mike.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/mike-close.jpg
+  bio: "Ingeniero de software, con experiencia en desarrollo de back-end con Ruby así como desarrollo front-end con distintos frameworks. Siempre está aprendiendo nuevas cosas de tecnología en el Internet o comprando nuevos productos en Amazon. Amante de los videojuegos, cuando no está programando, está jugando videojuegos o leyendo noticias sobre la industria del juego."
+  networks:
+    - link: https://github.com/miguejs
+      name: github
+
 - name: Paco Martínez
   title: Diseñador de IX y UX
   id: paco

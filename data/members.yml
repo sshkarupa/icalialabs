@@ -111,6 +111,16 @@
     - link: http://www.brina.mx
       name: website
 
+- name: Miguel Garcia
+  title: Software Engineer
+  id: mike
+  picture: https://s3.amazonaws.com/icalialabs/assets/img/team/mike.jpg
+  closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/mike-close.jpg
+  bio: "Software engineer, experienced in backend development with ruby and front-end as well, he’s always learning new tech stuff on the internet or buying new stuff on amazon. Videogame lover, when he is not programming he is playing video games or reading news  about the gaming industry."
+  networks:
+    - link: https://github.com/miguejs
+      name: github
+
 - name: Paco Martínez
   title: Ix and UXD Lead
   id: paco
