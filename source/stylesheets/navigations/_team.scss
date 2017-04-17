@@ -33,10 +33,9 @@
   }
 
   .section-header {
-    @include background-size(cover);
-
     background: url('//s3.amazonaws.com/icalialabs/assets/img/team.jpg');
     background-position: center center;
+    @include background-size(cover);
     color: $light-color;
     text-align: left;
 
@@ -168,26 +167,29 @@
 
   .members-grid {
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
 
-    .col-2 {
+    &--member-container {
       overflow: hidden;
       transition: all .5 ease-in-out;
+      width: 20%;
     }
 
-    .col-2:hover .members-grid--member {
+    &--member-container:hover .members-grid--member {
       transform: scale(1.2);
     }
 
     &--member {
       background-position: center top;
       background-repeat: no-repeat;
-      background-size: 40vh;
-      background-position: 50%;
-      height: 30vh;
+      background-size: 50vh;
+      background-position: 50% 35%;
+      height: 35vh;
       transition: all .2s ease-in-out;
 
       @include phone {
-        background-size: 50vh;
+        background-size: 55vh;
         height: 50vh;
       }
     }
@@ -198,7 +200,7 @@
     animation: appear .8s;
     background-position: 110%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90%;
     color: $light-color;
     display: none;
     height: 100vh;

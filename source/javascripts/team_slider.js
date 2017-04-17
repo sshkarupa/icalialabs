@@ -21,7 +21,7 @@ $('.close-mobile').click(function() {
 	$('.members-grid').fadeIn();
 });
 
-$('.members-grid .col-2').click(function() {
+$('.members-grid .members-grid--member-container').click(function() {
 	var member = $(this).attr('data-name');
 	$('.active').removeClass('active');
 	$('a[data-name="'+ member +'"]').addClass('active');
@@ -29,5 +29,5 @@ $('.members-grid .col-2').click(function() {
 	$('.members-grid').fadeOut();
 	$('.member').hide();
 	$('.member[data-name="'+ member +'"]').show();
-	$('body').scrollTo($(".team-section").offset().top);
+	$('body').animate({scrollTop: $('.team-section').offset().top -65 }, 'slow');
 });

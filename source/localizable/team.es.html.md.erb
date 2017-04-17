@@ -14,7 +14,7 @@ type: team
 <section class="team-section">
   <div class="members-grid row">
     <% data.members_es.each do |member| %>
-      <div class="col-2 nopadding" data-name="<%= member.name %>">
+      <div class="members-grid--member-container nopadding" data-name="<%= member.name %>">
         <div class="members-grid--member" style="background-image: url('<%=member.closeup%>')">
         </div>
       </div>
