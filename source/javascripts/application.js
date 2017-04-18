@@ -75,3 +75,19 @@ $(window).scroll(function(){
 $("a[data-label]").on("click", function(){
   ga("send", "event", "clicks", $(this).data('label'))
 })
+
+$(".es-btn").on('click', function() {
+	if (window.location.pathname.split("/")[1]==="es") {
+		window.location.pathname = window.location.pathname;
+	} else {
+		window.location.pathname = "/es"+window.location.pathname
+	}
+});
+
+$(".en-btn").on('click', function() {
+	if (window.location.pathname.split("/")[1]==="es") {
+		window.location.pathname = window.location.pathname.split("/")[2];
+	} else {
+		window.location.pathname = window.location.pathname;
+	}
+});
