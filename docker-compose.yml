@@ -5,6 +5,24 @@ volumes:
     driver: local
 
 services:
+  production:
+    image: icalialabs/icalia:production
+    build:
+      context: .
+      dockerfile: prod.Dockerfile
+    command: bundle exec puma -t 5:5 -p 4040 -e production
+    working_dir: /usr/src/app
+    ports:
+      - 4040:4040
+    tty: true
+    environment:
+      LANG: 'en_US.UTF-8'
+      LANGUAGE: 'en_US.UTF-8'
+      LC_ALL: 'C.UTF-8'
+      RACK_ENV: 'production'
+      PORT: '4040'
+
+
   web:
     image: icalialabs/icalia:dev
     build:
