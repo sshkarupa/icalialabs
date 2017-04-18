@@ -24,7 +24,7 @@
   width: 85vw;
 
   @include phone {
-    opacity: 1;
+    opacity: 1 !important;
   }
 
   &:hover {
