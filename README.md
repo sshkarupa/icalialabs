@@ -8,6 +8,7 @@
 - [Overview](#overview)
 - [Installing Docker](#installing-docker)
 - [Running the app](#running-the-app)
+- [Run production locally](#run-production-locally)
 - [Stopping the app](#stopping-the-app)
 
 ## Overview
@@ -57,6 +58,18 @@ web_1  | == LiveReload accepting connections from ws://172.21.0.2:35729
 web_1  | == View your site at "http://0.0.0.0:4567"
 web_1  | == Inspect your site configuration at "http://0.0.0.0:4567/__middleman"
 ```
+
+## Run production locally
+
+In order to simulate the website for the production environment, to prevent unnecessary pushes we provide a container with a deployment-like configuration, to run it just:
+
+```console
+% docker-compose up --build production
+```
+
+Then just navigate to [http://localhost:4040](http://localhost:4040) and you should be good to go.
+
+**You must stop and lift the container with the previous command for each change.**
 
 ## Stopping the app
 
