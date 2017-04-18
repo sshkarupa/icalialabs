@@ -200,6 +200,11 @@
     width: px-to-rems(30);
     z-index: 300;
 
+    @include phone {
+      right: px-to-rems(15);
+      top: px-to-rems(55);
+    }
+
     &.active {
       transform: translateY(-45%);
     }

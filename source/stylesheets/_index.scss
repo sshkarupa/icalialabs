@@ -430,6 +430,10 @@
     margin: 0 auto;
     width: 95%;
 
+    @include phone {
+      width: 100%;
+    }
+
     .container {
       width: 70%;
 
@@ -548,6 +552,10 @@
       transform: translateX(-50%);
       transition: all .3s ease;
       width: 20%;
+
+      @include phone {
+        transition: none;
+      }
     }
 
     &-link:hover::after {
