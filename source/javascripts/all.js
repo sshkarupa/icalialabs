@@ -1,4 +1,5 @@
 //= require application
+//= require adwords-tracking
 //= require classie
 //= require jquery.kinetic.min
 //= require jquery-waypoints
@@ -10,3 +11,4 @@
 //= require typeit.min
 //= require modernizr.custom.min
 //= require jquery.catslider
+

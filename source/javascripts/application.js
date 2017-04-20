@@ -73,7 +73,10 @@ $(window).scroll(function(){
 });
 
 $("a[data-label]").on("click", function(){
-  ga("send", "event", "clicks", $(this).data('label'))
+  ga("send", "event", "clicks", $(this).data('label'));
+  if ($(this).data('label').indexOf("quote") !== -1) {
+  	goog_report_conversion();
+  }
 })
 
 $(".es-btn").on('click', function() {
