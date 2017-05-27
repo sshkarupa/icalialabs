@@ -1,5 +1,6 @@
 //= require application
 //= require adwords-tracking
+//= require cookies
 //= require classie
 //= require jquery.kinetic.min
 //= require jquery-waypoints
