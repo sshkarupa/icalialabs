@@ -11,7 +11,7 @@ $(document).ready(function() {
   }
 })
 
-$("a[data-label^='quote']").on('click', function() {
+$("a[data-label^='quote']:not([data-label$='es'])").on('click', function() {
   var quotientTest = readCookie("quotient-test");
   if (quotientTest == "b") {
     var win = window.open("http://quotient.icalialabs.com", '_blank');
