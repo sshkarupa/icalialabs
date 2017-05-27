@@ -1,6 +1,25 @@
 var idx, idxs, ignore, rule, scrollToTop, stylesheet, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
 var isOpen = false;
 
+$(document).ready(function() {
+  var quotientTest = readCookie("quotient-test");
+  console.log(quotientTest)
+  if (!quotientTest) {
+    var samples = ["a", "b"];
+    var sample = samples[Math.floor(Math.random()*samples.length)];
+    createCookie("quotient-test", sample, 45)
+  }
+})
+
+$("a[data-label^='quote']").on('click', function() {
+  var quotientTest = readCookie("quotient-test");
+  if (quotientTest == "b") {
+    var win = window.open("http://quotient.icalialabs.com", '_blank');
+    win.focus();
+    return false
+  }
+});
+
 $(document).on("mobileinit", function() {
   $.mobile.hidePageLoadingMsg();
   $.mobile.ajaxEnabled = false;
@@ -94,3 +113,5 @@ $(".en-btn").on('click', function() {
 		window.location.pathname = window.location.pathname;
 	}
 });
+
+
