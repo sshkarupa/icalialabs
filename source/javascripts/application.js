@@ -3,7 +3,7 @@ var isOpen = false;
 
 $(document).ready(function() {
   var quotientTest = readCookie("quotient-test");
-  console.log(quotientTest)
+  // console.log(quotientTest)
   if (!quotientTest) {
     var samples = ["a", "b"];
     var sample = samples[Math.floor(Math.random()*samples.length)];
