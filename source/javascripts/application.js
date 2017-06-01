@@ -3,7 +3,6 @@ var isOpen = false;
 
 $(document).ready(function() {
   var quotientTest = readCookie("quotient-test");
-  console.log(quotientTest)
   if (!quotientTest) {
     var samples = ["a", "b"];
     var sample = samples[Math.floor(Math.random()*samples.length)];
@@ -92,9 +91,15 @@ $(window).scroll(function(){
 });
 
 $("a[data-label]").on("click", function(){
+  var quotientTest = readCookie("quotient-test");
   ga("send", "event", "clicks", $(this).data('label'));
   if ($(this).data('label').indexOf("quote") !== -1) {
   	goog_report_conversion();
+    if (quotientTest == "b") {
+      ga("send", "event", "A/B Test", "Sent to Quotient");
+    } else {
+      ga("send", "event", "A/B Test", "Sent to Typeform");
+    }
   }
 })
 
