@@ -87,6 +87,7 @@
   }
 
   &:last-child {
+    padding-left: px-to-rems(30);
     width: 90%;
   }
 
