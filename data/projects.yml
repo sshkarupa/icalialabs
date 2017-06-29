@@ -68,3 +68,10 @@
   image: ../images/well-data/rts-bg.png
   color: 284a7c
   link: well-data
+
+- name: Yoga para Mi
+  client: 
+  done: Design Sprint & Development
+  image: ../images/yoga/yoga-bg.png
+  color: 284a7c
+  link: yoga
