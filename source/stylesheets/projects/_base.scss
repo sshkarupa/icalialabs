@@ -155,12 +155,6 @@
   @extend %clearfix;
   margin: px-to-rems(80) auto;
 
-  p {
-    font-size: px-to-rems(17);
-    line-height: px-to-rems(32);
-    margin: 0 auto;
-  }
-
   .case-study-title {
     font-size: px-to-rems(25);
   }
@@ -211,13 +205,6 @@
       background-size: 100%;
     }
   }
-}
-
-.gif-block {
-  @include background-size(cover);
-  height: 60vh;
-  margin: 0 auto;
-  width: 60%;
 }
 
 .half-full {
