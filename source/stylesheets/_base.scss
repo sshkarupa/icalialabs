@@ -77,3 +77,24 @@ p {
   margin: px-to-rems(128) auto px-to-rems(64);
   width: 85%;
 }
+
+.align-flex {
+  display: flex;
+
+  @include phone {
+    display: block;
+  }
+
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.between {
+    justify-content: space-between;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}
