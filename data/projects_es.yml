@@ -48,3 +48,38 @@
   color: 284a7c
   link: messa
 
+- name: Jubel
+  client: Jorge Borbolla
+  done: Design Sprint & Desarrollo
+  image: ../images/jubel/jubel-bg.png
+  color: 284a7c
+  link: jubel
+
+- name: Dash
+  client: Saúl Villegas Sojo y Juan Pablo Raigosa
+  done: Branding, UI/UX Design & Desarrollo
+  image: ../images/dash/dash-bg.jpg
+  color: 284a7c
+  link: dash
+
+- name: Well Data
+  client: RTS
+  done: Design Sprint & Desarrollo
+  image: ../images/well-data/rts-bg.png
+  color: 284a7c
+  link: well-data
+
+- name: Yoga para Mi
+  client: 
+  done: Design Sprint & Desarrollo
+  image: ../images/yoga/yoga-bg.png
+  color: 284a7c
+  link: yoga
+
+- name: Datoz
+  client: Sergio Mireles
+  done: Design Sprint & Desarrollo
+  image: ../images/datoz/datoz-bg.png
+  color: 284a7c
+  link: datoz
+
