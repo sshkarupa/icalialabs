@@ -51,14 +51,14 @@
 - name: Jubel
   client: Jorge Borbolla
   done: Design Sprint & Development
-  image: ../images/jubel/03-travel.jpg
+  image: ../images/jubel/jubel-bg.png
   color: 284a7c
   link: jubel
 
 - name: Dash
   client: Saúl Villegas Sojo y Juan Pablo Raigosa
   done: Branding, UI/UX Design & Development
-  image: https://s3.amazonaws.com/icalialabs/assets/img/messa/messa.jpg
+  image: ..images/dash/dash-bg.jpg
   color: 284a7c
   link: dash
 
