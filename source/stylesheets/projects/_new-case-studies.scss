@@ -165,6 +165,16 @@
   }
 }
 
+.highlight-image__container {
+  background: #9ea1b4;
+  padding: px-to-rems(80) px-to-rems(60);
+
+  img {
+    margin: px-to-rems(20) 0;
+    width: 55%;
+  }
+}
+
 .case-study__container {
   @include background-size(cover);
   border-radius: px-to-rems(3);
@@ -191,10 +201,33 @@
   }
 }
 
+.link-container {
+  align-items: center;
+  background: #4a4a4a;
+  border-radius: px-to-rems(3);
+  padding: px-to-rems(40) px-to-rems(60);
+  width: 100%;
+
+  img {
+    height: px-to-rems(50);
+    margin-right: px-to-rems(30);
+  }
+
+  a {
+    color: #fff;
+    font-size: px-to-rems(32);
+  }
+
+  h6 {
+    color: #fff;
+    font-size: px-to-rems(14);
+  }
+}
+
 .well-data {
   .one-highlight-image__container,
   .two-highlight-image__container {
-    background: #3c455a !important;
+    background: #3c455a;
   }
 }
 

@@ -58,7 +58,7 @@
 - name: Dash
   client: Saúl Villegas Sojo y Juan Pablo Raigosa
   done: Branding, UI/UX Design & Development
-  image: ..images/dash/dash-bg.jpg
+  image: ../images/dash/dash-bg.jpg
   color: 284a7c
   link: dash
 
@@ -75,3 +75,10 @@
   image: ../images/yoga/yoga-bg.png
   color: 284a7c
   link: yoga
+
+- name: Datoz
+  client: Sergio Mireles
+  done: Design Sprint & Development
+  image: ../images/datoz/datoz-bg.png
+  color: 284a7c
+  link: datoz
