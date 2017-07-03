@@ -224,20 +224,23 @@
   }
 }
 
-.well-data {
+.well-data,
+.es_well-data {
   .one-highlight-image__container,
   .two-highlight-image__container {
     background: #3c455a;
   }
 }
 
-.yoga {
+.yoga,
+.es_yoga {
   .two-highlight-image__container{
     background: #d1f8f2;
   }
 }
 
-.dash {
+.dash,
+.es_dash {
   .imagery-block {
     img {
       height: px-to-rems(380);
