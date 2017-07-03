@@ -49,14 +49,43 @@
   &__content {
     font-size: px-to-rems(16);
     width: 50%;
+
+    @include phone {
+      width: 100%;
+    }
+  }
+}
+
+.imagery-block-client {
+  align-items: center;
+  margin: px-to-rems(150) 0;
+  height: 30vh;
+
+  @include phone {
+    height: auto;
+  }
+
+  img {
+    display: block;
+    width: 18%;
+
+    @include phone {
+      width: 100%;
+    }
   }
 }
 
 .imagery-block {
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 50vh;
-  margin: px-to-rems(50) 0;
+  margin: px-to-rems(150) 0;
+
+  img {
+    height: px-to-rems(350);
+
+    @include phone {
+      height: auto;
+      width: 100%;
+    }
+  }
 }
 
 .gif-block {
