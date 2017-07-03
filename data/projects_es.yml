@@ -52,34 +52,34 @@
   client: Jorge Borbolla
   done: Design Sprint & Desarrollo
   image: https://s3.amazonaws.com/icalialabs/assets/img/jubel/Jubel.jpg
-  color: 284a7c
+  color: 01BAE1
   link: jubel
 
 - name: Dash
   client: Saúl Villegas Sojo y Juan Pablo Raigosa
   done: Branding, UI/UX Design & Desarrollo
-  image: ../images/dash/dash-bg.jpg
-  color: 284a7c
+  image: https://s3.amazonaws.com/icalialabs/assets/img/dash/Dash.jpg
+  color: FD7D67
   link: dash
 
 - name: Well Data
   client: RTS
   done: Design Sprint & Desarrollo
-  image: ../images/well-data/rts-bg.png
-  color: 284a7c
+  image: https://s3.amazonaws.com/icalialabs/assets/img/well-data/RTS.jpg
+  color: 013B63
   link: well-data
 
 - name: Yoga para Mi
   client: 
   done: Design Sprint & Desarrollo
-  image: ../images/yoga/yoga-bg.png
-  color: 284a7c
+  image: https://s3.amazonaws.com/icalialabs/assets/img/yoga/YPM.jpg
+  color: 80D7EA
   link: yoga
 
 - name: Datoz
   client: Sergio Mireles
   done: Design Sprint & Desarrollo
-  image: ../images/datoz/datoz-bg.png
-  color: 284a7c
+  image: https://s3.amazonaws.com/icalialabs/assets/img/datoz/Datoz.jpg
+  color: FFAC31
   link: datoz
 
