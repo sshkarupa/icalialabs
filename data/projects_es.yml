@@ -51,7 +51,7 @@
 - name: Jubel
   client: Jorge Borbolla
   done: Design Sprint & Desarrollo
-  image: ../images/jubel/jubel-bg.png
+  image: https://s3.amazonaws.com/icalialabs/assets/img/jubel/Jubel.jpg
   color: 284a7c
   link: jubel
 
