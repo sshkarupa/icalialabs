@@ -270,13 +270,22 @@
 
 .dash,
 .es_dash {
-  .imagery-block {
+  .imagery-block-client {
     img {
       height: px-to-rems(380);
+      width: auto;
+
+      @include phone {
+        width: 100%;
+      }
     }
 
     img + img {
       padding-left: px-to-rems(50);
+
+      @include phone {
+        padding-left: 0;
+      }
     }
   }
 }
