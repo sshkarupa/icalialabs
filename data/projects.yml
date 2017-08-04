@@ -33,21 +33,6 @@
   color: 46a84c
   link: tap-to-fund
 
-- name: IOS Offices
-  client: IOS Offices
-  done: Design Sprint
-  image: https://s3.amazonaws.com/icalialabs/assets/img/IOS-offices/notes.jpeg
-  color: 284a7c
-  link: ios-offices
-
-
-- name: Messa
-  client: Jorge Borbolla
-  done: Design Sprint
-  image: https://s3.amazonaws.com/icalialabs/assets/img/messa/messa.jpg
-  color: 284a7c
-  link: messa
-
 - name: Jubel
   client: Jorge Borbolla
   done: Design Sprint & Development
@@ -69,16 +54,16 @@
   color: 013B63
   link: well-data
 
-- name: Yoga para Mi
-  client: 
-  done: Design Sprint & Development
-  image: https://s3.amazonaws.com/icalialabs/assets/img/yoga/YPM.jpg
-  color: 80D7EA
-  link: yoga
+- name: IOS Offices
+  client: IOS Offices
+  done: Design Sprint
+  image: https://s3.amazonaws.com/icalialabs/assets/img/IOS-offices/notes.jpeg
+  color: 284a7c
+  link: ios-offices
 
-- name: Datoz
-  client: Sergio Mireles
-  done: Design Sprint & Development
-  image: https://s3.amazonaws.com/icalialabs/assets/img/datoz/Datoz.jpg
-  color: FFAC31
-  link: datoz
+- name: Messa
+  client: Jorge Borbolla
+  done: Design Sprint
+  image: https://s3.amazonaws.com/icalialabs/assets/img/messa/messa.jpg
+  color: 284a7c
+  link: messa
