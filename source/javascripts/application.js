@@ -1,23 +1,23 @@
 var idx, idxs, ignore, rule, scrollToTop, stylesheet, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
 var isOpen = false;
 
-$(document).ready(function() {
-  var quotientTest = readCookie("quotient-test");
-  if (!quotientTest) {
-    var samples = ["a", "b"];
-    var sample = samples[Math.floor(Math.random()*samples.length)];
-    createCookie("quotient-test", sample, 45)
-  }
-})
+// $(document).ready(function() {
+//   var quotientTest = readCookie("quotient-test");
+//   if (!quotientTest) {
+//     var samples = ["a", "b"];
+//     var sample = samples[Math.floor(Math.random()*samples.length)];
+//     createCookie("quotient-test", sample, 45)
+//   }
+// })
 
-$("a[data-label^='quote']:not([data-label$='es'])").on('click', function() {
-  var quotientTest = readCookie("quotient-test");
-  if (quotientTest == "b") {
-    var win = window.open("http://quotient.icalialabs.com", '_blank');
-    win.focus();
-    return false
-  }
-});
+// $("a[data-label^='quote']:not([data-label$='es'])").on('click', function() {
+//   var quotientTest = readCookie("quotient-test");
+//   if (quotientTest == "b") {
+//     var win = window.open("http://quotient.icalialabs.com", '_blank');
+//     win.focus();
+//     return false
+//   }
+// });
 
 $(document).on("mobileinit", function() {
   $.mobile.hidePageLoadingMsg();
@@ -91,15 +91,15 @@ $(window).scroll(function(){
 });
 
 $("a[data-label]").on("click", function(){
-  var quotientTest = readCookie("quotient-test");
+  // var quotientTest = readCookie("quotient-test");
   ga("send", "event", "clicks", $(this).data('label'));
   if ($(this).data('label').indexOf("quote") !== -1) {
   	goog_report_conversion();
-    if (quotientTest == "b") {
-      ga("send", "event", "A/B Test", "Sent to Quotient");
-    } else {
+    // if (quotientTest == "b") {
+    //   ga("send", "event", "A/B Test", "Sent to Quotient");
+    // } else {
       ga("send", "event", "A/B Test", "Sent to Typeform");
-    }
+    // }
   }
 })
 
@@ -118,5 +118,3 @@ $(".en-btn").on('click', function() {
 		window.location.pathname = window.location.pathname;
 	}
 });
-
-
