@@ -70,14 +70,13 @@
       	 	<div class="title">
 	          <div class="project-name">
 	            <h1 class="project-title"><%= current_page.data.title %></h1>    
-	            <h3 class="light">Client: <%= current_page.data.client %></h3>
+	            <h3 class="light"><%= current_page.data.subtitle %></h3>
 	          </div>
-	        	<p class="subline"><%= current_page.data.subtitle %> </p>
 	      	</div>
       	</div>
 	    </section>
-      <article class="content container">
-        <div>
+      <article class="content">
+        <div class="<%= page_classes %>">
           <%= yield %>
         </div>
       </article>

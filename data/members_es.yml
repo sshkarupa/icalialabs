@@ -100,7 +100,7 @@
       name: twitter
 
 - name: Bárbara Martínez
-  title: Practicante Desarrollo Móvil
+  title: Practicante de Ingeniería de Software
   id: barbs
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/barbs-close.jpg
@@ -112,7 +112,7 @@
       name: website
 
 - name: Miguel Garcia
-  title: Software Engineer
+  title: Ingeniero de Software
   id: mike
   picture: https://s3.amazonaws.com/icalialabs/assets/img/team/mike.jpg
   closeup: https://s3.amazonaws.com/icalialabs/assets/img/team/mike-close.jpg

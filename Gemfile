@@ -15,7 +15,7 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 gem "middleman-sprockets", "~> 4.0.0.rc"
-gem "therubyracer", platform: :ruby
+gem "therubyracer"
 gem "puma"
 gem "rack-contrib"
 gem 'scss_lint', require: false
