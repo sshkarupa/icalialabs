@@ -22,7 +22,6 @@ services:
       RACK_ENV: 'production'
       PORT: '4040'
 
-
   web:
     image: icalialabs/icalia:dev
     build:
