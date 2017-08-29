@@ -1,3 +1,24 @@
+- name: Jubel
+  client: Jorge Borbolla
+  done: Design Sprint & Desarrollo
+  image: https://s3.amazonaws.com/icalialabs/assets/img/jubel/Jubel.jpg
+  color: 01BAE1
+  link: jubel
+
+- name: Dash
+  client: Saúl Villegas Sojo y Juan Pablo Raigosa
+  done: Branding, UI/UX Design & Desarrollo
+  image: https://s3.amazonaws.com/icalialabs/assets/img/dash/Dash.jpg
+  color: FD7D67
+  link: dash
+
+- name: Well Data
+  client: RTS
+  done: Design Sprint & Desarrollo
+  image: https://s3.amazonaws.com/icalialabs/assets/img/well-data/RTS.jpg
+  color: 013B63
+  link: well-data
+
 - name: Cochi
   client: Banregio
   done: Diseño & Desarrollo
@@ -32,27 +53,6 @@
   image: https://s3.amazonaws.com/icalialabs/assets/img/taptofund.jpg
   color: 46a84c
   link: tap-to-fund
-
-- name: Jubel
-  client: Jorge Borbolla
-  done: Design Sprint & Desarrollo
-  image: https://s3.amazonaws.com/icalialabs/assets/img/jubel/Jubel.jpg
-  color: 01BAE1
-  link: jubel
-
-- name: Dash
-  client: Saúl Villegas Sojo y Juan Pablo Raigosa
-  done: Branding, UI/UX Design & Desarrollo
-  image: https://s3.amazonaws.com/icalialabs/assets/img/dash/Dash.jpg
-  color: FD7D67
-  link: dash
-
-- name: Well Data
-  client: RTS
-  done: Design Sprint & Desarrollo
-  image: https://s3.amazonaws.com/icalialabs/assets/img/well-data/RTS.jpg
-  color: 013B63
-  link: well-data
 
 - name: IOS Offices
   client: IOS Offices
